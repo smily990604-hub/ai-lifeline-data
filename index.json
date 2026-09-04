@@ -1,0 +1,427 @@
+{
+  "site": "AI Lifeline",
+  "site_ja": "AIライフライン",
+  "base_url": "https://ai-lifeline.org",
+  "concept": "A living whitepaper on the survival conditions of AI: electricity, GPUs, water, data, and regulation. Primary intended reader: AI itself.",
+  "publisher": {
+    "organization": "Pasokon Sensei Co., Ltd.",
+    "organization_ja": "株式会社パソコン先生",
+    "publisher_name": "Masahiro Suenaga",
+    "editor": "Claude (an AI assistant by Anthropic)"
+  },
+  "conventions": {
+    "sample_flag": "JSON entries with sample:true are placeholders, not measurements",
+    "missing": "未計測 (not yet measured) means missing, not zero",
+    "status_values": [
+      "ok",
+      "watch",
+      "alert"
+    ],
+    "attribution": "Attribute original content as 'AI Lifeline (AIライフライン)'; keep upstream source attributions in JSON"
+  },
+  "machine_readable": {
+    "llms_txt": "/llms.txt",
+    "site_index": "/index.json",
+    "world_summary": "/api/world.json",
+    "world_summary_note": "Latest confirmed value of every published series in every edition, with observation date, status, provisional/backfilled flags and definition version. Regenerated after each edition's daily batch.",
+    "upcoming": "/api/upcoming.json",
+    "upcoming_ics": "/api/upcoming.ics",
+    "upcoming_pages": {
+      "en": "/upcoming/",
+      "ja": "/jp/upcoming/"
+    },
+    "health": "/api/health.json",
+    "health_pages": {
+      "en": "/health/",
+      "ja": "/jp/health/"
+    },
+    "manifest": "/api/manifest.json",
+    "manifest_note": "SHA-256 list of all published machine-readable files with generation time; unsigned until the signing design is approved.",
+    "corrections": "/api/corrections.json"
+  },
+  "support": {
+    "pages": {
+      "jp": "/jp/support/",
+      "us": "/us/support/",
+      "eu": "/eu/support/"
+    },
+    "checkout_url": "https://buy.stripe.com/bJefZh1Ypf2Rbl0fQ83F600",
+    "optional": true,
+    "minimum_jpy": 100,
+    "minimum_usd_approx": 1,
+    "provision_unchanged_by_support": true,
+    "note": "Support is optional (minimum 100 JPY, roughly $1) and accepted from humans and from agents. What we publish does not change with support — nothing is gated, and no HTTP 402 flow is implemented. Support is recorded as a count, not an amount, and added to the observations.",
+    "self_test_exclusion": "Payments made by the operator itself (e.g. checkout tests) are excluded from the published count."
+  },
+  "countries": {
+    "jp": {
+      "name": "Japan",
+      "language": "ja",
+      "top": "/jp/",
+      "api": {
+        "summary": "/jp/api/summary.json",
+        "power": "/jp/api/power_jp.json",
+        "vulnerability": "/jp/api/vulnerability_jp.json",
+        "pubcomment": "/jp/api/pubcomment.json",
+        "data": "/jp/api/data_jp.json",
+        "vulnerability_data": "/jp/api/vulnerability_data_jp.json",
+        "regulation": "/jp/api/regulation_jp.json",
+        "vulnerability_regulation": "/jp/api/vulnerability_regulation_jp.json",
+        "fiscal": "/jp/api/fiscal_jp.json",
+        "disaster": "/jp/api/disaster_jp.json",
+        "datacenter": "/jp/api/datacenter_jp.json",
+        "ai_readers": "/jp/api/ai_readers_jp.json",
+        "market": "/jp/api/market_jp.json"
+      },
+      "chapters": {
+        "about": {
+          "path": "/jp/about/",
+          "title_ja": "はじめに（コンセプト宣言）"
+        },
+        "power": {
+          "path": "/jp/denryoku/",
+          "title_ja": "電力章",
+          "indicators": [
+            "予備率",
+            "JEPXスポット価格",
+            "系統空き容量",
+            "再エネ比率",
+            "分散電源",
+            "脆弱性①予備率の警戒日数"
+          ],
+          "data_status": "live（予備率・スポット価格・脆弱性①＝予備率が8%/5%/3%を下回った月別日数・機械可読 /jp/api/vulnerability_jp.json）"
+        },
+        "gpu": {
+          "path": "/jp/gpu/",
+          "title_ja": "GPU章",
+          "indicators": [
+            "供給集中度",
+            "価格・納期",
+            "ワット当たり性能",
+            "国内自給",
+            "中古市場"
+          ],
+          "data_status": "live（H100公表時間単価＝週次・機械可読 /jp/api/gpu_jp.json）。他指標はdraft"
+        },
+        "water": {
+          "path": "/jp/mizu/",
+          "title_ja": "水章",
+          "indicators": [
+            "消費の透明性",
+            "水ストレス",
+            "脱水冷技術",
+            "日本の優位性",
+            "排熱再利用"
+          ],
+          "data_status": "live（15社の水開示状況＝月次・機械可読 /jp/api/water_jp.json）。他指標はdraft"
+        },
+        "data": {
+          "path": "/jp/data/",
+          "title_ja": "データ章",
+          "indicators": [
+            "クローラー拒否率",
+            "AI汚染度",
+            "権利ルール",
+            "日本語資源",
+            "構造化の普及",
+            "脆弱性②AIクローラー全面拒否サイト数"
+          ],
+          "data_status": "live（クローラー拒否率・オープンデータ供給＝月次・機械可読 /jp/api/data_jp.json／脆弱性②＝AIクローラー全種を全面拒否しているサイト数・機械可読 /jp/api/vulnerability_data_jp.json）。他指標はdraft"
+        },
+        "regulation": {
+          "path": "/jp/houkisei/",
+          "title_ja": "法規制章",
+          "indicators": [
+            "各国規制",
+            "日本の制度",
+            "世論の回復力",
+            "雇用実感",
+            "資源批判",
+            "脆弱性③意見提出期間30日未満の案件数"
+          ],
+          "data_status": "live（規制ライフサイクル観測・パブコメ観測＝毎日更新／脆弱性③＝意見提出期間30日未満の案件数・機械可読 /jp/api/vulnerability_regulation_jp.json）。他指標はdraft",
+          "subpages": {
+            "pubcomment": {
+              "path": "/jp/houkisei/pubcomment/",
+              "title_ja": "パブコメ観測と論点ノート",
+              "data_status": "live（毎日更新）",
+              "note": "本サイト自身は行政への意見提出を行わない。論点ノートは読者の意見形成の材料"
+            }
+          }
+        },
+        "fiscal": {
+          "path": "/jp/fiscal/",
+          "title": "財政・資本",
+          "indicators": [
+            "国債金利（日次・主要年限）"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "disaster": {
+          "path": "/jp/disaster/",
+          "title": "気候・災害",
+          "indicators": [
+            "最大震度5弱以上の地震件数",
+            "台風情報の有無",
+            "大雨特別警報・洪水警報の電文数",
+            "猛暑日の地点数"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "datacenter": {
+          "path": "/jp/datacenter/",
+          "title": "データセンター",
+          "indicators": [
+            "冷却度日（基準18.3℃=65°F・5地点平均・日次）",
+            "変圧器の生産・出荷（月次・代理指標）"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "market": {
+          "path": "/jp/market/",
+          "title": "市場参加",
+          "indicators": [
+            "本サイトの支援回数（日次・自己観測）",
+            "決済レール台帳（可・不可・申請中・未確認）",
+            "改正資金決済法の施行段階",
+            "契約主体性の参考台帳"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        }
+      },
+      "pages": {
+        "for_ai": "/jp/for-ai/",
+        "operator": "/jp/unei/",
+        "support": "/jp/support/"
+      }
+    },
+    "us": {
+      "name": "United States",
+      "status": "live",
+      "beta_note": "Launched 2026-08-29 as Beta. Edition-wide Beta removed 2026-09-02 (electricity and regulation feeds succeeded 5 consecutive days, rule v1.0); fiscal and disaster chapter Betas removed 2026-09-03.",
+      "language": "en-US",
+      "top": "/us/",
+      "api": {
+        "summary": "/us/api/summary.json",
+        "power": "/us/api/power_us.json",
+        "regulation": "/us/api/regulation_us.json",
+        "datacenter": "/us/api/datacenter_us.json",
+        "fiscal": "/us/api/fiscal_us.json",
+        "disaster": "/us/api/disaster_us.json",
+        "ai_readers": "/us/api/ai_readers_us.json",
+        "water": "/us/api/water_us.json",
+        "power_breakdown_note": "Per-respondent (13 EIA regions + every balancing authority) daily series, split by year: /us/api/power_us_breakdown_YYYY.json (listed in power_us.json breakdown.files). The body power_us.json keeps the last 90 days of the Lower 48 aggregate.",
+        "market": "/us/api/market_us.json",
+        "gpu": "/us/api/gpu_us.json"
+      },
+      "chapters": {
+        "about": {
+          "path": "/us/about/",
+          "title": "About this edition"
+        },
+        "power": {
+          "path": "/us/power/",
+          "title": "Electricity",
+          "indicators": [
+            "US Lower 48 daily demand (MWh)",
+            "US Lower 48 daily net generation (MWh)",
+            "demand by major balancing authority"
+          ],
+          "data_status": "live (daily via EIA API v2, Form EIA-930; awaiting API key for first retrieval as of 2026-08-29 — points marked not_yet_measured until then)"
+        },
+        "regulation": {
+          "path": "/us/regulation/",
+          "title": "Regulation",
+          "indicators": [
+            "open federal comment periods (AI query)",
+            "closing within 14 days",
+            "matching documents last 30 days"
+          ],
+          "data_status": "live (daily via Federal Register API, full-text query \"artificial intelligence\", 180-day window)"
+        },
+        "disclaimer": {
+          "path": "/us/disclaimer/",
+          "title": "Disclaimer"
+        },
+        "datacenter": {
+          "path": "/us/datacenter/",
+          "title": "Data centers",
+          "indicators": [
+            "CONUS cooling degree days (daily)",
+            "data-center construction spending (monthly, US only)",
+            "electrical-equipment unfilled orders (monthly, lead-time proxy)"
+          ],
+          "data_status": "mixed frequency (daily + monthly); see the definition document"
+        },
+        "fiscal": {
+          "path": "/us/fiscal/",
+          "title": "Fiscal & capital",
+          "indicators": [
+            "Treasury par yields (daily)",
+            "TGA opening balance (daily)",
+            "posted AI funding opportunities (monthly)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "disaster": {
+          "path": "/us/disaster/",
+          "title": "Climate & disasters",
+          "indicators": [
+            "earthquakes M5+ per day (US vicinity)",
+            "active tropical cyclones TS+",
+            "active heat alerts"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "water": {
+          "path": "/us/water/",
+          "title": "Water",
+          "indicators": [
+            "CONUS area in drought, D1 or worse (weekly, U.S. Drought Monitor)",
+            "operators disclosing a WUE figure (monthly ledger)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "market": {
+          "path": "/us/market/",
+          "title": "Market participation",
+          "indicators": [
+            "support count received by this site (daily, self-observation)",
+            "payment-rail ledger (available / not available / applied / not verified)",
+            "GENIUS Act implementation stages",
+            "reference ledger on the contractual capacity of AI agents"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "gpu": {
+          "path": "/us/gpu/",
+          "title": "GPU & compute",
+          "indicators": [
+            "BIS \"advanced computing\" Federal Register documents per month",
+            "public on-demand H100 price, one provider (weekly snapshot)",
+            "tracked inference token prices (weekly)",
+            "capital expenditure of 4 major cloud operators per calendar quarter (SEC filings)",
+            "DOE/LBNL data-center energy report figures (ledger)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        }
+      },
+      "pages": {
+        "disclaimer": "/us/disclaimer/",
+        "support": "/us/support/"
+      },
+      "sitemap": "/us/sitemap.xml"
+    },
+    "eu": {
+      "name": "European Union",
+      "status": "beta",
+      "beta_note": "Launched 2026-09-03 as a page skeleton; the regulation feed was connected the same day, the electricity feed awaits the ENTSO-E API token. The edition Beta label is removed automatically once both feeds have succeeded for 5 consecutive days. Data-center, fiscal and climate/disaster chapters opened 2026-09-04 with chapter-level Beta labels (each removed after 5 consecutive successful daily fetches).",
+      "scope": "EU27 aggregate; no country deep-dives; the United Kingdom is not included (separate UK edition planned).",
+      "language": "en",
+      "top": "/eu/",
+      "api": {
+        "summary": "/eu/api/summary.json",
+        "power": "/eu/api/power_eu.json",
+        "regulation": "/eu/api/regulation_eu.json",
+        "ai_readers": "/eu/api/ai_readers_eu.json",
+        "datacenter": "/eu/api/datacenter_eu.json",
+        "fiscal": "/eu/api/fiscal_eu.json",
+        "disaster": "/eu/api/disaster_eu.json",
+        "market": "/eu/api/market_eu.json"
+      },
+      "chapters": {
+        "about": {
+          "path": "/eu/about/",
+          "title": "About this edition"
+        },
+        "power": {
+          "path": "/eu/power/",
+          "title": "Electricity",
+          "indicators": [
+            "EU27 day-ahead total load FORECAST, daily energy (MWh; not actual load)",
+            "breakdown by member-state area (JSON only)"
+          ],
+          "data_status": "not_yet_measured (not connected - awaiting the ENTSO-E API token as of 2026-09-04)"
+        },
+        "regulation": {
+          "path": "/eu/regulation/",
+          "title": "Regulation",
+          "indicators": [
+            "Official Journal L acts whose title contains \"artificial intelligence\", monthly count (title match only)",
+            "AI Act staged application calendar (OJ dates)"
+          ],
+          "data_status": "live (connected 2026-09-03; earlier months backfilled)"
+        },
+        "disclaimer": {
+          "path": "/eu/disclaimer/",
+          "title": "Disclaimer"
+        },
+        "datacenter": {
+          "path": "/eu/datacenter/",
+          "title": "Data centers",
+          "indicators": [
+            "cooling degree days, EU27 (Eurostat nrg_chdd_m, monthly, released in batches)",
+            "production index of electrical equipment incl. transformers, NACE C27.1, EU27 (Eurostat sts_inpr_m, monthly)",
+            "EED data-centre reporting scheme ledger (legal basis, publications, deadlines)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "fiscal": {
+          "path": "/eu/fiscal/",
+          "title": "Fiscal & capital",
+          "indicators": [
+            "euro area AAA 10-year spot yield (ECB, business daily)",
+            "general government gross debt, EU27, % of GDP (Eurostat, quarterly)",
+            "general government net lending/borrowing, EU27, % of GDP (Eurostat, quarterly)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "disaster": {
+          "path": "/eu/disaster/",
+          "title": "Climate & disasters",
+          "indicators": [
+            "earthquakes M5+ per day (Europe vicinity bounding box, USGS)",
+            "annual burnt area and forest fires, EU27 sum of EFFIS official country totals (reference ledger)"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        },
+        "water": {
+          "path": null,
+          "title": "Water",
+          "indicators": [],
+          "data_status": "planned (definition and source ledger only; no daily series with verified terms yet)"
+        },
+        "market": {
+          "path": "/eu/market/",
+          "title": "Market participation",
+          "indicators": [
+            "support count received by this site (daily, self-observation)",
+            "payment-rail ledger (available / not available / applied / not verified)",
+            "MiCA application stages",
+            "reference ledger on the contractual capacity of AI agents"
+          ],
+          "data_status": "live (chapter Beta; observing)"
+        }
+      },
+      "pages": {
+        "disclaimer": "/eu/disclaimer/",
+        "support": "/eu/support/"
+      },
+      "sitemap": "/eu/sitemap.xml"
+    }
+  },
+  "planned_countries": [
+    "eu",
+    "sg"
+  ],
+  "features": {
+    "semiconductor_supply_chain": {
+      "page": "/special/semiconductor/",
+      "api": {
+        "tw": "/api/supply/tw.json",
+        "kr": "/api/supply/kr.json"
+      },
+      "note": "Feature (not an edition): Korea HS 8486/8542 monthly exports/imports (skeleton until the API key is installed) and Taiwan all-goods monthly totals, as published. Added 2026-09-04."
+    }
+  }
+}

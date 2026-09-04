@@ -1,0 +1,155 @@
+{
+  "region": "EU",
+  "generated": "2026-09-04",
+  "observation": "Today's changes - day-over-day differences in this edition's own observations (no external news). A day with no change is recorded as no_change.",
+  "ledger_policy": "The ledger (ledger.jsonl) is append-only. A re-run on the same day never deletes earlier rows; it appends a new revision, and the display uses only the latest revision of each day.",
+  "kinds": {
+    "routine": "the same series advanced by one observation (folded on the page into one line per day)",
+    "new_series": "a series appeared for the first time",
+    "revision": "a value for an already-observed date changed (e.g. provisional replaced by final with a different number)",
+    "observation_start": "the changes ledger started for this edition",
+    "observation_stop": "a series that had values is no longer measured",
+    "no_change": "nothing moved since the previous run (also an observation)",
+    "correction": "a same-day re-run produced a different set of items; earlier rows are kept"
+  },
+  "revisions": {
+    "2026-09-03": 1,
+    "2026-09-04": 3
+  },
+  "corrections": [
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 08:49:10",
+      "kind": "correction",
+      "chapter": "",
+      "series": "",
+      "label": "Re-run on the same day produced revision 2",
+      "detail": "Revision 1 (11 items) is kept in the ledger; the page shows revision 2 (4 items)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "correction",
+      "chapter": "",
+      "series": "",
+      "label": "Re-run on the same day produced revision 3",
+      "detail": "Revision 2 (4 items) is kept in the ledger; the page shows revision 3 (5 items)"
+    }
+  ],
+  "today": [
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.3646 % (2026-09-03)",
+      "detail": "Previous 3.3919 % (2026-09-02) (-0.03 vs 2026-09-02) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-03)",
+      "detail": "Previous 0 events (2026-09-02) (0 vs 2026-09-02) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "new_series",
+      "chapter": "disaster",
+      "series": "disaster.wildfire_annual_ledger",
+      "label": "New series: Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
+      "detail": "First value 10 entries (observed 2026-09-04; final) / Source: European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "observation_stop",
+      "chapter": "",
+      "series": "disaster.wildfire_burnt_area",
+      "label": "Series no longer published: disaster.wildfire_burnt_area",
+      "detail": "The series key disappeared from the published JSON (see the chapter page for the reason)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "observation_stop",
+      "chapter": "",
+      "series": "disaster.wildfire_events",
+      "label": "Series no longer published: disaster.wildfire_events",
+      "detail": "The series key disappeared from the published JSON (see the chapter page for the reason)"
+    }
+  ],
+  "recent": [
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.3646 % (2026-09-03)",
+      "detail": "Previous 3.3919 % (2026-09-02) (-0.03 vs 2026-09-02) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-03)",
+      "detail": "Previous 0 events (2026-09-02) (0 vs 2026-09-02) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "new_series",
+      "chapter": "disaster",
+      "series": "disaster.wildfire_annual_ledger",
+      "label": "New series: Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
+      "detail": "First value 10 entries (observed 2026-09-04; final) / Source: European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "observation_stop",
+      "chapter": "",
+      "series": "disaster.wildfire_burnt_area",
+      "label": "Series no longer published: disaster.wildfire_burnt_area",
+      "detail": "The series key disappeared from the published JSON (see the chapter page for the reason)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 3,
+      "recorded_at": "2026-09-04 20:00:25",
+      "kind": "observation_stop",
+      "chapter": "",
+      "series": "disaster.wildfire_events",
+      "label": "Series no longer published: disaster.wildfire_events",
+      "detail": "The series key disappeared from the published JSON (see the chapter page for the reason)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 1,
+      "recorded_at": "2026-09-03 21:05:25",
+      "kind": "observation_start",
+      "chapter": "",
+      "series": "",
+      "label": "Changes ledger started for this edition",
+      "detail": "Today's values are the baseline; day-over-day differences are recorded from tomorrow (4 series)"
+    }
+  ]
+}

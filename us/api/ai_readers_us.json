@@ -1,0 +1,149 @@
+{
+  "region": "US",
+  "generated": "2026-09-04 18:01",
+  "indicator": {
+    "id": "ai_readers_01_us",
+    "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
+    "unit": "requests",
+    "cadence": "weekly (re-aggregated daily from daily data; weeks are 7-day blocks from 2026-08-23, Sunday to Saturday, JST)",
+    "definition_version": "1.0",
+    "definition_fixed_on": "2026-08-29",
+    "definition_doc": "docs/指標定義_AI読者数.md",
+    "data_layer_doc": "docs/指標定義_AI読者アクセス.md",
+    "path_scope": "/us/",
+    "path_scope_note": "Only requests whose path starts with /us/ (this edition's pages and API files). Shared root files (/, /llms.txt, /index.json, /api/world.json) are not attributed to any edition. Same definition, same UA table and same self-exclusion rule as the Japan edition; only the path filter differs.",
+    "observation_start": "2026-08-29",
+    "edition_launched": "2026-08-29",
+    "verified_series_start": "2026-08-27",
+    "published_series": "Headline = requests Cloudflare verified as known bots (verifiedBotCategory). Unverified counts listed separately; the self-declared total is a reference upper bound only.",
+    "counted": "HTTP requests from AI-declared user agents to ai-lifeline.org under this path prefix (Cloudflare edge measurement; our own traffic excluded by UA)",
+    "not_means_1": "Not proof that an AI read the page. UA strings are self-declared and can be spoofed; verification is Cloudflare judgement, not ours. Unverified does not mean spoofed.",
+    "not_means_2": "Not readers, people or sessions: one request = one file.",
+    "not_means_3": "Says nothing about training use.",
+    "privacy": "No IP addresses are collected or stored; raw UA strings are not published, only AI-name classes.",
+    "self_exclusion": "Our own traffic is identified by UA and excluded; the excluded counts are published (self_excluded).",
+    "sampling_note": "Counts are Cloudflare sample counts (as in the Japan edition); no sampling correction is applied.",
+    "provisional_note": "Weeks that have not ended are provisional. Series started with the edition launch, so early weeks are partial."
+  },
+  "source": {
+    "name": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
+    "fetch": "ai-lifeline/scripts/fetch_cf_access.ps1 (daily, previous day)",
+    "build": "ai-lifeline/scripts/build_ai_readers_region.ps1",
+    "raw_note": "Daily detail is archived every day from the API (8-day retention) into data/cfaccess/raw/"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "from": "2026-08-23",
+      "to": "2026-08-29",
+      "observed_through": "2026-08-29",
+      "days_observed": 1,
+      "provisional": false,
+      "verified_total": 7,
+      "verified_days": 1,
+      "unverified_total": 0,
+      "named_total_reference": 7,
+      "self_excluded_total": 191,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 7
+      },
+      "breakdown_verified_other_detail": {
+        "GoogleOther": 7
+      },
+      "top_verified": {
+        "name": "GoogleOther",
+        "requests": 7
+      }
+    },
+    {
+      "week": 2,
+      "from": "2026-08-30",
+      "to": "2026-09-05",
+      "observed_through": "2026-09-03",
+      "days_observed": 5,
+      "provisional": true,
+      "verified_total": 44,
+      "verified_days": 5,
+      "unverified_total": 4,
+      "named_total_reference": 48,
+      "self_excluded_total": 781,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 29,
+        "CCBot": 0,
+        "other": 15
+      },
+      "breakdown_verified_other_detail": {
+        "ChatGPT-User": 7,
+        "GoogleOther": 6,
+        "Amazonbot": 1,
+        "OAI-SearchBot": 1
+      },
+      "top_verified": {
+        "name": "GPTBot",
+        "requests": 29
+      }
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-08-29",
+      "ai_verified": 7,
+      "ai_unverified": 0,
+      "ai_named_reference": 7,
+      "self_excluded": 191,
+      "requests_in_scope": 302,
+      "verified_available": true
+    },
+    {
+      "date": "2026-08-30",
+      "ai_verified": 1,
+      "ai_unverified": 0,
+      "ai_named_reference": 1,
+      "self_excluded": 206,
+      "requests_in_scope": 348,
+      "verified_available": true
+    },
+    {
+      "date": "2026-08-31",
+      "ai_verified": 36,
+      "ai_unverified": 2,
+      "ai_named_reference": 38,
+      "self_excluded": 31,
+      "requests_in_scope": 127,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-01",
+      "ai_verified": 0,
+      "ai_unverified": 1,
+      "ai_named_reference": 1,
+      "self_excluded": 31,
+      "requests_in_scope": 53,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-02",
+      "ai_verified": 3,
+      "ai_unverified": 1,
+      "ai_named_reference": 4,
+      "self_excluded": 31,
+      "requests_in_scope": 71,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-03",
+      "ai_verified": 4,
+      "ai_unverified": 0,
+      "ai_named_reference": 4,
+      "self_excluded": 482,
+      "requests_in_scope": 546,
+      "verified_available": true
+    }
+  ]
+}

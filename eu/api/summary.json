@@ -1,0 +1,66 @@
+{
+  "region": "EU",
+  "generated": "2026-09-05 08:35",
+  "edition": "European Union edition (electricity (day-ahead load forecast), regulation, data centers, fiscal and climate/disaster chapters; EU27 aggregate; water chapter planned)",
+  "scope": "EU27 aggregate. No country deep-dives. The United Kingdom is not included (separate UK edition planned).",
+  "beta": {
+    "active": true,
+    "active_from": "2026-09-03",
+    "removed_on": null
+  },
+  "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
+  "chapters": {
+    "power": {
+      "status": "observing",
+      "series_kind": "forecast",
+      "path": "/eu/power/",
+      "latest": "not_yet_measured",
+      "api": "/eu/api/power_eu.json"
+    },
+    "regulation": {
+      "status": "observing",
+      "path": "/eu/regulation/",
+      "acts_last_30_days": 0,
+      "ai_act_calendar_verified_on": "2026-09-03",
+      "source": "EUR-Lex, Publications Office of the European Union",
+      "api": "/eu/api/regulation_eu.json"
+    },
+    "datacenter": {
+      "status": "observing",
+      "path": "/eu/datacenter/",
+      "chapter_beta": {
+        "active": true,
+        "active_from": "2026-09-04",
+        "removed_on": null
+      },
+      "api": "/eu/api/datacenter_eu.json",
+      "generated": "2026-09-04 20:00"
+    },
+    "fiscal": {
+      "status": "observing",
+      "path": "/eu/fiscal/",
+      "chapter_beta": {
+        "active": true,
+        "active_from": "2026-09-04",
+        "removed_on": null
+      },
+      "api": "/eu/api/fiscal_eu.json",
+      "generated": "2026-09-04 20:00"
+    },
+    "disaster": {
+      "status": "observing",
+      "path": "/eu/disaster/",
+      "chapter_beta": {
+        "active": true,
+        "active_from": "2026-09-04",
+        "removed_on": null
+      },
+      "api": "/eu/api/disaster_eu.json",
+      "generated": "2026-09-04 20:00"
+    },
+    "water": {
+      "status": "planned",
+      "note": "Definition and ledger only: no daily series with verified terms yet (EDO drought aggregation pending a frozen method)"
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "region": "eu",
+  "generated": "2026-09-05 08:35",
+  "status": "observing",
+  "series_kind": "forecast",
+  "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
+  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition (criteria are frozen as versioned definitions before use; none exists for the EU edition as of 2026-09-03). Do not infer thresholds.",
+  "scope_note": "EU27 aggregate = simple sum of the day-ahead total load forecast over one area per member state (27 areas listed in areas_definition; CET/CEST calendar day; MWh = MW x resolution). Non-member areas (including the United Kingdom, Norway, Switzerland, the Western Balkans) are excluded. A day with any missing area is never final: value_status stays provisional and areas_missing / missing_area_codes record the gap.",
+  "value_status_note": "value_status=final means fetched on a CET/CEST date later than the observation day with no missing area; provisional otherwise (may still be revised or completed on a later refetch). retrieved_retrospectively=true marks backfilled history retrieved after the series went live, kept apart from day-by-day observation.",
+  "areas_definition": [
+    {
+      "member_state": "AT",
+      "area": "10YAT-APG------L",
+      "verified": false
+    },
+    {
+      "member_state": "BE",
+      "area": "10YBE----------2",
+      "verified": false
+    },
+    {
+      "member_state": "BG",
+      "area": "10YCA-BULGARIA-R",
+      "verified": false
+    },
+    {
+      "member_state": "HR",
+      "area": "10YHR-HEP------M",
+      "verified": false
+    },
+    {
+      "member_state": "CY",
+      "area": "10YCY-1001A0003J",
+      "verified": false
+    },
+    {
+      "member_state": "CZ",
+      "area": "10YCZ-CEPS-----N",
+      "verified": false
+    },
+    {
+      "member_state": "DK",
+      "area": "10Y1001A1001A65H",
+      "verified": false
+    },
+    {
+      "member_state": "EE",
+      "area": "10Y1001A1001A39I",
+      "verified": false
+    },
+    {
+      "member_state": "FI",
+      "area": "10YFI-1--------U",
+      "verified": false
+    },
+    {
+      "member_state": "FR",
+      "area": "10YFR-RTE------C",
+      "verified": false
+    },
+    {
+      "member_state": "DE",
+      "area": "10Y1001A1001A83F",
+      "verified": false
+    },
+    {
+      "member_state": "GR",
+      "area": "10YGR-HTSO-----Y",
+      "verified": false
+    },
+    {
+      "member_state": "HU",
+      "area": "10YHU-MAVIR----U",
+      "verified": false
+    },
+    {
+      "member_state": "IE",
+      "area": "10YIE-1001A00010",
+      "verified": false
+    },
+    {
+      "member_state": "IT",
+      "area": "10YIT-GRTN-----B",
+      "verified": false
+    },
+    {
+      "member_state": "LV",
+      "area": "10YLV-1001A00074",
+      "verified": false
+    },
+    {
+      "member_state": "LT",
+      "area": "10YLT-1001A0008Q",
+      "verified": false
+    },
+    {
+      "member_state": "LU",
+      "area": "10YLU-CEGEDEL-NQ",
+      "verified": false
+    },
+    {
+      "member_state": "MT",
+      "area": "10Y1001A1001A93C",
+      "verified": false
+    },
+    {
+      "member_state": "NL",
+      "area": "10YNL----------L",
+      "verified": false
+    },
+    {
+      "member_state": "PL",
+      "area": "10YPL-AREA-----S",
+      "verified": false
+    },
+    {
+      "member_state": "PT",
+      "area": "10YPT-REN------W",
+      "verified": false
+    },
+    {
+      "member_state": "RO",
+      "area": "10YRO-TEL------P",
+      "verified": false
+    },
+    {
+      "member_state": "SK",
+      "area": "10YSK-SEPS-----K",
+      "verified": false
+    },
+    {
+      "member_state": "SI",
+      "area": "10YSI-ELES-----O",
+      "verified": false
+    },
+    {
+      "member_state": "ES",
+      "area": "10YES-REE------0",
+      "verified": false
+    },
+    {
+      "member_state": "SE",
+      "area": "10YSE-1--------K",
+      "verified": false
+    }
+  ],
+  "data_status": "not_yet_measured (not connected - awaiting data source authorization: ENTSO-E API token; see connection_status)",
+  "connection_status": {
+    "source_enabled": false,
+    "observation_start": null,
+    "note": "未接続（awaiting data source authorization＝ENTSO-E API トークン待ち・2026-09-03 代表指示）。トークン受領後に enabled=true・observation_start を記入して別途接続。daily_update_eu.ps1 は enabled=false の間 fetch_entsoe.ps1 を呼ばない"
+  },
+  "sources": [
+    {
+      "url": "https://transparency.entsoe.eu/",
+      "license": "ENTSO-E Transparency Platform — List of Data available for free re-use (2023-10-18), item 1 'Day-ahead Total Load Forecast (6.1.B)': CC BY 4.0 (attribution to the ENTSO-E Transparency Platform as source of publication). Terms and Conditions approved 2023-03-29, applicable from 2023-11-01.",
+      "name": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
+    }
+  ],
+  "load_forecast_daily": [],
+  "area_forecast_latest": null,
+  "breakdown": {
+    "note": "Per-area daily series are split by year into the files listed in files (machine-readable only; page shows the EU27 aggregate). Empty until the source is connected.",
+    "files": {}
+  },
+  "can_say": [
+    "How much electricity the transmission system operators of the 27 member states forecast, one day ahead, for each CET/CEST day (sum of one area per member state, MWh), as published on the ENTSO-E Transparency Platform under CC BY 4.0.",
+    "Which days are final (all 27 areas present, fetched on a later day), which are provisional, and which were backfilled.",
+    "Which 27 areas make up the aggregate (areas_definition in the JSON)."
+  ],
+  "cannot_say": [
+    "How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing).",
+    "Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen).",
+    "Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
+  ]
+}

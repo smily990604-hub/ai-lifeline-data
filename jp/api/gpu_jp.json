@@ -1,0 +1,90 @@
+{
+  "generated": "2026-09-05",
+  "observation": "国内GPUクラウド 公表時間単価の定点観測（週次・自前確認）",
+  "policy": "各社公式料金ページから価格数値のみを抽出・自社整形して掲載（文章・画像は複製しない）。税込/税抜の別は各社ページの表記に従う。出典と取得日を全数値に明記",
+  "survey": {
+    "providers_surveyed": 10,
+    "providers_with_public_price": 5,
+    "surveyed_date": "2026-08-21"
+  },
+  "series": [
+    {
+      "id": "sakura_vrt_h100",
+      "provider": "さくらインターネット",
+      "service": "高火力 VRT",
+      "gpu": "NVIDIA H100",
+      "latest_price": 990.0,
+      "unit": "円/時（税込）",
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://cloud.sakura.ad.jp/products/server/gpu/",
+      "note": null
+    },
+    {
+      "id": "conoha_gpu_h100",
+      "provider": "GMOインターネット",
+      "service": "ConoHa GPUサーバー",
+      "gpu": "NVIDIA H100",
+      "latest_price": 1398.0,
+      "unit": "円/時（税込）",
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://vps.conoha.jp/gpu/",
+      "note": "2026-08-21時点、ページ内に『NVIDIA H100 TensorコアGPU 提供終了』のお知らせリンクあり（提供終了後は取得不可になる想定＝3状態設計で検知）"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-08-21",
+      "id": "sakura_vrt_h100",
+      "price": 990.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    },
+    {
+      "date": "2026-08-21",
+      "id": "conoha_gpu_h100",
+      "price": 1398.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    },
+    {
+      "date": "2026-08-28",
+      "id": "sakura_vrt_h100",
+      "price": 990.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    },
+    {
+      "date": "2026-08-28",
+      "id": "conoha_gpu_h100",
+      "price": 1398.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    },
+    {
+      "date": "2026-09-04",
+      "id": "sakura_vrt_h100",
+      "price": 990.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    },
+    {
+      "date": "2026-09-04",
+      "id": "conoha_gpu_h100",
+      "price": 1398.0,
+      "unit": "円/時（税込）",
+      "status": "ok"
+    }
+  ],
+  "can_say": [
+    "国内 GPU クラウド2社（さくらインターネット・GMO インターネット）が公式料金ページで公表している H100 の時間単価（税込・円）の週次推移",
+    "調査した国内事業者10社のうち H100 の料金を公表している社数（2026-08-21 調査の1回分）",
+    "追跡モデルの推論トークン単価（公表リスト価格・USD／100万トークン）の週次推移と、追跡モデル中の最安値（AI自身③・定義 v1.0）"
+  ],
+  "cannot_say": [
+    "GPU を実際に確保できるか（在庫・納期・予約待ちの状況は公表されておらず、観測していない）",
+    "公表価格以外の実勢価格（交渉価格・長期契約・スポット市場の値）",
+    "単価の水準や変化が「高い・安い」「安定・注意」に当たるか（比較の基準値が未定のため良否を判定しない）"
+  ]
+}

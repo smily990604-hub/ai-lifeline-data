@@ -1,0 +1,179 @@
+{
+  "region": "us",
+  "generated": "2026-09-05 08:35",
+  "status": "observing",
+  "status_note": "Observing only: mechanical event counts (no damages, no casualties). A zero means zero events; missing means not yet measured. Same-day values are provisional until the next day's recount.",
+  "disaster_profile": [
+    "earthquake",
+    "hurricane",
+    "extreme_heat"
+  ],
+  "profile_note": "Only hazards in this region's profile are shown. Seismic scales differ across countries; no cross-country comparison.",
+  "series": {
+    "earthquake": {
+      "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
+      "definition_note": "Bounding box lat 18-72, lon -180 to -66 (covers CONUS, Alaska east of the antimeridian, Hawaii; includes some adjacent territory — labelled \"U.S. vicinity\").",
+      "source": {
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+        "license": "Public domain (U.S. federal government work). No key.",
+        "name": "U.S. Geological Survey, Earthquake Hazards Program"
+      },
+      "daily": [
+        {
+          "date": "2026-08-26",
+          "value": 0,
+          "fetched_at": "2026-08-30 00:17"
+        },
+        {
+          "date": "2026-08-27",
+          "value": 0,
+          "fetched_at": "2026-08-30 18:00"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 0,
+          "fetched_at": "2026-08-31 18:00"
+        },
+        {
+          "date": "2026-08-29",
+          "value": 0,
+          "fetched_at": "2026-09-01 18:01"
+        },
+        {
+          "date": "2026-08-30",
+          "value": 0,
+          "fetched_at": "2026-09-02 18:00"
+        },
+        {
+          "date": "2026-08-31",
+          "value": 0,
+          "fetched_at": "2026-09-04 08:46"
+        },
+        {
+          "date": "2026-09-01",
+          "value": 1,
+          "fetched_at": "2026-09-04 18:01"
+        },
+        {
+          "date": "2026-09-02",
+          "value": 2,
+          "fetched_at": "2026-09-04 18:01"
+        },
+        {
+          "date": "2026-09-03",
+          "value": 5,
+          "fetched_at": "2026-09-04 18:01"
+        }
+      ]
+    },
+    "hurricane": {
+      "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
+      "source": {
+        "url": "https://www.nhc.noaa.gov/",
+        "license": "Public domain (U.S. federal government work). No key.",
+        "name": "NOAA National Hurricane Center"
+      },
+      "daily": [
+        {
+          "date": "2026-08-29",
+          "value": 2,
+          "fetched_at": "2026-08-30 00:17"
+        },
+        {
+          "date": "2026-08-30",
+          "value": 2,
+          "fetched_at": "2026-08-30 18:00"
+        },
+        {
+          "date": "2026-08-31",
+          "value": 2,
+          "fetched_at": "2026-08-31 18:00"
+        },
+        {
+          "date": "2026-09-01",
+          "value": 4,
+          "fetched_at": "2026-09-01 18:01"
+        },
+        {
+          "date": "2026-09-02",
+          "value": 3,
+          "fetched_at": "2026-09-02 18:01"
+        },
+        {
+          "date": "2026-09-03",
+          "value": 3,
+          "fetched_at": "2026-09-04 08:46"
+        }
+      ],
+      "today_provisional": {
+        "date": "2026-09-04",
+        "value": 3,
+        "as_of": "2026-09-04 18:01",
+        "note": "provisional (partial day, as of retrieval time)"
+      }
+    },
+    "extreme_heat": {
+      "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
+      "source": {
+        "url": "https://www.weather.gov/documentation/services-web-api",
+        "license": "Public domain (U.S. federal government work). No key (User-Agent明示のみ)",
+        "name": "NOAA National Weather Service alerts API"
+      },
+      "daily": [
+        {
+          "date": "2026-08-29",
+          "value": 6,
+          "fetched_at": "2026-08-30 00:17"
+        },
+        {
+          "date": "2026-08-30",
+          "value": 3,
+          "fetched_at": "2026-08-30 18:00"
+        },
+        {
+          "date": "2026-08-31",
+          "value": 16,
+          "fetched_at": "2026-08-31 18:00"
+        },
+        {
+          "date": "2026-09-01",
+          "value": 28,
+          "fetched_at": "2026-09-01 18:01"
+        },
+        {
+          "date": "2026-09-02",
+          "value": 54,
+          "fetched_at": "2026-09-02 18:01"
+        },
+        {
+          "date": "2026-09-03",
+          "value": 61,
+          "fetched_at": "2026-09-04 08:46"
+        }
+      ],
+      "today_provisional": {
+        "date": "2026-09-04",
+        "value": 49,
+        "as_of": "2026-09-04 18:01",
+        "note": "provisional (partial day, as of retrieval time)"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "status": "candidate_unobserved",
+      "reason": "Endpoint reachable; open-data licence text not yet verified. Added to the profile once verified.",
+      "name": "Wildfire (NIFC — large incidents / acres burned)"
+    }
+  ],
+  "can_say": [
+    "How many M5.0+ earthquakes USGS recorded per UTC day inside the stated U.S.-vicinity bounding box.",
+    "How many tropical cyclones of tropical-storm strength or stronger the NHC listed as active each day (Atlantic and East/Central Pacific), and how many Excessive Heat Warnings and Heat Advisories were active (daily snapshots).",
+    "Which days recorded zero events as opposed to days not yet measured, and which same-day values are still provisional."
+  ],
+  "cannot_say": [
+    "What damage, casualties or facility impacts any event caused (counts only).",
+    "Whether a hurricane, earthquake or heat wave will occur (no forecasts).",
+    "Wildfire activity (a candidate until the NIFC licence is verified), or how U.S. hazard levels compare with Japan or the EU (different scales and profiles)."
+  ]
+}

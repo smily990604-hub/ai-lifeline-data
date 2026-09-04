@@ -1,0 +1,173 @@
+{
+  "country": "JP",
+  "generated": "2026-09-05",
+  "concept": "法規制を「審議会での議論→パブコメ→法案→国会審議→成立→施行」のライフサイクルで観測する。stageは 審議中/パブコメ中/成立・施行待ち/施行済み の4値",
+  "registry_verified": "2026-08-20",
+  "lifecycle": {
+    "審議中": [
+      {
+        "id": "bunkacho-ai-copyright",
+        "title": "文化審議会 著作権分科会：「AIと著作権に関する考え方」の運用・継続検討",
+        "category": "データ",
+        "stage": "審議中",
+        "date_label": "継続議論（考え方の初版は2024年3月公表）",
+        "date_iso": null,
+        "summary": "30条の4の「享受目的」との線引きや権利者への対価還元をめぐる議論の本丸。学習データの実務ルールはここで形成される。",
+        "source": {
+          "name": "文化庁（AIと著作権）",
+          "url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html"
+        }
+      },
+      {
+        "id": "ppc-kaisei",
+        "title": "個人情報保護法の見直し（いわゆる3年ごと見直し・AI関連論点を含む）",
+        "category": "データ",
+        "stage": "審議中",
+        "date_label": "個人情報保護委員会で改正議論が継続中",
+        "date_iso": null,
+        "summary": "生成AI時代の個人データの取扱い（学習利用・本人関与）を含む制度見直しの議論。改正案の国会提出時期が焦点。",
+        "source": {
+          "name": "個人情報保護委員会",
+          "url": "https://www.ppc.go.jp/"
+        }
+      },
+      {
+        "id": "sekiyu-kyoka-wg",
+        "title": "石油等の供給構造の強靱化ワーキンググループ（調達先・輸送経路多角化の制度設計）",
+        "category": "電力",
+        "stage": "審議中",
+        "date_label": "2026年7月設置・検討中",
+        "date_iso": null,
+        "summary": "ホルムズ海峡危機を受けた燃料調達多角化の支援制度（納付金による輸送費支援等）を検討。関連論点整理案がパブコメ中（論点ノート第1号参照）。",
+        "source": {
+          "name": "資源エネルギー庁「構造的対応 論点整理案」（2026年7月・本文で設置を確認）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620226021&Mode=0"
+        }
+      }
+    ],
+    "パブコメ中": [
+      {
+        "id": "pcm-155260719",
+        "title": "建築物のエネルギー消費性能の向上等に関する法律施行令の一部を改正する政令案に関する意見募集について",
+        "category": "電力",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-09-06",
+        "date_iso": "2026-09-06",
+        "summary": "建築物省エネ法の政令改正。データセンターも建築物——省エネ基準の変化はAIの計算拠点の建設コストに波及しうる。",
+        "source": {
+          "name": "e-Govパブリック・コメント（国土交通省）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260719&Mode=0"
+        }
+      },
+      {
+        "id": "pcm-620340004",
+        "title": "再生可能エネルギー電気の利用の促進に関する特別措置法施行規則の改正案に対する意見公募について",
+        "category": "電力",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-09-12",
+        "date_iso": "2026-09-12",
+        "summary": "再エネ特措法（FIT/FIP）の運用ルール改正。再エネの入り方が変われば、電力章で観測するJEPX価格の形と再エネ比率に直接効く。",
+        "source": {
+          "name": "e-Govパブリック・コメント（資源エネルギー庁）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340004&Mode=0"
+        }
+      },
+      {
+        "id": "pcm-620340005",
+        "title": "事業計画策定ガイドライン（風力発電）の改正案に対する意見公募について",
+        "category": "電力",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-09-12",
+        "date_iso": "2026-09-12",
+        "summary": "風力発電の事業計画ガイドライン改正。再エネ電源の立地ペースはAIの「きれいな電気」調達余地を左右する。",
+        "source": {
+          "name": "e-Govパブリック・コメント（資源エネルギー庁）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340005&Mode=0"
+        }
+      },
+      {
+        "id": "pcm-290608071",
+        "title": "行政手続における特定の個人を識別するための番号の利用等に関する法律に規定する個人番号、個人番号カード、特定個人情報の提供等に関する命令の一部を改正する命令（案）及び個人番号カード等に関する技術的基準の一部を改正する件（案）に対する意見募集について",
+        "category": "データ利活用",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-09-30",
+        "date_iso": "2026-09-30",
+        "summary": "AIの学習データ・情報流通のルールに関わる案件。データ章の観測対象（自動判定）。",
+        "source": {
+          "name": "e-Govパブリック・コメント（デジタル庁）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=290608071&Mode=0"
+        }
+      },
+      {
+        "id": "pcm-198026104",
+        "title": "実用発電用原子炉及びその附属施設における発電用原子炉施設保安規定の審査基準の一部を改正する規程（案）に対する意見公募について",
+        "category": "電力",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-10-03",
+        "date_iso": "2026-10-03",
+        "summary": "AIの電源・電気料金・系統利用の前提に影響しうる案件。電力章の観測対象（自動判定）。",
+        "source": {
+          "name": "e-Govパブリック・コメント（原子力規制委員会）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=198026104&Mode=0"
+        }
+      }
+    ],
+    "成立・施行待ち": [],
+    "施行済み": [
+      {
+        "id": "ccs-jigyo-ho",
+        "title": "CCS事業法（二酸化炭素の貯留事業に関する法律）",
+        "category": "電力",
+        "stage": "施行済み",
+        "date_label": "2024年5月成立・2026年5月全面施行",
+        "date_iso": "2026-05-01",
+        "summary": "CO2貯留事業の許可制度を定める法律。AI時代の電力需要増（エネルギーアディション）に応える火力の脱炭素運転の前提インフラ。",
+        "source": {
+          "name": "資源エネルギー庁「構造的対応 論点整理案」（2026年7月・本文で施行時期を確認）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620226021&Mode=0"
+        }
+      },
+      {
+        "id": "ai-suishin-ho",
+        "title": "AI推進法（人工知能関連技術の研究開発及び活用の推進に関する法律）",
+        "category": "AI",
+        "stage": "施行済み",
+        "date_label": "2025年5月成立・同年6月公布",
+        "date_iso": "2025-06-01",
+        "summary": "日本初の包括的AI法。罰則を持たない振興・調査型で、政府にAI基本計画の策定とAI戦略本部の設置を求める。",
+        "source": {
+          "name": "内閣府（AI政策）",
+          "url": "https://www8.cao.go.jp/cstp/ai/index.html"
+        }
+      },
+      {
+        "id": "copyright-30-4",
+        "title": "著作権法30条の4（情報解析のための利用＝AI学習を原則適法とする規定）",
+        "category": "データ",
+        "stage": "施行済み",
+        "date_label": "2019年1月1日施行",
+        "date_iso": "2019-01-01",
+        "summary": "情報解析（AI学習を含む）目的の著作物利用を原則適法とする規定。日本のAI学習環境の土台。運用の考え方は文化庁が継続的に整理中。",
+        "source": {
+          "name": "e-Gov法令検索（著作権法）",
+          "url": "https://laws.e-gov.go.jp/law/345AC0000000048"
+        }
+      }
+    ]
+  },
+  "pubcomment_watch": {
+    "api": "/jp/api/pubcomment.json",
+    "path": "/jp/houkisei/pubcomment/",
+    "matched_open_cases": 6
+  },
+  "can_say": [
+    "AI の生存条件に関わる法規制が、審議中／パブコメ中／成立・施行待ち／施行済みのどの段階にあるか（ライフサイクル台帳・一次ソースで確認した日付つき）",
+    "e-Gov パブリックコメントで意見提出期間が開いている該当案件の件数と締切（毎日自動観測）",
+    "意見提出期間が30日未満の案件数の月別集計（脆弱性③・定義 v1.0）"
+  ],
+  "cannot_say": [
+    "各制度の中身が AI にとって振興型か規律型か（件数と段階だけを数え、内容の評価はしない）",
+    "意見提出期間が短いことの当否（行政手続法40条1項に基づく短縮であり、違法・不当を意味しない。特定の府省への評価もしない）",
+    "法案が成立するか・いつ施行されるか（公表された日付だけを写し、見通しは書かない）"
+  ]
+}

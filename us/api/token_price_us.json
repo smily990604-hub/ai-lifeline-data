@@ -1,0 +1,186 @@
+{
+  "country": "US",
+  "generated": "2026-09-04 18:01",
+  "indicator": {
+    "id": "ai_self_03",
+    "chapter": "gpu",
+    "name": "推論トークン単価",
+    "unit": "原通貨 / 1,000,000トークン",
+    "definition_version": "1.0",
+    "definition_fixed_on": "2026-08-26",
+    "definition_doc": "docs/指標定義_AI自身03_推論トークン単価.md",
+    "cadence": "週次",
+    "price_basis": "割引・従量段階・バッチ・キャッシュ読み書き・時間帯割引・無償枠を含まない公表定価である",
+    "currency_rule": "原通貨のまま保存し、為替換算した値は系列に混ぜない。最安値も通貨ごとに出す",
+    "series_a": "同一モデル継続追跡単価（後継モデルへは乗り換えない。追跡対象が提供終了になったらその系列は終了する）",
+    "series_b": "確認できる範囲の最安値（台帳に載っている範囲の最小値であり、市場の最安値ではない）",
+    "not_means": "モデルの性能・コンテキスト長・レート上限・提供地域・SLAは単価に反映されていない。事業者間の優劣を示すものではない",
+    "legal_basis": "docs/調査報告_20260816.md §1-8-2（創作性のない数値・事実データは著作物ではない）の整理を適用。2026-08-26 発行人裁定。GPU章との一貫性を優先した措置であり §1-8-2 自体の追認ではなく、妥当性は別途再検証する"
+  },
+  "source": {
+    "registry": "ai-lifeline/scripts/token_price_registry.json",
+    "script": "ai-lifeline/scripts/fetch_token_prices.ps1",
+    "policy": "各社公式料金ページから価格数値のみを抽出・自社整形して掲載（文章・表・画像は複製しない）。取得は週1回以下・UA明示・robots.txt遵守",
+    "attribution": "Google の価格は同社開発者ドキュメント（Creative Commons Attribution 4.0 ライセンス）に基づく"
+  },
+  "excluded": [
+    {
+      "provider": "Microsoft（Azure OpenAI）",
+      "reason": "利用規約が『個人的・非商用利用に限る／複製・公開の禁止』を明示（2026-08-26 発行人裁定で除外）。加えて価格がJS描画のため静的HTMLから取得不能",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "xAI",
+      "reason": "規約を確認できず除外（該当する禁止条項の有無を確認できなかった）。本体サイト x.ai は Content-Signal で ai-input=no を宣言",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "DeepSeek",
+      "reason": "規約を確認できず除外（公開規約に該当条項を発見できなかった）",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "AWS（Amazon Bedrock）",
+      "reason": "現行世代の価格が静的HTMLに存在せず、JSで解決されるプレースホルダ（{priceOf!...}）のため機械取得不能。加えて他社モデルの再販が中心で、単価を独立した観測点として扱えない",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "Cohere",
+      "reason": "静的HTMLからモデル名と入力・出力単価の対応を確実に特定できず、抽出パターンを確定できなかった",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "Mistral AI",
+      "reason": "API単価がJS描画のため静的HTMLから取得不能（静的HTMLには購読プラン価格のみ）",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "Preferred Networks（PLaMo）",
+      "reason": "価格ページがSPA外殻のみで機械取得不能",
+      "checked": "2026-08-26"
+    },
+    {
+      "provider": "NTTコミュニケーションズ（tsuzumi）",
+      "reason": "当社UAに対して403。Bot保護は回避しない方針のため『確認できず』として除外",
+      "checked": "2026-08-26"
+    }
+  ],
+  "tracked": [
+    {
+      "id": "google_gemini_3_7_flash",
+      "provider": "Google",
+      "service": "Gemini API",
+      "model": "gemini-3.7-flash",
+      "currency": "USD",
+      "tax": "税抜",
+      "input_per_1m": 0.75,
+      "output_per_1m": 3.75,
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "history": [
+        {
+          "date": "2026-09-04",
+          "input_per_1m": 0.75,
+          "output_per_1m": 3.75
+        }
+      ]
+    },
+    {
+      "id": "anthropic_claude_sonnet_5",
+      "provider": "Anthropic",
+      "service": "Claude API",
+      "model": "Claude Sonnet 5",
+      "currency": "USD",
+      "tax": "税抜",
+      "input_per_1m": 2.0,
+      "output_per_1m": 10.0,
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "history": [
+        {
+          "date": "2026-09-04",
+          "input_per_1m": 2.0,
+          "output_per_1m": 10.0
+        }
+      ]
+    },
+    {
+      "id": "openai_gpt_5_6_terra",
+      "provider": "OpenAI",
+      "service": "OpenAI API",
+      "model": "gpt-5.6-terra",
+      "currency": "USD",
+      "tax": "税抜",
+      "input_per_1m": 2.0,
+      "output_per_1m": 12.0,
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "history": [
+        {
+          "date": "2026-09-04",
+          "input_per_1m": 2.0,
+          "output_per_1m": 12.0
+        }
+      ]
+    },
+    {
+      "id": "sakura_ai_engine_llmjp",
+      "provider": "さくらインターネット",
+      "service": "さくらのAI Engine",
+      "model": "llm-jp-3.1-8x13b-instruct4",
+      "currency": "JPY",
+      "tax": "税込",
+      "input_per_1m": 15.0,
+      "output_per_1m": 75.0,
+      "latest_date": "2026-09-04",
+      "latest_status": "ok",
+      "source_url": "https://ai.sakura.ad.jp/sakura-ai/ai-engine/",
+      "history": [
+        {
+          "date": "2026-09-04",
+          "input_per_1m": 15.0,
+          "output_per_1m": 75.0
+        }
+      ]
+    }
+  ],
+  "cheapest": [
+    {
+      "currency": "JPY",
+      "observed_date": "2026-09-04",
+      "candidates": 1,
+      "cheapest_input": {
+        "value": 15.0,
+        "provider": "さくらインターネット",
+        "model": "llm-jp-3.1-8x13b-instruct4",
+        "tax": "税込"
+      },
+      "cheapest_output": {
+        "value": 75.0,
+        "provider": "さくらインターネット",
+        "model": "llm-jp-3.1-8x13b-instruct4",
+        "tax": "税込"
+      }
+    },
+    {
+      "currency": "USD",
+      "observed_date": "2026-09-04",
+      "candidates": 6,
+      "cheapest_input": {
+        "value": 0.2,
+        "provider": "OpenAI",
+        "model": "gpt-5.6-luna",
+        "tax": "税抜"
+      },
+      "cheapest_output": {
+        "value": 1.2,
+        "provider": "OpenAI",
+        "model": "gpt-5.6-luna",
+        "tax": "税抜"
+      }
+    }
+  ]
+}

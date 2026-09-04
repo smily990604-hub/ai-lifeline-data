@@ -1,0 +1,261 @@
+{
+  "region": "us",
+  "generated": "2026-09-05 08:35",
+  "status": "observing",
+  "chapter": "Chapter 9 - Market participation",
+  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
+  "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
+  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
+  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
+  "series": {
+    "support_count": {
+      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+      "unit": "count",
+      "update_frequency": "daily",
+      "definition_note": "Daily snapshot of the count in data/support/count.json (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
+      "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
+      "source": {
+        "name": "AI Lifeline first-party observation",
+        "license": "First-party observation (this site's own records)",
+        "url": "https://ai-lifeline.org/us/support/"
+      },
+      "data_status": "live",
+      "daily": [
+        {
+          "date": "2026-09-03",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "final",
+          "fetched_at": "2026-09-04 08:46"
+        },
+        {
+          "date": "2026-09-04",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-09-04 18:01"
+        }
+      ]
+    },
+    "http402_attempts": {
+      "name": "HTTP 402 (payment required) responses attempted per day",
+      "unit": "count",
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment.",
+      "daily": []
+    },
+    "http402_success": {
+      "name": "Payments completed after an HTTP 402 response, per day",
+      "unit": "count",
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented)",
+      "daily": []
+    },
+    "payment_rails": {
+      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
+      "unit": "rails",
+      "reference": false,
+      "checked": "2026-09-04",
+      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
+      "unverified_rows": 6,
+      "source": {
+        "name": "AI Lifeline first-party ledger of official provider documentation",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation",
+        "url": "https://ai-lifeline.org/us/market/"
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stripe_mpp",
+          "label": "Stripe MPP (Machine Payments Protocol) - card payments via Shared Payment Tokens and stablecoin payments — not verified",
+          "note": "Stripe's agentic-commerce documentation lists 'accept machine payments' with the protocols MPP or x402 (page retrieved 2026-09-04). Country availability for US accounts was not stated on the retrieved page; not verified.",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stripe_agentic_commerce",
+          "label": "Stripe Agentic Commerce (Agentic Commerce Protocol / Universal Commerce Protocol - selling through agents) — not verified",
+          "note": "Documentation page exists; country availability not stated on the retrieved page; not verified.",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "x402",
+          "label": "x402 (open payment protocol over HTTP 402; x402 Foundation / Coinbase Developer Platform facilitator) — not verified",
+          "note": "Protocol and facilitator documentation exist; account/KYC prerequisites for a specific operator were not verified on the retrieved pages.",
+          "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "visa_intelligent_commerce",
+          "label": "Visa Intelligent Commerce (agent-specific payment tokens; developer platform) — not verified",
+          "note": "Same page; sandbox listed for N. America, production by contact; not verified as available to an arbitrary operator.",
+          "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "mastercard_agent_pay",
+          "label": "Mastercard Agent Pay (agentic payments program) — not verified",
+          "note": "Not retrieved (HTTP 403); not verified.",
+          "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stablecoin_receipt",
+          "label": "Stablecoin receipt (e.g. USDC) by this site as payee — not verified",
+          "note": "Circle developer documentation not retrieved on 2026-09-04 (HTTP 404 on the page tried); not verified. The GENIUS Act regime is not yet effective (see regime calendar).",
+          "source_url": "https://developers.circle.com/",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        }
+      ]
+    },
+    "regime_calendar": {
+      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
+      "unit": "stages",
+      "reference": false,
+      "checked": "2026-09-04",
+      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
+      "source": {
+        "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
+        "license": "Public domain (U.S. federal government work)",
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2025-07-18",
+          "kind": "enacted",
+          "label": "GENIUS Act enacted (Public Law 119-27, S. 1582, approved July 18, 2025)",
+          "note": "govinfo statute text: 'Approved July 18, 2025'",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-04-10",
+          "kind": "rulemaking",
+          "label": "FDIC proposed rule: GENIUS Act requirements and standards for FDIC-supervised permitted payment stablecoin issuers (FR doc 2026-06974; comments closed 2026-06-09)",
+          "note": "Federal Register API, full-text query \"GENIUS Act\"",
+          "source_url": "https://www.federalregister.gov/d/2026-06974",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-05-18",
+          "kind": "rulemaking",
+          "label": "NCUA proposed rule: implementing the GENIUS Act for the issuance of stablecoins (FR doc 2026-09915; comments closed 2026-07-17)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-09915",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-06-22",
+          "kind": "rulemaking",
+          "label": "FinCEN proposed rule: permitted payment stablecoin issuer customer identification program (FR doc 2026-12460; comments closed 2026-08-21)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-12460",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-06-24",
+          "kind": "rulemaking",
+          "label": "OCC proposed rule: permitted payment stablecoin issuer AML/CFT and sanctions (FR doc 2026-12692; comments closed 2026-07-24)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-12692",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-08-18",
+          "kind": "rulemaking",
+          "label": "Treasury proposed rule: GENIUS Act regulations on payment stablecoin issuance, offer, and sale (FR doc 2026-16796; comments close 2026-10-19)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-16796",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "",
+          "kind": "not_yet_scheduled",
+          "label": "Final regulations by the primary Federal payment stablecoin regulators",
+          "note": "No final rule found in the Federal Register as of 2026-09-04 (query \"GENIUS Act\", type Rule)",
+          "source_url": "https://www.federalregister.gov/documents/search?conditions%5Bterm%5D=%22GENIUS+Act%22",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "",
+          "kind": "not_yet_scheduled",
+          "label": "Effective date of the Act: the earlier of 18 months after enactment or 120 days after the primary Federal payment stablecoin regulators issue final regulations (statute text)",
+          "note": "govinfo statute text (effective date clause)",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        }
+      ]
+    },
+    "legal_status_ledger": {
+      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+      "unit": "entries",
+      "reference": true,
+      "checked": "2026-09-04",
+      "definition_note": "Sources are statutes and government documents only. State and dates only.",
+      "source": {
+        "name": "Statutes and government documents (URL on each row)",
+        "license": "per source",
+        "url": ""
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "current_law",
+          "label": "No federal statute confers legal personality or independent contractual capacity on an AI system; contracts formed through electronic agents are attributed to the person on whose behalf the agent acts under the Uniform Electronic Transactions Act (state law, section 14) and the federal E-SIGN Act (15 U.S.C. 7001 et seq.)",
+          "note": "State as of the statute texts; E-SIGN via govinfo (U.S. Code). UETA adoption varies by state (uniform act text via the Uniform Law Commission).",
+          "source_url": "https://www.govinfo.gov/app/collection/uscode",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2025-07-18",
+          "kind": "current_law",
+          "label": "GENIUS Act (Public Law 119-27): regulates payment stablecoin issuers; it does not address AI agents as contracting parties",
+          "note": "govinfo statute text retrieved 2026-09-04.",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        }
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "HTTP 402 attempts and successes (self-observation)",
+      "status": "candidate_unobserved",
+      "reason": "Endpoint not implemented (design pending approval)."
+    }
+  ],
+  "can_say": [
+    "The status in the United States of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
+    "The enactment, rulemaking and effective dates of the GENIUS Act (Public Law 119-27) as fixed in the statute text and the Federal Register.",
+    "How many times this site has actually received support (operator self-tests excluded; daily count)."
+  ],
+  "cannot_say": [
+    "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
+    "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
+    "How pending deliberations on the contractual capacity and liability of AI agents will end (statutes and government documents; state and dates only)."
+  ]
+}

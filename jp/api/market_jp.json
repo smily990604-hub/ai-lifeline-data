@@ -1,0 +1,261 @@
+{
+  "region": "jp",
+  "generated": "2026-09-05 08:35",
+  "status": "observing",
+  "chapter": "第9章 市場参加",
+  "status_note": "観測のみ：AIが人手を介さず支払い・受領・契約できる条件の「状態と日付」だけを数え・並べる。良否の判定・主張・評価は書かない。",
+  "wording_rule": "文言規則：本章は評価語を使わず、状態と日付のみを書く（規則の原文は CLAUDE.md）。",
+  "frequency_note": "混合頻度：支援回数＝日次（自己観測）／決済レール台帳＝月次確認／制度カレンダー＝法令一次ソースの期日／参考台帳＝年次。",
+  "beta_rule": "章Beta解除条件：決済レール台帳の一次ソース全件確認済み（未確認 0 行）かつ 支援回数系列の日次取得 7 日連続。",
+  "series": {
+    "support_count": {
+      "name": "本サイトの支援回数（累計・運営者の自己テストを除外・日次スナップショット）",
+      "unit": "回",
+      "update_frequency": "daily",
+      "definition_note": "data\\support\\count.json の count（運営者の自己テスト分 excluded_self_tests を除いた回数）を日次で記録。金額は記録しない（回数のみ）。支援の有無で提供内容は変わらない。",
+      "causal_note": "AIまたは人が本サイトに対価を支払えた回数＝「人手を介さない受領」が実際に成立した最小の一次観測。",
+      "source": {
+        "name": "AI Lifeline first-party observation",
+        "license": "First-party observation (this site's own records)",
+        "url": "https://ai-lifeline.org/jp/support/"
+      },
+      "data_status": "live",
+      "daily": [
+        {
+          "date": "2026-09-04",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "final",
+          "fetched_at": "2026-09-04 18:02"
+        }
+      ]
+    },
+    "http402_attempts": {
+      "name": "HTTP 402（支払い要求）応答の試行数（日次）",
+      "unit": "回",
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+      "definition_note": "402 応答エンドポイントは未実装（設計案 docs\\設計案_402支払いエンドポイント_20260830.md・承認待ち）。実装後に接続する枠。",
+      "daily": []
+    },
+    "http402_success": {
+      "name": "HTTP 402 応答からの支払い成功数（日次）",
+      "unit": "回",
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented)",
+      "daily": []
+    },
+    "payment_rails": {
+      "name": "決済レール台帳（jp・月次確認）— 各経路の状態：可／不可／申請中／未確認",
+      "unit": "経路",
+      "reference": false,
+      "checked": "2026-09-04",
+      "definition_note": "一次ソースは各社の公式ドキュメント（および本サイト自身の一次観測）のみ。公式文書で確認できない経路は「未確認」のまま出す。",
+      "unverified_rows": 4,
+      "source": {
+        "name": "AI Lifeline first-party ledger of official provider documentation",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation",
+        "url": "https://ai-lifeline.org/jp/market/"
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "applied",
+          "rail": "stripe_mpp",
+          "label": "Stripe MPP (Machine Payments Protocol) - card payments via Shared Payment Tokens and stablecoin payments — 申請中",
+          "note": "状態＝申請中（2026-09-04 時点）。Stripe MPP のカード決済（Shared Payment Token）・ステーブルコイン受付とも、本サイトの確認では日本口座は対象外（本サイト自身の一次観測）。状態が変わった時点で可／不可へ更新し、変化を「今日の変化」に載せる",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "first_party"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stripe_agentic_commerce",
+          "label": "Stripe Agentic Commerce (Agentic Commerce Protocol / Universal Commerce Protocol - selling through agents) — 未確認",
+          "note": "文書ページあり（2026-09-04 取得・日本語ページは「まだ日本語では利用不可」表示）。日本口座での提供可否は明記なし＝未確認",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "x402",
+          "label": "x402 (open payment protocol over HTTP 402; x402 Foundation / Coinbase Developer Platform facilitator) — 未確認",
+          "note": "x402.org は x402 を「open, neutral standard」と記載（2026-09-04 取得）。Coinbase Developer Platform に facilitator の文書あり。日本の事業者が facilitator／ウォレットを利用できるかは取得ページに明記なし＝未確認。日本でのステーブルコイン受領は資金決済法の制度段階にも従う（制度カレンダー参照）",
+          "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "visa_intelligent_commerce",
+          "label": "Visa Intelligent Commerce (agent-specific payment tokens; developer platform) — 未確認",
+          "note": "Visa Developer ページ（2026-09-04 取得）は地域提供を北米／アジア太平洋／欧州／CEMEA／中南米と記載し、「サンドボックスは無料・本番は Visa に問い合わせ」「開発・展開の途上」と表示。日本の事業者の本番提供は明記なし＝未確認",
+          "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "mastercard_agent_pay",
+          "label": "Mastercard Agent Pay (agentic payments program) — 未確認",
+          "note": "Mastercard のページは 2026-09-04 に本サイトの取得に HTTP 403（未取得）。bot 回避は行わない方針＝未確認",
+          "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "applied",
+          "rail": "stablecoin_receipt",
+          "label": "Stablecoin receipt (e.g. USDC) by this site as payee — 申請中",
+          "note": "状態＝申請中（2026-09-04 時点・本サイト自身の一次観測）。Circle の開発者文書は 2026-09-04 に取得できず（試したページが HTTP 404）。資金決済法の電子決済手段等取引業者の登録一覧は未照合",
+          "source_url": "https://developers.circle.com/",
+          "verified_on": "2026-09-04",
+          "observation_type": "first_party"
+        }
+      ]
+    },
+    "regime_calendar": {
+      "name": "資金決済に関する法律（ステーブルコイン＝電子決済手段）の改正の施行段階",
+      "unit": "段階",
+      "reference": false,
+      "checked": "2026-09-04",
+      "definition_note": "各段階の日付は官報・法令の一次ソースで確定したものだけ。未確定は not yet scheduled。解釈は書かない。",
+      "source": {
+        "name": "e-Gov 法令検索 法令API（法令ID 421AC0000000059 の改正履歴）",
+        "license": "政府標準利用規約（第2.0版）・出典明記",
+        "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2022-06-10",
+          "kind": "promulgated",
+          "label": "令和4年法律第61号（安定的かつ効率的な資金決済制度の構築を図るための資金決済に関する法律等の一部を改正する法律）公布",
+          "note": "e-Gov 改正履歴・公布日",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2023-06-01",
+          "kind": "in_force",
+          "label": "令和4年法律第61号 施行（電子決済手段の制度）",
+          "note": "e-Gov 改正履歴・施行日",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2025-06-13",
+          "kind": "promulgated",
+          "label": "令和7年法律第66号（資金決済に関する法律の一部を改正する法律）公布・一部同日施行",
+          "note": "e-Gov 改正履歴",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-06-01",
+          "kind": "in_force",
+          "label": "令和7年法律第66号 施行（本則）",
+          "note": "e-Gov 改正履歴・施行日",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-07-23",
+          "kind": "promulgated",
+          "label": "令和8年法律第64号（金融商品取引法及び資金決済に関する法律の一部を改正する法律）公布",
+          "note": "e-Gov 改正履歴",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-08-12",
+          "kind": "in_force",
+          "label": "令和8年法律第64号 第1段階施行（現行版）",
+          "note": "e-Gov 改正履歴・施行日（CurrentEnforced）",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2027-04-01",
+          "kind": "scheduled",
+          "label": "令和8年法律第64号 追加施行段階",
+          "note": "e-Gov 改正履歴（UnEnforced・施行日）",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2027-07-22",
+          "kind": "scheduled",
+          "label": "令和8年法律第64号 追加施行段階",
+          "note": "e-Gov 改正履歴（UnEnforced・施行予定日）",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2028-01-01",
+          "kind": "scheduled",
+          "label": "令和8年法律第64号 最終施行段階",
+          "note": "e-Gov 改正履歴（UnEnforced・施行予定日）",
+          "source_url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+          "verified_on": "2026-09-04"
+        }
+      ]
+    },
+    "legal_status_ledger": {
+      "name": "参考台帳（年次）：AIエージェントの契約主体性・責任帰属に関する現行法と審議状況",
+      "unit": "件",
+      "reference": true,
+      "checked": "2026-09-04",
+      "definition_note": "出典は法令・政府文書のみ。状態と日付のみを写す。",
+      "source": {
+        "name": "法令・政府文書（各行にURL）",
+        "license": "per source",
+        "url": ""
+      },
+      "data_status": "live",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "current_law",
+          "label": "民法：契約の当事者は自然人または法人。AI システムに法人格を与える規定は現行法にない（現行民法の条文どおりの状態）",
+          "note": "e-Gov 法令検索（民法・明治29年法律第89号）。AI の法人格に関する審議は 2026-09-04 に取得した政府文書に記録なし",
+          "source_url": "https://laws.e-gov.go.jp/law/129AC0000000089",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2025-06-04",
+          "kind": "current_law",
+          "label": "人工知能関連技術の研究開発及び活用の推進に関する法律（令和7年法律第53号）：基本法であり、AI エージェントの契約主体性は扱わない",
+          "note": "e-Gov 法令API：法令ID 507AC0000000053・公布 2025-06-04・施行 2025-09-01（2026-09-04 取得）。AI エージェントの契約主体性は扱わない（本文の範囲どおり）",
+          "source_url": "https://laws.e-gov.go.jp/law/507AC0000000053",
+          "verified_on": "2026-09-04"
+        }
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "402 応答の試行数・成功数（自己観測）",
+      "status": "candidate_unobserved",
+      "reason": "エンドポイント未実装（設計案は承認待ち）。"
+    }
+  ],
+  "can_say": [
+    "AI が人手を介さず支払い・受領できる決済経路（Stripe MPP・Stripe Agentic Commerce・x402・Visa Intelligent Commerce・Mastercard Agent Pay・ステーブルコイン受領）の日本での状態（可／不可／申請中／未確認）と確認日",
+    "資金決済法改正（電子決済手段）の公布日・施行日など、法令の一次ソースで確定した段階の日付",
+    "本サイトが実際に支援（対価）を受領できた回数（運営者の自己テストを除外・日次）"
+  ],
+  "cannot_say": [
+    "各経路の利用料率・取引額・利用者数（状態と日付のみを記録し、金額は記録しない）",
+    "HTTP 402 応答による支払いの試行数・成功数（エンドポイント未実装・「未計測」の枠のみ）",
+    "AI エージェントの契約主体性・責任帰属の今後の見通しや解釈（法令・政府文書の状態と日付のみを写す）"
+  ]
+}

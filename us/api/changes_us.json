@@ -1,0 +1,315 @@
+{
+  "region": "US",
+  "generated": "2026-09-04",
+  "observation": "Today's changes - day-over-day differences in this edition's own observations (no external news). A day with no change is recorded as no_change.",
+  "ledger_policy": "The ledger (ledger.jsonl) is append-only. A re-run on the same day never deletes earlier rows; it appends a new revision, and the display uses only the latest revision of each day.",
+  "kinds": {
+    "routine": "the same series advanced by one observation (folded on the page into one line per day)",
+    "new_series": "a series appeared for the first time",
+    "revision": "a value for an already-observed date changed (e.g. provisional replaced by final with a different number)",
+    "observation_start": "the changes ledger started for this edition",
+    "observation_stop": "a series that had values is no longer measured",
+    "no_change": "nothing moved since the previous run (also an observation)",
+    "correction": "a same-day re-run produced a different set of items; earlier rows are kept"
+  },
+  "revisions": {
+    "2026-09-03": 2,
+    "2026-09-04": 2
+  },
+  "corrections": [
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "correction",
+      "chapter": "",
+      "series": "",
+      "label": "Re-run on the same day produced revision 2",
+      "detail": "Revision 1 (20 items) is kept in the ledger; the page shows revision 2 (11 items)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "correction",
+      "chapter": "",
+      "series": "",
+      "label": "Re-run on the same day produced revision 2",
+      "detail": "Revision 1 (1 items) is kept in the ledger; the page shows revision 2 (5 items)"
+    }
+  ],
+  "today": [
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "US Lower 48 electricity demand (daily total): 14,805,804 MWh (2026-09-03)",
+      "detail": "Previous 14,716,242 MWh (2026-09-02) (+89562 vs 2026-09-02) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "observation_stop",
+      "chapter": "power",
+      "series": "power.us48_netgen_mwh",
+      "label": "Not measured today: US Lower 48 net generation (daily total)",
+      "detail": "Previous value 14,516,151 MWh (observed 2026-09-02). Missing means not measured, not zero / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Revised: Open federal comment periods (Federal Register, query \"artificial intelligence\") for 2026-09-04",
+      "detail": "16 documents (final) -> 18 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Revised: Matching documents published in the last 30 days for 2026-09-04",
+      "detail": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-04 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-04 08:47) (0 vs 2026-09-04 08:47) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 12 (2026-09-02)",
+      "detail": "Previous 12 (2026-09-01) (0 vs 2026-09-01) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "detail": "178 (final) -> 181 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 5 (2026-09-03)",
+      "detail": "Previous 2 (2026-09-02) (+3 vs 2026-09-02) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 3 (2026-09-03)",
+      "detail": "Previous 3 (2026-09-02) (0 vs 2026-09-02) / final / Source: NOAA National Hurricane Center"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 61 (2026-09-03)",
+      "detail": "Previous 54 (2026-09-02) (+7 vs 2026-09-02) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-04)",
+      "detail": "Previous 0 count (2026-09-03) (0 vs 2026-09-03) / provisional / Source: AI Lifeline first-party observation"
+    }
+  ],
+  "recent": [
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "US Lower 48 electricity demand (daily total): 14,805,804 MWh (2026-09-03)",
+      "detail": "Previous 14,716,242 MWh (2026-09-02) (+89562 vs 2026-09-02) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "observation_stop",
+      "chapter": "power",
+      "series": "power.us48_netgen_mwh",
+      "label": "Not measured today: US Lower 48 net generation (daily total)",
+      "detail": "Previous value 14,516,151 MWh (observed 2026-09-02). Missing means not measured, not zero / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Revised: Open federal comment periods (Federal Register, query \"artificial intelligence\") for 2026-09-04",
+      "detail": "16 documents (final) -> 18 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Revised: Matching documents published in the last 30 days for 2026-09-04",
+      "detail": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-04 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-04 08:47) (0 vs 2026-09-04 08:47) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 12 (2026-09-02)",
+      "detail": "Previous 12 (2026-09-01) (0 vs 2026-09-01) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "detail": "178 (final) -> 181 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 5 (2026-09-03)",
+      "detail": "Previous 2 (2026-09-02) (+3 vs 2026-09-02) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 3 (2026-09-03)",
+      "detail": "Previous 3 (2026-09-02) (0 vs 2026-09-02) / final / Source: NOAA National Hurricane Center"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 61 (2026-09-03)",
+      "detail": "Previous 54 (2026-09-02) (+7 vs 2026-09-02) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-09-04",
+      "revision": 2,
+      "recorded_at": "2026-09-04 18:01:30",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-04)",
+      "detail": "Previous 0 count (2026-09-03) (0 vs 2026-09-03) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "revision",
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "Revised: US Lower 48 electricity demand (daily total) for 2026-09-02",
+      "detail": "14,716,244 MWh (provisional) -> 14,716,231 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "revision",
+      "chapter": "power",
+      "series": "power.us48_netgen_mwh",
+      "label": "Revised: US Lower 48 net generation (daily total) for 2026-09-02",
+      "detail": "14,522,929 MWh (provisional) -> 14,521,264 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "new_series",
+      "chapter": "water",
+      "series": "water.drought_area_d1_plus",
+      "label": "New series: CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)",
+      "detail": "First value 59.05 % (observed 2026-09-01; final) / Source: U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "new_series",
+      "chapter": "water",
+      "series": "water.drought_area_d1_plus_us_total",
+      "label": "New series: U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)",
+      "detail": "First value 49.51 % (observed 2026-09-01; final) / Source: U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)"
+    },
+    {
+      "date": "2026-09-03",
+      "revision": 2,
+      "recorded_at": "2026-09-03 21:53:29",
+      "kind": "new_series",
+      "chapter": "water",
+      "series": "water.water_disclosure",
+      "label": "New series: Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
+      "detail": "First value 4 companies (observed 2026-09-03; final) / Source: AI Lifeline first-party observation of official sustainability pages"
+    }
+  ]
+}

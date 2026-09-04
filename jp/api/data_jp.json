@@ -1,0 +1,614 @@
+{
+  "country": "JP",
+  "generated": "2026-09-01",
+  "update_cycle": "monthly",
+  "robots_watch": {
+    "method": "国内主要サイトのrobots.txtを巡回し、AIボット別にDisallow: /（全面拒否）・部分制限・許可を判定",
+    "panel_size": 26,
+    "panel_ok": 25,
+    "bots": {
+      "GPTBot": {
+        "block": 10,
+        "partial": 14,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "ClaudeBot": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "Google-Extended": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "CCBot": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "PerplexityBot": {
+        "block": 8,
+        "partial": 16,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "Bytespider": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "meta-externalagent": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      },
+      "Applebot-Extended": {
+        "block": 9,
+        "partial": 15,
+        "allow": 1,
+        "panel_ok": 25,
+        "panel_size": 26
+      }
+    },
+    "sites": [
+      {
+        "id": "asahi",
+        "name": "朝日新聞デジタル",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "yomiuri",
+        "name": "読売新聞オンライン",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "mainichi",
+        "name": "毎日新聞",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "nikkei",
+        "name": "日本経済新聞",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "sankei",
+        "name": "産経ニュース",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "nhk",
+        "name": "NHK",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "jiji",
+        "name": "時事ドットコム",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "kyodo",
+        "name": "共同通信",
+        "category": "報道",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "bunshun",
+        "name": "文春オンライン",
+        "category": "出版・雑誌",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "toyokeizai",
+        "name": "東洋経済オンライン",
+        "category": "出版・雑誌",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "diamond",
+        "name": "ダイヤモンド・オンライン",
+        "category": "出版・雑誌",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "allow",
+          "Google-Extended": "allow",
+          "ClaudeBot": "allow",
+          "meta-externalagent": "allow",
+          "GPTBot": "allow",
+          "Bytespider": "allow",
+          "Applebot-Extended": "allow",
+          "CCBot": "allow"
+        }
+      },
+      {
+        "id": "president",
+        "name": "プレジデントオンライン",
+        "category": "出版・雑誌",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "note",
+        "name": "note",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "qiita",
+        "name": "Qiita",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "zenn",
+        "name": "Zenn",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "block",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "hatena",
+        "name": "はてなブログ",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "ameblo",
+        "name": "アメーバブログ",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "cookpad",
+        "name": "クックパッド",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "block",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "block",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "pixiv",
+        "name": "pixiv",
+        "category": "プラットフォーム",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "block",
+          "ClaudeBot": "block",
+          "meta-externalagent": "block",
+          "GPTBot": "block",
+          "Bytespider": "partial",
+          "Applebot-Extended": "block",
+          "CCBot": "block"
+        }
+      },
+      {
+        "id": "jawiki",
+        "name": "Wikipedia日本語版",
+        "category": "知識",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "kotobank",
+        "name": "コトバンク",
+        "category": "知識",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "block",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "rakuten",
+        "name": "楽天市場",
+        "category": "EC",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "mercari",
+        "name": "メルカリ",
+        "category": "EC",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "digital",
+        "name": "デジタル庁",
+        "category": "行政",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      },
+      {
+        "id": "kantei",
+        "name": "首相官邸",
+        "category": "行政",
+        "fetched": false,
+        "fetch_status": "http_404",
+        "http_status": 404,
+        "fail_detail": "status_404",
+        "robots_valid": false,
+        "bots": {}
+      },
+      {
+        "id": "egov",
+        "name": "e-Gov",
+        "category": "行政",
+        "fetched": true,
+        "fetch_status": "ok",
+        "http_status": 200,
+        "fail_detail": null,
+        "robots_valid": true,
+        "bots": {
+          "PerplexityBot": "partial",
+          "Google-Extended": "partial",
+          "ClaudeBot": "partial",
+          "meta-externalagent": "partial",
+          "GPTBot": "partial",
+          "Bytespider": "partial",
+          "Applebot-Extended": "partial",
+          "CCBot": "partial"
+        }
+      }
+    ],
+    "panel_note": "本パネルは当社が選定した名簿であり、網羅的な母集団ではない。日本語ウェブ全体でも、報道機関の全数でもない。外部が作成した公開名簿を採用したものではなく、当社が国内主要サイトとして選んだ26件である。比率は「このパネルの中での比率」としてのみ読むこと",
+    "note": "robots.txtは機械向けに公開されたファイル。判定は取得日時点のスナップショット。母集団はパネル26サイトで、うち解析に成功した25サイトが各ボット判定の分母（panel_ok）"
+  },
+  "crawl_refusal": {
+    "panel_set": "core",
+    "panel_size": 26,
+    "ok": 25,
+    "refused": 0,
+    "by_reason": {
+      "http_403": 0,
+      "bot_protect": 0,
+      "timeout": 0,
+      "dns": 0,
+      "http_404": 1,
+      "other": 0
+    },
+    "robots_invalid": 0
+  },
+  "opendata": {
+    "label": "e-Govデータポータル データセット総数",
+    "count": 18141,
+    "source": "e-Govデータポータル CKAN API（公共データ利用規約PDL1.0）",
+    "url": "https://data.e-gov.go.jp/"
+  },
+  "can_say": [
+    "国内主要サイト（定点パネル）の robots.txt で、主要 AI クローラー別に全面拒否しているサイト数（脆弱性②・月次巡回・定義 v1.0）",
+    "同パネルへの巡回で 403 応答や Bot 保護により取得を拒否された割合（AI自身②・巡回拒否率）",
+    "e-Gov データポータルに登録されている公共データセットの総数（参考値・CKAN API）"
+  ],
+  "cannot_say": [
+    "各サイトが AI クローラーを拒否する理由や意図（robots.txt は各サイトの意思表示であり、理由は記載されない）",
+    "robots.txt の記述が実際に守られているか、AI 事業者が実際に何を学習しているか",
+    "拒否件数の多寡が「良い・悪い」に当たるか（脆弱性②の定義書は数え方だけを固定し、良否の規則を定めていない）"
+  ]
+}

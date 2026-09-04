@@ -1,0 +1,1580 @@
+{
+  "_note": "AI Lifeline - liveness of the whitepaper itself (added 2026-09-03). For every published series in every edition: last confirmed observation date, update frequency, next expected update, stale (past the expected date by more than the threshold), and the status of the last fetch. Regenerated after each edition daily batch; on failure the previous file is kept. Nothing here judges the observed world - only whether this site is keeping up.",
+  "generated_at": "2026-09-04 20:00",
+  "timezone": "JST (UTC+9); region_today is each edition local date used for age",
+  "site_status": "ok",
+  "site_status_rule": "ok = no stale series and no failed last fetch among judged series; degraded otherwise. Series without a stale judgement (annual/irregular such as manually updated ones), not-yet-measured series and not-connected sources never make the site degraded (their status is still shown).",
+  "stale_rule": "stale = age_days > stale_threshold_days, where the threshold is 2 x the update frequency: daily 2, business-day series 4 (covers a weekend), weekly 14, monthly 62, monthly_lagged 92 (monthly statistics published with a lag of about 6-7 weeks, e.g. Eurostat STS; added 2026-09-04), quarterly 184 (added 2026-09-04); annual and irregular series are not judged (v1.0 initial values, docs/指標定義_サイト生存状態_health.md).",
+  "definition": {
+    "doc": "docs/指標定義_サイト生存状態_health.md",
+    "version": "1.0",
+    "fixed_on": "2026-09-03"
+  },
+  "totals": {
+    "series": 84,
+    "stale": 0,
+    "not_measured": 8,
+    "fetch_failed": 0,
+    "not_connected": 1
+  },
+  "regions": {
+    "us": {
+      "name": "United States",
+      "base_path": "/us/",
+      "status": "live",
+      "edition_beta": {
+        "active": false,
+        "active_from": "2026-08-29",
+        "removed_on": "2026-09-02"
+      },
+      "summary_generated": "2026-09-04 18:01",
+      "last_batch": {
+        "status": "success",
+        "at": "2026-09-04 18:03:31",
+        "log": "run_us_20260904.log",
+        "published": true,
+        "note": ""
+      },
+      "region_today": "2026-09-04",
+      "chapters": {
+        "power": {
+          "status": "observing",
+          "path": "/us/power/",
+          "chapter_beta": null,
+          "series": {
+            "us48_demand_mwh": {
+              "name": "US Lower 48 electricity demand (daily total)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:17",
+              "last_fetch_note": null,
+              "source_id": "eia930_daily",
+              "api": "/us/api/power_us.json"
+            },
+            "us48_netgen_mwh": {
+              "name": "US Lower 48 net generation (daily total)",
+              "last_confirmed": null,
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": null,
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:17",
+              "last_fetch_note": null,
+              "source_id": "eia930_daily",
+              "api": "/us/api/power_us.json"
+            }
+          }
+        },
+        "regulation": {
+          "status": "observing",
+          "path": "/us/regulation/",
+          "chapter_beta": null,
+          "series": {
+            "open_comment_periods": {
+              "name": "Open federal comment periods (Federal Register, query \"artificial intelligence\")",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:20",
+              "last_fetch_note": null,
+              "source_id": "federal_register_ai",
+              "api": "/us/api/regulation_us.json"
+            },
+            "closing_within_14_days": {
+              "name": "Comment periods closing within 14 days",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:20",
+              "last_fetch_note": null,
+              "source_id": "federal_register_ai",
+              "api": "/us/api/regulation_us.json"
+            },
+            "documents_last_30_days": {
+              "name": "Matching documents published in the last 30 days",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:20",
+              "last_fetch_note": null,
+              "source_id": "federal_register_ai",
+              "api": "/us/api/regulation_us.json"
+            }
+          }
+        },
+        "water": {
+          "status": "observing",
+          "path": "/us/water/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-03",
+            "removed_on": null
+          },
+          "series": {
+            "drought_area_d1_plus": {
+              "name": "CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "weekly",
+              "next_expected": "2026-09-08",
+              "age_days": 3,
+              "stale_threshold_days": 14,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:04",
+              "last_fetch_note": null,
+              "source_id": "usdm_weekly",
+              "api": "/us/api/water_us.json"
+            },
+            "drought_area_d1_plus_us_total": {
+              "name": "U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "weekly",
+              "next_expected": "2026-09-08",
+              "age_days": 3,
+              "stale_threshold_days": 14,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:04",
+              "last_fetch_note": null,
+              "source_id": "usdm_weekly",
+              "api": "/us/api/water_us.json"
+            },
+            "water_disclosure": {
+              "name": "Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 1,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:04",
+              "last_fetch_note": null,
+              "source_id": "water_disclosure_us",
+              "api": "/us/api/water_us.json"
+            },
+            "usgs_water_use_ledger": {
+              "name": "USGS - Estimated use of water in the United States (5-year compilation) - national figures as published (ledger)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:20",
+              "last_fetch_note": null,
+              "source_id": "usgs_water_use_ledger",
+              "api": "/us/api/water_us.json"
+            }
+          }
+        },
+        "gpu": {
+          "status": "observing",
+          "path": "/us/gpu/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "bis_advanced_computing_monthly": {
+              "name": "Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\", per month of publication",
+              "last_confirmed": "2026-09",
+              "value_status": "provisional",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": -26,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:05",
+              "last_fetch_note": null,
+              "source_id": "federal_register_bis_advanced_computing",
+              "api": "/us/api/gpu_us.json"
+            },
+            "bis_advanced_computing_recent": {
+              "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:05",
+              "last_fetch_note": null,
+              "source_id": "federal_register_bis_advanced_computing",
+              "api": "/us/api/gpu_us.json"
+            },
+            "h100_ondemand_price_weekly": {
+              "name": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "weekly",
+              "next_expected": "2026-09-10",
+              "age_days": 1,
+              "stale_threshold_days": 14,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:05",
+              "last_fetch_note": null,
+              "source_id": "lambda_h100_price",
+              "api": "/us/api/gpu_us.json"
+            },
+            "token_prices_tracked": {
+              "name": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background)",
+              "last_confirmed": "2026-09-04 18:01",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/us/api/gpu_us.json"
+            },
+            "cloud_capex_quarterly": {
+              "name": "Capital expenditure reported in SEC filings by 4 major cloud operators, sum per calendar quarter (million USD; payments to acquire PP&E / productive assets as tagged by each filer)",
+              "last_confirmed": "2026-Q2",
+              "value_status": "provisional",
+              "update_frequency": "quarterly",
+              "next_expected": "2026-Q3",
+              "age_days": 66,
+              "stale_threshold_days": 184,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:20",
+              "last_fetch_note": null,
+              "source_id": "sec_capex_frames",
+              "api": "/us/api/gpu_us.json"
+            },
+            "doe_lbnl_energy_ledger": {
+              "name": "DOE / LBNL 2024 United States Data Center Energy Usage Report - figures as quoted by DOE (ledger)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:20",
+              "last_fetch_note": null,
+              "source_id": "doe_lbnl_energy_ledger",
+              "api": "/us/api/gpu_us.json"
+            }
+          }
+        },
+        "datacenter": {
+          "status": "observing",
+          "path": "/us/datacenter/",
+          "chapter_beta": null,
+          "series": {
+            "construction_spend": {
+              "name": "Private data-center construction spending (monthly, millions of USD, not seasonally adjusted)",
+              "last_confirmed": "2026-07",
+              "value_status": "provisional",
+              "update_frequency": "monthly",
+              "next_expected": "2026-08",
+              "age_days": 35,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:22",
+              "last_fetch_note": null,
+              "source_id": "census_vip_datacenter",
+              "api": "/us/api/datacenter_us.json"
+            },
+            "transformer_backlog_proxy": {
+              "name": "Unfilled orders, Electrical Equipment Manufacturing (M3, monthly, millions of USD, seasonally adjusted) — a lead-time proxy, not a lead time",
+              "last_confirmed": "2026-07",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-08",
+              "age_days": 35,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:36",
+              "last_fetch_note": null,
+              "source_id": "census_m3_electrical_backlog",
+              "api": "/us/api/datacenter_us.json"
+            },
+            "cooling_degree_days": {
+              "name": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F)",
+              "last_confirmed": "2026-09-02",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-03",
+              "age_days": 2,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:39",
+              "last_fetch_note": null,
+              "source_id": "cpc_cdd_daily",
+              "api": "/us/api/datacenter_us.json"
+            }
+          }
+        },
+        "fiscal": {
+          "status": "observing",
+          "path": "/us/fiscal/",
+          "chapter_beta": {
+            "active": false,
+            "active_from": "2026-08-30",
+            "removed_on": "2026-09-03"
+          },
+          "series": {
+            "treasury_yield": {
+              "name": "Daily Treasury Par Yield Curve (%, headline 10Y)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "business_daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 4,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:57",
+              "last_fetch_note": null,
+              "source_id": "treasury_yield_daily",
+              "api": "/us/api/fiscal_us.json"
+            },
+            "tga_balance": {
+              "name": "Treasury General Account opening balance (millions of USD, daily)",
+              "last_confirmed": "2026-09-02",
+              "value_status": "final",
+              "update_frequency": "business_daily",
+              "next_expected": "2026-09-03",
+              "age_days": 2,
+              "stale_threshold_days": 4,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:58",
+              "last_fetch_note": null,
+              "source_id": "dts_tga",
+              "api": "/us/api/fiscal_us.json"
+            },
+            "ai_grants_open": {
+              "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
+              "last_confirmed": "2026-09",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": -26,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:00:59",
+              "last_fetch_note": null,
+              "source_id": "grantsgov_ai_count",
+              "api": "/us/api/fiscal_us.json"
+            }
+          }
+        },
+        "disaster": {
+          "status": "observing",
+          "path": "/us/disaster/",
+          "chapter_beta": {
+            "active": false,
+            "active_from": "2026-08-30",
+            "removed_on": "2026-09-03"
+          },
+          "series": {
+            "earthquake": {
+              "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:02",
+              "last_fetch_note": null,
+              "source_id": "usgs_quakes_m5",
+              "api": "/us/api/disaster_us.json"
+            },
+            "hurricane": {
+              "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:02",
+              "last_fetch_note": null,
+              "source_id": "nhc_active_storms",
+              "api": "/us/api/disaster_us.json"
+            },
+            "extreme_heat": {
+              "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:03",
+              "last_fetch_note": null,
+              "source_id": "nws_heat_alerts",
+              "api": "/us/api/disaster_us.json"
+            }
+          }
+        },
+        "market": {
+          "status": "observing",
+          "path": "/us/market/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "support_count": {
+              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:04",
+              "last_fetch_note": null,
+              "source_id": "support_count_daily",
+              "api": "/us/api/market_us.json"
+            },
+            "http402_attempts": {
+              "name": "HTTP 402 (payment required) responses attempted per day",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/us/api/market_us.json"
+            },
+            "http402_success": {
+              "name": "Payments completed after an HTTP 402 response, per day",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/us/api/market_us.json"
+            },
+            "payment_rails": {
+              "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "failed",
+              "last_fetch_at": "2026-09-04 18:01:04",
+              "last_fetch_note": "fetch_failed_or_waiting_key",
+              "source_id": "market_rails_ledger",
+              "api": "/us/api/market_us.json"
+            },
+            "regime_calendar": {
+              "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/us/api/market_us.json"
+            },
+            "legal_status_ledger": {
+              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/us/api/market_us.json"
+            }
+          }
+        },
+        "ai_readers": {
+          "status": "observing",
+          "path": "/us/",
+          "chapter_beta": null,
+          "series": {
+            "week_verified": {
+              "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "Cloudflare access fetch runs in the Japan 11:00 batch (batch-level)",
+              "source_id": null,
+              "api": "/us/api/ai_readers_us.json"
+            }
+          }
+        }
+      }
+    },
+    "eu": {
+      "name": "European Union",
+      "base_path": "/eu/",
+      "status": "beta",
+      "edition_beta": {
+        "active": true,
+        "active_from": "2026-09-03",
+        "removed_on": null
+      },
+      "summary_generated": "2026-09-04 20:00",
+      "last_batch": {
+        "status": "success",
+        "at": "2026-09-04 07:50:13",
+        "log": "run_eu_20260904.log",
+        "published": true,
+        "note": ""
+      },
+      "region_today": "2026-09-04",
+      "chapters": {
+        "power": {
+          "status": "observing",
+          "path": "/eu/power/",
+          "chapter_beta": null,
+          "series": {
+            "eu27_load_forecast_mwh": {
+              "name": "EU27 day-ahead total load FORECAST (daily energy; not actual load)",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "daily",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": 2,
+              "stale": null,
+              "last_fetch_status": "not_connected",
+              "last_fetch_at": null,
+              "last_fetch_note": "source disabled in sources.json (not connected yet - e.g. awaiting data source authorization); not counted as a failure",
+              "source_id": "entsoe_load_forecast_daily",
+              "api": "/eu/api/power_eu.json"
+            }
+          }
+        },
+        "regulation": {
+          "status": "observing",
+          "path": "/eu/regulation/",
+          "chapter_beta": null,
+          "series": {
+            "acts_last_30_days": {
+              "name": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:06",
+              "last_fetch_note": null,
+              "source_id": "eurlex_ai_docs",
+              "api": "/eu/api/regulation_eu.json"
+            },
+            "acts_current_month": {
+              "name": "Same, current month (month in progress)",
+              "last_confirmed": "2026-09",
+              "value_status": "provisional",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": -26,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:06",
+              "last_fetch_note": null,
+              "source_id": "eurlex_ai_docs",
+              "api": "/eu/api/regulation_eu.json"
+            },
+            "ai_act_calendar_stages": {
+              "name": "AI Act staged application calendar (stages listed, OJ dates)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 1,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:06",
+              "last_fetch_note": null,
+              "source_id": "eurlex_ai_docs",
+              "api": "/eu/api/regulation_eu.json"
+            }
+          }
+        },
+        "datacenter": {
+          "status": "observing",
+          "path": "/eu/datacenter/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "cooling_degree_days": {
+              "name": "Cooling degree days, EU27 aggregate (Eurostat nrg_chdd_m, monthly)",
+              "last_confirmed": "2025-12",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 247,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:09",
+              "last_fetch_note": null,
+              "source_id": "eurostat_cdd_monthly",
+              "api": "/eu/api/datacenter_eu.json"
+            },
+            "electrical_equipment_production_index": {
+              "name": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly)",
+              "last_confirmed": "2026-06",
+              "value_status": "final",
+              "update_frequency": "monthly_lagged",
+              "next_expected": "2026-07",
+              "age_days": 66,
+              "stale_threshold_days": 92,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:11",
+              "last_fetch_note": null,
+              "source_id": "eurostat_sts_c271",
+              "api": "/eu/api/datacenter_eu.json"
+            },
+            "eed_reporting_ledger": {
+              "name": "EU data-centre energy reporting scheme (Energy Efficiency Directive) - ledger of legal basis, publications and deadlines",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:11",
+              "last_fetch_note": null,
+              "source_id": "eed_dc_reporting_ledger",
+              "api": "/eu/api/datacenter_eu.json"
+            }
+          }
+        },
+        "fiscal": {
+          "status": "observing",
+          "path": "/eu/fiscal/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "euro_area_yield_10y": {
+              "name": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "business_daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 4,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:16",
+              "last_fetch_note": null,
+              "source_id": "ecb_yc_10y",
+              "api": "/eu/api/fiscal_eu.json"
+            },
+            "gov_debt_pct_gdp": {
+              "name": "General government gross debt (Maastricht), EU27, % of GDP (Eurostat gov_10q_ggdebt, quarterly)",
+              "last_confirmed": "2026-Q1",
+              "value_status": "provisional",
+              "update_frequency": "quarterly",
+              "next_expected": "2026-Q2",
+              "age_days": 157,
+              "stale_threshold_days": 184,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:17",
+              "last_fetch_note": null,
+              "source_id": "eurostat_gov_debt_q",
+              "api": "/eu/api/fiscal_eu.json"
+            },
+            "gov_net_lending_pct_gdp": {
+              "name": "General government net lending (+) / net borrowing (-), EU27, % of GDP, not seasonally adjusted (Eurostat gov_10q_ggnfa, quarterly)",
+              "last_confirmed": "2026-Q1",
+              "value_status": "final",
+              "update_frequency": "quarterly",
+              "next_expected": "2026-Q2",
+              "age_days": 157,
+              "stale_threshold_days": 184,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:17",
+              "last_fetch_note": null,
+              "source_id": "eurostat_gov_deficit_q",
+              "api": "/eu/api/fiscal_eu.json"
+            }
+          }
+        },
+        "disaster": {
+          "status": "observing",
+          "path": "/eu/disaster/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "earthquake": {
+              "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:13",
+              "last_fetch_note": null,
+              "source_id": "usgs_quakes_m5_eu",
+              "api": "/eu/api/disaster_eu.json"
+            },
+            "wildfire_annual_ledger": {
+              "name": "Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:18",
+              "last_fetch_note": null,
+              "source_id": "effis_annual_ledger",
+              "api": "/eu/api/disaster_eu.json"
+            }
+          }
+        },
+        "market": {
+          "status": "observing",
+          "path": "/eu/market/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "support_count": {
+              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+              "last_confirmed": "2026-09-04",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 20:00:17",
+              "last_fetch_note": null,
+              "source_id": "support_count_daily",
+              "api": "/eu/api/market_eu.json"
+            },
+            "http402_attempts": {
+              "name": "HTTP 402 (payment required) responses attempted per day",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/eu/api/market_eu.json"
+            },
+            "http402_success": {
+              "name": "Payments completed after an HTTP 402 response, per day",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/eu/api/market_eu.json"
+            },
+            "payment_rails": {
+              "name": "Payment-rail ledger (EU; verified about monthly) - status per rail: available / not available / applied / not verified",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "failed",
+              "last_fetch_at": "2026-09-04 20:00:18",
+              "last_fetch_note": "fetch_failed_or_waiting_key",
+              "source_id": "market_rails_ledger",
+              "api": "/eu/api/market_eu.json"
+            },
+            "regime_calendar": {
+              "name": "Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) - entry into force and application stages",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/eu/api/market_eu.json"
+            },
+            "legal_status_ledger": {
+              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": null,
+              "last_fetch_at": null,
+              "last_fetch_note": null,
+              "source_id": null,
+              "api": "/eu/api/market_eu.json"
+            }
+          }
+        },
+        "ai_readers": {
+          "status": "observing",
+          "path": "/eu/",
+          "chapter_beta": null,
+          "series": {
+            "week_verified": {
+              "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
+              "last_confirmed": "2026-09-03",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "Cloudflare access fetch runs in the Japan 11:00 batch (batch-level)",
+              "source_id": null,
+              "api": "/eu/api/ai_readers_eu.json"
+            }
+          }
+        }
+      }
+    },
+    "jp": {
+      "name": "Japan",
+      "base_path": "/jp/",
+      "status": "live",
+      "edition_beta": null,
+      "summary_generated": "2026-09-04 11:01",
+      "last_batch": {
+        "status": "success",
+        "at": "2026-09-04 11:01:41",
+        "log": "run_20260904.log",
+        "published": false,
+        "note": "generated locally; not published (publish lock) - live files are refreshed by the next publish or by another edition batch sharing root files"
+      },
+      "region_today": "2026-09-04",
+      "chapters": {
+        "power": {
+          "status": "ok",
+          "path": "/jp/denryoku/",
+          "chapter_beta": null,
+          "series": {
+            "reserve_national_min": {
+              "name": "広域予備率（全国最小・確定最終日）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/power_jp.json"
+            },
+            "jepx_system_avg": {
+              "name": "JEPXスポット システムプライス平均",
+              "last_confirmed": "2026-09-05",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-06",
+              "age_days": -1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/power_jp.json"
+            },
+            "vulnerability_01_days_lt8": {
+              "name": "広域予備率が警戒水準を下回った日数",
+              "last_confirmed": "2026-09",
+              "value_status": "provisional",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": -26,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/vulnerability_jp.json"
+            }
+          }
+        },
+        "gpu": {
+          "status": "observing",
+          "path": "/jp/gpu/",
+          "chapter_beta": null,
+          "series": {
+            "sakura_vrt_h100": {
+              "name": "H100 時間単価（さくらインターネット 高火力 VRT）",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "weekly",
+              "next_expected": "2026-09-11",
+              "age_days": 0,
+              "stale_threshold_days": 14,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/gpu_jp.json"
+            },
+            "conoha_gpu_h100": {
+              "name": "H100 時間単価（GMOインターネット ConoHa GPUサーバー）",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "weekly",
+              "next_expected": "2026-09-11",
+              "age_days": 0,
+              "stale_threshold_days": 14,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/gpu_jp.json"
+            }
+          }
+        },
+        "water": {
+          "status": "observing",
+          "path": "/jp/mizu/",
+          "chapter_beta": null,
+          "series": {
+            "wue_disclosed": {
+              "name": "WUE数値まで開示（15社中）",
+              "last_confirmed": "2026-08-21",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-09",
+              "age_days": 14,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/water_jp.json"
+            },
+            "volume_disclosed": {
+              "name": "取水量・総量レベルの開示",
+              "last_confirmed": "2026-08-21",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-09",
+              "age_days": 14,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/water_jp.json"
+            }
+          }
+        },
+        "data": {
+          "status": "observing",
+          "path": "/jp/data/",
+          "chapter_beta": null,
+          "series": {
+            "block_all_GPTBot": {
+              "name": "GPTBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_ClaudeBot": {
+              "name": "ClaudeBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_Google-Extended": {
+              "name": "Google-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_CCBot": {
+              "name": "CCBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_PerplexityBot": {
+              "name": "PerplexityBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_Bytespider": {
+              "name": "Bytespider 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_meta-externalagent": {
+              "name": "meta-externalagent 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "block_all_Applebot-Extended": {
+              "name": "Applebot-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "opendata_count": {
+              "name": "e-Govデータポータル データセット総数",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/data_jp.json"
+            },
+            "vulnerability_02_block_all": {
+              "name": "主要AIクローラーを全面拒否しているサイト数",
+              "last_confirmed": "2026-09-01",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": 3,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/vulnerability_data_jp.json"
+            }
+          }
+        },
+        "regulation": {
+          "status": "observing",
+          "path": "/jp/houkisei/",
+          "chapter_beta": null,
+          "series": {
+            "open_consultations": {
+              "name": "AIの生存条件に関わる募集中パブコメ",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/pubcomment.json"
+            },
+            "vulnerability_03_under_30": {
+              "name": "意見提出期間が30日未満のパブコメ案件数",
+              "last_confirmed": "2026-09",
+              "value_status": "final",
+              "update_frequency": "monthly",
+              "next_expected": "2026-10",
+              "age_days": -26,
+              "stale_threshold_days": 62,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/vulnerability_regulation_jp.json"
+            }
+          }
+        },
+        "datacenter": {
+          "status": "observing",
+          "path": "/jp/datacenter/",
+          "chapter_beta": {
+            "active": false,
+            "active_from": "2026-08-30",
+            "removed_on": "2026-09-03"
+          },
+          "series": {
+            "cooling_degree_days": {
+              "name": "冷却度日（基準18.3℃=65°F・米国版CPCと同一基準・5地点平均：東京/大阪/名古屋/福岡/札幌）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:03",
+              "last_fetch_note": null,
+              "source_id": "jma_daily_temp",
+              "api": "/jp/api/datacenter_jp.json"
+            },
+            "transformer_production": {
+              "name": "変圧器の生産金額（経産省 生産動態統計・月次・百万円）— リードタイムの代理指標",
+              "last_confirmed": "2024-12",
+              "value_status": "final",
+              "update_frequency": "annual",
+              "next_expected": "2025",
+              "age_days": 612,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:00",
+              "last_fetch_note": null,
+              "source_id": "estat_transformer",
+              "api": "/jp/api/datacenter_jp.json"
+            },
+            "transformer_capacity_index": {
+              "name": "変圧器の生産能力指数（標準変圧器・2020年=100・月次）— 参考系列",
+              "last_confirmed": "2026-06",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 66,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "failed",
+              "last_fetch_at": "2026-09-04 18:02:00",
+              "last_fetch_note": "fetch_failed_or_waiting_key",
+              "source_id": "meti_transformer_capacity",
+              "api": "/jp/api/datacenter_jp.json"
+            }
+          }
+        },
+        "fiscal": {
+          "status": "observing",
+          "path": "/jp/fiscal/",
+          "chapter_beta": {
+            "active": false,
+            "active_from": "2026-08-30",
+            "removed_on": "2026-09-03"
+          },
+          "series": {
+            "jgb_yield": {
+              "name": "国債金利（半年複利・%）— 主表示は10年",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "business_daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 4,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:01:57",
+              "last_fetch_note": null,
+              "source_id": "mof_jgb_yield",
+              "api": "/jp/api/fiscal_jp.json"
+            }
+          }
+        },
+        "disaster": {
+          "status": "observing",
+          "path": "/jp/disaster/",
+          "chapter_beta": {
+            "active": false,
+            "active_from": "2026-08-30",
+            "removed_on": "2026-09-03"
+          },
+          "series": {
+            "earthquake": {
+              "name": "最大震度5弱以上の地震件数（日次・JST）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:16",
+              "last_fetch_note": null,
+              "source_id": "jma_feed_eqvol",
+              "api": "/jp/api/disaster_jp.json"
+            },
+            "typhoon": {
+              "name": "台風解析・予報情報が存在した日（1/0・日次）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:17",
+              "last_fetch_note": null,
+              "source_id": "jma_feed_extra",
+              "api": "/jp/api/disaster_jp.json"
+            },
+            "heavy_rain_flood": {
+              "name": "大雨特別警報・洪水警報を含む警報電文数（日次）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:17",
+              "last_fetch_note": null,
+              "source_id": "jma_feed_extra",
+              "api": "/jp/api/disaster_jp.json"
+            },
+            "extreme_heat": {
+              "name": "猛暑日（日最高気温35℃以上・気象庁定義）の地点数（対象5地点：東京・大阪・名古屋・福岡・札幌）",
+              "last_confirmed": "2026-09-03",
+              "value_status": "final",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:03",
+              "last_fetch_note": null,
+              "source_id": "jma_daily_temp",
+              "api": "/jp/api/disaster_jp.json"
+            }
+          }
+        },
+        "market": {
+          "status": "observing",
+          "path": "/jp/market/",
+          "chapter_beta": {
+            "active": true,
+            "active_from": "2026-09-04",
+            "removed_on": null
+          },
+          "series": {
+            "support_count": {
+              "name": "本サイトの支援回数（累計・運営者の自己テストを除外・日次スナップショット）",
+              "last_confirmed": "2026-09-04",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-05",
+              "age_days": 0,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 18:02:17",
+              "last_fetch_note": null,
+              "source_id": "support_count_daily",
+              "api": "/jp/api/market_jp.json"
+            },
+            "http402_attempts": {
+              "name": "HTTP 402（支払い要求）応答の試行数（日次）",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/market_jp.json"
+            },
+            "http402_success": {
+              "name": "HTTP 402 応答からの支払い成功数（日次）",
+              "last_confirmed": null,
+              "value_status": null,
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": null,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/market_jp.json"
+            },
+            "payment_rails": {
+              "name": "決済レール台帳（jp・月次確認）— 各経路の状態：可／不可／申請中／未確認",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "failed",
+              "last_fetch_at": "2026-09-04 18:02:17",
+              "last_fetch_note": "fetch_failed_or_waiting_key",
+              "source_id": "market_rails_ledger",
+              "api": "/jp/api/market_jp.json"
+            },
+            "regime_calendar": {
+              "name": "資金決済に関する法律（ステーブルコイン＝電子決済手段）の改正の施行段階",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/market_jp.json"
+            },
+            "legal_status_ledger": {
+              "name": "参考台帳（年次）：AIエージェントの契約主体性・責任帰属に関する現行法と審議状況",
+              "last_confirmed": "2026-09-04",
+              "value_status": "final",
+              "update_frequency": "irregular",
+              "next_expected": null,
+              "age_days": 0,
+              "stale_threshold_days": null,
+              "stale": null,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "batch-level (the legacy Japan pipeline keeps no per-source health ledger)",
+              "source_id": null,
+              "api": "/jp/api/market_jp.json"
+            }
+          }
+        },
+        "ai_readers": {
+          "status": "observing",
+          "path": "/jp/",
+          "chapter_beta": null,
+          "series": {
+            "week_verified": {
+              "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
+              "last_confirmed": "2026-09-03",
+              "value_status": "provisional",
+              "update_frequency": "daily",
+              "next_expected": "2026-09-04",
+              "age_days": 1,
+              "stale_threshold_days": 2,
+              "stale": false,
+              "last_fetch_status": "success",
+              "last_fetch_at": "2026-09-04 11:01:41",
+              "last_fetch_note": "Cloudflare access fetch runs in the Japan 11:00 batch (batch-level)",
+              "source_id": null,
+              "api": "/jp/api/ai_readers_jp.json"
+            }
+          }
+        }
+      }
+    }
+  },
+  "machine_readable": {
+    "world": "/api/world.json",
+    "site_index": "/index.json",
+    "llms_txt": "/llms.txt"
+  }
+}

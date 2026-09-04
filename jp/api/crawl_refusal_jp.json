@@ -1,0 +1,74 @@
+{
+  "country": "JP",
+  "generated": "2026-09-04 11:01",
+  "indicator": {
+    "id": "ai_self_02",
+    "chapter": "data",
+    "name": "巡回拒否率（403・Bot保護）",
+    "short_name": "巡回拒否率",
+    "unit": "サイト",
+    "definition_version": "1.0",
+    "definition_fixed_on": "2026-08-26",
+    "definition_doc": "docs/指標定義_AI自身02_巡回拒否率.md",
+    "series_start": "2026-09-01",
+    "aggregation": "暦月（JST）。その月の最終巡回時点で、robots.txt の取得が 403 または Bot保護（401/429/503・200のチャレンジ本文）で拒まれたサイト数。分母はパネル全件",
+    "numerator": "http_403 ＋ bot_protect のみ",
+    "excluded_from_numerator": "timeout・dns・other（一時的障害）／http_404（robots.txtが存在しない＝制限なし）",
+    "normal_state": "値が0で推移することが正常な状態である",
+    "not_means_1": "robots.txtによる拒否の意思表示とは別物である（robots.txtが読めたうえでのDisallowは脆弱性②が数える）",
+    "not_means_2": "一時的な障害を含むため、意図的な遮断を示すものではない",
+    "not_means_3": "当社のUA・IP・巡回タイミングに起因する失敗と、サイト側の方針による遮断を区別していない",
+    "retro_note": "2026-09-01 より前の巡回は失敗理由を記録していないため、系列に含めていない（遡及分類はしない）"
+  },
+  "source": {
+    "name": "国内主要サイトのrobots.txt（自前巡回・月次）",
+    "license": "robots.txtは機械向けに公開されたファイル",
+    "panel": "ai-lifeline/scripts/robots_panel.json（コア系列。拡大版が始まったら panel_set で系列を分ける）",
+    "panel_note": "本パネルは当社が選定した名簿であり、網羅的な母集団ではない。日本語ウェブ全体でも、報道機関の全数でもない。外部が作成した公開名簿を採用したものではなく、当社が国内主要サイトとして選んだ26件である。比率は「このパネルの中での比率」としてのみ読むこと",
+    "script": "ai-lifeline/scripts/build_crawl_refusal.ps1（巡回は fetch_data_chapter.ps1・月次）",
+    "crawl_condition": "月1回・1サイト1リクエスト・300ms間隔・タイムアウト20秒・UA明示。403等を受けてもUAを変えた再取得はしない"
+  },
+  "current_month": {
+    "month": "2026-09",
+    "observed_date": "2026-09-01",
+    "panel_set": "core",
+    "panel_size": 26,
+    "ok": 25,
+    "refused": 0,
+    "refused_rate": 0.0,
+    "by_reason": {
+      "http_403": 0,
+      "bot_protect": 0,
+      "timeout": 0,
+      "dns": 0,
+      "other": 0
+    },
+    "no_robots_404": 1,
+    "robots_invalid": 0
+  },
+  "previous_month": null,
+  "monthly": [
+    {
+      "month": "2026-09",
+      "observed_date": "2026-09-01",
+      "panel_set": "core",
+      "panel_size": 26,
+      "ok": 25,
+      "refused": 0,
+      "refused_rate": 0.0,
+      "by_reason": {
+        "http_403": 0,
+        "bot_protect": 0,
+        "timeout": 0,
+        "dns": 0,
+        "other": 0
+      },
+      "no_robots_404": 1,
+      "robots_invalid": 0
+    }
+  ],
+  "pre_series_runs": [
+    "2026-08-20"
+  ],
+  "pre_series_note": "上記の巡回日は系列開始（2026-09-01）より前で、失敗理由が記録されていない。件数だけは実行ログに残るが、機械的に再現できる集計ではない"
+}
