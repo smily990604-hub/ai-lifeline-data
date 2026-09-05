@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-09-04 11:01",
+  "generated": "2026-09-05 10:31",
   "indicator": {
     "id": "ai_readers_01",
     "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
@@ -65,30 +65,30 @@
       "week": 2,
       "from": "2026-08-30",
       "to": "2026-09-05",
-      "observed_through": "2026-09-03",
-      "days_observed": 5,
+      "observed_through": "2026-09-04",
+      "days_observed": 6,
       "provisional": true,
-      "verified_total": 154,
-      "verified_days": 5,
-      "unverified_total": 8,
-      "named_total_reference": 162,
-      "self_excluded_total": 2968,
+      "verified_total": 180,
+      "verified_days": 6,
+      "unverified_total": 9,
+      "named_total_reference": 189,
+      "self_excluded_total": 5154,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
-        "GPTBot": 42,
+        "GPTBot": 43,
         "CCBot": 0,
-        "その他": 112
+        "その他": 137
       },
       "breakdown_verified_other_detail": {
-        "ChatGPT-User": 44,
-        "OAI-SearchBot": 37,
+        "ChatGPT-User": 53,
+        "OAI-SearchBot": 48,
         "GoogleOther": 27,
-        "Amazonbot": 4
+        "Amazonbot": 9
       },
       "top_verified": {
         "name": "ChatGPT-User",
-        "requests": 44
+        "requests": 53
       }
     }
   ],
@@ -193,13 +193,21 @@
       "ai_named_reference": 19,
       "self_excluded": 1968,
       "verified_available": true
+    },
+    {
+      "date": "2026-09-04",
+      "ai_verified": 26,
+      "ai_unverified": 1,
+      "ai_named_reference": 27,
+      "self_excluded": 2186,
+      "verified_available": true
     }
   ],
   "autonomous_access": {
     "definition_version": "1.0",
     "definition_fixed_on": "2026-09-05",
     "definition_doc": "docs/指標定義_自律アクセス.md",
-    "computed": "2026-09-05 08:34",
+    "computed": "2026-09-05 10:31",
     "cadence": "月次（日次明細から毎日再集計。月が閉じるまで provisional）",
     "judgment_date": "2027-03-05",
     "observation_start": "2026-08-23",

@@ -1,6 +1,6 @@
 {
   "region": "us",
-  "generated": "2026-09-05 08:35",
+  "generated": "2026-09-05 18:01",
   "status": "observing",
   "status_note": "Observing only: mechanical event counts (no damages, no casualties). A zero means zero events; missing means not yet measured. Same-day values are provisional until the next day's recount.",
   "disaster_profile": [
@@ -14,9 +14,9 @@
       "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
       "definition_note": "Bounding box lat 18-72, lon -180 to -66 (covers CONUS, Alaska east of the antimeridian, Hawaii; includes some adjacent territory — labelled \"U.S. vicinity\").",
       "source": {
-        "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
         "license": "Public domain (U.S. federal government work). No key.",
-        "name": "U.S. Geological Survey, Earthquake Hazards Program"
+        "name": "U.S. Geological Survey, Earthquake Hazards Program",
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
       },
       "daily": [
         {
@@ -57,21 +57,26 @@
         {
           "date": "2026-09-02",
           "value": 2,
-          "fetched_at": "2026-09-04 18:01"
+          "fetched_at": "2026-09-05 18:00"
         },
         {
           "date": "2026-09-03",
           "value": 5,
-          "fetched_at": "2026-09-04 18:01"
+          "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "value": 0,
+          "fetched_at": "2026-09-05 18:00"
         }
       ]
     },
     "hurricane": {
       "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
       "source": {
-        "url": "https://www.nhc.noaa.gov/",
         "license": "Public domain (U.S. federal government work). No key.",
-        "name": "NOAA National Hurricane Center"
+        "name": "NOAA National Hurricane Center",
+        "url": "https://www.nhc.noaa.gov/"
       },
       "daily": [
         {
@@ -103,21 +108,26 @@
           "date": "2026-09-03",
           "value": 3,
           "fetched_at": "2026-09-04 08:46"
+        },
+        {
+          "date": "2026-09-04",
+          "value": 3,
+          "fetched_at": "2026-09-04 18:01"
         }
       ],
       "today_provisional": {
-        "date": "2026-09-04",
+        "date": "2026-09-05",
         "value": 3,
-        "as_of": "2026-09-04 18:01",
+        "as_of": "2026-09-05 18:00",
         "note": "provisional (partial day, as of retrieval time)"
       }
     },
     "extreme_heat": {
       "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
       "source": {
-        "url": "https://www.weather.gov/documentation/services-web-api",
         "license": "Public domain (U.S. federal government work). No key (User-Agent明示のみ)",
-        "name": "NOAA National Weather Service alerts API"
+        "name": "NOAA National Weather Service alerts API",
+        "url": "https://www.weather.gov/documentation/services-web-api"
       },
       "daily": [
         {
@@ -149,12 +159,17 @@
           "date": "2026-09-03",
           "value": 61,
           "fetched_at": "2026-09-04 08:46"
+        },
+        {
+          "date": "2026-09-04",
+          "value": 49,
+          "fetched_at": "2026-09-04 18:01"
         }
       ],
       "today_provisional": {
-        "date": "2026-09-04",
-        "value": 49,
-        "as_of": "2026-09-04 18:01",
+        "date": "2026-09-05",
+        "value": 34,
+        "as_of": "2026-09-05 18:01",
         "note": "provisional (partial day, as of retrieval time)"
       }
     }

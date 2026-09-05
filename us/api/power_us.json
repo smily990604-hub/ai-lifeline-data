@@ -1,6 +1,6 @@
 {
   "region": "us",
-  "generated": "2026-09-05 08:35",
+  "generated": "2026-09-05 18:01",
   "status": "observing",
   "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition yet (criteria are frozen as versioned definitions before use; none exists for the U.S. edition as of 2026-08-29). Do not infer thresholds.",
   "unit_note": "demand/net generation values are daily totals in megawatthours (MWh), as published by EIA (Form EIA-930, Eastern timezone aggregation).",
@@ -8,8 +8,8 @@
   "data_status": "live",
   "sources": [
     {
-      "url": "https://www.eia.gov/opendata/",
       "name": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+      "url": "https://www.eia.gov/opendata/",
       "license": "Public domain (U.S. federal government work). API key is free."
     }
   ],
@@ -212,96 +212,103 @@
     },
     {
       "date": "2026-08-29",
-      "us48_demand_mwh": 13179131.0,
+      "us48_demand_mwh": 13179132.0,
       "us48_netgen_mwh": 13016729.0,
       "value_status": "final",
-      "fetched_at": "2026-09-03 20:48"
+      "fetched_at": "2026-09-05 18:00"
     },
     {
       "date": "2026-08-30",
-      "us48_demand_mwh": 13312256.0,
+      "us48_demand_mwh": 13312254.0,
       "us48_netgen_mwh": 13148043.0,
       "value_status": "final",
-      "fetched_at": "2026-09-03 21:52"
+      "fetched_at": "2026-09-05 18:00"
     },
     {
       "date": "2026-08-31",
-      "us48_demand_mwh": 14271808.0,
-      "us48_netgen_mwh": 14051866.0,
+      "us48_demand_mwh": 14271773.0,
+      "us48_netgen_mwh": 14056417.0,
       "value_status": "final",
-      "fetched_at": "2026-09-04 08:46"
+      "fetched_at": "2026-09-05 18:00"
     },
     {
       "date": "2026-09-01",
-      "us48_demand_mwh": 14640561.0,
-      "us48_netgen_mwh": 14421376.0,
+      "us48_demand_mwh": 14641199.0,
+      "us48_netgen_mwh": 14430647.0,
       "value_status": "final",
-      "fetched_at": "2026-09-04 08:46"
+      "fetched_at": "2026-09-05 18:00"
     },
     {
       "date": "2026-09-02",
-      "us48_demand_mwh": 14716249.0,
-      "us48_netgen_mwh": 14516151.0,
+      "us48_demand_mwh": 14717509.0,
+      "us48_netgen_mwh": 14526275.0,
       "value_status": "final",
-      "fetched_at": "2026-09-04 18:00"
+      "fetched_at": "2026-09-05 18:00"
     },
     {
       "date": "2026-09-03",
-      "us48_demand_mwh": 14805804.0,
+      "us48_demand_mwh": 14748483.0,
+      "us48_netgen_mwh": 14583679.0,
+      "value_status": "final",
+      "fetched_at": "2026-09-05 18:00"
+    },
+    {
+      "date": "2026-09-04",
+      "us48_demand_mwh": 14642555.0,
       "us48_netgen_mwh": null,
       "value_status": "provisional",
-      "fetched_at": "2026-09-04 18:00"
+      "fetched_at": "2026-09-05 18:00"
     }
   ],
   "ba_demand_latest": {
-    "date": "2026-09-03",
+    "date": "2026-09-04",
     "rows": [
       {
         "ba": "US48",
         "name": "United States Lower 48 (total)",
-        "demand_mwh": 14805804.0,
+        "demand_mwh": 14642555.0,
         "value_status": "provisional"
       },
       {
         "ba": "PJM",
         "name": "PJM Interconnection",
-        "demand_mwh": 3004852.0,
+        "demand_mwh": 2914182.0,
         "value_status": "provisional"
       },
       {
         "ba": "MISO",
         "name": "Midcontinent ISO",
-        "demand_mwh": 2406964.0,
+        "demand_mwh": 2355927.0,
         "value_status": "provisional"
       },
       {
         "ba": "ERCO",
         "name": "ERCOT (Texas)",
-        "demand_mwh": 1705218.0,
+        "demand_mwh": 1706650.0,
         "value_status": "provisional"
       },
       {
         "ba": "CISO",
         "name": "California ISO",
-        "demand_mwh": 707932.0,
+        "demand_mwh": 701355.0,
         "value_status": "provisional"
       },
       {
         "ba": "SWPP",
         "name": "Southwest Power Pool",
-        "demand_mwh": 1117097.0,
+        "demand_mwh": 1117150.0,
         "value_status": "provisional"
       },
       {
         "ba": "NYIS",
         "name": "New York ISO",
-        "demand_mwh": 478590.0,
+        "demand_mwh": 484323.0,
         "value_status": "provisional"
       },
       {
         "ba": "ISNE",
         "name": "ISO New England",
-        "demand_mwh": 343389.0,
+        "demand_mwh": 344152.0,
         "value_status": "provisional"
       }
     ]

@@ -1,15 +1,30 @@
 {
   "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
-  "generated_at": "2026-09-04 20:00",
+  "generated_at": "2026-09-05 18:02",
   "kinds": {
     "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
     "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
     "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
     "definition_revision": "an indicator definition document changed version (old series kept alongside)"
   },
-  "count": 49,
+  "count": 50,
   "page": "/jp/unei/#corrections",
   "corrections": [
+    {
+      "id": "us-changes-2026-09-05-r1-49",
+      "date": "2026-09-05",
+      "region": "us",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "kind": "value_revision",
+      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "old": "181 (final)",
+      "new": "180 (final) on refetch",
+      "reason": "181 (final) -> 180 (final) on refetch / Source: Grants.gov search API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-05 18:01:30",
+      "ledger_ref": "data/US/changes/ledger.jsonl#49"
+    },
     {
       "id": "eu-changes-2026-09-04-r3-18",
       "date": "2026-09-04",
