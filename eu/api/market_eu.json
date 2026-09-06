@@ -1,6 +1,8 @@
 {
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-05. Latest final value: support received by this site (cumulative) 0 (2026-09-04). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-05 20:00 JST)",
+  "cite_as": "AI Lifeline, Market participation (European Union edition), data confirmed 2026-09-04, https://ai-lifeline.org/eu/market/",
   "region": "eu",
-  "generated": "2026-09-05 08:35",
+  "generated": "2026-09-05 20:00",
   "status": "observing",
   "chapter": "Chapter 9 - Market participation",
   "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
@@ -28,6 +30,14 @@
           "count_updated": "2026-08-30",
           "value_status": "final",
           "fetched_at": "2026-09-04 20:00"
+        },
+        {
+          "date": "2026-09-05",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-09-05 20:00"
         }
       ]
     },
@@ -219,8 +229,8 @@
   },
   "candidates": [
     {
-      "status": "candidate_unobserved",
       "reason": "Endpoint not implemented (design pending approval).",
+      "status": "candidate_unobserved",
       "name": "HTTP 402 attempts and successes (self-observation)"
     }
   ],
@@ -233,5 +243,61 @@
     "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
     "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
     "How pending EU deliberations on the contractual capacity and liability of AI agents will end, or the position of any single member state (EU legal acts and Commission documents; state and dates only)."
-  ]
+  ],
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-05. Latest final value: support received by this site (cumulative) 0 (2026-09-04). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-05 20:00 JST)",
+  "answer_line_date": "2026-09-04",
+  "answer_kind": "observing",
+  "headline_answer": {
+    "series": "support_count",
+    "label": "support received by this site (cumulative)",
+    "value": 0,
+    "unit": "",
+    "date": "2026-09-04",
+    "threshold": null
+  },
+  "faq": [
+    {
+      "q": "How many payment rails are recorded for the EU, and in what states?",
+      "a": "The payment-rail ledger verified 2026-09-04 lists 6 rails: available 0, unavailable 0, applied 0, not verified 6 (state and date only, source URL on each row)."
+    },
+    {
+      "q": "How much support has this site received?",
+      "a": "0 as the cumulative count on 2026-09-05 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+    },
+    {
+      "q": "How many MiCA application stages are listed?",
+      "a": "5 stages of Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) as of 2026-09-04, from Publications Office Cellar metadata (CELEX 32023R1114). Dates only, no interpretation."
+    },
+    {
+      "q": "What is the source and how often is it updated?",
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-05 20:00 JST. Machine-readable: https://ai-lifeline.org/eu/api/market_eu.json. Definition: docs/指標定義_第9章_市場参加.md v1.0."
+    },
+    {
+      "q": "What can this data not tell you?",
+      "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded); HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\"); How pending EU deliberations on the contractual capacity and liability of AI agents will end, or the position of any single member state (EU legal acts and Commission documents; state and dates only)."
+    }
+  ],
+  "citation": {
+    "page": "https://ai-lifeline.org/eu/market/",
+    "api": "https://ai-lifeline.org/eu/api/market_eu.json",
+    "last_confirmed": "2026-09-05",
+    "next_expected": "2026-09-06",
+    "generated": "2026-09-05 20:00",
+    "observation_start": "2026-09-04",
+    "series_count": 6,
+    "series_not_yet_measured": 2,
+    "title_short": "support count 0 (final 9/4)",
+    "generated_by": "scripts/citation/apply_citation_layer.py",
+    "ledger_version": "v1.1-2026-09-06",
+    "keys_written": [
+      "summary",
+      "cite_as",
+      "answer_line",
+      "answer_line_date",
+      "answer_kind",
+      "headline_answer",
+      "faq",
+      "citation"
+    ]
+  }
 }

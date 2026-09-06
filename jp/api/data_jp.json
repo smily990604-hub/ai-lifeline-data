@@ -1,4 +1,6 @@
 {
+  "summary": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列10本・最新確定2026-09-01。GPTBotを全面拒否している国内主要サイト数は10サイト（2026-09-01確定）。（出典：自前robots.txt巡回・e-Govデータポータル／更新 2026-09-06 10:31 JST）",
+  "cite_as": "AIライフライン データ章（確定日 2026-09-01）https://ai-lifeline.org/jp/data/",
   "country": "JP",
   "generated": "2026-09-01",
   "update_cycle": "monthly",
@@ -610,5 +612,61 @@
     "各サイトが AI クローラーを拒否する理由や意図（robots.txt は各サイトの意思表示であり、理由は記載されない）",
     "robots.txt の記述が実際に守られているか、AI 事業者が実際に何を学習しているか",
     "拒否件数の多寡が「良い・悪い」に当たるか（脆弱性②の定義書は数え方だけを固定し、良否の規則を定めていない）"
-  ]
+  ],
+  "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列10本・最新確定2026-09-01。GPTBotを全面拒否している国内主要サイト数は10サイト（2026-09-01確定）。（出典：自前robots.txt巡回・e-Govデータポータル／更新 2026-09-06 10:31 JST）",
+  "answer_line_date": "2026-09-01",
+  "answer_kind": "observing",
+  "headline_answer": {
+    "series": "block_all_GPTBot",
+    "label": "GPTBotを全面拒否している国内主要サイト数",
+    "value": 10,
+    "unit": "サイト",
+    "date": "2026-09-01",
+    "threshold": null
+  },
+  "faq": [
+    {
+      "q": "GPTBotを全面拒否している国内主要サイトは何社か",
+      "a": "2026-09-01の巡回で、パネル26サイト（解析成功25）のうち10サイトが robots.txt で GPTBot を全面拒否（Disallow: /）しています。部分制限 14・許可 1。出典：自前robots.txt巡回（月次）。"
+    },
+    {
+      "q": "主要AIクローラー全種を全面拒否しているサイトは何社か",
+      "a": "2026-09-01 巡回時点で8サイトです（観測対象8種すべてを全面拒否・解析成功25／パネル26）。1種以上を全面拒否 11・全面拒否ゼロ 14。定義 v1.0（2026-08-22 確定）。出典：自前robots.txt巡回（/jp/api/vulnerability_data_jp.json）。"
+    },
+    {
+      "q": "ClaudeBot・CCBot などボット別の全面拒否は何社か",
+      "a": "2026-09-01時点：ClaudeBot 9・CCBot 9・Google-Extended 9・PerplexityBot 8・Bytespider 9・meta-externalagent 9・Applebot-Extended 9サイト（各 解析成功25サイト中）。出典：自前robots.txt巡回（月次）。"
+    },
+    {
+      "q": "このデータの出所と更新頻度は",
+      "a": "国内主要26サイトの robots.txt を毎月1日に自前巡回します（月次）。あわせて e-Govデータポータルのデータセット総数（2026-09-01 取得で 18,141件・CKAN API・PDL1.0）を記録します。最終巡回 2026-09-01・機械可読データ https://ai-lifeline.org/jp/api/data_jp.json。"
+    },
+    {
+      "q": "このデータで言えないことは何か",
+      "a": "この章から言えないこと（台帳 v1.0・2026-09-05 承認・章の方法節に全文）：各サイトが AI クローラーを拒否する理由や意図（robots.txt は各サイトの意思表示であり、理由は記載されない）／robots.txt の記述が実際に守られているか、AI 事業者が実際に何を学習しているか／拒否件数の多寡が「良い・悪い」に当たるか（脆弱性②の定義書は数え方だけを固定し、良否の規則を定めていない）。"
+    }
+  ],
+  "citation": {
+    "page": "https://ai-lifeline.org/jp/data/",
+    "api": "https://ai-lifeline.org/jp/api/data_jp.json",
+    "last_confirmed": "2026-09-01",
+    "next_expected": "2026-10",
+    "generated": "2026-09-06 10:31",
+    "observation_start": "2026-08-20",
+    "series_count": 10,
+    "series_not_yet_measured": 0,
+    "title_short": "GPTBot全面拒否10サイト（9/1確定）",
+    "generated_by": "scripts/citation/apply_citation_layer.py",
+    "ledger_version": "v1.1-2026-09-06",
+    "keys_written": [
+      "summary",
+      "cite_as",
+      "answer_line",
+      "answer_line_date",
+      "answer_kind",
+      "headline_answer",
+      "faq",
+      "citation"
+    ]
+  }
 }

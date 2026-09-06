@@ -2,7 +2,7 @@
   "_note": "AI Lifeline - one-file world summary (added 2026-09-03). Aggregates the latest confirmed value of every published series in every edition, with observation date, status, provisional/backfilled flags and the version of the indicator definition. Regenerated after each edition's daily batch; regions[].last_updated is per edition, generated_at is the whole file.",
   "site": "AI Lifeline / AIライフライン",
   "base_url": "https://ai-lifeline.org",
-  "generated_at": "2026-09-05 18:02",
+  "generated_at": "2026-09-06 18:02",
   "timezone": "JST (UTC+9)",
   "conventions": {
     "not_yet_measured": "value \"not_yet_measured\" means missing, not zero",
@@ -23,7 +23,7 @@
       "base_path": "/us/",
       "summary_api": "/us/api/summary.json",
       "changes_api": "/us/api/changes_us.json",
-      "last_updated": "2026-09-05 18:01",
+      "last_updated": "2026-09-06 18:01",
       "edition_beta": {
         "active": false,
         "active_from": "2026-08-29",
@@ -53,7 +53,7 @@
       "base_path": "/eu/",
       "summary_api": "/eu/api/summary.json",
       "changes_api": "/eu/api/changes_eu.json",
-      "last_updated": "2026-09-05 08:35",
+      "last_updated": "2026-09-05 20:00",
       "edition_beta": {
         "active": true,
         "active_from": "2026-09-03",
@@ -96,7 +96,7 @@
       "base_path": "/jp/",
       "summary_api": "/jp/api/summary.json",
       "changes_api": "/jp/api/changes_jp.json",
-      "last_updated": "2026-09-05 10:31",
+      "last_updated": "2026-09-06 10:31",
       "edition_beta": null,
       "chapters_live": [
         "denryoku",
@@ -115,7 +115,7 @@
   "summary": {
     "us": {
       "region": "us",
-      "generated": "2026-09-05 18:01",
+      "generated": "2026-09-06 18:01",
       "edition_beta": {
         "active": false,
         "active_from": "2026-08-29",
@@ -128,9 +128,9 @@
           "series": {
             "us48_demand_mwh": {
               "name": "US Lower 48 electricity demand (daily total)",
-              "value": 14642555.0,
+              "value": 13661640.0,
               "unit": "MWh",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "provisional",
               "provisional": true,
               "backfilled": false,
@@ -147,7 +147,7 @@
               "name": "US Lower 48 net generation (daily total)",
               "value": "not_yet_measured",
               "unit": "MWh",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "provisional",
               "provisional": true,
               "backfilled": false,
@@ -169,7 +169,7 @@
               "name": "Open federal comment periods (Federal Register, query \"artificial intelligence\")",
               "value": 18,
               "unit": "documents",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -185,7 +185,7 @@
               "name": "Comment periods closing within 14 days",
               "value": 6,
               "unit": "documents",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -199,9 +199,9 @@
             },
             "documents_last_30_days": {
               "name": "Matching documents published in the last 30 days",
-              "value": 35,
+              "value": 34,
               "unit": "documents",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -321,7 +321,7 @@
               "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
               "value": 15,
               "unit": "documents",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -354,7 +354,7 @@
               "name": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background)",
               "value": 4,
               "unit": "USD per 1M tokens",
-              "observed": "2026-09-05 18:01",
+              "observed": "2026-09-06 18:01",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -443,7 +443,7 @@
               "name": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F)",
               "value": 12,
               "unit": "",
-              "observed": "2026-09-03",
+              "observed": "2026-09-04",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -500,7 +500,7 @@
             },
             "ai_grants_open": {
               "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
-              "value": 180,
+              "value": 181,
               "unit": "",
               "observed": "2026-09",
               "value_status": "final",
@@ -513,7 +513,7 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/us/api/fiscal_us.json",
-              "note": "today_provisional=181 (as of 2026-09-05 18:00; replaced by tomorrow's recount)"
+              "note": "today_provisional=181 (as of 2026-09-06 18:00; replaced by tomorrow's recount)"
             }
           }
         },
@@ -530,7 +530,7 @@
               "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
               "value": 0,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -546,7 +546,7 @@
               "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
               "value": 3,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -557,13 +557,13 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/us/api/disaster_us.json",
-              "note": "today_provisional=3 (as of 2026-09-05 18:00; replaced by tomorrow's recount)"
+              "note": "today_provisional=3 (as of 2026-09-06 18:00; replaced by tomorrow's recount)"
             },
             "extreme_heat": {
               "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
-              "value": 49,
+              "value": 34,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -574,7 +574,7 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/us/api/disaster_us.json",
-              "note": "today_provisional=34 (as of 2026-09-05 18:01; replaced by tomorrow's recount)"
+              "note": "today_provisional=20 (as of 2026-09-06 18:00; replaced by tomorrow's recount)"
             }
           }
         },
@@ -591,7 +591,7 @@
               "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
               "value": 0,
               "unit": "count",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "provisional",
               "provisional": true,
               "backfilled": false,
@@ -697,11 +697,11 @@
           "series": {
             "week_verified": {
               "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
-              "value": 49,
+              "value": 61,
               "unit": "requests",
-              "observed": "2026-09-04",
-              "value_status": "provisional",
-              "provisional": true,
+              "observed": "2026-09-05",
+              "value_status": "final",
+              "provisional": false,
               "backfilled": false,
               "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
               "definition": {
@@ -717,7 +717,7 @@
     },
     "eu": {
       "region": "eu",
-      "generated": "2026-09-05 08:35",
+      "generated": "2026-09-05 20:00",
       "edition_beta": {
         "active": true,
         "active_from": "2026-09-03",
@@ -935,10 +935,10 @@
               "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
               "value": 0,
               "unit": "events",
-              "observed": "2026-09-03",
+              "observed": "2026-09-04",
               "value_status": "final",
               "provisional": false,
-              "backfilled": true,
+              "backfilled": false,
               "source": "U.S. Geological Survey, Earthquake Hazards Program (ComCat)",
               "definition": {
                 "doc": "docs/指標定義_EU_気候災害.md",
@@ -979,9 +979,9 @@
               "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
               "value": 0,
               "unit": "count",
-              "observed": "2026-09-04",
-              "value_status": "final",
-              "provisional": false,
+              "observed": "2026-09-05",
+              "value_status": "provisional",
+              "provisional": true,
               "backfilled": false,
               "source": "AI Lifeline first-party observation",
               "definition": {
@@ -1085,9 +1085,9 @@
           "series": {
             "week_verified": {
               "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
-              "value": 0,
+              "value": 1,
               "unit": "requests",
-              "observed": "2026-09-03",
+              "observed": "2026-09-04",
               "value_status": "provisional",
               "provisional": true,
               "backfilled": false,
@@ -1105,7 +1105,7 @@
     },
     "jp": {
       "region": "jp",
-      "generated": "2026-09-05 10:31",
+      "generated": "2026-09-06 10:31",
       "edition_beta": null,
       "chapters": {
         "power": {
@@ -1115,9 +1115,9 @@
           "series": {
             "reserve_national_min": {
               "name": "広域予備率（全国最小・確定最終日）",
-              "value": 8.83,
+              "value": 11.09,
               "unit": "%",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1128,13 +1128,13 @@
                 "fixed_on": "2026-08-23"
               },
               "api": "/jp/api/power_jp.json",
-              "note": "today_provisional=9.87 (2026-09-05; includes forecast slots from 12:30, replaced by refetch)"
+              "note": "today_provisional=10.16 (2026-09-06; includes forecast slots from 12:30, replaced by refetch)"
             },
             "jepx_system_avg": {
               "name": "JEPXスポット システムプライス平均",
-              "value": 13.25,
+              "value": 21.04,
               "unit": "円/kWh",
-              "observed": "2026-09-06",
+              "observed": "2026-09-07",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1161,7 +1161,7 @@
                 "fixed_on": "2026-08-22"
               },
               "api": "/jp/api/vulnerability_jp.json",
-              "note": "current month partial: observed 5/30 days"
+              "note": "current month partial: observed 6/30 days"
             }
           }
         },
@@ -1415,7 +1415,7 @@
               "name": "AIの生存条件に関わる募集中パブコメ",
               "value": 6,
               "unit": "件",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1457,9 +1457,9 @@
           "series": {
             "cooling_degree_days": {
               "name": "冷却度日（基準18.3℃=65°F・米国版CPCと同一基準・5地点平均：東京/大阪/名古屋/福岡/札幌）",
-              "value": 4.4,
+              "value": 5.3,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1546,7 +1546,7 @@
               "name": "最大震度5弱以上の地震件数（日次・JST）",
               "value": 0,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1557,13 +1557,13 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=0 (as of 2026-09-05 18:02; replaced by tomorrow's recount)"
+              "note": "today_provisional=0 (as of 2026-09-06 18:02; replaced by tomorrow's recount)"
             },
             "typhoon": {
               "name": "台風解析・予報情報が存在した日（1/0・日次）",
               "value": 1,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1574,13 +1574,13 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=1 (as of 2026-09-05 18:02; replaced by tomorrow's recount)"
+              "note": "today_provisional=1 (as of 2026-09-06 18:02; replaced by tomorrow's recount)"
             },
             "heavy_rain_flood": {
               "name": "大雨特別警報・洪水警報を含む警報電文数（日次）",
               "value": 0,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1591,13 +1591,13 @@
                 "fixed_on": "2026-08-30"
               },
               "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=0 (as of 2026-09-05 18:02; replaced by tomorrow's recount)"
+              "note": "today_provisional=0 (as of 2026-09-06 18:02; replaced by tomorrow's recount)"
             },
             "extreme_heat": {
               "name": "猛暑日（日最高気温35℃以上・気象庁定義）の地点数（対象5地点：東京・大阪・名古屋・福岡・札幌）",
               "value": 0,
               "unit": "",
-              "observed": "2026-09-04",
+              "observed": "2026-09-05",
               "value_status": "final",
               "provisional": false,
               "backfilled": false,
@@ -1624,7 +1624,7 @@
               "name": "本サイトの支援回数（累計・運営者の自己テストを除外・日次スナップショット）",
               "value": 0,
               "unit": "回",
-              "observed": "2026-09-05",
+              "observed": "2026-09-06",
               "value_status": "provisional",
               "provisional": true,
               "backfilled": false,
@@ -1730,11 +1730,11 @@
           "series": {
             "week_verified": {
               "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
-              "value": 180,
+              "value": 249,
               "unit": "リクエスト",
-              "observed": "2026-09-04",
-              "value_status": "provisional",
-              "provisional": true,
+              "observed": "2026-09-05",
+              "value_status": "final",
+              "provisional": false,
               "backfilled": false,
               "source": "Cloudflare GraphQL Analytics API（httpRequestsAdaptiveGroups・エッジ計測）",
               "definition": {
@@ -1743,7 +1743,7 @@
                 "fixed_on": "2026-08-29"
               },
               "api": "/jp/api/ai_readers_jp.json",
-              "note": "week 2 (2026-08-30..2026-09-05); unverified 9 listed separately"
+              "note": "week 2 (2026-08-30..2026-09-05); unverified 13 listed separately"
             }
           }
         }
@@ -1753,7 +1753,7 @@
   "cross_series": {
     "note": "AI Lifeline cross-edition series (added 2026-09-04): (1) annual carbon intensity of electricity as published by each region's public body (reference ledger; units as published, not converted); (2) public-opinion ledger (official surveys only; manual, PDF page numbers required; results pending transcription); (3) training-material supply: Common Crawl crawl statistics (fetched pages, robots-denied pages, bytes) and Wikipedia monthly edits by language edition assigned to each region. Values as published; no estimates. Status observing.",
     "api": "/api/cross.json",
-    "generated_at": "2026-09-05 18:02",
+    "generated_at": "2026-09-06 18:02",
     "carbon_intensity_annual": {
       "jp": {
         "series_id": "jp.power.carbon_intensity_annual",
@@ -1853,7 +1853,7 @@
     "note": "Chapter 9 (market participation): the conditions under which an AI can pay, receive and contract without a human in the loop - state and dates only, no judgment. Rails status: available / unavailable / applied / unverified. Source ledger: scripts/regions/market_ledger.json (official provider documentation and this site's own application records).",
     "ledger_checked": "2026-09-04",
     "support_count_latest": {
-      "date": "2026-09-05",
+      "date": "2026-09-06",
       "value": 0,
       "excluded_self_tests": 1
     },
@@ -2002,6 +2002,272 @@
       "/us/api/summary.json",
       "/eu/api/summary.json",
       "/jp/api/summary.json"
-    ]
+    ],
+    "answers": "/api/index.json"
+  },
+  "answer_lines": {
+    "_note": "One-sentence answer per chapter (same text as the .answer-line on each chapter page and as summary in each chapter JSON; full list with FAQ at /api/index.json). Added 2026-09-06.",
+    "generated_at": "2026-09-06 18:02",
+    "regions": {
+      "jp": {
+        "power": {
+          "answer_line": "2026-09-05の全国の広域予備率（日別最小・確定値）は11.09%。警戒水準8%を上回った状態が9日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-09-06 10:31 JST）",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "judged",
+          "title_short": "予備率11.09%（9/5確定）",
+          "page": "/jp/denryoku/",
+          "api": "/jp/api/power_jp.json",
+          "last_confirmed": "2026-09-07",
+          "next_update": "2026-09-06",
+          "faq_count": 5
+        },
+        "gpu": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-09-04。H100時間単価（さくらインターネット 高火力 VRT）は990円/時（2026-09-04確定）。（出典：各社公式料金ページ（自前確認）／更新 2026-09-06 10:31 JST）",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "H100単価990円/時（9/4確定）",
+          "page": "/jp/gpu/",
+          "api": "/jp/api/gpu_jp.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-09-11",
+          "faq_count": 4
+        },
+        "water": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-08-21。WUE数値まで開示している事業者数は4社（2026-08-21確定）。（出典：各社公式サステナビリティ情報（自前確認）／更新 2026-09-06 10:31 JST）",
+          "answer_line_date": "2026-08-21",
+          "answer_kind": "observing",
+          "title_short": "WUE開示4社（8/21確定）",
+          "page": "/jp/mizu/",
+          "api": "/jp/api/water_jp.json",
+          "last_confirmed": "2026-08-21",
+          "next_update": "2026-09",
+          "faq_count": 4
+        },
+        "data": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列10本・最新確定2026-09-01。GPTBotを全面拒否している国内主要サイト数は10サイト（2026-09-01確定）。（出典：自前robots.txt巡回・e-Govデータポータル／更新 2026-09-06 10:31 JST）",
+          "answer_line_date": "2026-09-01",
+          "answer_kind": "observing",
+          "title_short": "GPTBot全面拒否10サイト（9/1確定）",
+          "page": "/jp/data/",
+          "api": "/jp/api/data_jp.json",
+          "last_confirmed": "2026-09-01",
+          "next_update": "2026-10",
+          "faq_count": 5
+        },
+        "regulation": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-09-06。AIの生存条件に関わる募集中パブコメは6件（2026-09-06確定）。（出典：e-Gov パブリック・コメント／更新 2026-09-06 10:31 JST）",
+          "answer_line_date": "2026-09-06",
+          "answer_kind": "observing",
+          "title_short": "募集中パブコメ6件（9/6確定）",
+          "page": "/jp/houkisei/",
+          "api": "/jp/api/regulation_jp.json",
+          "last_confirmed": "2026-09-06",
+          "next_update": "2026-09-07",
+          "faq_count": 4
+        },
+        "datacenter": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列3本・最新確定2026-09-05。冷却度日（5地点平均・基準18.3℃）は5.3（2026-09-05確定）。（出典：気象庁・経済産業省／更新 2026-09-06 18:02 JST）",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "冷却度日5.3（9/5確定）",
+          "page": "/jp/datacenter/",
+          "api": "/jp/api/datacenter_jp.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 4
+        },
+        "fiscal": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列1本・最新確定2026-09-03。10年国債金利（半年複利）は2.966%（2026-09-03確定）。（出典：財務省／更新 2026-09-06 18:02 JST）",
+          "answer_line_date": "2026-09-03",
+          "answer_kind": "observing",
+          "title_short": "10年国債2.966%（9/3確定）",
+          "page": "/jp/fiscal/",
+          "api": "/jp/api/fiscal_jp.json",
+          "last_confirmed": "2026-09-03",
+          "next_update": "2026-09-04",
+          "faq_count": 4
+        },
+        "disaster": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列4本・最新確定2026-09-05。最大震度5弱以上の地震件数は0件（2026-09-05確定）。（出典：気象庁／更新 2026-09-06 18:02 JST）",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "震度5弱以上0件（9/5確定）",
+          "page": "/jp/disaster/",
+          "api": "/jp/api/disaster_jp.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 4
+        },
+        "market": {
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-09-06。本サイトの支援回数（累計）は0回（2026-09-05確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-09-06 18:02 JST）",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "支援回数0回（9/5確定）",
+          "page": "/jp/market/",
+          "api": "/jp/api/market_jp.json",
+          "last_confirmed": "2026-09-06",
+          "next_update": "2026-09-07",
+          "faq_count": 5
+        }
+      },
+      "us": {
+        "power": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series (1 not yet measured), latest confirmed 2026-09-05. Latest final value: Lower 48 total demand 14,602,313 MWh (2026-09-04). (Source: U.S. EIA (Form EIA-930) / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "Lower 48 demand 14,602,313 MWh (final 9/4)",
+          "page": "/us/power/",
+          "api": "/us/api/power_us.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 4
+        },
+        "regulation": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-06. Latest final value: open comment periods (query \"artificial intelligence\") 18 documents (2026-09-06). (Source: Federal Register API / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-06",
+          "answer_kind": "observing",
+          "title_short": "open comment periods 18 documents (final 9/6)",
+          "page": "/us/regulation/",
+          "api": "/us/api/regulation_us.json",
+          "last_confirmed": "2026-09-06",
+          "next_update": "2026-09-07",
+          "faq_count": 4
+        },
+        "water": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-01",
+          "answer_kind": "observing",
+          "title_short": "CONUS in drought 59.05% (final 9/1)",
+          "page": "/us/water/",
+          "api": "/us/api/water_us.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-09-08",
+          "faq_count": 4
+        },
+        "gpu": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-09-06. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-09-03). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-03",
+          "answer_kind": "observing",
+          "title_short": "H100 on-demand 3.99 USD/GPU-h (final 9/3)",
+          "page": "/us/gpu/",
+          "api": "/us/api/gpu_us.json",
+          "last_confirmed": "2026-09-06",
+          "next_update": "2026-09-10",
+          "faq_count": 5
+        },
+        "datacenter": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-09-04. Latest final value: CONUS cooling degree days (population-weighted) 12 (2026-09-04). (Source: NOAA CPC; U.S. Census Bureau / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "CONUS CDD 12 (final 9/4)",
+          "page": "/us/datacenter/",
+          "api": "/us/api/datacenter_us.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-09-05",
+          "faq_count": 4
+        },
+        "fiscal": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-09-04. Latest final value: 10-year Treasury par yield 4.78% (2026-09-04). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "10Y Treasury 4.78% (final 9/4)",
+          "page": "/us/fiscal/",
+          "api": "/us/api/fiscal_us.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-09-04",
+          "faq_count": 4
+        },
+        "disaster": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-09-05. Latest final value: active tropical cyclones, TS or stronger 3 (2026-09-05). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "active cyclones 3 (final 9/5)",
+          "page": "/us/disaster/",
+          "api": "/us/api/disaster_us.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 4
+        },
+        "market": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-06. Latest final value: support received by this site (cumulative) 0 (2026-09-05). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-06 18:01 JST)",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "support count 0 (final 9/5)",
+          "page": "/us/market/",
+          "api": "/us/api/market_us.json",
+          "last_confirmed": "2026-09-06",
+          "next_update": "2026-09-07",
+          "faq_count": 5
+        }
+      },
+      "eu": {
+        "power": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": null,
+          "answer_kind": "observing",
+          "title_short": "observing, no confirmed value",
+          "page": "/eu/power/",
+          "api": "/eu/api/power_eu.json",
+          "last_confirmed": null,
+          "next_update": null,
+          "faq_count": 4
+        },
+        "regulation": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 3 series, latest confirmed 2026-09-05. Latest final value: OJ L acts with \"artificial intelligence\" in the title, last 30 days 0 (2026-09-05). (Source: EUR-Lex / Publications Office Cellar; Official Journal / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": "2026-09-05",
+          "answer_kind": "observing",
+          "title_short": "OJ AI acts (30d) 0 (final 9/5)",
+          "page": "/eu/regulation/",
+          "api": "/eu/api/regulation_eu.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 4
+        },
+        "datacenter": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 102.8 (2026-06). (Source: Eurostat; European Commission (EED ledger) / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": "2026-06",
+          "answer_kind": "observing",
+          "title_short": "C27.1 index 102.8 (final 2026-06)",
+          "page": "/eu/datacenter/",
+          "api": "/eu/api/datacenter_eu.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-07",
+          "faq_count": 4
+        },
+        "fiscal": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-03. Latest final value: euro area AAA 10-year spot yield 3.3646% (2026-09-03). (Source: European Central Bank; Eurostat / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": "2026-09-03",
+          "answer_kind": "observing",
+          "title_short": "euro area 10Y 3.3646% (final 9/3)",
+          "page": "/eu/fiscal/",
+          "api": "/eu/api/fiscal_eu.json",
+          "last_confirmed": "2026-09-03",
+          "next_update": "2026-09-04",
+          "faq_count": 4
+        },
+        "disaster": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-09-04. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-09-04). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "M5+ quakes 0 (final 9/4)",
+          "page": "/eu/disaster/",
+          "api": "/eu/api/disaster_eu.json",
+          "last_confirmed": "2026-09-04",
+          "next_update": "2026-09-05",
+          "faq_count": 4
+        },
+        "market": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-05. Latest final value: support received by this site (cumulative) 0 (2026-09-04). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-05 20:00 JST)",
+          "answer_line_date": "2026-09-04",
+          "answer_kind": "observing",
+          "title_short": "support count 0 (final 9/4)",
+          "page": "/eu/market/",
+          "api": "/eu/api/market_eu.json",
+          "last_confirmed": "2026-09-05",
+          "next_update": "2026-09-06",
+          "faq_count": 5
+        }
+      }
+    }
   }
 }

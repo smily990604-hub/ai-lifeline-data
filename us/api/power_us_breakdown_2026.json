@@ -1,13 +1,13 @@
 {
   "region": "us",
   "year": 2026,
-  "generated": "2026-09-05 18:01",
+  "generated": "2026-09-06 18:01",
   "note": "Machine-readable breakdown of the U.S. electricity series for 2026 (Form EIA-930 daily-region-data, Eastern timezone aggregation, MWh). Principle: observations are stored at the finest unit the source publishes; the page shows the Lower 48 aggregate; breakdowns live only in JSON, split by year. regions = the 13 EIA regions that partition the Lower 48 (their sum is US48); balancing_authorities = every balancing authority the API returned. value_status provisional/final as in power_us.json.",
   "unit": "MWh (daily total)",
   "sources": [
     {
-      "name": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "url": "https://www.eia.gov/opendata/",
+      "name": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "license": "Public domain (U.S. federal government work). API key is free."
     }
   ],
@@ -15,9 +15,9 @@
   "regions": {
     "CAL": {
       "name": "California",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -259,18 +259,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 843327.0,
+          "demand_mwh": 847785.0,
+          "netgen_mwh": 613776.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 798281.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CAR": {
       "name": "Carolinas",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -505,25 +512,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 853772.0,
-          "netgen_mwh": 785925.0,
+          "demand_mwh": 854055.0,
+          "netgen_mwh": 786207.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 842940.0,
+          "demand_mwh": 845039.0,
+          "netgen_mwh": 778251.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 758333.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CENT": {
       "name": "Central",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -751,32 +765,39 @@
         },
         {
           "date": "2026-09-02",
-          "demand_mwh": 1117168.0,
+          "demand_mwh": 1117165.0,
           "netgen_mwh": 1166206.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 1117814.0,
+          "demand_mwh": 1117809.0,
           "netgen_mwh": 1152122.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
           "demand_mwh": 1117150.0,
+          "netgen_mwh": 1140264.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 1075043.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "FLA": {
       "name": "Florida",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -1018,18 +1039,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 888233.0,
+          "demand_mwh": 900699.0,
+          "netgen_mwh": 892121.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 877505.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "MIDA": {
       "name": "Mid-Atlantic",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -1272,17 +1300,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 2914182.0,
+          "netgen_mwh": 3073320.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 2552283.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "MIDW": {
       "name": "Midwest",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -1517,25 +1552,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 2588713.0,
+          "demand_mwh": 2588711.0,
           "netgen_mwh": 2548855.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 2582990.0,
+          "demand_mwh": 2534595.0,
+          "netgen_mwh": 2461506.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 2404728.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NE": {
       "name": "New England",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -1778,17 +1820,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 344152.0,
+          "netgen_mwh": 353943.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 296838.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NW": {
       "name": "Northwest",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -2023,25 +2072,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 1039399.0,
-          "netgen_mwh": 1052756.0,
+          "demand_mwh": 1039177.0,
+          "netgen_mwh": 1052534.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 1015305.0,
+          "demand_mwh": 1041511.0,
+          "netgen_mwh": 1036114.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 978798.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NY": {
       "name": "New York",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -2284,17 +2340,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 484323.0,
+          "netgen_mwh": 430911.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 417474.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SE": {
       "name": "Southeast",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -2536,18 +2599,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 838589.0,
+          "demand_mwh": 817378.0,
+          "netgen_mwh": 851575.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 795673.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SW": {
       "name": "Southwest",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -2789,18 +2859,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 438207.0,
+          "demand_mwh": 425625.0,
+          "netgen_mwh": 469301.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 436509.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TEN": {
       "name": "Tennessee",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -3042,18 +3119,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 626507.0,
+          "demand_mwh": 623228.0,
+          "netgen_mwh": 572858.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 591797.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TEX": {
       "name": "Texas",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -3295,10 +3379,17 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 1706650.0,
+          "demand_mwh": 1706646.0,
+          "netgen_mwh": 1712857.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 1678378.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     }
@@ -3306,9 +3397,9 @@
   "balancing_authorities": {
     "AECI": {
       "name": "Associated Electric Cooperative, Inc.",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -3543,25 +3634,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 85715.0,
+          "demand_mwh": 85713.0,
           "netgen_mwh": 66024.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 84983.0,
+          "demand_mwh": 84989.0,
+          "netgen_mwh": 63038.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 85183.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "AVA": {
       "name": "Avista Corporation",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -3804,17 +3902,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 29320.0,
+          "netgen_mwh": 19400.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 27939.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "AVRN": {
       "name": "Avangrid Renewables, LLC",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -4053,14 +4158,21 @@
           "netgen_mwh": 20932.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 17224.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "AZPS": {
       "name": "Arizona Public Service Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -4302,18 +4414,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 158186.0,
+          "demand_mwh": 145604.0,
+          "netgen_mwh": 91317.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 154184.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "BANC": {
       "name": "Balancing Authority of Northern California",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -4556,17 +4675,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 47267.0,
+          "netgen_mwh": 41726.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 45067.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "BHBA": {
       "name": "Black Hills Energy",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -4809,17 +4935,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 23293.0,
+          "netgen_mwh": 23149.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 22761.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "BPAT": {
       "name": "Bonneville Power Administration",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -5062,17 +5195,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 156551.0,
+          "netgen_mwh": 172697.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 149931.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CHPD": {
       "name": "Public Utility District No. 1 of Chelan County",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -5315,17 +5455,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 4352.0,
+          "netgen_mwh": 15564.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 4209.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CISO": {
       "name": "California ISO",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -5567,18 +5714,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 701355.0,
+          "demand_mwh": 701469.0,
+          "netgen_mwh": 484731.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 663304.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CPLE": {
       "name": "Duke Energy Progress East",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -5813,25 +5967,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 237088.0,
-          "netgen_mwh": 233745.0,
+          "demand_mwh": 237504.0,
+          "netgen_mwh": 234159.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 238218.0,
+          "demand_mwh": 236287.0,
+          "netgen_mwh": 233563.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 209991.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "CPLW": {
       "name": "Duke Energy Progress West",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -6066,25 +6227,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 15455.0,
-          "netgen_mwh": 13906.0,
+          "demand_mwh": 15418.0,
+          "netgen_mwh": 13869.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 15360.0,
+          "demand_mwh": 15279.0,
+          "netgen_mwh": 13485.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 13793.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "DEAA": {
       "name": "Arlington Valley, LLC",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -6323,14 +6491,21 @@
           "netgen_mwh": 4785.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 4754.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "DOPD": {
       "name": "PUD No. 1 of Douglas County",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -6573,17 +6748,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 5930.0,
+          "netgen_mwh": 7376.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 5692.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "DUK": {
       "name": "Duke Energy Carolinas",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -6818,25 +7000,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 411408.0,
-          "netgen_mwh": 370838.0,
+          "demand_mwh": 411312.0,
+          "netgen_mwh": 370743.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 405950.0,
+          "demand_mwh": 405951.0,
+          "netgen_mwh": 368368.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 354329.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "EPE": {
       "name": "El Paso Electric Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -7079,17 +7268,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 34887.0,
+          "netgen_mwh": 27145.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 35030.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "ERCO": {
       "name": "ERCOT (Texas)",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -7331,18 +7527,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 1706650.0,
+          "demand_mwh": 1706646.0,
+          "netgen_mwh": 1712857.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 1678378.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "FMPP": {
       "name": "Florida Municipal Power Pool",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -7585,17 +7788,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 60948.0,
+          "netgen_mwh": 57181.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 62766.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "FPC": {
       "name": "Duke Energy Florida, Inc.",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -7837,18 +8047,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 196471.0,
+          "demand_mwh": 203908.0,
+          "netgen_mwh": 172959.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 196949.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "FPL": {
       "name": "Florida Power & Light Co.",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -8090,18 +8307,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 485689.0,
+          "demand_mwh": 490718.0,
+          "netgen_mwh": 493744.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 475804.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "GCPD": {
       "name": "Public Utility District No. 2 of Grant County, Washington",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -8344,17 +8568,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 18038.0,
+          "netgen_mwh": 14527.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 17145.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "GRID": {
       "name": "Gridforce Energy Management, LLC",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -8593,14 +8824,21 @@
           "netgen_mwh": 52289.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 49677.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "GVL": {
       "name": "Gainesville Regional Utilities",
-      "days": 32,
+      "days": 33,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -8822,17 +9060,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 7381.0,
+          "netgen_mwh": 6262.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 7153.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "GWA": {
       "name": "NaturEner Power Watch, LLC",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -9071,6 +9316,13 @@
           "netgen_mwh": 6023.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 2831.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
@@ -9321,17 +9573,17 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 2008.0,
-          "netgen_mwh": null,
-          "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "netgen_mwh": 1.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "IID": {
       "name": "Imperial Irrigation District",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -9573,18 +9825,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 8677.0,
+          "demand_mwh": 12984.0,
+          "netgen_mwh": 18308.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 8725.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "IPCO": {
       "name": "Idaho Power Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -9827,17 +10086,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 51523.0,
+          "netgen_mwh": 42049.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 49764.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "ISNE": {
       "name": "ISO New England",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -10080,17 +10346,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 344152.0,
+          "netgen_mwh": 353943.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 296838.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "JEA": {
       "name": "JEA",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -10333,17 +10606,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 44936.0,
+          "netgen_mwh": 31805.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 44564.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "LDWP": {
       "name": "Los Angeles Department of Water and Power",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -10585,18 +10865,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 77159.0,
+          "demand_mwh": 77196.0,
+          "netgen_mwh": 62531.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 73061.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "LGEE": {
       "name": "LG&E and KU Services Company as agent for Louisville Gas and Electric Company and Kentucky Utilities Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -10839,17 +11126,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 142080.0,
+          "netgen_mwh": 129909.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 130271.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "MISO": {
       "name": "Midcontinent ISO",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -11091,18 +11385,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 2355927.0,
+          "demand_mwh": 2307526.0,
+          "netgen_mwh": 2267794.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 2189274.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NEVP": {
       "name": "Nevada Power Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -11345,17 +11646,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 131647.0,
+          "netgen_mwh": 129671.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 128792.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NWMT": {
       "name": "NorthWestern Corporation",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -11597,18 +11905,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 30954.0,
+          "demand_mwh": 31288.0,
+          "netgen_mwh": 62676.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 29999.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "NYIS": {
       "name": "New York ISO",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -11851,17 +12166,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 484323.0,
+          "netgen_mwh": 430911.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 417474.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PACE": {
       "name": "PacifiCorp East",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -12096,25 +12418,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 149071.0,
-          "netgen_mwh": 191191.0,
+          "demand_mwh": 148829.0,
+          "netgen_mwh": 190949.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 153908.0,
+          "demand_mwh": 154304.0,
+          "netgen_mwh": 183040.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 148907.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PACW": {
       "name": "PacifiCorp West",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -12349,25 +12678,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 53367.0,
-          "netgen_mwh": 24053.0,
+          "demand_mwh": 53385.0,
+          "netgen_mwh": 24071.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 51693.0,
+          "demand_mwh": 51696.0,
+          "netgen_mwh": 22405.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 47867.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PGE": {
       "name": "Portland General Electric Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -12610,17 +12946,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 59415.0,
+          "netgen_mwh": 21124.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 56028.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PJM": {
       "name": "PJM Interconnection",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -12863,17 +13206,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 2914182.0,
+          "netgen_mwh": 3073320.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 2552283.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PNM": {
       "name": "Public Service Company of New Mexico",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -13116,17 +13466,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 47234.0,
+          "netgen_mwh": 47465.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 46667.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PSCO": {
       "name": "Public Service Company of Colorado",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -13368,18 +13725,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 125571.0,
+          "demand_mwh": 151044.0,
+          "netgen_mwh": 160306.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 123960.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "PSEI": {
       "name": "Puget Sound Energy, Inc.",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -13614,25 +13978,32 @@
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 58202.0,
-          "netgen_mwh": 9803.0,
+          "demand_mwh": 58204.0,
+          "netgen_mwh": 9805.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-04",
           "demand_mwh": 57840.0,
+          "netgen_mwh": 8837.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 54482.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SC": {
       "name": "South Carolina Public Service Authority",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -13875,17 +14246,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 96035.0,
+          "netgen_mwh": 75024.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 94029.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SCEG": {
       "name": "Dominion Energy South Carolina, Inc.",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -14127,18 +14505,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 87377.0,
+          "demand_mwh": 91487.0,
+          "netgen_mwh": 85869.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 86191.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SCL": {
       "name": "Seattle City Light",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -14381,17 +14766,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 22795.0,
+          "netgen_mwh": 7975.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 21470.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SEC": {
       "name": "Seminole Electric Cooperative",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -14634,17 +15026,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 4986.0,
+          "netgen_mwh": 41462.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 4763.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SEPA": {
       "name": "Southeastern Power Administration",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -14883,14 +15282,21 @@
           "netgen_mwh": 3808.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 3852.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SIKE": {
       "name": "Sikeston Board of Municipal Utilities",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -15129,14 +15535,21 @@
           "netgen_mwh": 766.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 765.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SOCO": {
       "name": "Southern Company Services, Inc. - Trans",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -15378,18 +15791,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 838589.0,
+          "demand_mwh": 817378.0,
+          "netgen_mwh": 847723.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 795673.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SPA": {
       "name": "Southwestern Power Administration",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -15617,25 +16037,32 @@
         },
         {
           "date": "2026-09-02",
-          "demand_mwh": 731.0,
+          "demand_mwh": 728.0,
           "netgen_mwh": 8796.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         },
         {
           "date": "2026-09-03",
-          "demand_mwh": 717.0,
+          "demand_mwh": 712.0,
           "netgen_mwh": 8795.0,
           "value_status": "final",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 562.0,
+          "netgen_mwh": null,
+          "value_status": "provisional",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SRP": {
       "name": "Salt River Project Agricultural Improvement and Power District",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -15878,17 +16305,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 127387.0,
+          "netgen_mwh": 214084.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 129261.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SWPP": {
       "name": "Southwest Power Pool",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -16131,17 +16565,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 1117150.0,
+          "netgen_mwh": 1140264.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 1074481.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "SWPW": {
       "name": "Southwest Power Pool West Balancing Authority Area",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -16384,17 +16825,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 82378.0,
+          "netgen_mwh": 72747.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 80375.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TAL": {
       "name": "City of Tallahassee",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -16637,17 +17085,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 9755.0,
+          "netgen_mwh": 9963.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 9272.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TEC": {
       "name": "Tampa Electric Company",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -16890,17 +17345,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 76059.0,
+          "netgen_mwh": 78744.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 76234.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TEPC": {
       "name": "Tucson Electric Power",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -17143,17 +17605,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 49051.0,
+          "netgen_mwh": 50208.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 49370.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TIDC": {
       "name": "Turlock Irrigation District",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -17396,17 +17865,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 8869.0,
+          "netgen_mwh": 6480.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 8124.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TPWR": {
       "name": "City of Tacoma, Department of Public Utilities, Light Division",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -17649,17 +18125,24 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 10097.0,
+          "netgen_mwh": 2839.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 9477.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "TVA": {
       "name": "Tennessee Valley Authority",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -17901,18 +18384,25 @@
         },
         {
           "date": "2026-09-04",
-          "demand_mwh": 626507.0,
+          "demand_mwh": 623228.0,
+          "netgen_mwh": 572858.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 591797.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
     "WALC": {
       "name": "Western Area Power Administration - Desert Southwest Region",
-      "days": 35,
+      "days": 36,
       "from": "2026-08-01",
-      "to": "2026-09-04",
+      "to": "2026-09-05",
       "daily": [
         {
           "date": "2026-08-01",
@@ -18155,9 +18645,16 @@
         {
           "date": "2026-09-04",
           "demand_mwh": 21462.0,
+          "netgen_mwh": 34328.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-05",
+          "demand_mwh": 21997.0,
           "netgen_mwh": null,
           "value_status": "provisional",
-          "fetched_at": "2026-09-05 18:00"
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     },
@@ -18178,9 +18675,9 @@
     },
     "YAD": {
       "name": "Alcoa Power Generating, Inc. - Yadkin Division",
-      "days": 34,
+      "days": 35,
       "from": "2026-08-01",
-      "to": "2026-09-03",
+      "to": "2026-09-04",
       "daily": [
         {
           "date": "2026-08-01",
@@ -18419,6 +18916,13 @@
           "netgen_mwh": 1924.0,
           "value_status": "final",
           "fetched_at": "2026-09-05 18:00"
+        },
+        {
+          "date": "2026-09-04",
+          "demand_mwh": null,
+          "netgen_mwh": 1942.0,
+          "value_status": "final",
+          "fetched_at": "2026-09-06 18:00"
         }
       ]
     }

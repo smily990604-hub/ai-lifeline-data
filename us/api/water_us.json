@@ -1,6 +1,8 @@
 {
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-06 18:01 JST)",
+  "cite_as": "AI Lifeline, Water (United States edition), data confirmed 2026-09-01, https://ai-lifeline.org/us/water/",
   "region": "us",
-  "generated": "2026-09-05 18:01",
+  "generated": "2026-09-06 18:01",
   "status": "observing",
   "status_note": "Observing only: no good/bad criterion is defined for this chapter (no threshold is inferred from the drought categories). Regional aggregates only; no facility-level data. Water-disclosure levels record whether a disclosure exists, never the figures themselves.",
   "frequency_note": "Mixed-frequency chapter: the Drought Monitor is weekly (map released Thursdays, valid the preceding Tuesday; refetched daily so revisions are picked up); the disclosure ledger is re-verified by hand about monthly.",
@@ -11,8 +13,8 @@
       "definition_note": "Cumulative statisticsType=1 as published: value = percent of the contiguous U.S. in categories D1-D4. Columns d0_plus..d4 are the other cumulative columns as published; none = percent not in D0-D4. Categories: D0 Abnormally Dry, D1 Moderate, D2 Severe, D3 Extreme, D4 Exceptional Drought (NDMC definitions).",
       "causal_note": "Water is the cooling medium of AI: evaporative cooling and thermal power generation draw on the same regional water; a drying region tightens both at once. Drought extent is the public, weekly, nationwide signal of that pressure.",
       "source": {
-        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
         "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
+        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
         "url": "https://droughtmonitor.unl.edu/"
       },
       "data_status": "live",
@@ -493,8 +495,8 @@
       "reference": true,
       "reference_note": "Reference series: the Total area of interest as published by the USDM (includes Alaska, Hawaii and Puerto Rico). The headline series is CONUS.",
       "source": {
-        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
         "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
+        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
         "url": "https://droughtmonitor.unl.edu/"
       },
       "data_status": "live",
@@ -974,8 +976,8 @@
       "unit": "companies",
       "policy": "Observing only whether a disclosure exists. No operator figure (WUE, withdrawal, consumption) is reproduced (2026-08-21 rule, Japan edition). We link to the disclosure page and record the level and the date checked.",
       "source": {
-        "license": "First-party observation of the existence of disclosure; no third-party figures are reproduced (2026-08-21 rule, Japan edition)",
         "name": "AI Lifeline first-party observation of official sustainability pages",
+        "license": "First-party observation of the existence of disclosure; no third-party figures are reproduced (2026-08-21 rule, Japan edition)",
         "url": "https://ai-lifeline.org/us/water/"
       },
       "data_status": "live",
@@ -1165,8 +1167,8 @@
       "reference": true,
       "checked": "2026-09-04",
       "source": {
-        "license": "Public domain (U.S. federal government work)",
         "name": "U.S. Geological Survey, Estimated use of water in the United States in 2015 (Circular 1441)",
+        "license": "Public domain (U.S. federal government work)",
         "url": "https://pubs.usgs.gov/publication/cir1441"
       },
       "data_status": "live",
@@ -1200,14 +1202,14 @@
   },
   "candidates": [
     {
-      "status": "candidate_unobserved",
       "reason": "The national figures are published as a ledger above (Circular 1441); the NWIS retrieval endpoint now redirects to an information page (2026-09-04), so no machine-readable series exists yet.",
-      "name": "USGS water use - machine-readable re-retrieval (NWIS water-use service)"
+      "name": "USGS water use - machine-readable re-retrieval (NWIS water-use service)",
+      "status": "candidate_unobserved"
     },
     {
-      "status": "candidate_unobserved",
       "reason": "No public periodic statistic exists (checked 2026-09-03); operator disclosures are tracked in the ledger above instead.",
-      "name": "Data-center water withdrawal by state"
+      "name": "Data-center water withdrawal by state",
+      "status": "candidate_unobserved"
     }
   ],
   "can_say": [
@@ -1219,5 +1221,57 @@
     "How much water U.S. data centers withdraw or consume, by state or by facility (no public periodic statistic exists; checked 2026-09-03).",
     "Whether drought has constrained cooling at any specific facility or region (regional drought extent only).",
     "Whether any drought level or disclosure count is good or bad (no threshold is inferred from the drought categories)."
-  ]
+  ],
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-06 18:01 JST)",
+  "answer_line_date": "2026-09-01",
+  "answer_kind": "observing",
+  "headline_answer": {
+    "series": "drought_area_d1_plus",
+    "label": "CONUS area in drought (D1 or worse)",
+    "value": 59.05,
+    "unit": "%",
+    "date": "2026-09-01",
+    "threshold": null
+  },
+  "faq": [
+    {
+      "q": "What share of the contiguous U.S. is in drought (D1 or worse)?",
+      "a": "For the map dated 2026-09-01, 59.05% of the contiguous U.S. area was in D1 (moderate) or worse; the U.S. total (50 states + Puerto Rico) was 49.51%. Source: U.S. Drought Monitor (NDMC / USDA / NOAA / NASA), weekly, figures as published."
+    },
+    {
+      "q": "How many major cloud and data-center operators disclose a WUE figure?",
+      "a": "7 of 14 operators in the panel disclosed a WUE figure as of 2026-09-03 (volume-level disclosure 4, policy only 3, no disclosure found 0, could not be confirmed 0). First-party check of official sustainability pages; no operator figures are reproduced except where transcribed from the primary document."
+    },
+    {
+      "q": "What is the source and how often is it updated?",
+      "a": "Drought Monitor: weekly map (released Thursdays, valid the preceding Tuesday), refetched daily so revisions are picked up. Disclosure ledger: re-verified by hand about monthly. Observation started 2026-09-03. Last updated 2026-09-06 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/water_us.json. Definition: docs/指標定義_US_水章.md v1.0."
+    },
+    {
+      "q": "What can this data not tell you?",
+      "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): How much water U.S. data centers withdraw or consume, by state or by facility (no public periodic statistic exists; checked 2026-09-03); Whether drought has constrained cooling at any specific facility or region (regional drought extent only); Whether any drought level or disclosure count is good or bad (no threshold is inferred from the drought categories)."
+    }
+  ],
+  "citation": {
+    "page": "https://ai-lifeline.org/us/water/",
+    "api": "https://ai-lifeline.org/us/api/water_us.json",
+    "last_confirmed": "2026-09-04",
+    "next_expected": "2026-09-08",
+    "generated": "2026-09-06 18:01",
+    "observation_start": "2026-09-03",
+    "series_count": 4,
+    "series_not_yet_measured": 0,
+    "title_short": "CONUS in drought 59.05% (final 9/1)",
+    "generated_by": "scripts/citation/apply_citation_layer.py",
+    "ledger_version": "v1.1-2026-09-06",
+    "keys_written": [
+      "summary",
+      "cite_as",
+      "answer_line",
+      "answer_line_date",
+      "answer_kind",
+      "headline_answer",
+      "faq",
+      "citation"
+    ]
+  }
 }

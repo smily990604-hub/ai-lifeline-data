@@ -1,6 +1,8 @@
 {
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-05 20:00 JST)",
+  "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed no confirmed value, https://ai-lifeline.org/eu/power/",
   "region": "eu",
-  "generated": "2026-09-05 08:35",
+  "generated": "2026-09-05 20:00",
   "status": "observing",
   "series_kind": "forecast",
   "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
@@ -172,5 +174,57 @@
     "How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing).",
     "Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen).",
     "Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
-  ]
+  ],
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-05 20:00 JST)",
+  "answer_line_date": null,
+  "answer_kind": "observing",
+  "headline_answer": {
+    "series": "eu27_load_forecast_mwh",
+    "label": "EU27 day-ahead total load FORECAST",
+    "value": null,
+    "unit": "MWh",
+    "date": "",
+    "threshold": null
+  },
+  "faq": [
+    {
+      "q": "What is the latest EU27 day-ahead load forecast?",
+      "a": "Not yet measured: the series is not connected (data_status: not_yet_measured (not connected - awaiting data source authorization: ENTSO-E API token; see connection_status)). Once connected it will hold the day-ahead total load FORECAST for the EU27 (ENTSO-E article 6.1.B, CC BY 4.0), summed over one area per member state per CET/CEST day, in MWh."
+    },
+    {
+      "q": "Is this actual electricity load?",
+      "a": "No. series_kind = forecast. This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing."
+    },
+    {
+      "q": "What is the source and how often is it updated?",
+      "a": "ENTSO-E Transparency Platform, daily (CET/CEST day) once the API token is installed; page skeleton published 2026-09-03. Last updated 2026-09-05 20:00 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json."
+    },
+    {
+      "q": "What can this data not tell you?",
+      "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing); Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen); Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
+    }
+  ],
+  "citation": {
+    "page": "https://ai-lifeline.org/eu/power/",
+    "api": "https://ai-lifeline.org/eu/api/power_eu.json",
+    "last_confirmed": null,
+    "next_expected": null,
+    "generated": "2026-09-05 20:00",
+    "observation_start": "2026-09-03",
+    "series_count": 1,
+    "series_not_yet_measured": 1,
+    "title_short": "observing, no confirmed value",
+    "generated_by": "scripts/citation/apply_citation_layer.py",
+    "ledger_version": "v1.1-2026-09-06",
+    "keys_written": [
+      "summary",
+      "cite_as",
+      "answer_line",
+      "answer_line_date",
+      "answer_kind",
+      "headline_answer",
+      "faq",
+      "citation"
+    ]
+  }
 }

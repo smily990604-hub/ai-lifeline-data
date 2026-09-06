@@ -22,7 +22,8 @@ This repository is a **read-only mirror of the machine-readable files already pu
 |---|---|---|
 | https://ai-lifeline.org/index.json | `index.json` | Site table of contents keyed by edition (jp / us / eu) |
 | https://ai-lifeline.org/llms.txt | `llms.txt` | Site guide for language models |
-| https://ai-lifeline.org/api/world.json | `api/world.json` | Latest confirmed value of every published series in every edition |
+| https://ai-lifeline.org/api/index.json | `api/index.json` | Today's answer per chapter (one sentence), FAQ, last confirmed date, next expected update, suggested citation (added 2026-09-06) |
+| https://ai-lifeline.org/api/world.json | `api/world.json` | Latest confirmed value of every published series in every edition (plus `answer_lines`) |
 | https://ai-lifeline.org/api/health.json | `api/health.json` | Liveness of the whitepaper itself (per-series last date, frequency, stale flag, fetch status) |
 | https://ai-lifeline.org/api/upcoming.json | `api/upcoming.json` | Future dated items across editions (AI Act stages, comment deadlines, effective dates) |
 | https://ai-lifeline.org/api/upcoming.ics | `api/upcoming.ics` | Same calendar as iCalendar |
@@ -31,8 +32,7 @@ This repository is a **read-only mirror of the machine-readable files already pu
 | https://ai-lifeline.org/api/cross.json | `api/cross.json` | Cross-edition series (training-material volume, carbon-intensity ledger, public-opinion ledger) |
 | https://ai-lifeline.org/api/supply/tw.json | `api/supply/tw.json` | Feature: Taiwan monthly trade totals (data.gov.tw) |
 | https://ai-lifeline.org/api/supply/kr.json | `api/supply/kr.json` | Feature: Korea customs by HS heading (skeleton until API key installed) |
-| https://ai-lifeline.org/sitemap_index.xml | `sitemap_index.xml` | Sitemap index (all sitemaps) |
-| https://ai-lifeline.org/sitemap_api.xml | `sitemap_api.xml` | Sitemap of machine-readable files and feature pages |
+| https://ai-lifeline.org/sitemap.xml | `sitemap.xml` | Single sitemap of every page and machine-readable file, with `lastmod` = actual file modification time (the separate index/api sitemaps were retired 2026-09-05) |
 
 ### Japan edition (`jp/api/`)
 | Canonical URL | What it is |
@@ -90,11 +90,19 @@ This repository is a **read-only mirror of the machine-readable files already pu
 - Original content of AI Lifeline in this repository (the JSON structure, first-party observations, ledgers, notes and this README) is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** — see `LICENSE`. Attribute as **"AI Lifeline (AIライフライン), https://ai-lifeline.org"**.
 - 本リポジトリに含まれるAIライフラインの独自コンテンツ（JSONの構造・自前観測値・台帳・注記・本README）は **CC BY 4.0** です。出典表示は「AI Lifeline（AIライフライン）https://ai-lifeline.org」としてください。
 
+## How to cite / 引用例
+- Every chapter JSON starts with `summary` (the one-sentence answer shown at the top of the chapter page) and `cite_as` (a suggested citation), and ends with `answer_line`, `faq[]` and `citation{last_confirmed, next_expected, generated}`. `api/index.json` collects them for all chapters.
+- Suggested form (English): *AI Lifeline, Electricity (United States edition), data confirmed 2026-09-03, https://ai-lifeline.org/us/power/* — keep the confirmation date and the upstream source (`source` / `sources` in the JSON) with any figure you quote.
+- 日本語の例：*AIライフライン 電力章（確定日 2026-09-04）https://ai-lifeline.org/jp/denryoku/* — 数値を引く際は確定日と出所（JSON の `source`）を併記してください。
+- Machine-readable example: `api/world.json` → `summary.jp.chapters.power.series.reserve_national_min` gives `value`, `observed`, `value_status`, `source` and `definition` in one object; `api/index.json` → `chapters[].answer_line` gives the same fact as one sentence.
+- Corrections after publication are listed in `api/corrections.json`; check it before quoting an older value.
+
 ## Upstream sources — please read / 出典についての注意
 - The figures come from **upstream primary sources** (OCCTO, JEPX, JMA, MOF, METI/e-Stat, EIA, Census, NOAA, USGS, NHC/NWS, Federal Register, Treasury, Grants.gov, U.S. Drought Monitor, EUR-Lex, Eurostat, ECB, ENTSO-E, EFFIS, data.gov.tw, Cloudflare analytics of this site, and others named in each file's `sources`). **Those figures remain subject to the terms of their original publishers**; CC BY 4.0 applies only to AI Lifeline's own contribution. Keep the `sources` attributions when you reuse the data.
 - 各数値の**一次データは各公表元の利用条件に従います**（CC BY 4.0 はAIライフラインの独自部分にのみ適用）。再利用時は各ファイルの `sources` を残してください。
 - Nothing here is advice. Values marked `provisional` may change; check `api/health.json` for staleness and `api/corrections.json` for revisions before relying on a figure.
 
 ## Update cadence / 更新
-- Mirrored once a day after the site's daily batches (Japan 10:30–11:00 JST, US 18:00 JST, EU 20:00 JST). If the mirror lags, the site is canonical.
+- Mirrored once a day after the site's daily batches (Japan 10:30–11:00 JST, US 18:00 JST, EU 20:00 JST); the push itself runs after the US batch. If the mirror lags, the site is canonical.
+- Update frequency of the series themselves varies (daily / business-daily / weekly / monthly / quarterly / irregular ledgers); `api/health.json` states the frequency, the last confirmed date and the next expected update for every series, and `api/index.json` carries `last_confirmed` / `next_update` per chapter.
 - Issues and pull requests are not monitored here; see https://ai-lifeline.org/jp/tousho/ (letters) for contact.
