@@ -1,15 +1,45 @@
 {
   "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
-  "generated_at": "2026-09-06 18:02",
+  "generated_at": "2026-09-07 18:02",
   "kinds": {
     "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
     "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
     "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
     "definition_revision": "an indicator definition document changed version (old series kept alongside)"
   },
-  "count": 53,
+  "count": 55,
   "page": "/jp/unei/#corrections",
   "corrections": [
+    {
+      "id": "jp-changes-2026-09-07-r2-105",
+      "date": "2026-09-07",
+      "region": "jp",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "同日の再実行により第2版へ訂正",
+      "old": null,
+      "new": null,
+      "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
+      "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
+      "recorded_at": "2026-09-07 10:31:42",
+      "ledger_ref": "data/JP/changes/ledger.jsonl#105"
+    },
+    {
+      "id": "jp-changes-2026-09-07-r1-104",
+      "date": "2026-09-07",
+      "region": "jp",
+      "chapter": "power",
+      "series": "power.reserve_national_min",
+      "kind": "value_revision",
+      "what_changed": "広域予備率の確定値への差し替え 1 日ぶん",
+      "old": "2026-09-06 10.16%",
+      "new": "9.55%",
+      "reason": "2026-09-06 10.16% → 9.55% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
+      "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
+      "recorded_at": "2026-09-07 10:30:29",
+      "ledger_ref": "data/JP/changes/ledger.jsonl#104"
+    },
     {
       "id": "us-changes-2026-09-06-r1-62",
       "date": "2026-09-06",
@@ -161,19 +191,19 @@
       "ledger_ref": "data/EU/changes/ledger.jsonl#13"
     },
     {
-      "id": "us-changes-2026-09-04-r1-9",
+      "id": "us-changes-2026-09-04-r1-8",
       "date": "2026-09-04",
       "region": "us",
       "chapter": "power",
-      "series": "power.us48_netgen_mwh",
+      "series": "power.us48_demand_mwh",
       "kind": "value_revision",
-      "what_changed": "Revised: US Lower 48 net generation (daily total) for 2026-09-02",
-      "old": "14,521,264 MWh (provisional)",
-      "new": "14,516,151 MWh (provisional) on refetch",
-      "reason": "14,521,264 MWh (provisional) -> 14,516,151 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+      "what_changed": "Revised: US Lower 48 electricity demand (daily total) for 2026-09-02",
+      "old": "14,716,231 MWh (provisional)",
+      "new": "14,716,242 MWh (provisional) on refetch",
+      "reason": "14,716,231 MWh (provisional) -> 14,716,242 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "data/US/changes/ledger.jsonl#9"
+      "ledger_ref": "data/US/changes/ledger.jsonl#8"
     },
     {
       "id": "us-changes-2026-09-04-r1-13",
@@ -191,19 +221,19 @@
       "ledger_ref": "data/US/changes/ledger.jsonl#13"
     },
     {
-      "id": "us-changes-2026-09-04-r1-8",
+      "id": "us-changes-2026-09-04-r1-9",
       "date": "2026-09-04",
       "region": "us",
       "chapter": "power",
-      "series": "power.us48_demand_mwh",
+      "series": "power.us48_netgen_mwh",
       "kind": "value_revision",
-      "what_changed": "Revised: US Lower 48 electricity demand (daily total) for 2026-09-02",
-      "old": "14,716,231 MWh (provisional)",
-      "new": "14,716,242 MWh (provisional) on refetch",
-      "reason": "14,716,231 MWh (provisional) -> 14,716,242 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+      "what_changed": "Revised: US Lower 48 net generation (daily total) for 2026-09-02",
+      "old": "14,521,264 MWh (provisional)",
+      "new": "14,516,151 MWh (provisional) on refetch",
+      "reason": "14,521,264 MWh (provisional) -> 14,516,151 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "data/US/changes/ledger.jsonl#8"
+      "ledger_ref": "data/US/changes/ledger.jsonl#9"
     },
     {
       "id": "manual-2026-09-04-5",
@@ -221,19 +251,19 @@
       "ledger_ref": "docs/指標定義_US_水章.md（v1.1）"
     },
     {
-      "id": "us-changes-2026-09-03-r2-2",
+      "id": "us-changes-2026-09-03-r2-3",
       "date": "2026-09-03",
       "region": "us",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 2",
-      "old": null,
-      "new": null,
-      "reason": "Revision 1 (1 items) is kept in the ledger; the page shows revision 2 (5 items)",
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "kind": "value_revision",
+      "what_changed": "Revised: US Lower 48 electricity demand (daily total) for 2026-09-02",
+      "old": "14,716,244 MWh (provisional)",
+      "new": "14,716,231 MWh (provisional) on refetch",
+      "reason": "14,716,244 MWh (provisional) -> 14,716,231 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-03 21:53:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#2"
+      "ledger_ref": "data/US/changes/ledger.jsonl#3"
     },
     {
       "id": "us-changes-2026-09-03-r2-4",
@@ -251,19 +281,19 @@
       "ledger_ref": "data/US/changes/ledger.jsonl#4"
     },
     {
-      "id": "us-changes-2026-09-03-r2-3",
+      "id": "us-changes-2026-09-03-r2-2",
       "date": "2026-09-03",
       "region": "us",
-      "chapter": "power",
-      "series": "power.us48_demand_mwh",
-      "kind": "value_revision",
-      "what_changed": "Revised: US Lower 48 electricity demand (daily total) for 2026-09-02",
-      "old": "14,716,244 MWh (provisional)",
-      "new": "14,716,231 MWh (provisional) on refetch",
-      "reason": "14,716,244 MWh (provisional) -> 14,716,231 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 2",
+      "old": null,
+      "new": null,
+      "reason": "Revision 1 (1 items) is kept in the ledger; the page shows revision 2 (5 items)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-03 21:53:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#3"
+      "ledger_ref": "data/US/changes/ledger.jsonl#2"
     },
     {
       "id": "jp-changes-2026-09-03-r2-85",

@@ -1,8 +1,8 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-06. Latest final value: support received by this site (cumulative) 0 (2026-09-05). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-06 18:01 JST)",
-  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-09-05, https://ai-lifeline.org/us/market/",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-07. Latest final value: support received by this site (cumulative) 0 (2026-09-06). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-07 18:01 JST)",
+  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-09-06, https://ai-lifeline.org/us/market/",
   "region": "us",
-  "generated": "2026-09-06 18:01",
+  "generated": "2026-09-07 18:01",
   "status": "observing",
   "chapter": "Chapter 9 - Market participation",
   "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
@@ -52,8 +52,16 @@
           "value": 0,
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
-          "value_status": "provisional",
+          "value_status": "final",
           "fetched_at": "2026-09-06 18:00"
+        },
+        {
+          "date": "2026-09-07",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-09-07 18:00"
         }
       ]
     },
@@ -261,9 +269,9 @@
   },
   "candidates": [
     {
+      "status": "candidate_unobserved",
       "name": "HTTP 402 attempts and successes (self-observation)",
-      "reason": "Endpoint not implemented (design pending approval).",
-      "status": "candidate_unobserved"
+      "reason": "Endpoint not implemented (design pending approval)."
     }
   ],
   "can_say": [
@@ -276,15 +284,15 @@
     "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
     "How pending deliberations on the contractual capacity and liability of AI agents will end (statutes and government documents; state and dates only)."
   ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-06. Latest final value: support received by this site (cumulative) 0 (2026-09-05). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-06 18:01 JST)",
-  "answer_line_date": "2026-09-05",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-07. Latest final value: support received by this site (cumulative) 0 (2026-09-06). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-07 18:01 JST)",
+  "answer_line_date": "2026-09-06",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "support_count",
     "label": "support received by this site (cumulative)",
     "value": 0,
     "unit": "",
-    "date": "2026-09-05",
+    "date": "2026-09-06",
     "threshold": null
   },
   "faq": [
@@ -294,7 +302,7 @@
     },
     {
       "q": "How much support has this site received?",
-      "a": "0 as the cumulative count on 2026-09-06 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+      "a": "0 as the cumulative count on 2026-09-07 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
     },
     {
       "q": "How many GENIUS Act stages are listed?",
@@ -302,7 +310,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-06 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/market_us.json. Definition: docs/指標定義_第9章_市場参加.md v1.0."
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-07 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/market_us.json. Definition: docs/指標定義_第9章_市場参加.md v1.0."
     },
     {
       "q": "What can this data not tell you?",
@@ -312,13 +320,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/market/",
     "api": "https://ai-lifeline.org/us/api/market_us.json",
-    "last_confirmed": "2026-09-06",
-    "next_expected": "2026-09-07",
-    "generated": "2026-09-06 18:01",
+    "last_confirmed": "2026-09-07",
+    "next_expected": "2026-09-08",
+    "generated": "2026-09-07 18:01",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,
-    "title_short": "support count 0 (final 9/5)",
+    "title_short": "support count 0 (final 9/6)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
