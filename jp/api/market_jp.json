@@ -1,8 +1,8 @@
 {
-  "summary": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-09-07。本サイトの支援回数（累計）は0回（2026-09-06確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-09-07 18:02 JST）",
-  "cite_as": "AIライフライン 市場参加章（確定日 2026-09-06）https://ai-lifeline.org/jp/market/",
+  "summary": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-09-09。本サイトの支援回数（累計）は0回（2026-09-08確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-09-09 18:02 JST）",
+  "cite_as": "AIライフライン 市場参加章（確定日 2026-09-08）https://ai-lifeline.org/jp/market/",
   "region": "jp",
-  "generated": "2026-09-07 18:02",
+  "generated": "2026-09-09 18:02",
   "status": "observing",
   "chapter": "第9章 市場参加",
   "status_note": "観測のみ：AIが人手を介さず支払い・受領・契約できる条件の「状態と日付」だけを数え・並べる。良否の判定・主張・評価は書かない。",
@@ -52,8 +52,24 @@
           "value": 0,
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
-          "value_status": "provisional",
+          "value_status": "final",
           "fetched_at": "2026-09-07 18:02"
+        },
+        {
+          "date": "2026-09-08",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "final",
+          "fetched_at": "2026-09-08 18:36"
+        },
+        {
+          "date": "2026-09-09",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-09-09 18:02"
         }
       ]
     },
@@ -269,9 +285,9 @@
   },
   "candidates": [
     {
+      "status": "candidate_unobserved",
       "name": "402 応答の試行数・成功数（自己観測）",
-      "reason": "エンドポイント未実装（設計案は承認待ち）。",
-      "status": "candidate_unobserved"
+      "reason": "エンドポイント未実装（設計案は承認待ち）。"
     }
   ],
   "can_say": [
@@ -284,15 +300,15 @@
     "HTTP 402 応答による支払いの試行数・成功数（エンドポイント未実装・「未計測」の枠のみ）",
     "AI エージェントの契約主体性・責任帰属の今後の見通しや解釈（法令・政府文書の状態と日付のみを写す）"
   ],
-  "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-09-07。本サイトの支援回数（累計）は0回（2026-09-06確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-09-07 18:02 JST）",
-  "answer_line_date": "2026-09-06",
+  "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-09-09。本サイトの支援回数（累計）は0回（2026-09-08確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-09-09 18:02 JST）",
+  "answer_line_date": "2026-09-08",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "support_count",
     "label": "本サイトの支援回数（累計）",
     "value": 0,
     "unit": "回",
-    "date": "2026-09-06",
+    "date": "2026-09-08",
     "threshold": null
   },
   "faq": [
@@ -302,7 +318,7 @@
     },
     {
       "q": "本サイトへの支援回数は何回か",
-      "a": "2026-09-07時点の累計は0回です（運営者の自己テストを除外・日次スナップショット・当日分は暫定）。出典：自社観測（/api/support）。"
+      "a": "2026-09-09時点の累計は0回です（運営者の自己テストを除外・日次スナップショット・当日分は暫定）。出典：自社観測（/api/support）。"
     },
     {
       "q": "ステーブルコイン（電子決済手段）に関する法律の施行段階はいくつ記載されているか",
@@ -310,7 +326,7 @@
     },
     {
       "q": "このデータの出所と更新頻度は",
-      "a": "支援回数は日次、決済レール台帳・法令段階は月次確認です（観測開始 2026-09-04）。状態と日付のみを記載し評価はしません。最終更新 2026-09-07 18:02 JST・機械可読データ https://ai-lifeline.org/jp/api/market_jp.json・定義書 docs/指標定義_第9章_市場参加.md v1.0。"
+      "a": "支援回数は日次、決済レール台帳・法令段階は月次確認です（観測開始 2026-09-04）。状態と日付のみを記載し評価はしません。最終更新 2026-09-09 18:02 JST・機械可読データ https://ai-lifeline.org/jp/api/market_jp.json・定義書 docs/指標定義_第9章_市場参加.md v1.0。"
     },
     {
       "q": "このデータで言えないことは何か",
@@ -320,13 +336,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/jp/market/",
     "api": "https://ai-lifeline.org/jp/api/market_jp.json",
-    "last_confirmed": "2026-09-07",
-    "next_expected": "2026-09-08",
-    "generated": "2026-09-07 18:02",
+    "last_confirmed": "2026-09-09",
+    "next_expected": "2026-09-10",
+    "generated": "2026-09-09 18:02",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,
-    "title_short": "支援回数0回（9/6確定）",
+    "title_short": "支援回数0回（9/8確定）",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
