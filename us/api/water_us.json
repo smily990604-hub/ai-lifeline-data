@@ -1,23 +1,35 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-09 18:01 JST)",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-10 18:01 JST)",
   "cite_as": "AI Lifeline, Water (United States edition), data confirmed 2026-09-01, https://ai-lifeline.org/us/water/",
+  "candidates": [
+    {
+      "status": "candidate_unobserved",
+      "reason": "The national figures are published as a ledger above (Circular 1441); the NWIS retrieval endpoint now redirects to an information page (2026-09-04), so no machine-readable series exists yet.",
+      "name": "USGS water use - machine-readable re-retrieval (NWIS water-use service)"
+    },
+    {
+      "status": "candidate_unobserved",
+      "reason": "No public periodic statistic exists (checked 2026-09-03); operator disclosures are tracked in the ledger above instead.",
+      "name": "Data-center water withdrawal by state"
+    }
+  ],
   "region": "us",
-  "generated": "2026-09-09 18:01",
-  "status": "observing",
-  "status_note": "Observing only: no good/bad criterion is defined for this chapter (no threshold is inferred from the drought categories). Regional aggregates only; no facility-level data. Water-disclosure levels record whether a disclosure exists, never the figures themselves.",
+  "generated": "2026-09-10 18:01",
+  "can_say": [
+    "What percent of the contiguous U.S. (and of the U.S. total area) was in drought category D1 or worse each week, as the U.S. Drought Monitor publishes it.",
+    "Whether each of the 14 cloud / data-center operators in the panel publishes a water disclosure, at which level (WUE figure / volume / policy only / none), with the page link and the date checked; and, for WUE disclosers, the figure only where it was transcribed directly from the primary-source report with its page number.",
+    "The national water-use figures USGS published in its five-year compilation (ledger, as published)."
+  ],
+  "cannot_say": [
+    "How much water U.S. data centers withdraw or consume, by state or by facility (no public periodic statistic exists; checked 2026-09-03).",
+    "Whether drought has constrained cooling at any specific facility or region (regional drought extent only).",
+    "Whether any drought level or disclosure count is good or bad (no threshold is inferred from the drought categories)."
+  ],
   "frequency_note": "Mixed-frequency chapter: the Drought Monitor is weekly (map released Thursdays, valid the preceding Tuesday; refetched daily so revisions are picked up); the disclosure ledger is re-verified by hand about monthly.",
+  "status_note": "Observing only: no good/bad criterion is defined for this chapter (no threshold is inferred from the drought categories). Regional aggregates only; no facility-level data. Water-disclosure levels record whether a disclosure exists, never the figures themselves.",
+  "status": "observing",
   "series": {
     "drought_area_d1_plus": {
-      "name": "CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)",
-      "unit": "%",
-      "definition_note": "Cumulative statisticsType=1 as published: value = percent of the contiguous U.S. in categories D1-D4. Columns d0_plus..d4 are the other cumulative columns as published; none = percent not in D0-D4. Categories: D0 Abnormally Dry, D1 Moderate, D2 Severe, D3 Extreme, D4 Exceptional Drought (NDMC definitions).",
-      "causal_note": "Water is the cooling medium of AI: evaporative cooling and thermal power generation draw on the same regional water; a drying region tightens both at once. Drought extent is the public, weekly, nationwide signal of that pressure.",
-      "source": {
-        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
-        "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
-        "url": "https://droughtmonitor.unl.edu/"
-      },
-      "data_status": "live",
       "weekly": [
         {
           "date": "2025-12-30",
@@ -487,19 +499,19 @@
           "valid_end": "2026-09-07",
           "fetched_at": "2026-09-03 21:53"
         }
-      ]
+      ],
+      "causal_note": "Water is the cooling medium of AI: evaporative cooling and thermal power generation draw on the same regional water; a drying region tightens both at once. Drought extent is the public, weekly, nationwide signal of that pressure.",
+      "unit": "%",
+      "data_status": "live",
+      "source": {
+        "url": "https://droughtmonitor.unl.edu/",
+        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
+        "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)"
+      },
+      "definition_note": "Cumulative statisticsType=1 as published: value = percent of the contiguous U.S. in categories D1-D4. Columns d0_plus..d4 are the other cumulative columns as published; none = percent not in D0-D4. Categories: D0 Abnormally Dry, D1 Moderate, D2 Severe, D3 Extreme, D4 Exceptional Drought (NDMC definitions).",
+      "name": "CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)"
     },
     "drought_area_d1_plus_us_total": {
-      "name": "U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)",
-      "unit": "%",
-      "reference": true,
-      "reference_note": "Reference series: the Total area of interest as published by the USDM (includes Alaska, Hawaii and Puerto Rico). The headline series is CONUS.",
-      "source": {
-        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
-        "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
-        "url": "https://droughtmonitor.unl.edu/"
-      },
-      "data_status": "live",
       "weekly": [
         {
           "date": "2025-12-30",
@@ -969,37 +981,38 @@
           "valid_end": "2026-09-07",
           "fetched_at": "2026-09-03 21:53"
         }
-      ]
+      ],
+      "data_status": "live",
+      "unit": "%",
+      "reference_note": "Reference series: the Total area of interest as published by the USDM (includes Alaska, Hawaii and Puerto Rico). The headline series is CONUS.",
+      "reference": true,
+      "source": {
+        "url": "https://droughtmonitor.unl.edu/",
+        "license": "Free re-use with proper attribution (NDMC Web Policy, drought.unl.edu/WebPolicy.aspx; verified 2026-08-29 and 2026-09-03). Not an endorsement by NDMC.",
+        "name": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)"
+      },
+      "name": "U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)"
     },
     "water_disclosure": {
-      "name": "Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
-      "unit": "companies",
-      "policy": "Observing only whether a disclosure exists. No operator figure (WUE, withdrawal, consumption) is reproduced (2026-08-21 rule, Japan edition). We link to the disclosure page and record the level and the date checked.",
-      "source": {
-        "license": "First-party observation of the existence of disclosure; no third-party figures are reproduced (2026-08-21 rule, Japan edition)",
-        "name": "AI Lifeline first-party observation of official sustainability pages",
-        "url": "https://ai-lifeline.org/us/water/"
-      },
-      "data_status": "live",
-      "checked": "2026-09-03",
-      "levels": {
-        "wue": "WUE figure disclosed",
-        "volume": "Total water withdrawal / consumption disclosed",
-        "policy": "Policy or targets only (no figure on the checked page)",
-        "none": "No disclosure found on the checked page",
-        "unconfirmed": "Could not be confirmed (page not retrievable or blocked)"
-      },
-      "panel_summary": {
+      "monthly": {
+        "period": "2026-09",
+        "value": 7,
         "wue": 7,
-        "wue_figures_transcribed": 3,
         "volume": 4,
         "policy_only": 3,
         "none": 0,
         "unconfirmed": 0,
         "total": 14,
-        "checked": "2026-09-03"
+        "fetched_at": "2026-09-03"
       },
       "figures_policy": "2026-09-04 指示 7：WUE を開示している社のうち、一次資料（サステナビリティ報告書の該当ページ）を直接確認して転記できた数値のみ figures に載せる（出所ページ番号つき）。転記していない社は「figure not transcribed」と表示する。数値の解釈・順位付けはしない。",
+      "unit": "companies",
+      "data_status": "live",
+      "source": {
+        "url": "https://ai-lifeline.org/us/water/",
+        "license": "First-party observation of the existence of disclosure; no third-party figures are reproduced (2026-08-21 rule, Japan edition)",
+        "name": "AI Lifeline first-party observation of official sustainability pages"
+      },
       "companies": [
         {
           "name": "Microsoft",
@@ -1147,31 +1160,37 @@
           }
         }
       ],
-      "monthly": [
-        {
-          "period": "2026-09",
-          "value": 7,
-          "wue": 7,
-          "volume": 4,
-          "policy_only": 3,
-          "none": 0,
-          "unconfirmed": 0,
-          "total": 14,
-          "fetched_at": "2026-09-03"
-        }
-      ]
+      "levels": {
+        "wue": "WUE figure disclosed",
+        "volume": "Total water withdrawal / consumption disclosed",
+        "policy": "Policy or targets only (no figure on the checked page)",
+        "none": "No disclosure found on the checked page",
+        "unconfirmed": "Could not be confirmed (page not retrievable or blocked)"
+      },
+      "policy": "Observing only whether a disclosure exists. No operator figure (WUE, withdrawal, consumption) is reproduced (2026-08-21 rule, Japan edition). We link to the disclosure page and record the level and the date checked.",
+      "name": "Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
+      "panel_summary": {
+        "total": 14,
+        "policy_only": 3,
+        "unconfirmed": 0,
+        "checked": "2026-09-03",
+        "wue_figures_transcribed": 3,
+        "volume": 4,
+        "none": 0,
+        "wue": 7
+      },
+      "checked": "2026-09-03"
     },
     "usgs_water_use_ledger": {
-      "name": "USGS - Estimated use of water in the United States (5-year compilation) - national figures as published (ledger)",
       "unit": "entries",
-      "reference": true,
-      "checked": "2026-09-04",
-      "source": {
-        "license": "Public domain (U.S. federal government work)",
-        "name": "U.S. Geological Survey, Estimated use of water in the United States in 2015 (Circular 1441)",
-        "url": "https://pubs.usgs.gov/publication/cir1441"
-      },
       "data_status": "live",
+      "reference": true,
+      "source": {
+        "url": "https://pubs.usgs.gov/publication/cir1441",
+        "license": "Public domain (U.S. federal government work)",
+        "name": "U.S. Geological Survey, Estimated use of water in the United States in 2015 (Circular 1441)"
+      },
+      "name": "USGS - Estimated use of water in the United States (5-year compilation) - national figures as published (ledger)",
       "entries": [
         {
           "date": "2018-06-19",
@@ -1197,32 +1216,11 @@
           "verified_on": "2026-09-04",
           "note": "Frequency: 5-year compilation - does not meet the monthly-or-better rule; kept as an annual/irregular ledger (candidate_ledger in the chapter since 2026-09-03)."
         }
-      ]
+      ],
+      "checked": "2026-09-04"
     }
   },
-  "candidates": [
-    {
-      "status": "candidate_unobserved",
-      "reason": "The national figures are published as a ledger above (Circular 1441); the NWIS retrieval endpoint now redirects to an information page (2026-09-04), so no machine-readable series exists yet.",
-      "name": "USGS water use - machine-readable re-retrieval (NWIS water-use service)"
-    },
-    {
-      "status": "candidate_unobserved",
-      "reason": "No public periodic statistic exists (checked 2026-09-03); operator disclosures are tracked in the ledger above instead.",
-      "name": "Data-center water withdrawal by state"
-    }
-  ],
-  "can_say": [
-    "What percent of the contiguous U.S. (and of the U.S. total area) was in drought category D1 or worse each week, as the U.S. Drought Monitor publishes it.",
-    "Whether each of the 14 cloud / data-center operators in the panel publishes a water disclosure, at which level (WUE figure / volume / policy only / none), with the page link and the date checked; and, for WUE disclosers, the figure only where it was transcribed directly from the primary-source report with its page number.",
-    "The national water-use figures USGS published in its five-year compilation (ledger, as published)."
-  ],
-  "cannot_say": [
-    "How much water U.S. data centers withdraw or consume, by state or by facility (no public periodic statistic exists; checked 2026-09-03).",
-    "Whether drought has constrained cooling at any specific facility or region (regional drought extent only).",
-    "Whether any drought level or disclosure count is good or bad (no threshold is inferred from the drought categories)."
-  ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-09 18:01 JST)",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-09-04. Latest final value: CONUS area in drought (D1 or worse) 59.05% (2026-09-01). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-09-10 18:01 JST)",
   "answer_line_date": "2026-09-01",
   "answer_kind": "observing",
   "headline_answer": {
@@ -1244,7 +1242,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Drought Monitor: weekly map (released Thursdays, valid the preceding Tuesday), refetched daily so revisions are picked up. Disclosure ledger: re-verified by hand about monthly. Observation started 2026-09-03. Last updated 2026-09-09 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/water_us.json. Definition: docs/指標定義_US_水章.md v1.0."
+      "a": "Drought Monitor: weekly map (released Thursdays, valid the preceding Tuesday), refetched daily so revisions are picked up. Disclosure ledger: re-verified by hand about monthly. Observation started 2026-09-03. Last updated 2026-09-10 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/water_us.json. Definition: docs/指標定義_US_水章.md v1.0."
     },
     {
       "q": "What can this data not tell you?",
@@ -1256,7 +1254,7 @@
     "api": "https://ai-lifeline.org/us/api/water_us.json",
     "last_confirmed": "2026-09-04",
     "next_expected": "2026-09-08",
-    "generated": "2026-09-09 18:01",
+    "generated": "2026-09-10 18:01",
     "observation_start": "2026-09-03",
     "series_count": 4,
     "series_not_yet_measured": 0,
