@@ -1,14 +1,8 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-09 20:00 JST)",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-10 20:00 JST)",
   "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed no confirmed value, https://ai-lifeline.org/eu/power/",
   "region": "eu",
-  "generated": "2026-09-09 20:00",
-  "status": "observing",
-  "series_kind": "forecast",
-  "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
-  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition (criteria are frozen as versioned definitions before use; none exists for the EU edition as of 2026-09-03). Do not infer thresholds.",
-  "scope_note": "EU27 aggregate = simple sum of the day-ahead total load forecast over one area per member state (27 areas listed in areas_definition; CET/CEST calendar day; MWh = MW x resolution). Non-member areas (including the United Kingdom, Norway, Switzerland, the Western Balkans) are excluded. A day with any missing area is never final: value_status stays provisional and areas_missing / missing_area_codes record the gap.",
-  "value_status_note": "value_status=final means fetched on a CET/CEST date later than the observation day with no missing area; provisional otherwise (may still be revised or completed on a later refetch). retrieved_retrospectively=true marks backfilled history retrieved after the series went live, kept apart from day-by-day observation.",
+  "generated": "2026-09-10 20:00",
   "areas_definition": [
     {
       "member_state": "AT",
@@ -146,36 +140,40 @@
       "verified": false
     }
   ],
-  "data_status": "not_yet_measured (not connected - awaiting data source authorization: ENTSO-E API token; see connection_status)",
-  "connection_status": {
-    "source_enabled": false,
-    "observation_start": null,
-    "note": "未接続（awaiting data source authorization＝ENTSO-E API トークン待ち・2026-09-03 代表指示）。トークン受領後に enabled=true・observation_start を記入して別途接続。daily_update_eu.ps1 は enabled=false の間 fetch_entsoe.ps1 を呼ばない"
-  },
-  "sources": [
-    {
-      "url": "https://transparency.entsoe.eu/",
-      "license": "ENTSO-E Transparency Platform — List of Data available for free re-use (2023-10-18), item 1 'Day-ahead Total Load Forecast (6.1.B)': CC BY 4.0 (attribution to the ENTSO-E Transparency Platform as source of publication). Terms and Conditions approved 2023-03-29, applicable from 2023-11-01.",
-      "name": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
-    }
-  ],
-  "load_forecast_daily": [],
-  "area_forecast_latest": null,
-  "breakdown": {
-    "note": "Per-area daily series are split by year into the files listed in files (machine-readable only; page shows the EU27 aggregate). Empty until the source is connected.",
-    "files": {}
-  },
   "can_say": [
     "How much electricity the transmission system operators of the 27 member states forecast, one day ahead, for each CET/CEST day (sum of one area per member state, MWh), as published on the ENTSO-E Transparency Platform under CC BY 4.0.",
     "Which days are final (all 27 areas present, fetched on a later day), which are provisional, and which were backfilled.",
     "Which 27 areas make up the aggregate (areas_definition in the JSON)."
   ],
+  "connection_status": {
+    "source_enabled": false,
+    "note": "未接続（awaiting data source authorization＝ENTSO-E API トークン待ち・2026-09-03 代表指示）。トークン受領後に enabled=true・observation_start を記入して別途接続。daily_update_eu.ps1 は enabled=false の間 fetch_entsoe.ps1 を呼ばない",
+    "observation_start": null
+  },
   "cannot_say": [
     "How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing).",
     "Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen).",
     "Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
   ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-09 20:00 JST)",
+  "area_forecast_latest": null,
+  "breakdown": {
+    "note": "Per-area daily series are split by year into the files listed in files (machine-readable only; page shows the EU27 aggregate). Empty until the source is connected.",
+    "files": {}
+  },
+  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition (criteria are frozen as versioned definitions before use; none exists for the EU edition as of 2026-09-03). Do not infer thresholds.",
+  "sources": {
+    "url": "https://transparency.entsoe.eu/",
+    "name": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+    "license": "ENTSO-E Transparency Platform — List of Data available for free re-use (2023-10-18), item 1 'Day-ahead Total Load Forecast (6.1.B)': CC BY 4.0 (attribution to the ENTSO-E Transparency Platform as source of publication). Terms and Conditions approved 2023-03-29, applicable from 2023-11-01."
+  },
+  "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
+  "load_forecast_daily": null,
+  "status": "observing",
+  "series_kind": "forecast",
+  "scope_note": "EU27 aggregate = simple sum of the day-ahead total load forecast over one area per member state (27 areas listed in areas_definition; CET/CEST calendar day; MWh = MW x resolution). Non-member areas (including the United Kingdom, Norway, Switzerland, the Western Balkans) are excluded. A day with any missing area is never final: value_status stays provisional and areas_missing / missing_area_codes record the gap.",
+  "value_status_note": "value_status=final means fetched on a CET/CEST date later than the observation day with no missing area; provisional otherwise (may still be revised or completed on a later refetch). retrieved_retrospectively=true marks backfilled history retrieved after the series went live, kept apart from day-by-day observation.",
+  "data_status": "not_yet_measured (not connected - awaiting data source authorization: ENTSO-E API token; see connection_status)",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series (1 not yet measured), no confirmed value yet. (Source: ENTSO-E Transparency Platform (not connected) / updated 2026-09-10 20:00 JST)",
   "answer_line_date": null,
   "answer_kind": "observing",
   "headline_answer": {
@@ -197,7 +195,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "ENTSO-E Transparency Platform, daily (CET/CEST day) once the API token is installed; page skeleton published 2026-09-03. Last updated 2026-09-09 20:00 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json."
+      "a": "ENTSO-E Transparency Platform, daily (CET/CEST day) once the API token is installed; page skeleton published 2026-09-03. Last updated 2026-09-10 20:00 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json."
     },
     {
       "q": "What can this data not tell you?",
@@ -209,7 +207,7 @@
     "api": "https://ai-lifeline.org/eu/api/power_eu.json",
     "last_confirmed": null,
     "next_expected": null,
-    "generated": "2026-09-09 20:00",
+    "generated": "2026-09-10 20:00",
     "observation_start": "2026-09-03",
     "series_count": 1,
     "series_not_yet_measured": 1,
