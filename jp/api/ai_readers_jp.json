@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-09-11 10:31",
+  "generated": "2026-09-12 10:31",
   "indicator": {
     "id": "ai_readers_01",
     "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
@@ -101,28 +101,29 @@
       "week": 3,
       "from": "2026-09-06",
       "to": "2026-09-12",
-      "observed_through": "2026-09-10",
-      "days_observed": 5,
+      "observed_through": "2026-09-11",
+      "days_observed": 6,
       "provisional": true,
-      "verified_total": 541,
-      "verified_days": 5,
-      "unverified_total": 569,
-      "human_triggered_verified_total": 89,
-      "named_total_reference": 1110,
-      "self_excluded_total": 4369,
+      "verified_total": 579,
+      "verified_days": 6,
+      "unverified_total": 570,
+      "human_triggered_verified_total": 102,
+      "named_total_reference": 1149,
+      "self_excluded_total": 4637,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
-        "GPTBot": 81,
+        "GPTBot": 82,
         "CCBot": 0,
-        "その他": 460
+        "その他": 497
       },
       "breakdown_verified_other_detail": {
         "meta-externalagent": 182,
-        "OAI-SearchBot": 98,
-        "ChatGPT-User": 89,
-        "GoogleOther": 57,
-        "Amazonbot": 34
+        "OAI-SearchBot": 109,
+        "ChatGPT-User": 102,
+        "GoogleOther": 60,
+        "Amazonbot": 43,
+        "Bytespider": 1
       },
       "top_verified": {
         "name": "meta-externalagent",
@@ -326,18 +327,28 @@
       "verified_available": true,
       "human_triggered_verified": 12,
       "human_triggered_named_reference": 12
+    },
+    {
+      "date": "2026-09-11",
+      "ai_verified": 38,
+      "ai_unverified": 1,
+      "ai_named_reference": 39,
+      "self_excluded": 268,
+      "verified_available": true,
+      "human_triggered_verified": 13,
+      "human_triggered_named_reference": 13
     }
   ],
   "autonomous_access": {
     "definition_version": "1.0",
     "definition_fixed_on": "2026-09-05",
     "definition_doc": "docs/指標定義_自律アクセス.md",
-    "computed": "2026-09-11 10:31",
+    "computed": "2026-09-12 10:31",
     "cadence": "月次（日次明細から毎日再集計。月が閉じるまで provisional）",
     "judgment_date": "2027-03-05",
     "observation_start": "2026-08-23",
     "verified_series_start": "2026-08-27",
-    "observed_through": "2026-09-09",
+    "observed_through": "2026-09-10",
     "source": "data/cfaccess/archive/YYYY-MM-DD.csv（Cloudflare GraphQL Analytics API httpRequestsAdaptiveGroups の UA×パス別日次明細・恒久退避）",
     "build": "ai-lifeline/scripts/build_autonomous_access.ps1",
     "indicators": {
@@ -516,33 +527,33 @@
       },
       {
         "month": "2026-09",
-        "days_observed": 9,
+        "days_observed": 10,
         "observed_from": "2026-09-01",
-        "observed_through": "2026-09-09",
+        "observed_through": "2026-09-10",
         "closed": false,
         "provisional": true,
         "a_autonomous_requests": {
-          "autonomous_verified": 514,
-          "human_triggered_verified": 114,
-          "autonomous_named_reference": 892,
-          "human_triggered_named_reference": 308,
-          "verified_days": 9,
+          "autonomous_verified": 558,
+          "human_triggered_verified": 126,
+          "autonomous_named_reference": 942,
+          "human_triggered_named_reference": 320,
+          "verified_days": 10,
           "status": "measured",
           "autonomous_verified_by_name": {
-            "meta-externalagent": 181,
-            "GPTBot": 135,
-            "OAI-SearchBot": 100,
+            "meta-externalagent": 182,
+            "GPTBot": 136,
+            "OAI-SearchBot": 132,
             "GoogleOther": 59,
-            "Amazonbot": 39
+            "Amazonbot": 49
           }
         },
         "b_api_direct_ratio": {
-          "ratio_verified": 0.375,
-          "machine_readable_verified": 162,
-          "content_requests_verified": 432,
-          "ratio_named_reference": 0.342,
-          "machine_readable_named_reference": 270,
-          "content_requests_named_reference": 789,
+          "ratio_verified": 0.367,
+          "machine_readable_verified": 172,
+          "content_requests_verified": 469,
+          "ratio_named_reference": 0.338,
+          "machine_readable_named_reference": 280,
+          "content_requests_named_reference": 829,
           "status": "measured"
         },
         "c_revisit_within_7d_rate": {
@@ -556,7 +567,7 @@
           "bots": {
             "Amazonbot": {
               "first_visit": "2026-09-01",
-              "visit_days": 9,
+              "visit_days": 10,
               "status": "revisited"
             },
             "GoogleOther": {
@@ -566,17 +577,17 @@
             },
             "GPTBot": {
               "first_visit": "2026-09-01",
-              "visit_days": 9,
+              "visit_days": 10,
               "status": "revisited"
             },
             "meta-externalagent": {
               "first_visit": "2026-09-06",
-              "visit_days": 4,
+              "visit_days": 5,
               "status": "revisited"
             },
             "OAI-SearchBot": {
               "first_visit": "2026-09-01",
-              "visit_days": 9,
+              "visit_days": 10,
               "status": "revisited"
             }
           },
@@ -590,12 +601,12 @@
             "bots": {
               "Amazonbot": {
                 "first_visit": "2026-09-01",
-                "visit_days": 9,
+                "visit_days": 10,
                 "status": "revisited"
               },
               "Bytespider": {
                 "first_visit": "2026-09-04",
-                "visit_days": 3,
+                "visit_days": 4,
                 "status": "revisited"
               },
               "CCBot": {
@@ -625,22 +636,22 @@
               },
               "GPTBot": {
                 "first_visit": "2026-09-01",
-                "visit_days": 9,
+                "visit_days": 10,
                 "status": "revisited"
               },
               "meta-externalagent": {
                 "first_visit": "2026-09-06",
-                "visit_days": 4,
+                "visit_days": 5,
                 "status": "revisited"
               },
               "OAI-SearchBot": {
                 "first_visit": "2026-09-01",
-                "visit_days": 9,
+                "visit_days": 10,
                 "status": "revisited"
               },
               "PerplexityBot": {
                 "first_visit": "2026-09-01",
-                "visit_days": 5,
+                "visit_days": 6,
                 "status": "revisited"
               }
             }

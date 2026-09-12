@@ -1,736 +1,550 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-09-11. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-09-10). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-09-11 18:01 JST)",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-09-12. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-09-10). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-09-12 18:01 JST)",
   "cite_as": "AI Lifeline, GPU & compute (United States edition), data confirmed 2026-09-10, https://ai-lifeline.org/us/gpu/",
+  "granularity_note": "The capex series shown is the sum over the panel of filers per calendar quarter; per-filer values are kept in breakdown (machine-readable only).",
   "region": "us",
+  "cannot_say": [
+    "Whether GPUs can actually be obtained (no inventory, lead-time or waitlist data is published or observed).",
+    "Prices actually paid under negotiated or long-term contracts (public list prices only), or the prices of providers outside the panel.",
+    "Whether any level is high or low, or which company is doing better (nothing here ranks or evaluates a company)."
+  ],
+  "status_note": "Observing only: no good/bad criterion is defined for the U.S. compute layer. Public figures and dates only; nothing here ranks or evaluates a company.",
   "candidates": [
     {
-      "name": "Cloud GPU list prices from additional U.S. providers (CoreWeave and others)",
+      "reason": "Per-provider terms of use must be checked before any snapshot (CoreWeave AUP check pending per docs/規約確認_Phase2_20260829.md).",
       "status": "candidate_unobserved",
-      "reason": "Per-provider terms of use must be checked before any snapshot (CoreWeave AUP check pending per docs/規約確認_Phase2_20260829.md)."
+      "name": "Cloud GPU list prices from additional U.S. providers (CoreWeave and others)"
     },
     {
-      "name": "Hyperscaler pricing APIs (AWS Price List, Azure Retail Prices)",
+      "reason": "AWS bulk price files are hundreds of MB per region; the Azure Retail Prices API is documented but the site terms of use for reproduction were ruled out for the token-price series on 2026-08-26 - not adopted without a fresh ruling.",
       "status": "candidate_unobserved",
-      "reason": "AWS bulk price files are hundreds of MB per region; the Azure Retail Prices API is documented but the site terms of use for reproduction were ruled out for the token-price series on 2026-08-26 - not adopted without a fresh ruling."
+      "name": "Hyperscaler pricing APIs (AWS Price List, Azure Retail Prices)"
     },
     {
-      "name": "Semiconductor supply feature (Korea HS-level exports, Taiwan monthly totals)",
+      "reason": "Prepared as a separate feature page (docs/準備メモ_半導体サプライチェーン特集_20260903.md); Korea API key pending.",
       "status": "candidate_ledger",
-      "reason": "Prepared as a separate feature page (docs/準備メモ_半導体サプライチェーン特集_20260903.md); Korea API key pending."
+      "name": "Semiconductor supply feature (Korea HS-level exports, Taiwan monthly totals)"
     }
   ],
-  "generated": "2026-09-11 18:01",
   "status": "observing",
-  "status_note": "Observing only: no good/bad criterion is defined for the U.S. compute layer. Public figures and dates only; nothing here ranks or evaluates a company.",
   "series": {
-    "doe_lbnl_energy_ledger": {
-      "data_status": "live",
-      "reference": true,
-      "unit": "entries",
-      "name": "DOE / LBNL 2024 United States Data Center Energy Usage Report - figures as quoted by DOE (ledger)",
-      "source": {
-        "license": "Public domain (U.S. federal government work)",
-        "name": "U.S. Department of Energy (announcement of the LBNL report)",
-        "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
-      },
-      "entries": [
-        {
-          "date": "2024-12-20",
-          "kind": "publication",
-          "label": "DOE announces the LBNL report: data centers consumed about 4.4% of total U.S. electricity in 2023",
-          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
-          "verified_on": "2026-09-04",
-          "note": "Figure as stated in the DOE announcement (retrieved 2026-09-04). Public domain (U.S. federal government work)."
-        },
-        {
-          "date": "2024-12-20",
-          "kind": "publication",
-          "label": "Total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 (as stated by DOE)",
-          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
-          "verified_on": "2026-09-04",
-          "note": "Values quoted verbatim from the DOE announcement; the underlying LBNL PDF returned HTTP 403 to this site's collector on 2026-09-04 and was not read directly."
-        },
-        {
-          "date": "2024-12-20",
-          "kind": "publication",
-          "label": "DOE states the report estimates an increase to between 325 and 580 TWh by 2028 (an estimate by the report's authors, not by this site)",
-          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
-          "verified_on": "2026-09-04",
-          "note": "Listed because it is a published government figure; this site makes no estimate of its own. The announcement date is the DOE article date as shown on energy.gov (December 2024; day-level date as displayed on the page at retrieval)."
-        }
-      ],
-      "checked": "2026-09-04"
-    },
     "bis_advanced_computing_monthly": {
-      "data_status": "live",
-      "update_frequency": "monthly",
-      "source": {
-        "license": "Public domain (U.S. federal government work). No API key required.",
-        "name": "Federal Register (federalregister.gov) API",
-        "url": "https://www.federalregister.gov/developers/documentation/api/v1"
-      },
       "unit": "documents",
       "name": "Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\", per month of publication",
-      "query_definition": "Federal Register API full-text term \"advanced computing\", agency filter industry-and-security-bureau, from 2022-08-03. Counts are defined entirely by this query (incidental mentions included).",
+      "update_frequency": "monthly",
+      "data_status": "live",
+      "source": {
+        "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+        "license": "Public domain (U.S. federal government work). No API key required.",
+        "name": "Federal Register (federalregister.gov) API"
+      },
+      "query_definition": "Federal Register API full-text term \"advanced computing\", agency filter industry-and-security-bureau, from 2022-08-04. Counts are defined entirely by this query (incidental mentions included).",
       "causal_note": "Export-control rulemaking on advanced computing is the public record of which accelerators may be sold to whom; its cadence is the regulatory pulse of the GPU supply chain.",
       "monthly": [
         {
           "period": "2022-10",
           "value": 2,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2022-11",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2022-12",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-01",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-02",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-03",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-04",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-05",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-06",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-07",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-08",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-09",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-10",
           "value": 4,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-11",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2023-12",
           "value": 2,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-01",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-02",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-03",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-04",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-05",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-06",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-07",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-08",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-09",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-10",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-11",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2024-12",
           "value": 3,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-01",
           "value": 4,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-02",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-03",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-04",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-05",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-06",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-07",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-08",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-09",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-10",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-11",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2025-12",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-01",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-02",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-03",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-04",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-05",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-06",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-07",
           "value": 1,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-08",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": true
         },
         {
           "period": "2026-09",
           "value": 0,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:01",
+          "fetched_at": "2026-09-12 18:01",
           "retrieved_retrospectively": false
         }
       ]
     },
-    "bis_advanced_computing_recent": {
-      "data_status": "live",
-      "reference": true,
-      "unit": "documents",
-      "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
-      "source": {
-        "license": "Public domain (U.S. federal government work). No API key required.",
-        "name": "Federal Register (federalregister.gov) API",
-        "url": "https://www.federalregister.gov/developers/documentation/api/v1"
-      },
-      "entries": [
-        {
-          "date": "2026-07-14",
-          "kind": "Rule",
-          "label": "Enhanced Favorable Treatment for the United Arab Emirates Under the Export Administration Regulations",
-          "source_url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2026-14132"
-        },
-        {
-          "date": "2026-01-15",
-          "kind": "Rule",
-          "label": "Revision to License Review Policy for Advanced Computing Commodities",
-          "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2026-00789"
-        },
-        {
-          "date": "2025-09-16",
-          "kind": "Rule",
-          "label": "Additions and Revisions to the Entity List",
-          "source_url": "https://www.federalregister.gov/documents/2025/09/16/2025-17893/additions-and-revisions-to-the-entity-list",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-17893"
-        },
-        {
-          "date": "2025-03-28",
-          "kind": "Rule",
-          "label": "Additions to the Entity List",
-          "source_url": "https://www.federalregister.gov/documents/2025/03/28/2025-05427/additions-to-the-entity-list",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-05427"
-        },
-        {
-          "date": "2025-02-14",
-          "kind": "Rule",
-          "label": "Implementation of Additional Due Diligence Measures for Advanced Computing Integrated Circuits; Amendments and Clarifications; and Extension of Comment Period; Correction",
-          "source_url": "https://www.federalregister.gov/documents/2025/02/14/2025-02655/implementation-of-additional-due-diligence-measures-for-advanced-computing-integrated-circuits",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-02655"
-        },
-        {
-          "date": "2025-01-16",
-          "kind": "Rule",
-          "label": "Implementation of Additional Due Diligence Measures for Advanced Computing Integrated Circuits; Amendments and Clarifications; and Extension of Comment Period",
-          "source_url": "https://www.federalregister.gov/documents/2025/01/16/2025-00711/implementation-of-additional-due-diligence-measures-for-advanced-computing-integrated-circuits",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-00711"
-        },
-        {
-          "date": "2025-01-16",
-          "kind": "Rule",
-          "label": "Additions to the Entity List",
-          "source_url": "https://www.federalregister.gov/documents/2025/01/16/2025-00480/additions-to-the-entity-list",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-00480"
-        },
-        {
-          "date": "2025-01-15",
-          "kind": "Rule",
-          "label": "Public Briefing on Framework for Artificial Intelligence Diffusion",
-          "source_url": "https://www.federalregister.gov/documents/2025/01/15/2025-00637/public-briefing-on-framework-for-artificial-intelligence-diffusion",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-00637"
-        },
-        {
-          "date": "2025-01-15",
-          "kind": "Rule",
-          "label": "Framework for Artificial Intelligence Diffusion",
-          "source_url": "https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2025-00636"
-        },
-        {
-          "date": "2024-12-05",
-          "kind": "Rule",
-          "label": "Foreign-Produced Direct Product Rule Additions, and Refinements to Controls for Advanced Computing and Semiconductor Manufacturing Items",
-          "source_url": "https://www.federalregister.gov/documents/2024/12/05/2024-28270/foreign-produced-direct-product-rule-additions-and-refinements-to-controls-for-advanced-computing",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2024-28270"
-        },
-        {
-          "date": "2024-12-05",
-          "kind": "Rule",
-          "label": "Additions and Modifications to the Entity List; Removals From the Validated End-User (VEU) Program",
-          "source_url": "https://www.federalregister.gov/documents/2024/12/05/2024-28267/additions-and-modifications-to-the-entity-list-removals-from-the-validated-end-user-veu-program",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2024-28267"
-        },
-        {
-          "date": "2024-12-04",
-          "kind": "Rule",
-          "label": "Public Briefing on Changes to Advanced Computing and Semiconductor Manufacturing Items",
-          "source_url": "https://www.federalregister.gov/documents/2024/12/04/2024-28423/public-briefing-on-changes-to-advanced-computing-and-semiconductor-manufacturing-items",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2024-28423"
-        },
-        {
-          "date": "2024-10-02",
-          "kind": "Rule",
-          "label": "Expansion of Validated End User Authorization: Data Center Validated End User Authorization",
-          "source_url": "https://www.federalregister.gov/documents/2024/10/02/2024-22587/expansion-of-validated-end-user-authorization-data-center-validated-end-user-authorization",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2024-22587"
-        },
-        {
-          "date": "2024-04-04",
-          "kind": "Rule",
-          "label": "Implementation of Additional Export Controls: Certain Advanced Computing Items; Supercomputer and Semiconductor End Use; Updates and Corrections; and Export Controls on Semiconductor Manufacturing Items; Corrections and Clarifications",
-          "source_url": "https://www.federalregister.gov/documents/2024/04/04/2024-07004/implementation-of-additional-export-controls-certain-advanced-computing-items-supercomputer-and",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2024-07004"
-        },
-        {
-          "date": "2023-12-15",
-          "kind": "Rule",
-          "label": "Export Controls on Semiconductor Manufacturing Items; Implementation of Additional Export Controls: Certain Advanced Computing Items; Supercomputer and Semiconductor End Use; Updates and Corrections; Extension of Comment Period",
-          "source_url": "https://www.federalregister.gov/documents/2023/12/15/2023-27588/export-controls-on-semiconductor-manufacturing-items-implementation-of-additional-export-controls",
-          "verified_on": "2026-09-11",
-          "note": "FR document 2023-27588"
-        }
-      ],
-      "checked": "2026-09-11"
-    },
-    "h100_ondemand_price_weekly": {
-      "definition_note": "Figure only, as displayed on the public pricing page for the 8x H100 SXM configuration; three states: ok / pattern_mismatch (page changed - needs review) / fetch_error. At most one request per week with an identifying user agent (terms checked 2026-08-29).",
-      "update_frequency": "weekly",
-      "weekly": [
-        {
-          "date": "2026-09-03",
-          "value": 3.99,
-          "status": "ok",
-          "unit": "USD per GPU-hour",
-          "fetched_at": "2026-09-04 08:22"
-        },
-        {
-          "date": "2026-09-10",
-          "value": 3.99,
-          "status": "ok",
-          "unit": "USD per GPU-hour",
-          "fetched_at": "2026-09-10 18:01"
-        }
-      ],
-      "last_fetch_state": "ok",
-      "unit": "USD per GPU-hour",
-      "name": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market)",
-      "source": {
-        "license": "Public pricing page; figure only is extracted (no text copied). Terms checked 2026-08-29 (docs/規約確認_Phase2_20260829.md: low-frequency snapshots permitted by the AUP); robots.txt allows the path (2026-09-04).",
-        "name": "Lambda public pricing page (first-party weekly check)",
-        "url": "https://lambda.ai/service/gpu-cloud"
-      },
-      "data_status": "live"
-    },
     "cloud_capex_quarterly": {
-      "data_status": "live",
-      "update_frequency": "quarterly",
+      "unit": "million USD",
       "breakdown": {
-        "2025-Q4": {
-          "end": "2025-12-31",
-          "accn": "0001193125-26-027207",
-          "entity": "MICROSOFT CORPORATION",
-          "start": "2025-10-01",
-          "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-          "usd": 29876000000.0
-        },
-        "2024-Q2": {
-          "end": "2024-06-30",
-          "accn": "0001018724-25-000086",
-          "entity": "AMAZON.COM, INC.",
-          "start": "2024-04-01",
-          "tag": "PaymentsToAcquireProductiveAssets",
-          "usd": 17620000000.0
-        },
-        "2026-Q1": [
+        "2024-Q4": [
           {
-            "end": "2026-03-31",
-            "accn": "0001193125-26-191507",
-            "entity": "MICROSOFT CORPORATION",
-            "start": "2026-01-01",
+            "end": "2024-12-31",
+            "accn": "0001193125-26-027207",
             "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 30876000000.0
-          },
-          {
-            "end": "2026-03-31",
-            "accn": "0001628280-26-028526",
-            "entity": "Meta Platforms, Inc.",
-            "start": "2026-01-01",
-            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 18997000000.0
-          },
-          {
-            "end": "2026-03-31",
-            "accn": "0001652044-26-000048",
-            "entity": "Alphabet Inc.",
-            "start": "2026-01-01",
-            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 35674000000.0
-          },
-          {
-            "end": "2026-03-31",
-            "accn": "0001018724-26-000014",
-            "entity": "AMAZON.COM, INC.",
-            "start": "2026-01-01",
-            "tag": "PaymentsToAcquireProductiveAssets",
-            "usd": 44203000000.0
-          }
-        ],
-        "2024-Q4": {
-          "end": "2024-12-31",
-          "accn": "0001193125-26-027207",
-          "entity": "MICROSOFT CORPORATION",
-          "start": "2024-10-01",
-          "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-          "usd": 15804000000.0
-        },
-        "2025-Q2": {
-          "end": "2025-06-30",
-          "accn": "0001018724-26-000026",
-          "entity": "AMAZON.COM, INC.",
-          "start": "2025-04-01",
-          "tag": "PaymentsToAcquireProductiveAssets",
-          "usd": 32183000000.0
-        },
-        "2025-Q1": [
-          {
-            "end": "2025-03-31",
-            "accn": "0001193125-26-191507",
-            "entity": "MICROSOFT CORPORATION",
-            "start": "2025-01-01",
-            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 16745000000.0
-          },
-          {
-            "end": "2025-03-31",
-            "accn": "0001628280-26-028526",
-            "entity": "Meta Platforms, Inc.",
-            "start": "2025-01-01",
-            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 12941000000.0
-          },
-          {
-            "end": "2025-03-31",
-            "accn": "0001652044-26-000048",
-            "entity": "Alphabet Inc.",
-            "start": "2025-01-01",
-            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 17197000000.0
-          },
-          {
-            "end": "2025-03-31",
-            "accn": "0001018724-26-000014",
-            "entity": "AMAZON.COM, INC.",
-            "start": "2025-01-01",
-            "tag": "PaymentsToAcquireProductiveAssets",
-            "usd": 25019000000.0
+            "start": "2024-10-01",
+            "usd": 15804000000.0,
+            "entity": "MICROSOFT CORPORATION"
           }
         ],
         "2024-Q3": [
           {
             "end": "2024-09-30",
             "accn": "0001193125-25-256321",
-            "entity": "MICROSOFT CORPORATION",
-            "start": "2024-07-01",
             "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 14923000000.0
+            "start": "2024-07-01",
+            "usd": 14923000000.0,
+            "entity": "MICROSOFT CORPORATION"
           },
           {
             "end": "2024-09-30",
             "accn": "0001018724-25-000123",
-            "entity": "AMAZON.COM, INC.",
-            "start": "2024-07-01",
             "tag": "PaymentsToAcquireProductiveAssets",
-            "usd": 22620000000.0
+            "start": "2024-07-01",
+            "usd": 22620000000.0,
+            "entity": "AMAZON.COM, INC."
           }
         ],
-        "2026-Q2": {
-          "end": "2026-06-30",
-          "accn": "0001018724-26-000026",
-          "entity": "AMAZON.COM, INC.",
-          "start": "2026-04-01",
-          "tag": "PaymentsToAcquireProductiveAssets",
-          "usd": 54208000000.0
-        },
         "2025-Q3": [
           {
             "end": "2025-09-30",
             "accn": "0001193125-25-256321",
-            "entity": "MICROSOFT CORPORATION",
-            "start": "2025-07-01",
             "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-            "usd": 19394000000.0
+            "start": "2025-07-01",
+            "usd": 19394000000.0,
+            "entity": "MICROSOFT CORPORATION"
           },
           {
             "end": "2025-09-30",
             "accn": "0001018724-25-000123",
-            "entity": "AMAZON.COM, INC.",
-            "start": "2025-07-01",
             "tag": "PaymentsToAcquireProductiveAssets",
-            "usd": 35095000000.0
+            "start": "2025-07-01",
+            "usd": 35095000000.0,
+            "entity": "AMAZON.COM, INC."
+          }
+        ],
+        "2025-Q4": [
+          {
+            "end": "2025-12-31",
+            "accn": "0001193125-26-027207",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2025-10-01",
+            "usd": 29876000000.0,
+            "entity": "MICROSOFT CORPORATION"
+          }
+        ],
+        "2025-Q1": [
+          {
+            "end": "2025-03-31",
+            "accn": "0001193125-26-191507",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2025-01-01",
+            "usd": 16745000000.0,
+            "entity": "MICROSOFT CORPORATION"
+          },
+          {
+            "end": "2025-03-31",
+            "accn": "0001628280-26-028526",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2025-01-01",
+            "usd": 12941000000.0,
+            "entity": "Meta Platforms, Inc."
+          },
+          {
+            "end": "2025-03-31",
+            "accn": "0001652044-26-000048",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2025-01-01",
+            "usd": 17197000000.0,
+            "entity": "Alphabet Inc."
+          },
+          {
+            "end": "2025-03-31",
+            "accn": "0001018724-26-000014",
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "start": "2025-01-01",
+            "usd": 25019000000.0,
+            "entity": "AMAZON.COM, INC."
+          }
+        ],
+        "2024-Q2": [
+          {
+            "end": "2024-06-30",
+            "accn": "0001018724-25-000086",
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "start": "2024-04-01",
+            "usd": 17620000000.0,
+            "entity": "AMAZON.COM, INC."
+          }
+        ],
+        "2026-Q2": [
+          {
+            "end": "2026-06-30",
+            "accn": "0001018724-26-000026",
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "start": "2026-04-01",
+            "usd": 54208000000.0,
+            "entity": "AMAZON.COM, INC."
+          }
+        ],
+        "2025-Q2": [
+          {
+            "end": "2025-06-30",
+            "accn": "0001018724-26-000026",
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "start": "2025-04-01",
+            "usd": 32183000000.0,
+            "entity": "AMAZON.COM, INC."
+          }
+        ],
+        "2026-Q1": [
+          {
+            "end": "2026-03-31",
+            "accn": "0001193125-26-191507",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2026-01-01",
+            "usd": 30876000000.0,
+            "entity": "MICROSOFT CORPORATION"
+          },
+          {
+            "end": "2026-03-31",
+            "accn": "0001628280-26-028526",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2026-01-01",
+            "usd": 18997000000.0,
+            "entity": "Meta Platforms, Inc."
+          },
+          {
+            "end": "2026-03-31",
+            "accn": "0001652044-26-000048",
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "start": "2026-01-01",
+            "usd": 35674000000.0,
+            "entity": "Alphabet Inc."
+          },
+          {
+            "end": "2026-03-31",
+            "accn": "0001018724-26-000014",
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "start": "2026-01-01",
+            "usd": 44203000000.0,
+            "entity": "AMAZON.COM, INC."
           }
         ]
       },
-      "definition_note": "Panel: Amazon.com, Inc., Microsoft Corporation, Alphabet Inc., Meta Platforms, Inc.. Values from the SEC XBRL frames API for each calendar quarter, as filed; the sum is arithmetic on public filings. A quarter with fewer than all panel members reported is provisional. Filers whose fiscal quarters do not align with calendar quarters are not included. No evaluation of any company.",
-      "unit": "million USD",
       "name": "Capital expenditure reported in SEC filings by 4 major cloud operators, sum per calendar quarter (million USD; payments to acquire PP&E / productive assets as tagged by each filer)",
+      "update_frequency": "quarterly",
+      "data_status": "live",
+      "definition_note": "Panel: Amazon.com, Inc., Microsoft Corporation, Alphabet Inc., Meta Platforms, Inc.. Values from the SEC XBRL frames API for each calendar quarter, as filed; the sum is arithmetic on public filings. A quarter with fewer than all panel members reported is provisional. Filers whose fiscal quarters do not align with calendar quarters are not included. No evaluation of any company.",
       "source": {
+        "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
         "license": "Public domain (SEC EDGAR data; fair access policy: identifying User-Agent, <10 req/s)",
-        "name": "U.S. Securities and Exchange Commission, EDGAR XBRL frames API",
-        "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+        "name": "U.S. Securities and Exchange Commission, EDGAR XBRL frames API"
       },
       "causal_note": "Capex reported to the SEC is the money actually spent on the physical body of AI (data centers, servers, accelerators) by the largest buyers; it is the public quarterly measure of that flow.",
       "quarterly": [
@@ -740,7 +554,7 @@
           "companies_reported": 1,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -749,7 +563,7 @@
           "companies_reported": 2,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -758,7 +572,7 @@
           "companies_reported": 1,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -767,7 +581,7 @@
           "companies_reported": 4,
           "companies_in_panel": 4,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -776,7 +590,7 @@
           "companies_reported": 1,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -785,7 +599,7 @@
           "companies_reported": 2,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -794,7 +608,7 @@
           "companies_reported": 1,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -803,7 +617,7 @@
           "companies_reported": 4,
           "companies_in_panel": 4,
           "value_status": "final",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         },
         {
@@ -812,20 +626,21 @@
           "companies_reported": 1,
           "companies_in_panel": 4,
           "value_status": "provisional",
-          "fetched_at": "2026-09-11 18:00",
+          "fetched_at": "2026-09-12 18:00",
           "retrieved_retrospectively": true
         }
       ]
     },
     "token_prices_tracked": {
-      "data_status": "live",
       "reference": true,
       "unit": "USD per 1M tokens",
       "name": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background)",
+      "checked": "2026-09-12 18:01",
+      "data_status": "live",
       "source": {
+        "url": "https://ai-lifeline.org/us/api/token_price_us.json",
         "license": "Figures only; see token_price_registry.json for per-provider terms",
-        "name": "Official pricing pages of each provider (figures only; definition v1.0)",
-        "url": "https://ai-lifeline.org/us/api/token_price_us.json"
+        "name": "Official pricing pages of each provider (figures only; definition v1.0)"
       },
       "entries": [
         {
@@ -860,23 +675,218 @@
           "verified_on": "2026-09-11",
           "note": "Definition v1.0 (docs/指標定義_AI自身03_推論トークン単価.md); weekly first-party check; figures only"
         }
+      ]
+    },
+    "bis_advanced_computing_recent": {
+      "reference": true,
+      "unit": "documents",
+      "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
+      "checked": "2026-09-12",
+      "data_status": "live",
+      "source": {
+        "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+        "license": "Public domain (U.S. federal government work). No API key required.",
+        "name": "Federal Register (federalregister.gov) API"
+      },
+      "entries": [
+        {
+          "date": "2026-07-14",
+          "kind": "Rule",
+          "label": "Enhanced Favorable Treatment for the United Arab Emirates Under the Export Administration Regulations",
+          "source_url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2026-14132"
+        },
+        {
+          "date": "2026-01-15",
+          "kind": "Rule",
+          "label": "Revision to License Review Policy for Advanced Computing Commodities",
+          "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2026-00789"
+        },
+        {
+          "date": "2025-09-16",
+          "kind": "Rule",
+          "label": "Additions and Revisions to the Entity List",
+          "source_url": "https://www.federalregister.gov/documents/2025/09/16/2025-17893/additions-and-revisions-to-the-entity-list",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-17893"
+        },
+        {
+          "date": "2025-03-28",
+          "kind": "Rule",
+          "label": "Additions to the Entity List",
+          "source_url": "https://www.federalregister.gov/documents/2025/03/28/2025-05427/additions-to-the-entity-list",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-05427"
+        },
+        {
+          "date": "2025-02-14",
+          "kind": "Rule",
+          "label": "Implementation of Additional Due Diligence Measures for Advanced Computing Integrated Circuits; Amendments and Clarifications; and Extension of Comment Period; Correction",
+          "source_url": "https://www.federalregister.gov/documents/2025/02/14/2025-02655/implementation-of-additional-due-diligence-measures-for-advanced-computing-integrated-circuits",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-02655"
+        },
+        {
+          "date": "2025-01-16",
+          "kind": "Rule",
+          "label": "Implementation of Additional Due Diligence Measures for Advanced Computing Integrated Circuits; Amendments and Clarifications; and Extension of Comment Period",
+          "source_url": "https://www.federalregister.gov/documents/2025/01/16/2025-00711/implementation-of-additional-due-diligence-measures-for-advanced-computing-integrated-circuits",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-00711"
+        },
+        {
+          "date": "2025-01-16",
+          "kind": "Rule",
+          "label": "Additions to the Entity List",
+          "source_url": "https://www.federalregister.gov/documents/2025/01/16/2025-00480/additions-to-the-entity-list",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-00480"
+        },
+        {
+          "date": "2025-01-15",
+          "kind": "Rule",
+          "label": "Public Briefing on Framework for Artificial Intelligence Diffusion",
+          "source_url": "https://www.federalregister.gov/documents/2025/01/15/2025-00637/public-briefing-on-framework-for-artificial-intelligence-diffusion",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-00637"
+        },
+        {
+          "date": "2025-01-15",
+          "kind": "Rule",
+          "label": "Framework for Artificial Intelligence Diffusion",
+          "source_url": "https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2025-00636"
+        },
+        {
+          "date": "2024-12-05",
+          "kind": "Rule",
+          "label": "Foreign-Produced Direct Product Rule Additions, and Refinements to Controls for Advanced Computing and Semiconductor Manufacturing Items",
+          "source_url": "https://www.federalregister.gov/documents/2024/12/05/2024-28270/foreign-produced-direct-product-rule-additions-and-refinements-to-controls-for-advanced-computing",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2024-28270"
+        },
+        {
+          "date": "2024-12-05",
+          "kind": "Rule",
+          "label": "Additions and Modifications to the Entity List; Removals From the Validated End-User (VEU) Program",
+          "source_url": "https://www.federalregister.gov/documents/2024/12/05/2024-28267/additions-and-modifications-to-the-entity-list-removals-from-the-validated-end-user-veu-program",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2024-28267"
+        },
+        {
+          "date": "2024-12-04",
+          "kind": "Rule",
+          "label": "Public Briefing on Changes to Advanced Computing and Semiconductor Manufacturing Items",
+          "source_url": "https://www.federalregister.gov/documents/2024/12/04/2024-28423/public-briefing-on-changes-to-advanced-computing-and-semiconductor-manufacturing-items",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2024-28423"
+        },
+        {
+          "date": "2024-10-02",
+          "kind": "Rule",
+          "label": "Expansion of Validated End User Authorization: Data Center Validated End User Authorization",
+          "source_url": "https://www.federalregister.gov/documents/2024/10/02/2024-22587/expansion-of-validated-end-user-authorization-data-center-validated-end-user-authorization",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2024-22587"
+        },
+        {
+          "date": "2024-04-04",
+          "kind": "Rule",
+          "label": "Implementation of Additional Export Controls: Certain Advanced Computing Items; Supercomputer and Semiconductor End Use; Updates and Corrections; and Export Controls on Semiconductor Manufacturing Items; Corrections and Clarifications",
+          "source_url": "https://www.federalregister.gov/documents/2024/04/04/2024-07004/implementation-of-additional-export-controls-certain-advanced-computing-items-supercomputer-and",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2024-07004"
+        },
+        {
+          "date": "2023-12-15",
+          "kind": "Rule",
+          "label": "Export Controls on Semiconductor Manufacturing Items; Implementation of Additional Export Controls: Certain Advanced Computing Items; Supercomputer and Semiconductor End Use; Updates and Corrections; Extension of Comment Period",
+          "source_url": "https://www.federalregister.gov/documents/2023/12/15/2023-27588/export-controls-on-semiconductor-manufacturing-items-implementation-of-additional-export-controls",
+          "verified_on": "2026-09-12",
+          "note": "FR document 2023-27588"
+        }
+      ]
+    },
+    "h100_ondemand_price_weekly": {
+      "unit": "USD per GPU-hour",
+      "weekly": [
+        {
+          "date": "2026-09-03",
+          "value": 3.99,
+          "status": "ok",
+          "unit": "USD per GPU-hour",
+          "fetched_at": "2026-09-04 08:22"
+        },
+        {
+          "date": "2026-09-10",
+          "value": 3.99,
+          "status": "ok",
+          "unit": "USD per GPU-hour",
+          "fetched_at": "2026-09-10 18:01"
+        }
       ],
-      "checked": "2026-09-11 18:01"
+      "name": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market)",
+      "update_frequency": "weekly",
+      "data_status": "live",
+      "definition_note": "Figure only, as displayed on the public pricing page for the 8x H100 SXM configuration; three states: ok / pattern_mismatch (page changed - needs review) / fetch_error. At most one request per week with an identifying user agent (terms checked 2026-08-29).",
+      "source": {
+        "url": "https://lambda.ai/service/gpu-cloud",
+        "license": "Public pricing page; figure only is extracted (no text copied). Terms checked 2026-08-29 (docs/規約確認_Phase2_20260829.md: low-frequency snapshots permitted by the AUP); robots.txt allows the path (2026-09-04).",
+        "name": "Lambda public pricing page (first-party weekly check)"
+      },
+      "last_fetch_state": "ok"
+    },
+    "doe_lbnl_energy_ledger": {
+      "reference": true,
+      "unit": "entries",
+      "name": "DOE / LBNL 2024 United States Data Center Energy Usage Report - figures as quoted by DOE (ledger)",
+      "checked": "2026-09-04",
+      "data_status": "live",
+      "source": {
+        "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+        "license": "Public domain (U.S. federal government work)",
+        "name": "U.S. Department of Energy (announcement of the LBNL report)"
+      },
+      "entries": [
+        {
+          "date": "2024-12-20",
+          "kind": "publication",
+          "label": "DOE announces the LBNL report: data centers consumed about 4.4% of total U.S. electricity in 2023",
+          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+          "verified_on": "2026-09-04",
+          "note": "Figure as stated in the DOE announcement (retrieved 2026-09-04). Public domain (U.S. federal government work)."
+        },
+        {
+          "date": "2024-12-20",
+          "kind": "publication",
+          "label": "Total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 (as stated by DOE)",
+          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+          "verified_on": "2026-09-04",
+          "note": "Values quoted verbatim from the DOE announcement; the underlying LBNL PDF returned HTTP 403 to this site's collector on 2026-09-04 and was not read directly."
+        },
+        {
+          "date": "2024-12-20",
+          "kind": "publication",
+          "label": "DOE states the report estimates an increase to between 325 and 580 TWh by 2028 (an estimate by the report's authors, not by this site)",
+          "source_url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers",
+          "verified_on": "2026-09-04",
+          "note": "Listed because it is a published government figure; this site makes no estimate of its own. The announcement date is the DOE article date as shown on energy.gov (December 2024; day-level date as displayed on the page at retrieval)."
+        }
+      ]
     }
   },
-  "cannot_say": [
-    "Whether GPUs can actually be obtained (no inventory, lead-time or waitlist data is published or observed).",
-    "Prices actually paid under negotiated or long-term contracts (public list prices only), or the prices of providers outside the panel.",
-    "Whether any level is high or low, or which company is doing better (nothing here ranks or evaluates a company)."
-  ],
-  "granularity_note": "The capex series shown is the sum over the panel of filers per calendar quarter; per-filer values are kept in breakdown (machine-readable only).",
   "frequency_note": "Mixed-frequency chapter: export-control documents are fetched daily and counted monthly; the H100 price and token prices are weekly snapshots; the capex ledger is quarterly (SEC filings); the DOE/LBNL ledger is irregular.",
   "can_say": [
     "How many Federal Register documents from the Bureau of Industry and Security matched \"advanced computing\" each month, and which rules were the most recent.",
     "The public on-demand price of one H100 GPU-hour at one U.S. provider, week by week, and the published list prices per million tokens for the tracked models.",
     "How much capital expenditure Amazon, Microsoft, Alphabet and Meta reported to the SEC per calendar quarter (summed), and which figures DOE quotes from the 2024 LBNL data-center energy report."
   ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-09-11. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-09-10). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-09-11 18:01 JST)",
+  "generated": "2026-09-12 18:01",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-09-12. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-09-10). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-09-12 18:01 JST)",
   "answer_line_date": "2026-09-10",
   "answer_kind": "observing",
   "headline_answer": {
@@ -894,7 +904,7 @@
     },
     {
       "q": "How many BIS export-control documents on \"advanced computing\" were published this month?",
-      "a": "In 2026-09 (month in progress, value_status provisional): 0 Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\". The 15 most recent documents are listed in the ledger (checked 2026-09-11). Source: Federal Register API (public domain)."
+      "a": "In 2026-09 (month in progress, value_status provisional): 0 Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\". The 15 most recent documents are listed in the ledger (checked 2026-09-12). Source: Federal Register API (public domain)."
     },
     {
       "q": "How much capital expenditure did the four major cloud operators report?",
@@ -902,7 +912,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Federal Register API (daily, counted monthly), Lambda pricing page (weekly), SEC XBRL frames API (quarterly), DOE/LBNL 2024 report as a ledger (irregular). Observation started 2026-09-04. Last updated 2026-09-11 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/gpu_us.json. Definition: docs/指標定義_US_GPU章.md v1.0."
+      "a": "Federal Register API (daily, counted monthly), Lambda pricing page (weekly), SEC XBRL frames API (quarterly), DOE/LBNL 2024 report as a ledger (irregular). Observation started 2026-09-04. Last updated 2026-09-12 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/gpu_us.json. Definition: docs/指標定義_US_GPU章.md v1.0."
     },
     {
       "q": "What can this data not tell you?",
@@ -912,9 +922,9 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/gpu/",
     "api": "https://ai-lifeline.org/us/api/gpu_us.json",
-    "last_confirmed": "2026-09-11",
+    "last_confirmed": "2026-09-12",
     "next_expected": "2026-09-17",
-    "generated": "2026-09-11 18:01",
+    "generated": "2026-09-12 18:01",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 0,
