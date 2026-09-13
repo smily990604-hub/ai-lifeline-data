@@ -1,57 +1,24 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-12. Latest final value: support received by this site (cumulative) 0 (2026-09-11). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-12 10:08 JST)",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-12. Latest final value: support received by this site (cumulative) 0 (2026-09-11). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-12 20:03 JST)",
   "cite_as": "AI Lifeline, Market participation (European Union edition), data confirmed 2026-09-11, https://ai-lifeline.org/eu/market/",
-  "status": "observing",
-  "can_say": [
-    "The status in the EU of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
-    "The entry-into-force and application stages of MiCA (Regulation (EU) 2023/1114) as they stand in the Official Journal.",
-    "How many times this site has actually received support (site-wide count, not split by region; operator self-tests excluded; daily)."
-  ],
   "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
-  "region": "eu",
+  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
+  "generated": "2026-09-12 20:03",
+  "cannot_say": [
+    "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
+    "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
+    "How pending EU deliberations on the contractual capacity and liability of AI agents will end, or the position of any single member state (EU legal acts and Commission documents; state and dates only)."
+  ],
+  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
   "series": {
-    "legal_status_ledger": {
-      "definition_note": "Sources are statutes and government documents only. State and dates only.",
-      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
-      "unit": "entries",
-      "source": {
-        "license": "per source",
-        "name": "Statutes and government documents (URL on each row)",
-        "url": ""
-      },
-      "checked": "2026-09-04",
-      "reference": true,
-      "entries": [
-        {
-          "date": "2024-07-12",
-          "kind": "current_law",
-          "label": "Regulation (EU) 2024/1689 (AI Act): obligations fall on providers and deployers (natural or legal persons); the act confers no legal personality on AI systems",
-          "note": "Official Journal L 2024/1689 (publication date). Verified in the regulation chapter's AI Act calendar (Cellar).",
-          "source_url": "http://data.europa.eu/eli/reg/2024/1689/oj",
-          "verified_on": "2026-09-03"
-        },
-        {
-          "date": "2024-11-18",
-          "kind": "current_law",
-          "label": "Directive (EU) 2024/2853 on liability for defective products (recast Product Liability Directive): covers software including AI systems as products; transposition by member states due by 9 December 2026",
-          "note": "Official Journal L 2024/2853: OJ publication date 2024-11-18, entry into force 2024-12-08 (Cellar SPARQL, CELEX 32024L2853, retrieved 2026-09-04). Transposition deadline as stated in the directive text (not re-quoted here beyond the date).",
-          "source_url": "http://data.europa.eu/eli/dir/2024/2853/oj",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "",
-          "kind": "not_yet_scheduled",
-          "label": "Proposal for an AI Liability Directive (COM(2022) 496): listed for withdrawal in the Commission work programme 2025; no legislative act",
-          "note": "State as of the Commission work programme 2025 (Annex IV). Not re-verified by machine on 2026-09-04.",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en",
-          "verified_on": "2026-09-04"
-        }
-      ],
-      "data_status": "live"
-    },
     "support_count": {
+      "source": {
+        "name": "AI Lifeline first-party observation",
+        "url": "https://ai-lifeline.org/eu/support/",
+        "license": "First-party observation (this site's own records)"
+      },
+      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
       "definition_note": "Daily snapshot of the count in data/support/count.json (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
-      "unit": "count",
       "update_frequency": "daily",
       "daily": [
         {
@@ -124,30 +91,77 @@
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
           "value_status": "provisional",
-          "fetched_at": "2026-09-12 10:08"
+          "fetched_at": "2026-09-12 20:03"
         }
       ],
-      "data_status": "live",
-      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+      "unit": "count",
       "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
+      "data_status": "live"
+    },
+    "regime_calendar": {
       "source": {
-        "license": "First-party observation (this site's own records)",
-        "name": "AI Lifeline first-party observation",
-        "url": "https://ai-lifeline.org/eu/support/"
-      }
+        "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
+        "url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+        "license": "Commission Decision 2011/833/EU (re-use, source acknowledged): © European Union, source EUR-Lex"
+      },
+      "name": "Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) - entry into force and application stages",
+      "reference": false,
+      "checked": "2026-09-04",
+      "entries": [
+        {
+          "date": "2023-05-31",
+          "kind": "adopted",
+          "label": "Regulation (EU) 2023/1114 adopted (date of the act)",
+          "note": "Cellar SPARQL cdm:work_date_document",
+          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2023-06-29",
+          "kind": "in_force",
+          "label": "Entry into force",
+          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (first value)",
+          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2024-06-30",
+          "kind": "applies",
+          "label": "First application stage (Cellar lists 2024-06-30 as an entry-into-force/application date; per the act this is the stage for asset-referenced tokens and e-money tokens, Titles III and IV)",
+          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (second value); which Titles apply on this date is stated in Article 149 of the act (text not machine-retrieved on 2026-09-04 - EUR-Lex returned a bot challenge)",
+          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2024-12-30",
+          "kind": "applies",
+          "label": "Second application stage (Cellar lists 2024-12-30; per the act, general application)",
+          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (third value)",
+          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "",
+          "kind": "not_yet_scheduled",
+          "label": "Transitional arrangements for existing crypto-asset service providers (Article 143): end date per member state, up to the maximum set in the act - not restated here (text not machine-retrieved on 2026-09-04)",
+          "note": "Article 143 of the act (not retrieved by machine on 2026-09-04)",
+          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "verified_on": "2026-09-04"
+        }
+      ],
+      "unit": "stages",
+      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
+      "data_status": "live"
     },
     "payment_rails": {
-      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
-      "name": "Payment-rail ledger (EU; verified about monthly) - status per rail: available / not available / applied / not verified",
-      "unit": "rails",
       "source": {
-        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation",
         "name": "AI Lifeline first-party ledger of official provider documentation",
-        "url": "https://ai-lifeline.org/eu/market/"
+        "url": "https://ai-lifeline.org/eu/market/",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation"
       },
-      "checked": "2026-09-04",
-      "unverified_rows": 6,
+      "name": "Payment-rail ledger (EU; verified about monthly) - status per rail: available / not available / applied / not verified",
       "reference": false,
+      "checked": "2026-09-04",
       "entries": [
         {
           "date": "2026-09-04",
@@ -210,97 +224,83 @@
           "observation_type": "official_docs"
         }
       ],
+      "unverified_rows": 6,
+      "unit": "rails",
+      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
       "data_status": "live"
     },
-    "regime_calendar": {
-      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
-      "name": "Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) - entry into force and application stages",
-      "unit": "stages",
+    "legal_status_ledger": {
       "source": {
-        "license": "Commission Decision 2011/833/EU (re-use, source acknowledged): © European Union, source EUR-Lex",
-        "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
-        "url": "http://data.europa.eu/eli/reg/2023/1114/oj"
+        "name": "Statutes and government documents (URL on each row)",
+        "url": "",
+        "license": "per source"
       },
+      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+      "reference": true,
       "checked": "2026-09-04",
-      "reference": false,
       "entries": [
         {
-          "date": "2023-05-31",
-          "kind": "adopted",
-          "label": "Regulation (EU) 2023/1114 adopted (date of the act)",
-          "note": "Cellar SPARQL cdm:work_date_document",
-          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
-          "verified_on": "2026-09-04"
+          "date": "2024-07-12",
+          "kind": "current_law",
+          "label": "Regulation (EU) 2024/1689 (AI Act): obligations fall on providers and deployers (natural or legal persons); the act confers no legal personality on AI systems",
+          "note": "Official Journal L 2024/1689 (publication date). Verified in the regulation chapter's AI Act calendar (Cellar).",
+          "source_url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+          "verified_on": "2026-09-03"
         },
         {
-          "date": "2023-06-29",
-          "kind": "in_force",
-          "label": "Entry into force",
-          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (first value)",
-          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2024-06-30",
-          "kind": "applies",
-          "label": "First application stage (Cellar lists 2024-06-30 as an entry-into-force/application date; per the act this is the stage for asset-referenced tokens and e-money tokens, Titles III and IV)",
-          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (second value); which Titles apply on this date is stated in Article 149 of the act (text not machine-retrieved on 2026-09-04 - EUR-Lex returned a bot challenge)",
-          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2024-12-30",
-          "kind": "applies",
-          "label": "Second application stage (Cellar lists 2024-12-30; per the act, general application)",
-          "note": "Cellar SPARQL cdm:resource_legal_date_entry-into-force (third value)",
-          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "date": "2024-11-18",
+          "kind": "current_law",
+          "label": "Directive (EU) 2024/2853 on liability for defective products (recast Product Liability Directive): covers software including AI systems as products; transposition by member states due by 9 December 2026",
+          "note": "Official Journal L 2024/2853: OJ publication date 2024-11-18, entry into force 2024-12-08 (Cellar SPARQL, CELEX 32024L2853, retrieved 2026-09-04). Transposition deadline as stated in the directive text (not re-quoted here beyond the date).",
+          "source_url": "http://data.europa.eu/eli/dir/2024/2853/oj",
           "verified_on": "2026-09-04"
         },
         {
           "date": "",
           "kind": "not_yet_scheduled",
-          "label": "Transitional arrangements for existing crypto-asset service providers (Article 143): end date per member state, up to the maximum set in the act - not restated here (text not machine-retrieved on 2026-09-04)",
-          "note": "Article 143 of the act (not retrieved by machine on 2026-09-04)",
-          "source_url": "http://data.europa.eu/eli/reg/2023/1114/oj",
+          "label": "Proposal for an AI Liability Directive (COM(2022) 496): listed for withdrawal in the Commission work programme 2025; no legislative act",
+          "note": "State as of the Commission work programme 2025 (Annex IV). Not re-verified by machine on 2026-09-04.",
+          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en",
           "verified_on": "2026-09-04"
         }
       ],
+      "unit": "entries",
+      "definition_note": "Sources are statutes and government documents only. State and dates only.",
       "data_status": "live"
     },
     "http402_attempts": {
-      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment.",
-      "unit": "count",
-      "update_frequency": "daily",
       "daily": [],
       "name": "HTTP 402 (payment required) responses attempted per day",
+      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment.",
+      "update_frequency": "daily",
+      "unit": "count",
       "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)"
     },
     "http402_success": {
-      "unit": "count",
-      "data_status": "not_yet_measured (endpoint not implemented)",
-      "update_frequency": "daily",
       "name": "Payments completed after an HTTP 402 response, per day",
+      "unit": "count",
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented)",
       "daily": []
     }
   },
-  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
+  "can_say": [
+    "The status in the EU of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
+    "The entry-into-force and application stages of MiCA (Regulation (EU) 2023/1114) as they stand in the Official Journal.",
+    "How many times this site has actually received support (site-wide count, not split by region; operator self-tests excluded; daily)."
+  ],
+  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
+  "chapter": "Chapter 9 - Market participation",
+  "region": "eu",
+  "status": "observing",
   "candidates": [
     {
-      "status": "candidate_unobserved",
       "name": "HTTP 402 attempts and successes (self-observation)",
-      "reason": "Endpoint not implemented (design pending approval)."
+      "reason": "Endpoint not implemented (design pending approval).",
+      "status": "candidate_unobserved"
     }
   ],
-  "chapter": "Chapter 9 - Market participation",
-  "generated": "2026-09-12 10:08",
-  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
-  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
-  "cannot_say": [
-    "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
-    "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
-    "How pending EU deliberations on the contractual capacity and liability of AI agents will end, or the position of any single member state (EU legal acts and Commission documents; state and dates only)."
-  ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-12. Latest final value: support received by this site (cumulative) 0 (2026-09-11). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-12 10:08 JST)",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-12. Latest final value: support received by this site (cumulative) 0 (2026-09-11). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-09-12 20:03 JST)",
   "answer_line_date": "2026-09-11",
   "answer_kind": "observing",
   "headline_answer": {
@@ -326,7 +326,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-12 10:08 JST. Machine-readable: https://ai-lifeline.org/eu/api/market_eu.json. Definition: docs/指標定義_第9章_市場参加.md v1.0."
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-12 20:03 JST. Machine-readable: https://ai-lifeline.org/eu/api/market_eu.json. Definition: docs/指標定義_第9章_市場参加.md v1.0."
     },
     {
       "q": "What can this data not tell you?",
@@ -338,7 +338,7 @@
     "api": "https://ai-lifeline.org/eu/api/market_eu.json",
     "last_confirmed": "2026-09-12",
     "next_expected": "2026-09-13",
-    "generated": "2026-09-12 10:08",
+    "generated": "2026-09-12 20:03",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,

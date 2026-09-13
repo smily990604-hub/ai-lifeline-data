@@ -1,16 +1,448 @@
 {
-  "ledger_checked": "2026-09-04",
   "pages": {
-    "us": "/us/",
     "eu": "/eu/",
+    "us": "/us/",
     "jp": "/jp/"
   },
-  "conventions": {
-    "not_yet_measured": "missing, not zero",
-    "unverified": "value not yet retrieved from the primary source; kept blank",
-    "units": "as published per source; not converted across regions"
+  "training_material": {
+    "wikipedia_edits_monthly": {
+      "source": {
+        "license": "Wikimedia API usage guidelines (aggregate counts; identifying user agent; 1 fetch/day)",
+        "url": "https://wikimedia.org/api/rest_v1/",
+        "name": "Wikimedia Foundation, REST API metrics (edits, all editor types, all page types, monthly)"
+      },
+      "regions": {
+        "eu": {
+          "projects": [
+            "de.wikipedia",
+            "fr.wikipedia",
+            "es.wikipedia",
+            "it.wikipedia",
+            "pl.wikipedia"
+          ],
+          "latest": {
+            "projects": 5,
+            "period": "2026-08",
+            "value_status": "final",
+            "value": 2760751
+          },
+          "unit": "edits per month (sum over the listed language editions)",
+          "monthly": [
+            {
+              "projects": 5,
+              "period": "2025-07",
+              "value_status": "final",
+              "value": 2699978
+            },
+            {
+              "projects": 5,
+              "period": "2025-08",
+              "value_status": "final",
+              "value": 2726542
+            },
+            {
+              "projects": 5,
+              "period": "2025-09",
+              "value_status": "final",
+              "value": 2652829
+            },
+            {
+              "projects": 5,
+              "period": "2025-10",
+              "value_status": "final",
+              "value": 2750731
+            },
+            {
+              "projects": 5,
+              "period": "2025-11",
+              "value_status": "final",
+              "value": 3055739
+            },
+            {
+              "projects": 5,
+              "period": "2025-12",
+              "value_status": "final",
+              "value": 2879497
+            },
+            {
+              "projects": 5,
+              "period": "2026-01",
+              "value_status": "final",
+              "value": 3172821
+            },
+            {
+              "projects": 5,
+              "period": "2026-02",
+              "value_status": "final",
+              "value": 2633500
+            },
+            {
+              "projects": 5,
+              "period": "2026-03",
+              "value_status": "final",
+              "value": 2777170
+            },
+            {
+              "projects": 5,
+              "period": "2026-04",
+              "value_status": "final",
+              "value": 2881052
+            },
+            {
+              "projects": 5,
+              "period": "2026-05",
+              "value_status": "final",
+              "value": 2810458
+            },
+            {
+              "projects": 5,
+              "period": "2026-06",
+              "value_status": "final",
+              "value": 2543332
+            },
+            {
+              "projects": 5,
+              "period": "2026-07",
+              "value_status": "final",
+              "value": 2582671
+            },
+            {
+              "projects": 5,
+              "period": "2026-08",
+              "value_status": "final",
+              "value": 2760751
+            }
+          ]
+        },
+        "us": {
+          "projects": [
+            "en.wikipedia"
+          ],
+          "latest": {
+            "projects": 1,
+            "period": "2026-08",
+            "value_status": "final",
+            "value": 5325037
+          },
+          "unit": "edits per month (sum over the listed language editions)",
+          "monthly": [
+            {
+              "projects": 1,
+              "period": "2025-07",
+              "value_status": "final",
+              "value": 5174531
+            },
+            {
+              "projects": 1,
+              "period": "2025-08",
+              "value_status": "final",
+              "value": 5046341
+            },
+            {
+              "projects": 1,
+              "period": "2025-09",
+              "value_status": "final",
+              "value": 5278657
+            },
+            {
+              "projects": 1,
+              "period": "2025-10",
+              "value_status": "final",
+              "value": 5255739
+            },
+            {
+              "projects": 1,
+              "period": "2025-11",
+              "value_status": "final",
+              "value": 5069686
+            },
+            {
+              "projects": 1,
+              "period": "2025-12",
+              "value_status": "final",
+              "value": 5297087
+            },
+            {
+              "projects": 1,
+              "period": "2026-01",
+              "value_status": "final",
+              "value": 5234237
+            },
+            {
+              "projects": 1,
+              "period": "2026-02",
+              "value_status": "final",
+              "value": 4947030
+            },
+            {
+              "projects": 1,
+              "period": "2026-03",
+              "value_status": "final",
+              "value": 5344809
+            },
+            {
+              "projects": 1,
+              "period": "2026-04",
+              "value_status": "final",
+              "value": 5359833
+            },
+            {
+              "projects": 1,
+              "period": "2026-05",
+              "value_status": "final",
+              "value": 5109441
+            },
+            {
+              "projects": 1,
+              "period": "2026-06",
+              "value_status": "final",
+              "value": 4710066
+            },
+            {
+              "projects": 1,
+              "period": "2026-07",
+              "value_status": "final",
+              "value": 5064322
+            },
+            {
+              "projects": 1,
+              "period": "2026-08",
+              "value_status": "final",
+              "value": 5325037
+            }
+          ]
+        },
+        "jp": {
+          "projects": [
+            "ja.wikipedia"
+          ],
+          "latest": {
+            "projects": 1,
+            "period": "2026-08",
+            "value_status": "final",
+            "value": 365663
+          },
+          "unit": "edits per month (sum over the listed language editions)",
+          "monthly": [
+            {
+              "projects": 1,
+              "period": "2025-07",
+              "value_status": "final",
+              "value": 392839
+            },
+            {
+              "projects": 1,
+              "period": "2025-08",
+              "value_status": "final",
+              "value": 444762
+            },
+            {
+              "projects": 1,
+              "period": "2025-09",
+              "value_status": "final",
+              "value": 384043
+            },
+            {
+              "projects": 1,
+              "period": "2025-10",
+              "value_status": "final",
+              "value": 377338
+            },
+            {
+              "projects": 1,
+              "period": "2025-11",
+              "value_status": "final",
+              "value": 377684
+            },
+            {
+              "projects": 1,
+              "period": "2025-12",
+              "value_status": "final",
+              "value": 381111
+            },
+            {
+              "projects": 1,
+              "period": "2026-01",
+              "value_status": "final",
+              "value": 398916
+            },
+            {
+              "projects": 1,
+              "period": "2026-02",
+              "value_status": "final",
+              "value": 345243
+            },
+            {
+              "projects": 1,
+              "period": "2026-03",
+              "value_status": "final",
+              "value": 397026
+            },
+            {
+              "projects": 1,
+              "period": "2026-04",
+              "value_status": "final",
+              "value": 352185
+            },
+            {
+              "projects": 1,
+              "period": "2026-05",
+              "value_status": "final",
+              "value": 415040
+            },
+            {
+              "projects": 1,
+              "period": "2026-06",
+              "value_status": "final",
+              "value": 351243
+            },
+            {
+              "projects": 1,
+              "period": "2026-07",
+              "value_status": "final",
+              "value": 359002
+            },
+            {
+              "projects": 1,
+              "period": "2026-08",
+              "value_status": "final",
+              "value": 365663
+            }
+          ]
+        }
+      }
+    },
+    "note": "Common Crawl の言語別割合（CLD2）は cc-crawl-statistics の crawler JSON には無く、別の集計（HF commoncrawl/statistics）のパス確定が必要＝候補。当面は「取得成功ページ数」「robots で拒否されたページ数」「ダウンロード量」の3指標をクロールごとに記録する",
+    "definition": "docs/指標定義_横串_学習素材量_v1.0案.md v1.0 案（2026-09-04 実測で規約 OK＝Apache-2.0 / Wikimedia API guidelines）。地域への言語割当：JP=ja／US=en（英語は米国固有でない旨を明記）／EU=de・fr・es・it・pl の合算（第1案）",
+    "common_crawl": {
+      "crawls": [
+        {
+          "crawl": "CC-MAIN-2026-25",
+          "year": 2026,
+          "week": 25,
+          "fetched_pages": 2108835821.0,
+          "robots_denied": 202073665.0,
+          "bytes_downloaded": 389882951388001.0,
+          "fetch_total": 3406561317.0,
+          "fetched_at": "2026-09-04 08:38"
+        },
+        {
+          "crawl": "CC-MAIN-2026-30",
+          "year": 2026,
+          "week": 30,
+          "fetched_pages": 2160388845.0,
+          "robots_denied": 205080000.0,
+          "bytes_downloaded": 400242440873455.0,
+          "fetch_total": 3454759774.0,
+          "fetched_at": "2026-09-04 08:38"
+        },
+        {
+          "crawl": "CC-MAIN-2026-34",
+          "year": 2026,
+          "week": 34,
+          "fetched_pages": 2150579394.0,
+          "robots_denied": 197059037.0,
+          "bytes_downloaded": 396394239452245.0,
+          "fetch_total": 3446735235.0,
+          "fetched_at": "2026-09-04 08:38"
+        }
+      ],
+      "metrics": {
+        "fetched_pages": "crawl_status fetcher:success",
+        "robots_denied": "crawl_status fetcher:robots_denied_total",
+        "bytes_downloaded": "crawl_status fetcher:bytes_downloaded_total"
+      },
+      "latest": {
+        "crawl": "CC-MAIN-2026-34",
+        "year": 2026,
+        "week": 34,
+        "fetched_pages": 2150579394.0,
+        "robots_denied": 197059037.0,
+        "bytes_downloaded": 396394239452245.0,
+        "fetch_total": 3446735235.0,
+        "fetched_at": "2026-09-04 08:38"
+      },
+      "unit": "pages / bytes per crawl",
+      "source": {
+        "license": "Apache License 2.0 (repository; verified 2026-09-03)",
+        "url": "https://github.com/commoncrawl/cc-crawl-statistics",
+        "name": "Common Crawl, cc-crawl-statistics (crawl_status metrics per crawl)"
+      }
+    }
   },
-  "generated_at": "2026-09-12 18:02",
+  "conventions": {
+    "unverified": "value not yet retrieved from the primary source; kept blank",
+    "units": "as published per source; not converted across regions",
+    "not_yet_measured": "missing, not zero"
+  },
+  "_note": "AI Lifeline cross-edition series (added 2026-09-04): (1) annual carbon intensity of electricity as published by each region's public body (reference ledger; units as published, not converted); (2) public-opinion ledger (official surveys only; manual, PDF page numbers required; results pending transcription); (3) training-material supply: Common Crawl crawl statistics (fetched pages, robots-denied pages, bytes) and Wikipedia monthly edits by language edition assigned to each region. Values as published; no estimates. Status observing.",
+  "ledger_checked": "2026-09-04",
+  "generated_at": "2026-09-13 18:02",
+  "carbon_intensity_annual": {
+    "note": "Reference series (annual): compare within-region only; units differ by design. Daily cross-region carbon intensity is not published (ruling 2026-09-04: would require this site's own estimation).",
+    "regions": {
+      "eu": {
+        "series_id": "eu.power.carbon_intensity_annual",
+        "name_en": "EU27 - greenhouse gas emission intensity of electricity generation (EEA indicator)",
+        "value": null,
+        "unit": "gCO2e/kWh",
+        "target_year": "2024",
+        "status": "unverified",
+        "published_statements": [
+          "Generating one kilowatt hour has emitted 11% less emissions in 2024 on average than in 2023, and 41% less than a decade ago (EEA indicator page, retrieved 2026-09-04)"
+        ],
+        "source_url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1",
+        "source_version": "Indicator published 10 Jul 2026 (page)",
+        "license": "CC-BY (EEA legal notice, verified 2026-09-04)",
+        "retrieved_on": "2026-09-04",
+        "attribution_en": "Source: European Environment Agency (EEA), \"Greenhouse gas emission intensity of electricity generation\" (published 10 Jul 2026), retrieved 2026-09-04. Licence: CC-BY (EEA legal notice). Published values as-is; the original meaning is not altered.",
+        "note": "The absolute gCO2e/kWh value is not present in the page HTML (chart data loaded separately); the data file is catalogued in the EEA SDI (record 3b7fe76c-524a-439a-bfd2-a6e4046302a2). Value stays unverified until the data file is retrieved."
+      },
+      "us": {
+        "series_id": "us.power.co2_electric_annual",
+        "name_en": "United States - annual CO2 emissions of the electric power sector (EIA; total, million metric tons)",
+        "value": "1421.714",
+        "unit": "million metric tons CO2",
+        "target_year": "2024",
+        "status": "verified",
+        "source_url": "https://api.eia.gov/v2/seds/",
+        "license": "Public domain (EIA)",
+        "retrieved_on": "2026-09-04",
+        "attribution_en": "Source: U.S. EIA, State Energy Data System (SEDS), series TEEIE (electric power sector CO2) and CDTCR, retrieved 2026-09-04. Published values as-is; units as published.",
+        "note": "Retrieved 2026-09-04 via the EIA API v2 seds route with the site's key (read-only): TEEIE US 2024 = 1,421.714 million metric tons CO2 (2023: 1,415.175; 2022: 1,532.04). This is a total (not per kWh); the per-kWh intensity of the U.S. grid (EPA eGRID) remains a separate ledger candidate. SEDS terms: EIA data are public domain.",
+        "source_series": "SEDS seriesId TEEIE (Total energy CO2 emissions for the electric power sector), stateId US",
+        "prior": {
+          "2023": "1415.175",
+          "2022": "1532.04",
+          "2021": "1541.446"
+        },
+        "intensity_reference": {
+          "series": "CDTCR Carbon intensity of energy supply (CO2 emissions divided by total energy consumption less interstate flow of electricity)",
+          "value_2024": "50.6",
+          "unit": "metric tons CO2 per billion Btu"
+        }
+      },
+      "jp": {
+        "series_id": "jp.power.carbon_intensity_annual",
+        "name": "全国平均係数（電気事業者別排出係数・令和8年提出用・R6年度実績）",
+        "name_en": "Japan - national average emission factor for purchased electricity (MOE/METI, retailer-specific emission factors, FY2024 results, for FY2026 reporting)",
+        "value": "0.000423",
+        "unit": "t-CO2/kWh",
+        "target_year": "FY2024 (令和6年度実績)",
+        "status": "verified",
+        "substitute_value": "0.000416",
+        "substitute_note": "代替値（同ファイル）",
+        "source_file": "r08_denki_coefficient_rev4.xlsx",
+        "source_version": "R8.8.3 公表版（令和8年提出用・rev4）",
+        "source_url": "https://policies.env.go.jp/earth/ghg-santeikohyo/calc.html",
+        "license": "公共データ利用規約（第1.0版）・政府標準利用規約（第2.0版）準拠・出典明記",
+        "retrieved_on": "2026-09-04",
+        "attribution_ja": "出典：環境省・経済産業省「電気事業者別排出係数」（令和8年提出用・r08_denki_coefficient_rev4.xlsx・R8.8.3 公表）、2026-09-04 取得。公表値のまま・単位は公表どおり。",
+        "note": "Excel をダウンロードし（HTTP 200・119,874 B）シート「小売電気事業者係数一覧（基礎・調整後、夏公表）R8.8.3」末尾の「全国平均係数(t-CO₂/kWh) 0.000423」「代替値 0.000416」を転記（openpyxl・値は変えない）。個別事業者の係数は載せない"
+      }
+    },
+    "definition": "docs/指標定義_横串_炭素強度年次台帳_v1.0案.md v1.0 (2026-09-04 裁定で採用)。各地域の公的機関が自ら算出して公表する年次値のみ。単位は揃えない（換算は当社計算になるため行わない）"
+  },
   "public_opinion_ledger": {
     "entries": [
       {
@@ -66,437 +498,5 @@
       }
     ],
     "definition": "docs/指標定義_横串_世論台帳_v1.0案.md v1.0 (2026-09-04 裁定で採用：公的機関の調査のみ・手入力・PDF ページ番号必須・XLSX/API 追加調査は不要)"
-  },
-  "training_material": {
-    "definition": "docs/指標定義_横串_学習素材量_v1.0案.md v1.0 案（2026-09-04 実測で規約 OK＝Apache-2.0 / Wikimedia API guidelines）。地域への言語割当：JP=ja／US=en（英語は米国固有でない旨を明記）／EU=de・fr・es・it・pl の合算（第1案）",
-    "note": "Common Crawl の言語別割合（CLD2）は cc-crawl-statistics の crawler JSON には無く、別の集計（HF commoncrawl/statistics）のパス確定が必要＝候補。当面は「取得成功ページ数」「robots で拒否されたページ数」「ダウンロード量」の3指標をクロールごとに記録する",
-    "common_crawl": {
-      "crawls": [
-        {
-          "crawl": "CC-MAIN-2026-25",
-          "year": 2026,
-          "week": 25,
-          "fetched_pages": 2108835821.0,
-          "robots_denied": 202073665.0,
-          "bytes_downloaded": 389882951388001.0,
-          "fetch_total": 3406561317.0,
-          "fetched_at": "2026-09-04 08:38"
-        },
-        {
-          "crawl": "CC-MAIN-2026-30",
-          "year": 2026,
-          "week": 30,
-          "fetched_pages": 2160388845.0,
-          "robots_denied": 205080000.0,
-          "bytes_downloaded": 400242440873455.0,
-          "fetch_total": 3454759774.0,
-          "fetched_at": "2026-09-04 08:38"
-        },
-        {
-          "crawl": "CC-MAIN-2026-34",
-          "year": 2026,
-          "week": 34,
-          "fetched_pages": 2150579394.0,
-          "robots_denied": 197059037.0,
-          "bytes_downloaded": 396394239452245.0,
-          "fetch_total": 3446735235.0,
-          "fetched_at": "2026-09-04 08:38"
-        }
-      ],
-      "metrics": {
-        "fetched_pages": "crawl_status fetcher:success",
-        "robots_denied": "crawl_status fetcher:robots_denied_total",
-        "bytes_downloaded": "crawl_status fetcher:bytes_downloaded_total"
-      },
-      "unit": "pages / bytes per crawl",
-      "latest": {
-        "crawl": "CC-MAIN-2026-34",
-        "year": 2026,
-        "week": 34,
-        "fetched_pages": 2150579394.0,
-        "robots_denied": 197059037.0,
-        "bytes_downloaded": 396394239452245.0,
-        "fetch_total": 3446735235.0,
-        "fetched_at": "2026-09-04 08:38"
-      },
-      "source": {
-        "url": "https://github.com/commoncrawl/cc-crawl-statistics",
-        "license": "Apache License 2.0 (repository; verified 2026-09-03)",
-        "name": "Common Crawl, cc-crawl-statistics (crawl_status metrics per crawl)"
-      }
-    },
-    "wikipedia_edits_monthly": {
-      "source": {
-        "url": "https://wikimedia.org/api/rest_v1/",
-        "license": "Wikimedia API usage guidelines (aggregate counts; identifying user agent; 1 fetch/day)",
-        "name": "Wikimedia Foundation, REST API metrics (edits, all editor types, all page types, monthly)"
-      },
-      "regions": {
-        "us": {
-          "monthly": [
-            {
-              "value": 5174531,
-              "value_status": "final",
-              "period": "2025-07",
-              "projects": 1
-            },
-            {
-              "value": 5046341,
-              "value_status": "final",
-              "period": "2025-08",
-              "projects": 1
-            },
-            {
-              "value": 5278657,
-              "value_status": "final",
-              "period": "2025-09",
-              "projects": 1
-            },
-            {
-              "value": 5255739,
-              "value_status": "final",
-              "period": "2025-10",
-              "projects": 1
-            },
-            {
-              "value": 5069686,
-              "value_status": "final",
-              "period": "2025-11",
-              "projects": 1
-            },
-            {
-              "value": 5297087,
-              "value_status": "final",
-              "period": "2025-12",
-              "projects": 1
-            },
-            {
-              "value": 5234237,
-              "value_status": "final",
-              "period": "2026-01",
-              "projects": 1
-            },
-            {
-              "value": 4947030,
-              "value_status": "final",
-              "period": "2026-02",
-              "projects": 1
-            },
-            {
-              "value": 5344809,
-              "value_status": "final",
-              "period": "2026-03",
-              "projects": 1
-            },
-            {
-              "value": 5359833,
-              "value_status": "final",
-              "period": "2026-04",
-              "projects": 1
-            },
-            {
-              "value": 5109441,
-              "value_status": "final",
-              "period": "2026-05",
-              "projects": 1
-            },
-            {
-              "value": 4710066,
-              "value_status": "final",
-              "period": "2026-06",
-              "projects": 1
-            },
-            {
-              "value": 5064322,
-              "value_status": "final",
-              "period": "2026-07",
-              "projects": 1
-            },
-            {
-              "value": 5325037,
-              "value_status": "final",
-              "period": "2026-08",
-              "projects": 1
-            }
-          ],
-          "unit": "edits per month (sum over the listed language editions)",
-          "latest": {
-            "value": 5325037,
-            "value_status": "final",
-            "period": "2026-08",
-            "projects": 1
-          },
-          "projects": [
-            "en.wikipedia"
-          ]
-        },
-        "eu": {
-          "monthly": [
-            {
-              "value": 2699978,
-              "value_status": "final",
-              "period": "2025-07",
-              "projects": 5
-            },
-            {
-              "value": 2726542,
-              "value_status": "final",
-              "period": "2025-08",
-              "projects": 5
-            },
-            {
-              "value": 2652829,
-              "value_status": "final",
-              "period": "2025-09",
-              "projects": 5
-            },
-            {
-              "value": 2750731,
-              "value_status": "final",
-              "period": "2025-10",
-              "projects": 5
-            },
-            {
-              "value": 3055739,
-              "value_status": "final",
-              "period": "2025-11",
-              "projects": 5
-            },
-            {
-              "value": 2879497,
-              "value_status": "final",
-              "period": "2025-12",
-              "projects": 5
-            },
-            {
-              "value": 3172821,
-              "value_status": "final",
-              "period": "2026-01",
-              "projects": 5
-            },
-            {
-              "value": 2633500,
-              "value_status": "final",
-              "period": "2026-02",
-              "projects": 5
-            },
-            {
-              "value": 2777170,
-              "value_status": "final",
-              "period": "2026-03",
-              "projects": 5
-            },
-            {
-              "value": 2881052,
-              "value_status": "final",
-              "period": "2026-04",
-              "projects": 5
-            },
-            {
-              "value": 2810458,
-              "value_status": "final",
-              "period": "2026-05",
-              "projects": 5
-            },
-            {
-              "value": 2543332,
-              "value_status": "final",
-              "period": "2026-06",
-              "projects": 5
-            },
-            {
-              "value": 2582671,
-              "value_status": "final",
-              "period": "2026-07",
-              "projects": 5
-            },
-            {
-              "value": 2760751,
-              "value_status": "final",
-              "period": "2026-08",
-              "projects": 5
-            }
-          ],
-          "unit": "edits per month (sum over the listed language editions)",
-          "latest": {
-            "value": 2760751,
-            "value_status": "final",
-            "period": "2026-08",
-            "projects": 5
-          },
-          "projects": [
-            "de.wikipedia",
-            "fr.wikipedia",
-            "es.wikipedia",
-            "it.wikipedia",
-            "pl.wikipedia"
-          ]
-        },
-        "jp": {
-          "monthly": [
-            {
-              "value": 392839,
-              "value_status": "final",
-              "period": "2025-07",
-              "projects": 1
-            },
-            {
-              "value": 444762,
-              "value_status": "final",
-              "period": "2025-08",
-              "projects": 1
-            },
-            {
-              "value": 384043,
-              "value_status": "final",
-              "period": "2025-09",
-              "projects": 1
-            },
-            {
-              "value": 377338,
-              "value_status": "final",
-              "period": "2025-10",
-              "projects": 1
-            },
-            {
-              "value": 377684,
-              "value_status": "final",
-              "period": "2025-11",
-              "projects": 1
-            },
-            {
-              "value": 381111,
-              "value_status": "final",
-              "period": "2025-12",
-              "projects": 1
-            },
-            {
-              "value": 398916,
-              "value_status": "final",
-              "period": "2026-01",
-              "projects": 1
-            },
-            {
-              "value": 345243,
-              "value_status": "final",
-              "period": "2026-02",
-              "projects": 1
-            },
-            {
-              "value": 397026,
-              "value_status": "final",
-              "period": "2026-03",
-              "projects": 1
-            },
-            {
-              "value": 352185,
-              "value_status": "final",
-              "period": "2026-04",
-              "projects": 1
-            },
-            {
-              "value": 415040,
-              "value_status": "final",
-              "period": "2026-05",
-              "projects": 1
-            },
-            {
-              "value": 351243,
-              "value_status": "final",
-              "period": "2026-06",
-              "projects": 1
-            },
-            {
-              "value": 359002,
-              "value_status": "final",
-              "period": "2026-07",
-              "projects": 1
-            },
-            {
-              "value": 365663,
-              "value_status": "final",
-              "period": "2026-08",
-              "projects": 1
-            }
-          ],
-          "unit": "edits per month (sum over the listed language editions)",
-          "latest": {
-            "value": 365663,
-            "value_status": "final",
-            "period": "2026-08",
-            "projects": 1
-          },
-          "projects": [
-            "ja.wikipedia"
-          ]
-        }
-      }
-    }
-  },
-  "carbon_intensity_annual": {
-    "definition": "docs/指標定義_横串_炭素強度年次台帳_v1.0案.md v1.0 (2026-09-04 裁定で採用)。各地域の公的機関が自ら算出して公表する年次値のみ。単位は揃えない（換算は当社計算になるため行わない）",
-    "note": "Reference series (annual): compare within-region only; units differ by design. Daily cross-region carbon intensity is not published (ruling 2026-09-04: would require this site's own estimation).",
-    "regions": {
-      "jp": {
-        "series_id": "jp.power.carbon_intensity_annual",
-        "name": "全国平均係数（電気事業者別排出係数・令和8年提出用・R6年度実績）",
-        "name_en": "Japan - national average emission factor for purchased electricity (MOE/METI, retailer-specific emission factors, FY2024 results, for FY2026 reporting)",
-        "value": "0.000423",
-        "unit": "t-CO2/kWh",
-        "target_year": "FY2024 (令和6年度実績)",
-        "status": "verified",
-        "substitute_value": "0.000416",
-        "substitute_note": "代替値（同ファイル）",
-        "source_file": "r08_denki_coefficient_rev4.xlsx",
-        "source_version": "R8.8.3 公表版（令和8年提出用・rev4）",
-        "source_url": "https://policies.env.go.jp/earth/ghg-santeikohyo/calc.html",
-        "license": "公共データ利用規約（第1.0版）・政府標準利用規約（第2.0版）準拠・出典明記",
-        "retrieved_on": "2026-09-04",
-        "attribution_ja": "出典：環境省・経済産業省「電気事業者別排出係数」（令和8年提出用・r08_denki_coefficient_rev4.xlsx・R8.8.3 公表）、2026-09-04 取得。公表値のまま・単位は公表どおり。",
-        "note": "Excel をダウンロードし（HTTP 200・119,874 B）シート「小売電気事業者係数一覧（基礎・調整後、夏公表）R8.8.3」末尾の「全国平均係数(t-CO₂/kWh) 0.000423」「代替値 0.000416」を転記（openpyxl・値は変えない）。個別事業者の係数は載せない"
-      },
-      "eu": {
-        "series_id": "eu.power.carbon_intensity_annual",
-        "name_en": "EU27 - greenhouse gas emission intensity of electricity generation (EEA indicator)",
-        "value": null,
-        "unit": "gCO2e/kWh",
-        "target_year": "2024",
-        "status": "unverified",
-        "published_statements": [
-          "Generating one kilowatt hour has emitted 11% less emissions in 2024 on average than in 2023, and 41% less than a decade ago (EEA indicator page, retrieved 2026-09-04)"
-        ],
-        "source_url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1",
-        "source_version": "Indicator published 10 Jul 2026 (page)",
-        "license": "CC-BY (EEA legal notice, verified 2026-09-04)",
-        "retrieved_on": "2026-09-04",
-        "attribution_en": "Source: European Environment Agency (EEA), \"Greenhouse gas emission intensity of electricity generation\" (published 10 Jul 2026), retrieved 2026-09-04. Licence: CC-BY (EEA legal notice). Published values as-is; the original meaning is not altered.",
-        "note": "The absolute gCO2e/kWh value is not present in the page HTML (chart data loaded separately); the data file is catalogued in the EEA SDI (record 3b7fe76c-524a-439a-bfd2-a6e4046302a2). Value stays unverified until the data file is retrieved."
-      },
-      "us": {
-        "series_id": "us.power.co2_electric_annual",
-        "name_en": "United States - annual CO2 emissions of the electric power sector (EIA; total, million metric tons)",
-        "value": "1421.714",
-        "unit": "million metric tons CO2",
-        "target_year": "2024",
-        "status": "verified",
-        "source_url": "https://api.eia.gov/v2/seds/",
-        "license": "Public domain (EIA)",
-        "retrieved_on": "2026-09-04",
-        "attribution_en": "Source: U.S. EIA, State Energy Data System (SEDS), series TEEIE (electric power sector CO2) and CDTCR, retrieved 2026-09-04. Published values as-is; units as published.",
-        "note": "Retrieved 2026-09-04 via the EIA API v2 seds route with the site's key (read-only): TEEIE US 2024 = 1,421.714 million metric tons CO2 (2023: 1,415.175; 2022: 1,532.04). This is a total (not per kWh); the per-kWh intensity of the U.S. grid (EPA eGRID) remains a separate ledger candidate. SEDS terms: EIA data are public domain.",
-        "source_series": "SEDS seriesId TEEIE (Total energy CO2 emissions for the electric power sector), stateId US",
-        "prior": {
-          "2023": "1415.175",
-          "2022": "1532.04",
-          "2021": "1541.446"
-        },
-        "intensity_reference": {
-          "series": "CDTCR Carbon intensity of energy supply (CO2 emissions divided by total energy consumption less interstate flow of electricity)",
-          "value_2024": "50.6",
-          "unit": "metric tons CO2 per billion Btu"
-        }
-      }
-    }
-  },
-  "_note": "AI Lifeline cross-edition series (added 2026-09-04): (1) annual carbon intensity of electricity as published by each region's public body (reference ledger; units as published, not converted); (2) public-opinion ledger (official surveys only; manual, PDF page numbers required; results pending transcription); (3) training-material supply: Common Crawl crawl statistics (fetched pages, robots-denied pages, bytes) and Wikipedia monthly edits by language edition assigned to each region. Values as published; no estimates. Status observing."
+  }
 }

@@ -1,44 +1,44 @@
 {
+  "series": {
+    "8486": {
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-09-13; skeleton only)",
+      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
+      "monthly": [],
+      "unit": "USD thousand"
+    },
+    "8542": {
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-09-13; skeleton only)",
+      "name": "Electronic integrated circuits (HS 8542)",
+      "monthly": [],
+      "unit": "USD thousand"
+    }
+  },
+  "status": "observing",
+  "generated": "2026-09-13 18:02",
+  "source": {
+    "url": "https://www.data.go.kr/data/15101609/openapi.do",
+    "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)",
+    "license": "Korea Open Government License (공공누리) type 1 - attribution; no usage restriction stated on the dataset page (verified 2026-09-03)"
+  },
+  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
+  "notes": [
+    "Aggregates by HS heading only; no company, plant or partner-company data.",
+    "HBM has no separate HS heading (memories fall under 8542.32); no \"HBM\" series is published."
+  ],
+  "connection_status": {
+    "note": "awaiting datagokr_key in .secrets\\ai-lifeline-keys.json (publisher action)",
+    "api_key_installed": false
+  },
+  "country": "kr",
   "query_definition": {
-    "partner": "world",
+    "unit": "USD thousand",
+    "basis": "customs clearance (export FOB / import CIF)",
     "level": "HS4",
     "hs_codes": [
       "8486",
       "8542"
     ],
-    "basis": "customs clearance (export FOB / import CIF)",
-    "unit": "USD thousand"
+    "partner": "world"
   },
-  "generated": "2026-09-12 18:02",
-  "status": "observing",
-  "country": "kr",
-  "data_status": "not_yet_measured",
-  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
-  "series": {
-    "8486": {
-      "monthly": [],
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-09-12; skeleton only)",
-      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
-      "unit": "USD thousand"
-    },
-    "8542": {
-      "monthly": [],
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-09-12; skeleton only)",
-      "name": "Electronic integrated circuits (HS 8542)",
-      "unit": "USD thousand"
-    }
-  },
-  "connection_status": {
-    "note": "awaiting datagokr_key in .secrets\\ai-lifeline-keys.json (publisher action)",
-    "api_key_installed": false
-  },
-  "source": {
-    "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)",
-    "url": "https://www.data.go.kr/data/15101609/openapi.do",
-    "license": "Korea Open Government License (공공누리) type 1 - attribution; no usage restriction stated on the dataset page (verified 2026-09-03)"
-  },
-  "notes": [
-    "Aggregates by HS heading only; no company, plant or partner-company data.",
-    "HBM has no separate HS heading (memories fall under 8542.32); no \"HBM\" series is published."
-  ]
+  "data_status": "not_yet_measured"
 }

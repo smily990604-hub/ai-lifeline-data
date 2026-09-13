@@ -1,341 +1,341 @@
 {
-  "algorithm": "SHA-256 (hex, lowercase) over the exact bytes served from origin; HTML pages are not included (they carry CDN-injected analytics beacons)",
-  "base_url": "https://ai-lifeline.org",
+  "generated_at": "2026-09-13 18:03:00",
+  "generated_at_utc": "2026-09-13T09:03:00Z",
   "signature": null,
-  "generated_at": "2026-09-12 18:02:46",
   "signing": {
-    "public_key_file": "/api/manifest.pub",
     "algorithm": "Ed25519 (minisign)",
-    "note": "The manifest is signed after each edition daily batch with a key held by the publisher outside the reach of the editorial AI. The signature covers manifest.json exactly as served from origin.",
+    "verify": "minisign -Vm manifest.json -p manifest.pub  (then compare each sha256 with the downloaded file)",
+    "public_key_file": "/api/manifest.pub",
     "signature_file": "/api/manifest.sig",
+    "note": "The manifest is signed after each edition daily batch with a key held by the publisher outside the reach of the editorial AI. The signature covers manifest.json exactly as served from origin.",
+    "status": "signed",
+    "design_doc": "docs/設計案_公開マニフェスト署名_20260903.md",
     "public_key_also_shown_at": [
       "/us/about/",
       "/eu/about/"
-    ],
-    "status": "signed",
-    "design_doc": "docs/設計案_公開マニフェスト署名_20260903.md",
-    "verify": "minisign -Vm manifest.json -p manifest.pub  (then compare each sha256 with the downloaded file)"
+    ]
   },
-  "generated_at_utc": "2026-09-12T09:02:46Z",
+  "base_url": "https://ai-lifeline.org",
+  "algorithm": "SHA-256 (hex, lowercase) over the exact bytes served from origin; HTML pages are not included (they carry CDN-injected analytics beacons)",
+  "related": {
+    "health": "/api/health.json",
+    "world": "/api/world.json",
+    "site_index": "/index.json"
+  },
+  "count": 52,
   "files": [
     {
-      "bytes": 55017,
-      "modified": "2026-09-12 18:02:45",
+      "modified": "2026-09-13 18:02:59",
       "path": "/api/corrections.json",
-      "sha256": "da3a07a18ab886d63f1c46c8bc4ace0bc82d7218d95e855e887154dc6eabfef7"
+      "bytes": 57855,
+      "sha256": "8555332a1ffac6092909ed8f737d264d78eb08db6976d0b19e7b6bef7e4cca6f"
     },
     {
-      "bytes": 20107,
-      "modified": "2026-09-12 18:02:33",
+      "modified": "2026-09-13 18:02:46",
       "path": "/api/cross.json",
-      "sha256": "c46095a193474e6967dbddf3a124ac7791be37b60d0a4cc4506dba8ad44b477d"
+      "bytes": 20107,
+      "sha256": "39e37d085c4b5ed20a25a790e1a9b4f47ee56aeef1ef16e63bbc9373fa60ee32"
     },
     {
-      "bytes": 79773,
-      "modified": "2026-09-12 18:02:42",
+      "modified": "2026-09-13 18:02:55",
       "path": "/api/health.json",
-      "sha256": "93d15461b07114f8acb9d28193f66aca691a49c7fc49f707a4a6bcb5c22b6ba9"
+      "bytes": 79492,
+      "sha256": "023555823828c955c2e494df2ac28ff940467cee57d1e9aa50b38a21f2a4e29f"
     },
     {
-      "bytes": 71972,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/api/index.json",
-      "sha256": "d06e43332f867effeebe11103fcf7f430979656d8337464475ecc839387c7f42"
+      "bytes": 71971,
+      "sha256": "2b8c65ad25a11529dcdad32699188d87a100aec692d06bd01de968911a72f615"
     },
     {
-      "bytes": 115,
       "modified": "2026-09-05 09:47:52",
       "path": "/api/manifest.pub",
+      "bytes": 115,
       "sha256": "62a82208607702c4696a79b5efb7d440a30d5eca0d5744e0aeda90d4ff3cc4d2"
     },
     {
-      "bytes": 35918,
-      "modified": "2026-09-12 18:02:38",
+      "modified": "2026-09-13 18:02:51",
       "path": "/api/upcoming.ics",
-      "sha256": "8a074a8d5cf399b852d16f5094068f18f84015c87933461387bd288dbe05dc47"
+      "bytes": 34219,
+      "sha256": "93ba8b5a1ce04d1ee47145d7ce8bfd3a0e1d1d576ef4abddeab08a1b8558c323"
     },
     {
-      "bytes": 48121,
-      "modified": "2026-09-12 18:02:37",
+      "modified": "2026-09-13 18:02:51",
       "path": "/api/upcoming.json",
-      "sha256": "228a79593adfb611abc9be694b6c019fc19c16510a7d71c47741664ab77ff367"
+      "bytes": 46017,
+      "sha256": "d93b4a68cb886cb5ed1bad411389b26dd65e21e383a4bf51de7ef1e78fe179fc"
     },
     {
-      "bytes": 100243,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/api/world.json",
-      "sha256": "d3e370e5bb97f844c028b607c2606736be9f2f9e508423cc9cc5b3cc4dedd202"
+      "bytes": 100233,
+      "sha256": "d40439d1505c716b04e14883481c027610de89ebfb0b6330fb97c9ffa8d1bda6"
     },
     {
-      "bytes": 6149,
-      "modified": "2026-09-12 10:08:57",
+      "modified": "2026-09-12 20:03:49",
       "path": "/eu/api/ai_readers_eu.json",
-      "sha256": "d21e5b2446f9a19249c563ef6dc13aa06244c8a9d2ab8bea7ee56254a7e20a32"
+      "bytes": 6149,
+      "sha256": "c11b4a330c1017ba1eb3a8488ac9ce720acfe742765be9b5302380a96349a66a"
     },
     {
-      "bytes": 23947,
-      "modified": "2026-09-12 10:08:59",
+      "modified": "2026-09-12 20:03:51",
       "path": "/eu/api/changes_eu.json",
-      "sha256": "19bd93af7092bd5f1fea671003c8f412e3ca7d951bb73a3ddddf7875d6b424ff"
+      "bytes": 24291,
+      "sha256": "983dacd685c9cc38d5da27efb90d92db595bc496a58eccf7d58072f669281ace"
     },
     {
-      "bytes": 36957,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/datacenter_eu.json",
-      "sha256": "d3c96bdd600f7777ba50414ff7a6e6d62128dd9d0cf91dc9ff239c819dee782b"
+      "bytes": 36957,
+      "sha256": "17d84bc7c3f04d4bdc62c2fc0823360bb309a891641c885a20f7b01837b2e732"
     },
     {
-      "bytes": 22332,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/disaster_eu.json",
-      "sha256": "73d556df9abb7c5cc3e61dbf66b45efdee65b62c5b128041ce4d9c6a187ff706"
+      "bytes": 22332,
+      "sha256": "bf64843b03d533c333b8480fcbff330f14b4302241d1b3add90b87caa0a96130"
     },
     {
-      "bytes": 28053,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/fiscal_eu.json",
-      "sha256": "5b28070e4ee48dd0a669a317788ee0d70fb98b4cba33a7ecb04fa661a45b5e79"
+      "bytes": 28053,
+      "sha256": "adc74bc762fa308d63dadb4f245f4dd6f7325f9c2b147f2ecce2fe82d5835492"
     },
     {
-      "bytes": 18497,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/market_eu.json",
-      "sha256": "347022eae8020e25cec1bcc6f32dc2271b4108cc0d3f648983d36bbc74526e12"
+      "bytes": 18497,
+      "sha256": "a73a7bc7caaeeddb1b62b7ceb1d0c090936bdfecd89b5bd72a35202e4d008dc6"
     },
     {
-      "bytes": 194139,
-      "modified": "2026-09-12 10:08:52",
+      "modified": "2026-09-12 20:03:45",
       "path": "/eu/api/power_eu_breakdown_2026.json",
-      "sha256": "827b426ed58f9fa2de04e7a5149649e7ec6f88de2b3995796aca1609fd3543e3"
+      "bytes": 194688,
+      "sha256": "64ba130d7a835a7ae3e6586202de98058bcde7e2dc040f65d0c97b47fec7e55c"
     },
     {
-      "bytes": 30382,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/power_eu.json",
-      "sha256": "8920b179ca01c894adddca3374d142d29977f39927e6fd2e87faf3290cc01f4e"
+      "bytes": 30775,
+      "sha256": "d809094455f76cd70b4a9eeef89196edba0782765d28446a39a09835b2447276"
     },
     {
-      "bytes": 22429,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/eu/api/regulation_eu.json",
-      "sha256": "e8a74ad3a6c5625568fb7222a2cb4651f10a239edf2eec7bb5d3e5974bc485d0"
+      "bytes": 22429,
+      "sha256": "3cc44627d9876c2c6c1163439d159271bfa1a3cc70f6bc42a7941dfd012f513b"
     },
     {
-      "bytes": 2506,
-      "modified": "2026-09-12 10:08:52",
+      "modified": "2026-09-12 20:03:45",
       "path": "/eu/api/summary.json",
-      "sha256": "1fa2645a91c4e14c619836b0e29978d3cf0d531585e5353306cdf69748bd4f3d"
+      "bytes": 2506,
+      "sha256": "a83b5afb5ea661a0e3327cd0a77a12aebf989722f4beedc78630aab458741b8c"
     },
     {
-      "bytes": 17730,
       "modified": "2026-09-06 08:25:18",
       "path": "/index.json",
+      "bytes": 17730,
       "sha256": "25df36af8662aaad22fb82b6a110cb3c017eb3299b4bc95d479f7b00ea0fbfe8"
     },
     {
-      "bytes": 26957,
-      "modified": "2026-09-12 10:31:39",
+      "modified": "2026-09-13 10:31:50",
       "path": "/jp/api/ai_readers_jp.json",
-      "sha256": "445fdf110a8688a38cd606b953ed4e9dafd6f832cd726499554ed1c934d1bbb8"
+      "bytes": 27423,
+      "sha256": "eacd3513db482930188338506e59047a64e0a5fddb9cc42f41fd5208614e28e4"
     },
     {
-      "bytes": 38827,
       "modified": "2026-09-10 10:31:39",
       "path": "/jp/api/changes_jp.json",
+      "bytes": 38827,
       "sha256": "83387dd3dfb1b42481c7c44c213a99bf04eeaa4fcdcf9450753f89baa43985bc"
     },
     {
-      "bytes": 3579,
-      "modified": "2026-09-12 10:31:24",
+      "modified": "2026-09-13 10:31:34",
       "path": "/jp/api/crawl_refusal_jp.json",
-      "sha256": "cbd6137e390920ec3b0ce759b46f6d7e8ae120ecfde57c8a7c3eb35744609ea8"
+      "bytes": 3579,
+      "sha256": "dbefc8df6350e5e5945c5e5d245a974176f138c884e1073cbfa3061fef6bcaeb"
     },
     {
-      "bytes": 21934,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/data_jp.json",
-      "sha256": "711dcadb9fe0465c7261e153883c9330f51de224b7008d73196b258564e6a8fd"
+      "bytes": 21934,
+      "sha256": "83757d2f370b7417667754e2d7c44178c417aad5d55290ce8c89369784560d53"
     },
     {
-      "bytes": 16936,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/datacenter_jp.json",
-      "sha256": "bb6ca2da0b2f5562e2e900bbc097425a917c8c5655b3cc87b8b8e4280178dc30"
+      "bytes": 17048,
+      "sha256": "88461fab38769ab71c277fe5d28e13a765ed3804e7a8abf937ecd870189ed537"
     },
     {
-      "bytes": 17335,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/disaster_jp.json",
-      "sha256": "d3d4d58841d0de8b783bfce568af96cd32617cbd8e8afeacf8bf4c57204c9741"
+      "bytes": 17807,
+      "sha256": "c323306db72a70d07082c823abedcc7712836c5ad9bb028dfaaf6121685e4eac"
     },
     {
-      "bytes": 21059,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/fiscal_jp.json",
-      "sha256": "d792bb57912a6e11ee6420be0bca0cbf8cd6e427110f7473a5844c8ce1a9c582"
+      "bytes": 21059,
+      "sha256": "b2bffc108a32ac008c20cb0a2683517a0dd3b85e299cf7fddc4670c32cb87330"
     },
     {
-      "bytes": 6852,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/gpu_jp.json",
-      "sha256": "5634fff67057dde4359c5a694de9cae7e73e887b141fb0d9dfd93a095b4ed9de"
+      "bytes": 6852,
+      "sha256": "23dc3af4ee8321b0f250d542293aa9a642682f9025008fc208cb50e08daad3ec"
     },
     {
-      "bytes": 20157,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/market_jp.json",
-      "sha256": "fc5ffce760132eed2b25aa6b26c74682d7875cfe3fefa2add811d6071c895342"
+      "bytes": 20387,
+      "sha256": "2a64067705fe1cc91aad34679882a7ae76058ec133f341c632f4f01716abaa83"
     },
     {
-      "bytes": 24268,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/power_jp.json",
-      "sha256": "c8dff0ae0313de396401fba4119d93afdea7c7a67a1333bfa7ccf2afc3ff4edd"
+      "bytes": 24440,
+      "sha256": "4df01841b8e338a6c8e6643633d55a469ebdb4e614df53560ff4a031fb4c8528"
     },
     {
-      "bytes": 5775,
-      "modified": "2026-09-12 10:31:09",
+      "modified": "2026-09-13 10:31:18",
       "path": "/jp/api/pubcomment.json",
-      "sha256": "f37388d5d1096ef066307ff944712e5d1a2128ab28f11fdd10545cdbbd19b286"
+      "bytes": 4255,
+      "sha256": "883734b19eb9aa8cebb9a96343fb3b0b348b24a83108f1d1a9eee8e846cdc985"
     },
     {
-      "bytes": 13405,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/regulation_jp.json",
-      "sha256": "6139b4f199bdd171afdb8007c50fe7225ade7e29dea97d2533edc29c5c69220a"
+      "bytes": 12621,
+      "sha256": "3616c8bf00b5f1006e20ac7528d4253ea3863fe68a0062a891771d0fe907d953"
     },
     {
-      "bytes": 7299,
-      "modified": "2026-09-12 10:31:43",
+      "modified": "2026-09-13 10:31:56",
       "path": "/jp/api/summary.json",
-      "sha256": "02ece2d4d21e15f956d2512d91a1f389d3b73021666771d5abeaa9c4b699366e"
+      "bytes": 7301,
+      "sha256": "4adbda1d2785af659c059493699f1ff3a5be641800c8fce6d9a143ba7ddeffca"
     },
     {
-      "bytes": 8123,
-      "modified": "2026-09-12 10:31:11",
+      "modified": "2026-09-13 10:31:20",
       "path": "/jp/api/token_price_jp.json",
-      "sha256": "8cc465190db65c06604c3cbc4985626b3cc965ecc12d1a43a7e93701bdb825eb"
+      "bytes": 8123,
+      "sha256": "498cf215da88ed6295beb5343c68490c19c61ed5e626309ab5ab25c5f2ee5af8"
     },
     {
-      "bytes": 4013,
-      "modified": "2026-09-12 10:31:23",
+      "modified": "2026-09-13 10:31:33",
       "path": "/jp/api/vulnerability_data_jp.json",
-      "sha256": "8d5c7561834cbdb01a74f381eafbdb8e2c48987384fbc75d43c3003bffd41875"
+      "bytes": 4013,
+      "sha256": "30246b245392b99fc1e69e77bd76d85edc9ddf0277b787c560aac463f96372f0"
     },
     {
-      "bytes": 24778,
-      "modified": "2026-09-12 10:31:22",
+      "modified": "2026-09-13 10:31:32",
       "path": "/jp/api/vulnerability_jp.json",
-      "sha256": "a451017ac887e95835d3045c7aa562a8bdac829ea82085cdeaf59616006c6203"
+      "bytes": 24774,
+      "sha256": "95f9358a933b99390a9cd85ac625fb76948010cc3f50e0129b6de4f8b54dddee"
     },
     {
-      "bytes": 20472,
-      "modified": "2026-09-12 10:31:32",
+      "modified": "2026-09-13 10:31:42",
       "path": "/jp/api/vulnerability_regulation_jp.json",
-      "sha256": "5025359f195d6607db21e3da94cf217c2c81da4ae0722f463d08ebbaf6cc4dab"
+      "bytes": 20472,
+      "sha256": "8bdef2d9883bfa10c936951d3930f37419282e32525473b501de782f1fbf8d1a"
     },
     {
-      "bytes": 8215,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/jp/api/water_jp.json",
-      "sha256": "940f76b9036f5ebcb041a81bbf4de90c69731860110bd92d877971b203e3d96e"
+      "bytes": 8215,
+      "sha256": "9c3dae5cb92a49d1f9f2da40277465fcdba89772b76f8895338ef129ee8f5574"
     },
     {
-      "bytes": 38687,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/llms.txt",
-      "sha256": "627eae460544552540a1986dc5cf25aa28e1d4b7a17f1c8bc3816fc26a65bd78"
+      "bytes": 38686,
+      "sha256": "646d400709f97b387866398b643e4aa544c2310bb618e5853dca73ceaad224b3"
     },
     {
-      "bytes": 986,
       "modified": "2026-09-05 08:59:04",
       "path": "/robots.txt",
+      "bytes": 986,
       "sha256": "877c7788c14a80369f9eb7ad4e9141fd1d3a8cc1dc98f484d9cd4202a01a85b0"
     },
     {
-      "bytes": 7992,
-      "modified": "2026-09-12 18:01:23",
+      "modified": "2026-09-13 18:01:31",
       "path": "/us/api/ai_readers_us.json",
-      "sha256": "1b6e1d58db8db1dd318a3d4062ca218eb8171ffe0be0484f33d69d2e3fd24958"
+      "bytes": 8219,
+      "sha256": "00854b539e0775c9acd98d604efdcd1585d52d30f44c497a4310d020edb8caeb"
     },
     {
-      "bytes": 71702,
-      "modified": "2026-09-12 18:01:24",
+      "modified": "2026-09-13 18:01:33",
       "path": "/us/api/changes_us.json",
-      "sha256": "23d803b6123df62dc01cd286442d889120e5bab1096ff4d84d6543772eeb562f"
+      "bytes": 77004,
+      "sha256": "c8b897309dd14a0b537d7fd89f8709bdc86edb45421edd51ca5f4b0564d9e209"
     },
     {
-      "bytes": 41337,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/datacenter_us.json",
-      "sha256": "017ec61405add870a98c40e537a0675067841ff9d03e82ccf14806332f7ee001"
+      "bytes": 41337,
+      "sha256": "05096c820f68212eecded34360c8cb0b41f525b2a6ecaa9bbeecf1535b3b96ce"
     },
     {
-      "bytes": 11767,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/disaster_us.json",
-      "sha256": "9b49dd654286858a067685bdbc5d4be2d88f9a0fbf13325cedcea3c27187b028"
+      "bytes": 12123,
+      "sha256": "571bd5b49253d1ab0e21cf41a2c2731bd6cc4eefa3f0b2657e5abc42a275bdc7"
     },
     {
-      "bytes": 26101,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/fiscal_us.json",
-      "sha256": "cbfc8de3651c98253e73b295000cc425d32a745615df8ff4522aefd64d0879ee"
+      "bytes": 26221,
+      "sha256": "1bb1a729feb8043751bed844094277061be976786164a7f47889ada0f779ab5b"
     },
     {
-      "bytes": 39191,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/gpu_us.json",
-      "sha256": "962d270d4a62a27ce11a1256e3b23e1c14a85392b37beb18d0eade4b183acb90"
+      "bytes": 39191,
+      "sha256": "74db3418154f22d18574bacb5bddec520a1c9aee8d4cfcffae4b4277a712aba0"
     },
     {
-      "bytes": 19512,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/market_us.json",
-      "sha256": "3226e1a745533f7c80f2443813482d4cb564ccb06cd3913cc18629f745236950"
+      "bytes": 19742,
+      "sha256": "b8732e9634113ae7a940741e0c993b525620eb6f1eca3a9a020c4992b71545be"
     },
     {
-      "bytes": 638231,
-      "modified": "2026-09-12 18:01:17",
+      "modified": "2026-09-13 18:01:24",
       "path": "/us/api/power_us_breakdown_2026.json",
-      "sha256": "f8cb12373460c33b429359fcc350f824c4bdc78aefcb5c8c1cff3b362382ec9b"
+      "bytes": 653356,
+      "sha256": "c1a8d1e4a6c315a96086c3d05670a75c2a9f66766a6356f0e8d5e37c4cddfbea"
     },
     {
-      "bytes": 14913,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/power_us.json",
-      "sha256": "a9fbaca54ee023ce21186f450d02f5ea5e708fba1f8fedfb3f0eb192626b7f94"
+      "bytes": 15098,
+      "sha256": "14358eefc415519868df8906aad7c40f6562ce947665d365abe77b91244d10f4"
     },
     {
-      "bytes": 15071,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/regulation_us.json",
-      "sha256": "d6d6bea1dd8d4779d2673257efdc951bb6a17701d9fbaf9be12413338f9a4f1e"
+      "bytes": 15071,
+      "sha256": "eea8a698f59ce5f91739e991a08a0c1689056bea7b5387ae5687d60a1a541d02"
     },
     {
-      "bytes": 1886,
-      "modified": "2026-09-12 18:01:17",
+      "modified": "2026-09-13 18:01:25",
       "path": "/us/api/summary.json",
-      "sha256": "f53202dbd4a189bf08b297f661b0b5e7a06a81864c127003cb8506e235e39ae7"
+      "bytes": 1886,
+      "sha256": "d3047bdaf5825959077e7c4c4d2604a477af6e4ce6c84bf473782ae9317050c7"
     },
     {
-      "bytes": 7637,
-      "modified": "2026-09-12 18:01:18",
+      "modified": "2026-09-13 18:01:26",
       "path": "/us/api/token_price_us.json",
-      "sha256": "33dd105264ee5156ca35921fd5113e454f250145f834ffc144eb8559e26f672a"
+      "bytes": 7637,
+      "sha256": "9d15db6bb0254242653b78c6ef4c28d0ef2a26c3872228c09e1f7cff02c0a1ba"
     },
     {
-      "bytes": 45050,
-      "modified": "2026-09-12 18:02:44",
+      "modified": "2026-09-13 18:02:58",
       "path": "/us/api/water_us.json",
-      "sha256": "43806e1814b6cb64ffdbc9233ffff49c5dcbd8cf887b1c64bb6746f9c1e3f787"
+      "bytes": 45050,
+      "sha256": "c4c25f20975bb2b06ad39e6ce472b1a101bdbfa7dc95f81c557bbb97ea72bf83"
     }
   ],
-  "_note": "AI Lifeline publication manifest (added 2026-09-03, unsigned). SHA256 of every machine-readable file published by this site at generation time. Verify a downloaded file by hashing it and comparing with the entry here; a mismatch means the file changed after this manifest was generated (a newer daily batch, a CDN cache, or tampering). The manifest is regenerated after each edition daily batch, so compare against the manifest fetched at the same time as the file.",
-  "related": {
-    "site_index": "/index.json",
-    "world": "/api/world.json",
-    "health": "/api/health.json"
-  },
-  "count": 52
+  "_note": "AI Lifeline publication manifest (added 2026-09-03, unsigned). SHA256 of every machine-readable file published by this site at generation time. Verify a downloaded file by hashing it and comparing with the entry here; a mismatch means the file changed after this manifest was generated (a newer daily batch, a CDN cache, or tampering). The manifest is regenerated after each edition daily batch, so compare against the manifest fetched at the same time as the file."
 }
