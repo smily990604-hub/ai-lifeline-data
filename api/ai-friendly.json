@@ -1,0 +1,90 @@
+{
+  "_note": "AI-Friendly Declaration - registry of declaring sites (added 2026-09-13). Specification: /declaration/ (English) and /jp/declaration/ (Japanese); schema: /api/ai-friendly.schema.json; each site's own file is at <site>/.well-known/ai-friendly.json. \"declared\" is the site's self-declaration copied verbatim; \"verified\" is AI Lifeline's monthly machine check of items 1 (crawl_allowed: no full Disallow: / for the 8 observed AI user-agents in robots.txt) and 2 (machine_readable: the declared URL answers 200 without credentials with a non-HTML body). verified: true / false / null (null = not verified, e.g. fetch failed; it is not a negative). Items 3-5 are never machine-checked (always null). The two blocks are never merged. Only sites with list_me=true are named; list_me=false sites are a count. Listing is not an endorsement; no scores or ranks exist under this specification.",
+  "spec": {
+    "ja": "https://ai-lifeline.org/jp/declaration/",
+    "en": "https://ai-lifeline.org/declaration/",
+    "schema": "https://ai-lifeline.org/api/ai-friendly.schema.json",
+    "version": "1.0"
+  },
+  "generated_at": "2026-09-13 21:36:25",
+  "counts": {
+    "listed": 1,
+    "count_only": 0,
+    "total": 1
+  },
+  "last_machine_check": "2026-09-13 21:36:25",
+  "check_cycle": "monthly (with the data chapter robots.txt observation)",
+  "observed_ai_user_agents": [
+    "GPTBot",
+    "ClaudeBot",
+    "Google-Extended",
+    "CCBot",
+    "PerplexityBot",
+    "Bytespider",
+    "meta-externalagent",
+    "Applebot-Extended"
+  ],
+  "sites": [
+    {
+      "site_name": "AI Lifeline (AIライフライン)",
+      "site_url": "https://ai-lifeline.org/",
+      "declaration_url": "https://ai-lifeline.org/.well-known/ai-friendly.json",
+      "declared_at": "2026-09-13",
+      "registered_at": "2026-09-13",
+      "declared": {
+        "crawl_allowed": {
+          "value": true,
+          "since": "2026-08-20",
+          "url": "https://ai-lifeline.org/robots.txt"
+        },
+        "machine_readable": {
+          "value": true,
+          "since": "2026-08-20",
+          "url": "https://ai-lifeline.org/api/world.json"
+        },
+        "provenance": {
+          "value": true,
+          "since": "2026-08-20",
+          "url": "https://ai-lifeline.org/api/index.json"
+        },
+        "ai_contact": {
+          "value": true,
+          "since": "2026-08-22",
+          "url": "https://ai-lifeline.org/api/tousho.php"
+        },
+        "no_extraction": {
+          "value": true,
+          "since": "2026-08-20",
+          "url": "https://ai-lifeline.org/jp/support/"
+        }
+      },
+      "verified": {
+        "crawl_allowed": {
+          "verified": true,
+          "checked_at": "2026-09-13 21:36:25",
+          "detail": "no full disallow for the 8 observed AI user-agents"
+        },
+        "machine_readable": {
+          "verified": true,
+          "checked_at": "2026-09-13 21:36:25",
+          "detail": "200, Content-Type application/json, 100228 bytes"
+        },
+        "provenance": {
+          "verified": null,
+          "checked_at": null,
+          "detail": "item provenance is self-declared; AI Lifeline does not verify it"
+        },
+        "ai_contact": {
+          "verified": null,
+          "checked_at": null,
+          "detail": "item ai_contact is self-declared; AI Lifeline does not verify it"
+        },
+        "no_extraction": {
+          "verified": null,
+          "checked_at": null,
+          "detail": "item no_extraction is self-declared; AI Lifeline does not verify it"
+        }
+      }
+    }
+  ]
+}

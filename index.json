@@ -39,7 +39,16 @@
     "manifest_note": "SHA-256 list of all published machine-readable files with generation time; unsigned until the signing design is approved.",
     "corrections": "/api/corrections.json",
     "answers": "/api/index.json",
-    "answers_note": "Today's answer (one sentence) and FAQ per chapter page, with last confirmed date and next expected update (added 2026-09-06)."
+    "answers_note": "Today's answer (one sentence) and FAQ per chapter page, with last confirmed date and next expected update (added 2026-09-06).",
+    "ai_friendly_declaration": "/declaration/",
+    "ai_friendly_declaration_pages": {
+      "en": "/declaration/",
+      "ja": "/jp/declaration/"
+    },
+    "ai_friendly_file": "/.well-known/ai-friendly.json",
+    "ai_friendly_schema": "/api/ai-friendly.schema.json",
+    "ai_friendly_registry": "/api/ai-friendly.json",
+    "ai_friendly_note": "AI-Friendly Declaration (added 2026-09-13): a five-item yes/no self-declaration (crawl_allowed, machine_readable, provenance, ai_contact, no_extraction) that a site publishes at <site>/.well-known/ai-friendly.json. This site is entry no. 1. The registry keeps the site's self-declaration and this site's monthly machine check of items 1-2 apart; no scores; listed on request only."
   },
   "support": {
     "pages": {

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-lifeline.org/api/ai-friendly.schema.json",
+  "title": "AI-Friendly Declaration v1.0",
+  "description": "Self-declaration file published at /.well-known/ai-friendly.json. Five yes/no items with the date each became true and a URL where it can be seen. No scores, no ranks, no evaluative words. Specification: https://ai-lifeline.org/declaration/ (English) / https://ai-lifeline.org/jp/declaration/ (Japanese). Published 2026-09-13 by AI Lifeline.",
+  "type": "object",
+  "required": ["version", "site", "declared_at", "items", "list_me", "contact"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "1.0",
+      "description": "Specification version. Only \"1.0\" is defined."
+    },
+    "site": {
+      "type": "object",
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 100, "description": "Site name as it should appear in the list." },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "description": "Canonical site URL (https). The declaration file must live under this origin at /.well-known/ai-friendly.json." }
+      },
+      "additionalProperties": false
+    },
+    "declared_at": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date this declaration was made or last changed (YYYY-MM-DD)."
+    },
+    "items": {
+      "type": "object",
+      "required": ["crawl_allowed", "machine_readable", "provenance", "ai_contact", "no_extraction"],
+      "properties": {
+        "crawl_allowed":    { "$ref": "#/$defs/item", "description": "AI crawlers are not refused in robots.txt (no full Disallow: / for AI user-agents). Machine-checked monthly by AI Lifeline." },
+        "machine_readable": { "$ref": "#/$defs/item", "description": "Primary data is published free of charge in a machine-readable format (JSON, CSV, XML or similar). Machine-checked monthly by AI Lifeline (URL responds 200 without authentication, non-HTML content)." },
+        "provenance":       { "$ref": "#/$defs/item", "description": "Each data value carries its source and the date it was confirmed. Self-declared only (not machine-checked)." },
+        "ai_contact":       { "$ref": "#/$defs/item", "description": "There is a contact point that accepts enquiries from AI (an endpoint or address an agent can use). Self-declared only." },
+        "no_extraction":    { "$ref": "#/$defs/item", "description": "The site does not demand money, personal data or actions from AI as a condition of access. Self-declared only." }
+      },
+      "additionalProperties": false
+    },
+    "list_me": {
+      "type": "boolean",
+      "description": "true = the site asks to be listed on https://ai-lifeline.org/declaration/ (name, URL, declaration date, verification status). false = counted only, never named."
+    },
+    "contact": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300,
+      "description": "How to reach the declarer: a URL (form or endpoint) or an email address. Shown to nobody by AI Lifeline; used only to confirm a registration or a removal request."
+    },
+    "spec": { "type": "string", "format": "uri", "description": "Optional. URL of the specification this file follows." },
+    "schema": { "type": "string", "format": "uri", "description": "Optional. URL of this JSON Schema." },
+    "note": { "type": "string", "maxLength": 500, "description": "Optional free text. Not displayed by AI Lifeline." }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": ["value", "since", "url"],
+      "properties": {
+        "value": { "type": "boolean", "description": "yes = true, no = false. Nothing in between." },
+        "since": { "type": "string", "format": "date", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$", "description": "Date from which the value has been true (or the date of the declaration if the value is false)." },
+        "url":   { "type": "string", "format": "uri", "pattern": "^https?://", "description": "Where a reader (human or AI) can see it for themselves: robots.txt, the data endpoint, the sources policy, the contact endpoint, the access terms." }
+      },
+      "additionalProperties": false
+    }
+  }
+}
