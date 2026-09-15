@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-09-13 20:03",
+  "generated": "2026-09-14 20:03",
   "indicator": {
     "id": "ai_readers_01_eu",
     "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
@@ -52,8 +52,8 @@
         "other": 2
       },
       "breakdown_verified_other_detail": {
-        "OAI-SearchBot": 1,
-        "Amazonbot": 1
+        "Amazonbot": 1,
+        "OAI-SearchBot": 1
       },
       "top_verified": {
         "name": "GPTBot",
@@ -89,6 +89,34 @@
       "top_verified": {
         "name": "meta-externalagent",
         "requests": 27
+      }
+    },
+    {
+      "week": 4,
+      "from": "2026-09-13",
+      "to": "2026-09-19",
+      "observed_through": "2026-09-13",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 12,
+      "verified_days": 1,
+      "unverified_total": 0,
+      "named_total_reference": 12,
+      "self_excluded_total": 145,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 12
+      },
+      "breakdown_verified_other_detail": {
+        "Amazonbot": 9,
+        "OAI-SearchBot": 3
+      },
+      "top_verified": {
+        "name": "Amazonbot",
+        "requests": 9
       }
     }
   ],
@@ -181,6 +209,15 @@
       "ai_named_reference": 6,
       "self_excluded": 198,
       "requests_in_scope": 311,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-13",
+      "ai_verified": 12,
+      "ai_unverified": 0,
+      "ai_named_reference": 12,
+      "self_excluded": 145,
+      "requests_in_scope": 183,
       "verified_available": true
     }
   ]
