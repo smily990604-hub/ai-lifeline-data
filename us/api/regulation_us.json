@@ -1,21 +1,26 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-16. Latest final value: open comment periods (query \"artificial intelligence\") 16 documents (2026-09-16). (Source: Federal Register API / updated 2026-09-16 18:01 JST)",
-  "cite_as": "AI Lifeline, Regulation (United States edition), data confirmed 2026-09-16, https://ai-lifeline.org/us/regulation/",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-17. Latest final value: open comment periods (query \"artificial intelligence\") 16 documents (2026-09-17). (Source: Federal Register API / updated 2026-09-17 18:01 JST)",
+  "cite_as": "AI Lifeline, Regulation (United States edition), data confirmed 2026-09-17, https://ai-lifeline.org/us/regulation/",
   "region": "us",
-  "status_note": "Observing only: this is a mechanical listing, not an evaluation of any agency or proposal.",
-  "data_status": "live",
-  "policy_note": "This site observes and lists consultations. It never submits comments to any authority, and listing a document is not an endorsement or criticism of it.",
+  "query_definition": {
+    "lookback_days": 180,
+    "term": "\"artificial intelligence\"",
+    "method": "Federal Register full-text search (official API)",
+    "caveat": "Coverage is defined by this exact query. A document that discusses AI without the literal phrase, or an AI-relevant docket outside the Federal Register, is out of scope."
+  },
+  "counts": {
+    "closing_within_14_days": 4,
+    "documents_last_30_days": 29,
+    "open_comment_periods": 16
+  },
+  "can_say": [
+    "How many Federal Register documents contained the exact phrase \"artificial intelligence\" in the last 180 days, and how many were published in the last 30 days.",
+    "Which of those documents currently have an open comment period, how many close within 14 days, with the closing date and the official link.",
+    "The exact query that defines the count (term, lookback, source), so the count can be reproduced."
+  ],
+  "status": "observing",
+  "generated": "2026-09-17 18:01",
   "open_comment_periods": [
-    {
-      "document_number": "2026-16744",
-      "title": "Request for Comments on Community Outreach Office Locations in the Southwest States",
-      "type": "Notice",
-      "agencies": "Commerce Department; Patent and Trademark Office",
-      "publication_date": "2026-08-17",
-      "comments_close_on": "2026-09-16",
-      "closes_within_14_days": true,
-      "html_url": "https://www.federalregister.gov/documents/2026/08/17/2026-16744/request-for-comments-on-community-outreach-office-locations-in-the-southwest-states"
-    },
     {
       "document_number": "2026-14679",
       "title": "Electronic Delivery of Information Under the Federal Securities Laws",
@@ -127,6 +132,16 @@
       "html_url": "https://www.federalregister.gov/documents/2026/08/21/2026-17183/regulation-crypto-assets"
     },
     {
+      "document_number": "2026-19072",
+      "title": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+      "type": "Proposed Rule",
+      "agencies": "Environmental Protection Agency",
+      "publication_date": "2026-09-17",
+      "comments_close_on": "2026-11-02",
+      "closes_within_14_days": false,
+      "html_url": "https://www.federalregister.gov/documents/2026/09/17/2026-19072/rescission-of-the-greenhouse-gas-findings-for-fossil-fuel-fired-power-plants-and-repeal-of"
+    },
+    {
       "document_number": "2026-18190",
       "title": "Transfer Agent Rules",
       "type": "Proposed Rule",
@@ -167,18 +182,14 @@
       "html_url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility"
     }
   ],
-  "generated": "2026-09-16 18:01",
   "cannot_say": [
     "Whether federal rulemaking is moving fast or slowly, or is favorable or unfavorable to AI (mechanical listing; no frozen criterion).",
     "What a document requires or means (titles, dates and links only; content is not summarized).",
     "Anything outside the Federal Register: state legislation, agency guidance, court decisions (linked elsewhere, not reproduced)."
   ],
-  "status": "observing",
-  "can_say": [
-    "How many Federal Register documents contained the exact phrase \"artificial intelligence\" in the last 180 days, and how many were published in the last 30 days.",
-    "Which of those documents currently have an open comment period, how many close within 14 days, with the closing date and the official link.",
-    "The exact query that defines the count (term, lookback, source), so the count can be reproduced."
-  ],
+  "policy_note": "This site observes and lists consultations. It never submits comments to any authority, and listing a document is not an endorsement or criticism of it.",
+  "data_status": "live",
+  "status_note": "Observing only: this is a mechanical listing, not an evaluation of any agency or proposal.",
   "sources": [
     {
       "name": "Federal Register (federalregister.gov) API",
@@ -186,32 +197,21 @@
       "url": "https://www.federalregister.gov/developers/documentation/api/v1"
     }
   ],
-  "query_definition": {
-    "caveat": "Coverage is defined by this exact query. A document that discusses AI without the literal phrase, or an AI-relevant docket outside the Federal Register, is out of scope.",
-    "term": "\"artificial intelligence\"",
-    "method": "Federal Register full-text search (official API)",
-    "lookback_days": 180
-  },
-  "counts": {
-    "open_comment_periods": 16,
-    "closing_within_14_days": 5,
-    "documents_last_30_days": 29
-  },
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-16. Latest final value: open comment periods (query \"artificial intelligence\") 16 documents (2026-09-16). (Source: Federal Register API / updated 2026-09-16 18:01 JST)",
-  "answer_line_date": "2026-09-16",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-17. Latest final value: open comment periods (query \"artificial intelligence\") 16 documents (2026-09-17). (Source: Federal Register API / updated 2026-09-17 18:01 JST)",
+  "answer_line_date": "2026-09-17",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "open_comment_periods",
     "label": "open comment periods (query \"artificial intelligence\")",
     "value": 16,
     "unit": "documents",
-    "date": "2026-09-16",
+    "date": "2026-09-17",
     "threshold": null
   },
   "faq": [
     {
       "q": "How many U.S. federal comment periods on \"artificial intelligence\" are open?",
-      "a": "As of 2026-09-16, 16 Federal Register documents matching the exact full-text query \"artificial intelligence\" have open comment periods; 5 of them close within 14 days. 29 matching documents were published in the last 30 days. Source: Federal Register API (public domain)."
+      "a": "As of 2026-09-17, 16 Federal Register documents matching the exact full-text query \"artificial intelligence\" have open comment periods; 4 of them close within 14 days. 29 matching documents were published in the last 30 days. Source: Federal Register API (public domain)."
     },
     {
       "q": "How is the count defined?",
@@ -219,7 +219,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Federal Register API, retrieved daily at 18:00 JST (observation started 2026-08-29). This site never submits comments to any authority. Last updated 2026-09-16 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/regulation_us.json."
+      "a": "Federal Register API, retrieved daily at 18:00 JST (observation started 2026-08-29). This site never submits comments to any authority. Last updated 2026-09-17 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/regulation_us.json."
     },
     {
       "q": "What can this data not tell you?",
@@ -229,13 +229,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/regulation/",
     "api": "https://ai-lifeline.org/us/api/regulation_us.json",
-    "last_confirmed": "2026-09-16",
-    "next_expected": "2026-09-17",
-    "generated": "2026-09-16 18:01",
+    "last_confirmed": "2026-09-17",
+    "next_expected": "2026-09-18",
+    "generated": "2026-09-17 18:01",
     "observation_start": "2026-08-29",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "open comment periods 16 documents (final 9/16)",
+    "title_short": "open comment periods 16 documents (final 9/17)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [

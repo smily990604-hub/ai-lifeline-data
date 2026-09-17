@@ -1,102 +1,64 @@
 {
-  "pages": {
-    "en": "/upcoming/",
-    "ja": "/jp/upcoming/"
-  },
   "_note": "AI Lifeline cross-edition calendar (added 2026-09-03): future dated items only, sorted by date - AI Act application stages (EU), public-comment / consultation deadlines (Japan, U.S.), and confirmed effective dates of legal acts (Japan ledger, Federal Register effective_on). Regenerated after each edition daily batch. This site never submits comments to any authority; deadlines are listed as material for readers.",
-  "timezone_note": "Dates are calendar dates as published by each source (JST for e-Gov, U.S. local for the Federal Register, CET/CEST for the Official Journal). No time-of-day is implied unless the source states one.",
-  "kinds": {
-    "effective_date": "confirmed date on which a legal act applies or takes effect",
-    "market_regime_stage": "chapter 9 (market participation): stage date of a stablecoin / payment regime fixed by a primary legal source",
-    "consultation_deadline": "public comment / consultation closing date",
-    "ai_act_stage": "staged application date of the EU AI Act (OJ)"
-  },
-  "generated_at": "2026-09-16 18:02",
   "sources": [
     {
-      "verified_on": "2026-09-03",
       "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "region": "eu",
+      "name": "AI Act staged application calendar (OJ dates, verified against the Official Journal text)",
       "note": "Dates only, no interpretation. Updated only when a further amendment is published in the OJ.",
-      "region": "eu",
-      "name": "AI Act staged application calendar (OJ dates, verified against the Official Journal text)"
+      "verified_on": "2026-09-03"
     },
     {
-      "verified_on": "2026-09-03",
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say_en",
+      "region": "eu",
+      "name": "European Commission \"Have your say\" (public consultations)",
       "note": "Not adopted as a data source (no official machine-readable feed; this site does not scrape it). Link only - no consultation deadlines from the EU are listed here.",
-      "region": "eu",
-      "name": "European Commission \"Have your say\" (public consultations)"
+      "verified_on": "2026-09-03"
     },
     {
-      "verified_on": "2026-09-16",
       "url": "https://public-comment.e-gov.go.jp/",
+      "region": "jp",
+      "name": "e-Gov パブリック・コメント（AIの生存条件に関わる案件を自前抽出・毎日）",
       "note": "Only cases matching the site keyword filter (see /jp/api/pubcomment.json keywords). Deadlines as listed by e-Gov.",
-      "region": "jp",
-      "name": "e-Gov パブリック・コメント（AIの生存条件に関わる案件を自前抽出・毎日）"
+      "verified_on": "2026-09-17"
     },
     {
-      "verified_on": "2026-08-20",
       "url": "https://ai-lifeline.org/jp/houkisei/",
+      "region": "jp",
+      "name": "法規制章 ライフサイクル台帳（一次出所の確認日つき・手動）",
       "note": "Only entries with a confirmed future date (date_iso) appear. Deliberation-stage items without a date are not listed.",
-      "region": "jp",
-      "name": "法規制章 ライフサイクル台帳（一次出所の確認日つき・手動）"
+      "verified_on": "2026-08-20"
     },
     {
-      "verified_on": "2026-09-16",
       "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "region": "us",
+      "name": "Federal Register API (documents matching the exact full-text query \"artificial intelligence\", 180-day window)",
       "note": "Comment closing dates and effective dates as published in the Federal Register. Coverage is defined entirely by the query.",
-      "region": "us",
-      "name": "Federal Register API (documents matching the exact full-text query \"artificial intelligence\", 180-day window)"
+      "verified_on": "2026-09-17"
     },
     {
-      "verified_on": "2026-09-04",
       "url": "https://laws.e-gov.go.jp/law/421AC0000000059",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
       "region": "jp",
-      "name": "e-Gov Law Search API (laws.e-gov.go.jp, law_id 421AC0000000059, revision list)"
+      "name": "e-Gov Law Search API (laws.e-gov.go.jp, law_id 421AC0000000059, revision list)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04"
     },
     {
-      "verified_on": "2026-09-04",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
       "region": "us",
-      "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)"
+      "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04"
     },
     {
-      "verified_on": "2026-09-04",
       "url": "http://data.europa.eu/eli/reg/2023/1114/oj",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
       "region": "eu",
-      "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)"
+      "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04"
     }
   ],
-  "count": 34,
-  "ics": "/api/upcoming.ics",
   "events": [
-    {
-      "date": "2026-09-16",
-      "region": "us",
-      "kind": "consultation_deadline",
-      "title": "Comments close: Request for Comments on Community Outreach Office Locations in the Southwest States",
-      "title_ja": "意見募集締切（米国）：Request for Comments on Community Outreach Office Locations in the Southwest States",
-      "detail": "Commerce Department; Patent and Trademark Office · Notice · published 2026-08-17 · Federal Register full-text query \"artificial intelligence\". This site never submits comments.",
-      "detail_ja": "Commerce Department; Patent and Trademark Office・Notice・公表 2026-08-17・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
-      "source": "Federal Register (federalregister.gov) API",
-      "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16744/request-for-comments-on-community-outreach-office-locations-in-the-southwest-states",
-      "verified_on": "2026-09-16"
-    },
-    {
-      "date": "2026-09-16",
-      "region": "us",
-      "kind": "effective_date",
-      "title": "Effective (Federal Register): Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
-      "title_ja": "施行・発効（米国 Federal Register）：Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
-      "detail": "Health and Human Services Department; Food and Drug Administration · Rule · published 2026-08-17 · document 2026-16727. Matched the site's full-text query (may mention artificial intelligence only incidentally; coverage is defined by the query).",
-      "detail_ja": "Health and Human Services Department; Food and Drug Administration・Rule・公表 2026-08-17・文書 2026-16727。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
-      "source": "Federal Register (federalregister.gov) API",
-      "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16727/hematology-and-pathology-devices-reclassification-of-in-situ-hybridization-test-systems-for-use-with",
-      "verified_on": "2026-09-16"
-    },
     {
       "date": "2026-09-17",
       "region": "us",
@@ -107,7 +69,7 @@
       "detail_ja": "Transportation Department; Federal Aviation Administration・Rule・公表 2026-08-13・文書 2026-16504。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/13/2026-16504/airworthiness-directives-the-boeing-company-airplanes",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-21",
@@ -119,7 +81,7 @@
       "detail_ja": "Education Department・Proposed Rule・公表 2026-08-20・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/20/2026-17001/accreditation-innovation-and-modernization-the-secretarys-recognition-of-accrediting-agencies",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-21",
@@ -131,7 +93,7 @@
       "detail_ja": "Securities and Exchange Commission・Proposed Rule・公表 2026-07-21・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/07/21/2026-14679/electronic-delivery-of-information-under-the-federal-securities-laws",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-21",
@@ -143,7 +105,7 @@
       "detail_ja": "Justice Department; Alcohol, Tobacco, Firearms, and Explosives Bureau; Office of the Attorney General・Rule・公表 2026-08-20・文書 2026-16981。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16981/application-for-relief-from-disabilities-imposed-by-federal-laws-with-respect-to-the-acquisition",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-28",
@@ -155,7 +117,7 @@
       "detail_ja": "Transportation Department; Federal Highway Administration・Notice・公表 2026-08-27・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/27/2026-17530/agency-information-collection-activities-request-for-comments-for-a-new-information-collection",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-30",
@@ -167,7 +129,7 @@
       "detail_ja": "デジタル庁・e-Gov意見公募・分野：データ利活用。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=290608071&Mode=0",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-09-30",
@@ -179,7 +141,7 @@
       "detail_ja": "Federal Communications Commission・Proposed Rule・公表 2026-08-31・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17761/maximizing-efficiencies-in-universal-service-administration",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-01",
@@ -191,7 +153,7 @@
       "detail_ja": "Health and Human Services Department; Centers for Medicare & Medicaid Services・Rule・公表 2026-08-03・文書 2026-15686。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/03/2026-15686/medicare-program-fy-2027-hospice-wage-index-and-payment-rate-update-and-hospice-quality-reporting",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-01",
@@ -203,7 +165,7 @@
       "detail_ja": "Health and Human Services Department; Centers for Medicare & Medicaid Services; Office of the Secretary・Rule・公表 2026-08-04・文書 2026-15833。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/04/2026-15833/medicare-program-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals-ipps-and",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-02",
@@ -215,7 +177,7 @@
       "detail_ja": "Health and Human Services Department; Children and Families Administration・Rule・公表 2026-08-03・文書 2026-15681。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/03/2026-15681/reducing-bureaucracy-and-burden-in-family-violence-and-prevention-services",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-03",
@@ -227,7 +189,7 @@
       "detail_ja": "原子力規制委員会・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=198026104&Mode=0",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-05",
@@ -239,7 +201,7 @@
       "detail_ja": "経済産業省・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320021&Mode=0",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-05",
@@ -251,7 +213,7 @@
       "detail_ja": "Energy Department・Notice・公表 2026-09-04・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18139/agency-information-collection-revision",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-05",
@@ -263,7 +225,7 @@
       "detail_ja": "Merit Systems Protection Board・Rule・公表 2026-09-03・文書 2026-18061。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/03/2026-18061/determining-the-appropriate-penalty-for-federal-employees-charged-with-misconduct",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-13",
@@ -275,7 +237,7 @@
       "detail_ja": "Federal Communications Commission・Proposed Rule・公表 2026-08-14・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16590/fcc-to-review-e-rate-program-to-ensure-congresss-vision",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-13",
@@ -287,7 +249,19 @@
       "detail_ja": "Commerce Department; National Institute of Standards and Technology・Notice・公表 2026-08-12・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/12/2026-16371/request-for-information-rfi-on-modernizing-the-national-vulnerability-database-in-the-age-of",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
+    },
+    {
+      "date": "2026-10-15",
+      "region": "jp",
+      "kind": "consultation_deadline",
+      "title": "Public comment closes: 電気事業法施行規則等の一部を改正する省令案等に対する意見公募",
+      "title_ja": "パブコメ締切：電気事業法施行規則等の一部を改正する省令案等に対する意見公募",
+      "detail": "資源エネルギー庁 · e-Gov public comment · tags: 電力. This site never submits comments; the deadline is listed for readers who form their own view.",
+      "detail_ja": "資源エネルギー庁・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
+      "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
+      "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340007&Mode=0",
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-16",
@@ -299,7 +273,7 @@
       "detail_ja": "総務省・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210771&Mode=0",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-19",
@@ -311,7 +285,7 @@
       "detail_ja": "Labor Department; Employment and Training Administration・Notice・公表 2026-08-19・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16885/agency-information-collection-activities-comment-request-registered-apprenticeship-national-public",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-19",
@@ -323,7 +297,7 @@
       "detail_ja": "Health and Human Services Department; National Institutes of Health・Notice・公表 2026-09-14・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18646/draft-nih-biosafety-policy-for-research-involving-biohazards",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-19",
@@ -335,7 +309,7 @@
       "detail_ja": "Labor Department; Employment and Training Administration・Rule・公表 2026-08-20・文書 2026-16982。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16982/wagner-peyser-act-employment-service-staffing",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-20",
@@ -347,7 +321,7 @@
       "detail_ja": "Securities and Exchange Commission・Proposed Rule・公表 2026-08-21・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17183/regulation-crypto-assets",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-10-20",
@@ -359,7 +333,19 @@
       "detail_ja": "Commodity Futures Trading Commission・Proposed Rule・公表 2026-08-21・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
+    },
+    {
+      "date": "2026-11-02",
+      "region": "us",
+      "kind": "consultation_deadline",
+      "title": "Comments close: Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+      "title_ja": "意見募集締切（米国）：Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+      "detail": "Environmental Protection Agency · Proposed Rule · published 2026-09-17 · Federal Register full-text query \"artificial intelligence\". This site never submits comments.",
+      "detail_ja": "Environmental Protection Agency・Proposed Rule・公表 2026-09-17・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
+      "source": "Federal Register (federalregister.gov) API",
+      "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19072/rescission-of-the-greenhouse-gas-findings-for-fossil-fuel-fired-power-plants-and-repeal-of",
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-11-03",
@@ -371,7 +357,7 @@
       "detail_ja": "Securities and Exchange Commission・Proposed Rule・公表 2026-09-04・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18190/transfer-agent-rules",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-11-09",
@@ -383,7 +369,7 @@
       "detail_ja": "Commerce Department; National Telecommunications and Information Administration・Notice・公表 2026-09-09・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18303/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-11-09",
@@ -395,7 +381,19 @@
       "detail_ja": "Federal Communications Commission・Proposed Rule・公表 2026-09-09・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18366/improving-the-effectiveness-of-the-robocall-mitigation-database-call-authentication-trust-anchor",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
+    },
+    {
+      "date": "2026-11-16",
+      "region": "us",
+      "kind": "effective_date",
+      "title": "Effective (Federal Register): Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
+      "title_ja": "施行・発効（米国 Federal Register）：Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
+      "detail": "Environmental Protection Agency · Rule · published 2026-09-17 · document 2026-19071. Matched the site's full-text query (may mention artificial intelligence only incidentally; coverage is defined by the query).",
+      "detail_ja": "Environmental Protection Agency・Rule・公表 2026-09-17・文書 2026-19071。当サイトの全文検索クエリに該当した文書（AIへの言及が付随的な場合を含む。範囲はクエリで定義）",
+      "source": "Federal Register (federalregister.gov) API",
+      "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19071/partial-repeal-of-the-carbon-pollution-standards-for-fossil-fuel-fired-electric-generating-units",
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-12-01",
@@ -407,7 +405,7 @@
       "detail_ja": "Homeland Security Department; U.S. Customs and Border Protection・Proposed Rule・公表 2026-09-02・Federal Register 全文検索 \"artificial intelligence\"。本サイトは意見提出を行わない",
       "source": "Federal Register (federalregister.gov) API",
       "url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility",
-      "verified_on": "2026-09-16"
+      "verified_on": "2026-09-17"
     },
     {
       "date": "2026-12-02",
@@ -481,5 +479,19 @@
       "url": "http://data.europa.eu/eli/reg/2026/1744/oj",
       "verified_on": "2026-09-03"
     }
-  ]
+  ],
+  "pages": {
+    "ja": "/jp/upcoming/",
+    "en": "/upcoming/"
+  },
+  "generated_at": "2026-09-17 18:02",
+  "kinds": {
+    "market_regime_stage": "chapter 9 (market participation): stage date of a stablecoin / payment regime fixed by a primary legal source",
+    "consultation_deadline": "public comment / consultation closing date",
+    "ai_act_stage": "staged application date of the EU AI Act (OJ)",
+    "effective_date": "confirmed date on which a legal act applies or takes effect"
+  },
+  "ics": "/api/upcoming.ics",
+  "count": 35,
+  "timezone_note": "Dates are calendar dates as published by each source (JST for e-Gov, U.S. local for the Federal Register, CET/CEST for the Official Journal). No time-of-day is implied unless the source states one."
 }

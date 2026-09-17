@@ -1,8 +1,8 @@
 {
-  "summary": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-09-16。AIの生存条件に関わる募集中パブコメは4件（2026-09-16確定）。（出典：e-Gov パブリック・コメント／更新 2026-09-16 10:31 JST）",
-  "cite_as": "AIライフライン 法規制章（確定日 2026-09-16）https://ai-lifeline.org/jp/houkisei/",
+  "summary": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-09-17。AIの生存条件に関わる募集中パブコメは5件（2026-09-17確定）。（出典：e-Gov パブリック・コメント／更新 2026-09-17 10:31 JST）",
+  "cite_as": "AIライフライン 法規制章（確定日 2026-09-17）https://ai-lifeline.org/jp/houkisei/",
   "country": "JP",
-  "generated": "2026-09-16",
+  "generated": "2026-09-17",
   "concept": "法規制を「審議会での議論→パブコメ→法案→国会審議→成立→施行」のライフサイクルで観測する。stageは 審議中/パブコメ中/成立・施行待ち/施行済み の4値",
   "registry_verified": "2026-08-20",
   "lifecycle": {
@@ -88,6 +88,19 @@
         }
       },
       {
+        "id": "pcm-620340007",
+        "title": "電気事業法施行規則等の一部を改正する省令案等に対する意見公募",
+        "category": "電力",
+        "stage": "パブコメ中",
+        "date_label": "受付締切 2026-10-15",
+        "date_iso": "2026-10-15",
+        "summary": "AIの電源・電気料金・系統利用の前提に影響しうる案件。電力章の観測対象（自動判定）。",
+        "source": {
+          "name": "e-Govパブリック・コメント（資源エネルギー庁）",
+          "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340007&Mode=0"
+        }
+      },
+      {
         "id": "pcm-145210771",
         "title": "電波法施行規則の一部を改正する省令案に係る意見募集（800MHz帯広帯域小電力無線システムの制度整備）",
         "category": "電力",
@@ -145,9 +158,9 @@
     ]
   },
   "pubcomment_watch": {
-    "api": "/jp/api/pubcomment.json",
     "path": "/jp/houkisei/pubcomment/",
-    "matched_open_cases": 4
+    "matched_open_cases": 5,
+    "api": "/jp/api/pubcomment.json"
   },
   "can_say": [
     "AI の生存条件に関わる法規制が、審議中／パブコメ中／成立・施行待ち／施行済みのどの段階にあるか（ライフサイクル台帳・一次ソースで確認した日付つき）",
@@ -159,29 +172,29 @@
     "意見提出期間が短いことの当否（行政手続法40条1項に基づく短縮であり、違法・不当を意味しない。特定の府省への評価もしない）",
     "法案が成立するか・いつ施行されるか（公表された日付だけを写し、見通しは書かない）"
   ],
-  "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-09-16。AIの生存条件に関わる募集中パブコメは4件（2026-09-16確定）。（出典：e-Gov パブリック・コメント／更新 2026-09-16 10:31 JST）",
-  "answer_line_date": "2026-09-16",
+  "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-09-17。AIの生存条件に関わる募集中パブコメは5件（2026-09-17確定）。（出典：e-Gov パブリック・コメント／更新 2026-09-17 10:31 JST）",
+  "answer_line_date": "2026-09-17",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "open_consultations",
     "label": "AIの生存条件に関わる募集中パブコメ",
-    "value": 4,
+    "value": 5,
     "unit": "件",
-    "date": "2026-09-16",
+    "date": "2026-09-17",
     "threshold": null
   },
   "faq": [
     {
       "q": "AIの生存条件に関わる募集中のパブリックコメントは今いくつあるか",
-      "a": "2026-09-16時点で4件です（e-Govの募集中2,915案件から AI／電力／データセンター／データ利活用のキーワードで自動抽出）。一覧は /jp/houkisei/pubcomment/。出典：e-Gov パブリック・コメント（自前観測・毎日）。"
+      "a": "2026-09-17時点で5件です（e-Govの募集中2,913案件から AI／電力／データセンター／データ利活用のキーワードで自動抽出）。一覧は /jp/houkisei/pubcomment/。出典：e-Gov パブリック・コメント（自前観測・毎日）。"
     },
     {
       "q": "意見提出期間が30日未満だったパブコメ案件は直近12か月で何件か",
-      "a": "2025-10〜2026-09の対象37件のうち5件です（平均28.1日・最短5日）。当月（2026-09）は公示3件のうち0件。定義 v1.0（行政手続法第39条第3項の30日を基準・2026-08-22 確定）。出典：e-Gov（/jp/api/vulnerability_regulation_jp.json）。"
+      "a": "2025-10〜2026-09の対象38件のうち5件です（平均28.1日・最短5日）。当月（2026-09）は公示4件のうち0件。定義 v1.0（行政手続法第39条第3項の30日を基準・2026-08-22 確定）。出典：e-Gov（/jp/api/vulnerability_regulation_jp.json）。"
     },
     {
       "q": "このデータの出所と更新頻度は",
-      "a": "e-Gov パブリック・コメントを毎日自動観測します（自前観測の開始 2026-08-20）。法規制ライフサイクル台帳は不定期更新（一次確認日 2026-08-20）。最終更新 2026-09-16 10:31 JST・機械可読データ https://ai-lifeline.org/jp/api/regulation_jp.json。当サイトは行政への意見提出を行いません。"
+      "a": "e-Gov パブリック・コメントを毎日自動観測します（自前観測の開始 2026-08-20）。法規制ライフサイクル台帳は不定期更新（一次確認日 2026-08-20）。最終更新 2026-09-17 10:31 JST・機械可読データ https://ai-lifeline.org/jp/api/regulation_jp.json。当サイトは行政への意見提出を行いません。"
     },
     {
       "q": "このデータで言えないことは何か",
@@ -191,13 +204,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/jp/houkisei/",
     "api": "https://ai-lifeline.org/jp/api/regulation_jp.json",
-    "last_confirmed": "2026-09-16",
-    "next_expected": "2026-09-17",
-    "generated": "2026-09-16 10:31",
+    "last_confirmed": "2026-09-17",
+    "next_expected": "2026-09-18",
+    "generated": "2026-09-17 10:31",
     "observation_start": "2026-08-20",
     "series_count": 2,
     "series_not_yet_measured": 0,
-    "title_short": "募集中パブコメ4件（9/16確定）",
+    "title_short": "募集中パブコメ5件（9/17確定）",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [

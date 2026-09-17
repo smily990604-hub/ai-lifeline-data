@@ -1,59 +1,59 @@
 {
+  "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
+  "edition": "United States edition (electricity, water (Beta), regulation, data centers, fiscal & disasters live; GPU and data chapters planned)",
+  "beta": {
+    "active_from": "2026-08-29",
+    "removed_on": "2026-09-02",
+    "active": false
+  },
+  "generated": "2026-09-17 18:01",
   "chapters": {
-    "water": {
-      "path": "/us/water/",
+    "regulation": {
+      "path": "/us/regulation/",
+      "source": "Federal Register (federalregister.gov) API",
       "status": "observing",
-      "api": "/us/api/water_us.json",
-      "frequency": "mixed (drought weekly; disclosure ledger monthly)",
-      "latest_drought": {
-        "map_date": "2026-09-08",
-        "conus_d1_plus_pct": 58.59,
-        "source": "U.S. Drought Monitor"
-      }
+      "open_comment_periods": 16
+    },
+    "datacenter": {
+      "path": "/us/datacenter/",
+      "api": "/us/api/datacenter_us.json",
+      "latest_cdd": {
+        "date": "2026-09-15",
+        "fetched_at": "2026-09-17 18:00",
+        "conus_cdd": 7
+      },
+      "status": "observing",
+      "frequency": "mixed (cooling degree days daily; construction & backlog monthly)"
     },
     "data": {
       "note": "Phase 2",
       "status": "planned"
     },
-    "regulation": {
-      "path": "/us/regulation/",
-      "status": "observing",
-      "open_comment_periods": 16,
-      "source": "Federal Register (federalregister.gov) API"
-    },
-    "datacenter": {
-      "path": "/us/datacenter/",
-      "status": "observing",
-      "api": "/us/api/datacenter_us.json",
-      "latest_cdd": {
-        "conus_cdd": 8,
-        "fetched_at": "2026-09-16 18:00",
-        "date": "2026-09-14"
-      },
-      "frequency": "mixed (cooling degree days daily; construction & backlog monthly)"
-    },
     "power": {
       "path": "/us/power/",
-      "status": "observing",
       "latest": {
-        "us48_demand_mwh": 13321491.0,
         "value_status": "provisional",
-        "date": "2026-09-15",
+        "us48_demand_mwh": 13489761.0,
+        "date": "2026-09-16",
         "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
-      }
+      },
+      "status": "observing"
+    },
+    "water": {
+      "path": "/us/water/",
+      "api": "/us/api/water_us.json",
+      "latest_drought": {
+        "conus_d1_plus_pct": 58.59,
+        "map_date": "2026-09-08",
+        "source": "U.S. Drought Monitor"
+      },
+      "status": "observing",
+      "frequency": "mixed (drought weekly; disclosure ledger monthly)"
     },
     "gpu": {
       "note": "Phase 2",
       "status": "planned"
     }
   },
-  "region": "US",
-  "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
-  "generated": "2026-09-16 18:01",
-  "edition": "United States edition (electricity, water (Beta), regulation, data centers, fiscal & disasters live; GPU and data chapters planned)",
-  "beta": {
-    "active_from": "2026-08-29",
-    "active": false,
-    "removed_on": "2026-09-02"
-  }
+  "region": "US"
 }
