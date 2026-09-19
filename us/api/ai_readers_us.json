@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-09-18 18:01",
+  "generated": "2026-09-19 18:35",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -66,27 +66,28 @@
       "observed_through": "2026-09-05",
       "days_observed": 7,
       "provisional": false,
-      "verified_total": 61,
+      "verified_total": 105,
       "verified_days": 7,
       "unverified_total": 4,
-      "named_total_reference": 65,
+      "named_total_reference": 109,
       "self_excluded_total": 1538,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
         "GPTBot": 35,
         "CCBot": 0,
-        "other": 26
+        "other": 70
       },
       "breakdown_verified_other_detail": {
+        "ShapBot": 44,
         "Amazonbot": 12,
         "ChatGPT-User": 7,
         "GoogleOther": 6,
         "OAI-SearchBot": 1
       },
       "top_verified": {
-        "name": "GPTBot",
-        "requests": 35
+        "name": "ShapBot",
+        "requests": 44
       }
     },
     {
@@ -96,19 +97,20 @@
       "observed_through": "2026-09-12",
       "days_observed": 7,
       "provisional": false,
-      "verified_total": 135,
+      "verified_total": 255,
       "verified_days": 7,
       "unverified_total": 2,
-      "named_total_reference": 137,
+      "named_total_reference": 257,
       "self_excluded_total": 1336,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
         "GPTBot": 11,
         "CCBot": 0,
-        "other": 124
+        "other": 244
       },
       "breakdown_verified_other_detail": {
+        "ShapBot": 120,
         "meta-externalagent": 55,
         "OAI-SearchBot": 33,
         "Amazonbot": 16,
@@ -116,38 +118,39 @@
         "GoogleOther": 9
       },
       "top_verified": {
-        "name": "meta-externalagent",
-        "requests": 55
+        "name": "ShapBot",
+        "requests": 120
       }
     },
     {
       "week": 4,
       "from": "2026-09-13",
       "to": "2026-09-19",
-      "observed_through": "2026-09-17",
-      "days_observed": 5,
+      "observed_through": "2026-09-18",
+      "days_observed": 6,
       "provisional": true,
-      "verified_total": 59,
-      "verified_days": 5,
+      "verified_total": 123,
+      "verified_days": 6,
       "unverified_total": 3,
-      "named_total_reference": 62,
-      "self_excluded_total": 745,
+      "named_total_reference": 126,
+      "self_excluded_total": 847,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
-        "GPTBot": 0,
+        "GPTBot": 2,
         "CCBot": 0,
-        "other": 59
+        "other": 121
       },
       "breakdown_verified_other_detail": {
-        "OAI-SearchBot": 41,
-        "ChatGPT-User": 10,
-        "Amazonbot": 7,
+        "OAI-SearchBot": 49,
+        "ShapBot": 44,
+        "Amazonbot": 15,
+        "ChatGPT-User": 12,
         "DuckAssistBot": 1
       },
       "top_verified": {
         "name": "OAI-SearchBot",
-        "requests": 41
+        "requests": 49
       }
     }
   ],
@@ -163,9 +166,9 @@
     },
     {
       "date": "2026-08-30",
-      "ai_verified": 1,
+      "ai_verified": 45,
       "ai_unverified": 0,
-      "ai_named_reference": 1,
+      "ai_named_reference": 45,
       "self_excluded": 206,
       "requests_in_scope": 348,
       "verified_available": true
@@ -235,9 +238,9 @@
     },
     {
       "date": "2026-09-07",
-      "ai_verified": 51,
+      "ai_verified": 112,
       "ai_unverified": 0,
-      "ai_named_reference": 51,
+      "ai_named_reference": 112,
       "self_excluded": 151,
       "requests_in_scope": 348,
       "verified_available": true
@@ -280,9 +283,9 @@
     },
     {
       "date": "2026-09-12",
-      "ai_verified": 11,
+      "ai_verified": 70,
       "ai_unverified": 0,
-      "ai_named_reference": 11,
+      "ai_named_reference": 70,
       "self_excluded": 240,
       "requests_in_scope": 379,
       "verified_available": true
@@ -325,11 +328,20 @@
     },
     {
       "date": "2026-09-17",
-      "ai_verified": 14,
+      "ai_verified": 58,
       "ai_unverified": 0,
-      "ai_named_reference": 14,
+      "ai_named_reference": 58,
       "self_excluded": 102,
       "requests_in_scope": 291,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-18",
+      "ai_verified": 20,
+      "ai_unverified": 0,
+      "ai_named_reference": 20,
+      "self_excluded": 102,
+      "requests_in_scope": 154,
       "verified_available": true
     }
   ]
