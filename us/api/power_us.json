@@ -1,469 +1,476 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series (1 not yet measured), latest confirmed 2026-09-19. Latest final value: Lower 48 total demand 13,333,847 MWh (2026-09-18). (Source: U.S. EIA (Form EIA-930) / updated 2026-09-20 18:01 JST)",
-  "cite_as": "AI Lifeline, Electricity (United States edition), data confirmed 2026-09-18, https://ai-lifeline.org/us/power/",
-  "ba_demand_latest": {
-    "rows": [
-      {
-        "ba": "US48",
-        "demand_mwh": 12468233.0,
-        "name": "United States Lower 48 (total)",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "PJM",
-        "demand_mwh": 2253126.0,
-        "name": "PJM Interconnection",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "MISO",
-        "demand_mwh": 1971758.0,
-        "name": "Midcontinent ISO",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "ERCO",
-        "demand_mwh": 1614047.0,
-        "name": "ERCOT (Texas)",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "CISO",
-        "demand_mwh": 645754.0,
-        "name": "California ISO",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "SWPP",
-        "demand_mwh": 952416.0,
-        "name": "Southwest Power Pool",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "NYIS",
-        "demand_mwh": 356215.0,
-        "name": "New York ISO",
-        "value_status": "provisional"
-      },
-      {
-        "ba": "ISNE",
-        "demand_mwh": 249887.0,
-        "name": "ISO New England",
-        "value_status": "provisional"
-      }
-    ],
-    "date": "2026-09-19"
-  },
-  "cannot_say": [
-    "Whether the U.S. grid is tight or has spare capacity (EIA-930 publishes demand and generation, not a reserve margin; no emergency-alert count is observed yet).",
-    "Whether any level is good or bad for AI, or how U.S. conditions compare with the Japan edition's reserve-margin badge (different indicator, different institution).",
-    "What any single data center or operator drew (regional aggregates only)."
-  ],
-  "generated": "2026-09-20 18:01",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series (1 not yet measured), latest confirmed 2026-09-20. Latest final value: Lower 48 total demand 12,406,987 MWh (2026-09-19). (Source: U.S. EIA (Form EIA-930) / updated 2026-09-21 18:01 JST)",
+  "cite_as": "AI Lifeline, Electricity (United States edition), data confirmed 2026-09-19, https://ai-lifeline.org/us/power/",
+  "generated": "2026-09-21 18:01",
   "data_status": "live",
-  "status": "observing",
-  "region": "us",
-  "breakdown": {
-    "from": "2026-08-01",
-    "respondents": 74,
-    "balancing_authorities_count": 61,
-    "regions_count": 13,
-    "files": {
-      "2026": "/us/api/power_us_breakdown_2026.json"
-    },
-    "note": "Machine-readable breakdown only. The per-respondent daily series (13 EIA regions + every balancing authority) is split by year into the files listed in files; this body keeps the last 90 days of the Lower 48 aggregate and the latest-day table. Backfilled from 2026-08-01 (2026-09-03).",
-    "unit": "MWh (daily total)"
-  },
-  "unit_note": "demand/net generation values are daily totals in megawatthours (MWh), as published by EIA (Form EIA-930, Eastern timezone aggregation).",
+  "value_status_note": "value_status=final means fetched 2 or more days after the observation day (ET); provisional means fetched earlier and may still be revised. Recent days are refetched daily and provisional points are replaced.",
   "demand_daily": [
     {
       "us48_demand_mwh": 13692822.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-01",
+      "value_status": "final",
       "us48_netgen_mwh": 13540273.0
     },
     {
       "us48_demand_mwh": 13433344.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-02",
+      "value_status": "final",
       "us48_netgen_mwh": 13263487.0
     },
     {
       "us48_demand_mwh": 14233362.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-03",
+      "value_status": "final",
       "us48_netgen_mwh": 14056523.0
     },
     {
       "us48_demand_mwh": 14181081.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-04",
+      "value_status": "final",
       "us48_netgen_mwh": 13996771.0
     },
     {
       "us48_demand_mwh": 14385036.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-05",
+      "value_status": "final",
       "us48_netgen_mwh": 14156549.0
     },
     {
       "us48_demand_mwh": 14713195.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-06",
+      "value_status": "final",
       "us48_netgen_mwh": 14505334.0
     },
     {
       "us48_demand_mwh": 14837749.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-07",
+      "value_status": "final",
       "us48_netgen_mwh": 14637547.0
     },
     {
       "us48_demand_mwh": 14327920.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-08",
+      "value_status": "final",
       "us48_netgen_mwh": 14235699.0
     },
     {
       "us48_demand_mwh": 14264753.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-09",
+      "value_status": "final",
       "us48_netgen_mwh": 14079874.0
     },
     {
       "us48_demand_mwh": 14973115.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-10",
+      "value_status": "final",
       "us48_netgen_mwh": 14745530.0
     },
     {
       "us48_demand_mwh": 14955195.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-11",
+      "value_status": "final",
       "us48_netgen_mwh": 14766167.0
     },
     {
       "us48_demand_mwh": 14638549.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-12",
+      "value_status": "final",
       "us48_netgen_mwh": 14528195.0
     },
     {
       "us48_demand_mwh": 14785561.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-13",
+      "value_status": "final",
       "us48_netgen_mwh": 14599306.0
     },
     {
       "us48_demand_mwh": 14598618.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-14",
+      "value_status": "final",
       "us48_netgen_mwh": 14410493.0
     },
     {
       "us48_demand_mwh": 13945962.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-15",
+      "value_status": "final",
       "us48_netgen_mwh": 13693664.0
     },
     {
       "us48_demand_mwh": 13953505.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-16",
+      "value_status": "final",
       "us48_netgen_mwh": 13700431.0
     },
     {
       "us48_demand_mwh": 14763186.0,
       "fetched_at": "2026-08-29 15:03",
-      "value_status": "final",
       "date": "2026-08-17",
+      "value_status": "final",
       "us48_netgen_mwh": 14481492.0
     },
     {
       "us48_demand_mwh": 14801309.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-18",
+      "value_status": "final",
       "us48_netgen_mwh": 14606106.0
     },
     {
       "us48_demand_mwh": 14716519.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-19",
+      "value_status": "final",
       "us48_netgen_mwh": 14372875.0
     },
     {
       "us48_demand_mwh": 14614915.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-20",
+      "value_status": "final",
       "us48_netgen_mwh": 14427890.0
     },
     {
       "us48_demand_mwh": 14285547.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-21",
+      "value_status": "final",
       "us48_netgen_mwh": 14089267.0
     },
     {
       "us48_demand_mwh": 13597516.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-22",
+      "value_status": "final",
       "us48_netgen_mwh": 13399755.0
     },
     {
       "us48_demand_mwh": 13269310.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-23",
+      "value_status": "final",
       "us48_netgen_mwh": 12992217.0
     },
     {
       "us48_demand_mwh": 13733096.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-24",
+      "value_status": "final",
       "us48_netgen_mwh": 13519039.0
     },
     {
       "us48_demand_mwh": 13899688.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-25",
+      "value_status": "final",
       "us48_netgen_mwh": 13707011.0
     },
     {
       "us48_demand_mwh": 14122914.0,
       "fetched_at": "2026-09-03 20:48",
-      "value_status": "final",
       "date": "2026-08-26",
+      "value_status": "final",
       "us48_netgen_mwh": 13935311.0
     },
     {
       "us48_demand_mwh": 14195674.0,
       "fetched_at": "2026-09-04 08:09",
-      "value_status": "final",
       "date": "2026-08-27",
+      "value_status": "final",
       "us48_netgen_mwh": 13973280.0
     },
     {
       "us48_demand_mwh": 14030402.0,
       "fetched_at": "2026-09-03 18:00",
-      "value_status": "final",
       "date": "2026-08-28",
+      "value_status": "final",
       "us48_netgen_mwh": 13809406.0
     },
     {
       "us48_demand_mwh": 13179132.0,
       "fetched_at": "2026-09-05 18:00",
-      "value_status": "final",
       "date": "2026-08-29",
+      "value_status": "final",
       "us48_netgen_mwh": 13016729.0
     },
     {
       "us48_demand_mwh": 13312254.0,
       "fetched_at": "2026-09-05 18:00",
-      "value_status": "final",
       "date": "2026-08-30",
+      "value_status": "final",
       "us48_netgen_mwh": 13148043.0
     },
     {
       "us48_demand_mwh": 14271773.0,
       "fetched_at": "2026-09-05 18:00",
-      "value_status": "final",
       "date": "2026-08-31",
+      "value_status": "final",
       "us48_netgen_mwh": 14056417.0
     },
     {
       "us48_demand_mwh": 14640936.0,
       "fetched_at": "2026-09-07 18:00",
-      "value_status": "final",
       "date": "2026-09-01",
+      "value_status": "final",
       "us48_netgen_mwh": 14430384.0
     },
     {
       "us48_demand_mwh": 14717944.0,
       "fetched_at": "2026-09-09 18:00",
-      "value_status": "final",
       "date": "2026-09-02",
+      "value_status": "final",
       "us48_netgen_mwh": 14526713.0
     },
     {
       "us48_demand_mwh": 14748883.0,
       "fetched_at": "2026-09-10 18:00",
-      "value_status": "final",
       "date": "2026-09-03",
+      "value_status": "final",
       "us48_netgen_mwh": 14583925.0
     },
     {
       "us48_demand_mwh": 14596552.0,
       "fetched_at": "2026-09-11 18:00",
-      "value_status": "final",
       "date": "2026-09-04",
+      "value_status": "final",
       "us48_netgen_mwh": 14390179.0
     },
     {
       "us48_demand_mwh": 13619349.0,
       "fetched_at": "2026-09-12 18:00",
-      "value_status": "final",
       "date": "2026-09-05",
+      "value_status": "final",
       "us48_netgen_mwh": 13399325.0
     },
     {
       "us48_demand_mwh": 12872649.0,
       "fetched_at": "2026-09-12 18:00",
-      "value_status": "final",
       "date": "2026-09-06",
+      "value_status": "final",
       "us48_netgen_mwh": 12696391.0
     },
     {
       "us48_demand_mwh": 12823701.0,
       "fetched_at": "2026-09-14 18:00",
-      "value_status": "final",
       "date": "2026-09-07",
+      "value_status": "final",
       "us48_netgen_mwh": 12648565.0
     },
     {
       "us48_demand_mwh": 13739534.0,
       "fetched_at": "2026-09-15 18:00",
-      "value_status": "final",
       "date": "2026-09-08",
+      "value_status": "final",
       "us48_netgen_mwh": 13571891.0
     },
     {
       "us48_demand_mwh": 14332431.0,
       "fetched_at": "2026-09-16 18:00",
-      "value_status": "final",
       "date": "2026-09-09",
+      "value_status": "final",
       "us48_netgen_mwh": 14118810.0
     },
     {
       "us48_demand_mwh": 14190526.0,
       "fetched_at": "2026-09-17 18:00",
-      "value_status": "final",
       "date": "2026-09-10",
+      "value_status": "final",
       "us48_netgen_mwh": 13958866.0
     },
     {
       "us48_demand_mwh": 13700421.0,
       "fetched_at": "2026-09-18 18:00",
-      "value_status": "final",
       "date": "2026-09-11",
+      "value_status": "final",
       "us48_netgen_mwh": 13529036.0
     },
     {
       "us48_demand_mwh": 13026093.0,
       "fetched_at": "2026-09-19 18:33",
-      "value_status": "final",
       "date": "2026-09-12",
+      "value_status": "final",
       "us48_netgen_mwh": 12132664.0
     },
     {
       "us48_demand_mwh": 13025352.0,
       "fetched_at": "2026-09-20 18:00",
-      "value_status": "final",
       "date": "2026-09-13",
+      "value_status": "final",
       "us48_netgen_mwh": 12783696.0
     },
     {
       "us48_demand_mwh": 13187202.0,
       "fetched_at": "2026-09-20 18:00",
-      "value_status": "final",
       "date": "2026-09-14",
+      "value_status": "final",
       "us48_netgen_mwh": 13026052.0
     },
     {
       "us48_demand_mwh": 13236830.0,
       "fetched_at": "2026-09-20 18:00",
-      "value_status": "final",
       "date": "2026-09-15",
+      "value_status": "final",
       "us48_netgen_mwh": 13078485.0
     },
     {
-      "us48_demand_mwh": 13397100.0,
-      "fetched_at": "2026-09-20 18:00",
-      "value_status": "final",
+      "us48_demand_mwh": 13396980.0,
+      "fetched_at": "2026-09-21 18:00",
       "date": "2026-09-16",
+      "value_status": "final",
       "us48_netgen_mwh": 13186799.0
     },
     {
-      "us48_demand_mwh": 13570830.0,
-      "fetched_at": "2026-09-20 18:00",
-      "value_status": "final",
+      "us48_demand_mwh": 13570807.0,
+      "fetched_at": "2026-09-21 18:00",
       "date": "2026-09-17",
-      "us48_netgen_mwh": 12507277.0
-    },
-    {
-      "us48_demand_mwh": 13333847.0,
-      "fetched_at": "2026-09-20 18:00",
       "value_status": "final",
-      "date": "2026-09-18",
-      "us48_netgen_mwh": 13121321.0
+      "us48_netgen_mwh": 12507933.0
     },
     {
-      "us48_demand_mwh": 12468233.0,
-      "fetched_at": "2026-09-20 18:00",
-      "value_status": "provisional",
+      "us48_demand_mwh": 13334575.0,
+      "fetched_at": "2026-09-21 18:00",
+      "date": "2026-09-18",
+      "value_status": "final",
+      "us48_netgen_mwh": 13127928.0
+    },
+    {
+      "us48_demand_mwh": 12406987.0,
+      "fetched_at": "2026-09-21 18:00",
       "date": "2026-09-19",
+      "value_status": "final",
+      "us48_netgen_mwh": 12224925.0
+    },
+    {
+      "us48_demand_mwh": 12325462.0,
+      "fetched_at": "2026-09-21 18:00",
+      "date": "2026-09-20",
+      "value_status": "provisional",
       "us48_netgen_mwh": null
     }
   ],
-  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition yet (criteria are frozen as versioned definitions before use; none exists for the U.S. edition as of 2026-08-29). Do not infer thresholds.",
-  "value_status_note": "value_status=final means fetched 2 or more days after the observation day (ET); provisional means fetched earlier and may still be revised. Recent days are refetched daily and provisional points are replaced.",
   "sources": [
     {
-      "license": "Public domain (U.S. federal government work). API key is free.",
       "url": "https://www.eia.gov/opendata/",
+      "license": "Public domain (U.S. federal government work). API key is free.",
       "name": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     }
   ],
+  "region": "us",
+  "unit_note": "demand/net generation values are daily totals in megawatthours (MWh), as published by EIA (Form EIA-930, Eastern timezone aggregation).",
+  "status": "observing",
+  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition yet (criteria are frozen as versioned definitions before use; none exists for the U.S. edition as of 2026-08-29). Do not infer thresholds.",
+  "breakdown": {
+    "files": {
+      "2026": "/us/api/power_us_breakdown_2026.json"
+    },
+    "unit": "MWh (daily total)",
+    "respondents": 74,
+    "regions_count": 13,
+    "note": "Machine-readable breakdown only. The per-respondent daily series (13 EIA regions + every balancing authority) is split by year into the files listed in files; this body keeps the last 90 days of the Lower 48 aggregate and the latest-day table. Backfilled from 2026-08-01 (2026-09-03).",
+    "from": "2026-08-01",
+    "balancing_authorities_count": 61
+  },
   "can_say": [
     "How much electricity the Lower 48 used and generated each day, in MWh, as EIA-930 publishes it (daily totals; provisional until refetched two or more days later).",
     "Whether daily demand is rising or falling within this edition, day by day (the balancing-authority breakdown is kept in a separate machine-readable file).",
     "Which days are final and which are still provisional, and when each value was retrieved."
   ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series (1 not yet measured), latest confirmed 2026-09-19. Latest final value: Lower 48 total demand 13,333,847 MWh (2026-09-18). (Source: U.S. EIA (Form EIA-930) / updated 2026-09-20 18:01 JST)",
-  "answer_line_date": "2026-09-18",
+  "cannot_say": [
+    "Whether the U.S. grid is tight or has spare capacity (EIA-930 publishes demand and generation, not a reserve margin; no emergency-alert count is observed yet).",
+    "Whether any level is good or bad for AI, or how U.S. conditions compare with the Japan edition's reserve-margin badge (different indicator, different institution).",
+    "What any single data center or operator drew (regional aggregates only)."
+  ],
+  "ba_demand_latest": {
+    "date": "2026-09-20",
+    "rows": [
+      {
+        "ba": "US48",
+        "demand_mwh": 12325462.0,
+        "value_status": "provisional",
+        "name": "United States Lower 48 (total)"
+      },
+      {
+        "ba": "PJM",
+        "demand_mwh": 2284480.0,
+        "value_status": "provisional",
+        "name": "PJM Interconnection"
+      },
+      {
+        "ba": "MISO",
+        "demand_mwh": 1939022.0,
+        "value_status": "provisional",
+        "name": "Midcontinent ISO"
+      },
+      {
+        "ba": "ERCO",
+        "demand_mwh": 1613759.0,
+        "value_status": "provisional",
+        "name": "ERCOT (Texas)"
+      },
+      {
+        "ba": "CISO",
+        "demand_mwh": 636268.0,
+        "value_status": "provisional",
+        "name": "California ISO"
+      },
+      {
+        "ba": "SWPP",
+        "demand_mwh": 866947.0,
+        "value_status": "provisional",
+        "name": "Southwest Power Pool"
+      },
+      {
+        "ba": "NYIS",
+        "demand_mwh": 372535.0,
+        "value_status": "provisional",
+        "name": "New York ISO"
+      },
+      {
+        "ba": "ISNE",
+        "demand_mwh": 279178.0,
+        "value_status": "provisional",
+        "name": "ISO New England"
+      }
+    ]
+  },
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series (1 not yet measured), latest confirmed 2026-09-20. Latest final value: Lower 48 total demand 12,406,987 MWh (2026-09-19). (Source: U.S. EIA (Form EIA-930) / updated 2026-09-21 18:01 JST)",
+  "answer_line_date": "2026-09-19",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "us48_demand_mwh",
     "label": "Lower 48 total demand",
-    "value": 13333847.0,
+    "value": 12406987.0,
     "unit": "MWh",
-    "date": "2026-09-18",
+    "date": "2026-09-19",
     "threshold": null
   },
   "faq": [
     {
       "q": "How much electricity did the U.S. Lower 48 grid use on the latest confirmed day?",
-      "a": "On 2026-09-18 (ET), total demand of the Lower 48 was 13,333,847 MWh and net generation 13,121,321 MWh (final values). Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930, public domain), retrieved 2026-09-20 18:00."
+      "a": "On 2026-09-19 (ET), total demand of the Lower 48 was 12,406,987 MWh and net generation 12,224,925 MWh (final values). Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930, public domain), retrieved 2026-09-21 18:00."
     },
     {
       "q": "Is the most recent day's value final?",
-      "a": "The most recent observation is 2026-09-19: 12,468,233 MWh, value_status provisional. The latest final day is 2026-09-18. A provisional day is refetched and replaced by the final value on a later batch. The per-balancing-authority breakdown is machine-readable only (https://ai-lifeline.org/us/api/power_us.json, key breakdown)."
+      "a": "The most recent observation is 2026-09-20: 12,325,462 MWh, value_status provisional. The latest final day is 2026-09-19. A provisional day is refetched and replaced by the final value on a later batch. The per-balancing-authority breakdown is machine-readable only (https://ai-lifeline.org/us/api/power_us.json, key breakdown)."
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930), retrieved once a day at 18:00 JST; observation started 2026-08-29, backfilled from EIA history to 2026-08-01. Last updated 2026-09-20 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/power_us.json"
+      "a": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930), retrieved once a day at 18:00 JST; observation started 2026-08-29, backfilled from EIA history to 2026-08-01. Last updated 2026-09-21 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/power_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -473,13 +480,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/power/",
     "api": "https://ai-lifeline.org/us/api/power_us.json",
-    "last_confirmed": "2026-09-19",
-    "next_expected": "2026-09-20",
-    "generated": "2026-09-20 18:01",
+    "last_confirmed": "2026-09-20",
+    "next_expected": "2026-09-21",
+    "generated": "2026-09-21 18:01",
     "observation_start": "2026-08-29",
     "series_count": 2,
     "series_not_yet_measured": 1,
-    "title_short": "Lower 48 demand 13,333,847 MWh (final 9/18)",
+    "title_short": "Lower 48 demand 12,406,987 MWh (final 9/19)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [

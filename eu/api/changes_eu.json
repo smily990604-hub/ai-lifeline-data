@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-09-19",
+  "generated": "2026-09-20",
   "observation": "Today's changes - day-over-day differences in this edition's own observations (no external news). A day with no change is recorded as no_change.",
   "ledger_policy": "The ledger (ledger.jsonl) is append-only. A re-run on the same day never deletes earlier rows; it appends a new revision, and the display uses only the latest revision of each day.",
   "kinds": {
@@ -29,7 +29,8 @@
     "2026-09-16": 1,
     "2026-09-17": 1,
     "2026-09-18": 1,
-    "2026-09-19": 3
+    "2026-09-19": 3,
+    "2026-09-20": 1
   },
   "corrections": [
     {
@@ -145,37 +146,107 @@
   ],
   "today": [
     {
-      "date": "2026-09-19",
-      "revision": 3,
-      "recorded_at": "2026-09-19 20:04:05",
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
       "kind": "routine",
       "chapter": "power",
       "series": "power.eu27_load_forecast_mwh",
-      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 4,890,856 MWh (2026-09-19)",
-      "detail": "Previous 6,592,221 MWh (2026-09-18) (-1701365 vs 2026-09-18) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
+      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 5,578,921 MWh (2026-09-20)",
+      "detail": "Previous 4,890,856 MWh (2026-09-19) (+688065 vs 2026-09-19) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
-      "date": "2026-09-19",
-      "revision": 3,
-      "recorded_at": "2026-09-19 20:04:05",
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-20)",
+      "detail": "Previous 0 acts (2026-09-19) (0 vs 2026-09-19) / final / Source: EUR-Lex, Publications Office of the European Union"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-18)",
-      "detail": "Previous 0 events (2026-09-17) (0 vs 2026-09-17) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-19)",
+      "detail": "Previous 0 events (2026-09-18) (0 vs 2026-09-18) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
     },
     {
-      "date": "2026-09-19",
-      "revision": 3,
-      "recorded_at": "2026-09-19 20:04:05",
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
       "kind": "routine",
       "chapter": "market",
       "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-19)",
-      "detail": "Previous 0 count (2026-09-18) (0 vs 2026-09-18) / provisional / Source: AI Lifeline first-party observation"
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-20)",
+      "detail": "Previous 0 count (2026-09-19) (0 vs 2026-09-19) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 90 requests (2026-09-19)",
+      "detail": "Previous 85 requests (2026-09-18) (+5 vs 2026-09-18) / final / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     }
   ],
   "recent": [
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 90 requests (2026-09-19)",
+      "detail": "Previous 85 requests (2026-09-18) (+5 vs 2026-09-18) / final / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 5,578,921 MWh (2026-09-20)",
+      "detail": "Previous 4,890,856 MWh (2026-09-19) (+688065 vs 2026-09-19) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-20)",
+      "detail": "Previous 0 count (2026-09-19) (0 vs 2026-09-19) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-19)",
+      "detail": "Previous 0 events (2026-09-18) (0 vs 2026-09-18) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 20:04:58",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-20)",
+      "detail": "Previous 0 acts (2026-09-19) (0 vs 2026-09-19) / final / Source: EUR-Lex, Publications Office of the European Union"
+    },
     {
       "date": "2026-09-19",
       "revision": 3,
@@ -271,10 +342,20 @@
       "revision": 1,
       "recorded_at": "2026-09-17 20:04:15",
       "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 31 requests (2026-09-16)",
-      "detail": "Previous 27 requests (2026-09-15) (+4 vs 2026-09-15) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5335 % (2026-09-16)",
+      "detail": "Previous 3.5437 % (2026-09-15) (-0.01 vs 2026-09-15) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 20:04:15",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 6,619,752 MWh (2026-09-17)",
+      "detail": "Previous 6,701,701 MWh (2026-09-16) (-81949 vs 2026-09-16) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
       "date": "2026-09-17",
@@ -301,16 +382,6 @@
       "revision": 1,
       "recorded_at": "2026-09-17 20:04:15",
       "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.euro_area_yield_10y",
-      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5335 % (2026-09-16)",
-      "detail": "Previous 3.5437 % (2026-09-15) (-0.01 vs 2026-09-15) / final / Source: European Central Bank (ECB), Euro area yield curves"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 20:04:15",
-      "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.acts_last_30_days",
       "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-17)",
@@ -321,60 +392,10 @@
       "revision": 1,
       "recorded_at": "2026-09-17 20:04:15",
       "kind": "routine",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 6,619,752 MWh (2026-09-17)",
-      "detail": "Previous 6,701,701 MWh (2026-09-16) (-81949 vs 2026-09-16) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 20:04:08",
-      "kind": "routine",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 6,701,701 MWh (2026-09-16)",
-      "detail": "Previous 6,771,538 MWh (2026-09-15) (-69837 vs 2026-09-15) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 20:04:08",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.acts_last_30_days",
-      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-16)",
-      "detail": "Previous 0 acts (2026-09-15) (0 vs 2026-09-15) / final / Source: EUR-Lex, Publications Office of the European Union"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 20:04:08",
-      "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.electrical_equipment_production_index",
-      "label": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly): 105.9 index (2021=100) (2026-07)",
-      "detail": "Previous 102.8 index (2021=100) (2026-06) (+3.1 vs 2026-06) / final / Source: Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 20:04:08",
-      "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.euro_area_yield_10y",
-      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5437 % (2026-09-15)",
-      "detail": "Previous 3.5409 % (2026-09-14) (+0 vs 2026-09-14) / final / Source: European Central Bank (ECB), Euro area yield curves"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 20:04:08",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-16)",
-      "detail": "Previous 0 count (2026-09-15) (0 vs 2026-09-15) / provisional / Source: AI Lifeline first-party observation"
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 31 requests (2026-09-16)",
+      "detail": "Previous 27 requests (2026-09-15) (+4 vs 2026-09-15) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
       "date": "2026-09-16",
@@ -391,10 +412,60 @@
       "revision": 1,
       "recorded_at": "2026-09-16 20:04:08",
       "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-16)",
+      "detail": "Previous 0 count (2026-09-15) (0 vs 2026-09-15) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 20:04:08",
+      "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
       "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-15)",
       "detail": "Previous 0 events (2026-09-14) (0 vs 2026-09-14) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 20:04:08",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5437 % (2026-09-15)",
+      "detail": "Previous 3.5409 % (2026-09-14) (+0 vs 2026-09-14) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 20:04:08",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.electrical_equipment_production_index",
+      "label": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly): 105.9 index (2021=100) (2026-07)",
+      "detail": "Previous 102.8 index (2021=100) (2026-06) (+3.1 vs 2026-06) / final / Source: Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 20:04:08",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-16)",
+      "detail": "Previous 0 acts (2026-09-15) (0 vs 2026-09-15) / final / Source: EUR-Lex, Publications Office of the European Union"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 20:04:08",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 6,701,701 MWh (2026-09-16)",
+      "detail": "Previous 6,771,538 MWh (2026-09-15) (-69837 vs 2026-09-15) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
       "date": "2026-09-15",
@@ -461,16 +532,6 @@
       "revision": 1,
       "recorded_at": "2026-09-14 20:03:12",
       "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 12 requests (2026-09-13)",
-      "detail": "Previous 119 requests (2026-09-12) (-107 vs 2026-09-12) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-14",
-      "revision": 1,
-      "recorded_at": "2026-09-14 20:03:12",
-      "kind": "routine",
       "chapter": "market",
       "series": "market.support_count",
       "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-14)",
@@ -481,20 +542,20 @@
       "revision": 1,
       "recorded_at": "2026-09-14 20:03:12",
       "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-13)",
-      "detail": "Previous 0 events (2026-09-12) (0 vs 2026-09-12) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 12 requests (2026-09-13)",
+      "detail": "Previous 119 requests (2026-09-12) (-107 vs 2026-09-12) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
       "date": "2026-09-14",
       "revision": 1,
       "recorded_at": "2026-09-14 20:03:12",
       "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.euro_area_yield_10y",
-      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5227 % (2026-09-11)",
-      "detail": "Previous 3.5032 % (2026-09-10) (+0.02 vs 2026-09-10) / final / Source: European Central Bank (ECB), Euro area yield curves"
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-13)",
+      "detail": "Previous 0 events (2026-09-12) (0 vs 2026-09-12) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
     },
     {
       "date": "2026-09-14",
@@ -517,6 +578,16 @@
       "detail": "Previous 5,595,581 MWh (2026-09-13) (+1007967 vs 2026-09-13) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
+      "date": "2026-09-14",
+      "revision": 1,
+      "recorded_at": "2026-09-14 20:03:12",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.5227 % (2026-09-11)",
+      "detail": "Previous 3.5032 % (2026-09-10) (+0.02 vs 2026-09-10) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
       "date": "2026-09-13",
       "revision": 1,
       "recorded_at": "2026-09-13 20:03:37",
@@ -525,26 +596,6 @@
       "series": "ai_readers.week_verified",
       "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 119 requests (2026-09-12)",
       "detail": "Previous 113 requests (2026-09-11) (+6 vs 2026-09-11) / final / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-13",
-      "revision": 1,
-      "recorded_at": "2026-09-13 20:03:37",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-12)",
-      "detail": "Previous 0 events (2026-09-11) (0 vs 2026-09-11) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
-    },
-    {
-      "date": "2026-09-13",
-      "revision": 1,
-      "recorded_at": "2026-09-13 20:03:37",
-      "kind": "routine",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 5,595,581 MWh (2026-09-13)",
-      "detail": "Previous 5,650,045 MWh (2026-09-12) (-54464 vs 2026-09-12) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
       "date": "2026-09-13",
@@ -561,10 +612,30 @@
       "revision": 1,
       "recorded_at": "2026-09-13 20:03:37",
       "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-12)",
+      "detail": "Previous 0 events (2026-09-11) (0 vs 2026-09-11) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-13",
+      "revision": 1,
+      "recorded_at": "2026-09-13 20:03:37",
+      "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.acts_last_30_days",
       "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-13)",
       "detail": "Previous 0 acts (2026-09-12) (0 vs 2026-09-12) / final / Source: EUR-Lex, Publications Office of the European Union"
+    },
+    {
+      "date": "2026-09-13",
+      "revision": 1,
+      "recorded_at": "2026-09-13 20:03:37",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "label": "EU27 day-ahead total load FORECAST (daily energy; not actual load): 5,595,581 MWh (2026-09-13)",
+      "detail": "Previous 5,650,045 MWh (2026-09-12) (-54464 vs 2026-09-12) / provisional / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
     },
     {
       "date": "2026-09-12",
@@ -631,30 +702,10 @@
       "revision": 1,
       "recorded_at": "2026-09-10 20:00:26",
       "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 96 requests (2026-09-09)",
-      "detail": "Previous 92 requests (2026-09-08) (+4 vs 2026-09-08) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 20:00:26",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-10)",
-      "detail": "Previous 0 count (2026-09-09) (0 vs 2026-09-09) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 20:00:26",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-09)",
-      "detail": "Previous 0 events (2026-09-08) (0 vs 2026-09-08) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-10)",
+      "detail": "Previous 0 acts (2026-09-09) (0 vs 2026-09-09) / final / Source: EUR-Lex, Publications Office of the European Union"
     },
     {
       "date": "2026-09-10",
@@ -671,40 +722,30 @@
       "revision": 1,
       "recorded_at": "2026-09-10 20:00:26",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.acts_last_30_days",
-      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-10)",
-      "detail": "Previous 0 acts (2026-09-09) (0 vs 2026-09-09) / final / Source: EUR-Lex, Publications Office of the European Union"
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-10)",
+      "detail": "Previous 0 count (2026-09-09) (0 vs 2026-09-09) / provisional / Source: AI Lifeline first-party observation"
     },
     {
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "revision": 1,
-      "recorded_at": "2026-09-09 20:00:28",
+      "recorded_at": "2026-09-10 20:00:26",
       "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.euro_area_yield_10y",
-      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.3785 % (2026-09-08)",
-      "detail": "Previous 3.3895 % (2026-09-07) (-0.01 vs 2026-09-07) / final / Source: European Central Bank (ECB), Euro area yield curves"
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 96 requests (2026-09-09)",
+      "detail": "Previous 92 requests (2026-09-08) (+4 vs 2026-09-08) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "revision": 1,
-      "recorded_at": "2026-09-09 20:00:28",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.acts_last_30_days",
-      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-09)",
-      "detail": "Previous 0 acts (2026-09-08) (0 vs 2026-09-08) / final / Source: EUR-Lex, Publications Office of the European Union"
-    },
-    {
-      "date": "2026-09-09",
-      "revision": 1,
-      "recorded_at": "2026-09-09 20:00:28",
+      "recorded_at": "2026-09-10 20:00:26",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-08)",
-      "detail": "Previous 0 events (2026-09-07) (0 vs 2026-09-07) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-09)",
+      "detail": "Previous 0 events (2026-09-08) (0 vs 2026-09-08) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
     },
     {
       "date": "2026-09-09",
@@ -727,34 +768,44 @@
       "detail": "Previous 0 count (2026-09-08) (0 vs 2026-09-08) / provisional / Source: AI Lifeline first-party observation"
     },
     {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "revision": 1,
-      "recorded_at": "2026-09-08 20:59:23",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 77 requests (2026-09-07)",
-      "detail": "Previous 30 requests (2026-09-06) (+47 vs 2026-09-06) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-08",
-      "revision": 1,
-      "recorded_at": "2026-09-08 20:59:23",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-08)",
-      "detail": "Previous 0 count (2026-09-07) (0 vs 2026-09-07) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-08",
-      "revision": 1,
-      "recorded_at": "2026-09-08 20:59:23",
+      "recorded_at": "2026-09-09 20:00:28",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-07)",
-      "detail": "Previous 0 events (2026-09-06) (0 vs 2026-09-06) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-08)",
+      "detail": "Previous 0 events (2026-09-07) (0 vs 2026-09-07) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+    },
+    {
+      "date": "2026-09-09",
+      "revision": 1,
+      "recorded_at": "2026-09-09 20:00:28",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.euro_area_yield_10y",
+      "label": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily): 3.3785 % (2026-09-08)",
+      "detail": "Previous 3.3895 % (2026-09-07) (-0.01 vs 2026-09-07) / final / Source: European Central Bank (ECB), Euro area yield curves"
+    },
+    {
+      "date": "2026-09-09",
+      "revision": 1,
+      "recorded_at": "2026-09-09 20:00:28",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-09)",
+      "detail": "Previous 0 acts (2026-09-08) (0 vs 2026-09-08) / final / Source: EUR-Lex, Publications Office of the European Union"
+    },
+    {
+      "date": "2026-09-08",
+      "revision": 1,
+      "recorded_at": "2026-09-08 20:59:23",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.acts_last_30_days",
+      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-08)",
+      "detail": "Previous 0 acts (2026-09-07) (0 vs 2026-09-07) / final / Source: EUR-Lex, Publications Office of the European Union"
     },
     {
       "date": "2026-09-08",
@@ -771,10 +822,30 @@
       "revision": 1,
       "recorded_at": "2026-09-08 20:59:23",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.acts_last_30_days",
-      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-08)",
-      "detail": "Previous 0 acts (2026-09-07) (0 vs 2026-09-07) / final / Source: EUR-Lex, Publications Office of the European Union"
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-08)",
+      "detail": "Previous 0 count (2026-09-07) (0 vs 2026-09-07) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-08",
+      "revision": 1,
+      "recorded_at": "2026-09-08 20:59:23",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 77 requests (2026-09-07)",
+      "detail": "Previous 30 requests (2026-09-06) (+47 vs 2026-09-06) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-08",
+      "revision": 1,
+      "recorded_at": "2026-09-08 20:59:23",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-07)",
+      "detail": "Previous 0 events (2026-09-06) (0 vs 2026-09-06) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
     },
     {
       "date": "2026-09-07",
@@ -825,46 +896,6 @@
       "series": "regulation.acts_last_30_days",
       "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-07)",
       "detail": "Previous 0 acts (2026-09-06) (0 vs 2026-09-06) / final / Source: EUR-Lex, Publications Office of the European Union"
-    },
-    {
-      "date": "2026-09-06",
-      "revision": 1,
-      "recorded_at": "2026-09-06 20:00:32",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths): 17 requests (2026-09-05)",
-      "detail": "Previous 1 requests (2026-09-04) (+16 vs 2026-09-04) / final / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-06",
-      "revision": 1,
-      "recorded_at": "2026-09-06 20:00:32",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-06)",
-      "detail": "Previous 0 count (2026-09-05) (0 vs 2026-09-05) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-06",
-      "revision": 1,
-      "recorded_at": "2026-09-06 20:00:32",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition): 0 events (2026-09-05)",
-      "detail": "Previous 0 events (2026-09-04) (0 vs 2026-09-04) / final / Source: U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
-    },
-    {
-      "date": "2026-09-06",
-      "revision": 1,
-      "recorded_at": "2026-09-06 20:00:32",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.acts_last_30_days",
-      "label": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days: 0 acts (2026-09-06)",
-      "detail": "Previous 0 acts (2026-09-05) (0 vs 2026-09-05) / final / Source: EUR-Lex, Publications Office of the European Union"
     }
   ]
 }
