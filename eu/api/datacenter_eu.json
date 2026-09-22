@@ -1,21 +1,41 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-09-20 20:04 JST)",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-09-21 20:04 JST)",
   "cite_as": "AI Lifeline, Data centers (European Union edition), data confirmed 2026-07, https://ai-lifeline.org/eu/datacenter/",
-  "status": "observing",
+  "candidates": [
+    {
+      "status": "candidate_unobserved",
+      "reason": "Only a Qlik dashboard without export or API; no separate licence statement. Added if the Commission publishes a machine-readable dataset (checked 2026-09-03/04).",
+      "name": "EED data-centre database aggregates (installed IT power, electricity consumption, number of reporting sites)"
+    },
+    {
+      "status": "candidate_unobserved",
+      "reason": "Reachable (verified 2026-09-04) but not data-centre specific; belongs to the electricity chapter if adopted, so not used here as a substitute.",
+      "name": "Eurostat monthly electricity consumption (nrg_cb_em, EU27)"
+    }
+  ],
+  "proxy_note": "Both series are PROXIES (ruling 2026-09-04): cooling degree days measure the climate demand for cooling, and the C27.1 production index measures the output of the electrical-equipment industry. Neither is the electricity consumption of data centres, which the EU does not publish in machine-readable form.",
+  "region": "eu",
+  "comparability_note": "Cooling degree days: Eurostat uses its own base temperatures (see the Eurostat metadata), the U.S. edition uses the CPC 65F base and the Japan edition 18.3C; levels are not comparable across editions - compare within-edition trends only.",
+  "generated": "2026-09-21 20:04",
+  "can_say": [
+    "How much cooling the EU27 climate demanded, month by month, as Eurostat computes it (a driver of data-centre cooling load).",
+    "Whether EU27 output of the industry that makes transformers, generators and switchgear is rising or falling (a supply-side signal for grid connection and data-centre build-out).",
+    "What the EU data-centre reporting scheme (EED Art. 12) legally requires, when it reports, and where the Commission publishes."
+  ],
   "frequency_note": "Mixed-frequency chapter: cooling degree days are a monthly series that Eurostat releases in batches (months appear with a lag of several months); the production index is monthly; the EED ledger is irregular.",
   "cannot_say": [
     "How much electricity EU data centres consume (no machine-readable EU statistic exists; dashboard figures are not reproduced).",
     "How many data centres are being built or where (no EU construction or siting statistic equivalent to the U.S. Census category).",
     "Whether any level is good or bad, or how the EU compares with the U.S. or Japan on these proxies (different bases and concepts)."
   ],
-  "siting_note": "No construction-spending or siting series: the EU publishes no monthly statistic equivalent to the U.S. Census VIP \"Data center\" category. The EED data-centre reporting scheme (Art. 12, Directive (EU) 2023/1791) publishes only a dashboard without machine-readable export, so it is listed as a ledger, not a series (verified 2026-09-03/04).",
-  "region": "eu",
-  "generated": "2026-09-20 20:04",
-  "proxy_note": "Both series are PROXIES (ruling 2026-09-04): cooling degree days measure the climate demand for cooling, and the C27.1 production index measures the output of the electrical-equipment industry. Neither is the electricity consumption of data centres, which the EU does not publish in machine-readable form.",
-  "comparability_note": "Cooling degree days: Eurostat uses its own base temperatures (see the Eurostat metadata), the U.S. edition uses the CPC 65F base and the Japan edition 18.3C; levels are not comparable across editions - compare within-edition trends only.",
   "series": {
     "cooling_degree_days": {
-      "unit": "degree days",
+      "source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_chdd_m/default/table",
+        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
+        "name": "Eurostat, Cooling and heating degree days by country - monthly data (nrg_chdd_m)"
+      },
+      "name": "Cooling degree days, EU27 aggregate (Eurostat nrg_chdd_m, monthly)",
       "monthly": [
         {
           "period": "2021-01",
@@ -439,20 +459,65 @@
         }
       ],
       "causal_note": "Cooling is the largest controllable load of a data centre after the IT load itself; degree days are the public, EU-wide measure of how much cooling the climate demands.",
-      "data_status": "live",
+      "unit": "degree days",
       "definition_note": "Value as published by Eurostat (indic_nrg=CDD, unit=NR, geo=EU27_2020). Eurostat/JRC compute CDD from daily mean temperatures with Eurostat's stated base temperature; this site does not recompute or re-base. Dataset last updated by Eurostat: 2026-05-08 18:00; 2026 months appear only when Eurostat releases them.",
-      "name": "Cooling degree days, EU27 aggregate (Eurostat nrg_chdd_m, monthly)",
-      "update_frequency": "monthly (released in batches)",
+      "data_status": "live",
+      "update_frequency": "monthly (released in batches)"
+    },
+    "eed_reporting_ledger": {
       "source": {
-        "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_chdd_m/default/table",
-        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
-        "name": "Eurostat, Cooling and heating degree days by country - monthly data (nrg_chdd_m)"
-      }
+        "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
+        "license": "Commission documents: Decision 2011/833/EU (re-use for commercial or non-commercial purposes, source acknowledged). The public dashboard (Qlik) carries no machine-readable export and no separate licence statement (verified 2026-09-03); figures from the dashboard are therefore NOT reproduced - the ledger records the legal basis, publication dates and links only.",
+        "name": "European Commission, Directorate-General for Energy - European Data Centre Reporting Scheme"
+      },
+      "name": "EU data-centre energy reporting scheme (Energy Efficiency Directive) - ledger of legal basis, publications and deadlines",
+      "reference_note": "Ledger, not a measured series. The scheme has no machine-readable public output (dashboard only), so no figures are reproduced; only what is published, when, and where.",
+      "entries": [
+        {
+          "date": "2023-09-20",
+          "label": "Directive (EU) 2023/1791 (recast Energy Efficiency Directive), Article 12: owners/operators of data centres with an IT power demand of at least 500 kW must report annually to a European database (first reports by 15 May 2024).",
+          "kind": "legal_basis",
+          "source_url": "http://data.europa.eu/eli/dir/2023/1791/oj",
+          "verified_on": "2026-09-04",
+          "note": "Official Journal L 231, 20.9.2023"
+        },
+        {
+          "date": "2024-05-17",
+          "label": "Commission Delegated Regulation (EU) 2024/1364 establishing the first phase of a common Union rating scheme for data centres (reporting template and indicators).",
+          "kind": "legal_basis",
+          "source_url": "http://data.europa.eu/eli/reg_del/2024/1364/oj",
+          "verified_on": "2026-09-04",
+          "note": "Official Journal L, 2024/1364, 17.5.2024"
+        },
+        {
+          "date": "2025-07-01",
+          "label": "European Commission, 'Assessment of the energy performance and sustainability of data centres in the EU - first technical report' (published July 2025; CC BY 4.0). No EU total electricity figure is given in the report; PUE distribution shown for n=681 reporting sites.",
+          "kind": "publication",
+          "source_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
+          "verified_on": "2026-09-03",
+          "note": "Exact publication day not stated on the page (month-level date recorded). Verified in the 2026-09-03 EU edition survey; the PDF itself was read by the survey agent."
+        },
+        {
+          "date": "2026-05-15",
+          "label": "Annual reporting deadline (15 May each year) for data centres in scope; the public dashboard (Qlik Sense) is updated after the Commission's assessment. No machine-readable export or API is offered (verified 2026-09-03).",
+          "kind": "deadline",
+          "source_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
+          "verified_on": "2026-09-03",
+          "note": "Aggregate figures reported in the press (installed IT power, total consumption, number of sites) are not reproduced here: not verifiable against a primary machine-readable source."
+        }
+      ],
+      "unit": "entries",
+      "checked": "2026-09-04",
+      "data_status": "live",
+      "reference": true
     },
     "electrical_equipment_production_index": {
-      "unit": "index (2021=100)",
-      "proxy_note": "Supply-side proxy for transformer availability. Not a lead-time statistic (none is published in the EU) and not comparable in concept with the U.S. edition (order backlog = demand-side queue) or the Japan edition (production value / capacity index): compare within-edition trends only. Points flagged i by Eurostat carry the flag as published.",
-      "causal_note": "Every new data centre and every grid connection needs transformers and switchgear; the EU-wide output of that industry is the public monthly signal of whether the physical supply chain of AI infrastructure is expanding or contracting.",
+      "source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table",
+        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
+        "name": "Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1"
+      },
+      "name": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly)",
       "monthly": [
         {
           "period": "2021-08",
@@ -882,81 +947,16 @@
           "retrieved_retrospectively": true
         }
       ],
+      "proxy_note": "Supply-side proxy for transformer availability. Not a lead-time statistic (none is published in the EU) and not comparable in concept with the U.S. edition (order backlog = demand-side queue) or the Japan edition (production value / capacity index): compare within-edition trends only. Points flagged i by Eurostat carry the flag as published.",
+      "unit": "index (2021=100)",
       "data_status": "live",
-      "name": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly)",
-      "source": {
-        "url": "https://ec.europa.eu/eurostat/databrowser/view/sts_inpr_m/default/table",
-        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
-        "name": "Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1"
-      }
-    },
-    "eed_reporting_ledger": {
-      "entries": [
-        {
-          "date": "2023-09-20",
-          "label": "Directive (EU) 2023/1791 (recast Energy Efficiency Directive), Article 12: owners/operators of data centres with an IT power demand of at least 500 kW must report annually to a European database (first reports by 15 May 2024).",
-          "kind": "legal_basis",
-          "source_url": "http://data.europa.eu/eli/dir/2023/1791/oj",
-          "verified_on": "2026-09-04",
-          "note": "Official Journal L 231, 20.9.2023"
-        },
-        {
-          "date": "2024-05-17",
-          "label": "Commission Delegated Regulation (EU) 2024/1364 establishing the first phase of a common Union rating scheme for data centres (reporting template and indicators).",
-          "kind": "legal_basis",
-          "source_url": "http://data.europa.eu/eli/reg_del/2024/1364/oj",
-          "verified_on": "2026-09-04",
-          "note": "Official Journal L, 2024/1364, 17.5.2024"
-        },
-        {
-          "date": "2025-07-01",
-          "label": "European Commission, 'Assessment of the energy performance and sustainability of data centres in the EU - first technical report' (published July 2025; CC BY 4.0). No EU total electricity figure is given in the report; PUE distribution shown for n=681 reporting sites.",
-          "kind": "publication",
-          "source_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
-          "verified_on": "2026-09-03",
-          "note": "Exact publication day not stated on the page (month-level date recorded). Verified in the 2026-09-03 EU edition survey; the PDF itself was read by the survey agent."
-        },
-        {
-          "date": "2026-05-15",
-          "label": "Annual reporting deadline (15 May each year) for data centres in scope; the public dashboard (Qlik Sense) is updated after the Commission's assessment. No machine-readable export or API is offered (verified 2026-09-03).",
-          "kind": "deadline",
-          "source_url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
-          "verified_on": "2026-09-03",
-          "note": "Aggregate figures reported in the press (installed IT power, total consumption, number of sites) are not reproduced here: not verifiable against a primary machine-readable source."
-        }
-      ],
-      "unit": "entries",
-      "source": {
-        "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/data-centres_en",
-        "license": "Commission documents: Decision 2011/833/EU (re-use for commercial or non-commercial purposes, source acknowledged). The public dashboard (Qlik) carries no machine-readable export and no separate licence statement (verified 2026-09-03); figures from the dashboard are therefore NOT reproduced - the ledger records the legal basis, publication dates and links only.",
-        "name": "European Commission, Directorate-General for Energy - European Data Centre Reporting Scheme"
-      },
-      "reference": true,
-      "data_status": "live",
-      "name": "EU data-centre energy reporting scheme (Energy Efficiency Directive) - ledger of legal basis, publications and deadlines",
-      "checked": "2026-09-04",
-      "reference_note": "Ledger, not a measured series. The scheme has no machine-readable public output (dashboard only), so no figures are reproduced; only what is published, when, and where."
+      "causal_note": "Every new data centre and every grid connection needs transformers and switchgear; the EU-wide output of that industry is the public monthly signal of whether the physical supply chain of AI infrastructure is expanding or contracting."
     }
   },
+  "status": "observing",
   "status_note": "Observing only: no good/bad criterion is defined. EU27 aggregates only; no facility-level, member-state-level or operator data on the page.",
-  "can_say": [
-    "How much cooling the EU27 climate demanded, month by month, as Eurostat computes it (a driver of data-centre cooling load).",
-    "Whether EU27 output of the industry that makes transformers, generators and switchgear is rising or falling (a supply-side signal for grid connection and data-centre build-out).",
-    "What the EU data-centre reporting scheme (EED Art. 12) legally requires, when it reports, and where the Commission publishes."
-  ],
-  "candidates": [
-    {
-      "status": "candidate_unobserved",
-      "name": "EED data-centre database aggregates (installed IT power, electricity consumption, number of reporting sites)",
-      "reason": "Only a Qlik dashboard without export or API; no separate licence statement. Added if the Commission publishes a machine-readable dataset (checked 2026-09-03/04)."
-    },
-    {
-      "status": "candidate_unobserved",
-      "name": "Eurostat monthly electricity consumption (nrg_cb_em, EU27)",
-      "reason": "Reachable (verified 2026-09-04) but not data-centre specific; belongs to the electricity chapter if adopted, so not used here as a substitute."
-    }
-  ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-09-20 20:04 JST)",
+  "siting_note": "No construction-spending or siting series: the EU publishes no monthly statistic equivalent to the U.S. Census VIP \"Data center\" category. The EED data-centre reporting scheme (Art. 12, Directive (EU) 2023/1791) publishes only a dashboard without machine-readable export, so it is listed as a ledger, not a series (verified 2026-09-03/04).",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-09-21 20:04 JST)",
   "answer_line_date": "2026-07",
   "answer_kind": "observing",
   "headline_answer": {
@@ -978,7 +978,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Eurostat monthly series (published with a lag of about 6-7 weeks; refetched daily), EED ledger irregular (observation started 2026-09-04). Last updated 2026-09-20 20:04 JST. Definition: docs/指標定義_EU_データセンター.md v1.1. Machine-readable: https://ai-lifeline.org/eu/api/datacenter_eu.json"
+      "a": "Eurostat monthly series (published with a lag of about 6-7 weeks; refetched daily), EED ledger irregular (observation started 2026-09-04). Last updated 2026-09-21 20:04 JST. Definition: docs/指標定義_EU_データセンター.md v1.1. Machine-readable: https://ai-lifeline.org/eu/api/datacenter_eu.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -990,7 +990,7 @@
     "api": "https://ai-lifeline.org/eu/api/datacenter_eu.json",
     "last_confirmed": "2026-09-04",
     "next_expected": "2026-08",
-    "generated": "2026-09-20 20:04",
+    "generated": "2026-09-21 20:04",
     "observation_start": "2026-09-04",
     "series_count": 3,
     "series_not_yet_measured": 0,

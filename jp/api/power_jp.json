@@ -1,18 +1,18 @@
 {
-  "summary": "2026-09-20の全国の広域予備率（日別最小・確定値）は11.09%。警戒水準8%を上回った状態が2日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-09-21 10:31 JST）",
-  "cite_as": "AIライフライン 電力章（確定日 2026-09-20）https://ai-lifeline.org/jp/denryoku/",
+  "summary": "2026-09-21の全国の広域予備率（日別最小・確定値）は11.33%。警戒水準8%を上回った状態が3日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-09-22 10:31 JST）",
+  "cite_as": "AIライフライン 電力章（確定日 2026-09-21）https://ai-lifeline.org/jp/denryoku/",
   "country": "JP",
-  "generated": "2026-09-21 10:31",
+  "generated": "2026-09-22 10:31",
   "sources": [
     {
-      "url": "https://web-kohyo.occto.or.jp/kks-web-public/",
+      "license": "出所明示で利用可",
       "name": "電力広域的運営推進機関「広域予備率Web公表システム」",
-      "license": "出所明示で利用可"
+      "url": "https://web-kohyo.occto.or.jp/kks-web-public/"
     },
     {
-      "url": "https://www.jepx.jp/electricpower/market-data/spot/",
+      "license": "出所明示で利用可",
       "name": "日本卸電力取引所（JEPX）スポット市場取引結果",
-      "license": "出所明示で利用可"
+      "url": "https://www.jepx.jp/electricpower/market-data/spot/"
     }
   ],
   "value_status_note": "reserve_daily[].value_status=final は観測日より後に取得した確定値、provisional は観測日と同じ日に取得した暫定値（12:30以降が見通し値を含む）。暫定値は翌日以降の再取得で確定値へ差し替わる",
@@ -274,30 +274,31 @@
       "tokyo_min": 11.41,
       "national_min": 11.41,
       "value_status": "final",
-      "fetched_at": "2026-09-21 10:30"
+      "fetched_at": "2026-09-22 10:30"
     },
     {
       "date": "2026-09-20",
       "tokyo_min": 11.09,
       "national_min": 11.09,
       "value_status": "final",
-      "fetched_at": "2026-09-21 10:30"
+      "fetched_at": "2026-09-22 10:30"
     },
     {
       "date": "2026-09-21",
       "tokyo_min": 11.33,
       "national_min": 11.33,
+      "value_status": "final",
+      "fetched_at": "2026-09-22 10:30"
+    },
+    {
+      "date": "2026-09-22",
+      "tokyo_min": 11.09,
+      "national_min": 11.09,
       "value_status": "provisional",
-      "fetched_at": "2026-09-21 10:30"
+      "fetched_at": "2026-09-22 10:30"
     }
   ],
   "jepx_daily": [
-    {
-      "date": "2026-08-24",
-      "system_avg": 22.31,
-      "system_max": 32.99,
-      "tokyo_avg": 23.11
-    },
     {
       "date": "2026-08-25",
       "system_avg": 25.18,
@@ -471,6 +472,12 @@
       "system_avg": 16.32,
       "system_max": 28.41,
       "tokyo_avg": 28.19
+    },
+    {
+      "date": "2026-09-23",
+      "system_avg": 17.98,
+      "system_max": 27.94,
+      "tokyo_avg": 27.41
     }
   ],
   "vulnerability": {
@@ -509,7 +516,7 @@
     ],
     "current_month": {
       "month": "2026-09",
-      "observed_days": 21,
+      "observed_days": 22,
       "days_in_month": 30,
       "days_lt8": 2,
       "days_lt5": 0,
@@ -543,7 +550,7 @@
       "days_lt5": 0,
       "days_lt3": 0
     },
-    "change_note": "当月は 21/30 日時点の途中集計。前月（31日）とは分母が異なる",
+    "change_note": "当月は 22/30 日時点の途中集計。前月（31日）とは分母が異なる",
     "monthly": [
       {
         "month": "2025-04",
@@ -802,7 +809,7 @@
       },
       {
         "month": "2026-09",
-        "observed_days": 21,
+        "observed_days": 22,
         "days_in_month": 30,
         "days_lt8": 2,
         "days_lt5": 0,
@@ -820,17 +827,17 @@
   },
   "latest": {
     "reserve": {
-      "date": "2026-09-21",
-      "tokyo_min": 11.33,
-      "national_min": 11.33,
+      "date": "2026-09-22",
+      "tokyo_min": 11.09,
+      "national_min": 11.09,
       "value_status": "provisional",
-      "fetched_at": "2026-09-21 10:30"
+      "fetched_at": "2026-09-22 10:30"
     },
     "jepx": {
-      "date": "2026-09-22",
-      "system_avg": 16.32,
-      "system_max": 28.41,
-      "tokyo_avg": 28.19
+      "date": "2026-09-23",
+      "system_avg": 17.98,
+      "system_max": 27.94,
+      "tokyo_avg": 27.41
     }
   },
   "can_say": [
@@ -843,15 +850,15 @@
     "特定のデータセンターや事業者への電力供給の状況（地域集計のみで施設単位は扱わない）",
     "電力料金の総額や各社の契約単価（スポット価格は市場の一指標であり、各社の調達価格ではない）"
   ],
-  "answer_line": "2026-09-20の全国の広域予備率（日別最小・確定値）は11.09%。警戒水準8%を上回った状態が2日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-09-21 10:31 JST）",
-  "answer_line_date": "2026-09-20",
+  "answer_line": "2026-09-21の全国の広域予備率（日別最小・確定値）は11.33%。警戒水準8%を上回った状態が3日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-09-22 10:31 JST）",
+  "answer_line_date": "2026-09-21",
   "answer_kind": "judged",
   "headline_answer": {
     "series": "reserve_national_min",
     "label": "全国の広域予備率（日別最小・確定値）",
-    "value": 11.09,
+    "value": 11.33,
     "unit": "%",
-    "date": "2026-09-20",
+    "date": "2026-09-21",
     "threshold": {
       "value": 8,
       "label": "警戒水準8%"
@@ -860,19 +867,19 @@
   "faq": [
     {
       "q": "日本の電力予備率は今どのくらいか",
-      "a": "2026-09-20の広域予備率（全国最小・確定値）は11.09%、東京エリア最小は11.09%です。警戒水準8%を上回った状態が2日続いています（確定値ベース）。出典：OCCTO 広域予備率Web公表システム（取得 2026-09-21 10:30・当日分は暫定で翌日確定）。"
+      "a": "2026-09-21の広域予備率（全国最小・確定値）は11.33%、東京エリア最小は11.33%です。警戒水準8%を上回った状態が3日続いています（確定値ベース）。出典：OCCTO 広域予備率Web公表システム（取得 2026-09-22 10:30・当日分は暫定で翌日確定）。"
     },
     {
       "q": "予備率8%を下回った日は今月何日あるか",
-      "a": "2026-09は2日です（観測21日／30日時点の途中集計。5%未満 0日・3%未満 0日・月内最小 7.02%（2026-09-18））。定義 v1.0（2026-08-22 確定）。出典：OCCTO 公表値の自前集計（/jp/api/vulnerability_jp.json）。"
+      "a": "2026-09は2日です（観測22日／30日時点の途中集計。5%未満 0日・3%未満 0日・月内最小 7.02%（2026-09-18））。定義 v1.0（2026-08-22 確定）。出典：OCCTO 公表値の自前集計（/jp/api/vulnerability_jp.json）。"
     },
     {
       "q": "JEPXスポット価格は今いくらか",
-      "a": "2026-09-22のJEPXスポット システムプライス日平均は16.32円/kWhです。出典：JEPX スポット市場取引結果（自前取得・日次）。"
+      "a": "2026-09-23のJEPXスポット システムプライス日平均は17.98円/kWhです。出典：JEPX スポット市場取引結果（自前取得・日次）。"
     },
     {
       "q": "このデータの出所と更新頻度は",
-      "a": "広域予備率は電力広域的運営推進機関（OCCTO）の広域予備率Web公表システム、スポット価格は日本卸電力取引所（JEPX）の公表値を毎日11:00 JSTに自前取得しています（自前観測の開始 2026-08-20）。最終更新 2026-09-21 10:31 JST・機械可読データ https://ai-lifeline.org/jp/api/power_jp.json"
+      "a": "広域予備率は電力広域的運営推進機関（OCCTO）の広域予備率Web公表システム、スポット価格は日本卸電力取引所（JEPX）の公表値を毎日11:00 JSTに自前取得しています（自前観測の開始 2026-08-20）。最終更新 2026-09-22 10:31 JST・機械可読データ https://ai-lifeline.org/jp/api/power_jp.json"
     },
     {
       "q": "このデータで言えないことは何か",
@@ -882,13 +889,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/jp/denryoku/",
     "api": "https://ai-lifeline.org/jp/api/power_jp.json",
-    "last_confirmed": "2026-09-22",
-    "next_expected": "2026-09-21",
-    "generated": "2026-09-21 10:31",
+    "last_confirmed": "2026-09-23",
+    "next_expected": "2026-09-22",
+    "generated": "2026-09-22 10:31",
     "observation_start": "2026-08-20",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "予備率11.09%（9/20確定）",
+    "title_short": "予備率11.33%（9/21確定）",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [

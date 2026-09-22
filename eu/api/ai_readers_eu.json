@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-09-20 20:04",
+  "generated": "2026-09-21 20:04",
   "indicator": {
     "id": "ai_readers_01_eu",
     "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
@@ -120,6 +120,35 @@
       "top_verified": {
         "name": "ShapBot",
         "requests": 45
+      }
+    },
+    {
+      "week": 5,
+      "from": "2026-09-20",
+      "to": "2026-09-26",
+      "observed_through": "2026-09-20",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 13,
+      "verified_days": 1,
+      "unverified_total": 0,
+      "named_total_reference": 13,
+      "self_excluded_total": 83,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 13
+      },
+      "breakdown_verified_other_detail": {
+        "Amazonbot": 7,
+        "OAI-SearchBot": 4,
+        "ChatGPT-User": 2
+      },
+      "top_verified": {
+        "name": "Amazonbot",
+        "requests": 7
       }
     }
   ],
@@ -275,6 +304,15 @@
       "ai_named_reference": 5,
       "self_excluded": 500,
       "requests_in_scope": 532,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-20",
+      "ai_verified": 13,
+      "ai_unverified": 0,
+      "ai_named_reference": 13,
+      "self_excluded": 83,
+      "requests_in_scope": 130,
       "verified_available": true
     }
   ]

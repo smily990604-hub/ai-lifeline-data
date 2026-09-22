@@ -1,46 +1,29 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-09-19. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-09-19). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-09-20 20:04 JST)",
-  "cite_as": "AI Lifeline, Climate & disasters (European Union edition), data confirmed 2026-09-19, https://ai-lifeline.org/eu/disaster/",
-  "cannot_say": [
-    "Which facilities were affected, what the damage was, whether heat or drought threatened data centres (not yet observed), or whether the EU is safer or riskier than the U.S. or Japan."
-  ],
-  "status": "observing",
-  "candidates": [
-    {
-      "status": "candidate_unobserved",
-      "name": "Wildfire - weekly mapped fires and burnt area (EFFIS statistics portal)",
-      "reason": "The portal has no documented public API or download for the weekly statistics (its internal JSON is not used - same standard as the Commission consultation portal, ruling 2026-09-04). Re-connected if EFFIS publishes an official feed; the official annual country totals are used as a ledger meanwhile."
-    },
-    {
-      "status": "candidate_unobserved",
-      "name": "Extreme heat (Copernicus C3S, ERA5 daily statistics)",
-      "reason": "Requires a CDS account and token (publisher action) and a frozen definition of \"heat\" from gridded data; no ready-made EU27 indicator exists."
-    },
-    {
-      "status": "candidate_unobserved",
-      "name": "Drought (Copernicus EDO, Combined Drought Indicator)",
-      "reason": "Published as 10-day raster grids (CC BY 4.0, reachable 2026-09-04); an EU27 area-share aggregation must be frozen in a definition before use. Also the first candidate of the planned water chapter."
-    },
-    {
-      "status": "candidate_unobserved",
-      "name": "Meteoalarm weather warnings (EUMETNET)",
-      "reason": "Feed terms of use not verified; not used."
-    }
-  ],
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-09-20. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-09-20). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-09-21 20:04 JST)",
+  "cite_as": "AI Lifeline, Climate & disasters (European Union edition), data confirmed 2026-09-20, https://ai-lifeline.org/eu/disaster/",
+  "profile_note": "Only hazards in this edition profile are shown (earthquake daily; wildfire as an annual reference ledger). Extreme heat (Copernicus C3S) and drought (Copernicus EDO) are candidates: C3S needs an account and a frozen heat definition; EDO publishes raster grids only and the EU27 aggregation method must be frozen first. Seismic scales and hazard definitions differ across editions; no cross-edition comparison.",
+  "backfill_note": "Rows with retrieved_retrospectively=true were fetched on the day the chapter went live (history from 2026-08-01 for earthquakes) and are kept apart from day-by-day observation.",
+  "region": "eu",
+  "generated": "2026-09-21 20:04",
   "can_say": [
     "How many M5+ earthquakes occurred per day in and around EU territory, and how much area burned and how many forest fires were recorded per year in the EU27 as EFFIS publishes it."
   ],
-  "region": "eu",
-  "generated": "2026-09-20 20:04",
-  "profile_note": "Only hazards in this edition profile are shown (earthquake daily; wildfire as an annual reference ledger). Extreme heat (Copernicus C3S) and drought (Copernicus EDO) are candidates: C3S needs an account and a frozen heat definition; EDO publishes raster grids only and the EU27 aggregation method must be frozen first. Seismic scales and hazard definitions differ across editions; no cross-edition comparison.",
   "disaster_profile": [
     "earthquake",
     "wildfire_annual"
   ],
-  "backfill_note": "Rows with retrieved_retrospectively=true were fetched on the day the chapter went live (history from 2026-08-01 for earthquakes) and are kept apart from day-by-day observation.",
-  "status_note": "Observing only: mechanical event counts as published (no damages, no casualties, no forecasts). A zero means zero events; missing means not yet measured. Same-day earthquake counts are excluded until the UTC day is complete. Wildfire is an annual reference ledger (EFFIS official country totals, EU27 sum), not a daily series.",
+  "cannot_say": [
+    "Which facilities were affected, what the damage was, whether heat or drought threatened data centres (not yet observed), or whether the EU is safer or riskier than the U.S. or Japan."
+  ],
   "series": {
     "wildfire_annual_ledger": {
+      "source": {
+        "url": "https://forest-fire.emergency.copernicus.eu/applications/data-and-services",
+        "license": "EFFIS data licence: CC BY 4.0 (re-use allowed with attribution and indication of changes: the EU27 sum is an arithmetic aggregation of the published country values). Verified 2026-09-04.",
+        "name": "European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook"
+      },
+      "name": "Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
+      "reference_note": "Reference ledger (annual), not a daily/weekly series: the EFFIS statistics portal has no documented public feed (its internal JSON is not used, ruling 2026-09-04), so the official country-totals workbook is used instead. EU27 sum = arithmetic aggregation of the published country values (no estimation); years with missing EU27 columns are flagged in the notes.",
       "entries": [
         {
           "date": "2024-12-31",
@@ -124,18 +107,17 @@
         }
       ],
       "unit": "entries",
-      "source": {
-        "url": "https://forest-fire.emergency.copernicus.eu/applications/data-and-services",
-        "license": "EFFIS data licence: CC BY 4.0 (re-use allowed with attribution and indication of changes: the EU27 sum is an arithmetic aggregation of the published country values). Verified 2026-09-04.",
-        "name": "European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook"
-      },
-      "reference": true,
       "checked": "2026-09-04",
-      "name": "Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
       "data_status": "live",
-      "reference_note": "Reference ledger (annual), not a daily/weekly series: the EFFIS statistics portal has no documented public feed (its internal JSON is not used, ruling 2026-09-04), so the official country-totals workbook is used instead. EU27 sum = arithmetic aggregation of the published country values (no estimation); years with missing EU27 columns are flagged in the notes."
+      "reference": true
     },
     "earthquake": {
+      "source": {
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+        "license": "Public domain (U.S. federal government work). No key.",
+        "name": "U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
+      },
+      "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
       "daily": [
         {
           "date": "2026-08-01",
@@ -477,43 +459,68 @@
           "date": "2026-09-18",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-20 20:04",
+          "fetched_at": "2026-09-21 20:03",
           "retrieved_retrospectively": false
         },
         {
           "date": "2026-09-19",
           "value": 0,
           "value_status": "final",
-          "fetched_at": "2026-09-20 20:04",
+          "fetched_at": "2026-09-21 20:03",
+          "retrieved_retrospectively": false
+        },
+        {
+          "date": "2026-09-20",
+          "value": 0,
+          "value_status": "final",
+          "fetched_at": "2026-09-21 20:04",
           "retrieved_retrospectively": false
         }
       ],
       "unit": "events",
-      "data_status": "live",
       "definition_note": "Bounding box lat 27-72, lon -32 to 35 (covers all EU27 territory in Europe including the Canary Islands, the Azores and Cyprus; also includes neighbouring non-EU areas such as western Turkey, the North African coast, the UK, Norway and Iceland - labelled 'Europe vicinity'). Overseas territories are not included.",
-      "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
-      "source": {
-        "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
-        "license": "Public domain (U.S. federal government work). No key.",
-        "name": "U.S. Geological Survey, Earthquake Hazards Program (ComCat)"
-      }
+      "data_status": "live"
     }
   },
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-09-19. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-09-19). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-09-20 20:04 JST)",
-  "answer_line_date": "2026-09-19",
+  "status": "observing",
+  "status_note": "Observing only: mechanical event counts as published (no damages, no casualties, no forecasts). A zero means zero events; missing means not yet measured. Same-day earthquake counts are excluded until the UTC day is complete. Wildfire is an annual reference ledger (EFFIS official country totals, EU27 sum), not a daily series.",
+  "candidates": [
+    {
+      "status": "candidate_unobserved",
+      "reason": "The portal has no documented public API or download for the weekly statistics (its internal JSON is not used - same standard as the Commission consultation portal, ruling 2026-09-04). Re-connected if EFFIS publishes an official feed; the official annual country totals are used as a ledger meanwhile.",
+      "name": "Wildfire - weekly mapped fires and burnt area (EFFIS statistics portal)"
+    },
+    {
+      "status": "candidate_unobserved",
+      "reason": "Requires a CDS account and token (publisher action) and a frozen definition of \"heat\" from gridded data; no ready-made EU27 indicator exists.",
+      "name": "Extreme heat (Copernicus C3S, ERA5 daily statistics)"
+    },
+    {
+      "status": "candidate_unobserved",
+      "reason": "Published as 10-day raster grids (CC BY 4.0, reachable 2026-09-04); an EU27 area-share aggregation must be frozen in a definition before use. Also the first candidate of the planned water chapter.",
+      "name": "Drought (Copernicus EDO, Combined Drought Indicator)"
+    },
+    {
+      "status": "candidate_unobserved",
+      "reason": "Feed terms of use not verified; not used.",
+      "name": "Meteoalarm weather warnings (EUMETNET)"
+    }
+  ],
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-09-20. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-09-20). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-09-21 20:04 JST)",
+  "answer_line_date": "2026-09-20",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "earthquake",
     "label": "earthquakes M5.0+ per day, Europe vicinity",
     "value": 0,
     "unit": "",
-    "date": "2026-09-19",
+    "date": "2026-09-20",
     "threshold": null
   },
   "faq": [
     {
       "q": "How many M5+ earthquakes were counted in the Europe vicinity on the latest confirmed day?",
-      "a": "0 on 2026-09-19 (UTC day; USGS Earthquake Hazards Program, stated Europe-vicinity bounding box which includes some non-EU territory; history from 2026-08-01 marked retrieved_retrospectively). Zero means zero events."
+      "a": "0 on 2026-09-20 (UTC day; USGS Earthquake Hazards Program, stated Europe-vicinity bounding box which includes some non-EU territory; history from 2026-08-01 marked retrieved_retrospectively). Zero means zero events."
     },
     {
       "q": "What wildfire figures are recorded?",
@@ -521,7 +528,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "USGS feed daily at 20:00 JST; EFFIS annual ledger irregular; extreme heat (C3S) and drought (EDO) are candidates (observation started 2026-09-04). Last updated 2026-09-20 20:04 JST. Definition: docs/指標定義_EU_気候災害.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/disaster_eu.json"
+      "a": "USGS feed daily at 20:00 JST; EFFIS annual ledger irregular; extreme heat (C3S) and drought (EDO) are candidates (observation started 2026-09-04). Last updated 2026-09-21 20:04 JST. Definition: docs/指標定義_EU_気候災害.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/disaster_eu.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -531,13 +538,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/eu/disaster/",
     "api": "https://ai-lifeline.org/eu/api/disaster_eu.json",
-    "last_confirmed": "2026-09-19",
-    "next_expected": "2026-09-20",
-    "generated": "2026-09-20 20:04",
+    "last_confirmed": "2026-09-20",
+    "next_expected": "2026-09-21",
+    "generated": "2026-09-21 20:04",
     "observation_start": "2026-09-04",
     "series_count": 2,
     "series_not_yet_measured": 0,
-    "title_short": "M5+ quakes 0 (final 9/19)",
+    "title_short": "M5+ quakes 0 (final 9/20)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
