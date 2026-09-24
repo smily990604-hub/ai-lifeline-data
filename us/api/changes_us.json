@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-09-23",
+  "generated": "2026-09-24",
   "observation": "Today's changes - day-over-day differences in this edition's own observations (no external news). A day with no change is recorded as no_change.",
   "ledger_policy": "The ledger (ledger.jsonl) is append-only. A re-run on the same day never deletes earlier rows; it appends a new revision, and the display uses only the latest revision of each day.",
   "kinds": {
@@ -33,7 +33,8 @@
     "2026-09-20": 1,
     "2026-09-21": 1,
     "2026-09-22": 1,
-    "2026-09-23": 1
+    "2026-09-23": 1,
+    "2026-09-24": 1
   },
   "corrections": [
     {
@@ -59,166 +60,326 @@
   ],
   "today": [
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "power",
       "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 12,252,519 MWh (2026-09-22)",
-      "detail": "Previous 12,605,299 MWh (2026-09-21) (-352780 vs 2026-09-21) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "label": "US Lower 48 electricity demand (daily total): 12,006,917 MWh (2026-09-23)",
+      "detail": "Previous 12,252,519 MWh (2026-09-22) (-245602 vs 2026-09-22) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 15 documents (2026-09-23)",
-      "detail": "Previous 15 documents (2026-09-22) (0 vs 2026-09-22) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 17 documents (2026-09-24)",
+      "detail": "Previous 15 documents (2026-09-23) (+2 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 3 documents (2026-09-23)",
-      "detail": "Previous 3 documents (2026-09-22) (0 vs 2026-09-22) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Comment periods closing within 14 days: 3 documents (2026-09-24)",
+      "detail": "Previous 3 documents (2026-09-23) (0 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 26 documents (2026-09-23)",
-      "detail": "Previous 26 documents (2026-09-22) (0 vs 2026-09-22) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Matching documents published in the last 30 days: 28 documents (2026-09-24)",
+      "detail": "Previous 26 documents (2026-09-23) (+2 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.h100_ondemand_price_weekly",
+      "label": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market): 3.99 USD per GPU-hour (2026-09-24)",
+      "detail": "Previous 3.99 USD per GPU-hour (2026-09-17) (0 vs 2026-09-17) / final / Source: Lambda public pricing page (first-party weekly check)"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "gpu",
       "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-23 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-22 18:01) (0 vs 2026-09-22 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-24 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-23 18:01) (0 vs 2026-09-23 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "gpu",
       "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-23)",
-      "detail": "Previous 15 documents (2026-09-22) (0 vs 2026-09-22) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-24)",
+      "detail": "Previous 15 documents (2026-09-23) (0 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "datacenter",
       "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 6 (2026-09-21)",
-      "detail": "Previous 7 (2026-09-20) (-1 vs 2026-09-20) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 5 (2026-09-22)",
+      "detail": "Previous 6 (2026-09-21) (-1 vs 2026-09-21) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "detail": "163 (final) -> 160 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "fiscal",
       "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 985,932 (2026-09-21)",
-      "detail": "Previous 972,675 (2026-09-18) (+13257 vs 2026-09-18) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+      "label": "Treasury General Account opening balance (millions of USD, daily): 1,004,391 (2026-09-22)",
+      "detail": "Previous 985,932 (2026-09-21) (+18459 vs 2026-09-21) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "fiscal",
       "series": "fiscal.treasury_yield",
-      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.96 (2026-09-22)",
-      "detail": "Previous 4.96 (2026-09-21) (0 vs 2026-09-21) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 5.11 (2026-09-23)",
+      "detail": "Previous 4.96 (2026-09-22) (+0.15 vs 2026-09-22) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-22)",
-      "detail": "Previous 0 (2026-09-21) (0 vs 2026-09-21) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
-    },
-    {
-      "date": "2026-09-23",
-      "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.extreme_heat",
-      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-09-22)",
-      "detail": "Previous 1 (2026-09-21) (-1 vs 2026-09-21) / final / Source: NOAA National Weather Service alerts API"
-    },
-    {
-      "date": "2026-09-23",
-      "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 3 (2026-09-22)",
-      "detail": "Previous 3 (2026-09-21) (0 vs 2026-09-21) / final / Source: NOAA National Hurricane Center"
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 2 (2026-09-23)",
+      "detail": "Previous 3 (2026-09-22) (-1 vs 2026-09-22) / final / Source: NOAA National Hurricane Center"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-23)",
+      "detail": "Previous 0 (2026-09-22) (0 vs 2026-09-22) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-09-23)",
+      "detail": "Previous 0 (2026-09-22) (0 vs 2026-09-22) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "market",
       "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-23)",
-      "detail": "Previous 0 count (2026-09-22) (0 vs 2026-09-22) / provisional / Source: AI Lifeline first-party observation"
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-24)",
+      "detail": "Previous 0 count (2026-09-23) (0 vs 2026-09-23) / provisional / Source: AI Lifeline first-party observation"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "ai_readers",
       "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 88 requests (2026-09-22)",
-      "detail": "Previous 79 requests (2026-09-21) (+9 vs 2026-09-21) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 99 requests (2026-09-23)",
+      "detail": "Previous 88 requests (2026-09-22) (+11 vs 2026-09-22) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     }
   ],
   "recent": [
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "ai_readers",
       "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 88 requests (2026-09-22)",
-      "detail": "Previous 79 requests (2026-09-21) (+9 vs 2026-09-21) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 99 requests (2026-09-23)",
+      "detail": "Previous 88 requests (2026-09-22) (+11 vs 2026-09-22) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "revision": 1,
-      "recorded_at": "2026-09-23 18:01:37",
+      "recorded_at": "2026-09-24 18:01:59",
       "kind": "routine",
       "chapter": "power",
       "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 12,252,519 MWh (2026-09-22)",
-      "detail": "Previous 12,605,299 MWh (2026-09-21) (-352780 vs 2026-09-21) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "label": "US Lower 48 electricity demand (daily total): 12,006,917 MWh (2026-09-23)",
+      "detail": "Previous 12,252,519 MWh (2026-09-22) (-245602 vs 2026-09-22) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 17 documents (2026-09-24)",
+      "detail": "Previous 15 documents (2026-09-23) (+2 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.closing_within_14_days",
+      "label": "Comment periods closing within 14 days: 3 documents (2026-09-24)",
+      "detail": "Previous 3 documents (2026-09-23) (0 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Matching documents published in the last 30 days: 28 documents (2026-09-24)",
+      "detail": "Previous 26 documents (2026-09-23) (+2 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.h100_ondemand_price_weekly",
+      "label": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market): 3.99 USD per GPU-hour (2026-09-24)",
+      "detail": "Previous 3.99 USD per GPU-hour (2026-09-17) (0 vs 2026-09-17) / final / Source: Lambda public pricing page (first-party weekly check)"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-24 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-23 18:01) (0 vs 2026-09-23 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-24)",
+      "detail": "Previous 15 documents (2026-09-23) (0 vs 2026-09-23) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-24)",
+      "detail": "Previous 0 count (2026-09-23) (0 vs 2026-09-23) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "detail": "163 (final) -> 160 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 1,004,391 (2026-09-22)",
+      "detail": "Previous 985,932 (2026-09-21) (+18459 vs 2026-09-21) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 5.11 (2026-09-23)",
+      "detail": "Previous 4.96 (2026-09-22) (+0.15 vs 2026-09-22) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 2 (2026-09-23)",
+      "detail": "Previous 3 (2026-09-22) (-1 vs 2026-09-22) / final / Source: NOAA National Hurricane Center"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-23)",
+      "detail": "Previous 0 (2026-09-22) (0 vs 2026-09-22) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-09-23)",
+      "detail": "Previous 0 (2026-09-22) (0 vs 2026-09-22) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-09-24",
+      "revision": 1,
+      "recorded_at": "2026-09-24 18:01:59",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 5 (2026-09-22)",
+      "detail": "Previous 6 (2026-09-21) (-1 vs 2026-09-21) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-23",
@@ -275,20 +436,20 @@
       "revision": 1,
       "recorded_at": "2026-09-23 18:01:37",
       "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-23)",
-      "detail": "Previous 0 count (2026-09-22) (0 vs 2026-09-22) / provisional / Source: AI Lifeline first-party observation"
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 6 (2026-09-21)",
+      "detail": "Previous 7 (2026-09-20) (-1 vs 2026-09-20) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-23",
       "revision": 1,
       "recorded_at": "2026-09-23 18:01:37",
       "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 985,932 (2026-09-21)",
-      "detail": "Previous 972,675 (2026-09-18) (+13257 vs 2026-09-18) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "US Lower 48 electricity demand (daily total): 12,252,519 MWh (2026-09-22)",
+      "detail": "Previous 12,605,299 MWh (2026-09-21) (-352780 vs 2026-09-21) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-09-23",
@@ -335,10 +496,30 @@
       "revision": 1,
       "recorded_at": "2026-09-23 18:01:37",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 6 (2026-09-21)",
-      "detail": "Previous 7 (2026-09-20) (-1 vs 2026-09-20) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-23)",
+      "detail": "Previous 0 count (2026-09-22) (0 vs 2026-09-22) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-23",
+      "revision": 1,
+      "recorded_at": "2026-09-23 18:01:37",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 88 requests (2026-09-22)",
+      "detail": "Previous 79 requests (2026-09-21) (+9 vs 2026-09-21) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-23",
+      "revision": 1,
+      "recorded_at": "2026-09-23 18:01:37",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 985,932 (2026-09-21)",
+      "detail": "Previous 972,675 (2026-09-18) (+13257 vs 2026-09-18) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
       "date": "2026-09-22",
@@ -349,6 +530,16 @@
       "series": "power.us48_demand_mwh",
       "label": "US Lower 48 electricity demand (daily total): 12,605,299 MWh (2026-09-21)",
       "detail": "Previous 12,325,462 MWh (2026-09-20) (+279837 vs 2026-09-20) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+    },
+    {
+      "date": "2026-09-22",
+      "revision": 1,
+      "recorded_at": "2026-09-22 18:01:33",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 15 documents (2026-09-22)",
+      "detail": "Previous 17 documents (2026-09-21) (-2 vs 2026-09-21) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-22",
@@ -405,16 +596,6 @@
       "revision": 1,
       "recorded_at": "2026-09-22 18:01:33",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 15 documents (2026-09-22)",
-      "detail": "Previous 17 documents (2026-09-21) (-2 vs 2026-09-21) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-22",
-      "revision": 1,
-      "recorded_at": "2026-09-22 18:01:33",
-      "kind": "routine",
       "chapter": "fiscal",
       "series": "fiscal.treasury_yield",
       "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.96 (2026-09-21)",
@@ -465,20 +646,20 @@
       "revision": 1,
       "recorded_at": "2026-09-22 18:01:33",
       "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 79 requests (2026-09-21)",
-      "detail": "Previous 9 requests (2026-09-20) (+70 vs 2026-09-20) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-22)",
+      "detail": "Previous 0 count (2026-09-21) (0 vs 2026-09-21) / provisional / Source: AI Lifeline first-party observation"
     },
     {
       "date": "2026-09-22",
       "revision": 1,
       "recorded_at": "2026-09-22 18:01:33",
       "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-22)",
-      "detail": "Previous 0 count (2026-09-21) (0 vs 2026-09-21) / provisional / Source: AI Lifeline first-party observation"
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 79 requests (2026-09-21)",
+      "detail": "Previous 9 requests (2026-09-20) (+70 vs 2026-09-20) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
       "date": "2026-09-22",
@@ -495,10 +676,10 @@
       "revision": 1,
       "recorded_at": "2026-09-21 18:01:40",
       "kind": "routine",
-      "chapter": "power",
-      "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 12,325,462 MWh (2026-09-20)",
-      "detail": "Previous 12,468,233 MWh (2026-09-19) (-142771 vs 2026-09-19) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Matching documents published in the last 30 days: 25 documents (2026-09-21)",
+      "detail": "Previous 26 documents (2026-09-20) (-1 vs 2026-09-20) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-21",
@@ -525,10 +706,20 @@
       "revision": 1,
       "recorded_at": "2026-09-21 18:01:40",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 25 documents (2026-09-21)",
-      "detail": "Previous 26 documents (2026-09-20) (-1 vs 2026-09-20) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-21)",
+      "detail": "Previous 15 documents (2026-09-20) (0 vs 2026-09-20) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-21",
+      "revision": 1,
+      "recorded_at": "2026-09-21 18:01:40",
+      "kind": "routine",
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "US Lower 48 electricity demand (daily total): 12,325,462 MWh (2026-09-20)",
+      "detail": "Previous 12,468,233 MWh (2026-09-19) (-142771 vs 2026-09-19) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-09-21",
@@ -536,9 +727,29 @@
       "recorded_at": "2026-09-21 18:01:40",
       "kind": "routine",
       "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-21)",
-      "detail": "Previous 15 documents (2026-09-20) (0 vs 2026-09-20) / final / Source: Federal Register (federalregister.gov) API"
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-21 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-20 18:01) (0 vs 2026-09-20 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+    },
+    {
+      "date": "2026-09-21",
+      "revision": 1,
+      "recorded_at": "2026-09-21 18:01:40",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 9 requests (2026-09-20)",
+      "detail": "Previous 134 requests (2026-09-19) (-125 vs 2026-09-19) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-21",
+      "revision": 1,
+      "recorded_at": "2026-09-21 18:01:40",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-21)",
+      "detail": "Previous 0 count (2026-09-20) (0 vs 2026-09-20) / provisional / Source: AI Lifeline first-party observation"
     },
     {
       "date": "2026-09-21",
@@ -556,16 +767,6 @@
       "recorded_at": "2026-09-21 18:01:40",
       "kind": "routine",
       "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 1 (2026-09-20)",
-      "detail": "Previous 0 (2026-09-19) (+1 vs 2026-09-19) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
-    },
-    {
-      "date": "2026-09-21",
-      "revision": 1,
-      "recorded_at": "2026-09-21 18:01:40",
-      "kind": "routine",
-      "chapter": "disaster",
       "series": "disaster.hurricane",
       "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 2 (2026-09-20)",
       "detail": "Previous 0 (2026-09-19) (+2 vs 2026-09-19) / final / Source: NOAA National Hurricane Center"
@@ -576,49 +777,19 @@
       "recorded_at": "2026-09-21 18:01:40",
       "kind": "routine",
       "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 1 (2026-09-20)",
+      "detail": "Previous 0 (2026-09-19) (+1 vs 2026-09-19) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-21",
+      "revision": 1,
+      "recorded_at": "2026-09-21 18:01:40",
+      "kind": "routine",
+      "chapter": "disaster",
       "series": "disaster.extreme_heat",
       "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 4 (2026-09-20)",
       "detail": "Previous 12 (2026-09-19) (-8 vs 2026-09-19) / final / Source: NOAA National Weather Service alerts API"
-    },
-    {
-      "date": "2026-09-21",
-      "revision": 1,
-      "recorded_at": "2026-09-21 18:01:40",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-21)",
-      "detail": "Previous 0 count (2026-09-20) (0 vs 2026-09-20) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-21",
-      "revision": 1,
-      "recorded_at": "2026-09-21 18:01:40",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 9 requests (2026-09-20)",
-      "detail": "Previous 134 requests (2026-09-19) (-125 vs 2026-09-19) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-21",
-      "revision": 1,
-      "recorded_at": "2026-09-21 18:01:40",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-21 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-20 18:01) (0 vs 2026-09-20 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
-    },
-    {
-      "date": "2026-09-20",
-      "revision": 1,
-      "recorded_at": "2026-09-20 18:01:37",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-20 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-19 18:35) (0 vs 2026-09-19 18:35) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-09-20",
@@ -646,6 +817,16 @@
       "recorded_at": "2026-09-20 18:01:37",
       "kind": "routine",
       "chapter": "regulation",
+      "series": "regulation.closing_within_14_days",
+      "label": "Comment periods closing within 14 days: 4 documents (2026-09-20)",
+      "detail": "Previous 4 documents (2026-09-19) (0 vs 2026-09-19) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 18:01:37",
+      "kind": "routine",
+      "chapter": "regulation",
       "series": "regulation.documents_last_30_days",
       "label": "Matching documents published in the last 30 days: 26 documents (2026-09-20)",
       "detail": "Previous 29 documents (2026-09-19) (-3 vs 2026-09-19) / final / Source: Federal Register (federalregister.gov) API"
@@ -665,10 +846,10 @@
       "revision": 1,
       "recorded_at": "2026-09-20 18:01:37",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 4 documents (2026-09-20)",
-      "detail": "Previous 4 documents (2026-09-19) (0 vs 2026-09-19) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-20 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-19 18:35) (0 vs 2026-09-19 18:35) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-09-20",
@@ -705,16 +886,6 @@
       "revision": 1,
       "recorded_at": "2026-09-20 18:01:37",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 9 (2026-09-18)",
-      "detail": "Previous 8 (2026-09-17) (+1 vs 2026-09-17) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
-    },
-    {
-      "date": "2026-09-20",
-      "revision": 1,
-      "recorded_at": "2026-09-20 18:01:37",
-      "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
       "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-19)",
@@ -739,6 +910,16 @@
       "series": "ai_readers.week_verified",
       "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 134 requests (2026-09-19)",
       "detail": "Previous 123 requests (2026-09-18) (+11 vs 2026-09-18) / final / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-20",
+      "revision": 1,
+      "recorded_at": "2026-09-20 18:01:37",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 9 (2026-09-18)",
+      "detail": "Previous 8 (2026-09-17) (+1 vs 2026-09-17) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-19",
@@ -805,16 +986,6 @@
       "revision": 1,
       "recorded_at": "2026-09-19 18:35:52",
       "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-19)",
-      "detail": "Previous 0 count (2026-09-18) (0 vs 2026-09-18) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-19",
-      "revision": 1,
-      "recorded_at": "2026-09-19 18:35:52",
-      "kind": "routine",
       "chapter": "fiscal",
       "series": "fiscal.tga_balance",
       "label": "Treasury General Account opening balance (millions of USD, daily): 991,708 (2026-09-17)",
@@ -865,6 +1036,16 @@
       "revision": 1,
       "recorded_at": "2026-09-19 18:35:52",
       "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-19)",
+      "detail": "Previous 0 count (2026-09-18) (0 vs 2026-09-18) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-19",
+      "revision": 1,
+      "recorded_at": "2026-09-19 18:35:52",
+      "kind": "routine",
       "chapter": "ai_readers",
       "series": "ai_readers.week_verified",
       "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 123 requests (2026-09-18)",
@@ -899,6 +1080,16 @@
       "series": "regulation.open_comment_periods",
       "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 16 documents (2026-09-18)",
       "detail": "Previous 16 documents (2026-09-17) (0 vs 2026-09-17) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-18",
+      "revision": 1,
+      "recorded_at": "2026-09-18 18:01:39",
+      "kind": "routine",
+      "chapter": "regulation",
+      "series": "regulation.closing_within_14_days",
+      "label": "Comment periods closing within 14 days: 4 documents (2026-09-18)",
+      "detail": "Previous 4 documents (2026-09-17) (0 vs 2026-09-17) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-18",
@@ -955,10 +1146,10 @@
       "revision": 1,
       "recorded_at": "2026-09-18 18:01:39",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 4 documents (2026-09-18)",
-      "detail": "Previous 4 documents (2026-09-17) (0 vs 2026-09-17) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "fiscal",
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.94 (2026-09-17)",
+      "detail": "Previous 5.01 (2026-09-16) (-0.07 vs 2026-09-16) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
       "date": "2026-09-18",
@@ -969,16 +1160,6 @@
       "series": "fiscal.tga_balance",
       "label": "Treasury General Account opening balance (millions of USD, daily): 991,557 (2026-09-16)",
       "detail": "Previous 871,224 (2026-09-15) (+120333 vs 2026-09-15) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
-    },
-    {
-      "date": "2026-09-18",
-      "revision": 1,
-      "recorded_at": "2026-09-18 18:01:39",
-      "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.treasury_yield",
-      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.94 (2026-09-17)",
-      "detail": "Previous 5.01 (2026-09-16) (-0.07 vs 2026-09-16) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
       "date": "2026-09-18",
@@ -1055,6 +1236,46 @@
       "revision": 1,
       "recorded_at": "2026-09-17 18:01:29",
       "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 45 requests (2026-09-16)",
+      "detail": "Previous 35 requests (2026-09-15) (+10 vs 2026-09-15) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 18:01:29",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-17)",
+      "detail": "Previous 0 count (2026-09-16) (0 vs 2026-09-16) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 18:01:29",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 17 (2026-09-16)",
+      "detail": "Previous 21 (2026-09-15) (-4 vs 2026-09-15) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 18:01:29",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-09-16)",
+      "detail": "Previous 0 (2026-09-15) (0 vs 2026-09-15) / final / Source: NOAA National Hurricane Center"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 18:01:29",
+      "kind": "routine",
       "chapter": "power",
       "series": "power.us48_demand_mwh",
       "label": "US Lower 48 electricity demand (daily total): 13,489,761 MWh (2026-09-16)",
@@ -1085,16 +1306,6 @@
       "revision": 1,
       "recorded_at": "2026-09-17 18:01:29",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 29 documents (2026-09-17)",
-      "detail": "Previous 29 documents (2026-09-16) (0 vs 2026-09-16) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 18:01:29",
-      "kind": "routine",
       "chapter": "gpu",
       "series": "gpu.h100_ondemand_price_weekly",
       "label": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market): 3.99 USD per GPU-hour (2026-09-17)",
@@ -1115,20 +1326,20 @@
       "revision": 1,
       "recorded_at": "2026-09-17 18:01:29",
       "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-17)",
-      "detail": "Previous 15 documents (2026-09-16) (0 vs 2026-09-16) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Matching documents published in the last 30 days: 29 documents (2026-09-17)",
+      "detail": "Previous 29 documents (2026-09-16) (0 vs 2026-09-16) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-17",
       "revision": 1,
       "recorded_at": "2026-09-17 18:01:29",
       "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-16)",
-      "detail": "Previous 0 (2026-09-15) (0 vs 2026-09-15) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 7 (2026-09-15)",
+      "detail": "Previous 8 (2026-09-14) (-1 vs 2026-09-14) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-17",
@@ -1166,89 +1377,29 @@
       "recorded_at": "2026-09-17 18:01:29",
       "kind": "routine",
       "chapter": "disaster",
-      "series": "disaster.extreme_heat",
-      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 17 (2026-09-16)",
-      "detail": "Previous 21 (2026-09-15) (-4 vs 2026-09-15) / final / Source: NOAA National Weather Service alerts API"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 18:01:29",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-09-16)",
-      "detail": "Previous 0 (2026-09-15) (0 vs 2026-09-15) / final / Source: NOAA National Hurricane Center"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 18:01:29",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-17)",
-      "detail": "Previous 0 count (2026-09-16) (0 vs 2026-09-16) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 18:01:29",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 45 requests (2026-09-16)",
-      "detail": "Previous 35 requests (2026-09-15) (+10 vs 2026-09-15) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-17",
-      "revision": 1,
-      "recorded_at": "2026-09-17 18:01:29",
-      "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 7 (2026-09-15)",
-      "detail": "Previous 8 (2026-09-14) (-1 vs 2026-09-14) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 18:01:26",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 35 requests (2026-09-15)",
-      "detail": "Previous 22 requests (2026-09-14) (+13 vs 2026-09-14) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 18:01:26",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-16)",
-      "detail": "Previous 0 count (2026-09-15) (0 vs 2026-09-15) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 18:01:26",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-09-15)",
-      "detail": "Previous 1 (2026-09-14) (-1 vs 2026-09-14) / final / Source: NOAA National Hurricane Center"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 18:01:26",
-      "kind": "routine",
-      "chapter": "disaster",
       "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-15)",
-      "detail": "Previous 0 (2026-09-14) (0 vs 2026-09-14) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-16)",
+      "detail": "Previous 0 (2026-09-15) (0 vs 2026-09-15) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-17",
+      "revision": 1,
+      "recorded_at": "2026-09-17 18:01:29",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-17)",
+      "detail": "Previous 15 documents (2026-09-16) (0 vs 2026-09-16) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 18:01:26",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-16)",
+      "detail": "Previous 15 documents (2026-09-15) (0 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-16",
@@ -1276,9 +1427,9 @@
       "recorded_at": "2026-09-16 18:01:26",
       "kind": "routine",
       "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 29 documents (2026-09-16)",
-      "detail": "Previous 29 documents (2026-09-15) (0 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
+      "series": "regulation.closing_within_14_days",
+      "label": "Comment periods closing within 14 days: 5 documents (2026-09-16)",
+      "detail": "Previous 4 documents (2026-09-15) (+1 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-16",
@@ -1295,16 +1446,6 @@
       "revision": 1,
       "recorded_at": "2026-09-16 18:01:26",
       "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 5 documents (2026-09-16)",
-      "detail": "Previous 4 documents (2026-09-15) (+1 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-16",
-      "revision": 1,
-      "recorded_at": "2026-09-16 18:01:26",
-      "kind": "routine",
       "chapter": "datacenter",
       "series": "datacenter.cooling_degree_days",
       "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 8 (2026-09-14)",
@@ -1315,10 +1456,10 @@
       "revision": 1,
       "recorded_at": "2026-09-16 18:01:26",
       "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 822,200 (2026-09-14)",
-      "detail": "Previous 818,110 (2026-09-11) (+4090 vs 2026-09-11) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Matching documents published in the last 30 days: 29 documents (2026-09-16)",
+      "detail": "Previous 29 documents (2026-09-15) (0 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-16",
@@ -1355,20 +1496,50 @@
       "revision": 1,
       "recorded_at": "2026-09-16 18:01:26",
       "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-16)",
-      "detail": "Previous 15 documents (2026-09-15) (0 vs 2026-09-15) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-09-15)",
+      "detail": "Previous 1 (2026-09-14) (-1 vs 2026-09-14) / final / Source: NOAA National Hurricane Center"
     },
     {
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "revision": 1,
-      "recorded_at": "2026-09-15 18:01:39",
+      "recorded_at": "2026-09-16 18:01:26",
       "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-15)",
-      "detail": "Previous 15 documents (2026-09-14) (0 vs 2026-09-14) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-15)",
+      "detail": "Previous 0 (2026-09-14) (0 vs 2026-09-14) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 18:01:26",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-16)",
+      "detail": "Previous 0 count (2026-09-15) (0 vs 2026-09-15) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 18:01:26",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 35 requests (2026-09-15)",
+      "detail": "Previous 22 requests (2026-09-14) (+13 vs 2026-09-14) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-16",
+      "revision": 1,
+      "recorded_at": "2026-09-16 18:01:26",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 822,200 (2026-09-14)",
+      "detail": "Previous 818,110 (2026-09-11) (+4090 vs 2026-09-11) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
       "date": "2026-09-15",
@@ -1415,10 +1586,10 @@
       "revision": 1,
       "recorded_at": "2026-09-15 18:01:39",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 10 (2026-09-13)",
-      "detail": "Previous 8 (2026-09-12) (+2 vs 2026-09-12) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-15 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-14 18:01) (0 vs 2026-09-14 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-09-15",
@@ -1426,9 +1597,19 @@
       "recorded_at": "2026-09-15 18:01:39",
       "kind": "routine",
       "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-15 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-14 18:01) (0 vs 2026-09-14 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-15)",
+      "detail": "Previous 15 documents (2026-09-14) (0 vs 2026-09-14) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-15",
+      "revision": 1,
+      "recorded_at": "2026-09-15 18:01:39",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 10 (2026-09-13)",
+      "detail": "Previous 8 (2026-09-12) (+2 vs 2026-09-12) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-15",
@@ -1449,16 +1630,6 @@
       "series": "fiscal.ai_grants_open",
       "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
       "detail": "173 (final) -> 171 (final) on refetch / Source: Grants.gov search API"
-    },
-    {
-      "date": "2026-09-15",
-      "revision": 1,
-      "recorded_at": "2026-09-15 18:01:39",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 22 requests (2026-09-14)",
-      "detail": "Previous 12 requests (2026-09-13) (+10 vs 2026-09-13) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
       "date": "2026-09-15",
@@ -1499,6 +1670,16 @@
       "series": "market.support_count",
       "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-15)",
       "detail": "Previous 0 count (2026-09-14) (0 vs 2026-09-14) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-15",
+      "revision": 1,
+      "recorded_at": "2026-09-15 18:01:39",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 22 requests (2026-09-14)",
+      "detail": "Previous 12 requests (2026-09-13) (+10 vs 2026-09-13) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
     },
     {
       "date": "2026-09-15",
@@ -1556,19 +1737,19 @@
       "recorded_at": "2026-09-14 18:01:35",
       "kind": "routine",
       "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-14)",
-      "detail": "Previous 15 documents (2026-09-13) (0 vs 2026-09-13) / final / Source: Federal Register (federalregister.gov) API"
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-14 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-13 18:01) (0 vs 2026-09-13 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-09-14",
       "revision": 1,
       "recorded_at": "2026-09-14 18:01:35",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 8 (2026-09-12)",
-      "detail": "Previous 10 (2026-09-11) (-2 vs 2026-09-11) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-14)",
+      "detail": "Previous 15 documents (2026-09-13) (0 vs 2026-09-13) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-14",
@@ -1579,6 +1760,36 @@
       "series": "disaster.earthquake",
       "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-13)",
       "detail": "Previous 0 (2026-09-12) (0 vs 2026-09-12) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-09-14",
+      "revision": 1,
+      "recorded_at": "2026-09-14 18:01:35",
+      "kind": "routine",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 12 requests (2026-09-13)",
+      "detail": "Previous 135 requests (2026-09-12) (-123 vs 2026-09-12) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+    },
+    {
+      "date": "2026-09-14",
+      "revision": 1,
+      "recorded_at": "2026-09-14 18:01:35",
+      "kind": "routine",
+      "chapter": "market",
+      "series": "market.support_count",
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-14)",
+      "detail": "Previous 0 count (2026-09-13) (0 vs 2026-09-13) / provisional / Source: AI Lifeline first-party observation"
+    },
+    {
+      "date": "2026-09-14",
+      "revision": 1,
+      "recorded_at": "2026-09-14 18:01:35",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 8 (2026-09-12)",
+      "detail": "Previous 10 (2026-09-11) (-2 vs 2026-09-11) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-14",
@@ -1601,36 +1812,6 @@
       "detail": "Previous 1 (2026-09-12) (0 vs 2026-09-12) / final / Source: NOAA National Hurricane Center"
     },
     {
-      "date": "2026-09-14",
-      "revision": 1,
-      "recorded_at": "2026-09-14 18:01:35",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-14)",
-      "detail": "Previous 0 count (2026-09-13) (0 vs 2026-09-13) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-14",
-      "revision": 1,
-      "recorded_at": "2026-09-14 18:01:35",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 12 requests (2026-09-13)",
-      "detail": "Previous 135 requests (2026-09-12) (-123 vs 2026-09-12) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-14",
-      "revision": 1,
-      "recorded_at": "2026-09-14 18:01:35",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-14 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-13 18:01) (0 vs 2026-09-13 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
-    },
-    {
       "date": "2026-09-13",
       "revision": 1,
       "recorded_at": "2026-09-13 18:01:32",
@@ -1645,10 +1826,10 @@
       "revision": 1,
       "recorded_at": "2026-09-13 18:01:32",
       "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-13)",
-      "detail": "Previous 15 documents (2026-09-12) (0 vs 2026-09-12) / final / Source: Federal Register (federalregister.gov) API"
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 18 documents (2026-09-13)",
+      "detail": "Previous 18 documents (2026-09-12) (0 vs 2026-09-12) / final / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-09-13",
@@ -1665,40 +1846,30 @@
       "revision": 1,
       "recorded_at": "2026-09-13 18:01:32",
       "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-13)",
+      "detail": "Previous 15 documents (2026-09-12) (0 vs 2026-09-12) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-13",
+      "revision": 1,
+      "recorded_at": "2026-09-13 18:01:32",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 10 (2026-09-11)",
+      "detail": "Previous 11 (2026-09-10) (-1 vs 2026-09-10) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+    },
+    {
+      "date": "2026-09-13",
+      "revision": 1,
+      "recorded_at": "2026-09-13 18:01:32",
+      "kind": "routine",
       "chapter": "regulation",
       "series": "regulation.documents_last_30_days",
       "label": "Matching documents published in the last 30 days: 32 documents (2026-09-13)",
       "detail": "Previous 33 documents (2026-09-12) (-1 vs 2026-09-12) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-13",
-      "revision": 1,
-      "recorded_at": "2026-09-13 18:01:32",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-13 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-12 18:01) (0 vs 2026-09-12 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
-    },
-    {
-      "date": "2026-09-13",
-      "revision": 1,
-      "recorded_at": "2026-09-13 18:01:32",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 18 documents (2026-09-13)",
-      "detail": "Previous 18 documents (2026-09-12) (0 vs 2026-09-12) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-13",
-      "revision": 1,
-      "recorded_at": "2026-09-13 18:01:32",
-      "kind": "revision",
-      "chapter": "fiscal",
-      "series": "fiscal.ai_grants_open",
-      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
-      "detail": "175 (final) -> 173 (final) on refetch / Source: Grants.gov search API"
     },
     {
       "date": "2026-09-13",
@@ -1754,11 +1925,31 @@
       "date": "2026-09-13",
       "revision": 1,
       "recorded_at": "2026-09-13 18:01:32",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "detail": "175 (final) -> 173 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-09-13",
+      "revision": 1,
+      "recorded_at": "2026-09-13 18:01:32",
+      "kind": "routine",
+      "chapter": "gpu",
+      "series": "gpu.token_prices_tracked",
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-13 18:01)",
+      "detail": "Previous 4 USD per 1M tokens (2026-09-12 18:01) (0 vs 2026-09-12 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+    },
+    {
+      "date": "2026-09-12",
+      "revision": 1,
+      "recorded_at": "2026-09-12 18:01:24",
       "kind": "routine",
       "chapter": "datacenter",
       "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 10 (2026-09-11)",
-      "detail": "Previous 11 (2026-09-10) (-1 vs 2026-09-10) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 11 (2026-09-10)",
+      "detail": "Previous 11 (2026-09-09) (0 vs 2026-09-09) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-09-12",
@@ -1825,20 +2016,10 @@
       "revision": 1,
       "recorded_at": "2026-09-12 18:01:24",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 11 (2026-09-10)",
-      "detail": "Previous 11 (2026-09-09) (0 vs 2026-09-09) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
-    },
-    {
-      "date": "2026-09-12",
-      "revision": 1,
-      "recorded_at": "2026-09-12 18:01:24",
-      "kind": "routine",
       "chapter": "fiscal",
-      "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 843,705 (2026-09-10)",
-      "detail": "Previous 880,019 (2026-09-09) (-36314 vs 2026-09-09) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.96 (2026-09-11)",
+      "detail": "Previous 4.95 (2026-09-10) (+0.01 vs 2026-09-10) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
       "date": "2026-09-12",
@@ -1906,29 +2087,9 @@
       "recorded_at": "2026-09-12 18:01:24",
       "kind": "routine",
       "chapter": "fiscal",
-      "series": "fiscal.treasury_yield",
-      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.96 (2026-09-11)",
-      "detail": "Previous 4.95 (2026-09-10) (+0.01 vs 2026-09-10) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
-    },
-    {
-      "date": "2026-09-11",
-      "revision": 1,
-      "recorded_at": "2026-09-11 18:01:31",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-11)",
-      "detail": "Previous 15 documents (2026-09-10) (0 vs 2026-09-10) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-11",
-      "revision": 1,
-      "recorded_at": "2026-09-11 18:01:31",
-      "kind": "routine",
-      "chapter": "power",
-      "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 14,251,375 MWh (2026-09-10)",
-      "detail": "Previous 14,378,557 MWh (2026-09-09) (-127182 vs 2026-09-09) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 843,705 (2026-09-10)",
+      "detail": "Previous 880,019 (2026-09-09) (-36314 vs 2026-09-09) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
       "date": "2026-09-11",
@@ -1986,6 +2147,16 @@
       "recorded_at": "2026-09-11 18:01:31",
       "kind": "routine",
       "chapter": "gpu",
+      "series": "gpu.bis_advanced_computing_recent",
+      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-11)",
+      "detail": "Previous 15 documents (2026-09-10) (0 vs 2026-09-10) / final / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-09-11",
+      "revision": 1,
+      "recorded_at": "2026-09-11 18:01:31",
+      "kind": "routine",
+      "chapter": "gpu",
       "series": "gpu.token_prices_tracked",
       "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-11 18:01)",
       "detail": "Previous 4 USD per 1M tokens (2026-09-10 18:01) (0 vs 2026-09-10 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
@@ -1996,9 +2167,9 @@
       "recorded_at": "2026-09-11 18:01:31",
       "kind": "routine",
       "chapter": "fiscal",
-      "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 880,019 (2026-09-09)",
-      "detail": "Previous 888,923 (2026-09-08) (-8904 vs 2026-09-08) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.95 (2026-09-10)",
+      "detail": "Previous 4.83 (2026-09-09) (+0.12 vs 2026-09-09) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
       "date": "2026-09-11",
@@ -2016,9 +2187,9 @@
       "recorded_at": "2026-09-11 18:01:31",
       "kind": "routine",
       "chapter": "fiscal",
-      "series": "fiscal.treasury_yield",
-      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.95 (2026-09-10)",
-      "detail": "Previous 4.83 (2026-09-09) (+0.12 vs 2026-09-09) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 880,019 (2026-09-09)",
+      "detail": "Previous 888,923 (2026-09-08) (-8904 vs 2026-09-08) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
       "date": "2026-09-11",
@@ -2081,164 +2252,14 @@
       "detail": "Previous 9 (2026-09-08) (+2 vs 2026-09-08) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 17 documents (2026-09-10)",
-      "detail": "Previous 17 documents (2026-09-09) (0 vs 2026-09-09) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 5 documents (2026-09-10)",
-      "detail": "Previous 5 documents (2026-09-09) (0 vs 2026-09-09) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 36 documents (2026-09-10)",
-      "detail": "Previous 38 documents (2026-09-09) (-2 vs 2026-09-09) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.h100_ondemand_price_weekly",
-      "label": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market): 3.99 USD per GPU-hour (2026-09-10)",
-      "detail": "Previous 3.99 USD per GPU-hour (2026-09-03) (0 vs 2026-09-03) / final / Source: Lambda public pricing page (first-party weekly check)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-09-10)",
-      "detail": "Previous 15 documents (2026-09-09) (0 vs 2026-09-09) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-09-10 18:01)",
-      "detail": "Previous 4 USD per 1M tokens (2026-09-09 18:01) (0 vs 2026-09-09 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 9 (2026-09-08)",
-      "detail": "Previous 8 (2026-09-07) (+1 vs 2026-09-07) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 1 (2026-09-09)",
-      "detail": "Previous 2 (2026-09-08) (-1 vs 2026-09-08) / final / Source: NOAA National Hurricane Center"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.tga_balance",
-      "label": "Treasury General Account opening balance (millions of USD, daily): 888,923 (2026-09-08)",
-      "detail": "Previous 903,928 (2026-09-04) (-15005 vs 2026-09-04) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.treasury_yield",
-      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.83 (2026-09-09)",
-      "detail": "Previous 4.8 (2026-09-08) (+0.03 vs 2026-09-08) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-09-09)",
-      "detail": "Previous 0 (2026-09-08) (0 vs 2026-09-08) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.extreme_heat",
-      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 29 (2026-09-09)",
-      "detail": "Previous 30 (2026-09-08) (-1 vs 2026-09-08) / final / Source: NOAA National Weather Service alerts API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "market",
-      "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-09-10)",
-      "detail": "Previous 0 count (2026-09-09) (0 vs 2026-09-09) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 98 requests (2026-09-09)",
-      "detail": "Previous 69 requests (2026-09-08) (+29 vs 2026-09-08) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
-      "kind": "revision",
-      "chapter": "fiscal",
-      "series": "fiscal.ai_grants_open",
-      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
-      "detail": "181 (final) -> 179 (final) on refetch / Source: Grants.gov search API"
-    },
-    {
-      "date": "2026-09-10",
-      "revision": 1,
-      "recorded_at": "2026-09-10 18:01:32",
+      "recorded_at": "2026-09-11 18:01:31",
       "kind": "routine",
       "chapter": "power",
       "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 14,378,557 MWh (2026-09-09)",
-      "detail": "Previous 13,807,110 MWh (2026-09-08) (+571447 vs 2026-09-08) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "label": "US Lower 48 electricity demand (daily total): 14,251,375 MWh (2026-09-10)",
+      "detail": "Previous 14,378,557 MWh (2026-09-09) (-127182 vs 2026-09-09) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     }
   ]
 }

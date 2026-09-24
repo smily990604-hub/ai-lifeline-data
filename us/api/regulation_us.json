@@ -1,6 +1,38 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-23. Latest final value: open comment periods (query \"artificial intelligence\") 15 documents (2026-09-23). (Source: Federal Register API / updated 2026-09-23 18:01 JST)",
-  "cite_as": "AI Lifeline, Regulation (United States edition), data confirmed 2026-09-23, https://ai-lifeline.org/us/regulation/",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-24. Latest final value: open comment periods (query \"artificial intelligence\") 17 documents (2026-09-24). (Source: Federal Register API / updated 2026-09-24 18:01 JST)",
+  "cite_as": "AI Lifeline, Regulation (United States edition), data confirmed 2026-09-24, https://ai-lifeline.org/us/regulation/",
+  "can_say": [
+    "How many Federal Register documents contained the exact phrase \"artificial intelligence\" in the last 180 days, and how many were published in the last 30 days.",
+    "Which of those documents currently have an open comment period, how many close within 14 days, with the closing date and the official link.",
+    "The exact query that defines the count (term, lookback, source), so the count can be reproduced."
+  ],
+  "cannot_say": [
+    "Whether federal rulemaking is moving fast or slowly, or is favorable or unfavorable to AI (mechanical listing; no frozen criterion).",
+    "What a document requires or means (titles, dates and links only; content is not summarized).",
+    "Anything outside the Federal Register: state legislation, agency guidance, court decisions (linked elsewhere, not reproduced)."
+  ],
+  "generated": "2026-09-24 18:01",
+  "counts": {
+    "documents_last_30_days": 28,
+    "open_comment_periods": 17,
+    "closing_within_14_days": 3
+  },
+  "region": "us",
+  "sources": [
+    {
+      "license": "Public domain (U.S. federal government work). No API key required.",
+      "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "name": "Federal Register (federalregister.gov) API"
+    }
+  ],
+  "query_definition": {
+    "lookback_days": 180,
+    "method": "Federal Register full-text search (official API)",
+    "term": "\"artificial intelligence\"",
+    "caveat": "Coverage is defined by this exact query. A document that discusses AI without the literal phrase, or an AI-relevant docket outside the Federal Register, is out of scope."
+  },
+  "status_note": "Observing only: this is a mechanical listing, not an evaluation of any agency or proposal.",
+  "status": "observing",
   "open_comment_periods": [
     {
       "document_number": "2026-17530",
@@ -143,6 +175,26 @@
       "html_url": "https://www.federalregister.gov/documents/2026/09/21/2026-19271/data-intermediaries-and-approaches-to-strengthen-public-health-data-exchange"
     },
     {
+      "document_number": "2026-19535",
+      "title": "Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards",
+      "type": "Proposed Rule",
+      "agencies": "Health and Human Services Department; Centers for Medicare & Medicaid Services",
+      "publication_date": "2026-09-24",
+      "comments_close_on": "2026-11-23",
+      "closes_within_14_days": false,
+      "html_url": "https://www.federalregister.gov/documents/2026/09/24/2026-19535/request-for-information-medicare-part-d-reasonable-and-relevant-pharmacy-contracting-standards"
+    },
+    {
+      "document_number": "2026-19147",
+      "title": "Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
+      "type": "Notice",
+      "agencies": "Commerce Department; National Institute of Standards and Technology",
+      "publication_date": "2026-09-18",
+      "comments_close_on": "2026-11-30",
+      "closes_within_14_days": false,
+      "html_url": "https://www.federalregister.gov/documents/2026/09/18/2026-19147/request-for-information-rfi-on-future-needs-for-medical-metrology-and-standards-for-medical-imaging"
+    },
+    {
       "document_number": "2026-17926",
       "title": "Heightened Import Disclosures for Supply Chain Visibility",
       "type": "Proposed Rule",
@@ -153,55 +205,23 @@
       "html_url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility"
     }
   ],
-  "generated": "2026-09-23 18:01",
-  "status": "observing",
-  "query_definition": {
-    "lookback_days": 180,
-    "caveat": "Coverage is defined by this exact query. A document that discusses AI without the literal phrase, or an AI-relevant docket outside the Federal Register, is out of scope.",
-    "method": "Federal Register full-text search (official API)",
-    "term": "\"artificial intelligence\""
-  },
-  "counts": {
-    "closing_within_14_days": 3,
-    "documents_last_30_days": 26,
-    "open_comment_periods": 15
-  },
-  "data_status": "live",
-  "cannot_say": [
-    "Whether federal rulemaking is moving fast or slowly, or is favorable or unfavorable to AI (mechanical listing; no frozen criterion).",
-    "What a document requires or means (titles, dates and links only; content is not summarized).",
-    "Anything outside the Federal Register: state legislation, agency guidance, court decisions (linked elsewhere, not reproduced)."
-  ],
   "policy_note": "This site observes and lists consultations. It never submits comments to any authority, and listing a document is not an endorsement or criticism of it.",
-  "can_say": [
-    "How many Federal Register documents contained the exact phrase \"artificial intelligence\" in the last 180 days, and how many were published in the last 30 days.",
-    "Which of those documents currently have an open comment period, how many close within 14 days, with the closing date and the official link.",
-    "The exact query that defines the count (term, lookback, source), so the count can be reproduced."
-  ],
-  "region": "us",
-  "status_note": "Observing only: this is a mechanical listing, not an evaluation of any agency or proposal.",
-  "sources": [
-    {
-      "url": "https://www.federalregister.gov/developers/documentation/api/v1",
-      "name": "Federal Register (federalregister.gov) API",
-      "license": "Public domain (U.S. federal government work). No API key required."
-    }
-  ],
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-23. Latest final value: open comment periods (query \"artificial intelligence\") 15 documents (2026-09-23). (Source: Federal Register API / updated 2026-09-23 18:01 JST)",
-  "answer_line_date": "2026-09-23",
+  "data_status": "live",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-09-24. Latest final value: open comment periods (query \"artificial intelligence\") 17 documents (2026-09-24). (Source: Federal Register API / updated 2026-09-24 18:01 JST)",
+  "answer_line_date": "2026-09-24",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "open_comment_periods",
     "label": "open comment periods (query \"artificial intelligence\")",
-    "value": 15,
+    "value": 17,
     "unit": "documents",
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "threshold": null
   },
   "faq": [
     {
       "q": "How many U.S. federal comment periods on \"artificial intelligence\" are open?",
-      "a": "As of 2026-09-23, 15 Federal Register documents matching the exact full-text query \"artificial intelligence\" have open comment periods; 3 of them close within 14 days. 26 matching documents were published in the last 30 days. Source: Federal Register API (public domain)."
+      "a": "As of 2026-09-24, 17 Federal Register documents matching the exact full-text query \"artificial intelligence\" have open comment periods; 3 of them close within 14 days. 28 matching documents were published in the last 30 days. Source: Federal Register API (public domain)."
     },
     {
       "q": "How is the count defined?",
@@ -209,7 +229,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Federal Register API, retrieved daily at 18:00 JST (observation started 2026-08-29). This site never submits comments to any authority. Last updated 2026-09-23 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/regulation_us.json"
+      "a": "Federal Register API, retrieved daily at 18:00 JST (observation started 2026-08-29). This site never submits comments to any authority. Last updated 2026-09-24 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/regulation_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -219,13 +239,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/regulation/",
     "api": "https://ai-lifeline.org/us/api/regulation_us.json",
-    "last_confirmed": "2026-09-23",
-    "next_expected": "2026-09-24",
-    "generated": "2026-09-23 18:01",
+    "last_confirmed": "2026-09-24",
+    "next_expected": "2026-09-25",
+    "generated": "2026-09-24 18:01",
     "observation_start": "2026-08-29",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "open comment periods 15 documents (final 9/23)",
+    "title_short": "open comment periods 17 documents (final 9/24)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [

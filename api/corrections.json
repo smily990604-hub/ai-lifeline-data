@@ -1,5 +1,30 @@
 {
+  "generated_at": "2026-09-24 18:03",
+  "page": "/jp/unei/#corrections",
+  "kinds": {
+    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
+    "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
+    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
+    "definition_revision": "an indicator definition document changed version (old series kept alongside)"
+  },
+  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
+  "count": 96,
   "corrections": [
+    {
+      "id": "us-changes-2026-09-24-r1-318",
+      "date": "2026-09-24",
+      "region": "us",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "kind": "value_revision",
+      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "old": "163 (final)",
+      "new": "160 (final) on refetch",
+      "reason": "163 (final) -> 160 (final) on refetch / Source: Grants.gov search API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-24 18:01:59",
+      "ledger_ref": "data/US/changes/ledger.jsonl#318"
+    },
     {
       "id": "us-changes-2026-09-22-r1-288",
       "date": "2026-09-22",
@@ -706,6 +731,36 @@
       "ledger_ref": "data/EU/changes/ledger.jsonl#18"
     },
     {
+      "id": "us-changes-2026-09-04-r2-32",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "kind": "value_revision",
+      "what_changed": "Revised: Matching documents published in the last 30 days for 2026-09-04",
+      "old": "32 documents (final)",
+      "new": "33 documents (final) on refetch",
+      "reason": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 18:01:30",
+      "ledger_ref": "data/US/changes/ledger.jsonl#32"
+    },
+    {
+      "id": "us-changes-2026-09-04-r2-28",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 2",
+      "old": null,
+      "new": null,
+      "reason": "Revision 1 (20 items) is kept in the ledger; the page shows revision 2 (11 items)",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 18:01:30",
+      "ledger_ref": "data/US/changes/ledger.jsonl#28"
+    },
+    {
       "id": "us-changes-2026-09-04-r2-31",
       "date": "2026-09-04",
       "region": "us",
@@ -734,36 +789,6 @@
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 18:01:30",
       "ledger_ref": "data/US/changes/ledger.jsonl#35"
-    },
-    {
-      "id": "us-changes-2026-09-04-r2-28",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 2",
-      "old": null,
-      "new": null,
-      "reason": "Revision 1 (20 items) is kept in the ledger; the page shows revision 2 (11 items)",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#28"
-    },
-    {
-      "id": "us-changes-2026-09-04-r2-32",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "kind": "value_revision",
-      "what_changed": "Revised: Matching documents published in the last 30 days for 2026-09-04",
-      "old": "32 documents (final)",
-      "new": "33 documents (final) on refetch",
-      "reason": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#32"
     },
     {
       "id": "eu-changes-2026-09-04-r2-13",
@@ -1425,15 +1450,5 @@
       "recorded_at": "2026-08-23 10:52:07",
       "ledger_ref": "data/JP/changes/ledger.jsonl#2"
     }
-  ],
-  "page": "/jp/unei/#corrections",
-  "kinds": {
-    "definition_revision": "an indicator definition document changed version (old series kept alongside)",
-    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
-    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
-    "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source"
-  },
-  "generated_at": "2026-09-23 18:03",
-  "count": 95,
-  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers."
+  ]
 }
