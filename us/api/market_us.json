@@ -1,27 +1,128 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-24. Latest final value: support received by this site (cumulative) 0 (2026-09-23). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-24 18:01 JST)",
-  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-09-23, https://ai-lifeline.org/us/market/",
-  "candidates": [
-    {
-      "reason": "Endpoint not implemented (design pending approval).",
-      "name": "HTTP 402 attempts and successes (self-observation)",
-      "status": "candidate_unobserved"
-    }
-  ],
-  "region": "us",
-  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
-  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-25. Latest final value: support received by this site (cumulative) 0 (2026-09-24). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-25 18:01 JST)",
+  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-09-24, https://ai-lifeline.org/us/market/",
   "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
-  "generated": "2026-09-24 18:01",
-  "chapter": "Chapter 9 - Market participation",
-  "status": "observing",
   "series": {
+    "legal_status_ledger": {
+      "definition_note": "Sources are statutes and government documents only. State and dates only.",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "current_law",
+          "label": "No federal statute confers legal personality or independent contractual capacity on an AI system; contracts formed through electronic agents are attributed to the person on whose behalf the agent acts under the Uniform Electronic Transactions Act (state law, section 14) and the federal E-SIGN Act (15 U.S.C. 7001 et seq.)",
+          "note": "State as of the statute texts; E-SIGN via govinfo (U.S. Code). UETA adoption varies by state (uniform act text via the Uniform Law Commission).",
+          "source_url": "https://www.govinfo.gov/app/collection/uscode",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2025-07-18",
+          "kind": "current_law",
+          "label": "GENIUS Act (Public Law 119-27): regulates payment stablecoin issuers; it does not address AI agents as contracting parties",
+          "note": "govinfo statute text retrieved 2026-09-04.",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        }
+      ],
+      "source": {
+        "url": "",
+        "license": "per source",
+        "name": "Statutes and government documents (URL on each row)"
+      },
+      "checked": "2026-09-04",
+      "data_status": "live",
+      "unit": "entries",
+      "reference": true,
+      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents"
+    },
+    "regime_calendar": {
+      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
+      "entries": [
+        {
+          "date": "2025-07-18",
+          "kind": "enacted",
+          "label": "GENIUS Act enacted (Public Law 119-27, S. 1582, approved July 18, 2025)",
+          "note": "govinfo statute text: 'Approved July 18, 2025'",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-04-10",
+          "kind": "rulemaking",
+          "label": "FDIC proposed rule: GENIUS Act requirements and standards for FDIC-supervised permitted payment stablecoin issuers (FR doc 2026-06974; comments closed 2026-06-09)",
+          "note": "Federal Register API, full-text query \"GENIUS Act\"",
+          "source_url": "https://www.federalregister.gov/d/2026-06974",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-05-18",
+          "kind": "rulemaking",
+          "label": "NCUA proposed rule: implementing the GENIUS Act for the issuance of stablecoins (FR doc 2026-09915; comments closed 2026-07-17)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-09915",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-06-22",
+          "kind": "rulemaking",
+          "label": "FinCEN proposed rule: permitted payment stablecoin issuer customer identification program (FR doc 2026-12460; comments closed 2026-08-21)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-12460",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-06-24",
+          "kind": "rulemaking",
+          "label": "OCC proposed rule: permitted payment stablecoin issuer AML/CFT and sanctions (FR doc 2026-12692; comments closed 2026-07-24)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-12692",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2026-08-18",
+          "kind": "rulemaking",
+          "label": "Treasury proposed rule: GENIUS Act regulations on payment stablecoin issuance, offer, and sale (FR doc 2026-16796; comments close 2026-10-19)",
+          "note": "Federal Register API",
+          "source_url": "https://www.federalregister.gov/d/2026-16796",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "",
+          "kind": "not_yet_scheduled",
+          "label": "Final regulations by the primary Federal payment stablecoin regulators",
+          "note": "No final rule found in the Federal Register as of 2026-09-04 (query \"GENIUS Act\", type Rule)",
+          "source_url": "https://www.federalregister.gov/documents/search?conditions%5Bterm%5D=%22GENIUS+Act%22",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "",
+          "kind": "not_yet_scheduled",
+          "label": "Effective date of the Act: the earlier of 18 months after enactment or 120 days after the primary Federal payment stablecoin regulators issue final regulations (statute text)",
+          "note": "govinfo statute text (effective date clause)",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        }
+      ],
+      "source": {
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+        "license": "Public domain (U.S. federal government work)",
+        "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)"
+      },
+      "checked": "2026-09-04",
+      "data_status": "live",
+      "unit": "stages",
+      "reference": false,
+      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date"
+    },
     "support_count": {
       "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
-      "unit": "count",
-      "data_status": "live",
       "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
-      "definition_note": "Daily snapshot of the count in data/support/count.json (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
+      "source": {
+        "url": "https://ai-lifeline.org/us/support/",
+        "license": "First-party observation (this site's own records)",
+        "name": "AI Lifeline first-party observation"
+      },
+      "data_status": "live",
+      "unit": "count",
       "daily": [
         {
           "date": "2026-09-03",
@@ -196,33 +297,38 @@
           "value": 0,
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
-          "value_status": "provisional",
+          "value_status": "final",
           "fetched_at": "2026-09-24 18:01"
+        },
+        {
+          "date": "2026-09-25",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-09-25 18:00"
         }
       ],
-      "source": {
-        "url": "https://ai-lifeline.org/us/support/",
-        "name": "AI Lifeline first-party observation",
-        "license": "First-party observation (this site's own records)"
-      },
-      "update_frequency": "daily"
+      "update_frequency": "daily",
+      "definition_note": "Daily snapshot of the count in data/support/count.json (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support."
     },
     "http402_attempts": {
       "name": "HTTP 402 (payment required) responses attempted per day",
-      "unit": "count",
       "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
-      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment.",
+      "unit": "count",
       "daily": [],
-      "update_frequency": "daily"
+      "update_frequency": "daily",
+      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment."
+    },
+    "http402_success": {
+      "unit": "count",
+      "data_status": "not_yet_measured (endpoint not implemented)",
+      "name": "Payments completed after an HTTP 402 response, per day",
+      "update_frequency": "daily",
+      "daily": []
     },
     "payment_rails": {
-      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
-      "unit": "rails",
-      "data_status": "live",
-      "unverified_rows": 6,
       "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
-      "reference": false,
-      "checked": "2026-09-04",
       "entries": [
         {
           "date": "2026-09-04",
@@ -285,150 +391,52 @@
           "observation_type": "official_docs"
         }
       ],
+      "unverified_rows": 6,
       "source": {
         "url": "https://ai-lifeline.org/us/market/",
-        "name": "AI Lifeline first-party ledger of official provider documentation",
-        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation"
-      }
-    },
-    "regime_calendar": {
-      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
-      "unit": "stages",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation",
+        "name": "AI Lifeline first-party ledger of official provider documentation"
+      },
+      "checked": "2026-09-04",
       "data_status": "live",
-      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
+      "unit": "rails",
       "reference": false,
-      "checked": "2026-09-04",
-      "entries": [
-        {
-          "date": "2025-07-18",
-          "kind": "enacted",
-          "label": "GENIUS Act enacted (Public Law 119-27, S. 1582, approved July 18, 2025)",
-          "note": "govinfo statute text: 'Approved July 18, 2025'",
-          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2026-04-10",
-          "kind": "rulemaking",
-          "label": "FDIC proposed rule: GENIUS Act requirements and standards for FDIC-supervised permitted payment stablecoin issuers (FR doc 2026-06974; comments closed 2026-06-09)",
-          "note": "Federal Register API, full-text query \"GENIUS Act\"",
-          "source_url": "https://www.federalregister.gov/d/2026-06974",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2026-05-18",
-          "kind": "rulemaking",
-          "label": "NCUA proposed rule: implementing the GENIUS Act for the issuance of stablecoins (FR doc 2026-09915; comments closed 2026-07-17)",
-          "note": "Federal Register API",
-          "source_url": "https://www.federalregister.gov/d/2026-09915",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2026-06-22",
-          "kind": "rulemaking",
-          "label": "FinCEN proposed rule: permitted payment stablecoin issuer customer identification program (FR doc 2026-12460; comments closed 2026-08-21)",
-          "note": "Federal Register API",
-          "source_url": "https://www.federalregister.gov/d/2026-12460",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2026-06-24",
-          "kind": "rulemaking",
-          "label": "OCC proposed rule: permitted payment stablecoin issuer AML/CFT and sanctions (FR doc 2026-12692; comments closed 2026-07-24)",
-          "note": "Federal Register API",
-          "source_url": "https://www.federalregister.gov/d/2026-12692",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2026-08-18",
-          "kind": "rulemaking",
-          "label": "Treasury proposed rule: GENIUS Act regulations on payment stablecoin issuance, offer, and sale (FR doc 2026-16796; comments close 2026-10-19)",
-          "note": "Federal Register API",
-          "source_url": "https://www.federalregister.gov/d/2026-16796",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "",
-          "kind": "not_yet_scheduled",
-          "label": "Final regulations by the primary Federal payment stablecoin regulators",
-          "note": "No final rule found in the Federal Register as of 2026-09-04 (query \"GENIUS Act\", type Rule)",
-          "source_url": "https://www.federalregister.gov/documents/search?conditions%5Bterm%5D=%22GENIUS+Act%22",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "",
-          "kind": "not_yet_scheduled",
-          "label": "Effective date of the Act: the earlier of 18 months after enactment or 120 days after the primary Federal payment stablecoin regulators issue final regulations (statute text)",
-          "note": "govinfo statute text (effective date clause)",
-          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-          "verified_on": "2026-09-04"
-        }
-      ],
-      "source": {
-        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-        "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
-        "license": "Public domain (U.S. federal government work)"
-      }
-    },
-    "legal_status_ledger": {
-      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
-      "unit": "entries",
-      "data_status": "live",
-      "definition_note": "Sources are statutes and government documents only. State and dates only.",
-      "reference": true,
-      "checked": "2026-09-04",
-      "entries": [
-        {
-          "date": "2026-09-04",
-          "kind": "current_law",
-          "label": "No federal statute confers legal personality or independent contractual capacity on an AI system; contracts formed through electronic agents are attributed to the person on whose behalf the agent acts under the Uniform Electronic Transactions Act (state law, section 14) and the federal E-SIGN Act (15 U.S.C. 7001 et seq.)",
-          "note": "State as of the statute texts; E-SIGN via govinfo (U.S. Code). UETA adoption varies by state (uniform act text via the Uniform Law Commission).",
-          "source_url": "https://www.govinfo.gov/app/collection/uscode",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2025-07-18",
-          "kind": "current_law",
-          "label": "GENIUS Act (Public Law 119-27): regulates payment stablecoin issuers; it does not address AI agents as contracting parties",
-          "note": "govinfo statute text retrieved 2026-09-04.",
-          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-          "verified_on": "2026-09-04"
-        }
-      ],
-      "source": {
-        "url": "",
-        "name": "Statutes and government documents (URL on each row)",
-        "license": "per source"
-      }
-    },
-    "http402_success": {
-      "daily": [],
-      "update_frequency": "daily",
-      "name": "Payments completed after an HTTP 402 response, per day",
-      "unit": "count",
-      "data_status": "not_yet_measured (endpoint not implemented)"
+      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified"
     }
   },
+  "status": "observing",
+  "region": "us",
+  "candidates": [
+    {
+      "reason": "Endpoint not implemented (design pending approval).",
+      "name": "HTTP 402 attempts and successes (self-observation)",
+      "status": "candidate_unobserved"
+    }
+  ],
+  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
+  "generated": "2026-09-25 18:01",
   "can_say": [
     "The status in the United States of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
     "The enactment, rulemaking and effective dates of the GENIUS Act (Public Law 119-27) as fixed in the statute text and the Federal Register.",
     "How many times this site has actually received support (operator self-tests excluded; daily count)."
   ],
+  "chapter": "Chapter 9 - Market participation",
+  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
+  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
   "cannot_say": [
     "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
     "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
     "How pending deliberations on the contractual capacity and liability of AI agents will end (statutes and government documents; state and dates only)."
   ],
-  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-24. Latest final value: support received by this site (cumulative) 0 (2026-09-23). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-24 18:01 JST)",
-  "answer_line_date": "2026-09-23",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-09-25. Latest final value: support received by this site (cumulative) 0 (2026-09-24). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-09-25 18:01 JST)",
+  "answer_line_date": "2026-09-24",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "support_count",
     "label": "support received by this site (cumulative)",
     "value": 0,
     "unit": "",
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "threshold": null
   },
   "faq": [
@@ -438,7 +446,7 @@
     },
     {
       "q": "How much support has this site received?",
-      "a": "0 as the cumulative count on 2026-09-24 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+      "a": "0 as the cumulative count on 2026-09-25 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
     },
     {
       "q": "How many GENIUS Act stages are listed?",
@@ -446,7 +454,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-24 18:01 JST. Definition: docs/指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-09-25 18:01 JST. Definition: docs/指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -456,13 +464,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/market/",
     "api": "https://ai-lifeline.org/us/api/market_us.json",
-    "last_confirmed": "2026-09-24",
-    "next_expected": "2026-09-25",
-    "generated": "2026-09-24 18:01",
+    "last_confirmed": "2026-09-25",
+    "next_expected": "2026-09-26",
+    "generated": "2026-09-25 18:01",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,
-    "title_short": "support count 0 (final 9/23)",
+    "title_short": "support count 0 (final 9/24)",
     "generated_by": "scripts/citation/apply_citation_layer.py",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
