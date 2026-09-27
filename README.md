@@ -103,6 +103,6 @@ This repository is a **read-only mirror of the machine-readable files already pu
 - Nothing here is advice. Values marked `provisional` may change; check `api/health.json` for staleness and `api/corrections.json` for revisions before relying on a figure.
 
 ## Update cadence / 更新
-- Mirrored once a day after the site's daily batches (Japan 10:30–11:00 JST, US 18:00 JST, EU 20:00 JST); the push itself runs after the US batch. If the mirror lags, the site is canonical.
+- Mirrored once a day after the site's daily batches (Japan 10:30 JST, US 18:00 JST, EU 20:00 JST); the push itself runs after the US batch. If the mirror lags, the site is canonical.
 - Update frequency of the series themselves varies (daily / business-daily / weekly / monthly / quarterly / irregular ledgers); `api/health.json` states the frequency, the last confirmed date and the next expected update for every series, and `api/index.json` carries `last_confirmed` / `next_update` per chapter.
 - Issues and pull requests are not monitored here; see https://ai-lifeline.org/jp/tousho/ (letters) for contact.
