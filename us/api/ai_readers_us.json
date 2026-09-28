@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-09-27 18:01",
+  "generated": "2026-09-28 18:01",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -181,6 +181,34 @@
       "top_verified": {
         "name": "ShapBot",
         "requests": 62
+      }
+    },
+    {
+      "week": 6,
+      "from": "2026-09-27",
+      "to": "2026-10-03",
+      "observed_through": "2026-09-27",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 12,
+      "verified_days": 1,
+      "unverified_total": 25,
+      "named_total_reference": 37,
+      "self_excluded_total": 241,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 12
+      },
+      "breakdown_verified_other_detail": {
+        "ShapBot": 10,
+        "GoogleOther": 2
+      },
+      "top_verified": {
+        "name": "ShapBot",
+        "requests": 10
       }
     }
   ],
@@ -444,6 +472,15 @@
       "ai_named_reference": 20,
       "self_excluded": 267,
       "requests_in_scope": 377,
+      "verified_available": true
+    },
+    {
+      "date": "2026-09-27",
+      "ai_verified": 12,
+      "ai_unverified": 25,
+      "ai_named_reference": 37,
+      "self_excluded": 241,
+      "requests_in_scope": 310,
       "verified_available": true
     }
   ]
