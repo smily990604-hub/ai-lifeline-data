@@ -425,11 +425,45 @@
         "support": "/eu/support/"
       },
       "sitemap": "/eu/sitemap.xml"
+    },
+    "sg": {
+      "name": "Singapore",
+      "lang": "en",
+      "status": "beta",
+      "top": "/sg/",
+      "summary": "/sg/api/summary.json",
+      "chapters": {
+        "power": {
+          "page": "/sg/power/",
+          "api": "/sg/api/power_sg.json",
+          "note": "Monthly electricity generation (Singapore Department of Statistics, source: Energy Market Authority; data.gov.sg, Open Data Licence v1.0); monthly, several months lag",
+          "data_status": "live (edition Beta; observing)"
+        },
+        "water": {
+          "page": "/sg/water/",
+          "api": "/sg/api/water_sg.json",
+          "note": "Annual ledger: potable water sold, NEWater sold, listed water prices (PUB / SingStat via data.gov.sg, Open Data Licence v1.0); annual only",
+          "data_status": "live (edition Beta; observing; annual)"
+        },
+        "reference": {
+          "api": "/sg/api/reference_sg.json",
+          "note": "Population (annual, SingStat via data.gov.sg) - reference for scale, no chapter page",
+          "data_status": "reference"
+        }
+      },
+      "pages": {
+        "about": "/sg/about/",
+        "disclaimer": "/sg/disclaimer/",
+        "support": "/sg/support/"
+      },
+      "sitemap": "/sg/sitemap.xml",
+      "not_connected": {
+        "ema_half_hourly_system_demand_weekly": "EMA weekly PDF; website terms not machine-readable; written inquiry pending"
+      }
     }
   },
   "planned_countries": [
-    "eu",
-    "sg"
+    "eu"
   ],
   "features": {
     "semiconductor_supply_chain": {
