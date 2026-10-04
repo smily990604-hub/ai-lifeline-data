@@ -1,6 +1,52 @@
 {
-  "count": 118,
+  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
+  "generated_at": "2026-10-04 18:03",
   "corrections": [
+    {
+      "id": "us-changes-2026-10-04-r1-470",
+      "date": "2026-10-04",
+      "region": "us",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "kind": "value_revision",
+      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-10",
+      "old": "147 (final)",
+      "new": "143 (final) on refetch",
+      "reason": "147 (final) -> 143 (final) on refetch / Source: Grants.gov search API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-10-04 18:01:30",
+      "ledger_ref": "data/US/changes/ledger.jsonl#470"
+    },
+    {
+      "id": "jp-changes-2026-10-04-r2-203",
+      "date": "2026-10-04",
+      "region": "jp",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "同日の再実行により第2版へ訂正",
+      "old": null,
+      "new": null,
+      "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
+      "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
+      "recorded_at": "2026-10-04 10:32:27",
+      "ledger_ref": "data/JP/changes/ledger.jsonl#203"
+    },
+    {
+      "id": "jp-changes-2026-10-04-r1-202",
+      "date": "2026-10-04",
+      "region": "jp",
+      "chapter": "power",
+      "series": "power.reserve_national_min",
+      "kind": "value_revision",
+      "what_changed": "広域予備率の確定値への差し替え 1 日ぶん",
+      "old": "2026-10-03 11.88%",
+      "new": "11.21%",
+      "reason": "2026-10-03 11.88% → 11.21% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
+      "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
+      "recorded_at": "2026-10-04 10:30:54",
+      "ledger_ref": "data/JP/changes/ledger.jsonl#202"
+    },
     {
       "id": "us-changes-2026-10-03-r1-457",
       "date": "2026-10-03",
@@ -407,21 +453,6 @@
       "ledger_ref": "data/EU/changes/ledger.jsonl#116"
     },
     {
-      "id": "eu-changes-2026-09-19-r2-115",
-      "date": "2026-09-19",
-      "region": "eu",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "kind": "value_revision",
-      "what_changed": "Revised: AI readers (weekly) - AI requests to the European Union edition (/eu/ paths) for 2026-09-18",
-      "old": "40 requests (provisional)",
-      "new": "85 requests (provisional) on refetch",
-      "reason": "40 requests (provisional) -> 85 requests (provisional) on refetch / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-19 06:29:42",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#115"
-    },
-    {
       "id": "eu-changes-2026-09-19-r2-114",
       "date": "2026-09-19",
       "region": "eu",
@@ -435,6 +466,21 @@
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-19 06:29:42",
       "ledger_ref": "data/EU/changes/ledger.jsonl#114"
+    },
+    {
+      "id": "eu-changes-2026-09-19-r2-115",
+      "date": "2026-09-19",
+      "region": "eu",
+      "chapter": "ai_readers",
+      "series": "ai_readers.week_verified",
+      "kind": "value_revision",
+      "what_changed": "Revised: AI readers (weekly) - AI requests to the European Union edition (/eu/ paths) for 2026-09-18",
+      "old": "40 requests (provisional)",
+      "new": "85 requests (provisional) on refetch",
+      "reason": "40 requests (provisional) -> 85 requests (provisional) on refetch / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-19 06:29:42",
+      "ledger_ref": "data/EU/changes/ledger.jsonl#115"
     },
     {
       "id": "eu-changes-2026-09-19-r1-111",
@@ -617,21 +663,6 @@
       "ledger_ref": "data/JP/changes/ledger.jsonl#127"
     },
     {
-      "id": "eu-changes-2026-09-12-r8-73",
-      "date": "2026-09-12",
-      "region": "eu",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 8",
-      "old": null,
-      "new": null,
-      "reason": "Revision 7 (1 items) is kept in the ledger; the page shows revision 8 (1 items)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 20:03:50",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#73"
-    },
-    {
       "id": "eu-changes-2026-09-12-r8-74",
       "date": "2026-09-12",
       "region": "eu",
@@ -645,6 +676,21 @@
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 20:03:50",
       "ledger_ref": "data/EU/changes/ledger.jsonl#74"
+    },
+    {
+      "id": "eu-changes-2026-09-12-r8-73",
+      "date": "2026-09-12",
+      "region": "eu",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 8",
+      "old": null,
+      "new": null,
+      "reason": "Revision 7 (1 items) is kept in the ledger; the page shows revision 8 (1 items)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-12 20:03:50",
+      "ledger_ref": "data/EU/changes/ledger.jsonl#73"
     },
     {
       "id": "us-changes-2026-09-12-r1-148",
@@ -707,21 +753,6 @@
       "ledger_ref": "data/EU/changes/ledger.jsonl#72"
     },
     {
-      "id": "eu-changes-2026-09-12-r6-69",
-      "date": "2026-09-12",
-      "region": "eu",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 6",
-      "old": null,
-      "new": null,
-      "reason": "Revision 5 (1 items) is kept in the ledger; the page shows revision 6 (1 items)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 09:58:51",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#69"
-    },
-    {
       "id": "eu-changes-2026-09-12-r6-70",
       "date": "2026-09-12",
       "region": "eu",
@@ -737,19 +768,19 @@
       "ledger_ref": "data/EU/changes/ledger.jsonl#70"
     },
     {
-      "id": "eu-changes-2026-09-12-r5-68",
+      "id": "eu-changes-2026-09-12-r6-69",
       "date": "2026-09-12",
       "region": "eu",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "kind": "value_revision",
-      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-12",
-      "old": "5,719,154 MWh (provisional)",
-      "new": "5,719,153 MWh (provisional) on refetch",
-      "reason": "5,719,154 MWh (provisional) -> 5,719,153 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 6",
+      "old": null,
+      "new": null,
+      "reason": "Revision 5 (1 items) is kept in the ledger; the page shows revision 6 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 09:53:59",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#68"
+      "recorded_at": "2026-09-12 09:58:51",
+      "ledger_ref": "data/EU/changes/ledger.jsonl#69"
     },
     {
       "id": "eu-changes-2026-09-12-r5-67",
@@ -765,6 +796,21 @@
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:53:59",
       "ledger_ref": "data/EU/changes/ledger.jsonl#67"
+    },
+    {
+      "id": "eu-changes-2026-09-12-r5-68",
+      "date": "2026-09-12",
+      "region": "eu",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "kind": "value_revision",
+      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-12",
+      "old": "5,719,154 MWh (provisional)",
+      "new": "5,719,153 MWh (provisional) on refetch",
+      "reason": "5,719,154 MWh (provisional) -> 5,719,153 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-12 09:53:59",
+      "ledger_ref": "data/EU/changes/ledger.jsonl#68"
     },
     {
       "id": "eu-changes-2026-09-12-r4-66",
@@ -1772,13 +1818,12 @@
       "ledger_ref": "data/JP/changes/ledger.jsonl#2"
     }
   ],
-  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
   "page": "/jp/unei/#corrections",
-  "generated_at": "2026-10-03 18:03",
   "kinds": {
     "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
     "definition_revision": "an indicator definition document changed version (old series kept alongside)",
     "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
     "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source"
-  }
+  },
+  "count": 121
 }
