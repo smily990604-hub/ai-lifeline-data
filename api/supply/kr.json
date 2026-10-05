@@ -1,44 +1,44 @@
 {
-  "data_status": "not_yet_measured",
-  "generated": "2026-10-04 18:02",
-  "connection_status": {
-    "note": "awaiting datagokr_key in .secrets\\ai-lifeline-keys.json (publisher action)",
-    "api_key_installed": false
-  },
-  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
-  "country": "kr",
-  "series": {
-    "8486": {
-      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-10-04; skeleton only)",
-      "unit": "USD thousand",
-      "monthly": []
-    },
-    "8542": {
-      "name": "Electronic integrated circuits (HS 8542)",
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-10-04; skeleton only)",
-      "unit": "USD thousand",
-      "monthly": []
-    }
-  },
   "notes": [
     "Aggregates by HS heading only; no company, plant or partner-company data.",
     "HBM has no separate HS heading (memories fall under 8542.32); no \"HBM\" series is published."
   ],
-  "status": "observing",
+  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
+  "series": {
+    "8486": {
+      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
+      "monthly": [],
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-10-05; skeleton only)",
+      "unit": "USD thousand"
+    },
+    "8542": {
+      "name": "Electronic integrated circuits (HS 8542)",
+      "monthly": [],
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-10-05; skeleton only)",
+      "unit": "USD thousand"
+    }
+  },
   "query_definition": {
     "basis": "customs clearance (export FOB / import CIF)",
     "hs_codes": [
       "8486",
       "8542"
     ],
-    "unit": "USD thousand",
     "partner": "world",
-    "level": "HS4"
+    "level": "HS4",
+    "unit": "USD thousand"
   },
+  "status": "observing",
+  "data_status": "not_yet_measured",
+  "connection_status": {
+    "note": "awaiting datagokr_key in .secrets\\ai-lifeline-keys.json (publisher action)",
+    "api_key_installed": false
+  },
+  "generated": "2026-10-05 18:03",
+  "country": "kr",
   "source": {
     "license": "Korea Open Government License (공공누리) type 1 - attribution; no usage restriction stated on the dataset page (verified 2026-09-03)",
-    "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)",
-    "url": "https://www.data.go.kr/data/15101609/openapi.do"
+    "url": "https://www.data.go.kr/data/15101609/openapi.do",
+    "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)"
   }
 }
