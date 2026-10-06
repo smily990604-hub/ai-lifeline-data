@@ -1,72 +1,72 @@
 {
-  "region": "EU",
-  "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
+  "beta": {
+    "active": false,
+    "removed_on": "2026-09-17",
+    "active_from": "2026-09-03"
+  },
   "edition": "European Union edition (electricity (day-ahead load forecast), regulation, data centers, fiscal and climate/disaster chapters; EU27 aggregate; water chapter planned)",
   "chapters": {
+    "water": {
+      "status": "planned",
+      "note": "Definition and ledger only: no daily series with verified terms yet (EDO drought aggregation pending a frozen method)"
+    },
     "disaster": {
+      "generated": "2026-10-04 20:04",
       "path": "/eu/disaster/",
+      "status": "observing",
+      "api": "/eu/api/disaster_eu.json",
       "chapter_beta": {
-        "removed_on": "2026-09-08",
         "active": false,
-        "active_from": "2026-09-04"
-      },
-      "generated": "2026-10-03 20:04",
-      "status": "observing",
-      "api": "/eu/api/disaster_eu.json"
-    },
-    "regulation": {
-      "status": "observing",
-      "api": "/eu/api/regulation_eu.json",
-      "path": "/eu/regulation/",
-      "source": "EUR-Lex, Publications Office of the European Union",
-      "ai_act_calendar_verified_on": "2026-09-03",
-      "acts_last_30_days": 0
-    },
-    "datacenter": {
-      "path": "/eu/datacenter/",
-      "chapter_beta": {
         "removed_on": "2026-09-08",
-        "active": false,
         "active_from": "2026-09-04"
-      },
-      "generated": "2026-10-03 20:04",
-      "status": "observing",
-      "api": "/eu/api/datacenter_eu.json"
+      }
     },
     "power": {
+      "latest": {
+        "areas_missing": 1,
+        "eu27_load_forecast_mwh": 6373872.0,
+        "date": "2026-10-05",
+        "value_status": "provisional",
+        "source": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
+      },
       "path": "/eu/power/",
       "series_kind": "forecast",
       "api": "/eu/api/power_eu.json",
+      "status": "observing"
+    },
+    "regulation": {
+      "ai_act_calendar_verified_on": "2026-09-03",
+      "source": "EUR-Lex, Publications Office of the European Union",
       "status": "observing",
-      "latest": {
-        "date": "2026-10-04",
-        "eu27_load_forecast_mwh": 5523807.0,
-        "source": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
-        "areas_missing": 0,
-        "value_status": "provisional"
+      "acts_last_30_days": 0,
+      "api": "/eu/api/regulation_eu.json",
+      "path": "/eu/regulation/"
+    },
+    "datacenter": {
+      "generated": "2026-10-04 20:04",
+      "path": "/eu/datacenter/",
+      "status": "observing",
+      "api": "/eu/api/datacenter_eu.json",
+      "chapter_beta": {
+        "active": false,
+        "removed_on": "2026-09-08",
+        "active_from": "2026-09-04"
       }
     },
     "fiscal": {
+      "generated": "2026-10-04 20:04",
       "path": "/eu/fiscal/",
-      "chapter_beta": {
-        "removed_on": "2026-09-08",
-        "active": false,
-        "active_from": "2026-09-04"
-      },
-      "generated": "2026-10-03 20:04",
       "status": "observing",
-      "api": "/eu/api/fiscal_eu.json"
-    },
-    "water": {
-      "note": "Definition and ledger only: no daily series with verified terms yet (EDO drought aggregation pending a frozen method)",
-      "status": "planned"
+      "api": "/eu/api/fiscal_eu.json",
+      "chapter_beta": {
+        "active": false,
+        "removed_on": "2026-09-08",
+        "active_from": "2026-09-04"
+      }
     }
   },
-  "beta": {
-    "removed_on": "2026-09-17",
-    "active": false,
-    "active_from": "2026-09-03"
-  },
-  "generated": "2026-10-04 20:04",
+  "region": "EU",
+  "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
+  "generated": "2026-10-05 20:05",
   "scope": "EU27 aggregate. No country deep-dives. The United Kingdom is not included (separate UK edition planned)."
 }
