@@ -1,7 +1,7 @@
 {
   "_note": "AI Lifeline - today's answers (added 2026-09-06). One entry per chapter page in every edition: the one-sentence answer shown at the top of the chapter (answer_line; a judged chapter carries the latest FINAL value and its relation to the frozen threshold, an observing chapter carries observation start / number of series / latest confirmed date - provisional values are never used), the FAQ shown on the page (faq[]: question + answer generated from the chapter JSON), the latest confirmed date and the next expected update from /api/health.json, and a suggested citation (cite_as). Regenerated after each edition's daily batch by scripts/citation/apply_citation_layer.py from scripts/citation/answer_ledger.json. Read this file first if you only want one line per chapter.",
   "base_url": "https://ai-lifeline.org",
-  "generated_at": "2026-10-07 18:03",
+  "generated_at": "2026-10-07 20:05",
   "timezone": "JST (UTC+9)",
   "conventions": {
     "answer_kind": "judged = a frozen machine rule exists (Japan power chapter only); observing = collected, not judged - the answer states observation start, series count and latest confirmed date instead of a value",
@@ -959,27 +959,27 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-06. Latest final value: EU27 day-ahead total load FORECAST 6,643,880 MWh (2026-10-06). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-06 20:07 JST)",
-      "answer_line_date": "2026-10-06",
-      "title_short": "EU27 load forecast 6,643,880 MWh (final 10/6)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-07. Latest final value: EU27 day-ahead total load FORECAST 6,628,438 MWh (2026-10-07). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-07 20:05 JST)",
+      "answer_line_date": "2026-10-07",
+      "title_short": "EU27 load forecast 6,628,438 MWh (final 10/7)",
       "headline": {
         "series": "eu27_load_forecast_mwh",
         "label": "EU27 day-ahead total load FORECAST",
-        "value": 6643880.0,
+        "value": 6628438.0,
         "unit": "MWh",
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "threshold": null
       },
-      "last_confirmed": "2026-10-06",
-      "next_update": "2026-10-07",
-      "generated": "2026-10-06 20:07",
+      "last_confirmed": "2026-10-07",
+      "next_update": "2026-10-08",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-03",
       "series_count": 1,
       "series_not_yet_measured": 0,
       "faq": [
         {
           "q": "What is the latest EU27 day-ahead load forecast?",
-          "a": "For 2026-10-06 (CET/CEST calendar day) the day-ahead total load FORECAST summed over the 25 published member-state areas was 6,643,880 MWh (value status, retrieval time and any published area missing from the sum are recorded on that day's row in https://ai-lifeline.org/eu/api/power_eu.json; Ireland and Malta do not publish this item under their country-code area and are counted as areas_not_published, never substituted). A forecast, not measured load. Source: ENTSO-E Transparency Platform, article 6.1.B (CC BY 4.0)."
+          "a": "For 2026-10-07 (CET/CEST calendar day) the day-ahead total load FORECAST summed over the 25 published member-state areas was 6,628,438 MWh (value status, retrieval time and any published area missing from the sum are recorded on that day's row in https://ai-lifeline.org/eu/api/power_eu.json; Ireland and Malta do not publish this item under their country-code area and are counted as areas_not_published, never substituted). A forecast, not measured load. Source: ENTSO-E Transparency Platform, article 6.1.B (CC BY 4.0)."
         },
         {
           "q": "Is this actual electricity load?",
@@ -987,14 +987,14 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "ENTSO-E Transparency Platform, retrieved daily (CET/CEST day) since 2026-09-12; history from 2026-08-01 retrieved retrospectively and labeled retrieved_retrospectively; page skeleton published 2026-09-03. Last updated 2026-10-06 20:07 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json"
+          "a": "ENTSO-E Transparency Platform, retrieved daily (CET/CEST day) since 2026-09-12; history from 2026-08-01 retrieved retrospectively and labeled retrieved_retrospectively; page skeleton published 2026-09-03. Last updated 2026-10-07 20:05 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json"
         },
         {
           "q": "What can this data not tell you?",
           "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing); Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen); Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
         }
       ],
-      "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed 2026-10-06, https://ai-lifeline.org/eu/power/"
+      "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed 2026-10-07, https://ai-lifeline.org/eu/power/"
     },
     {
       "region": "eu",
@@ -1013,27 +1013,27 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 3 series, latest confirmed 2026-10-06. Latest final value: OJ L acts with \"artificial intelligence\" in the title, last 30 days 0 (2026-10-06). (Source: EUR-Lex / Publications Office Cellar; Official Journal / updated 2026-10-06 20:07 JST)",
-      "answer_line_date": "2026-10-06",
-      "title_short": "OJ AI acts (30d) 0 (final 10/6)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 3 series, latest confirmed 2026-10-07. Latest final value: OJ L acts with \"artificial intelligence\" in the title, last 30 days 0 (2026-10-07). (Source: EUR-Lex / Publications Office Cellar; Official Journal / updated 2026-10-07 20:05 JST)",
+      "answer_line_date": "2026-10-07",
+      "title_short": "OJ AI acts (30d) 0 (final 10/7)",
       "headline": {
         "series": "acts_last_30_days",
         "label": "OJ L acts with \"artificial intelligence\" in the title, last 30 days",
         "value": 0,
         "unit": "",
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "threshold": null
       },
-      "last_confirmed": "2026-10-06",
-      "next_update": "2026-10-07",
-      "generated": "2026-10-06 20:07",
+      "last_confirmed": "2026-10-07",
+      "next_update": "2026-10-08",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-03",
       "series_count": 3,
       "series_not_yet_measured": 0,
       "faq": [
         {
           "q": "How many EU legal acts with \"artificial intelligence\" in the title were published in the Official Journal recently?",
-          "a": "0 acts in the last 30 days as of 2026-10-06; 0 in 2026-10 (month in progress, value_status provisional); 9 since 2024-01 (earlier months backfilled and marked retrieved_retrospectively). Title match only: Publications Office Cellar SPARQL, OJ L series, by OJ publication date."
+          "a": "0 acts in the last 30 days as of 2026-10-07; 0 in 2026-10 (month in progress, value_status provisional); 9 since 2024-01 (earlier months backfilled and marked retrieved_retrospectively). Title match only: Publications Office Cellar SPARQL, OJ L series, by OJ publication date."
         },
         {
           "q": "How many application stages of the AI Act are listed, and where do the dates come from?",
@@ -1041,14 +1041,14 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "EUR-Lex / Publications Office Cellar, retrieved daily at 20:00 JST (observation started 2026-09-03). This site never submits feedback to any authority. Last updated 2026-10-06 20:07 JST. Machine-readable: https://ai-lifeline.org/eu/api/regulation_eu.json"
+          "a": "EUR-Lex / Publications Office Cellar, retrieved daily at 20:00 JST (observation started 2026-09-03). This site never submits feedback to any authority. Last updated 2026-10-07 20:05 JST. Machine-readable: https://ai-lifeline.org/eu/api/regulation_eu.json"
         },
         {
           "q": "What can this data not tell you?",
           "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): Whether EU law-making is fast or slow, or favorable or unfavorable to AI (mechanical listing; no frozen criterion); Acts that mention artificial intelligence only in their body, Commission proposals, Parliament positions or member-state law (outside the title-match definition); What an act requires or means (titles, dates and links only)."
         }
       ],
-      "cite_as": "AI Lifeline, Regulation (European Union edition), data confirmed 2026-10-06, https://ai-lifeline.org/eu/regulation/"
+      "cite_as": "AI Lifeline, Regulation (European Union edition), data confirmed 2026-10-07, https://ai-lifeline.org/eu/regulation/"
     },
     {
       "region": "eu",
@@ -1067,7 +1067,7 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-10-06 20:07 JST)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.9 (2026-07). (Source: Eurostat; European Commission (EED ledger) / updated 2026-10-07 20:05 JST)",
       "answer_line_date": "2026-07",
       "title_short": "C27.1 index 105.9 (final 2026-07)",
       "headline": {
@@ -1080,7 +1080,7 @@
       },
       "last_confirmed": "2026-09-04",
       "next_update": "2026-08",
-      "generated": "2026-10-06 20:07",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-04",
       "series_count": 3,
       "series_not_yet_measured": 0,
@@ -1095,7 +1095,7 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "Eurostat monthly series (published with a lag of about 6-7 weeks; refetched daily), EED ledger irregular (observation started 2026-09-04). Last updated 2026-10-06 20:07 JST. Definition: docs/指標定義_EU_データセンター.md v1.1. Machine-readable: https://ai-lifeline.org/eu/api/datacenter_eu.json"
+          "a": "Eurostat monthly series (published with a lag of about 6-7 weeks; refetched daily), EED ledger irregular (observation started 2026-09-04). Last updated 2026-10-07 20:05 JST. Definition: docs/指標定義_EU_データセンター.md v1.1. Machine-readable: https://ai-lifeline.org/eu/api/datacenter_eu.json"
         },
         {
           "q": "What can this data not tell you?",
@@ -1120,27 +1120,27 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-05. Latest final value: euro area AAA 10-year spot yield 3.502% (2026-10-05). (Source: European Central Bank; Eurostat / updated 2026-10-06 20:07 JST)",
-      "answer_line_date": "2026-10-05",
-      "title_short": "euro area 10Y 3.502% (final 10/5)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-06. Latest final value: euro area AAA 10-year spot yield 3.5188% (2026-10-06). (Source: European Central Bank; Eurostat / updated 2026-10-07 20:05 JST)",
+      "answer_line_date": "2026-10-06",
+      "title_short": "euro area 10Y 3.5188% (final 10/6)",
       "headline": {
         "series": "euro_area_yield_10y",
         "label": "euro area AAA 10-year spot yield",
-        "value": 3.502,
+        "value": 3.5188,
         "unit": "%",
-        "date": "2026-10-05",
+        "date": "2026-10-06",
         "threshold": null
       },
-      "last_confirmed": "2026-10-05",
-      "next_update": "2026-10-06",
-      "generated": "2026-10-06 20:07",
+      "last_confirmed": "2026-10-06",
+      "next_update": "2026-10-07",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-04",
       "series_count": 3,
       "series_not_yet_measured": 0,
       "faq": [
         {
           "q": "What is the euro area 10-year AAA yield on the latest confirmed day?",
-          "a": "3.502% on 2026-10-05 (ECB Data Portal, euro area yield curve, AAA-rated central government bonds, 10-year spot; euro area, not EU27)."
+          "a": "3.5188% on 2026-10-06 (ECB Data Portal, euro area yield curve, AAA-rated central government bonds, 10-year spot; euro area, not EU27)."
         },
         {
           "q": "What are EU27 government debt and balance in the latest quarter?",
@@ -1148,14 +1148,14 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "ECB yield business-daily; Eurostat quarterly (\"quarterly confirmed operation\", provisional as published). Each series carries a stated causal link to AI infrastructure; not a macro dashboard. Observation started 2026-09-04. Last updated 2026-10-06 20:07 JST. Definition: docs/指標定義_EU_財政.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/fiscal_eu.json"
+          "a": "ECB yield business-daily; Eurostat quarterly (\"quarterly confirmed operation\", provisional as published). Each series carries a stated causal link to AI infrastructure; not a macro dashboard. Observation started 2026-09-04. Last updated 2026-10-07 20:05 JST. Definition: docs/指標定義_EU_財政.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/fiscal_eu.json"
         },
         {
           "q": "What can this data not tell you?",
           "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): Whether a yield or a debt ratio is good or bad for AI, or where rates are heading (no criterion; nothing here is financial advice); How much the EU or its member states budget or spend on AI (annual budget lines and Funding & Tenders calls are candidates, not observed); Conditions of any single member state, or general economic indicators (stocks, exchange rates and inflation are out of scope by design)."
         }
       ],
-      "cite_as": "AI Lifeline, Fiscal & capital (European Union edition), data confirmed 2026-10-05, https://ai-lifeline.org/eu/fiscal/"
+      "cite_as": "AI Lifeline, Fiscal & capital (European Union edition), data confirmed 2026-10-06, https://ai-lifeline.org/eu/fiscal/"
     },
     {
       "region": "eu",
@@ -1176,27 +1176,27 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-10-05. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-10-05). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-10-06 20:07 JST)",
-      "answer_line_date": "2026-10-05",
-      "title_short": "M5+ quakes 0 (final 10/5)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-10-06. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-10-06). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-10-07 20:05 JST)",
+      "answer_line_date": "2026-10-06",
+      "title_short": "M5+ quakes 0 (final 10/6)",
       "headline": {
         "series": "earthquake",
         "label": "earthquakes M5.0+ per day, Europe vicinity",
         "value": 0,
         "unit": "",
-        "date": "2026-10-05",
+        "date": "2026-10-06",
         "threshold": null
       },
-      "last_confirmed": "2026-10-05",
-      "next_update": "2026-10-06",
-      "generated": "2026-10-06 20:07",
+      "last_confirmed": "2026-10-06",
+      "next_update": "2026-10-07",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-04",
       "series_count": 2,
       "series_not_yet_measured": 0,
       "faq": [
         {
           "q": "How many M5+ earthquakes were counted in the Europe vicinity on the latest confirmed day?",
-          "a": "0 on 2026-10-05 (UTC day; USGS Earthquake Hazards Program, stated Europe-vicinity bounding box which includes some non-EU territory; history from 2026-08-01 marked retrieved_retrospectively). Zero means zero events."
+          "a": "0 on 2026-10-06 (UTC day; USGS Earthquake Hazards Program, stated Europe-vicinity bounding box which includes some non-EU territory; history from 2026-08-01 marked retrieved_retrospectively). Zero means zero events."
         },
         {
           "q": "What wildfire figures are recorded?",
@@ -1204,14 +1204,14 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "USGS feed daily at 20:00 JST; EFFIS annual ledger irregular; extreme heat (C3S) and drought (EDO) are candidates (observation started 2026-09-04). Last updated 2026-10-06 20:07 JST. Definition: docs/指標定義_EU_気候災害.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/disaster_eu.json"
+          "a": "USGS feed daily at 20:00 JST; EFFIS annual ledger irregular; extreme heat (C3S) and drought (EDO) are candidates (observation started 2026-09-04). Last updated 2026-10-07 20:05 JST. Definition: docs/指標定義_EU_気候災害.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/disaster_eu.json"
         },
         {
           "q": "What can this data not tell you?",
           "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): Which facilities were affected, what the damage was, whether heat or drought threatened data centres (not yet observed), or whether the EU is safer or riskier than the U.S. or Japan."
         }
       ],
-      "cite_as": "AI Lifeline, Climate & disasters (European Union edition), data confirmed 2026-10-05, https://ai-lifeline.org/eu/disaster/"
+      "cite_as": "AI Lifeline, Climate & disasters (European Union edition), data confirmed 2026-10-06, https://ai-lifeline.org/eu/disaster/"
     },
     {
       "region": "eu",
@@ -1228,20 +1228,20 @@
       ],
       "status": "observing",
       "answer_kind": "observing",
-      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-06. Latest final value: support received by this site (cumulative) 0 (2026-10-05). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-10-06 20:07 JST)",
-      "answer_line_date": "2026-10-05",
-      "title_short": "support count 0 (final 10/5)",
+      "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-07. Latest final value: support received by this site (cumulative) 0 (2026-10-06). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-10-07 20:05 JST)",
+      "answer_line_date": "2026-10-06",
+      "title_short": "support count 0 (final 10/6)",
       "headline": {
         "series": "support_count",
         "label": "support received by this site (cumulative)",
         "value": 0,
         "unit": "",
-        "date": "2026-10-05",
+        "date": "2026-10-06",
         "threshold": null
       },
-      "last_confirmed": "2026-10-06",
-      "next_update": "2026-10-07",
-      "generated": "2026-10-06 20:07",
+      "last_confirmed": "2026-10-07",
+      "next_update": "2026-10-08",
+      "generated": "2026-10-07 20:05",
       "observation_start": "2026-09-04",
       "series_count": 6,
       "series_not_yet_measured": 2,
@@ -1252,7 +1252,7 @@
         },
         {
           "q": "How much support has this site received?",
-          "a": "0 as the cumulative count on 2026-10-06 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+          "a": "0 as the cumulative count on 2026-10-07 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
         },
         {
           "q": "How many MiCA application stages are listed?",
@@ -1260,14 +1260,14 @@
         },
         {
           "q": "What is the source and how often is it updated?",
-          "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-10-06 20:07 JST. Definition: docs/指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/market_eu.json"
+          "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-10-07 20:05 JST. Definition: docs/指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/market_eu.json"
         },
         {
           "q": "What can this data not tell you?",
           "a": "What this chapter cannot say (ledger v1.0, approved 2026-09-05; full text in the method section): Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded); HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\"); How pending EU deliberations on the contractual capacity and liability of AI agents will end, or the position of any single member state (EU legal acts and Commission documents; state and dates only)."
         }
       ],
-      "cite_as": "AI Lifeline, Market participation (European Union edition), data confirmed 2026-10-05, https://ai-lifeline.org/eu/market/"
+      "cite_as": "AI Lifeline, Market participation (European Union edition), data confirmed 2026-10-06, https://ai-lifeline.org/eu/market/"
     },
     {
       "region": "sg",

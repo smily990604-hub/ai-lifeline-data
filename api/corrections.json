@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-10-07 18:03",
-  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
-  "page": "/jp/unei/#corrections",
+  "count": 126,
   "kinds": {
-    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
+    "definition_revision": "an indicator definition document changed version (old series kept alongside)",
     "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
-    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
-    "definition_revision": "an indicator definition document changed version (old series kept alongside)"
+    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
+    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)"
   },
+  "page": "/jp/unei/#corrections",
+  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
+  "generated_at": "2026-10-07 20:48",
   "corrections": [
     {
       "id": "us-changes-2026-10-07-r1-511",
@@ -22,7 +23,22 @@
       "reason": "142 (final) -> 140 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-10-07 18:01:37",
-      "ledger_ref": "data/US/changes/ledger.jsonl#511"
+      "ledger_ref": "changes ledger US #511"
+    },
+    {
+      "id": "manual-2026-10-07-8",
+      "date": "2026-10-07",
+      "region": "jp",
+      "chapter": "about",
+      "series": "",
+      "kind": "editorial_correction",
+      "what_changed": "公開している JSON・ページ・llms-full.txt から、運営者の機体内のファイルパス・フォルダ名・ログのファイル名・秘密情報の置き場の名前を外した。health.json の last_log・last_failed_log・最終バッチの log 項目を削除し、定義書・台帳への参照はフォルダ名を除いた名前に改めた。記録の内容・数値・日付は不変",
+      "old": "/api/health.json にログのファイル名（log・last_log・last_failed_log）／定義書・台帳の参照に運営者のフォルダ名つきの書き方",
+      "new": "ログのファイル名の項目なし／定義書は文書名のみ・台帳は「changes ledger JP #番号」の形",
+      "reason": "2026-10-03 に health.json に載っていたログ名をそのまま狙う要求（全件 404・中身の流出なし）を観測したため、公開物に社内の名前を載せない形に改めた（発行人 OK 2026-10-07）。以後は公開前の検査で社内パス・ログ名・ユーザー名を検出したら反映を止める。過去の公開版と公開リポジトリの履歴は書き換えない",
+      "source_url": "https://ai-lifeline.org/api/health.json",
+      "recorded_at": "2026-10-07",
+      "ledger_ref": "operator report 2026-10-07（ログ名を狙った要求の調査）"
     },
     {
       "id": "jp-changes-2026-10-06-r2-212",
@@ -37,7 +53,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-10-06 10:32:20",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#212"
+      "ledger_ref": "changes ledger JP #212"
     },
     {
       "id": "jp-changes-2026-10-06-r1-211",
@@ -52,7 +68,7 @@
       "reason": "2026-10-05 11.3% → 10.99% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-10-06 10:30:49",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#211"
+      "ledger_ref": "changes ledger JP #211"
     },
     {
       "id": "us-changes-2026-10-05-r1-483",
@@ -67,7 +83,7 @@
       "reason": "143 (final) -> 142 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-10-05 18:01:43",
-      "ledger_ref": "data/US/changes/ledger.jsonl#483"
+      "ledger_ref": "changes ledger US #483"
     },
     {
       "id": "us-changes-2026-10-04-r1-470",
@@ -82,7 +98,7 @@
       "reason": "147 (final) -> 143 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-10-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#470"
+      "ledger_ref": "changes ledger US #470"
     },
     {
       "id": "jp-changes-2026-10-04-r2-203",
@@ -97,7 +113,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-10-04 10:32:27",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#203"
+      "ledger_ref": "changes ledger JP #203"
     },
     {
       "id": "jp-changes-2026-10-04-r1-202",
@@ -112,7 +128,7 @@
       "reason": "2026-10-03 11.88% → 11.21% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-10-04 10:30:54",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#202"
+      "ledger_ref": "changes ledger JP #202"
     },
     {
       "id": "us-changes-2026-10-03-r1-457",
@@ -127,22 +143,7 @@
       "reason": "151 (final) -> 147 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-10-03 18:01:37",
-      "ledger_ref": "data/US/changes/ledger.jsonl#457"
-    },
-    {
-      "id": "eu-changes-2026-10-02-r2-199",
-      "date": "2026-10-02",
-      "region": "eu",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "kind": "value_revision",
-      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-10-02",
-      "old": "6,367,065 MWh (provisional)",
-      "new": "6,500,001 MWh (provisional) on refetch",
-      "reason": "6,367,065 MWh (provisional) -> 6,500,001 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-10-02 20:06:03",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#199"
+      "ledger_ref": "changes ledger US #457"
     },
     {
       "id": "eu-changes-2026-10-02-r2-198",
@@ -157,7 +158,22 @@
       "reason": "Revision 1 (4 items) is kept in the ledger; the page shows revision 2 (3 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-10-02 20:06:03",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#198"
+      "ledger_ref": "changes ledger EU #198"
+    },
+    {
+      "id": "eu-changes-2026-10-02-r2-199",
+      "date": "2026-10-02",
+      "region": "eu",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "kind": "value_revision",
+      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-10-02",
+      "old": "6,367,065 MWh (provisional)",
+      "new": "6,500,001 MWh (provisional) on refetch",
+      "reason": "6,367,065 MWh (provisional) -> 6,500,001 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-10-02 20:06:03",
+      "ledger_ref": "changes ledger EU #199"
     },
     {
       "id": "jp-changes-2026-10-02-r2-193",
@@ -172,7 +188,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 5 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-10-02 10:32:23",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#193"
+      "ledger_ref": "changes ledger JP #193"
     },
     {
       "id": "jp-changes-2026-10-02-r1-192",
@@ -187,7 +203,7 @@
       "reason": "2026-10-01 9.11% → 7.35% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-10-02 10:30:54",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#192"
+      "ledger_ref": "changes ledger JP #192"
     },
     {
       "id": "eu-changes-2026-10-01-r2-193",
@@ -202,7 +218,7 @@
       "reason": "6,547,030 MWh (provisional) -> 6,546,985 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-10-01 20:58:56",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#193"
+      "ledger_ref": "changes ledger EU #193"
     },
     {
       "id": "eu-changes-2026-10-01-r2-192",
@@ -217,7 +233,7 @@
       "reason": "Revision 1 (7 items) is kept in the ledger; the page shows revision 2 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-10-01 20:58:56",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#192"
+      "ledger_ref": "changes ledger EU #192"
     },
     {
       "id": "us-changes-2026-10-01-r1-422",
@@ -232,7 +248,7 @@
       "reason": "161 (final) -> 160 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-10-01 18:01:45",
-      "ledger_ref": "data/US/changes/ledger.jsonl#422"
+      "ledger_ref": "changes ledger US #422"
     },
     {
       "id": "us-changes-2026-09-30-r1-404",
@@ -247,7 +263,7 @@
       "reason": "162 (final) -> 161 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-30 18:01:33",
-      "ledger_ref": "data/US/changes/ledger.jsonl#404"
+      "ledger_ref": "changes ledger US #404"
     },
     {
       "id": "jp-changes-2026-09-28-r2-176",
@@ -262,7 +278,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-28 10:32:04",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#176"
+      "ledger_ref": "changes ledger JP #176"
     },
     {
       "id": "jp-changes-2026-09-28-r1-175",
@@ -277,7 +293,7 @@
       "reason": "2026-09-27 11.21% → 12.5% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-28 10:30:38",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#175"
+      "ledger_ref": "changes ledger JP #175"
     },
     {
       "id": "us-changes-2026-09-27-r1-365",
@@ -292,7 +308,7 @@
       "reason": "160 (final) -> 162 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-27 18:01:53",
-      "ledger_ref": "data/US/changes/ledger.jsonl#365"
+      "ledger_ref": "changes ledger US #365"
     },
     {
       "id": "jp-changes-2026-09-27-r2-170",
@@ -307,7 +323,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-27 10:32:07",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#170"
+      "ledger_ref": "changes ledger JP #170"
     },
     {
       "id": "jp-changes-2026-09-27-r1-169",
@@ -322,7 +338,7 @@
       "reason": "2026-09-26 9.78% → 10.2% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-27 10:30:42",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#169"
+      "ledger_ref": "changes ledger JP #169"
     },
     {
       "id": "us-changes-2026-09-26-r1-352",
@@ -337,7 +353,7 @@
       "reason": "161 (final) -> 160 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-26 18:01:42",
-      "ledger_ref": "data/US/changes/ledger.jsonl#352"
+      "ledger_ref": "changes ledger US #352"
     },
     {
       "id": "jp-changes-2026-09-26-r2-165",
@@ -352,7 +368,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-26 10:32:05",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#165"
+      "ledger_ref": "changes ledger JP #165"
     },
     {
       "id": "jp-changes-2026-09-26-r1-164",
@@ -367,22 +383,7 @@
       "reason": "2026-09-25 9.59% → 8.87% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-26 10:30:42",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#164"
-    },
-    {
-      "id": "eu-changes-2026-09-25-r2-155",
-      "date": "2026-09-25",
-      "region": "eu",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 2",
-      "old": null,
-      "new": null,
-      "reason": "Revision 1 (6 items) is kept in the ledger; the page shows revision 2 (1 items)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-25 21:39:50",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#155"
+      "ledger_ref": "changes ledger JP #164"
     },
     {
       "id": "eu-changes-2026-09-25-r2-156",
@@ -397,7 +398,22 @@
       "reason": "6,596,015 MWh (provisional) -> 6,599,457 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-25 21:39:50",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#156"
+      "ledger_ref": "changes ledger EU #156"
+    },
+    {
+      "id": "eu-changes-2026-09-25-r2-155",
+      "date": "2026-09-25",
+      "region": "eu",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 2",
+      "old": null,
+      "new": null,
+      "reason": "Revision 1 (6 items) is kept in the ledger; the page shows revision 2 (1 items)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-25 21:39:50",
+      "ledger_ref": "changes ledger EU #155"
     },
     {
       "id": "us-changes-2026-09-25-r1-333",
@@ -412,7 +428,7 @@
       "reason": "160 (final) -> 161 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-25 18:01:35",
-      "ledger_ref": "data/US/changes/ledger.jsonl#333"
+      "ledger_ref": "changes ledger US #333"
     },
     {
       "id": "jp-changes-2026-09-25-r2-159",
@@ -427,7 +443,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-25 10:32:00",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#159"
+      "ledger_ref": "changes ledger JP #159"
     },
     {
       "id": "jp-changes-2026-09-25-r1-158",
@@ -442,7 +458,7 @@
       "reason": "2026-09-24 8.97% → 8.88% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-25 10:30:38",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#158"
+      "ledger_ref": "changes ledger JP #158"
     },
     {
       "id": "us-changes-2026-09-24-r1-318",
@@ -457,7 +473,7 @@
       "reason": "163 (final) -> 160 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-24 18:01:59",
-      "ledger_ref": "data/US/changes/ledger.jsonl#318"
+      "ledger_ref": "changes ledger US #318"
     },
     {
       "id": "us-changes-2026-09-22-r1-288",
@@ -472,7 +488,7 @@
       "reason": "164 (final) -> 163 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-22 18:01:33",
-      "ledger_ref": "data/US/changes/ledger.jsonl#288"
+      "ledger_ref": "changes ledger US #288"
     },
     {
       "id": "manual-2026-09-22-7",
@@ -484,10 +500,10 @@
       "what_changed": "EU27 day-ahead load forecast: 2026-09-12 4,910,181 MWh (provisional, FR area 10YFR-RTE------C missing) -> 5,843,556 MWh (final, 25/25 areas); 2026-09-05 5,917,167 MWh (provisional, BE area missing) -> 6,119,694 MWh (final, 25/25 areas). Values as published by ENTSO-E; no estimation.",
       "old": "2026-09-12: 4,910,181 MWh (provisional, 1 area missing) / 2026-09-05: 5,917,167 MWh (provisional, 1 area missing)",
       "new": "2026-09-12: 5,843,556 MWh (final) / 2026-09-05: 6,119,694 MWh (final)",
-      "reason": "The daily re-fetch window is 7 days (sources.eu.json window_days), so a day first retrieved with a missing area and then outside the window was never re-fetched. One-off backfill on 2026-09-22 18:29 JST (scripts\\eu\\fetch_entsoe.ps1 -BackfillFrom 2026-09-05, 25/25 areas succeeded); published by the 20:00 EU daily batch (verify_live 17/17). Permanent fix (re-fetch provisional points outside the window) is proposed for October (freeze until 2026-09-30).",
+      "reason": "The daily re-fetch window is 7 days (sources.eu.json window_days), so a day first retrieved with a missing area and then outside the window was never re-fetched. One-off backfill on 2026-09-22 18:29 JST (re-fetch from 2026-09-05, 25/25 areas succeeded); published by the 20:00 EU daily batch (verify_live 17/17). Permanent fix (re-fetch provisional points outside the window) is proposed for October (freeze until 2026-09-30).",
       "source_url": "https://ai-lifeline.org/eu/api/power_eu.json",
       "recorded_at": "2026-09-22",
-      "ledger_ref": "docs\\報告_20260922_9月後半.md §3 (d)"
+      "ledger_ref": "operator report 2026-09-22 §3 (d)"
     },
     {
       "id": "us-changes-2026-09-20-r1-263",
@@ -502,7 +518,7 @@
       "reason": "163 (final) -> 164 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-20 18:01:37",
-      "ledger_ref": "data/US/changes/ledger.jsonl#263"
+      "ledger_ref": "changes ledger US #263"
     },
     {
       "id": "eu-changes-2026-09-19-r3-116",
@@ -517,7 +533,7 @@
       "reason": "Revision 2 (1 items) is kept in the ledger; the page shows revision 3 (3 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-19 20:04:05",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#116"
+      "ledger_ref": "changes ledger EU #116"
     },
     {
       "id": "eu-changes-2026-09-19-r2-115",
@@ -532,7 +548,7 @@
       "reason": "40 requests (provisional) -> 85 requests (provisional) on refetch / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-19 06:29:42",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#115"
+      "ledger_ref": "changes ledger EU #115"
     },
     {
       "id": "eu-changes-2026-09-19-r2-114",
@@ -547,7 +563,7 @@
       "reason": "Revision 1 (3 items) is kept in the ledger; the page shows revision 2 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-19 06:29:42",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#114"
+      "ledger_ref": "changes ledger EU #114"
     },
     {
       "id": "eu-changes-2026-09-19-r1-111",
@@ -562,7 +578,7 @@
       "reason": "6,587,266 MWh (provisional) -> 6,592,221 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-19 06:24:56",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#111"
+      "ledger_ref": "changes ledger EU #111"
     },
     {
       "id": "manual-2026-09-19-6",
@@ -577,7 +593,7 @@
       "reason": "発行人の方針追加（2026-09-12 チャットで採用文言をOK・2026-09-15 夜に反映OK・2026-09-19 代表指示で安定判定週の制約を解除し同日反映）。指標値・定義・数え方は不変",
       "source_url": "https://ai-lifeline.org/jp/about/",
       "recorded_at": "2026-09-19",
-      "ledger_ref": "docs\\weekly\\decisions_ledger.json D-2026-09-19-01／docs\\差分案_憲法3文_方針ページ_20260915.md"
+      "ledger_ref": "決定台帳 D-2026-09-19-01／差分案（創刊の辞・編集方針の 3 文・2026-09-15）"
     },
     {
       "id": "us-changes-2026-09-18-r1-236",
@@ -592,7 +608,7 @@
       "reason": "165 (final) -> 163 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-18 18:01:39",
-      "ledger_ref": "data/US/changes/ledger.jsonl#236"
+      "ledger_ref": "changes ledger US #236"
     },
     {
       "id": "jp-changes-2026-09-18-r1-132",
@@ -607,7 +623,7 @@
       "reason": "2026-09-17 9.3% → 9.57% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-18 10:30:39",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#132"
+      "ledger_ref": "changes ledger JP #132"
     },
     {
       "id": "us-changes-2026-09-17-r1-219",
@@ -622,7 +638,7 @@
       "reason": "167 (final) -> 165 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-17 18:01:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#219"
+      "ledger_ref": "changes ledger US #219"
     },
     {
       "id": "jp-changes-2026-09-17-r1-131",
@@ -637,7 +653,7 @@
       "reason": "2026-09-16 9.2% → 9.78% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-17 10:30:33",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#131"
+      "ledger_ref": "changes ledger JP #131"
     },
     {
       "id": "us-changes-2026-09-16-r1-203",
@@ -652,7 +668,7 @@
       "reason": "171 (final) -> 167 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-16 18:01:26",
-      "ledger_ref": "data/US/changes/ledger.jsonl#203"
+      "ledger_ref": "changes ledger US #203"
     },
     {
       "id": "us-changes-2026-09-15-r1-188",
@@ -667,7 +683,7 @@
       "reason": "173 (final) -> 171 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-15 18:01:39",
-      "ledger_ref": "data/US/changes/ledger.jsonl#188"
+      "ledger_ref": "changes ledger US #188"
     },
     {
       "id": "jp-changes-2026-09-15-r1-130",
@@ -682,7 +698,7 @@
       "reason": "2026-09-14 8.54% → 8.55% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-15 10:30:34",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#130"
+      "ledger_ref": "changes ledger JP #130"
     },
     {
       "id": "jp-changes-2026-09-14-r1-129",
@@ -697,7 +713,7 @@
       "reason": "2026-09-13 10.86% → 12.78% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-14 10:30:34",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#129"
+      "ledger_ref": "changes ledger JP #129"
     },
     {
       "id": "us-changes-2026-09-13-r1-161",
@@ -712,7 +728,7 @@
       "reason": "175 (final) -> 173 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-13 18:01:32",
-      "ledger_ref": "data/US/changes/ledger.jsonl#161"
+      "ledger_ref": "changes ledger US #161"
     },
     {
       "id": "jp-changes-2026-09-13-r1-127",
@@ -727,7 +743,7 @@
       "reason": "2026-09-12 10.17% → 10.27% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-13 10:30:38",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#127"
+      "ledger_ref": "changes ledger JP #127"
     },
     {
       "id": "eu-changes-2026-09-12-r8-74",
@@ -742,7 +758,7 @@
       "reason": "5,626,663 MWh (provisional) -> 5,650,045 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 20:03:50",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#74"
+      "ledger_ref": "changes ledger EU #74"
     },
     {
       "id": "eu-changes-2026-09-12-r8-73",
@@ -757,7 +773,7 @@
       "reason": "Revision 7 (1 items) is kept in the ledger; the page shows revision 8 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 20:03:50",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#73"
+      "ledger_ref": "changes ledger EU #73"
     },
     {
       "id": "us-changes-2026-09-12-r1-148",
@@ -772,7 +788,7 @@
       "reason": "178 (final) -> 175 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-12 18:01:24",
-      "ledger_ref": "data/US/changes/ledger.jsonl#148"
+      "ledger_ref": "changes ledger US #148"
     },
     {
       "id": "jp-changes-2026-09-12-r1-126",
@@ -787,22 +803,7 @@
       "reason": "2026-09-11 8.83% → 9.27% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-12 10:30:29",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#126"
-    },
-    {
-      "id": "eu-changes-2026-09-12-r7-71",
-      "date": "2026-09-12",
-      "region": "eu",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 7",
-      "old": null,
-      "new": null,
-      "reason": "Revision 6 (1 items) is kept in the ledger; the page shows revision 7 (1 items)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 10:08:59",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#71"
+      "ledger_ref": "changes ledger JP #126"
     },
     {
       "id": "eu-changes-2026-09-12-r7-72",
@@ -817,7 +818,22 @@
       "reason": "5,719,152 MWh (provisional) -> 5,626,663 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 10:08:59",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#72"
+      "ledger_ref": "changes ledger EU #72"
+    },
+    {
+      "id": "eu-changes-2026-09-12-r7-71",
+      "date": "2026-09-12",
+      "region": "eu",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 7",
+      "old": null,
+      "new": null,
+      "reason": "Revision 6 (1 items) is kept in the ledger; the page shows revision 7 (1 items)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-12 10:08:59",
+      "ledger_ref": "changes ledger EU #71"
     },
     {
       "id": "eu-changes-2026-09-12-r6-69",
@@ -832,7 +848,7 @@
       "reason": "Revision 5 (1 items) is kept in the ledger; the page shows revision 6 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:58:51",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#69"
+      "ledger_ref": "changes ledger EU #69"
     },
     {
       "id": "eu-changes-2026-09-12-r6-70",
@@ -847,7 +863,7 @@
       "reason": "5,719,153 MWh (provisional) -> 5,719,152 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:58:51",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#70"
+      "ledger_ref": "changes ledger EU #70"
     },
     {
       "id": "eu-changes-2026-09-12-r5-67",
@@ -862,7 +878,7 @@
       "reason": "Revision 4 (1 items) is kept in the ledger; the page shows revision 5 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:53:59",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#67"
+      "ledger_ref": "changes ledger EU #67"
     },
     {
       "id": "eu-changes-2026-09-12-r5-68",
@@ -877,22 +893,7 @@
       "reason": "5,719,154 MWh (provisional) -> 5,719,153 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:53:59",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#68"
-    },
-    {
-      "id": "eu-changes-2026-09-12-r4-65",
-      "date": "2026-09-12",
-      "region": "eu",
-      "chapter": "",
-      "series": "",
-      "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 4",
-      "old": null,
-      "new": null,
-      "reason": "Revision 3 (1 items) is kept in the ledger; the page shows revision 4 (1 items)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 09:30:01",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#65"
+      "ledger_ref": "changes ledger EU #68"
     },
     {
       "id": "eu-changes-2026-09-12-r4-66",
@@ -907,22 +908,22 @@
       "reason": "5,719,155 MWh (provisional) -> 5,719,154 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:30:01",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#66"
+      "ledger_ref": "changes ledger EU #66"
     },
     {
-      "id": "eu-changes-2026-09-12-r3-63",
+      "id": "eu-changes-2026-09-12-r4-65",
       "date": "2026-09-12",
       "region": "eu",
       "chapter": "",
       "series": "",
       "kind": "rerun_revision",
-      "what_changed": "Re-run on the same day produced revision 3",
+      "what_changed": "Re-run on the same day produced revision 4",
       "old": null,
       "new": null,
-      "reason": "Revision 2 (1 items) is kept in the ledger; the page shows revision 3 (1 items)",
+      "reason": "Revision 3 (1 items) is kept in the ledger; the page shows revision 4 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 09:13:40",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#63"
+      "recorded_at": "2026-09-12 09:30:01",
+      "ledger_ref": "changes ledger EU #65"
     },
     {
       "id": "eu-changes-2026-09-12-r3-64",
@@ -937,7 +938,22 @@
       "reason": "5,718,548 MWh (provisional) -> 5,719,155 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:13:40",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#64"
+      "ledger_ref": "changes ledger EU #64"
+    },
+    {
+      "id": "eu-changes-2026-09-12-r3-63",
+      "date": "2026-09-12",
+      "region": "eu",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "Re-run on the same day produced revision 3",
+      "old": null,
+      "new": null,
+      "reason": "Revision 2 (1 items) is kept in the ledger; the page shows revision 3 (1 items)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-12 09:13:40",
+      "ledger_ref": "changes ledger EU #63"
     },
     {
       "id": "eu-changes-2026-09-12-r2-61",
@@ -952,7 +968,7 @@
       "reason": "Revision 1 (4 items) is kept in the ledger; the page shows revision 2 (1 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 09:06:10",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#61"
+      "ledger_ref": "changes ledger EU #61"
     },
     {
       "id": "us-changes-2026-09-11-r1-131",
@@ -967,7 +983,7 @@
       "reason": "179 (final) -> 178 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-11 18:01:31",
-      "ledger_ref": "data/US/changes/ledger.jsonl#131"
+      "ledger_ref": "changes ledger US #131"
     },
     {
       "id": "jp-changes-2026-09-11-r1-125",
@@ -982,7 +998,7 @@
       "reason": "2026-09-10 8.86% → 12.16% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-11 10:30:35",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#125"
+      "ledger_ref": "changes ledger JP #125"
     },
     {
       "id": "us-changes-2026-09-10-r1-114",
@@ -997,7 +1013,7 @@
       "reason": "181 (final) -> 179 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-10 18:01:32",
-      "ledger_ref": "data/US/changes/ledger.jsonl#114"
+      "ledger_ref": "changes ledger US #114"
     },
     {
       "id": "jp-changes-2026-09-09-r2-117",
@@ -1012,7 +1028,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-09 10:31:52",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#117"
+      "ledger_ref": "changes ledger JP #117"
     },
     {
       "id": "jp-changes-2026-09-09-r1-116",
@@ -1027,7 +1043,7 @@
       "reason": "2026-09-08 7.14% → 7.99% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-09 10:30:36",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#116"
+      "ledger_ref": "changes ledger JP #116"
     },
     {
       "id": "jp-changes-2026-09-08-r2-111",
@@ -1042,7 +1058,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-08 10:31:38",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#111"
+      "ledger_ref": "changes ledger JP #111"
     },
     {
       "id": "jp-changes-2026-09-08-r1-110",
@@ -1057,7 +1073,7 @@
       "reason": "2026-09-07 8.43% → 9.8% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-08 10:30:26",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#110"
+      "ledger_ref": "changes ledger JP #110"
     },
     {
       "id": "jp-changes-2026-09-07-r2-105",
@@ -1072,7 +1088,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-07 10:31:42",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#105"
+      "ledger_ref": "changes ledger JP #105"
     },
     {
       "id": "jp-changes-2026-09-07-r1-104",
@@ -1087,7 +1103,7 @@
       "reason": "2026-09-06 10.16% → 9.55% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-07 10:30:29",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#104"
+      "ledger_ref": "changes ledger JP #104"
     },
     {
       "id": "us-changes-2026-09-06-r1-62",
@@ -1102,7 +1118,7 @@
       "reason": "180 (final) -> 181 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-06 18:01:22",
-      "ledger_ref": "data/US/changes/ledger.jsonl#62"
+      "ledger_ref": "changes ledger US #62"
     },
     {
       "id": "jp-changes-2026-09-06-r2-100",
@@ -1117,7 +1133,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-06 10:31:58",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#100"
+      "ledger_ref": "changes ledger JP #100"
     },
     {
       "id": "jp-changes-2026-09-06-r1-99",
@@ -1132,7 +1148,7 @@
       "reason": "2026-09-05 9.87% → 11.09% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-06 10:30:36",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#99"
+      "ledger_ref": "changes ledger JP #99"
     },
     {
       "id": "us-changes-2026-09-05-r1-49",
@@ -1147,7 +1163,7 @@
       "reason": "181 (final) -> 180 (final) on refetch / Source: Grants.gov search API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-05 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#49"
+      "ledger_ref": "changes ledger US #49"
     },
     {
       "id": "eu-changes-2026-09-04-r3-18",
@@ -1162,37 +1178,7 @@
       "reason": "Revision 2 (4 items) is kept in the ledger; the page shows revision 3 (5 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-04 20:00:25",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#18"
-    },
-    {
-      "id": "us-changes-2026-09-04-r2-35",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "fiscal",
-      "series": "fiscal.ai_grants_open",
-      "kind": "value_revision",
-      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
-      "old": "178 (final)",
-      "new": "181 (final) on refetch",
-      "reason": "178 (final) -> 181 (final) on refetch / Source: Grants.gov search API",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#35"
-    },
-    {
-      "id": "us-changes-2026-09-04-r2-32",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "kind": "value_revision",
-      "what_changed": "Revised: Matching documents published in the last 30 days for 2026-09-04",
-      "old": "32 documents (final)",
-      "new": "33 documents (final) on refetch",
-      "reason": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#32"
+      "ledger_ref": "changes ledger EU #18"
     },
     {
       "id": "us-changes-2026-09-04-r2-31",
@@ -1207,7 +1193,37 @@
       "reason": "16 documents (final) -> 18 documents (final) on refetch / Source: Federal Register (federalregister.gov) API",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#31"
+      "ledger_ref": "changes ledger US #31"
+    },
+    {
+      "id": "us-changes-2026-09-04-r2-35",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "kind": "value_revision",
+      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-09",
+      "old": "178 (final)",
+      "new": "181 (final) on refetch",
+      "reason": "178 (final) -> 181 (final) on refetch / Source: Grants.gov search API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 18:01:30",
+      "ledger_ref": "changes ledger US #35"
+    },
+    {
+      "id": "us-changes-2026-09-04-r2-32",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "kind": "value_revision",
+      "what_changed": "Revised: Matching documents published in the last 30 days for 2026-09-04",
+      "old": "32 documents (final)",
+      "new": "33 documents (final) on refetch",
+      "reason": "32 documents (final) -> 33 documents (final) on refetch / Source: Federal Register (federalregister.gov) API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 18:01:30",
+      "ledger_ref": "changes ledger US #32"
     },
     {
       "id": "us-changes-2026-09-04-r2-28",
@@ -1222,7 +1238,7 @@
       "reason": "Revision 1 (20 items) is kept in the ledger; the page shows revision 2 (11 items)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 18:01:30",
-      "ledger_ref": "data/US/changes/ledger.jsonl#28"
+      "ledger_ref": "changes ledger US #28"
     },
     {
       "id": "eu-changes-2026-09-04-r2-13",
@@ -1237,22 +1253,7 @@
       "reason": "Revision 1 (11 items) is kept in the ledger; the page shows revision 2 (4 items)",
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-04 08:49:10",
-      "ledger_ref": "data/EU/changes/ledger.jsonl#13"
-    },
-    {
-      "id": "us-changes-2026-09-04-r1-13",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "water",
-      "series": "water.water_disclosure",
-      "kind": "value_revision",
-      "what_changed": "Revised: Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none) for 2026-09-03",
-      "old": "4 companies (final)",
-      "new": "7 companies (final) on refetch",
-      "reason": "4 companies (final) -> 7 companies (final) on refetch / Source: AI Lifeline first-party observation of official sustainability pages",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "data/US/changes/ledger.jsonl#13"
+      "ledger_ref": "changes ledger EU #13"
     },
     {
       "id": "us-changes-2026-09-04-r1-9",
@@ -1267,7 +1268,7 @@
       "reason": "14,521,264 MWh (provisional) -> 14,516,151 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "data/US/changes/ledger.jsonl#9"
+      "ledger_ref": "changes ledger US #9"
     },
     {
       "id": "us-changes-2026-09-04-r1-8",
@@ -1282,7 +1283,22 @@
       "reason": "14,716,231 MWh (provisional) -> 14,716,242 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "data/US/changes/ledger.jsonl#8"
+      "ledger_ref": "changes ledger US #8"
+    },
+    {
+      "id": "us-changes-2026-09-04-r1-13",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "water",
+      "series": "water.water_disclosure",
+      "kind": "value_revision",
+      "what_changed": "Revised: Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none) for 2026-09-03",
+      "old": "4 companies (final)",
+      "new": "7 companies (final) on refetch",
+      "reason": "4 companies (final) -> 7 companies (final) on refetch / Source: AI Lifeline first-party observation of official sustainability pages",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 08:47:23",
+      "ledger_ref": "changes ledger US #13"
     },
     {
       "id": "manual-2026-09-04-5",
@@ -1297,7 +1313,7 @@
       "reason": "2026-09-04 指示7（US 水章 Phase2）。本番反映 08:31、代表の事後承認 2026-09-04 夕方（裁定5）",
       "source_url": "https://ai-lifeline.org/us/api/water_us.json",
       "recorded_at": "2026-09-04",
-      "ledger_ref": "docs/指標定義_US_水章.md（v1.1）"
+      "ledger_ref": "指標定義_US_水章.md（v1.1）"
     },
     {
       "id": "us-changes-2026-09-03-r2-3",
@@ -1312,7 +1328,7 @@
       "reason": "14,716,244 MWh (provisional) -> 14,716,231 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-03 21:53:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#3"
+      "ledger_ref": "changes ledger US #3"
     },
     {
       "id": "us-changes-2026-09-03-r2-2",
@@ -1327,7 +1343,7 @@
       "reason": "Revision 1 (1 items) is kept in the ledger; the page shows revision 2 (5 items)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-03 21:53:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#2"
+      "ledger_ref": "changes ledger US #2"
     },
     {
       "id": "us-changes-2026-09-03-r2-4",
@@ -1342,7 +1358,7 @@
       "reason": "14,522,929 MWh (provisional) -> 14,521,264 MWh (provisional) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-03 21:53:29",
-      "ledger_ref": "data/US/changes/ledger.jsonl#4"
+      "ledger_ref": "changes ledger US #4"
     },
     {
       "id": "jp-changes-2026-09-03-r2-85",
@@ -1357,7 +1373,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 5 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-03 11:01:16",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#85"
+      "ledger_ref": "changes ledger JP #85"
     },
     {
       "id": "jp-changes-2026-09-03-r1-84",
@@ -1372,7 +1388,7 @@
       "reason": "2026-09-02 7.8% → 8.43% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-03 11:00:11",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#84"
+      "ledger_ref": "changes ledger JP #84"
     },
     {
       "id": "jp-changes-2026-09-02-r2-80",
@@ -1387,7 +1403,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-02 11:01:23",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#80"
+      "ledger_ref": "changes ledger JP #80"
     },
     {
       "id": "jp-changes-2026-09-02-r1-79",
@@ -1402,7 +1418,7 @@
       "reason": "2026-09-01 7.59% → 8.24% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-02 11:00:12",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#79"
+      "ledger_ref": "changes ledger JP #79"
     },
     {
       "id": "jp-changes-2026-09-01-r2-72",
@@ -1417,7 +1433,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 6 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-09-01 11:01:35",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#72"
+      "ledger_ref": "changes ledger JP #72"
     },
     {
       "id": "jp-changes-2026-09-01-r1-71",
@@ -1432,7 +1448,7 @@
       "reason": "2026-08-31 7.25% → 8.92% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-09-01 11:00:13",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#71"
+      "ledger_ref": "changes ledger JP #71"
     },
     {
       "id": "jp-changes-2026-08-31-r2-64",
@@ -1447,7 +1463,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 6 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-31 11:01:31",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#64"
+      "ledger_ref": "changes ledger JP #64"
     },
     {
       "id": "jp-changes-2026-08-31-r1-63",
@@ -1462,7 +1478,7 @@
       "reason": "2026-08-30 12.32% → 12.09% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-31 11:00:13",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#63"
+      "ledger_ref": "changes ledger JP #63"
     },
     {
       "id": "jp-changes-2026-08-29-r4-56",
@@ -1477,7 +1493,7 @@
       "reason": "正午の通し試験（再実行）が第3版で「変化なし」を記録し、朝の実変化2件が表示から外れたため、第2版の2件を第4版として復元します（台帳は追記専用・第3版も記録として残します）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-29 12:02:39",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#56"
+      "ledger_ref": "changes ledger JP #56"
     },
     {
       "id": "jp-changes-2026-08-29-r3-54",
@@ -1492,7 +1508,7 @@
       "reason": "第2版の 2 件は台帳に残したまま、第3版の 1 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-29 12:00:30",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#54"
+      "ledger_ref": "changes ledger JP #54"
     },
     {
       "id": "jp-changes-2026-08-29-r2-51",
@@ -1507,7 +1523,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 2 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-29 11:01:11",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#51"
+      "ledger_ref": "changes ledger JP #51"
     },
     {
       "id": "jp-changes-2026-08-29-r1-50",
@@ -1522,7 +1538,7 @@
       "reason": "2026-08-28 8.28% → 11.05% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-29 11:00:12",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#50"
+      "ledger_ref": "changes ledger JP #50"
     },
     {
       "id": "jp-changes-2026-08-28-r2-47",
@@ -1537,7 +1553,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 2 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-28 11:01:07",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#47"
+      "ledger_ref": "changes ledger JP #47"
     },
     {
       "id": "jp-changes-2026-08-28-r1-46",
@@ -1552,7 +1568,7 @@
       "reason": "2026-08-27 5.31% → 5.92% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-28 11:00:09",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#46"
+      "ledger_ref": "changes ledger JP #46"
     },
     {
       "id": "jp-changes-2026-08-27-r2-42",
@@ -1567,7 +1583,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-27 11:01:14",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#42"
+      "ledger_ref": "changes ledger JP #42"
     },
     {
       "id": "jp-changes-2026-08-27-r1-41",
@@ -1582,7 +1598,7 @@
       "reason": "2026-08-26 4.72% → 5.57% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-27 11:00:11",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#41"
+      "ledger_ref": "changes ledger JP #41"
     },
     {
       "id": "jp-changes-2026-08-26-r3-37",
@@ -1597,7 +1613,7 @@
       "reason": "第2版の 3 件は台帳に残したまま、第3版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-26 11:01:10",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#37"
+      "ledger_ref": "changes ledger JP #37"
     },
     {
       "id": "jp-changes-2026-08-26-r2-33",
@@ -1612,7 +1628,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-26 07:14:50",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#33"
+      "ledger_ref": "changes ledger JP #33"
     },
     {
       "id": "jp-changes-2026-08-26-r1-32",
@@ -1627,7 +1643,7 @@
       "reason": "2026-08-25 3.8% → 6.83% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-26 07:13:25",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#32"
+      "ledger_ref": "changes ledger JP #32"
     },
     {
       "id": "manual-2026-08-26-1",
@@ -1657,7 +1673,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-25 11:01:09",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#27"
+      "ledger_ref": "changes ledger JP #27"
     },
     {
       "id": "jp-changes-2026-08-25-r1-26",
@@ -1672,7 +1688,7 @@
       "reason": "2026-08-24 6.2% → 6.83% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-25 11:00:12",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#26"
+      "ledger_ref": "changes ledger JP #26"
     },
     {
       "id": "jp-changes-2026-08-24-r2-22",
@@ -1687,7 +1703,7 @@
       "reason": "第1版の 0 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-24 11:01:16",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#22"
+      "ledger_ref": "changes ledger JP #22"
     },
     {
       "id": "jp-changes-2026-08-24-r1-21",
@@ -1702,7 +1718,7 @@
       "reason": "2026-08-23 11.01% → 12.08% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-24 11:00:11",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#21"
+      "ledger_ref": "changes ledger JP #21"
     },
     {
       "id": "jp-changes-2026-08-23-r6-19",
@@ -1717,7 +1733,7 @@
       "reason": "第5版の 1 件は台帳に残したまま、第6版の 1 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 14:56:05",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#19"
+      "ledger_ref": "changes ledger JP #19"
     },
     {
       "id": "jp-changes-2026-08-23-r5-17",
@@ -1732,7 +1748,7 @@
       "reason": "第4版の 1 件は台帳に残したまま、第5版の 1 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 14:18:51",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#17"
+      "ledger_ref": "changes ledger JP #17"
     },
     {
       "id": "jp-changes-2026-08-23-r4-15",
@@ -1747,7 +1763,7 @@
       "reason": "第3版の 1 件は台帳に残したまま、第4版の 1 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 14:10:45",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#15"
+      "ledger_ref": "changes ledger JP #15"
     },
     {
       "id": "jp-changes-2026-08-23-r3-13",
@@ -1762,7 +1778,7 @@
       "reason": "第2版の 3 件は台帳に残したまま、第3版の 1 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 13:55:26",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#13"
+      "ledger_ref": "changes ledger JP #13"
     },
     {
       "id": "jp-changes-2026-08-23-r2-12",
@@ -1777,7 +1793,7 @@
       "reason": "2026-08-22 9.96% → 9.5%／2026-08-20 6.28% → 6.65% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-23 11:19:19",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#12"
+      "ledger_ref": "changes ledger JP #12"
     },
     {
       "id": "jp-changes-2026-08-23-r2-8",
@@ -1792,7 +1808,7 @@
       "reason": "第1版の 1 件は台帳に残したまま、第2版の 3 件を表示に用います（台帳は追記専用）",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 11:01:11",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#8"
+      "ledger_ref": "changes ledger JP #8"
     },
     {
       "id": "manual-2026-08-23-2",
@@ -1807,7 +1823,7 @@
       "reason": "OCCTO当日データは12:30以降が見通し値で、再取得工程が無く、台帳取込が「小さい方を採る」実装だった。対処＝毎朝の再取得・value_status の導入。脆弱性①の日数は不変",
       "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
       "recorded_at": "2026-08-23",
-      "ledger_ref": "docs/指標定義_脆弱性01_電力予備率警戒日数.md（文書v1.2）"
+      "ledger_ref": "指標定義_脆弱性01_電力予備率警戒日数.md（文書v1.2）"
     },
     {
       "id": "manual-2026-08-23-3",
@@ -1822,7 +1838,7 @@
       "reason": "台帳が同日の記録を消して書き直す方式だった。対処＝追記専用・revision 方式",
       "source_url": "https://www.jepx.jp/electricpower/market-data/spot/",
       "recorded_at": "2026-08-23",
-      "ledger_ref": "data/JP/changes/ledger.jsonl（2026-08-22 の行）"
+      "ledger_ref": "changes ledger JP（2026-08-22 の行）"
     },
     {
       "id": "manual-2026-08-23-4",
@@ -1837,7 +1853,7 @@
       "reason": "value_status（provisional/final）の導入に伴う記述の追加",
       "source_url": "https://ai-lifeline.org/jp/api/vulnerability_jp.json",
       "recorded_at": "2026-08-23",
-      "ledger_ref": "docs/指標定義_脆弱性01_電力予備率警戒日数.md"
+      "ledger_ref": "指標定義_脆弱性01_電力予備率警戒日数.md"
     },
     {
       "id": "jp-changes-2026-08-22-r2-6",
@@ -1852,7 +1868,7 @@
       "reason": "復元元バックアップの 9.96%（+1.09pt）は 2026-08-22 11:00 取得の断面で、12:30以降が見通し値だった。OCCTOから2026-08-23に再取得した確定値は 9.50%（8/21 8.87% から +0.63pt）。JEPXの復元値（16.59円/kWh・-2.56円）は再取得と完全一致したため確定。遡及取得はOCCTO・JEPXとも可能で、推測で埋めた値は無い。",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 11:09:39",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#6"
+      "ledger_ref": "changes ledger JP #6"
     },
     {
       "id": "jp-changes-2026-08-22-r2-3",
@@ -1864,10 +1880,10 @@
       "what_changed": "復元不能：8/22 早朝の実行分（06:41〜06:42）の記録内容は残っていない",
       "old": null,
       "new": null,
-      "reason": "logs\run_20260822.log によれば 06:41:22=1件／06:41:49=3件／06:41:50=1件／06:42:07=1件 が生成されていたが、旧実装の同日上書きにより内容は失われた。当該時刻のバックアップは存在せず、ライブも上書き済みのため復元不能。件数のみログに残る。なお当該時間帯は「今日の変化」機能の実装作業中であり、テスト実行を含む可能性が高い（未確認）。",
+      "reason": "当日のバッチ記録によれば 06:41:22=1件／06:41:49=3件／06:41:50=1件／06:42:07=1件 が生成されていたが、旧実装の同日上書きにより内容は失われた。当該時刻のバックアップは存在せず、ライブも上書き済みのため復元不能。件数のみログに残る。なお当該時間帯は「今日の変化」機能の実装作業中であり、テスト実行を含む可能性が高い（未確認）。",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 10:58:07",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#3"
+      "ledger_ref": "changes ledger JP #3"
     },
     {
       "id": "jp-changes-2026-08-22-r2-2",
@@ -1879,11 +1895,10 @@
       "what_changed": "第2版へ訂正：8/22の差分2件を復元（第1版の「変化なし」は再実行の副作用）",
       "old": null,
       "new": null,
-      "reason": "旧実装は同日再実行時に台帳の当日行を消して書き直していた。2026-08-22 11:00:55 の実行で記録された差分2件が、17:27:21 の再実行で「変化なし」に上書きされ、その誤りが本番にも出た。復元元＝data\backup\u0007i-lifeline60822_172659\\jp\u0007pi\\changes_jp.json（2026-08-22 17:27:02 取得のライブ版）。第1版の行は台帳に残したまま、第2版を表示に用いる。台帳は本日より追記専用。",
+      "reason": "旧実装は同日再実行時に台帳の当日行を消して書き直していた。2026-08-22 11:00:55 の実行で記録された差分2件が、17:27:21 の再実行で「変化なし」に上書きされ、その誤りが本番にも出た。復元元＝反映前バックアップ（2026-08-22 17:26:59 取得）の changes_jp.json（2026-08-22 17:27:02 取得のライブ版）。第1版の行は台帳に残したまま、第2版を表示に用いる。台帳は本日より追記専用。",
       "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
       "recorded_at": "2026-08-23 10:52:07",
-      "ledger_ref": "data/JP/changes/ledger.jsonl#2"
+      "ledger_ref": "changes ledger JP #2"
     }
-  ],
-  "count": 125
+  ]
 }
