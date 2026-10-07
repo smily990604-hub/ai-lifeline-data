@@ -1,14 +1,12 @@
 {
-  "count": 126,
+  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
   "kinds": {
-    "definition_revision": "an indicator definition document changed version (old series kept alongside)",
     "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
     "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
-    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)"
+    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
+    "definition_revision": "an indicator definition document changed version (old series kept alongside)"
   },
-  "page": "/jp/unei/#corrections",
-  "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
-  "generated_at": "2026-10-07 20:48",
+  "count": 126,
   "corrections": [
     {
       "id": "us-changes-2026-10-07-r1-511",
@@ -1658,7 +1656,7 @@
       "reason": "脆弱性②の分母（解析成功数25）をパネル規模の表記に流し込んでいた。指標値・数え方は不変",
       "source_url": "https://ai-lifeline.org/jp/unei/",
       "recorded_at": "2026-08-26",
-      "ledger_ref": "scripts/robots_panel.json（26サイト）・2026-08-20 巡回記録"
+      "ledger_ref": "巡回対象パネル（26サイト）・2026-08-20 巡回記録"
     },
     {
       "id": "jp-changes-2026-08-25-r2-27",
@@ -1900,5 +1898,7 @@
       "recorded_at": "2026-08-23 10:52:07",
       "ledger_ref": "changes ledger JP #2"
     }
-  ]
+  ],
+  "generated_at": "2026-10-07 21:29",
+  "page": "/jp/unei/#corrections"
 }
