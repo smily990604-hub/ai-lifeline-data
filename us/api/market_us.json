@@ -1,71 +1,32 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-07. Latest final value: support received by this site (cumulative) 0 (2026-10-06). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-07 18:01 JST)",
-  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-10-06, https://ai-lifeline.org/us/market/",
-  "region": "us",
-  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
-  "candidates": [
-    {
-      "reason": "Endpoint not implemented (design pending approval).",
-      "name": "HTTP 402 attempts and successes (self-observation)",
-      "status": "candidate_unobserved"
-    }
-  ],
-  "can_say": [
-    "The status in the United States of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
-    "The enactment, rulemaking and effective dates of the GENIUS Act (Public Law 119-27) as fixed in the statute text and the Federal Register.",
-    "How many times this site has actually received support (operator self-tests excluded; daily count)."
-  ],
-  "generated": "2026-10-07 18:01",
-  "chapter": "Chapter 9 - Market participation",
-  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
-  "status": "observing",
-  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
-  "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-08. Latest final value: support received by this site (cumulative) 0 (2026-10-07). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-08 18:01 JST)",
+  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-10-07, https://ai-lifeline.org/us/market/",
   "cannot_say": [
     "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
     "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
     "How pending deliberations on the contractual capacity and liability of AI agents will end (statutes and government documents; state and dates only)."
   ],
+  "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
+  "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
+  "region": "us",
+  "can_say": [
+    "The status in the United States of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
+    "The enactment, rulemaking and effective dates of the GENIUS Act (Public Law 119-27) as fixed in the statute text and the Federal Register.",
+    "How many times this site has actually received support (operator self-tests excluded; daily count)."
+  ],
+  "chapter": "Chapter 9 - Market participation",
+  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
   "series": {
-    "http402_success": {
-      "update_frequency": "daily",
+    "http402_attempts": {
       "unit": "count",
-      "name": "Payments completed after an HTTP 402 response, per day",
-      "data_status": "not_yet_measured (endpoint not implemented)",
-      "daily": []
-    },
-    "legal_status_ledger": {
-      "entries": [
-        {
-          "date": "2026-09-04",
-          "kind": "current_law",
-          "label": "No federal statute confers legal personality or independent contractual capacity on an AI system; contracts formed through electronic agents are attributed to the person on whose behalf the agent acts under the Uniform Electronic Transactions Act (state law, section 14) and the federal E-SIGN Act (15 U.S.C. 7001 et seq.)",
-          "note": "State as of the statute texts; E-SIGN via govinfo (U.S. Code). UETA adoption varies by state (uniform act text via the Uniform Law Commission).",
-          "source_url": "https://www.govinfo.gov/app/collection/uscode",
-          "verified_on": "2026-09-04"
-        },
-        {
-          "date": "2025-07-18",
-          "kind": "current_law",
-          "label": "GENIUS Act (Public Law 119-27): regulates payment stablecoin issuers; it does not address AI agents as contracting parties",
-          "note": "govinfo statute text retrieved 2026-09-04.",
-          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-          "verified_on": "2026-09-04"
-        }
-      ],
-      "source": {
-        "url": "",
-        "name": "Statutes and government documents (URL on each row)",
-        "license": "per source"
-      },
-      "checked": "2026-09-04",
-      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
-      "unit": "entries",
-      "data_status": "live",
-      "definition_note": "Sources are statutes and government documents only. State and dates only.",
-      "reference": true
+      "daily": [],
+      "update_frequency": "daily",
+      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+      "definition_note": "The 402 endpoint is not implemented (design pending approval). Placeholder to be connected after deployment.",
+      "name": "HTTP 402 (payment required) responses attempted per day"
     },
     "regime_calendar": {
+      "unit": "stages",
       "entries": [
         {
           "date": "2025-07-18",
@@ -137,25 +98,128 @@
         "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
         "license": "Public domain (U.S. federal government work)"
       },
-      "checked": "2026-09-04",
-      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
-      "unit": "stages",
-      "data_status": "live",
+      "reference": false,
       "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
-      "reference": false
+      "data_status": "live",
+      "checked": "2026-09-04",
+      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date"
+    },
+    "legal_status_ledger": {
+      "unit": "entries",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "current_law",
+          "label": "No federal statute confers legal personality or independent contractual capacity on an AI system; contracts formed through electronic agents are attributed to the person on whose behalf the agent acts under the Uniform Electronic Transactions Act (state law, section 14) and the federal E-SIGN Act (15 U.S.C. 7001 et seq.)",
+          "note": "State as of the statute texts; E-SIGN via govinfo (U.S. Code). UETA adoption varies by state (uniform act text via the Uniform Law Commission).",
+          "source_url": "https://www.govinfo.gov/app/collection/uscode",
+          "verified_on": "2026-09-04"
+        },
+        {
+          "date": "2025-07-18",
+          "kind": "current_law",
+          "label": "GENIUS Act (Public Law 119-27): regulates payment stablecoin issuers; it does not address AI agents as contracting parties",
+          "note": "govinfo statute text retrieved 2026-09-04.",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+          "verified_on": "2026-09-04"
+        }
+      ],
+      "source": {
+        "url": "",
+        "name": "Statutes and government documents (URL on each row)",
+        "license": "per source"
+      },
+      "reference": true,
+      "definition_note": "Sources are statutes and government documents only. State and dates only.",
+      "data_status": "live",
+      "checked": "2026-09-04",
+      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents"
+    },
+    "payment_rails": {
+      "unit": "rails",
+      "entries": [
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stripe_mpp",
+          "label": "Stripe MPP (Machine Payments Protocol) - card payments via Shared Payment Tokens and stablecoin payments — not verified",
+          "note": "Stripe's agentic-commerce documentation lists 'accept machine payments' with the protocols MPP or x402 (page retrieved 2026-09-04). Country availability for US accounts was not stated on the retrieved page; not verified.",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stripe_agentic_commerce",
+          "label": "Stripe Agentic Commerce (Agentic Commerce Protocol / Universal Commerce Protocol - selling through agents) — not verified",
+          "note": "Documentation page exists; country availability not stated on the retrieved page; not verified.",
+          "source_url": "https://docs.stripe.com/agentic-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "x402",
+          "label": "x402 (open payment protocol over HTTP 402; x402 Foundation / Coinbase Developer Platform facilitator) — not verified",
+          "note": "Protocol and facilitator documentation exist; account/KYC prerequisites for a specific operator were not verified on the retrieved pages.",
+          "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "visa_intelligent_commerce",
+          "label": "Visa Intelligent Commerce (agent-specific payment tokens; developer platform) — not verified",
+          "note": "Same page; sandbox listed for N. America, production by contact; not verified as available to an arbitrary operator.",
+          "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "mastercard_agent_pay",
+          "label": "Mastercard Agent Pay (agentic payments program) — not verified",
+          "note": "Not retrieved (HTTP 403); not verified.",
+          "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        },
+        {
+          "date": "2026-09-04",
+          "kind": "unverified",
+          "rail": "stablecoin_receipt",
+          "label": "Stablecoin receipt (e.g. USDC) by this site as payee — not verified",
+          "note": "Circle developer documentation not retrieved on 2026-09-04 (HTTP 404 on the page tried); not verified. The GENIUS Act regime is not yet effective (see regime calendar).",
+          "source_url": "https://developers.circle.com/",
+          "verified_on": "2026-09-04",
+          "observation_type": "official_docs"
+        }
+      ],
+      "source": {
+        "url": "https://ai-lifeline.org/us/market/",
+        "name": "AI Lifeline first-party ledger of official provider documentation",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation"
+      },
+      "reference": false,
+      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
+      "unverified_rows": 6,
+      "data_status": "live",
+      "checked": "2026-09-04",
+      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified"
+    },
+    "http402_success": {
+      "daily": [],
+      "data_status": "not_yet_measured (endpoint not implemented)",
+      "name": "Payments completed after an HTTP 402 response, per day",
+      "update_frequency": "daily",
+      "unit": "count"
     },
     "support_count": {
-      "source": {
-        "url": "https://ai-lifeline.org/us/support/",
-        "name": "AI Lifeline first-party observation",
-        "license": "First-party observation (this site's own records)"
-      },
-      "update_frequency": "daily",
-      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
       "unit": "count",
-      "definition_note": "Daily snapshot of the count in data/support/count.json (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
-      "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
-      "data_status": "live",
       "daily": [
         {
           "date": "2026-09-03",
@@ -434,105 +498,49 @@
           "value": 0,
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
-          "value_status": "provisional",
+          "value_status": "final",
           "fetched_at": "2026-10-07 18:01"
-        }
-      ]
-    },
-    "payment_rails": {
-      "unverified_rows": 6,
-      "entries": [
-        {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "stripe_mpp",
-          "label": "Stripe MPP (Machine Payments Protocol) - card payments via Shared Payment Tokens and stablecoin payments — not verified",
-          "note": "Stripe's agentic-commerce documentation lists 'accept machine payments' with the protocols MPP or x402 (page retrieved 2026-09-04). Country availability for US accounts was not stated on the retrieved page; not verified.",
-          "source_url": "https://docs.stripe.com/agentic-commerce",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
         },
         {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "stripe_agentic_commerce",
-          "label": "Stripe Agentic Commerce (Agentic Commerce Protocol / Universal Commerce Protocol - selling through agents) — not verified",
-          "note": "Documentation page exists; country availability not stated on the retrieved page; not verified.",
-          "source_url": "https://docs.stripe.com/agentic-commerce",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
-        },
-        {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "x402",
-          "label": "x402 (open payment protocol over HTTP 402; x402 Foundation / Coinbase Developer Platform facilitator) — not verified",
-          "note": "Protocol and facilitator documentation exist; account/KYC prerequisites for a specific operator were not verified on the retrieved pages.",
-          "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
-        },
-        {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "visa_intelligent_commerce",
-          "label": "Visa Intelligent Commerce (agent-specific payment tokens; developer platform) — not verified",
-          "note": "Same page; sandbox listed for N. America, production by contact; not verified as available to an arbitrary operator.",
-          "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
-        },
-        {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "mastercard_agent_pay",
-          "label": "Mastercard Agent Pay (agentic payments program) — not verified",
-          "note": "Not retrieved (HTTP 403); not verified.",
-          "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
-        },
-        {
-          "date": "2026-09-04",
-          "kind": "unverified",
-          "rail": "stablecoin_receipt",
-          "label": "Stablecoin receipt (e.g. USDC) by this site as payee — not verified",
-          "note": "Circle developer documentation not retrieved on 2026-09-04 (HTTP 404 on the page tried); not verified. The GENIUS Act regime is not yet effective (see regime calendar).",
-          "source_url": "https://developers.circle.com/",
-          "verified_on": "2026-09-04",
-          "observation_type": "official_docs"
+          "date": "2026-10-08",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-10-08 18:01"
         }
       ],
-      "source": {
-        "url": "https://ai-lifeline.org/us/market/",
-        "name": "AI Lifeline first-party ledger of official provider documentation",
-        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation"
-      },
-      "checked": "2026-09-04",
-      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
-      "unit": "rails",
-      "data_status": "live",
-      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
-      "reference": false
-    },
-    "http402_attempts": {
+      "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
       "update_frequency": "daily",
-      "name": "HTTP 402 (payment required) responses attempted per day",
-      "unit": "count",
-      "definition_note": "The 402 endpoint is not implemented (design docs/設計案_402支払いエンドポイント_20260830.md, pending approval). Placeholder to be connected after deployment.",
-      "daily": [],
-      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)"
+      "definition_note": "Daily snapshot of the count in the support counter ledger (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
+      "source": {
+        "url": "https://ai-lifeline.org/us/support/",
+        "name": "AI Lifeline first-party observation",
+        "license": "First-party observation (this site's own records)"
+      },
+      "data_status": "live",
+      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)"
     }
   },
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-07. Latest final value: support received by this site (cumulative) 0 (2026-10-06). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-07 18:01 JST)",
-  "answer_line_date": "2026-10-06",
+  "candidates": [
+    {
+      "name": "HTTP 402 attempts and successes (self-observation)",
+      "status": "candidate_unobserved",
+      "reason": "Endpoint not implemented (design pending approval)."
+    }
+  ],
+  "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
+  "status": "observing",
+  "generated": "2026-10-08 18:01",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-08. Latest final value: support received by this site (cumulative) 0 (2026-10-07). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-08 18:01 JST)",
+  "answer_line_date": "2026-10-07",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "support_count",
     "label": "support received by this site (cumulative)",
     "value": 0,
     "unit": "",
-    "date": "2026-10-06",
+    "date": "2026-10-07",
     "threshold": null
   },
   "faq": [
@@ -542,7 +550,7 @@
     },
     {
       "q": "How much support has this site received?",
-      "a": "0 as the cumulative count on 2026-10-07 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+      "a": "0 as the cumulative count on 2026-10-08 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
     },
     {
       "q": "How many GENIUS Act stages are listed?",
@@ -550,7 +558,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-10-07 18:01 JST. Definition: docs/指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-10-08 18:01 JST. Definition: 指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -560,14 +568,14 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/market/",
     "api": "https://ai-lifeline.org/us/api/market_us.json",
-    "last_confirmed": "2026-10-07",
-    "next_expected": "2026-10-08",
-    "generated": "2026-10-07 18:01",
+    "last_confirmed": "2026-10-08",
+    "next_expected": "2026-10-09",
+    "generated": "2026-10-08 18:01",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,
-    "title_short": "support count 0 (final 10/6)",
-    "generated_by": "scripts/citation/apply_citation_layer.py",
+    "title_short": "support count 0 (final 10/7)",
+    "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
       "summary",

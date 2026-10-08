@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-10-07 10:31",
+  "generated": "2026-10-08 10:31",
   "indicator": {
     "id": "ai_self_03",
     "chapter": "gpu",
@@ -8,18 +8,18 @@
     "unit": "原通貨 / 1,000,000トークン",
     "definition_version": "1.0",
     "definition_fixed_on": "2026-08-26",
-    "definition_doc": "docs/指標定義_AI自身03_推論トークン単価.md",
+    "definition_doc": "指標定義_AI自身03_推論トークン単価.md",
     "cadence": "週次",
     "price_basis": "割引・従量段階・バッチ・キャッシュ読み書き・時間帯割引・無償枠を含まない公表定価である",
     "currency_rule": "原通貨のまま保存し、為替換算した値は系列に混ぜない。最安値も通貨ごとに出す",
     "series_a": "同一モデル継続追跡単価（後継モデルへは乗り換えない。追跡対象が提供終了になったらその系列は終了する）",
     "series_b": "確認できる範囲の最安値（台帳に載っている範囲の最小値であり、市場の最安値ではない）",
     "not_means": "モデルの性能・コンテキスト長・レート上限・提供地域・SLAは単価に反映されていない。事業者間の優劣を示すものではない",
-    "legal_basis": "docs/調査報告_20260816.md §1-8-2（創作性のない数値・事実データは著作物ではない）の整理を適用。2026-08-26 発行人裁定。GPU章との一貫性を優先した措置であり §1-8-2 自体の追認ではなく、妥当性は別途再検証する"
+    "legal_basis": "調査報告_20260816.md §1-8-2（創作性のない数値・事実データは著作物ではない）の整理を適用。2026-08-26 発行人裁定。GPU章との一貫性を優先した措置であり §1-8-2 自体の追認ではなく、妥当性は別途再検証する"
   },
   "source": {
-    "registry": "ai-lifeline/scripts/token_price_registry.json",
-    "script": "ai-lifeline/scripts/fetch_token_prices.ps1",
+    "registry": "運営者の価格台帳",
+    "script": "運営者の週次取得",
     "policy": "各社公式料金ページから価格数値のみを抽出・自社整形して掲載（文章・表・画像は複製しない）。取得は週1回以下・UA明示・robots.txt遵守",
     "attribution": "Google の価格は同社開発者ドキュメント（Creative Commons Attribution 4.0 ライセンス）に基づく"
   },

@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-10-07 10:32",
+  "generated": "2026-10-08 10:32",
   "indicator": {
     "id": "ai_self_02",
     "chapter": "data",
@@ -9,7 +9,7 @@
     "unit": "サイト",
     "definition_version": "1.0",
     "definition_fixed_on": "2026-08-26",
-    "definition_doc": "docs/指標定義_AI自身02_巡回拒否率.md",
+    "definition_doc": "指標定義_AI自身02_巡回拒否率.md",
     "series_start": "2026-09-01",
     "aggregation": "暦月（JST）。その月の最終巡回時点で、robots.txt の取得が 403 または Bot保護（401/429/503・200のチャレンジ本文）で拒まれたサイト数。分母はパネル全件",
     "numerator": "http_403 ＋ bot_protect のみ",
@@ -23,9 +23,9 @@
   "source": {
     "name": "国内主要サイトのrobots.txt（自前巡回・月次）",
     "license": "robots.txtは機械向けに公開されたファイル",
-    "panel": "ai-lifeline/scripts/robots_panel.json（コア系列。拡大版が始まったら panel_set で系列を分ける）",
+    "panel": "巡回対象パネル（コア系列。拡大版が始まったら panel_set で系列を分ける）",
     "panel_note": "本パネルは当社が選定した名簿であり、網羅的な母集団ではない。日本語ウェブ全体でも、報道機関の全数でもない。外部が作成した公開名簿を採用したものではなく、当社が国内主要サイトとして選んだ26件である。比率は「このパネルの中での比率」としてのみ読むこと",
-    "script": "ai-lifeline/scripts/build_crawl_refusal.ps1（巡回は fetch_data_chapter.ps1・月次）",
+    "script": "運営者の月次巡回・集計",
     "crawl_condition": "月1回・1サイト1リクエスト・300ms間隔・タイムアウト20秒・UA明示。403等を受けてもUAを変えた再取得はしない"
   },
   "current_month": {
