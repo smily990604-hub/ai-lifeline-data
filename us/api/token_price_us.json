@@ -1,6 +1,6 @@
 {
   "country": "US",
-  "generated": "2026-10-08 18:01",
+  "generated": "2026-10-09 18:01",
   "indicator": {
     "id": "ai_self_03",
     "chapter": "gpu",
@@ -75,7 +75,7 @@
       "tax": "税抜",
       "input_per_1m": 0.75,
       "output_per_1m": 3.75,
-      "latest_date": "2026-10-02",
+      "latest_date": "2026-10-09",
       "latest_status": "ok",
       "stopped_on": null,
       "stop_reason": null,
@@ -103,6 +103,11 @@
         },
         {
           "date": "2026-10-02",
+          "input_per_1m": 0.75,
+          "output_per_1m": 3.75
+        },
+        {
+          "date": "2026-10-09",
           "input_per_1m": 0.75,
           "output_per_1m": 3.75
         }
@@ -191,7 +196,7 @@
       "tax": "税込",
       "input_per_1m": 15.0,
       "output_per_1m": 75.0,
-      "latest_date": "2026-10-02",
+      "latest_date": "2026-10-09",
       "latest_status": "ok",
       "stopped_on": null,
       "stop_reason": null,
@@ -221,6 +226,11 @@
           "date": "2026-10-02",
           "input_per_1m": 15.0,
           "output_per_1m": 75.0
+        },
+        {
+          "date": "2026-10-09",
+          "input_per_1m": 15.0,
+          "output_per_1m": 75.0
         }
       ]
     }
@@ -228,7 +238,7 @@
   "cheapest": [
     {
       "currency": "JPY",
-      "observed_date": "2026-10-02",
+      "observed_date": "2026-10-09",
       "candidates": 1,
       "cheapest_input": {
         "value": 15.0,
@@ -245,18 +255,18 @@
     },
     {
       "currency": "USD",
-      "observed_date": "2026-10-02",
-      "candidates": 4,
+      "observed_date": "2026-10-09",
+      "candidates": 2,
       "cheapest_input": {
-        "value": 0.2,
-        "provider": "OpenAI",
-        "model": "gpt-5.6-luna",
+        "value": 0.3,
+        "provider": "Google",
+        "model": "gemini-3.5-flash-lite",
         "tax": "税抜"
       },
       "cheapest_output": {
-        "value": 1.2,
-        "provider": "OpenAI",
-        "model": "gpt-5.6-luna",
+        "value": 2.5,
+        "provider": "Google",
+        "model": "gemini-3.5-flash-lite",
         "tax": "税抜"
       }
     }

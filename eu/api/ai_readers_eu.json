@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-10-07 20:05",
+  "generated": "2026-10-08 20:07",
   "indicator": {
     "id": "ai_readers_01_eu",
     "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
@@ -8,8 +8,8 @@
     "cadence": "weekly (re-aggregated daily from daily data; weeks are 7-day blocks from 2026-08-23, Sunday to Saturday, JST)",
     "definition_version": "1.0",
     "definition_fixed_on": "2026-08-29",
-    "definition_doc": "docs/指標定義_AI読者数.md",
-    "data_layer_doc": "docs/指標定義_AI読者アクセス.md",
+    "definition_doc": "指標定義_AI読者数.md",
+    "data_layer_doc": "指標定義_AI読者アクセス.md",
     "path_scope": "/eu/",
     "path_scope_note": "Only requests whose path starts with /eu/ (this edition's pages and API files). Shared root files (/, /llms.txt, /index.json, /api/world.json) are not attributed to any edition. Same definition, same UA table and same self-exclusion rule as the Japan edition; only the path filter differs.",
     "observation_start": "2026-09-03",
@@ -28,9 +28,9 @@
   "source": {
     "name": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
     "rights": "Measured with Cloudflare Analytics; rights in the aggregated figures belong to Cloudflare, Inc. (Cloudflare Self-Serve Subscription Agreement 2.5.5, effective 2025-09-12, https://www.cloudflare.com/terms/)",
-    "fetch": "ai-lifeline/scripts/fetch_cf_access.ps1 (daily, previous day)",
-    "build": "ai-lifeline/scripts/build_ai_readers_region.ps1",
-    "raw_note": "Daily detail is archived every day from the API (8-day retention) into data/cfaccess/raw/"
+    "fetch": "daily fetch from the Cloudflare GraphQL Analytics API (previous day)",
+    "build": "daily aggregation by the operator",
+    "raw_note": "Daily detail is archived every day from the API (8-day retention) into an internal archive kept by the operator"
   },
   "weeks": [
     {
@@ -53,8 +53,8 @@
         "other": 2
       },
       "breakdown_verified_other_detail": {
-        "Amazonbot": 1,
-        "OAI-SearchBot": 1
+        "OAI-SearchBot": 1,
+        "Amazonbot": 1
       },
       "top_verified": {
         "name": "GPTBot",
@@ -188,27 +188,29 @@
       "week": 7,
       "from": "2026-10-04",
       "to": "2026-10-10",
-      "observed_through": "2026-10-06",
-      "days_observed": 3,
+      "observed_through": "2026-10-07",
+      "days_observed": 4,
       "provisional": true,
-      "verified_total": 12,
-      "verified_days": 3,
+      "verified_total": 22,
+      "verified_days": 4,
       "unverified_total": 1,
-      "named_total_reference": 13,
-      "self_excluded_total": 327,
+      "named_total_reference": 23,
+      "self_excluded_total": 569,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
         "GPTBot": 0,
         "CCBot": 0,
-        "other": 12
+        "other": 22
       },
       "breakdown_verified_other_detail": {
+        "OAI-SearchBot": 8,
         "Amazonbot": 8,
-        "OAI-SearchBot": 4
+        "ShapBot": 5,
+        "ChatGPT-User": 1
       },
       "top_verified": {
-        "name": "Amazonbot",
+        "name": "OAI-SearchBot",
         "requests": 8
       }
     }
@@ -518,6 +520,15 @@
       "ai_named_reference": 4,
       "self_excluded": 109,
       "requests_in_scope": 123,
+      "verified_available": true
+    },
+    {
+      "date": "2026-10-07",
+      "ai_verified": 10,
+      "ai_unverified": 0,
+      "ai_named_reference": 10,
+      "self_excluded": 242,
+      "requests_in_scope": 297,
       "verified_available": true
     }
   ]
