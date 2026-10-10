@@ -1,1135 +1,1125 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-08. Latest final value: EU27 day-ahead total load FORECAST 6,439,185 MWh (2026-10-08). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-08 20:07 JST)",
-  "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed 2026-10-08, https://ai-lifeline.org/eu/power/",
-  "sources": [
-    {
-      "license": "ENTSO-E Transparency Platform — List of Data available for free re-use (2023-10-18), item 1 'Day-ahead Total Load Forecast (6.1.B)': CC BY 4.0 (attribution to the ENTSO-E Transparency Platform as source of publication). Terms and Conditions approved 2023-03-29, applicable from 2023-11-01.",
-      "url": "https://transparency.entsoe.eu/",
-      "name": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)"
-    }
-  ],
-  "series_kind": "forecast",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-09. Latest final value: EU27 day-ahead total load FORECAST 6,628,640 MWh (2026-10-09). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-09 20:05 JST)",
+  "cite_as": "AI Lifeline, Electricity (European Union edition), data confirmed 2026-10-09, https://ai-lifeline.org/eu/power/",
+  "scope_note": "EU27 aggregate = simple sum of the day-ahead total load forecast over one area per member state (27 areas listed in areas_definition; CET/CEST calendar day; MWh = MW x resolution). First retrieval 2026-09-12: 25 areas publish this item; Ireland (10YIE-1001A00010) and Malta (10Y1001A1001A93C) answer \"no matching data\" and are listed with available=false, counted on every point as areas_not_published and never substituted (no estimate, no alternative area). Non-member areas (including the United Kingdom, Norway, Switzerland, the Western Balkans) are excluded. A day with any published area missing is never final: value_status stays provisional and areas_missing / missing_area_codes record the gap.",
   "cannot_say": [
     "How much electricity was actually consumed (actual total load, article 6.1.a, is not published here until ENTSO-E confirms its re-use terms in writing).",
     "Whether the EU grid is tight or has spare capacity (a load forecast is not a reserve margin; no criterion is frozen).",
     "Conditions in the United Kingdom, Norway, Switzerland or the Western Balkans (non-member areas are excluded), or what any single member state's grid did (the member-state breakdown is machine-readable only)."
   ],
-  "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
-  "scope_note": "EU27 aggregate = simple sum of the day-ahead total load forecast over one area per member state (27 areas listed in areas_definition; CET/CEST calendar day; MWh = MW x resolution). First retrieval 2026-09-12: 25 areas publish this item; Ireland (10YIE-1001A00010) and Malta (10Y1001A1001A93C) answer \"no matching data\" and are listed with available=false, counted on every point as areas_not_published and never substituted (no estimate, no alternative area). Non-member areas (including the United Kingdom, Norway, Switzerland, the Western Balkans) are excluded. A day with any published area missing is never final: value_status stays provisional and areas_missing / missing_area_codes record the gap.",
-  "load_forecast_daily": [
-    {
-      "eu27_load_forecast_mwh": 6626682.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-10",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6610340.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-11",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6634603.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-12",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6615659.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-13",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6562013.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-14",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5807978.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-15",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5681195.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-16",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6432376.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-17",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6510482.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-18",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6524320.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-19",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6462803.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-20",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6370570.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-21",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5787954.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-22",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5554265.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-23",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6465433.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-24",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6598726.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-25",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6683728.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-26",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6705902.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-27",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6655373.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-28",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5871579.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-29",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5613373.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-30",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6632733.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-08-31",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6793481.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-01",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6780830.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-02",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6894357.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-03",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6912805.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-04",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        null
-      ],
-      "fetched_at": "2026-09-12 08:47",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6119694.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-05",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5777329.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-06",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6792665.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-07",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6874798.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-08",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6846640.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-09",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6755212.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-10",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6661441.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": true,
-      "date": "2026-09-11",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5843556.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-12",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5596533.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-13",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6603466.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-14",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 18:29",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6771674.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-15",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-22 20:08",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6502747.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-16",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YHR-HEP------M",
-        "10YPT-REN------W"
-      ],
-      "fetched_at": "2026-09-23 20:00",
-      "areas_missing": 2
-    },
-    {
-      "eu27_load_forecast_mwh": 6584092.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-17",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YSI-ELES-----O"
-      ],
-      "fetched_at": "2026-09-24 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 6592221.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-18",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-25 21:38",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5817563.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-19",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-26 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5581282.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-20",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-27 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6568618.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-21",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-28 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6642656.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-22",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-29 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6615421.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-23",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-09-30 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6637081.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-24",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-01 20:56",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6599694.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-25",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-02 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5781639.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-26",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-03 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 5551703.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-27",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-04 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6445700.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-28",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-05 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6574976.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-29",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-06 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6637589.0,
-      "value_status": "final",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-09-30",
-      "areas_expected": 25,
-      "missing_area_codes": [],
-      "fetched_at": "2026-10-07 20:00",
-      "areas_missing": 0
-    },
-    {
-      "eu27_load_forecast_mwh": 6322714.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-01",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2",
-        "10YLT-1001A0008Q"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 2
-    },
-    {
-      "eu27_load_forecast_mwh": 6273158.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-02",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 5491027.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-03",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 5330416.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-04",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 6284799.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-05",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 6416613.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-06",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 6403422.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-07",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    },
-    {
-      "eu27_load_forecast_mwh": 6439185.0,
-      "value_status": "provisional",
-      "areas_not_published": 2,
-      "retrieved_retrospectively": false,
-      "date": "2026-10-08",
-      "areas_expected": 25,
-      "missing_area_codes": [
-        "10YBE----------2"
-      ],
-      "fetched_at": "2026-10-08 20:00",
-      "areas_missing": 1
-    }
-  ],
-  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition (criteria are frozen as versioned definitions before use; none exists for the EU edition as of 2026-09-03). Do not infer thresholds.",
   "areas_definition": [
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "AT",
-      "available": true,
       "area": "10YAT-APG------L",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "BE",
-      "available": true,
       "area": "10YBE----------2",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "BG",
-      "available": true,
       "area": "10YCA-BULGARIA-R",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "HR",
-      "available": true,
       "area": "10YHR-HEP------M",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "CY",
-      "available": true,
       "area": "10YCY-1001A0003J",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "CZ",
-      "available": true,
       "area": "10YCZ-CEPS-----N",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "DK",
-      "available": true,
       "area": "10Y1001A1001A65H",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "EE",
-      "available": true,
       "area": "10Y1001A1001A39I",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "FI",
-      "available": true,
       "area": "10YFI-1--------U",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "FR",
-      "available": true,
       "area": "10YFR-RTE------C",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "DE",
-      "available": true,
       "area": "10Y1001A1001A83F",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "GR",
-      "available": true,
       "area": "10YGR-HTSO-----Y",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "HU",
-      "available": true,
       "area": "10YHU-MAVIR----U",
-      "verified": true
+      "note": null
     },
     {
-      "note": "2026-09-12 first retrieval: API answered 'No matching data found for Data item DAY_AHEAD_TOTAL_LOAD_FORECAST_R3 [6.1.B]' for the Ireland control area. The SEM area (10Y1001A1001A59C) includes Northern Ireland (UK) and is not used. Not substituted.",
+      "available": false,
+      "verified": false,
       "member_state": "IE",
-      "available": false,
       "area": "10YIE-1001A00010",
-      "verified": false
+      "note": "2026-09-12 first retrieval: API answered 'No matching data found for Data item DAY_AHEAD_TOTAL_LOAD_FORECAST_R3 [6.1.B]' for the Ireland control area. The SEM area (10Y1001A1001A59C) includes Northern Ireland (UK) and is not used. Not substituted."
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "IT",
-      "available": true,
       "area": "10YIT-GRTN-----B",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "LV",
-      "available": true,
       "area": "10YLV-1001A00074",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "LT",
-      "available": true,
       "area": "10YLT-1001A0008Q",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "LU",
-      "available": true,
       "area": "10YLU-CEGEDEL-NQ",
-      "verified": true
+      "note": null
     },
     {
-      "note": "2026-09-12 first retrieval: API answered 'No matching data found for Data item DAY_AHEAD_TOTAL_LOAD_FORECAST_R3 [6.1.B]' for Malta. Not substituted.",
-      "member_state": "MT",
       "available": false,
+      "verified": false,
+      "member_state": "MT",
       "area": "10Y1001A1001A93C",
-      "verified": false
+      "note": "2026-09-12 first retrieval: API answered 'No matching data found for Data item DAY_AHEAD_TOTAL_LOAD_FORECAST_R3 [6.1.B]' for Malta. Not substituted."
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "NL",
-      "available": true,
       "area": "10YNL----------L",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "PL",
-      "available": true,
       "area": "10YPL-AREA-----S",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "PT",
-      "available": true,
       "area": "10YPT-REN------W",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "RO",
-      "available": true,
       "area": "10YRO-TEL------P",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "SK",
-      "available": true,
       "area": "10YSK-SEPS-----K",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "SI",
-      "available": true,
       "area": "10YSI-ELES-----O",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
+      "available": true,
+      "verified": true,
       "member_state": "ES",
-      "available": true,
       "area": "10YES-REE------0",
-      "verified": true
+      "note": null
     },
     {
-      "note": null,
-      "member_state": "SE",
       "available": true,
+      "verified": true,
+      "member_state": "SE",
       "area": "10YSE-1--------K",
-      "verified": true
+      "note": null
     }
   ],
-  "value_status_note": "value_status=final means fetched on a CET/CEST date later than the observation day with no published area missing; provisional otherwise (may still be revised or completed on a later refetch). retrieved_retrospectively=true marks backfilled history retrieved after the series went live, kept apart from day-by-day observation. Source series are curve type A03 (variable-length blocks; omitted points repeat the previous value) and are expanded before summing.",
-  "generated": "2026-10-08 20:07",
-  "status": "observing",
-  "area_forecast_latest": {
-    "rows": [
-      {
-        "value_status": "provisional",
-        "member_state": "AT",
-        "load_forecast_mwh": 161719.0,
-        "area": "10YAT-APG------L"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "BG",
-        "load_forecast_mwh": 91426.0,
-        "area": "10YCA-BULGARIA-R"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "HR",
-        "load_forecast_mwh": 49511.0,
-        "area": "10YHR-HEP------M"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "CY",
-        "load_forecast_mwh": 14144.0,
-        "area": "10YCY-1001A0003J"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "CZ",
-        "load_forecast_mwh": 173668.0,
-        "area": "10YCZ-CEPS-----N"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "DK",
-        "load_forecast_mwh": 109964.0,
-        "area": "10Y1001A1001A65H"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "EE",
-        "load_forecast_mwh": 23443.0,
-        "area": "10Y1001A1001A39I"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "FI",
-        "load_forecast_mwh": 225227.0,
-        "area": "10YFI-1--------U"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "FR",
-        "load_forecast_mwh": 1067262.0,
-        "area": "10YFR-RTE------C"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "DE",
-        "load_forecast_mwh": 1310637.0,
-        "area": "10Y1001A1001A83F"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "GR",
-        "load_forecast_mwh": 125235.0,
-        "area": "10YGR-HTSO-----Y"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "HU",
-        "load_forecast_mwh": 113403.0,
-        "area": "10YHU-MAVIR----U"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "IT",
-        "load_forecast_mwh": 796242.0,
-        "area": "10YIT-GRTN-----B"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "LV",
-        "load_forecast_mwh": 20743.0,
-        "area": "10YLV-1001A00074"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "LT",
-        "load_forecast_mwh": 30173.0,
-        "area": "10YLT-1001A0008Q"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "LU",
-        "load_forecast_mwh": 14274.0,
-        "area": "10YLU-CEGEDEL-NQ"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "NL",
-        "load_forecast_mwh": 271956.0,
-        "area": "10YNL----------L"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "PL",
-        "load_forecast_mwh": 452962.0,
-        "area": "10YPL-AREA-----S"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "PT",
-        "load_forecast_mwh": 144601.0,
-        "area": "10YPT-REN------W"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "RO",
-        "load_forecast_mwh": 132835.0,
-        "area": "10YRO-TEL------P"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "SK",
-        "load_forecast_mwh": 69726.0,
-        "area": "10YSK-SEPS-----K"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "SI",
-        "load_forecast_mwh": 37650.0,
-        "area": "10YSI-ELES-----O"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "ES",
-        "load_forecast_mwh": 649730.0,
-        "area": "10YES-REE------0"
-      },
-      {
-        "value_status": "provisional",
-        "member_state": "SE",
-        "load_forecast_mwh": 352653.0,
-        "area": "10YSE-1--------K"
-      }
-    ],
-    "date": "2026-10-08"
-  },
+  "series_kind_note": "This series is the DAY-AHEAD TOTAL LOAD FORECAST published by the TSOs (ENTSO-E article 6.1.b), not measured actual load. Actual total load (6.1.a) is not published on this site until ENTSO-E confirms its re-use terms in writing.",
   "breakdown": {
     "note": "Per-area daily series are split by year into the files listed in files (machine-readable only; page shows the EU27 aggregate). Empty until the source is connected.",
     "files": {
       "2026": "/eu/api/power_eu_breakdown_2026.json"
     }
   },
+  "region": "eu",
+  "status": "observing",
+  "connection_status": {
+    "source_enabled": true,
+    "observation_start": "2026-09-12",
+    "note": "2026-09-12 接続（代表指示・entsoe_token 設置後）。observation_start=2026-09-12。遡及は 2026-08-01 から（retrieved_retrospectively=true）。curveType A03（可変長ブロック）の展開を取得処理に実装（初回実測で必要と判明）。IE・MT は 6.1.B 未公表のため available=false",
+    "backfill_from": "2026-08-01"
+  },
+  "value_status_note": "value_status=final means fetched on a CET/CEST date later than the observation day with no published area missing; provisional otherwise (may still be revised or completed on a later refetch). retrieved_retrospectively=true marks backfilled history retrieved after the series went live, kept apart from day-by-day observation. Source series are curve type A03 (variable-length blocks; omitted points repeat the previous value) and are expanded before summing.",
+  "status_note": "Observing only: figures are collected and published, but no good/bad criterion has been defined for this edition (criteria are frozen as versioned definitions before use; none exists for the EU edition as of 2026-09-03). Do not infer thresholds.",
+  "series_kind": "forecast",
   "can_say": [
     "How much electricity the transmission system operators of the 27 member states forecast, one day ahead, for each CET/CEST day (sum of one area per member state, MWh), as published on the ENTSO-E Transparency Platform under CC BY 4.0.",
     "Which days are final (all 27 areas present, fetched on a later day), which are provisional, and which were backfilled.",
     "Which 27 areas make up the aggregate (areas_definition in the JSON)."
   ],
-  "region": "eu",
-  "connection_status": {
-    "source_enabled": true,
-    "backfill_from": "2026-08-01",
-    "observation_start": "2026-09-12",
-    "note": "2026-09-12 接続（代表指示・entsoe_token 設置後）。observation_start=2026-09-12。遡及は 2026-08-01 から（retrieved_retrospectively=true）。curveType A03（可変長ブロック）の展開を取得処理に実装（初回実測で必要と判明）。IE・MT は 6.1.B 未公表のため available=false"
-  },
+  "load_forecast_daily": [
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-11",
+      "eu27_load_forecast_mwh": 6610340.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-12",
+      "eu27_load_forecast_mwh": 6634603.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-13",
+      "eu27_load_forecast_mwh": 6615659.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-14",
+      "eu27_load_forecast_mwh": 6562013.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-15",
+      "eu27_load_forecast_mwh": 5807978.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-16",
+      "eu27_load_forecast_mwh": 5681195.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-17",
+      "eu27_load_forecast_mwh": 6432376.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-18",
+      "eu27_load_forecast_mwh": 6510482.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-19",
+      "eu27_load_forecast_mwh": 6524320.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-20",
+      "eu27_load_forecast_mwh": 6462803.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-21",
+      "eu27_load_forecast_mwh": 6370570.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-22",
+      "eu27_load_forecast_mwh": 5787954.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-23",
+      "eu27_load_forecast_mwh": 5554265.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-24",
+      "eu27_load_forecast_mwh": 6465433.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-25",
+      "eu27_load_forecast_mwh": 6598726.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-26",
+      "eu27_load_forecast_mwh": 6683728.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-27",
+      "eu27_load_forecast_mwh": 6705902.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-28",
+      "eu27_load_forecast_mwh": 6655373.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-29",
+      "eu27_load_forecast_mwh": 5871579.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-30",
+      "eu27_load_forecast_mwh": 5613373.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-08-31",
+      "eu27_load_forecast_mwh": 6632733.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-09-01",
+      "eu27_load_forecast_mwh": 6793481.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-09-02",
+      "eu27_load_forecast_mwh": 6780830.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-09-03",
+      "eu27_load_forecast_mwh": 6894357.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        null
+      ],
+      "date": "2026-09-04",
+      "eu27_load_forecast_mwh": 6912805.0,
+      "fetched_at": "2026-09-12 08:47",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-05",
+      "eu27_load_forecast_mwh": 6119694.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-06",
+      "eu27_load_forecast_mwh": 5777329.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-07",
+      "eu27_load_forecast_mwh": 6792665.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-08",
+      "eu27_load_forecast_mwh": 6874798.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-09",
+      "eu27_load_forecast_mwh": 6846640.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-10",
+      "eu27_load_forecast_mwh": 6755212.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-11",
+      "eu27_load_forecast_mwh": 6661441.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": true,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-12",
+      "eu27_load_forecast_mwh": 5843556.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-13",
+      "eu27_load_forecast_mwh": 5596533.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-14",
+      "eu27_load_forecast_mwh": 6603466.0,
+      "fetched_at": "2026-09-22 18:29",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-15",
+      "eu27_load_forecast_mwh": 6771674.0,
+      "fetched_at": "2026-09-22 20:08",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        "10YHR-HEP------M",
+        "10YPT-REN------W"
+      ],
+      "date": "2026-09-16",
+      "eu27_load_forecast_mwh": 6502747.0,
+      "fetched_at": "2026-09-23 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "provisional",
+      "areas_missing": 2
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        "10YSI-ELES-----O"
+      ],
+      "date": "2026-09-17",
+      "eu27_load_forecast_mwh": 6584092.0,
+      "fetched_at": "2026-09-24 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "provisional",
+      "areas_missing": 1
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-18",
+      "eu27_load_forecast_mwh": 6592221.0,
+      "fetched_at": "2026-09-25 21:38",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-19",
+      "eu27_load_forecast_mwh": 5817563.0,
+      "fetched_at": "2026-09-26 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-20",
+      "eu27_load_forecast_mwh": 5581282.0,
+      "fetched_at": "2026-09-27 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-21",
+      "eu27_load_forecast_mwh": 6568618.0,
+      "fetched_at": "2026-09-28 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-22",
+      "eu27_load_forecast_mwh": 6642656.0,
+      "fetched_at": "2026-09-29 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-23",
+      "eu27_load_forecast_mwh": 6615421.0,
+      "fetched_at": "2026-09-30 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-24",
+      "eu27_load_forecast_mwh": 6637081.0,
+      "fetched_at": "2026-10-01 20:56",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-25",
+      "eu27_load_forecast_mwh": 6599694.0,
+      "fetched_at": "2026-10-02 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-26",
+      "eu27_load_forecast_mwh": 5781639.0,
+      "fetched_at": "2026-10-03 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-27",
+      "eu27_load_forecast_mwh": 5551703.0,
+      "fetched_at": "2026-10-04 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-28",
+      "eu27_load_forecast_mwh": 6445700.0,
+      "fetched_at": "2026-10-05 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-29",
+      "eu27_load_forecast_mwh": 6574976.0,
+      "fetched_at": "2026-10-06 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-09-30",
+      "eu27_load_forecast_mwh": 6637589.0,
+      "fetched_at": "2026-10-07 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [
+        "10YBE----------2",
+        "10YLT-1001A0008Q"
+      ],
+      "date": "2026-10-01",
+      "eu27_load_forecast_mwh": 6322714.0,
+      "fetched_at": "2026-10-08 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "provisional",
+      "areas_missing": 2
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-02",
+      "eu27_load_forecast_mwh": 6499654.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-03",
+      "eu27_load_forecast_mwh": 5685662.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-04",
+      "eu27_load_forecast_mwh": 5525044.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-05",
+      "eu27_load_forecast_mwh": 6505235.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-06",
+      "eu27_load_forecast_mwh": 6644063.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-07",
+      "eu27_load_forecast_mwh": 6629403.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-08",
+      "eu27_load_forecast_mwh": 6668913.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "final",
+      "areas_missing": 0
+    },
+    {
+      "areas_not_published": 2,
+      "missing_area_codes": [],
+      "date": "2026-10-09",
+      "eu27_load_forecast_mwh": 6628640.0,
+      "fetched_at": "2026-10-09 20:00",
+      "retrieved_retrospectively": false,
+      "areas_expected": 25,
+      "value_status": "provisional",
+      "areas_missing": 0
+    }
+  ],
   "data_status": "live",
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-08. Latest final value: EU27 day-ahead total load FORECAST 6,439,185 MWh (2026-10-08). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-08 20:07 JST)",
-  "answer_line_date": "2026-10-08",
+  "generated": "2026-10-09 20:05",
+  "area_forecast_latest": {
+    "rows": [
+      {
+        "load_forecast_mwh": 159999.0,
+        "value_status": "provisional",
+        "member_state": "AT",
+        "area": "10YAT-APG------L"
+      },
+      {
+        "load_forecast_mwh": 223029.0,
+        "value_status": "provisional",
+        "member_state": "BE",
+        "area": "10YBE----------2"
+      },
+      {
+        "load_forecast_mwh": 90535.0,
+        "value_status": "provisional",
+        "member_state": "BG",
+        "area": "10YCA-BULGARIA-R"
+      },
+      {
+        "load_forecast_mwh": 49760.0,
+        "value_status": "provisional",
+        "member_state": "HR",
+        "area": "10YHR-HEP------M"
+      },
+      {
+        "load_forecast_mwh": 14130.0,
+        "value_status": "provisional",
+        "member_state": "CY",
+        "area": "10YCY-1001A0003J"
+      },
+      {
+        "load_forecast_mwh": 172158.0,
+        "value_status": "provisional",
+        "member_state": "CZ",
+        "area": "10YCZ-CEPS-----N"
+      },
+      {
+        "load_forecast_mwh": 109864.0,
+        "value_status": "provisional",
+        "member_state": "DK",
+        "area": "10Y1001A1001A65H"
+      },
+      {
+        "load_forecast_mwh": 22482.0,
+        "value_status": "provisional",
+        "member_state": "EE",
+        "area": "10Y1001A1001A39I"
+      },
+      {
+        "load_forecast_mwh": 228519.0,
+        "value_status": "provisional",
+        "member_state": "FI",
+        "area": "10YFI-1--------U"
+      },
+      {
+        "load_forecast_mwh": 1091512.0,
+        "value_status": "provisional",
+        "member_state": "FR",
+        "area": "10YFR-RTE------C"
+      },
+      {
+        "load_forecast_mwh": 1297115.0,
+        "value_status": "provisional",
+        "member_state": "DE",
+        "area": "10Y1001A1001A83F"
+      },
+      {
+        "load_forecast_mwh": 125185.0,
+        "value_status": "provisional",
+        "member_state": "GR",
+        "area": "10YGR-HTSO-----Y"
+      },
+      {
+        "load_forecast_mwh": 114659.0,
+        "value_status": "provisional",
+        "member_state": "HU",
+        "area": "10YHU-MAVIR----U"
+      },
+      {
+        "load_forecast_mwh": 775284.0,
+        "value_status": "provisional",
+        "member_state": "IT",
+        "area": "10YIT-GRTN-----B"
+      },
+      {
+        "load_forecast_mwh": 21843.0,
+        "value_status": "provisional",
+        "member_state": "LV",
+        "area": "10YLV-1001A00074"
+      },
+      {
+        "load_forecast_mwh": 29441.0,
+        "value_status": "provisional",
+        "member_state": "LT",
+        "area": "10YLT-1001A0008Q"
+      },
+      {
+        "load_forecast_mwh": 14236.0,
+        "value_status": "provisional",
+        "member_state": "LU",
+        "area": "10YLU-CEGEDEL-NQ"
+      },
+      {
+        "load_forecast_mwh": 257974.0,
+        "value_status": "provisional",
+        "member_state": "NL",
+        "area": "10YNL----------L"
+      },
+      {
+        "load_forecast_mwh": 456025.0,
+        "value_status": "provisional",
+        "member_state": "PL",
+        "area": "10YPL-AREA-----S"
+      },
+      {
+        "load_forecast_mwh": 143445.0,
+        "value_status": "provisional",
+        "member_state": "PT",
+        "area": "10YPT-REN------W"
+      },
+      {
+        "load_forecast_mwh": 135865.0,
+        "value_status": "provisional",
+        "member_state": "RO",
+        "area": "10YRO-TEL------P"
+      },
+      {
+        "load_forecast_mwh": 69332.0,
+        "value_status": "provisional",
+        "member_state": "SK",
+        "area": "10YSK-SEPS-----K"
+      },
+      {
+        "load_forecast_mwh": 37343.0,
+        "value_status": "provisional",
+        "member_state": "SI",
+        "area": "10YSI-ELES-----O"
+      },
+      {
+        "load_forecast_mwh": 626284.0,
+        "value_status": "provisional",
+        "member_state": "ES",
+        "area": "10YES-REE------0"
+      },
+      {
+        "load_forecast_mwh": 362620.0,
+        "value_status": "provisional",
+        "member_state": "SE",
+        "area": "10YSE-1--------K"
+      }
+    ],
+    "date": "2026-10-09"
+  },
+  "sources": [
+    {
+      "name": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "license": "ENTSO-E Transparency Platform — List of Data available for free re-use (2023-10-18), item 1 'Day-ahead Total Load Forecast (6.1.B)': CC BY 4.0 (attribution to the ENTSO-E Transparency Platform as source of publication). Terms and Conditions approved 2023-03-29, applicable from 2023-11-01.",
+      "url": "https://transparency.entsoe.eu/"
+    }
+  ],
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-09. Latest final value: EU27 day-ahead total load FORECAST 6,628,640 MWh (2026-10-09). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-09 20:05 JST)",
+  "answer_line_date": "2026-10-09",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "eu27_load_forecast_mwh",
     "label": "EU27 day-ahead total load FORECAST",
-    "value": 6439185.0,
+    "value": 6628640.0,
     "unit": "MWh",
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "threshold": null
   },
   "faq": [
     {
       "q": "What is the latest EU27 day-ahead load forecast?",
-      "a": "For 2026-10-08 (CET/CEST calendar day) the day-ahead total load FORECAST summed over the 25 published member-state areas was 6,439,185 MWh (value status, retrieval time and any published area missing from the sum are recorded on that day's row in https://ai-lifeline.org/eu/api/power_eu.json; Ireland and Malta do not publish this item under their country-code area and are counted as areas_not_published, never substituted). A forecast, not measured load. Source: ENTSO-E Transparency Platform, article 6.1.B (CC BY 4.0)."
+      "a": "For 2026-10-09 (CET/CEST calendar day) the day-ahead total load FORECAST summed over the 25 published member-state areas was 6,628,640 MWh (value status, retrieval time and any published area missing from the sum are recorded on that day's row in https://ai-lifeline.org/eu/api/power_eu.json; Ireland and Malta do not publish this item under their country-code area and are counted as areas_not_published, never substituted). A forecast, not measured load. Source: ENTSO-E Transparency Platform, article 6.1.B (CC BY 4.0)."
     },
     {
       "q": "Is this actual electricity load?",
@@ -1137,7 +1127,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "ENTSO-E Transparency Platform, retrieved daily (CET/CEST day) since 2026-09-12; history from 2026-08-01 retrieved retrospectively and labeled retrieved_retrospectively; page skeleton published 2026-09-03. Last updated 2026-10-08 20:07 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json"
+      "a": "ENTSO-E Transparency Platform, retrieved daily (CET/CEST day) since 2026-09-12; history from 2026-08-01 retrieved retrospectively and labeled retrieved_retrospectively; page skeleton published 2026-09-03. Last updated 2026-10-09 20:05 JST. Machine-readable: https://ai-lifeline.org/eu/api/power_eu.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -1147,13 +1137,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/eu/power/",
     "api": "https://ai-lifeline.org/eu/api/power_eu.json",
-    "last_confirmed": "2026-10-08",
-    "next_expected": "2026-10-09",
-    "generated": "2026-10-08 20:07",
+    "last_confirmed": "2026-10-09",
+    "next_expected": "2026-10-10",
+    "generated": "2026-10-09 20:05",
     "observation_start": "2026-09-03",
     "series_count": 1,
     "series_not_yet_measured": 0,
-    "title_short": "EU27 load forecast 6,439,185 MWh (final 10/8)",
+    "title_short": "EU27 load forecast 6,628,640 MWh (final 10/9)",
     "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
