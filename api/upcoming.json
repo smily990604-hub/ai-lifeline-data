@@ -1,19 +1,4 @@
 {
-  "timezone_note": "Dates are calendar dates as published by each source (JST for e-Gov, U.S. local for the Federal Register, CET/CEST for the Official Journal). No time-of-day is implied unless the source states one.",
-  "count": 39,
-  "generated_at": "2026-10-12 06:28",
-  "kinds": {
-    "ai_act_stage": "staged application date of the EU AI Act (OJ)",
-    "market_regime_stage": "chapter 9 (market participation): stage date of a stablecoin / payment regime fixed by a primary legal source",
-    "effective_date": "confirmed date on which a legal act applies or takes effect",
-    "consultation_deadline": "public comment / consultation closing date"
-  },
-  "_note": "AI Lifeline cross-edition calendar (added 2026-09-03): future dated items only, sorted by date - AI Act application stages (EU), public-comment / consultation deadlines (Japan, U.S.), and confirmed effective dates of legal acts (Japan ledger, Federal Register effective_on). Regenerated after each edition daily batch. This site never submits comments to any authority; deadlines are listed as material for readers.",
-  "pages": {
-    "ja": "/jp/upcoming/",
-    "en": "/upcoming/"
-  },
-  "ics": "/api/upcoming.ics",
   "events": [
     {
       "date": "2026-10-13",
@@ -49,7 +34,7 @@
       "detail_ja": "資源エネルギー庁・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340007&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-10-16",
@@ -61,7 +46,7 @@
       "detail_ja": "総務省・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210771&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-10-17",
@@ -73,7 +58,7 @@
       "detail_ja": "農林水産省・e-Gov意見公募・分野：データ利活用。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004409&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-10-18",
@@ -85,7 +70,7 @@
       "detail_ja": "原子力規制委員会・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=198026105&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-10-19",
@@ -181,7 +166,7 @@
       "detail_ja": "資源エネルギー庁・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340012&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-11-07",
@@ -193,7 +178,7 @@
       "detail_ja": "資源エネルギー庁・e-Gov意見公募・分野：電力。本サイトは意見提出を行わない（読者が各自の判断で意見形成するための締切情報）",
       "source": "e-Gov パブリック・コメント（自前観測・毎日更新）",
       "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340014&Mode=0",
-      "verified_on": "2026-10-11"
+      "verified_on": "2026-10-12"
     },
     {
       "date": "2026-11-09",
@@ -484,62 +469,77 @@
       "verified_on": "2026-09-03"
     }
   ],
+  "kinds": {
+    "effective_date": "confirmed date on which a legal act applies or takes effect",
+    "market_regime_stage": "chapter 9 (market participation): stage date of a stablecoin / payment regime fixed by a primary legal source",
+    "ai_act_stage": "staged application date of the EU AI Act (OJ)",
+    "consultation_deadline": "public comment / consultation closing date"
+  },
   "sources": [
     {
-      "name": "AI Act staged application calendar (OJ dates, verified against the Official Journal text)",
+      "note": "Dates only, no interpretation. Updated only when a further amendment is published in the OJ.",
+      "verified_on": "2026-09-03",
       "region": "eu",
       "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
-      "verified_on": "2026-09-03",
-      "note": "Dates only, no interpretation. Updated only when a further amendment is published in the OJ."
+      "name": "AI Act staged application calendar (OJ dates, verified against the Official Journal text)"
     },
     {
-      "name": "European Commission \"Have your say\" (public consultations)",
+      "note": "Not adopted as a data source (no official machine-readable feed; this site does not scrape it). Link only - no consultation deadlines from the EU are listed here.",
+      "verified_on": "2026-09-03",
       "region": "eu",
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say_en",
-      "verified_on": "2026-09-03",
-      "note": "Not adopted as a data source (no official machine-readable feed; this site does not scrape it). Link only - no consultation deadlines from the EU are listed here."
+      "name": "European Commission \"Have your say\" (public consultations)"
     },
     {
-      "name": "e-Gov パブリック・コメント（AIの生存条件に関わる案件を自前抽出・毎日）",
+      "note": "Only cases matching the site keyword filter (see /jp/api/pubcomment.json keywords). Deadlines as listed by e-Gov.",
+      "verified_on": "2026-10-12",
       "region": "jp",
       "url": "https://public-comment.e-gov.go.jp/",
-      "verified_on": "2026-10-11",
-      "note": "Only cases matching the site keyword filter (see /jp/api/pubcomment.json keywords). Deadlines as listed by e-Gov."
+      "name": "e-Gov パブリック・コメント（AIの生存条件に関わる案件を自前抽出・毎日）"
     },
     {
-      "name": "法規制章 ライフサイクル台帳（一次出所の確認日つき・手動）",
+      "note": "Only entries with a confirmed future date (date_iso) appear. Deliberation-stage items without a date are not listed.",
+      "verified_on": "2026-08-20",
       "region": "jp",
       "url": "https://ai-lifeline.org/jp/houkisei/",
-      "verified_on": "2026-08-20",
-      "note": "Only entries with a confirmed future date (date_iso) appear. Deliberation-stage items without a date are not listed."
+      "name": "法規制章 ライフサイクル台帳（一次出所の確認日つき・手動）"
     },
     {
-      "name": "Federal Register API (documents matching the exact full-text query \"artificial intelligence\", 180-day window)",
+      "note": "Comment closing dates and effective dates as published in the Federal Register. Coverage is defined entirely by the query.",
+      "verified_on": "2026-10-12",
       "region": "us",
       "url": "https://www.federalregister.gov/developers/documentation/api/v1",
-      "verified_on": "2026-10-12",
-      "note": "Comment closing dates and effective dates as published in the Federal Register. Coverage is defined entirely by the query."
+      "name": "Federal Register API (documents matching the exact full-text query \"artificial intelligence\", 180-day window)"
     },
     {
-      "name": "e-Gov Law Search API (laws.e-gov.go.jp, law_id 421AC0000000059, revision list)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04",
       "region": "jp",
       "url": "https://laws.e-gov.go.jp/law/421AC0000000059",
-      "verified_on": "2026-09-04",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed."
+      "name": "e-Gov Law Search API (laws.e-gov.go.jp, law_id 421AC0000000059, revision list)"
     },
     {
-      "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04",
       "region": "us",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-      "verified_on": "2026-09-04",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed."
+      "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)"
     },
     {
-      "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
+      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed.",
+      "verified_on": "2026-09-04",
       "region": "eu",
       "url": "http://data.europa.eu/eli/reg/2023/1114/oj",
-      "verified_on": "2026-09-04",
-      "note": "Chapter 9 (market participation) regime calendar: stage dates from primary legal sources only; unfixed stages are not listed."
+      "name": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)"
     }
-  ]
+  ],
+  "timezone_note": "Dates are calendar dates as published by each source (JST for e-Gov, U.S. local for the Federal Register, CET/CEST for the Official Journal). No time-of-day is implied unless the source states one.",
+  "pages": {
+    "en": "/upcoming/",
+    "ja": "/jp/upcoming/"
+  },
+  "ics": "/api/upcoming.ics",
+  "count": 39,
+  "generated_at": "2026-10-12 18:02",
+  "_note": "AI Lifeline cross-edition calendar (added 2026-09-03): future dated items only, sorted by date - AI Act application stages (EU), public-comment / consultation deadlines (Japan, U.S.), and confirmed effective dates of legal acts (Japan ledger, Federal Register effective_on). Regenerated after each edition daily batch. This site never submits comments to any authority; deadlines are listed as material for readers."
 }

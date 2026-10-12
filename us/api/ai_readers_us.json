@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-10-12 06:26",
+  "generated": "2026-10-12 18:01",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -244,6 +244,35 @@
       "top_verified": {
         "name": "OAI-SearchBot",
         "requests": 95
+      }
+    },
+    {
+      "week": 8,
+      "from": "2026-10-11",
+      "to": "2026-10-17",
+      "observed_through": "2026-10-11",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 17,
+      "verified_days": 1,
+      "unverified_total": 3,
+      "named_total_reference": 20,
+      "self_excluded_total": 57,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 17
+      },
+      "breakdown_verified_other_detail": {
+        "OAI-SearchBot": 11,
+        "ShapBot": 5,
+        "ChatGPT-User": 1
+      },
+      "top_verified": {
+        "name": "OAI-SearchBot",
+        "requests": 11
       }
     }
   ],
@@ -633,6 +662,15 @@
       "ai_named_reference": 21,
       "self_excluded": 188,
       "requests_in_scope": 314,
+      "verified_available": true
+    },
+    {
+      "date": "2026-10-11",
+      "ai_verified": 17,
+      "ai_unverified": 3,
+      "ai_named_reference": 20,
+      "self_excluded": 57,
+      "requests_in_scope": 165,
       "verified_available": true
     }
   ]
