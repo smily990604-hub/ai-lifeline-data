@@ -1,35 +1,255 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-09. Latest final value: euro area AAA 10-year spot yield 3.5112% (2026-10-09). (Source: European Central Bank; Eurostat / updated 2026-10-12 20:07 JST)",
-  "cite_as": "AI Lifeline, Fiscal & capital (European Union edition), data confirmed 2026-10-09, https://ai-lifeline.org/eu/fiscal/",
-  "frequency_note": "Mixed-frequency chapter: the yield is business daily; the two Eurostat government-finance series are quarterly. Quarterly series are run as \"quarterly confirmed operation\": a new point appears with each Eurostat release (about three months after the quarter) and stays flagged provisional as published until Eurostat finalises it.",
-  "confirmed_note": "The daily array holds published business days only (the ECB publishes the previous business day on the next day); no same-day provisional value exists for this series.",
-  "status_note": "Observing only: no good/bad criterion is defined. Not a macro-economics dashboard - series are limited to those with a stated causal link to AI infrastructure.",
-  "candidates": [
-    {
-      "name": "Open EU funding calls matching an AI query (Funding & Tenders portal)",
-      "reason": "The portal search API is not documented for public re-use; not used until an official machine-readable feed is confirmed (same rule as \"Have your say\").",
-      "status": "candidate_unobserved"
-    },
-    {
-      "name": "AI-related EU budget lines (annual; irregular ledger)",
-      "reason": "Annual frequency does not meet the monthly-or-better rule; kept as a manual sourced ledger candidate.",
-      "status": "candidate_ledger"
-    }
-  ],
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-12. Latest final value: euro area AAA 10-year spot yield 3.4987% (2026-10-12). (Source: European Central Bank; Eurostat / updated 2026-10-13 20:05 JST)",
+  "cite_as": "AI Lifeline, Fiscal & capital (European Union edition), data confirmed 2026-10-12, https://ai-lifeline.org/eu/fiscal/",
   "cannot_say": [
     "Whether a yield or a debt ratio is good or bad for AI, or where rates are heading (no criterion; nothing here is financial advice).",
     "How much the EU or its member states budget or spend on AI (annual budget lines and Funding & Tenders calls are candidates, not observed).",
     "Conditions of any single member state, or general economic indicators (stocks, exchange rates and inflation are out of scope by design)."
   ],
+  "region": "eu",
+  "status": "observing",
+  "status_note": "Observing only: no good/bad criterion is defined. Not a macro-economics dashboard - series are limited to those with a stated causal link to AI infrastructure.",
   "can_say": [
     "The 10-year spot rate of the euro-area AAA central-government yield curve each business day (ECB), as published.",
     "EU27 general government gross debt and net lending/borrowing as a percent of GDP, quarter by quarter, as Eurostat releases them (about three months after the quarter).",
     "Which scope each figure covers (euro area for the yield, EU27 for the Eurostat series) and when it was retrieved."
   ],
-  "generated": "2026-10-12 20:07",
-  "status": "observing",
+  "candidates": [
+    {
+      "reason": "The portal search API is not documented for public re-use; not used until an official machine-readable feed is confirmed (same rule as \"Have your say\").",
+      "status": "candidate_unobserved",
+      "name": "Open EU funding calls matching an AI query (Funding & Tenders portal)"
+    },
+    {
+      "reason": "Annual frequency does not meet the monthly-or-better rule; kept as a manual sourced ledger candidate.",
+      "status": "candidate_ledger",
+      "name": "AI-related EU budget lines (annual; irregular ledger)"
+    }
+  ],
+  "generated": "2026-10-13 20:05",
+  "confirmed_note": "The daily array holds published business days only (the ECB publishes the previous business day on the next day); no same-day provisional value exists for this series.",
+  "scope_note": "The yield curve covers the euro area (changing composition, ECB code U2), not the EU27; the Eurostat series cover the EU27. Both scopes are stated on every figure.",
   "series": {
+    "gov_net_lending_pct_gdp": {
+      "name": "General government net lending (+) / net borrowing (-), EU27, % of GDP, not seasonally adjusted (Eurostat gov_10q_ggnfa, quarterly)",
+      "operation_note": "Quarterly confirmed operation; negative values mean net borrowing. Not seasonally adjusted, as published.",
+      "causal_note": "The quarterly balance is the flow behind the debt ratio: a widening deficit tightens public AI investment before private demand feels it.",
+      "quarterly": [
+        {
+          "period": "2019-Q1",
+          "value": -1.2,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2019-Q2",
+          "value": 0.0,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2019-Q3",
+          "value": -0.8,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2019-Q4",
+          "value": 0.0,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2020-Q1",
+          "value": -3.7,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2020-Q2",
+          "value": -11.4,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2020-Q3",
+          "value": -5.7,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2020-Q4",
+          "value": -6.3,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2021-Q1",
+          "value": -7.3,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2021-Q2",
+          "value": -5.5,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2021-Q3",
+          "value": -3.1,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2021-Q4",
+          "value": -2.9,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2022-Q1",
+          "value": -3.2,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2022-Q2",
+          "value": -1.6,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2022-Q3",
+          "value": -3.3,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2022-Q4",
+          "value": -4.4,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2023-Q1",
+          "value": -4.0,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2023-Q2",
+          "value": -2.9,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2023-Q3",
+          "value": -3.1,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2023-Q4",
+          "value": -3.8,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2024-Q1",
+          "value": -3.7,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2024-Q2",
+          "value": -2.8,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2024-Q3",
+          "value": -2.6,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2024-Q4",
+          "value": -3.3,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2025-Q1",
+          "value": -3.6,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2025-Q2",
+          "value": -2.6,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2025-Q3",
+          "value": -2.8,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2025-Q4",
+          "value": -3.3,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        },
+        {
+          "period": "2026-Q1",
+          "value": -3.9,
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": true
+        }
+      ],
+      "source": {
+        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggnfa/default/table",
+        "name": "Eurostat, Quarterly non-financial accounts for general government (gov_10q_ggnfa)"
+      },
+      "update_frequency": "quarterly",
+      "data_status": "live",
+      "unit": "% of GDP"
+    },
     "euro_area_yield_10y": {
+      "name": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily)",
       "daily": [
         {
           "date": "2026-08-03",
@@ -364,7 +584,7 @@
           "value": 3.6077,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -372,7 +592,7 @@
           "value": 3.5817,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -380,7 +600,7 @@
           "value": 3.5922,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -388,7 +608,7 @@
           "value": 3.464,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -396,7 +616,7 @@
           "value": 3.502,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -404,7 +624,7 @@
           "value": 3.5188,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -412,7 +632,7 @@
           "value": 3.5384,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -420,7 +640,7 @@
           "value": 3.5192,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         },
         {
@@ -428,242 +648,32 @@
           "value": 3.5112,
           "obs_status": "A",
           "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
+          "retrieved_retrospectively": false
+        },
+        {
+          "date": "2026-10-12",
+          "value": 3.4987,
+          "obs_status": "A",
+          "value_status": "final",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": false
         }
       ],
-      "data_status": "live",
       "causal_note": "Data centres and GPUs are financed with debt; the long risk-free rate sets the funding cost and the discount rate of future AI revenue across the euro area.",
       "source": {
         "license": "ECB disclaimer and copyright: information may be used freely; the ECB must be cited as the source; changes must be indicated. Verified 2026-09-03 (EU edition survey).",
-        "name": "European Central Bank (ECB), Euro area yield curves",
-        "url": "https://data.ecb.europa.eu/data/datasets/YC"
+        "url": "https://data.ecb.europa.eu/data/datasets/YC",
+        "name": "European Central Bank (ECB), Euro area yield curves"
       },
-      "update_frequency": "business daily",
       "scope_note": "Euro area (U2, changing composition) - not EU27.",
-      "name": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily)",
+      "update_frequency": "business daily",
+      "data_status": "live",
       "unit": "%"
     },
-    "gov_net_lending_pct_gdp": {
-      "data_status": "live",
-      "causal_note": "The quarterly balance is the flow behind the debt ratio: a widening deficit tightens public AI investment before private demand feels it.",
-      "quarterly": [
-        {
-          "period": "2019-Q1",
-          "value": -1.2,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2019-Q2",
-          "value": 0.0,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2019-Q3",
-          "value": -0.8,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2019-Q4",
-          "value": 0.0,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2020-Q1",
-          "value": -3.7,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2020-Q2",
-          "value": -11.4,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2020-Q3",
-          "value": -5.7,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2020-Q4",
-          "value": -6.3,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2021-Q1",
-          "value": -7.3,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2021-Q2",
-          "value": -5.5,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2021-Q3",
-          "value": -3.1,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2021-Q4",
-          "value": -2.9,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2022-Q1",
-          "value": -3.2,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2022-Q2",
-          "value": -1.6,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2022-Q3",
-          "value": -3.3,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2022-Q4",
-          "value": -4.4,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2023-Q1",
-          "value": -4.0,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2023-Q2",
-          "value": -2.9,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2023-Q3",
-          "value": -3.1,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2023-Q4",
-          "value": -3.8,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2024-Q1",
-          "value": -3.7,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2024-Q2",
-          "value": -2.8,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2024-Q3",
-          "value": -2.6,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2024-Q4",
-          "value": -3.3,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2025-Q1",
-          "value": -3.6,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2025-Q2",
-          "value": -2.6,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2025-Q3",
-          "value": -2.8,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2025-Q4",
-          "value": -3.3,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        },
-        {
-          "period": "2026-Q1",
-          "value": -3.9,
-          "value_status": "final",
-          "fetched_at": "2026-10-12 20:07",
-          "retrieved_retrospectively": true
-        }
-      ],
-      "unit": "% of GDP",
-      "update_frequency": "quarterly",
-      "name": "General government net lending (+) / net borrowing (-), EU27, % of GDP, not seasonally adjusted (Eurostat gov_10q_ggnfa, quarterly)",
-      "source": {
-        "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
-        "name": "Eurostat, Quarterly non-financial accounts for general government (gov_10q_ggnfa)",
-        "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggnfa/default/table"
-      },
-      "operation_note": "Quarterly confirmed operation; negative values mean net borrowing. Not seasonally adjusted, as published."
-    },
     "gov_debt_pct_gdp": {
-      "data_status": "live",
+      "name": "General government gross debt (Maastricht), EU27, % of GDP (Eurostat gov_10q_ggdebt, quarterly)",
+      "operation_note": "Quarterly confirmed operation: values as published (all points currently flagged p = provisional by Eurostat).",
       "causal_note": "Public AI programmes are funded from the same budgets that service this debt; the debt ratio is the quarterly public measure of how much room governments have to keep funding AI infrastructure.",
       "quarterly": [
         {
@@ -671,7 +681,7 @@
           "value": 79.8,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -679,7 +689,7 @@
           "value": 79.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -687,7 +697,7 @@
           "value": 79.0,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -695,7 +705,7 @@
           "value": 77.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -703,7 +713,7 @@
           "value": 79.0,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -711,7 +721,7 @@
           "value": 87.1,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -719,7 +729,7 @@
           "value": 89.0,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -727,7 +737,7 @@
           "value": 89.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -735,7 +745,7 @@
           "value": 91.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -743,7 +753,7 @@
           "value": 89.7,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -751,7 +761,7 @@
           "value": 88.7,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -759,7 +769,7 @@
           "value": 86.7,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -767,7 +777,7 @@
           "value": 86.2,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -775,7 +785,7 @@
           "value": 85.0,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -783,7 +793,7 @@
           "value": 83.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -791,7 +801,7 @@
           "value": 82.3,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -799,7 +809,7 @@
           "value": 82.2,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -807,7 +817,7 @@
           "value": 81.8,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -815,7 +825,7 @@
           "value": 81.2,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -823,7 +833,7 @@
           "value": 80.5,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -831,7 +841,7 @@
           "value": 80.9,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -839,7 +849,7 @@
           "value": 81.1,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -847,7 +857,7 @@
           "value": 81.2,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -855,7 +865,7 @@
           "value": 80.6,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -863,7 +873,7 @@
           "value": 81.4,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -871,7 +881,7 @@
           "value": 81.8,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -879,7 +889,7 @@
           "value": 82.1,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -887,7 +897,7 @@
           "value": 81.8,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         },
         {
@@ -895,38 +905,36 @@
           "value": 82.9,
           "flag": "p",
           "value_status": "provisional",
-          "fetched_at": "2026-10-12 20:07",
+          "fetched_at": "2026-10-13 20:05",
           "retrieved_retrospectively": true
         }
       ],
-      "unit": "% of GDP",
-      "update_frequency": "quarterly",
-      "name": "General government gross debt (Maastricht), EU27, % of GDP (Eurostat gov_10q_ggdebt, quarterly)",
       "source": {
         "license": "Eurostat copyright notice: statistical data may be re-used free of charge for commercial and non-commercial purposes under Commission Decision 2011/833/EU (source must be acknowledged; the original meaning must not be distorted). Verified 2026-09-03 (EU edition survey) and 2026-09-04.",
-        "name": "Eurostat, Quarterly government debt (gov_10q_ggdebt)",
-        "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggdebt/default/table"
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10q_ggdebt/default/table",
+        "name": "Eurostat, Quarterly government debt (gov_10q_ggdebt)"
       },
-      "operation_note": "Quarterly confirmed operation: values as published (all points currently flagged p = provisional by Eurostat)."
+      "update_frequency": "quarterly",
+      "data_status": "live",
+      "unit": "% of GDP"
     }
   },
-  "region": "eu",
-  "scope_note": "The yield curve covers the euro area (changing composition, ECB code U2), not the EU27; the Eurostat series cover the EU27. Both scopes are stated on every figure.",
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-09. Latest final value: euro area AAA 10-year spot yield 3.5112% (2026-10-09). (Source: European Central Bank; Eurostat / updated 2026-10-12 20:07 JST)",
-  "answer_line_date": "2026-10-09",
+  "frequency_note": "Mixed-frequency chapter: the yield is business daily; the two Eurostat government-finance series are quarterly. Quarterly series are run as \"quarterly confirmed operation\": a new point appears with each Eurostat release (about three months after the quarter) and stays flagged provisional as published until Eurostat finalises it.",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-12. Latest final value: euro area AAA 10-year spot yield 3.4987% (2026-10-12). (Source: European Central Bank; Eurostat / updated 2026-10-13 20:05 JST)",
+  "answer_line_date": "2026-10-12",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "euro_area_yield_10y",
     "label": "euro area AAA 10-year spot yield",
-    "value": 3.5112,
+    "value": 3.4987,
     "unit": "%",
-    "date": "2026-10-09",
+    "date": "2026-10-12",
     "threshold": null
   },
   "faq": [
     {
       "q": "What is the euro area 10-year AAA yield on the latest confirmed day?",
-      "a": "3.5112% on 2026-10-09 (ECB Data Portal, euro area yield curve, AAA-rated central government bonds, 10-year spot; euro area, not EU27)."
+      "a": "3.4987% on 2026-10-12 (ECB Data Portal, euro area yield curve, AAA-rated central government bonds, 10-year spot; euro area, not EU27)."
     },
     {
       "q": "What are EU27 government debt and balance in the latest quarter?",
@@ -934,7 +942,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "ECB yield business-daily; Eurostat quarterly (\"quarterly confirmed operation\", provisional as published). Each series carries a stated causal link to AI infrastructure; not a macro dashboard. Observation started 2026-09-04. Last updated 2026-10-12 20:07 JST. Definition: 指標定義_EU_財政.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/fiscal_eu.json"
+      "a": "ECB yield business-daily; Eurostat quarterly (\"quarterly confirmed operation\", provisional as published). Each series carries a stated causal link to AI infrastructure; not a macro dashboard. Observation started 2026-09-04. Last updated 2026-10-13 20:05 JST. Definition: 指標定義_EU_財政.md v1.0. Machine-readable: https://ai-lifeline.org/eu/api/fiscal_eu.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -944,13 +952,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/eu/fiscal/",
     "api": "https://ai-lifeline.org/eu/api/fiscal_eu.json",
-    "last_confirmed": "2026-10-09",
-    "next_expected": "2026-10-12",
-    "generated": "2026-10-12 20:07",
+    "last_confirmed": "2026-10-12",
+    "next_expected": "2026-10-13",
+    "generated": "2026-10-13 20:05",
     "observation_start": "2026-09-04",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "euro area 10Y 3.5112% (final 10/9)",
+    "title_short": "euro area 10Y 3.4987% (final 10/12)",
     "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
