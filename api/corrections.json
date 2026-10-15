@@ -1,13 +1,50 @@
 {
-  "kinds": {
-    "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
-    "definition_revision": "an indicator definition document changed version (old series kept alongside)",
-    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
-    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept"
-  },
-  "count": 140,
-  "generated_at": "2026-10-14 18:03",
   "corrections": [
+    {
+      "id": "us-changes-2026-10-15-r1-626",
+      "date": "2026-10-15",
+      "region": "us",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "kind": "value_revision",
+      "what_changed": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-10",
+      "old": "140 (final)",
+      "new": "141 (final) on refetch",
+      "reason": "140 (final) -> 141 (final) on refetch / Source: Grants.gov search API",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-10-15 18:01:34",
+      "ledger_ref": "changes ledger US #626"
+    },
+    {
+      "id": "jp-changes-2026-10-15-r2-255",
+      "date": "2026-10-15",
+      "region": "jp",
+      "chapter": "",
+      "series": "",
+      "kind": "rerun_revision",
+      "what_changed": "同日の再実行により第2版へ訂正",
+      "old": null,
+      "new": null,
+      "reason": "第1版の 0 件は台帳に残したまま、第2版の 4 件を表示に用います（台帳は追記専用）",
+      "source_url": "https://ai-lifeline.org/jp/api/changes_jp.json",
+      "recorded_at": "2026-10-15 10:33:00",
+      "ledger_ref": "changes ledger JP #255"
+    },
+    {
+      "id": "jp-changes-2026-10-15-r1-254",
+      "date": "2026-10-15",
+      "region": "jp",
+      "chapter": "power",
+      "series": "power.reserve_national_min",
+      "kind": "value_revision",
+      "what_changed": "広域予備率の確定値への差し替え 1 日ぶん",
+      "old": "2026-10-14 9.57%",
+      "new": "9.18%",
+      "reason": "2026-10-14 9.57% → 9.18% ／ 当日取得時は12:30以降が見通し値のため、翌日以降に再取得して確定値へ置き換えた ／ 出所：OCCTO広域予備率Web公表システム（再取得）",
+      "source_url": "https://web-kohyo.occto.or.jp/kks-web-public/",
+      "recorded_at": "2026-10-15 10:31:08",
+      "ledger_ref": "changes ledger JP #254"
+    },
     {
       "id": "jp-changes-2026-10-14-r2-250",
       "date": "2026-10-14",
@@ -594,21 +631,6 @@
       "ledger_ref": "changes ledger JP #164"
     },
     {
-      "id": "eu-changes-2026-09-25-r2-156",
-      "date": "2026-09-25",
-      "region": "eu",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "kind": "value_revision",
-      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-25",
-      "old": "6,596,015 MWh (provisional)",
-      "new": "6,599,457 MWh (provisional) on refetch",
-      "reason": "6,596,015 MWh (provisional) -> 6,599,457 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-25 21:39:50",
-      "ledger_ref": "changes ledger EU #156"
-    },
-    {
       "id": "eu-changes-2026-09-25-r2-155",
       "date": "2026-09-25",
       "region": "eu",
@@ -622,6 +644,21 @@
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-25 21:39:50",
       "ledger_ref": "changes ledger EU #155"
+    },
+    {
+      "id": "eu-changes-2026-09-25-r2-156",
+      "date": "2026-09-25",
+      "region": "eu",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "kind": "value_revision",
+      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-25",
+      "old": "6,596,015 MWh (provisional)",
+      "new": "6,599,457 MWh (provisional) on refetch",
+      "reason": "6,596,015 MWh (provisional) -> 6,599,457 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-25 21:39:50",
+      "ledger_ref": "changes ledger EU #156"
     },
     {
       "id": "us-changes-2026-09-25-r1-333",
@@ -1014,21 +1051,6 @@
       "ledger_ref": "changes ledger JP #126"
     },
     {
-      "id": "eu-changes-2026-09-12-r7-72",
-      "date": "2026-09-12",
-      "region": "eu",
-      "chapter": "power",
-      "series": "power.eu27_load_forecast_mwh",
-      "kind": "value_revision",
-      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-12",
-      "old": "5,719,152 MWh (provisional)",
-      "new": "5,626,663 MWh (provisional) on refetch",
-      "reason": "5,719,152 MWh (provisional) -> 5,626,663 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
-      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
-      "recorded_at": "2026-09-12 10:08:59",
-      "ledger_ref": "changes ledger EU #72"
-    },
-    {
       "id": "eu-changes-2026-09-12-r7-71",
       "date": "2026-09-12",
       "region": "eu",
@@ -1042,6 +1064,21 @@
       "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
       "recorded_at": "2026-09-12 10:08:59",
       "ledger_ref": "changes ledger EU #71"
+    },
+    {
+      "id": "eu-changes-2026-09-12-r7-72",
+      "date": "2026-09-12",
+      "region": "eu",
+      "chapter": "power",
+      "series": "power.eu27_load_forecast_mwh",
+      "kind": "value_revision",
+      "what_changed": "Revised: EU27 day-ahead total load FORECAST (daily energy; not actual load) for 2026-09-12",
+      "old": "5,719,152 MWh (provisional)",
+      "new": "5,626,663 MWh (provisional) on refetch",
+      "reason": "5,719,152 MWh (provisional) -> 5,626,663 MWh (provisional) on refetch / Source: ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+      "source_url": "https://ai-lifeline.org/eu/api/changes_eu.json",
+      "recorded_at": "2026-09-12 10:08:59",
+      "ledger_ref": "changes ledger EU #72"
     },
     {
       "id": "eu-changes-2026-09-12-r6-69",
@@ -1464,21 +1501,6 @@
       "ledger_ref": "changes ledger EU #13"
     },
     {
-      "id": "us-changes-2026-09-04-r1-13",
-      "date": "2026-09-04",
-      "region": "us",
-      "chapter": "water",
-      "series": "water.water_disclosure",
-      "kind": "value_revision",
-      "what_changed": "Revised: Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none) for 2026-09-03",
-      "old": "4 companies (final)",
-      "new": "7 companies (final) on refetch",
-      "reason": "4 companies (final) -> 7 companies (final) on refetch / Source: AI Lifeline first-party observation of official sustainability pages",
-      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
-      "recorded_at": "2026-09-04 08:47:23",
-      "ledger_ref": "changes ledger US #13"
-    },
-    {
       "id": "us-changes-2026-09-04-r1-8",
       "date": "2026-09-04",
       "region": "us",
@@ -1507,6 +1529,21 @@
       "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
       "recorded_at": "2026-09-04 08:47:23",
       "ledger_ref": "changes ledger US #9"
+    },
+    {
+      "id": "us-changes-2026-09-04-r1-13",
+      "date": "2026-09-04",
+      "region": "us",
+      "chapter": "water",
+      "series": "water.water_disclosure",
+      "kind": "value_revision",
+      "what_changed": "Revised: Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none) for 2026-09-03",
+      "old": "4 companies (final)",
+      "new": "7 companies (final) on refetch",
+      "reason": "4 companies (final) -> 7 companies (final) on refetch / Source: AI Lifeline first-party observation of official sustainability pages",
+      "source_url": "https://ai-lifeline.org/us/api/changes_us.json",
+      "recorded_at": "2026-09-04 08:47:23",
+      "ledger_ref": "changes ledger US #13"
     },
     {
       "id": "manual-2026-09-04-5",
@@ -2109,6 +2146,14 @@
       "ledger_ref": "changes ledger JP #2"
     }
   ],
+  "generated_at": "2026-10-15 18:03",
+  "page": "/jp/unei/#corrections",
+  "count": 143,
   "_note": "AI Lifeline corrections ledger (added 2026-09-03). One row per correction: automatic revisions recorded by the daily change ledgers of each edition (a provisional value replaced by a different final value; a same-day re-run that produced a different set of items) and corrections recorded by the editorial team on the operator page (with the definition-document revisions). Facts only: what changed, old, new, reason, source URL, when recorded, and where the underlying ledger row lives. Nothing is deleted from the underlying ledgers.",
-  "page": "/jp/unei/#corrections"
+  "kinds": {
+    "value_revision": "a published value was replaced (e.g. provisional -> final from a refetch)",
+    "rerun_revision": "a same-day re-run produced a different set of change items; earlier rows are kept",
+    "editorial_correction": "a correction recorded by the editorial team on the operator page after verification against the primary source",
+    "definition_revision": "an indicator definition document changed version (old series kept alongside)"
+  }
 }
