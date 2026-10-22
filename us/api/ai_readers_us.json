@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-10-21 18:01",
+  "generated": "2026-10-22 18:01",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -282,31 +282,31 @@
       "week": 9,
       "from": "2026-10-18",
       "to": "2026-10-24",
-      "observed_through": "2026-10-20",
-      "days_observed": 3,
+      "observed_through": "2026-10-21",
+      "days_observed": 4,
       "provisional": true,
-      "verified_total": 36,
-      "verified_days": 3,
-      "unverified_total": 5,
-      "named_total_reference": 41,
-      "self_excluded_total": 400,
+      "verified_total": 45,
+      "verified_days": 4,
+      "unverified_total": 7,
+      "named_total_reference": 52,
+      "self_excluded_total": 536,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
         "GPTBot": 0,
         "CCBot": 0,
-        "other": 36
+        "other": 45
       },
       "breakdown_verified_other_detail": {
-        "OAI-SearchBot": 29,
+        "OAI-SearchBot": 34,
+        "(Cloudflare検証:AI Crawler)": 4,
+        "Amazonbot": 3,
         "GoogleOther": 2,
-        "Amazonbot": 2,
-        "ChatGPT-User": 2,
-        "(Cloudflare検証:AI Crawler)": 1
+        "ChatGPT-User": 2
       },
       "top_verified": {
         "name": "OAI-SearchBot",
-        "requests": 29
+        "requests": 34
       }
     }
   ],
@@ -786,6 +786,15 @@
       "ai_named_reference": 10,
       "self_excluded": 134,
       "requests_in_scope": 183,
+      "verified_available": true
+    },
+    {
+      "date": "2026-10-21",
+      "ai_verified": 9,
+      "ai_unverified": 2,
+      "ai_named_reference": 11,
+      "self_excluded": 136,
+      "requests_in_scope": 170,
       "verified_available": true
     }
   ]
