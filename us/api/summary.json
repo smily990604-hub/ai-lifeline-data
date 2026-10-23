@@ -1,59 +1,59 @@
 {
   "beta": {
-    "active_from": "2026-08-29",
     "removed_on": "2026-09-02",
+    "active_from": "2026-08-29",
     "active": false
   },
+  "generated": "2026-10-23 18:01",
+  "region": "US",
   "chapters": {
     "data": {
       "note": "Phase 2",
       "status": "planned"
     },
+    "datacenter": {
+      "path": "/us/datacenter/",
+      "frequency": "mixed (cooling degree days daily; construction & backlog monthly)",
+      "status": "observing",
+      "latest_cdd": {
+        "date": "2026-10-21",
+        "conus_cdd": 1,
+        "fetched_at": "2026-10-23 18:00"
+      },
+      "api": "/us/api/datacenter_us.json"
+    },
+    "water": {
+      "path": "/us/water/",
+      "frequency": "mixed (drought weekly; disclosure ledger monthly)",
+      "status": "observing",
+      "latest_drought": {
+        "source": "U.S. Drought Monitor",
+        "map_date": "2026-10-13",
+        "conus_d1_plus_pct": 53.73
+      },
+      "api": "/us/api/water_us.json"
+    },
+    "regulation": {
+      "path": "/us/regulation/",
+      "source": "Federal Register (federalregister.gov) API",
+      "status": "observing",
+      "open_comment_periods": 21
+    },
+    "power": {
+      "path": "/us/power/",
+      "status": "observing",
+      "latest": {
+        "date": "2026-10-22",
+        "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+        "value_status": "provisional",
+        "us48_demand_mwh": 10843419.0
+      }
+    },
     "gpu": {
       "note": "Phase 2",
       "status": "planned"
-    },
-    "datacenter": {
-      "status": "observing",
-      "api": "/us/api/datacenter_us.json",
-      "path": "/us/datacenter/",
-      "latest_cdd": {
-        "date": "2026-10-20",
-        "conus_cdd": 1,
-        "fetched_at": "2026-10-22 18:00"
-      },
-      "frequency": "mixed (cooling degree days daily; construction & backlog monthly)"
-    },
-    "power": {
-      "status": "observing",
-      "path": "/us/power/",
-      "latest": {
-        "date": "2026-10-21",
-        "us48_demand_mwh": 10827951.0,
-        "value_status": "provisional",
-        "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
-      }
-    },
-    "water": {
-      "status": "observing",
-      "latest_drought": {
-        "conus_d1_plus_pct": 53.73,
-        "source": "U.S. Drought Monitor",
-        "map_date": "2026-10-13"
-      },
-      "path": "/us/water/",
-      "api": "/us/api/water_us.json",
-      "frequency": "mixed (drought weekly; disclosure ledger monthly)"
-    },
-    "regulation": {
-      "status": "observing",
-      "path": "/us/regulation/",
-      "open_comment_periods": 20,
-      "source": "Federal Register (federalregister.gov) API"
     }
   },
   "conventions_note": "All statuses in this edition are \"observing\" (collected but not judged; no criterion has been defined). \"not_yet_measured\" means missing, not zero.",
-  "edition": "United States edition (electricity, water (Beta), regulation, data centers, fiscal & disasters live; GPU and data chapters planned)",
-  "region": "US",
-  "generated": "2026-10-22 18:01"
+  "edition": "United States edition (electricity, water (Beta), regulation, data centers, fiscal & disasters live; GPU and data chapters planned)"
 }
