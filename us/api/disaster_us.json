@@ -1,22 +1,11 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-22. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-22). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-23 18:01 JST)",
-  "cite_as": "AI Lifeline, Climate & disasters (United States edition), data confirmed 2026-10-22, https://ai-lifeline.org/us/disaster/",
-  "candidates": [
-    {
-      "name": "Wildfire (NIFC — large incidents / acres burned)",
-      "status": "candidate_unobserved",
-      "reason": "Endpoint reachable; open-data licence text not yet verified. Added to the profile once verified."
-    }
-  ],
-  "profile_note": "Only hazards in this region's profile are shown. Seismic scales differ across countries; no cross-country comparison.",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-23. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-23). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-24 18:01 JST)",
+  "cite_as": "AI Lifeline, Climate & disasters (United States edition), data confirmed 2026-10-23, https://ai-lifeline.org/us/disaster/",
   "disaster_profile": [
     "earthquake",
     "hurricane",
     "extreme_heat"
   ],
-  "region": "us",
-  "generated": "2026-10-23 18:01",
-  "status_note": "Observing only: mechanical event counts (no damages, no casualties). A zero means zero events; missing means not yet measured. Same-day values are provisional until the next day's recount.",
   "cannot_say": [
     "What damage, casualties or facility impacts any event caused (counts only).",
     "Whether a hurricane, earthquake or heat wave will occur (no forecasts).",
@@ -27,21 +16,15 @@
     "How many tropical cyclones of tropical-storm strength or stronger the NHC listed as active each day (Atlantic and East/Central Pacific), and how many Excessive Heat Warnings and Heat Advisories were active (daily snapshots).",
     "Which days recorded zero events as opposed to days not yet measured, and which same-day values are still provisional."
   ],
-  "status": "observing",
+  "candidates": [
+    {
+      "status": "candidate_unobserved",
+      "name": "Wildfire (NIFC — large incidents / acres burned)",
+      "reason": "Endpoint reachable; open-data licence text not yet verified. Added to the profile once verified."
+    }
+  ],
   "series": {
     "extreme_heat": {
-      "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
-      "source": {
-        "license": "Public domain (U.S. federal government work). No key (User-Agent明示のみ)",
-        "name": "NOAA National Weather Service alerts API",
-        "url": "https://www.weather.gov/documentation/services-web-api"
-      },
-      "today_provisional": {
-        "date": "2026-10-23",
-        "value": 0,
-        "as_of": "2026-10-23 18:01",
-        "note": "provisional (partial day, as of retrieval time)"
-      },
       "daily": [
         {
           "date": "2026-08-29",
@@ -317,16 +300,27 @@
           "date": "2026-10-22",
           "value": 0,
           "fetched_at": "2026-10-22 18:01"
+        },
+        {
+          "date": "2026-10-23",
+          "value": 0,
+          "fetched_at": "2026-10-23 18:01"
         }
-      ]
+      ],
+      "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
+      "today_provisional": {
+        "date": "2026-10-24",
+        "value": 0,
+        "as_of": "2026-10-24 18:01",
+        "note": "provisional (partial day, as of retrieval time)"
+      },
+      "source": {
+        "name": "NOAA National Weather Service alerts API",
+        "license": "Public domain (U.S. federal government work). No key (User-Agent明示のみ)",
+        "url": "https://www.weather.gov/documentation/services-web-api"
+      }
     },
     "earthquake": {
-      "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
-      "source": {
-        "license": "Public domain (U.S. federal government work). No key.",
-        "name": "U.S. Geological Survey, Earthquake Hazards Program",
-        "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
-      },
       "daily": [
         {
           "date": "2026-08-26",
@@ -611,29 +605,28 @@
         {
           "date": "2026-10-21",
           "value": 0,
-          "fetched_at": "2026-10-23 18:01"
+          "fetched_at": "2026-10-24 18:01"
         },
         {
           "date": "2026-10-22",
           "value": 0,
-          "fetched_at": "2026-10-23 18:01"
+          "fetched_at": "2026-10-24 18:01"
+        },
+        {
+          "date": "2026-10-23",
+          "value": 0,
+          "fetched_at": "2026-10-24 18:01"
         }
       ],
-      "definition_note": "Bounding box lat 18-72, lon -180 to -66 (covers CONUS, Alaska east of the antimeridian, Hawaii; includes some adjacent territory — labelled \"U.S. vicinity\")."
+      "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
+      "definition_note": "Bounding box lat 18-72, lon -180 to -66 (covers CONUS, Alaska east of the antimeridian, Hawaii; includes some adjacent territory — labelled \"U.S. vicinity\").",
+      "source": {
+        "name": "U.S. Geological Survey, Earthquake Hazards Program",
+        "license": "Public domain (U.S. federal government work). No key.",
+        "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
+      }
     },
     "hurricane": {
-      "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
-      "source": {
-        "license": "Public domain (U.S. federal government work). No key.",
-        "name": "NOAA National Hurricane Center",
-        "url": "https://www.nhc.noaa.gov/"
-      },
-      "today_provisional": {
-        "date": "2026-10-23",
-        "value": 1,
-        "as_of": "2026-10-23 18:01",
-        "note": "provisional (partial day, as of retrieval time)"
-      },
       "daily": [
         {
           "date": "2026-08-29",
@@ -909,25 +902,47 @@
           "date": "2026-10-22",
           "value": 1,
           "fetched_at": "2026-10-22 18:01"
+        },
+        {
+          "date": "2026-10-23",
+          "value": 1,
+          "fetched_at": "2026-10-23 18:01"
         }
-      ]
+      ],
+      "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
+      "today_provisional": {
+        "date": "2026-10-24",
+        "value": 1,
+        "as_of": "2026-10-24 18:01",
+        "note": "provisional (partial day, as of retrieval time)"
+      },
+      "source": {
+        "name": "NOAA National Hurricane Center",
+        "license": "Public domain (U.S. federal government work). No key.",
+        "url": "https://www.nhc.noaa.gov/"
+      }
     }
   },
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-22. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-22). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-23 18:01 JST)",
-  "answer_line_date": "2026-10-22",
+  "status": "observing",
+  "region": "us",
+  "generated": "2026-10-24 18:01",
+  "profile_note": "Only hazards in this region's profile are shown. Seismic scales differ across countries; no cross-country comparison.",
+  "status_note": "Observing only: mechanical event counts (no damages, no casualties). A zero means zero events; missing means not yet measured. Same-day values are provisional until the next day's recount.",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-23. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-23). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-24 18:01 JST)",
+  "answer_line_date": "2026-10-23",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "hurricane",
     "label": "active tropical cyclones, TS or stronger",
     "value": 1,
     "unit": "",
-    "date": "2026-10-22",
+    "date": "2026-10-23",
     "threshold": null
   },
   "faq": [
     {
       "q": "How many M5+ earthquakes, active tropical cyclones and heat alerts were counted on the latest confirmed day?",
-      "a": "2026-10-22: earthquakes M5.0+ in the stated U.S. vicinity bounding box 0 (USGS, UTC day); active tropical cyclones TS or stronger 1 (NOAA NHC, Atlantic + East/Central Pacific); active heat alerts 0 (NOAA NWS). Zero means zero events."
+      "a": "2026-10-23: earthquakes M5.0+ in the stated U.S. vicinity bounding box 0 (USGS, UTC day); active tropical cyclones TS or stronger 1 (NOAA NHC, Atlantic + East/Central Pacific); active heat alerts 0 (NOAA NWS). Zero means zero events."
     },
     {
       "q": "Are damages or casualties included?",
@@ -935,7 +950,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "USGS, NHC and NWS feeds retrieved daily at 18:00 JST (observation started 2026-08-30). Last updated 2026-10-23 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/disaster_us.json"
+      "a": "USGS, NHC and NWS feeds retrieved daily at 18:00 JST (observation started 2026-08-30). Last updated 2026-10-24 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/disaster_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -945,13 +960,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/disaster/",
     "api": "https://ai-lifeline.org/us/api/disaster_us.json",
-    "last_confirmed": "2026-10-22",
-    "next_expected": "2026-10-23",
-    "generated": "2026-10-23 18:01",
+    "last_confirmed": "2026-10-23",
+    "next_expected": "2026-10-24",
+    "generated": "2026-10-24 18:01",
     "observation_start": "2026-08-30",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "active cyclones 1 (final 10/22)",
+    "title_short": "active cyclones 1 (final 10/23)",
     "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
