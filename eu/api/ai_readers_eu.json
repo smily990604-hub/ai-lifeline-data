@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-10-25 20:04",
+  "generated": "2026-10-26 20:04",
   "indicator": {
     "id": "ai_readers_01_eu",
     "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
@@ -207,8 +207,8 @@
         "OAI-SearchBot": 19,
         "Amazonbot": 10,
         "ShapBot": 5,
-        "(Cloudflare検証:AI Crawler)": 1,
-        "ChatGPT-User": 1
+        "ChatGPT-User": 1,
+        "(Cloudflare検証:AI Crawler)": 1
       },
       "top_verified": {
         "name": "OAI-SearchBot",
@@ -275,6 +275,34 @@
       "top_verified": {
         "name": "OAI-SearchBot",
         "requests": 21
+      }
+    },
+    {
+      "week": 10,
+      "from": "2026-10-25",
+      "to": "2026-10-31",
+      "observed_through": "2026-10-25",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 5,
+      "verified_days": 1,
+      "unverified_total": 1,
+      "named_total_reference": 6,
+      "self_excluded_total": 305,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 5
+      },
+      "breakdown_verified_other_detail": {
+        "Amazonbot": 4,
+        "(Cloudflare検証:AI Crawler)": 1
+      },
+      "top_verified": {
+        "name": "Amazonbot",
+        "requests": 4
       }
     }
   ],
@@ -745,6 +773,15 @@
       "ai_named_reference": 9,
       "self_excluded": 86,
       "requests_in_scope": 117,
+      "verified_available": true
+    },
+    {
+      "date": "2026-10-25",
+      "ai_verified": 5,
+      "ai_unverified": 1,
+      "ai_named_reference": 6,
+      "self_excluded": 305,
+      "requests_in_scope": 358,
       "verified_available": true
     }
   ]
