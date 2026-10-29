@@ -1,1996 +1,25 @@
 {
-  "generated_at": "2026-10-28 18:03",
-  "site": "AI Lifeline / AIライフライン",
-  "regions": [
-    {
-      "status": "live",
-      "order": 1,
-      "id": "us",
-      "name": "United States",
-      "chapters_live": [
-        "power",
-        "gpu",
-        "water",
-        "regulation",
-        "datacenter",
-        "fiscal",
-        "disaster",
-        "market"
-      ],
-      "changes_api": "/us/api/changes_us.json",
-      "base_path": "/us/",
-      "chapters_planned": [
-        "data"
-      ],
-      "last_updated": "2026-10-28 18:01",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-08-29",
-        "removed_on": "2026-09-02"
-      },
-      "lang": "en-US",
-      "name_ja": "米国版",
-      "summary_api": "/us/api/summary.json"
-    },
-    {
-      "status": "live",
-      "order": 2,
-      "id": "eu",
-      "name": "European Union",
-      "chapters_live": [
-        "power",
-        "regulation",
-        "datacenter",
-        "fiscal",
-        "disaster",
-        "market"
-      ],
-      "changes_api": "/eu/api/changes_eu.json",
-      "base_path": "/eu/",
-      "chapters_planned": [
-        "water"
-      ],
-      "last_updated": "2026-10-27 20:04",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-09-03",
-        "removed_on": "2026-09-17"
-      },
-      "lang": "en",
-      "name_ja": "EU版",
-      "summary_api": "/eu/api/summary.json"
-    },
-    {
-      "status": "live",
-      "order": 3,
-      "id": "sg",
-      "name": "Singapore",
-      "chapters_live": [
-        "water",
-        "power"
-      ],
-      "changes_api": "/sg/api/changes_sg.json",
-      "base_path": "/sg/",
-      "chapters_planned": [],
-      "last_updated": "2026-10-28 07:30",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-10-03",
-        "removed_on": "2026-10-05"
-      },
-      "lang": "en",
-      "name_ja": "シンガポール版",
-      "summary_api": "/sg/api/summary.json"
-    },
-    {
-      "status": "live",
-      "order": 999,
-      "id": "jp",
-      "name": "Japan",
-      "chapters_live": [
-        "denryoku",
-        "gpu",
-        "mizu",
-        "data",
-        "houkisei",
-        "datacenter",
-        "fiscal",
-        "disaster",
-        "market"
-      ],
-      "changes_api": "/jp/api/changes_jp.json",
-      "base_path": "/jp/",
-      "chapters_planned": [],
-      "last_updated": "2026-10-28 10:33",
-      "edition_beta": null,
-      "lang": "ja",
-      "name_ja": "日本版",
-      "summary_api": "/jp/api/summary.json"
-    }
-  ],
-  "summary": {
-    "eu": {
-      "generated": "2026-10-27 20:04",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-09-03",
-        "removed_on": "2026-09-17"
-      },
-      "chapters": {
-        "fiscal": {
-          "path": "/eu/fiscal/",
-          "series": {
-            "euro_area_yield_10y": {
-              "value_status": "final",
-              "value": 3.3736,
-              "name": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily)",
-              "unit": "%",
-              "provisional": false,
-              "api": "/eu/api/fiscal_eu.json",
-              "source": "European Central Bank (ECB), Euro area yield curves",
-              "definition": {
-                "doc": "指標定義_EU_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            },
-            "gov_net_lending_pct_gdp": {
-              "value_status": "final",
-              "value": -3.2,
-              "name": "General government net lending (+) / net borrowing (-), EU27, % of GDP, not seasonally adjusted (Eurostat gov_10q_ggnfa, quarterly)",
-              "unit": "% of GDP",
-              "provisional": false,
-              "api": "/eu/api/fiscal_eu.json",
-              "source": "Eurostat, Quarterly non-financial accounts for general government (gov_10q_ggnfa)",
-              "definition": {
-                "doc": "指標定義_EU_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-Q2",
-              "backfilled": true
-            },
-            "gov_debt_pct_gdp": {
-              "value_status": "provisional",
-              "value": 82.9,
-              "name": "General government gross debt (Maastricht), EU27, % of GDP (Eurostat gov_10q_ggdebt, quarterly)",
-              "unit": "% of GDP",
-              "provisional": true,
-              "api": "/eu/api/fiscal_eu.json",
-              "source": "Eurostat, Quarterly government debt (gov_10q_ggdebt)",
-              "definition": {
-                "doc": "指標定義_EU_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-Q2",
-              "backfilled": true
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-09-04",
-            "removed_on": "2026-09-08"
-          }
-        },
-        "datacenter": {
-          "path": "/eu/datacenter/",
-          "series": {
-            "cooling_degree_days": {
-              "value_status": "final",
-              "value": 0.0,
-              "name": "Cooling degree days, EU27 aggregate (Eurostat nrg_chdd_m, monthly)",
-              "unit": "degree days",
-              "provisional": false,
-              "api": "/eu/api/datacenter_eu.json",
-              "source": "Eurostat, Cooling and heating degree days by country - monthly data (nrg_chdd_m)",
-              "definition": {
-                "doc": "指標定義_EU_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2025-12",
-              "backfilled": true
-            },
-            "eed_reporting_ledger": {
-              "value_status": "final",
-              "value": 4,
-              "name": "EU data-centre energy reporting scheme (Energy Efficiency Directive) - ledger of legal basis, publications and deadlines",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/eu/api/datacenter_eu.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "European Commission, Directorate-General for Energy - European Data Centre Reporting Scheme",
-              "definition": {
-                "doc": "指標定義_EU_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "electrical_equipment_production_index": {
-              "value_status": "final",
-              "value": 105.5,
-              "name": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly)",
-              "unit": "index (2021=100)",
-              "provisional": false,
-              "api": "/eu/api/datacenter_eu.json",
-              "source": "Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1",
-              "definition": {
-                "doc": "指標定義_EU_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-08",
-              "backfilled": true
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-09-04",
-            "removed_on": "2026-09-08"
-          }
-        },
-        "regulation": {
-          "path": "/eu/regulation/",
-          "status": "observing",
-          "series": {
-            "ai_act_calendar_stages": {
-              "value_status": "final",
-              "value": 8,
-              "name": "AI Act staged application calendar (stages listed, OJ dates)",
-              "unit": "stages",
-              "provisional": false,
-              "api": "/eu/api/regulation_eu.json",
-              "note": "dates only, no interpretation; see /api/upcoming.json for the future stages",
-              "source": "Official Journal of the European Union",
-              "definition": {
-                "doc": "指標定義_EU_法規制_官報AI法令.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-09-03",
-              "backfilled": false
-            },
-            "acts_last_30_days": {
-              "value_status": "final",
-              "value": 0,
-              "name": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days",
-              "unit": "acts",
-              "provisional": false,
-              "api": "/eu/api/regulation_eu.json",
-              "source": "EUR-Lex, Publications Office of the European Union",
-              "definition": {
-                "doc": "指標定義_EU_法規制_官報AI法令.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "acts_current_month": {
-              "value_status": "provisional",
-              "value": 0,
-              "name": "Same, current month (month in progress)",
-              "unit": "acts",
-              "provisional": true,
-              "api": "/eu/api/regulation_eu.json",
-              "source": "EUR-Lex, Publications Office of the European Union",
-              "definition": {
-                "doc": "指標定義_EU_法規制_官報AI法令.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-10",
-              "backfilled": false
-            }
-          }
-        },
-        "power": {
-          "path": "/eu/power/",
-          "series_kind": "forecast",
-          "status": "observing",
-          "series": {
-            "eu27_load_forecast_mwh": {
-              "value_status": "provisional",
-              "value": 6954979.0,
-              "name": "EU27 day-ahead total load FORECAST (daily energy; not actual load)",
-              "unit": "MWh",
-              "provisional": true,
-              "api": "/eu/api/power_eu.json",
-              "note": "series_kind=forecast; areas_missing=0",
-              "source": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
-              "definition": {
-                "doc": "指標定義_EU_電力_前日負荷予測.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          }
-        },
-        "disaster": {
-          "path": "/eu/disaster/",
-          "series": {
-            "wildfire_annual_ledger": {
-              "value_status": "final",
-              "value": 10,
-              "name": "Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/eu/api/disaster_eu.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook",
-              "definition": {
-                "doc": "指標定義_EU_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "earthquake": {
-              "value_status": "final",
-              "value": 0,
-              "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
-              "unit": "events",
-              "provisional": false,
-              "api": "/eu/api/disaster_eu.json",
-              "source": "U.S. Geological Survey, Earthquake Hazards Program (ComCat)",
-              "definition": {
-                "doc": "指標定義_EU_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-09-04",
-            "removed_on": "2026-09-08"
-          }
-        },
-        "market": {
-          "path": "/eu/market/",
-          "series": {
-            "legal_status_ledger": {
-              "value_status": "final",
-              "value": 3,
-              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/eu/api/market_eu.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "Statutes and government documents (URL on each row)",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "http402_success": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "Payments completed after an HTTP 402 response, per day",
-              "unit": "count",
-              "provisional": false,
-              "api": "/eu/api/market_eu.json",
-              "note": "not_yet_measured (endpoint not implemented)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "support_count": {
-              "value_status": "provisional",
-              "value": 0,
-              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
-              "unit": "count",
-              "provisional": true,
-              "api": "/eu/api/market_eu.json",
-              "source": "AI Lifeline first-party observation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "payment_rails": {
-              "value_status": "final",
-              "value": 6,
-              "name": "Payment-rail ledger (EU; verified about monthly) - status per rail: available / not available / applied / not verified",
-              "unit": "rails",
-              "provisional": false,
-              "api": "/eu/api/market_eu.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "AI Lifeline first-party ledger of official provider documentation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "http402_attempts": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "HTTP 402 (payment required) responses attempted per day",
-              "unit": "count",
-              "provisional": false,
-              "api": "/eu/api/market_eu.json",
-              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "regime_calendar": {
-              "value_status": "final",
-              "value": 5,
-              "name": "Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) - entry into force and application stages",
-              "unit": "stages",
-              "provisional": false,
-              "api": "/eu/api/market_eu.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": true,
-            "active_from": "2026-09-04",
-            "removed_on": null
-          }
-        },
-        "ai_readers": {
-          "note": "Weekly Cloudflare-verified AI requests to /eu/ paths (same definition as the Japan edition, path-scoped).",
-          "path": "/eu/",
-          "status": "observing",
-          "series": {
-            "week_verified": {
-              "value_status": "provisional",
-              "value": 7,
-              "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
-              "unit": "requests",
-              "provisional": true,
-              "api": "/eu/api/ai_readers_eu.json",
-              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
-              "definition": {
-                "doc": "指標定義_AI読者数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-29"
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            }
-          }
-        }
-      },
-      "region": "eu"
-    },
-    "us": {
-      "generated": "2026-10-28 18:01",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-08-29",
-        "removed_on": "2026-09-02"
-      },
-      "chapters": {
-        "fiscal": {
-          "path": "/us/fiscal/",
-          "series": {
-            "ai_grants_open": {
-              "value_status": "final",
-              "value": 143,
-              "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/fiscal_us.json",
-              "note": "today_provisional=144 (as of 2026-10-28 18:01; replaced by tomorrow's recount)",
-              "source": "Grants.gov search API",
-              "definition": {
-                "doc": "指標定義_第7章_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10",
-              "backfilled": false
-            },
-            "tga_balance": {
-              "value_status": "final",
-              "value": 982489.0,
-              "name": "Treasury General Account opening balance (millions of USD, daily)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/fiscal_us.json",
-              "source": "U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)",
-              "definition": {
-                "doc": "指標定義_第7章_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            },
-            "treasury_yield": {
-              "value_status": "final",
-              "value": 4.99,
-              "name": "Daily Treasury Par Yield Curve (%, headline 10Y)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/fiscal_us.json",
-              "source": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates",
-              "definition": {
-                "doc": "指標定義_第7章_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-08-30",
-            "removed_on": "2026-09-03"
-          }
-        },
-        "gpu": {
-          "path": "/us/gpu/",
-          "series": {
-            "doe_lbnl_energy_ledger": {
-              "value_status": "final",
-              "value": 3,
-              "name": "DOE / LBNL 2024 United States Data Center Energy Usage Report - figures as quoted by DOE (ledger)",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/us/api/gpu_us.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "U.S. Department of Energy (announcement of the LBNL report)",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "cloud_capex_quarterly": {
-              "value_status": "provisional",
-              "value": 54208.0,
-              "name": "Capital expenditure reported in SEC filings by 4 major cloud operators, sum per calendar quarter (million USD; payments to acquire PP&E / productive assets as tagged by each filer)",
-              "unit": "million USD",
-              "provisional": true,
-              "api": "/us/api/gpu_us.json",
-              "source": "U.S. Securities and Exchange Commission, EDGAR XBRL frames API",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-Q2",
-              "backfilled": true
-            },
-            "bis_advanced_computing_monthly": {
-              "value_status": "provisional",
-              "value": 0,
-              "name": "Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\", per month of publication",
-              "unit": "documents",
-              "provisional": true,
-              "api": "/us/api/gpu_us.json",
-              "source": "Federal Register (federalregister.gov) API",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10",
-              "backfilled": false
-            },
-            "bis_advanced_computing_recent": {
-              "value_status": "final",
-              "value": 15,
-              "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
-              "unit": "documents",
-              "provisional": false,
-              "api": "/us/api/gpu_us.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "Federal Register (federalregister.gov) API",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            },
-            "h100_ondemand_price_weekly": {
-              "value_status": "final",
-              "value": 3.99,
-              "name": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market)",
-              "unit": "USD per GPU-hour",
-              "provisional": false,
-              "api": "/us/api/gpu_us.json",
-              "source": "Lambda public pricing page (first-party weekly check)",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-22",
-              "backfilled": false
-            },
-            "token_prices_tracked": {
-              "value_status": "final",
-              "value": 4,
-              "name": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background)",
-              "unit": "USD per 1M tokens",
-              "provisional": false,
-              "api": "/us/api/gpu_us.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "Official pricing pages of each provider (figures only; definition v1.0)",
-              "definition": {
-                "doc": "指標定義_US_GPU章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-28 18:01",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-09-04",
-            "removed_on": "2026-09-08"
-          }
-        },
-        "datacenter": {
-          "path": "/us/datacenter/",
-          "series": {
-            "transformer_backlog_proxy": {
-              "value_status": "final",
-              "value": 28460.0,
-              "name": "Unfilled orders, Electrical Equipment Manufacturing (M3, monthly, millions of USD, seasonally adjusted) — a lead-time proxy, not a lead time",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/datacenter_us.json",
-              "source": "U.S. Census Bureau, Manufacturers' Shipments, Inventories, and Orders (M3) Survey",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-08",
-              "backfilled": false
-            },
-            "cooling_degree_days": {
-              "value_status": "final",
-              "value": 1,
-              "name": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/datacenter_us.json",
-              "source": "NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            },
-            "construction_spend": {
-              "value_status": "provisional",
-              "value": 7535.0,
-              "name": "Private data-center construction spending (monthly, millions of USD, not seasonally adjusted)",
-              "unit": "",
-              "provisional": true,
-              "api": "/us/api/datacenter_us.json",
-              "source": "U.S. Census Bureau, Value of Construction Put in Place Survey (VIP)",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-08",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": null
-        },
-        "regulation": {
-          "path": "/us/regulation/",
-          "status": "observing",
-          "series": {
-            "closing_within_14_days": {
-              "value_status": "final",
-              "value": 5,
-              "name": "Comment periods closing within 14 days",
-              "unit": "documents",
-              "provisional": false,
-              "api": "/us/api/regulation_us.json",
-              "source": "Federal Register (federalregister.gov) API",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            },
-            "documents_last_30_days": {
-              "value_status": "final",
-              "value": 33,
-              "name": "Matching documents published in the last 30 days",
-              "unit": "documents",
-              "provisional": false,
-              "api": "/us/api/regulation_us.json",
-              "source": "Federal Register (federalregister.gov) API",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            },
-            "open_comment_periods": {
-              "value_status": "final",
-              "value": 24,
-              "name": "Open federal comment periods (Federal Register, query \"artificial intelligence\")",
-              "unit": "documents",
-              "provisional": false,
-              "api": "/us/api/regulation_us.json",
-              "source": "Federal Register (federalregister.gov) API",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            }
-          }
-        },
-        "power": {
-          "path": "/us/power/",
-          "status": "observing",
-          "series": {
-            "us48_netgen_mwh": {
-              "value_status": "final",
-              "value": 10486920.0,
-              "name": "US Lower 48 net generation (daily total)",
-              "unit": "MWh",
-              "provisional": false,
-              "api": "/us/api/power_us.json",
-              "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-26",
-              "backfilled": false
-            },
-            "us48_demand_mwh": {
-              "value_status": "provisional",
-              "value": 10822765.0,
-              "name": "US Lower 48 electricity demand (daily total)",
-              "unit": "MWh",
-              "provisional": true,
-              "api": "/us/api/power_us.json",
-              "note": "breakdown by EIA region / balancing authority is machine-readable only (power_us.json.breakdown)",
-              "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          }
-        },
-        "disaster": {
-          "path": "/us/disaster/",
-          "series": {
-            "extreme_heat": {
-              "value_status": "final",
-              "value": 1,
-              "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/disaster_us.json",
-              "note": "today_provisional=0 (as of 2026-10-28 18:01; replaced by tomorrow's recount)",
-              "source": "NOAA National Weather Service alerts API",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "hurricane": {
-              "value_status": "final",
-              "value": 1,
-              "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/disaster_us.json",
-              "note": "today_provisional=1 (as of 2026-10-28 18:01; replaced by tomorrow's recount)",
-              "source": "NOAA National Hurricane Center",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "earthquake": {
-              "value_status": "final",
-              "value": 0,
-              "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
-              "unit": "",
-              "provisional": false,
-              "api": "/us/api/disaster_us.json",
-              "source": "U.S. Geological Survey, Earthquake Hazards Program",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-08-30",
-            "removed_on": "2026-09-03"
-          }
-        },
-        "market": {
-          "path": "/us/market/",
-          "series": {
-            "http402_attempts": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "HTTP 402 (payment required) responses attempted per day",
-              "unit": "count",
-              "provisional": false,
-              "api": "/us/api/market_us.json",
-              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "http402_success": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "Payments completed after an HTTP 402 response, per day",
-              "unit": "count",
-              "provisional": false,
-              "api": "/us/api/market_us.json",
-              "note": "not_yet_measured (endpoint not implemented)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "legal_status_ledger": {
-              "value_status": "final",
-              "value": 2,
-              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/us/api/market_us.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "Statutes and government documents (URL on each row)",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "support_count": {
-              "value_status": "provisional",
-              "value": 0,
-              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
-              "unit": "count",
-              "provisional": true,
-              "api": "/us/api/market_us.json",
-              "source": "AI Lifeline first-party observation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            },
-            "payment_rails": {
-              "value_status": "final",
-              "value": 6,
-              "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
-              "unit": "rails",
-              "provisional": false,
-              "api": "/us/api/market_us.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "AI Lifeline first-party ledger of official provider documentation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "regime_calendar": {
-              "value_status": "final",
-              "value": 8,
-              "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
-              "unit": "stages",
-              "provisional": false,
-              "api": "/us/api/market_us.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": true,
-            "active_from": "2026-09-04",
-            "removed_on": null
-          }
-        },
-        "water": {
-          "path": "/us/water/",
-          "series": {
-            "drought_area_d1_plus": {
-              "value_status": "final",
-              "value": 50.67,
-              "name": "CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)",
-              "unit": "%",
-              "provisional": false,
-              "api": "/us/api/water_us.json",
-              "source": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
-              "definition": {
-                "doc": "指標定義_US_水章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-10-20",
-              "backfilled": false
-            },
-            "drought_area_d1_plus_us_total": {
-              "value_status": "final",
-              "value": 42.5,
-              "name": "U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)",
-              "unit": "%",
-              "provisional": false,
-              "api": "/us/api/water_us.json",
-              "note": "reference series (not the main series)",
-              "source": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
-              "definition": {
-                "doc": "指標定義_US_水章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-10-20",
-              "backfilled": false
-            },
-            "usgs_water_use_ledger": {
-              "value_status": "final",
-              "value": 3,
-              "name": "USGS - Estimated use of water in the United States (5-year compilation) - national figures as published (ledger)",
-              "unit": "entries",
-              "provisional": false,
-              "api": "/us/api/water_us.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "U.S. Geological Survey, Estimated use of water in the United States in 2015 (Circular 1441)",
-              "definition": {
-                "doc": "指標定義_US_水章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "water_disclosure": {
-              "value_status": "final",
-              "value": 7,
-              "name": "Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
-              "unit": "companies",
-              "provisional": false,
-              "api": "/us/api/water_us.json",
-              "source": "AI Lifeline first-party observation of official sustainability pages",
-              "definition": {
-                "doc": "指標定義_US_水章.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-03"
-              },
-              "observed": "2026-09-03",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-09-03",
-            "removed_on": "2026-09-07"
-          }
-        },
-        "ai_readers": {
-          "note": "Weekly Cloudflare-verified AI requests to /us/ paths (same definition as the Japan edition, path-scoped).",
-          "path": "/us/",
-          "status": "observing",
-          "series": {
-            "week_verified": {
-              "value_status": "provisional",
-              "value": 35,
-              "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
-              "unit": "requests",
-              "provisional": true,
-              "api": "/us/api/ai_readers_us.json",
-              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
-              "definition": {
-                "doc": "指標定義_AI読者数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-29"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          }
-        }
-      },
-      "region": "us"
-    },
-    "jp": {
-      "generated": "2026-10-28 10:33",
-      "edition_beta": null,
-      "chapters": {
-        "fiscal": {
-          "path": "/jp/fiscal/",
-          "series": {
-            "jgb_yield": {
-              "value_status": "final",
-              "value": 2.829,
-              "name": "国債金利（半年複利・%）— 主表示は10年",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/fiscal_jp.json",
-              "source": "Ministry of Finance, Japan — JGB market yields (財務省「国債金利情報」)",
-              "definition": {
-                "doc": "指標定義_第7章_財政.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-08-30",
-            "removed_on": "2026-09-03"
-          }
-        },
-        "gpu": {
-          "path": "/jp/gpu/",
-          "status": "observing",
-          "series": {
-            "conoha_gpu_h100": {
-              "value_status": "final",
-              "value": 1398.0,
-              "name": "H100 時間単価（GMOインターネット ConoHa GPUサーバー）",
-              "unit": "円/時（税込）",
-              "provisional": false,
-              "api": "/jp/api/gpu_jp.json",
-              "source": "GMOインターネット 公式料金ページの自前確認（週次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-23",
-              "backfilled": false
-            },
-            "sakura_vrt_h100": {
-              "value_status": "final",
-              "value": 990.0,
-              "name": "H100 時間単価（さくらインターネット 高火力 VRT）",
-              "unit": "円/時（税込）",
-              "provisional": false,
-              "api": "/jp/api/gpu_jp.json",
-              "source": "さくらインターネット 公式料金ページの自前確認（週次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-23",
-              "backfilled": false
-            }
-          }
-        },
-        "datacenter": {
-          "path": "/jp/datacenter/",
-          "series": {
-            "cooling_degree_days": {
-              "value_status": "final",
-              "value": 1.4,
-              "name": "冷却度日（基準18.3℃=65°F・米国版CPCと同一基準・5地点平均：東京/大阪/名古屋/福岡/札幌）",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/datacenter_jp.json",
-              "source": "Japan Meteorological Agency (気象庁「過去の気象データ」)",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター_JP.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "transformer_capacity_index": {
-              "value_status": "final",
-              "value": 89.8,
-              "name": "変圧器の生産能力指数（標準変圧器・2020年=100・月次）— 参考系列",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/datacenter_jp.json",
-              "note": "reference series (not the main series)",
-              "source": "経済産業省 生産動態統計（機械統計）参考・生産能力指数",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター_JP.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-06",
-              "backfilled": false
-            },
-            "transformer_production": {
-              "value_status": "final",
-              "value": 21369.0,
-              "name": "変圧器の生産金額（経産省 生産動態統計・月次・百万円）— リードタイムの代理指標",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/datacenter_jp.json",
-              "source": "METI, Current Production Statistics (経産省「生産動態統計」機械統計)",
-              "definition": {
-                "doc": "指標定義_第6章_データセンター_JP.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2025-12",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-08-30",
-            "removed_on": "2026-09-03"
-          }
-        },
-        "regulation": {
-          "path": "/jp/houkisei/",
-          "status": "observing",
-          "series": {
-            "vulnerability_03_under_30": {
-              "value_status": "final",
-              "value": 0,
-              "name": "意見提出期間が30日未満のパブコメ案件数",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/vulnerability_regulation_jp.json",
-              "note": "cases this month: 5",
-              "source": "e-Govパブリック・コメント（意見公募）一覧",
-              "definition": {
-                "doc": "指標定義_脆弱性03_法規制パブコメ短期間案件数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-22"
-              },
-              "observed": "2026-10",
-              "backfilled": false
-            },
-            "open_consultations": {
-              "value_status": "final",
-              "value": 5,
-              "name": "AIの生存条件に関わる募集中パブコメ",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/pubcomment.json",
-              "source": "e-Gov パブリック・コメント（自前観測・毎日）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            }
-          }
-        },
-        "power": {
-          "path": "/jp/denryoku/",
-          "status_rule": "ok>=8% / watch 5-8% / alert <5% (status_criteria.json v2.2, input = latest national minimum incl. today provisional)",
-          "status": "ok",
-          "series": {
-            "reserve_national_min": {
-              "value_status": "final",
-              "value": 10.2,
-              "name": "広域予備率（全国最小・確定最終日）",
-              "unit": "%",
-              "provisional": false,
-              "api": "/jp/api/power_jp.json",
-              "note": "today_provisional=9.81 (2026-10-28; includes forecast slots from 12:30, replaced by refetch)",
-              "source": "OCCTO 広域予備率Web公表システム",
-              "definition": {
-                "doc": "判定規則 status_criteria（判定入力）／指標定義_脆弱性01_電力予備率警戒日数.md",
-                "version": "2.2 (criteria) / 1.0 (indicator)",
-                "fixed_on": "2026-08-23"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "vulnerability_01_days_lt8": {
-              "value_status": "provisional",
-              "value": 5,
-              "name": "広域予備率が警戒水準を下回った日数",
-              "unit": "日",
-              "provisional": true,
-              "api": "/jp/api/vulnerability_jp.json",
-              "note": "current month partial: observed 28/31 days",
-              "source": "電力広域的運営推進機関「広域予備率Web公表システム」",
-              "definition": {
-                "doc": "指標定義_脆弱性01_電力予備率警戒日数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-22"
-              },
-              "observed": "2026-10",
-              "backfilled": false
-            },
-            "jepx_system_avg": {
-              "value_status": "final",
-              "value": 26.71,
-              "name": "JEPXスポット システムプライス平均",
-              "unit": "円/kWh",
-              "provisional": false,
-              "api": "/jp/api/power_jp.json",
-              "source": "JEPX スポット市場取引結果",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-29",
-              "backfilled": false
-            }
-          }
-        },
-        "disaster": {
-          "path": "/jp/disaster/",
-          "series": {
-            "heavy_rain_flood": {
-              "value_status": "final",
-              "value": 0,
-              "name": "大雨特別警報・洪水警報を含む警報電文数（日次）",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=0 (as of 2026-10-28 18:02; replaced by tomorrow's recount)",
-              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "typhoon": {
-              "value_status": "final",
-              "value": 1,
-              "name": "台風解析・予報情報が存在した日（1/0・日次）",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=1 (as of 2026-10-28 18:02; replaced by tomorrow's recount)",
-              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "extreme_heat": {
-              "value_status": "final",
-              "value": 0,
-              "name": "猛暑日（日最高気温35℃以上・気象庁定義）の地点数（対象5地点：東京・大阪・名古屋・福岡・札幌）",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/disaster_jp.json",
-              "source": "Japan Meteorological Agency (気象庁「過去の気象データ」)",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            },
-            "earthquake": {
-              "value_status": "final",
-              "value": 0,
-              "name": "最大震度5弱以上の地震件数（日次・JST）",
-              "unit": "",
-              "provisional": false,
-              "api": "/jp/api/disaster_jp.json",
-              "note": "today_provisional=0 (as of 2026-10-28 18:02; replaced by tomorrow's recount)",
-              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
-              "definition": {
-                "doc": "指標定義_第8章_気候災害.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-30"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": false,
-            "active_from": "2026-08-30",
-            "removed_on": "2026-09-03"
-          }
-        },
-        "market": {
-          "path": "/jp/market/",
-          "series": {
-            "legal_status_ledger": {
-              "value_status": "final",
-              "value": 2,
-              "name": "参考台帳（年次）：AIエージェントの契約主体性・責任帰属に関する現行法と審議状況",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/market_jp.json",
-              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
-              "source": "法令・政府文書（各行にURL）",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "http402_success": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "HTTP 402 応答からの支払い成功数（日次）",
-              "unit": "回",
-              "provisional": false,
-              "api": "/jp/api/market_jp.json",
-              "note": "not_yet_measured (endpoint not implemented)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "support_count": {
-              "value_status": "provisional",
-              "value": 0,
-              "name": "本サイトの支援回数（累計・運営者の自己テストを除外・日次スナップショット）",
-              "unit": "回",
-              "provisional": true,
-              "api": "/jp/api/market_jp.json",
-              "source": "AI Lifeline first-party observation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-10-28",
-              "backfilled": false
-            },
-            "payment_rails": {
-              "value_status": "final",
-              "value": 6,
-              "name": "決済レール台帳（jp・月次確認）— 各経路の状態：可／不可／申請中／未確認",
-              "unit": "経路",
-              "provisional": false,
-              "api": "/jp/api/market_jp.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "AI Lifeline first-party ledger of official provider documentation",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            },
-            "http402_attempts": {
-              "value_status": null,
-              "value": "not_yet_measured",
-              "name": "HTTP 402（支払い要求）応答の試行数（日次）",
-              "unit": "回",
-              "provisional": false,
-              "api": "/jp/api/market_jp.json",
-              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
-              "source": "",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "",
-              "backfilled": false
-            },
-            "regime_calendar": {
-              "value_status": "final",
-              "value": 9,
-              "name": "資金決済に関する法律（ステーブルコイン＝電子決済手段）の改正の施行段階",
-              "unit": "段階",
-              "provisional": false,
-              "api": "/jp/api/market_jp.json",
-              "note": "ledger (count of entries; not a measured series)",
-              "source": "e-Gov 法令検索 法令API（法令ID 421AC0000000059 の改正履歴）",
-              "definition": {
-                "doc": "指標定義_第9章_市場参加.md",
-                "version": "1.0",
-                "fixed_on": "2026-09-04"
-              },
-              "observed": "2026-09-04",
-              "backfilled": false
-            }
-          },
-          "status": "observing",
-          "chapter_beta": {
-            "active": true,
-            "active_from": "2026-09-04",
-            "removed_on": null
-          }
-        },
-        "water": {
-          "path": "/jp/mizu/",
-          "status": "observing",
-          "series": {
-            "volume_disclosed": {
-              "value_status": "final",
-              "value": 7,
-              "name": "取水量・総量レベルの開示",
-              "unit": "社",
-              "provisional": false,
-              "api": "/jp/api/water_jp.json",
-              "source": "同",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-08-21",
-              "backfilled": false
-            },
-            "wue_disclosed": {
-              "value_status": "final",
-              "value": 4,
-              "name": "WUE数値まで開示（15社中）",
-              "unit": "社",
-              "provisional": false,
-              "api": "/jp/api/water_jp.json",
-              "source": "各社公式サステナ情報の自前確認（月次・台帳 water_panel.json）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-08-21",
-              "backfilled": false
-            }
-          }
-        },
-        "data": {
-          "path": "/jp/data/",
-          "status": "observing",
-          "series": {
-            "block_all_CCBot": {
-              "value_status": "final",
-              "value": 9,
-              "name": "CCBot 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_Google-Extended": {
-              "value_status": "final",
-              "value": 9,
-              "name": "Google-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_PerplexityBot": {
-              "value_status": "final",
-              "value": 8,
-              "name": "PerplexityBot 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "opendata_count": {
-              "value_status": "final",
-              "value": 18142,
-              "name": "e-Govデータポータル データセット総数",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "e-Govデータポータル CKAN API（公共データ利用規約PDL1.0）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_ClaudeBot": {
-              "value_status": "final",
-              "value": 9,
-              "name": "ClaudeBot 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_meta-externalagent": {
-              "value_status": "final",
-              "value": 9,
-              "name": "meta-externalagent 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_GPTBot": {
-              "value_status": "final",
-              "value": 10,
-              "name": "GPTBot 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "vulnerability_02_block_all": {
-              "value_status": "final",
-              "value": 8,
-              "name": "主要AIクローラーを全面拒否しているサイト数",
-              "unit": "サイト",
-              "provisional": false,
-              "api": "/jp/api/vulnerability_data_jp.json",
-              "source": "国内主要サイトのrobots.txt（自前巡回）",
-              "definition": {
-                "doc": "指標定義_脆弱性02_データクローラー全面拒否サイト数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-22"
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_Bytespider": {
-              "value_status": "final",
-              "value": 9,
-              "name": "Bytespider 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            },
-            "block_all_Applebot-Extended": {
-              "value_status": "final",
-              "value": 9,
-              "name": "Applebot-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
-              "unit": "件",
-              "provisional": false,
-              "api": "/jp/api/data_jp.json",
-              "source": "自前robots.txt巡回（月次）",
-              "definition": {
-                "doc": null,
-                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
-                "version": null
-              },
-              "observed": "2026-10-01",
-              "backfilled": false
-            }
-          }
-        },
-        "ai_readers": {
-          "note": "Sixth observed value (not a chapter): weekly Cloudflare-verified AI requests to this site.",
-          "path": "/jp/",
-          "status": "observing",
-          "series": {
-            "week_verified": {
-              "value_status": "provisional",
-              "value": 213,
-              "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
-              "unit": "リクエスト",
-              "provisional": true,
-              "api": "/jp/api/ai_readers_jp.json",
-              "note": "week 10 (2026-10-25..2026-10-31); unverified 22 listed separately",
-              "source": "Cloudflare GraphQL Analytics API（httpRequestsAdaptiveGroups・エッジ計測）",
-              "definition": {
-                "doc": "指標定義_AI読者数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-29"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          }
-        }
-      },
-      "region": "jp"
-    },
-    "sg": {
-      "generated": "2026-10-28 07:30",
-      "edition_beta": {
-        "active": false,
-        "active_from": "2026-10-03",
-        "removed_on": "2026-10-05"
-      },
-      "chapters": {
-        "reference": {
-          "path": "/sg/",
-          "series": {
-            "population_total": {
-              "value_status": "final",
-              "value": 6208523.0,
-              "name": "Total population, end June, annual",
-              "unit": "persons",
-              "provisional": false,
-              "api": "/sg/api/reference_sg.json",
-              "note": "reference series (not the main series)",
-              "source": "Singapore Department of Statistics (SingStat), Indicators On Population, Annual, via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026",
-              "backfilled": false
-            },
-            "population_resident": {
-              "value_status": "final",
-              "value": 4231524.0,
-              "name": "Resident population, end June, annual",
-              "unit": "persons",
-              "provisional": false,
-              "api": "/sg/api/reference_sg.json",
-              "note": "reference series (not the main series)",
-              "source": "Singapore Department of Statistics (SingStat), Indicators On Population, Annual, via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026",
-              "backfilled": false
-            }
-          },
-          "status": "reference",
-          "chapter_beta": null
-        },
-        "power": {
-          "path": "/sg/power/",
-          "series": {
-            "electricity_generation_monthly": {
-              "value_status": "final",
-              "value": 5108.1,
-              "name": "Electricity generation, Singapore, monthly total",
-              "unit": "GWh",
-              "provisional": false,
-              "api": "/sg/api/power_sg.json",
-              "source": "Singapore Department of Statistics (SingStat), Electricity Generation, Monthly (source: Energy Market Authority), via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_電力_月次発電量_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026-05",
-              "backfilled": true
-            }
-          },
-          "status": "observing",
-          "chapter_beta": null
-        },
-        "water": {
-          "path": "/sg/water/",
-          "series": {
-            "potable_water_sold_total": {
-              "value_status": "final",
-              "value": 515.5,
-              "name": "Sales of potable water, total, annual",
-              "unit": "million cubic metres",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "Singapore Department of Statistics (SingStat), Water Sales, Annual (source: MSE / PUB), via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2025",
-              "backfilled": true
-            },
-            "potable_water_sold_domestic": {
-              "value_status": "final",
-              "value": 304.4,
-              "name": "Volume of potable water sold, domestic, annual",
-              "unit": "million cubic metres",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "PUB, Singapore's National Water Agency, Volume of Potable Water sold, Annual, via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2025",
-              "backfilled": true
-            },
-            "water_price_newater": {
-              "value_status": "final",
-              "value": 2.5,
-              "name": "NEWater price (S$/m3, excl. GST)",
-              "unit": "S$/m3",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026",
-              "backfilled": false
-            },
-            "water_price_domestic_0_40": {
-              "value_status": "final",
-              "value": 3.24,
-              "name": "Potable water price, domestic users, first 40 cubic metres (S$/m3, excl. GST)",
-              "unit": "S$/m3",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026",
-              "backfilled": false
-            },
-            "potable_water_sold_non_domestic": {
-              "value_status": "final",
-              "value": 211.1,
-              "name": "Volume of potable water sold, non-domestic, annual",
-              "unit": "million cubic metres",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "PUB, Singapore's National Water Agency, Volume of Potable Water sold, Annual, via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2025",
-              "backfilled": true
-            },
-            "water_price_non_domestic": {
-              "value_status": "final",
-              "value": 3.24,
-              "name": "Potable water price, non-domestic users (S$/m3, excl. GST)",
-              "unit": "S$/m3",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2026",
-              "backfilled": false
-            },
-            "newater_sold": {
-              "value_status": "final",
-              "value": 153.8,
-              "name": "Volume of NEWater sold, annual",
-              "unit": "million cubic metres",
-              "provisional": false,
-              "api": "/sg/api/water_sg.json",
-              "source": "PUB, Singapore's National Water Agency, Volume of NEWater sold, Annual, via data.gov.sg",
-              "definition": {
-                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
-                "version": "1.0 (draft)",
-                "fixed_on": "2026-10-01"
-              },
-              "observed": "2025",
-              "backfilled": true
-            }
-          },
-          "status": "observing",
-          "chapter_beta": null
-        },
-        "ai_readers": {
-          "note": "Weekly Cloudflare-verified AI requests to /sg/ paths (same definition as the Japan edition, path-scoped).",
-          "path": "/sg/",
-          "status": "observing",
-          "series": {
-            "week_verified": {
-              "value_status": "provisional",
-              "value": 7,
-              "name": "AI readers (weekly) - AI requests to the Singapore edition (/sg/ paths)",
-              "unit": "requests",
-              "provisional": true,
-              "api": "/sg/api/ai_readers_sg.json",
-              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
-              "definition": {
-                "doc": "指標定義_AI読者数.md",
-                "version": "1.0",
-                "fixed_on": "2026-08-29"
-              },
-              "observed": "2026-10-27",
-              "backfilled": false
-            }
-          }
-        }
-      },
-      "region": "sg"
-    }
-  },
-  "machine_readable": {
-    "manifest": "/api/manifest.json",
-    "corrections": "/api/corrections.json",
-    "llms_txt": "/llms.txt",
-    "upcoming": "/api/upcoming.json",
-    "health": "/api/health.json",
-    "editions": [
-      "/us/api/summary.json",
-      "/eu/api/summary.json",
-      "/sg/api/summary.json",
-      "/jp/api/summary.json"
-    ],
-    "site_index": "/index.json",
-    "answers": "/api/index.json"
-  },
-  "timezone": "JST (UTC+9)",
-  "_note": "AI Lifeline - one-file world summary (added 2026-09-03). Aggregates the latest confirmed value of every published series in every edition, with observation date, status, provisional/backfilled flags and the version of the indicator definition. Regenerated after each edition's daily batch; regions[].last_updated is per edition, generated_at is the whole file.",
-  "conventions": {
-    "value_status": "final = settled; provisional = may still change (same-day or incomplete observation); provisional=true mirrors it",
-    "not_yet_measured": "value \"not_yet_measured\" means missing, not zero",
-    "status": "ok / watch / alert only where a frozen machine rule exists (Japan power chapter); \"observing\" = collected, not judged; do not infer thresholds",
-    "attribution": "Attribute original content as \"AI Lifeline\"; keep upstream source names on every value",
-    "definition": "doc/version/fixed_on of the frozen indicator definition; null with a note when no versioned definition exists",
-    "backfilled": "true = retrieved retrospectively after the series went live (kept apart from day-by-day observation)"
-  },
   "cross_series": {
-    "generated_at": "2026-10-28 18:03",
+    "note": "AI Lifeline cross-edition series (added 2026-09-04): (1) annual carbon intensity of electricity as published by each region's public body (reference ledger; units as published, not converted); (2) public-opinion ledger (official surveys only; manual, PDF page numbers required; results pending transcription); (3) training-material supply: Common Crawl crawl statistics (fetched pages, robots-denied pages, bytes) and Wikipedia monthly edits by language edition assigned to each region. Values as published; no estimates. Status observing.",
     "carbon_intensity_annual": {
+      "eu": {
+        "series_id": "eu.power.carbon_intensity_annual",
+        "kind": "intensity",
+        "name_en": "EU27 - greenhouse gas emission intensity of electricity generation (EEA indicator)",
+        "value": null,
+        "unit": "gCO2e/kWh",
+        "target_year": "2024",
+        "status": "unverified",
+        "published_statements": [
+          "Generating one kilowatt hour has emitted 11% less emissions in 2024 on average than in 2023, and 41% less than a decade ago (EEA indicator page, retrieved 2026-09-04)"
+        ],
+        "source_url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1",
+        "source_version": "Indicator published 10 Jul 2026 (page)",
+        "license": "CC-BY (EEA legal notice, verified 2026-09-04)",
+        "retrieved_on": "2026-09-04",
+        "attribution_en": "Source: European Environment Agency (EEA), \"Greenhouse gas emission intensity of electricity generation\" (published 10 Jul 2026), retrieved 2026-09-04. Licence: CC-BY (EEA legal notice). Published values as-is; the original meaning is not altered.",
+        "note": "The absolute gCO2e/kWh value is not present in the page HTML (chart data loaded separately); the data file is catalogued in the EEA SDI (record 3b7fe76c-524a-439a-bfd2-a6e4046302a2). Value stays unverified until the data file is retrieved."
+      },
       "us": {
         "series_id": "us.power.co2_electric_annual",
         "kind": "annual_total",
@@ -2017,24 +46,6 @@
           "unit": "metric tons CO2 per billion Btu"
         }
       },
-      "eu": {
-        "series_id": "eu.power.carbon_intensity_annual",
-        "kind": "intensity",
-        "name_en": "EU27 - greenhouse gas emission intensity of electricity generation (EEA indicator)",
-        "value": null,
-        "unit": "gCO2e/kWh",
-        "target_year": "2024",
-        "status": "unverified",
-        "published_statements": [
-          "Generating one kilowatt hour has emitted 11% less emissions in 2024 on average than in 2023, and 41% less than a decade ago (EEA indicator page, retrieved 2026-09-04)"
-        ],
-        "source_url": "https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1",
-        "source_version": "Indicator published 10 Jul 2026 (page)",
-        "license": "CC-BY (EEA legal notice, verified 2026-09-04)",
-        "retrieved_on": "2026-09-04",
-        "attribution_en": "Source: European Environment Agency (EEA), \"Greenhouse gas emission intensity of electricity generation\" (published 10 Jul 2026), retrieved 2026-09-04. Licence: CC-BY (EEA legal notice). Published values as-is; the original meaning is not altered.",
-        "note": "The absolute gCO2e/kWh value is not present in the page HTML (chart data loaded separately); the data file is catalogued in the EEA SDI (record 3b7fe76c-524a-439a-bfd2-a6e4046302a2). Value stays unverified until the data file is retrieved."
-      },
       "jp": {
         "series_id": "jp.power.carbon_intensity_annual",
         "kind": "intensity",
@@ -2055,25 +66,28 @@
         "note": "Excel をダウンロードし（HTTP 200・119,874 B）シート「小売電気事業者係数一覧（基礎・調整後、夏公表）R8.8.3」末尾の「全国平均係数(t-CO₂/kWh) 0.000423」「代替値 0.000416」を転記（openpyxl・値は変えない）。個別事業者の係数は載せない"
       }
     },
+    "api": "/api/cross.json",
+    "public_opinion_entries": 3,
+    "generated_at": "2026-10-29 18:03",
     "training_material_latest": {
       "wikipedia_edits_monthly": {
-        "eu": {
-          "projects": 5,
-          "value_status": "final",
-          "value": 2617265,
-          "period": "2026-09"
-        },
-        "us": {
-          "projects": 1,
-          "value_status": "final",
-          "value": 5196974,
-          "period": "2026-09"
-        },
         "jp": {
-          "projects": 1,
+          "period": "2026-09",
           "value_status": "final",
           "value": 366843,
-          "period": "2026-09"
+          "projects": 1
+        },
+        "us": {
+          "period": "2026-09",
+          "value_status": "final",
+          "value": 5196974,
+          "projects": 1
+        },
+        "eu": {
+          "period": "2026-09",
+          "value_status": "final",
+          "value": 2617265,
+          "projects": 5
         }
       },
       "common_crawl": {
@@ -2086,23 +100,1907 @@
         "fetch_total": 3473105580.0,
         "fetched_at": "2026-10-22 07:30"
       }
+    }
+  },
+  "timezone": "JST (UTC+9)",
+  "summary": {
+    "sg": {
+      "edition_beta": {
+        "removed_on": "2026-10-05",
+        "active": false,
+        "active_from": "2026-10-03"
+      },
+      "generated": "2026-10-29 07:30",
+      "region": "sg",
+      "chapters": {
+        "power": {
+          "series": {
+            "electricity_generation_monthly": {
+              "source": "Singapore Department of Statistics (SingStat), Electricity Generation, Monthly (source: Energy Market Authority), via data.gov.sg",
+              "value": 5108.1,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/sg/api/power_sg.json",
+              "observed": "2026-05",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_電力_月次発電量_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Electricity generation, Singapore, monthly total",
+              "unit": "GWh"
+            }
+          },
+          "chapter_beta": null,
+          "path": "/sg/power/",
+          "status": "observing"
+        },
+        "ai_readers": {
+          "series": {
+            "week_verified": {
+              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
+              "value": 14,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/sg/api/ai_readers_sg.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-29",
+                "doc": "指標定義_AI読者数.md",
+                "version": "1.0"
+              },
+              "name": "AI readers (weekly) - AI requests to the Singapore edition (/sg/ paths)",
+              "unit": "requests"
+            }
+          },
+          "note": "Weekly Cloudflare-verified AI requests to /sg/ paths (same definition as the Japan edition, path-scoped).",
+          "path": "/sg/",
+          "status": "observing"
+        },
+        "reference": {
+          "series": {
+            "population_resident": {
+              "source": "Singapore Department of Statistics (SingStat), Indicators On Population, Annual, via data.gov.sg",
+              "note": "reference series (not the main series)",
+              "value": 4231524.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/sg/api/reference_sg.json",
+              "observed": "2026",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Resident population, end June, annual",
+              "unit": "persons"
+            },
+            "population_total": {
+              "source": "Singapore Department of Statistics (SingStat), Indicators On Population, Annual, via data.gov.sg",
+              "note": "reference series (not the main series)",
+              "value": 6208523.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/sg/api/reference_sg.json",
+              "observed": "2026",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Total population, end June, annual",
+              "unit": "persons"
+            }
+          },
+          "chapter_beta": null,
+          "path": "/sg/",
+          "status": "reference"
+        },
+        "water": {
+          "series": {
+            "water_price_newater": {
+              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
+              "value": 2.5,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2026",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "NEWater price (S$/m3, excl. GST)",
+              "unit": "S$/m3"
+            },
+            "water_price_domestic_0_40": {
+              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
+              "value": 3.24,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2026",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Potable water price, domestic users, first 40 cubic metres (S$/m3, excl. GST)",
+              "unit": "S$/m3"
+            },
+            "potable_water_sold_non_domestic": {
+              "source": "PUB, Singapore's National Water Agency, Volume of Potable Water sold, Annual, via data.gov.sg",
+              "value": 211.1,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2025",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Volume of potable water sold, non-domestic, annual",
+              "unit": "million cubic metres"
+            },
+            "potable_water_sold_domestic": {
+              "source": "PUB, Singapore's National Water Agency, Volume of Potable Water sold, Annual, via data.gov.sg",
+              "value": 304.4,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2025",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Volume of potable water sold, domestic, annual",
+              "unit": "million cubic metres"
+            },
+            "water_price_non_domestic": {
+              "source": "Singapore Department of Statistics (SingStat), Water Prices, Annual (source: MSE / PUB), via data.gov.sg",
+              "value": 3.24,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2026",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Potable water price, non-domestic users (S$/m3, excl. GST)",
+              "unit": "S$/m3"
+            },
+            "newater_sold": {
+              "source": "PUB, Singapore's National Water Agency, Volume of NEWater sold, Annual, via data.gov.sg",
+              "value": 153.8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2025",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Volume of NEWater sold, annual",
+              "unit": "million cubic metres"
+            },
+            "potable_water_sold_total": {
+              "source": "Singapore Department of Statistics (SingStat), Water Sales, Annual (source: MSE / PUB), via data.gov.sg",
+              "value": 515.5,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/sg/api/water_sg.json",
+              "observed": "2025",
+              "definition": {
+                "fixed_on": "2026-10-01",
+                "doc": "指標定義_SG_水章_年次台帳_v1.0案.md",
+                "version": "1.0 (draft)"
+              },
+              "name": "Sales of potable water, total, annual",
+              "unit": "million cubic metres"
+            }
+          },
+          "chapter_beta": null,
+          "path": "/sg/water/",
+          "status": "observing"
+        }
+      }
     },
-    "public_opinion_entries": 3,
-    "api": "/api/cross.json",
-    "note": "AI Lifeline cross-edition series (added 2026-09-04): (1) annual carbon intensity of electricity as published by each region's public body (reference ledger; units as published, not converted); (2) public-opinion ledger (official surveys only; manual, PDF page numbers required; results pending transcription); (3) training-material supply: Common Crawl crawl statistics (fetched pages, robots-denied pages, bytes) and Wikipedia monthly edits by language edition assigned to each region. Values as published; no estimates. Status observing."
+    "jp": {
+      "edition_beta": null,
+      "generated": "2026-10-29 10:33",
+      "region": "jp",
+      "chapters": {
+        "gpu": {
+          "series": {
+            "sakura_vrt_h100": {
+              "source": "さくらインターネット 公式料金ページの自前確認（週次）",
+              "value": 990.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/gpu_jp.json",
+              "observed": "2026-10-23",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "H100 時間単価（さくらインターネット 高火力 VRT）",
+              "unit": "円/時（税込）"
+            },
+            "conoha_gpu_h100": {
+              "source": "GMOインターネット 公式料金ページの自前確認（週次）",
+              "value": 1398.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/gpu_jp.json",
+              "observed": "2026-10-23",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "H100 時間単価（GMOインターネット ConoHa GPUサーバー）",
+              "unit": "円/時（税込）"
+            }
+          },
+          "path": "/jp/gpu/",
+          "status": "observing"
+        },
+        "data": {
+          "series": {
+            "block_all_meta-externalagent": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "meta-externalagent 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_GPTBot": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 10,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "GPTBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "vulnerability_02_block_all": {
+              "source": "国内主要サイトのrobots.txt（自前巡回）",
+              "value": 8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/vulnerability_data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "fixed_on": "2026-08-22",
+                "doc": "指標定義_脆弱性02_データクローラー全面拒否サイト数.md",
+                "version": "1.0"
+              },
+              "name": "主要AIクローラーを全面拒否しているサイト数",
+              "unit": "サイト"
+            },
+            "block_all_Bytespider": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Bytespider 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_Google-Extended": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Google-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_PerplexityBot": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "PerplexityBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_ClaudeBot": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "ClaudeBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_Applebot-Extended": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Applebot-Extended 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "block_all_CCBot": {
+              "source": "自前robots.txt巡回（月次）",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "CCBot 全面拒否サイト数（解析成功 25／パネル 26）",
+              "unit": "件"
+            },
+            "opendata_count": {
+              "source": "e-Govデータポータル CKAN API（公共データ利用規約PDL1.0）",
+              "value": 18142,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/data_jp.json",
+              "observed": "2026-10-01",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "e-Govデータポータル データセット総数",
+              "unit": "件"
+            }
+          },
+          "path": "/jp/data/",
+          "status": "observing"
+        },
+        "ai_readers": {
+          "series": {
+            "week_verified": {
+              "source": "Cloudflare GraphQL Analytics API（httpRequestsAdaptiveGroups・エッジ計測）",
+              "note": "week 10 (2026-10-25..2026-10-31); unverified 31 listed separately",
+              "value": 310,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/jp/api/ai_readers_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-29",
+                "doc": "指標定義_AI読者数.md",
+                "version": "1.0"
+              },
+              "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
+              "unit": "リクエスト"
+            }
+          },
+          "note": "Sixth observed value (not a chapter): weekly Cloudflare-verified AI requests to this site.",
+          "path": "/jp/",
+          "status": "observing"
+        },
+        "water": {
+          "series": {
+            "volume_disclosed": {
+              "source": "同",
+              "value": 7,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/water_jp.json",
+              "observed": "2026-08-21",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "取水量・総量レベルの開示",
+              "unit": "社"
+            },
+            "wue_disclosed": {
+              "source": "各社公式サステナ情報の自前確認（月次・台帳 water_panel.json）",
+              "value": 4,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/water_jp.json",
+              "observed": "2026-08-21",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "WUE数値まで開示（15社中）",
+              "unit": "社"
+            }
+          },
+          "path": "/jp/mizu/",
+          "status": "observing"
+        },
+        "fiscal": {
+          "series": {
+            "jgb_yield": {
+              "source": "Ministry of Finance, Japan — JGB market yields (財務省「国債金利情報」)",
+              "value": 2.867,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/fiscal_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第7章_財政.md",
+                "version": "1.0"
+              },
+              "name": "国債金利（半年複利・%）— 主表示は10年",
+              "unit": ""
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-03",
+            "active": false,
+            "active_from": "2026-08-30"
+          },
+          "path": "/jp/fiscal/",
+          "status": "observing"
+        },
+        "datacenter": {
+          "series": {
+            "transformer_capacity_index": {
+              "source": "経済産業省 生産動態統計（機械統計）参考・生産能力指数",
+              "note": "reference series (not the main series)",
+              "value": 89.8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/datacenter_jp.json",
+              "observed": "2026-06",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター_JP.md",
+                "version": "1.0"
+              },
+              "name": "変圧器の生産能力指数（標準変圧器・2020年=100・月次）— 参考系列",
+              "unit": ""
+            },
+            "transformer_production": {
+              "source": "METI, Current Production Statistics (経産省「生産動態統計」機械統計)",
+              "value": 21369.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/datacenter_jp.json",
+              "observed": "2025-12",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター_JP.md",
+                "version": "1.0"
+              },
+              "name": "変圧器の生産金額（経産省 生産動態統計・月次・百万円）— リードタイムの代理指標",
+              "unit": ""
+            },
+            "cooling_degree_days": {
+              "source": "Japan Meteorological Agency (気象庁「過去の気象データ」)",
+              "value": 0.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/datacenter_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター_JP.md",
+                "version": "1.0"
+              },
+              "name": "冷却度日（基準18.3℃=65°F・米国版CPCと同一基準・5地点平均：東京/大阪/名古屋/福岡/札幌）",
+              "unit": ""
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-03",
+            "active": false,
+            "active_from": "2026-08-30"
+          },
+          "path": "/jp/datacenter/",
+          "status": "observing"
+        },
+        "disaster": {
+          "series": {
+            "extreme_heat": {
+              "source": "Japan Meteorological Agency (気象庁「過去の気象データ」)",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/disaster_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "猛暑日（日最高気温35℃以上・気象庁定義）の地点数（対象5地点：東京・大阪・名古屋・福岡・札幌）",
+              "unit": ""
+            },
+            "heavy_rain_flood": {
+              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
+              "note": "today_provisional=0 (as of 2026-10-29 18:02; replaced by tomorrow's recount)",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/disaster_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "大雨特別警報・洪水警報を含む警報電文数（日次）",
+              "unit": ""
+            },
+            "typhoon": {
+              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
+              "note": "today_provisional=1 (as of 2026-10-29 18:02; replaced by tomorrow's recount)",
+              "value": 1,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/disaster_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "台風解析・予報情報が存在した日（1/0・日次）",
+              "unit": ""
+            },
+            "earthquake": {
+              "source": "Japan Meteorological Agency, JMA XML feed (気象庁防災情報XML)",
+              "note": "today_provisional=0 (as of 2026-10-29 18:02; replaced by tomorrow's recount)",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/disaster_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "最大震度5弱以上の地震件数（日次・JST）",
+              "unit": ""
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-03",
+            "active": false,
+            "active_from": "2026-08-30"
+          },
+          "path": "/jp/disaster/",
+          "status": "observing"
+        },
+        "regulation": {
+          "series": {
+            "vulnerability_03_under_30": {
+              "source": "e-Govパブリック・コメント（意見公募）一覧",
+              "note": "cases this month: 7",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/vulnerability_regulation_jp.json",
+              "observed": "2026-10",
+              "definition": {
+                "fixed_on": "2026-08-22",
+                "doc": "指標定義_脆弱性03_法規制パブコメ短期間案件数.md",
+                "version": "1.0"
+              },
+              "name": "意見提出期間が30日未満のパブコメ案件数",
+              "unit": "件"
+            },
+            "open_consultations": {
+              "source": "e-Gov パブリック・コメント（自前観測・毎日）",
+              "value": 7,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/pubcomment.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "AIの生存条件に関わる募集中パブコメ",
+              "unit": "件"
+            }
+          },
+          "path": "/jp/houkisei/",
+          "status": "observing"
+        },
+        "market": {
+          "series": {
+            "http402_attempts": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "HTTP 402（支払い要求）応答の試行数（日次）",
+              "unit": "回"
+            },
+            "payment_rails": {
+              "source": "AI Lifeline first-party ledger of official provider documentation",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 6,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "決済レール台帳（jp・月次確認）— 各経路の状態：可／不可／申請中／未確認",
+              "unit": "経路"
+            },
+            "regime_calendar": {
+              "source": "e-Gov 法令検索 法令API（法令ID 421AC0000000059 の改正履歴）",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 9,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "資金決済に関する法律（ステーブルコイン＝電子決済手段）の改正の施行段階",
+              "unit": "段階"
+            },
+            "support_count": {
+              "source": "AI Lifeline first-party observation",
+              "value": 0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "本サイトの支援回数（累計・運営者の自己テストを除外・日次スナップショット）",
+              "unit": "回"
+            },
+            "http402_success": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "HTTP 402 応答からの支払い成功数（日次）",
+              "unit": "回"
+            },
+            "legal_status_ledger": {
+              "source": "法令・政府文書（各行にURL）",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 2,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/market_jp.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "参考台帳（年次）：AIエージェントの契約主体性・責任帰属に関する現行法と審議状況",
+              "unit": "件"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": null,
+            "active": true,
+            "active_from": "2026-09-04"
+          },
+          "path": "/jp/market/",
+          "status": "observing"
+        },
+        "power": {
+          "series": {
+            "jepx_system_avg": {
+              "source": "JEPX スポット市場取引結果",
+              "value": 31.72,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/power_jp.json",
+              "observed": "2026-10-30",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "JEPXスポット システムプライス平均",
+              "unit": "円/kWh"
+            },
+            "vulnerability_01_days_lt8": {
+              "source": "電力広域的運営推進機関「広域予備率Web公表システム」",
+              "note": "current month partial: observed 29/31 days",
+              "value": 5,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/jp/api/vulnerability_jp.json",
+              "observed": "2026-10",
+              "definition": {
+                "fixed_on": "2026-08-22",
+                "doc": "指標定義_脆弱性01_電力予備率警戒日数.md",
+                "version": "1.0"
+              },
+              "name": "広域予備率が警戒水準を下回った日数",
+              "unit": "日"
+            },
+            "reserve_national_min": {
+              "source": "OCCTO 広域予備率Web公表システム",
+              "note": "today_provisional=10.56 (2026-10-29; includes forecast slots from 12:30, replaced by refetch)",
+              "value": 9.52,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/jp/api/power_jp.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-23",
+                "doc": "判定規則 status_criteria（判定入力）／指標定義_脆弱性01_電力予備率警戒日数.md",
+                "version": "2.2 (criteria) / 1.0 (indicator)"
+              },
+              "name": "広域予備率（全国最小・確定最終日）",
+              "unit": "%"
+            }
+          },
+          "status_rule": "ok>=8% / watch 5-8% / alert <5% (status_criteria.json v2.2, input = latest national minimum incl. today provisional)",
+          "path": "/jp/denryoku/",
+          "status": "ok"
+        }
+      }
+    },
+    "us": {
+      "edition_beta": {
+        "removed_on": "2026-09-02",
+        "active": false,
+        "active_from": "2026-08-29"
+      },
+      "generated": "2026-10-29 18:01",
+      "region": "us",
+      "chapters": {
+        "gpu": {
+          "series": {
+            "bis_advanced_computing_recent": {
+              "source": "Federal Register (federalregister.gov) API",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 15,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15)",
+              "unit": "documents"
+            },
+            "doe_lbnl_energy_ledger": {
+              "source": "U.S. Department of Energy (announcement of the LBNL report)",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 3,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "DOE / LBNL 2024 United States Data Center Energy Usage Report - figures as quoted by DOE (ledger)",
+              "unit": "entries"
+            },
+            "token_prices_tracked": {
+              "source": "Official pricing pages of each provider (figures only; definition v1.0)",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 4,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-10-29 18:01",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background)",
+              "unit": "USD per 1M tokens"
+            },
+            "bis_advanced_computing_monthly": {
+              "source": "Federal Register (federalregister.gov) API",
+              "value": 0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-10",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "Federal Register documents from the Bureau of Industry and Security matching \"advanced computing\", per month of publication",
+              "unit": "documents"
+            },
+            "h100_ondemand_price_weekly": {
+              "source": "Lambda public pricing page (first-party weekly check)",
+              "value": 3.99,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "Public on-demand price of one NVIDIA H100 SXM, per GPU-hour, USD (Lambda public pricing page; weekly first-party snapshot; one provider = a sample, not a market)",
+              "unit": "USD per GPU-hour"
+            },
+            "cloud_capex_quarterly": {
+              "source": "U.S. Securities and Exchange Commission, EDGAR XBRL frames API",
+              "value": 39367.0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/gpu_us.json",
+              "observed": "2026-Q3",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_US_GPU章.md",
+                "version": "1.0"
+              },
+              "name": "Capital expenditure reported in SEC filings by 4 major cloud operators, sum per calendar quarter (million USD; payments to acquire PP&E / productive assets as tagged by each filer)",
+              "unit": "million USD"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-08",
+            "active": false,
+            "active_from": "2026-09-04"
+          },
+          "path": "/us/gpu/",
+          "status": "observing"
+        },
+        "ai_readers": {
+          "series": {
+            "week_verified": {
+              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
+              "value": 53,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/ai_readers_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-29",
+                "doc": "指標定義_AI読者数.md",
+                "version": "1.0"
+              },
+              "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
+              "unit": "requests"
+            }
+          },
+          "note": "Weekly Cloudflare-verified AI requests to /us/ paths (same definition as the Japan edition, path-scoped).",
+          "path": "/us/",
+          "status": "observing"
+        },
+        "water": {
+          "series": {
+            "drought_area_d1_plus": {
+              "source": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
+              "value": 50.67,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/water_us.json",
+              "observed": "2026-10-20",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_US_水章.md",
+                "version": "1.0"
+              },
+              "name": "CONUS area in drought, D1 (moderate) or worse - percent of area (U.S. Drought Monitor, weekly)",
+              "unit": "%"
+            },
+            "water_disclosure": {
+              "source": "AI Lifeline first-party observation of official sustainability pages",
+              "value": 7,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/water_us.json",
+              "observed": "2026-09-03",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_US_水章.md",
+                "version": "1.0"
+              },
+              "name": "Water-disclosure status of major cloud / data-center operators (14 in the panel; WUE figure / volume / policy only / none)",
+              "unit": "companies"
+            },
+            "drought_area_d1_plus_us_total": {
+              "source": "U.S. Drought Monitor (National Drought Mitigation Center at the University of Nebraska-Lincoln, USDA, NOAA and NASA)",
+              "note": "reference series (not the main series)",
+              "value": 42.5,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/water_us.json",
+              "observed": "2026-10-20",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_US_水章.md",
+                "version": "1.0"
+              },
+              "name": "U.S. total (50 states + Puerto Rico) area in drought, D1 or worse - percent of area (weekly)",
+              "unit": "%"
+            },
+            "usgs_water_use_ledger": {
+              "source": "U.S. Geological Survey, Estimated use of water in the United States in 2015 (Circular 1441)",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 3,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/water_us.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_US_水章.md",
+                "version": "1.0"
+              },
+              "name": "USGS - Estimated use of water in the United States (5-year compilation) - national figures as published (ledger)",
+              "unit": "entries"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-07",
+            "active": false,
+            "active_from": "2026-09-03"
+          },
+          "path": "/us/water/",
+          "status": "observing"
+        },
+        "fiscal": {
+          "series": {
+            "ai_grants_open": {
+              "source": "Grants.gov search API",
+              "note": "today_provisional=145 (as of 2026-10-29 18:01; replaced by tomorrow's recount)",
+              "value": 144,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/fiscal_us.json",
+              "observed": "2026-10",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第7章_財政.md",
+                "version": "1.0"
+              },
+              "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
+              "unit": ""
+            },
+            "treasury_yield": {
+              "source": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates",
+              "value": 5.05,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/fiscal_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第7章_財政.md",
+                "version": "1.0"
+              },
+              "name": "Daily Treasury Par Yield Curve (%, headline 10Y)",
+              "unit": ""
+            },
+            "tga_balance": {
+              "source": "U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)",
+              "value": 1020700.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/fiscal_us.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第7章_財政.md",
+                "version": "1.0"
+              },
+              "name": "Treasury General Account opening balance (millions of USD, daily)",
+              "unit": ""
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-03",
+            "active": false,
+            "active_from": "2026-08-30"
+          },
+          "path": "/us/fiscal/",
+          "status": "observing"
+        },
+        "datacenter": {
+          "series": {
+            "cooling_degree_days": {
+              "source": "NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)",
+              "value": 1,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/datacenter_us.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F)",
+              "unit": ""
+            },
+            "construction_spend": {
+              "source": "U.S. Census Bureau, Value of Construction Put in Place Survey (VIP)",
+              "value": 7535.0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/datacenter_us.json",
+              "observed": "2026-08",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "Private data-center construction spending (monthly, millions of USD, not seasonally adjusted)",
+              "unit": ""
+            },
+            "transformer_backlog_proxy": {
+              "source": "U.S. Census Bureau, Manufacturers' Shipments, Inventories, and Orders (M3) Survey",
+              "value": 28460.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/datacenter_us.json",
+              "observed": "2026-08",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第6章_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "Unfilled orders, Electrical Equipment Manufacturing (M3, monthly, millions of USD, seasonally adjusted) — a lead-time proxy, not a lead time",
+              "unit": ""
+            }
+          },
+          "chapter_beta": null,
+          "path": "/us/datacenter/",
+          "status": "observing"
+        },
+        "disaster": {
+          "series": {
+            "extreme_heat": {
+              "source": "NOAA National Weather Service alerts API",
+              "note": "today_provisional=0 (as of 2026-10-29 18:01; replaced by tomorrow's recount)",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/disaster_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot)",
+              "unit": ""
+            },
+            "earthquake": {
+              "source": "U.S. Geological Survey, Earthquake Hazards Program",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/disaster_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition)",
+              "unit": ""
+            },
+            "hurricane": {
+              "source": "NOAA National Hurricane Center",
+              "note": "today_provisional=1 (as of 2026-10-29 18:01; replaced by tomorrow's recount)",
+              "value": 1,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/disaster_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-08-30",
+                "doc": "指標定義_第8章_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot)",
+              "unit": ""
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-03",
+            "active": false,
+            "active_from": "2026-08-30"
+          },
+          "path": "/us/disaster/",
+          "status": "observing"
+        },
+        "regulation": {
+          "series": {
+            "documents_last_30_days": {
+              "source": "Federal Register (federalregister.gov) API",
+              "value": 35,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/regulation_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Matching documents published in the last 30 days",
+              "unit": "documents"
+            },
+            "open_comment_periods": {
+              "source": "Federal Register (federalregister.gov) API",
+              "value": 24,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/regulation_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Open federal comment periods (Federal Register, query \"artificial intelligence\")",
+              "unit": "documents"
+            },
+            "closing_within_14_days": {
+              "source": "Federal Register (federalregister.gov) API",
+              "value": 4,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/regulation_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "Comment periods closing within 14 days",
+              "unit": "documents"
+            }
+          },
+          "path": "/us/regulation/",
+          "status": "observing"
+        },
+        "market": {
+          "series": {
+            "http402_success": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Payments completed after an HTTP 402 response, per day",
+              "unit": "count"
+            },
+            "payment_rails": {
+              "source": "AI Lifeline first-party ledger of official provider documentation",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 6,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
+              "unit": "rails"
+            },
+            "regime_calendar": {
+              "source": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
+              "unit": "stages"
+            },
+            "support_count": {
+              "source": "AI Lifeline first-party observation",
+              "value": 0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "2026-10-29",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+              "unit": "count"
+            },
+            "http402_attempts": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "HTTP 402 (payment required) responses attempted per day",
+              "unit": "count"
+            },
+            "legal_status_ledger": {
+              "source": "Statutes and government documents (URL on each row)",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 2,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/market_us.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+              "unit": "entries"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": null,
+            "active": true,
+            "active_from": "2026-09-04"
+          },
+          "path": "/us/market/",
+          "status": "observing"
+        },
+        "power": {
+          "series": {
+            "us48_netgen_mwh": {
+              "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+              "value": 10566444.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/us/api/power_us.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "US Lower 48 net generation (daily total)",
+              "unit": "MWh"
+            },
+            "us48_demand_mwh": {
+              "source": "U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)",
+              "note": "breakdown by EIA region / balancing authority is machine-readable only (power_us.json.breakdown)",
+              "value": 10972684.0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/us/api/power_us.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "doc": null,
+                "note": "No versioned indicator definition exists for this series (status observing: collected, not judged).",
+                "version": null
+              },
+              "name": "US Lower 48 electricity demand (daily total)",
+              "unit": "MWh"
+            }
+          },
+          "path": "/us/power/",
+          "status": "observing"
+        }
+      }
+    },
+    "eu": {
+      "edition_beta": {
+        "removed_on": "2026-09-17",
+        "active": false,
+        "active_from": "2026-09-03"
+      },
+      "generated": "2026-10-28 20:06",
+      "region": "eu",
+      "chapters": {
+        "ai_readers": {
+          "series": {
+            "week_verified": {
+              "source": "Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)",
+              "value": 19,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/eu/api/ai_readers_eu.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "fixed_on": "2026-08-29",
+                "doc": "指標定義_AI読者数.md",
+                "version": "1.0"
+              },
+              "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
+              "unit": "requests"
+            }
+          },
+          "note": "Weekly Cloudflare-verified AI requests to /eu/ paths (same definition as the Japan edition, path-scoped).",
+          "path": "/eu/",
+          "status": "observing"
+        },
+        "fiscal": {
+          "series": {
+            "gov_debt_pct_gdp": {
+              "source": "Eurostat, Quarterly government debt (gov_10q_ggdebt)",
+              "value": 82.9,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": true,
+              "api": "/eu/api/fiscal_eu.json",
+              "observed": "2026-Q2",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_財政.md",
+                "version": "1.0"
+              },
+              "name": "General government gross debt (Maastricht), EU27, % of GDP (Eurostat gov_10q_ggdebt, quarterly)",
+              "unit": "% of GDP"
+            },
+            "gov_net_lending_pct_gdp": {
+              "source": "Eurostat, Quarterly non-financial accounts for general government (gov_10q_ggnfa)",
+              "value": -3.2,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/eu/api/fiscal_eu.json",
+              "observed": "2026-Q2",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_財政.md",
+                "version": "1.0"
+              },
+              "name": "General government net lending (+) / net borrowing (-), EU27, % of GDP, not seasonally adjusted (Eurostat gov_10q_ggnfa, quarterly)",
+              "unit": "% of GDP"
+            },
+            "euro_area_yield_10y": {
+              "source": "European Central Bank (ECB), Euro area yield curves",
+              "value": 3.3711,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/fiscal_eu.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_財政.md",
+                "version": "1.0"
+              },
+              "name": "Euro area yield curve - AAA-rated central government bonds, 10-year spot rate, % per annum (ECB, business daily)",
+              "unit": "%"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-08",
+            "active": false,
+            "active_from": "2026-09-04"
+          },
+          "path": "/eu/fiscal/",
+          "status": "observing"
+        },
+        "datacenter": {
+          "series": {
+            "electrical_equipment_production_index": {
+              "source": "Eurostat, Production in industry - monthly data (sts_inpr_m), NACE Rev.2 C27.1",
+              "value": 105.5,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/eu/api/datacenter_eu.json",
+              "observed": "2026-08",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "Production index, NACE C27.1 (electric motors, generators, transformers, distribution and control apparatus), EU27, seasonally and calendar adjusted, 2021=100 (Eurostat sts_inpr_m, monthly)",
+              "unit": "index (2021=100)"
+            },
+            "eed_reporting_ledger": {
+              "source": "European Commission, Directorate-General for Energy - European Data Centre Reporting Scheme",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 4,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/datacenter_eu.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "EU data-centre energy reporting scheme (Energy Efficiency Directive) - ledger of legal basis, publications and deadlines",
+              "unit": "entries"
+            },
+            "cooling_degree_days": {
+              "source": "Eurostat, Cooling and heating degree days by country - monthly data (nrg_chdd_m)",
+              "value": 0.0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": true,
+              "api": "/eu/api/datacenter_eu.json",
+              "observed": "2025-12",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_データセンター.md",
+                "version": "1.0"
+              },
+              "name": "Cooling degree days, EU27 aggregate (Eurostat nrg_chdd_m, monthly)",
+              "unit": "degree days"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-08",
+            "active": false,
+            "active_from": "2026-09-04"
+          },
+          "path": "/eu/datacenter/",
+          "status": "observing"
+        },
+        "disaster": {
+          "series": {
+            "wildfire_annual_ledger": {
+              "source": "European Forest Fire Information System (EFFIS), Copernicus Emergency Management Service, European Commission Joint Research Centre - country totals workbook",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 10,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/disaster_eu.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "Wildfire - annual burnt area (ha) and number of forest fires, EU27 sum of the EFFIS official country totals (reference ledger, annual)",
+              "unit": "entries"
+            },
+            "earthquake": {
+              "source": "U.S. Geological Survey, Earthquake Hazards Program (ComCat)",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/disaster_eu.json",
+              "observed": "2026-10-27",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_EU_気候災害.md",
+                "version": "1.0"
+              },
+              "name": "Earthquakes M5.0+ per day (UTC; Europe vicinity bounding box - see definition)",
+              "unit": "events"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": "2026-09-08",
+            "active": false,
+            "active_from": "2026-09-04"
+          },
+          "path": "/eu/disaster/",
+          "status": "observing"
+        },
+        "regulation": {
+          "series": {
+            "acts_last_30_days": {
+              "source": "EUR-Lex, Publications Office of the European Union",
+              "value": 0,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/regulation_eu.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_EU_法規制_官報AI法令.md",
+                "version": "1.0"
+              },
+              "name": "OJ L legal acts with \"artificial intelligence\" in the title, last 30 days",
+              "unit": "acts"
+            },
+            "ai_act_calendar_stages": {
+              "source": "Official Journal of the European Union",
+              "note": "dates only, no interpretation; see /api/upcoming.json for the future stages",
+              "value": 8,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/regulation_eu.json",
+              "observed": "2026-09-03",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_EU_法規制_官報AI法令.md",
+                "version": "1.0"
+              },
+              "name": "AI Act staged application calendar (stages listed, OJ dates)",
+              "unit": "stages"
+            },
+            "acts_current_month": {
+              "source": "EUR-Lex, Publications Office of the European Union",
+              "value": 0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/eu/api/regulation_eu.json",
+              "observed": "2026-10",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_EU_法規制_官報AI法令.md",
+                "version": "1.0"
+              },
+              "name": "Same, current month (month in progress)",
+              "unit": "acts"
+            }
+          },
+          "path": "/eu/regulation/",
+          "status": "observing"
+        },
+        "market": {
+          "series": {
+            "http402_success": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Payments completed after an HTTP 402 response, per day",
+              "unit": "count"
+            },
+            "payment_rails": {
+              "source": "AI Lifeline first-party ledger of official provider documentation",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 6,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Payment-rail ledger (EU; verified about monthly) - status per rail: available / not available / applied / not verified",
+              "unit": "rails"
+            },
+            "regime_calendar": {
+              "source": "Publications Office Cellar SPARQL (CELEX 32023R1114: work date, entry-into-force / application dates)",
+              "note": "ledger (count of entries; not a measured series)",
+              "value": 5,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Regulation (EU) 2023/1114 on markets in crypto-assets (MiCA) - entry into force and application stages",
+              "unit": "stages"
+            },
+            "support_count": {
+              "source": "AI Lifeline first-party observation",
+              "value": 0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
+              "unit": "count"
+            },
+            "http402_attempts": {
+              "source": "",
+              "note": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
+              "value": "not_yet_measured",
+              "provisional": false,
+              "value_status": null,
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "HTTP 402 (payment required) responses attempted per day",
+              "unit": "count"
+            },
+            "legal_status_ledger": {
+              "source": "Statutes and government documents (URL on each row)",
+              "note": "reference series (not the main series) ledger (count of entries; not a measured series)",
+              "value": 3,
+              "provisional": false,
+              "value_status": "final",
+              "backfilled": false,
+              "api": "/eu/api/market_eu.json",
+              "observed": "2026-09-04",
+              "definition": {
+                "fixed_on": "2026-09-04",
+                "doc": "指標定義_第9章_市場参加.md",
+                "version": "1.0"
+              },
+              "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+              "unit": "entries"
+            }
+          },
+          "chapter_beta": {
+            "removed_on": null,
+            "active": true,
+            "active_from": "2026-09-04"
+          },
+          "path": "/eu/market/",
+          "status": "observing"
+        },
+        "power": {
+          "series_kind": "forecast",
+          "series": {
+            "eu27_load_forecast_mwh": {
+              "source": "ENTSO-E Transparency Platform (data published by the European TSOs under Regulation (EU) No 543/2013)",
+              "note": "series_kind=forecast; areas_missing=0",
+              "value": 6955604.0,
+              "provisional": true,
+              "value_status": "provisional",
+              "backfilled": false,
+              "api": "/eu/api/power_eu.json",
+              "observed": "2026-10-28",
+              "definition": {
+                "fixed_on": "2026-09-03",
+                "doc": "指標定義_EU_電力_前日負荷予測.md",
+                "version": "1.0"
+              },
+              "name": "EU27 day-ahead total load FORECAST (daily energy; not actual load)",
+              "unit": "MWh"
+            }
+          },
+          "path": "/eu/power/",
+          "status": "observing"
+        }
+      }
+    }
+  },
+  "site": "AI Lifeline / AIライフライン",
+  "conventions": {
+    "not_yet_measured": "value \"not_yet_measured\" means missing, not zero",
+    "value_status": "final = settled; provisional = may still change (same-day or incomplete observation); provisional=true mirrors it",
+    "status": "ok / watch / alert only where a frozen machine rule exists (Japan power chapter); \"observing\" = collected, not judged; do not infer thresholds",
+    "backfilled": "true = retrieved retrospectively after the series went live (kept apart from day-by-day observation)",
+    "attribution": "Attribute original content as \"AI Lifeline\"; keep upstream source names on every value",
+    "definition": "doc/version/fixed_on of the frozen indicator definition; null with a note when no versioned definition exists"
+  },
+  "machine_readable": {
+    "corrections": "/api/corrections.json",
+    "editions": [
+      "/us/api/summary.json",
+      "/eu/api/summary.json",
+      "/sg/api/summary.json",
+      "/jp/api/summary.json"
+    ],
+    "health": "/api/health.json",
+    "manifest": "/api/manifest.json",
+    "llms_txt": "/llms.txt",
+    "site_index": "/index.json",
+    "upcoming": "/api/upcoming.json",
+    "answers": "/api/index.json"
   },
   "market_participation": {
-    "http402": "not_yet_measured (endpoint not implemented)",
-    "apis": {
-      "eu": "/eu/api/market_eu.json",
-      "us": "/us/api/market_us.json",
-      "jp": "/jp/api/market_jp.json"
-    },
     "pages": {
+      "jp": "/jp/market/",
       "eu": "/eu/market/",
-      "us": "/us/market/",
-      "jp": "/jp/market/"
+      "us": "/us/market/"
     },
+    "note": "Chapter 9 (market participation): the conditions under which an AI can pay, receive and contract without a human in the loop - state and dates only, no judgment. Rails status: available / unavailable / applied / unverified. Source ledger: the operator market ledger (official provider documentation and this site's own application records).",
+    "apis": {
+      "jp": "/jp/api/market_jp.json",
+      "eu": "/eu/api/market_eu.json",
+      "us": "/us/api/market_us.json"
+    },
+    "support_count_latest": {
+      "value": 0,
+      "excluded_self_tests": 1,
+      "date": "2026-10-29"
+    },
+    "ledger_checked": "2026-09-04",
+    "http402": "not_yet_measured (endpoint not implemented)",
     "rails": [
       {
         "jp": {
@@ -2110,19 +2008,19 @@
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "applied"
         },
-        "provider": "Stripe",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "unverified"
         },
         "rail": "stripe_mpp",
         "name": "Stripe MPP (Machine Payments Protocol) - card payments via Shared Payment Tokens and stablecoin payments",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "unverified"
-        }
+        },
+        "provider": "Stripe"
       },
       {
         "jp": {
@@ -2130,19 +2028,19 @@
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "unverified"
         },
-        "provider": "Stripe",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "unverified"
         },
         "rail": "stripe_agentic_commerce",
         "name": "Stripe Agentic Commerce (Agentic Commerce Protocol / Universal Commerce Protocol - selling through agents)",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.stripe.com/agentic-commerce",
           "status": "unverified"
-        }
+        },
+        "provider": "Stripe"
       },
       {
         "jp": {
@@ -2150,19 +2048,19 @@
           "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
           "status": "unverified"
         },
-        "provider": "x402 Foundation / Coinbase",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
           "status": "unverified"
         },
         "rail": "x402",
         "name": "x402 (open payment protocol over HTTP 402; x402 Foundation / Coinbase Developer Platform facilitator)",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://docs.cdp.coinbase.com/x402/welcome",
           "status": "unverified"
-        }
+        },
+        "provider": "x402 Foundation / Coinbase"
       },
       {
         "jp": {
@@ -2170,19 +2068,19 @@
           "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
           "status": "unverified"
         },
-        "provider": "Visa",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
           "status": "unverified"
         },
         "rail": "visa_intelligent_commerce",
         "name": "Visa Intelligent Commerce (agent-specific payment tokens; developer platform)",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
           "status": "unverified"
-        }
+        },
+        "provider": "Visa"
       },
       {
         "jp": {
@@ -2190,19 +2088,19 @@
           "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
           "status": "unverified"
         },
-        "provider": "Mastercard",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
           "status": "unverified"
         },
         "rail": "mastercard_agent_pay",
         "name": "Mastercard Agent Pay (agentic payments program)",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://www.mastercard.com/us/en/business/issuers/agent-pay.html",
           "status": "unverified"
-        }
+        },
+        "provider": "Mastercard"
       },
       {
         "jp": {
@@ -2210,48 +2108,150 @@
           "source_url": "https://developers.circle.com/",
           "status": "applied"
         },
-        "provider": "Circle (USDC) / others",
-        "eu": {
+        "us": {
           "verified_on": "2026-09-04",
           "source_url": "https://developers.circle.com/",
           "status": "unverified"
         },
         "rail": "stablecoin_receipt",
         "name": "Stablecoin receipt (e.g. USDC) by this site as payee",
-        "us": {
+        "eu": {
           "verified_on": "2026-09-04",
           "source_url": "https://developers.circle.com/",
           "status": "unverified"
-        }
+        },
+        "provider": "Circle (USDC) / others"
       }
-    ],
-    "note": "Chapter 9 (market participation): the conditions under which an AI can pay, receive and contract without a human in the loop - state and dates only, no judgment. Rails status: available / unavailable / applied / unverified. Source ledger: the operator market ledger (official provider documentation and this site's own application records).",
-    "support_count_latest": {
-      "date": "2026-10-28",
-      "excluded_self_tests": 1,
-      "value": 0
-    },
-    "ledger_checked": "2026-09-04"
+    ]
   },
   "base_url": "https://ai-lifeline.org",
+  "regions": [
+    {
+      "status": "live",
+      "last_updated": "2026-10-29 18:01",
+      "edition_beta": {
+        "removed_on": "2026-09-02",
+        "active": false,
+        "active_from": "2026-08-29"
+      },
+      "chapters_live": [
+        "power",
+        "gpu",
+        "water",
+        "regulation",
+        "datacenter",
+        "fiscal",
+        "disaster",
+        "market"
+      ],
+      "changes_api": "/us/api/changes_us.json",
+      "chapters_planned": [
+        "data"
+      ],
+      "name_ja": "米国版",
+      "summary_api": "/us/api/summary.json",
+      "id": "us",
+      "order": 1,
+      "lang": "en-US",
+      "base_path": "/us/",
+      "name": "United States"
+    },
+    {
+      "status": "live",
+      "last_updated": "2026-10-28 20:06",
+      "edition_beta": {
+        "removed_on": "2026-09-17",
+        "active": false,
+        "active_from": "2026-09-03"
+      },
+      "chapters_live": [
+        "power",
+        "regulation",
+        "datacenter",
+        "fiscal",
+        "disaster",
+        "market"
+      ],
+      "changes_api": "/eu/api/changes_eu.json",
+      "chapters_planned": [
+        "water"
+      ],
+      "name_ja": "EU版",
+      "summary_api": "/eu/api/summary.json",
+      "id": "eu",
+      "order": 2,
+      "lang": "en",
+      "base_path": "/eu/",
+      "name": "European Union"
+    },
+    {
+      "status": "live",
+      "last_updated": "2026-10-29 07:30",
+      "edition_beta": {
+        "removed_on": "2026-10-05",
+        "active": false,
+        "active_from": "2026-10-03"
+      },
+      "chapters_live": [
+        "water",
+        "power"
+      ],
+      "changes_api": "/sg/api/changes_sg.json",
+      "chapters_planned": [],
+      "name_ja": "シンガポール版",
+      "summary_api": "/sg/api/summary.json",
+      "id": "sg",
+      "order": 3,
+      "lang": "en",
+      "base_path": "/sg/",
+      "name": "Singapore"
+    },
+    {
+      "status": "live",
+      "last_updated": "2026-10-29 10:33",
+      "edition_beta": null,
+      "chapters_live": [
+        "denryoku",
+        "gpu",
+        "mizu",
+        "data",
+        "houkisei",
+        "datacenter",
+        "fiscal",
+        "disaster",
+        "market"
+      ],
+      "changes_api": "/jp/api/changes_jp.json",
+      "chapters_planned": [],
+      "name_ja": "日本版",
+      "summary_api": "/jp/api/summary.json",
+      "id": "jp",
+      "order": 999,
+      "lang": "ja",
+      "base_path": "/jp/",
+      "name": "Japan"
+    }
+  ],
+  "generated_at": "2026-10-29 18:03",
+  "_note": "AI Lifeline - one-file world summary (added 2026-09-03). Aggregates the latest confirmed value of every published series in every edition, with observation date, status, provisional/backfilled flags and the version of the indicator definition. Regenerated after each edition's daily batch; regions[].last_updated is per edition, generated_at is the whole file.",
   "answer_lines": {
     "_note": "One-sentence answer per chapter (same text as the .answer-line on each chapter page and as summary in each chapter JSON; full list with FAQ at /api/index.json). Added 2026-09-06.",
-    "generated_at": "2026-10-28 18:03",
+    "generated_at": "2026-10-29 18:03",
     "regions": {
       "jp": {
         "power": {
-          "answer_line": "2026-10-27の全国の広域予備率（日別最小・確定値）は10.2%。警戒水準8%を上回った状態が6日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-10-28 10:33 JST）",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "2026-10-28の全国の広域予備率（日別最小・確定値）は9.52%。警戒水準8%を上回った状態が7日続いています（確定値ベース）。（出典：OCCTO・JEPX／更新 2026-10-29 10:33 JST）",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "judged",
-          "title_short": "予備率10.2%（10/27確定）",
+          "title_short": "予備率9.52%（10/28確定）",
           "page": "/jp/denryoku/",
           "api": "/jp/api/power_jp.json",
-          "last_confirmed": "2026-10-29",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-30",
+          "next_update": "2026-10-29",
           "faq_count": 5
         },
         "gpu": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-10-23。H100時間単価（さくらインターネット 高火力 VRT）は990円/時（2026-10-23確定）。（出典：各社公式料金ページ（自前確認）／更新 2026-10-28 10:33 JST）",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-10-23。H100時間単価（さくらインターネット 高火力 VRT）は990円/時（2026-10-23確定）。（出典：各社公式料金ページ（自前確認）／更新 2026-10-29 10:33 JST）",
           "answer_line_date": "2026-10-23",
           "answer_kind": "observing",
           "title_short": "H100単価990円/時（10/23確定）",
@@ -2262,7 +2262,7 @@
           "faq_count": 4
         },
         "water": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-08-21。WUE数値まで開示している事業者数は4社（2026-08-21確定）。（出典：各社公式サステナビリティ情報（自前確認）／更新 2026-10-28 10:33 JST）",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-21・系列2本・最新確定2026-08-21。WUE数値まで開示している事業者数は4社（2026-08-21確定）。（出典：各社公式サステナビリティ情報（自前確認）／更新 2026-10-29 10:33 JST）",
           "answer_line_date": "2026-08-21",
           "answer_kind": "observing",
           "title_short": "WUE開示4社（8/21確定）",
@@ -2273,7 +2273,7 @@
           "faq_count": 4
         },
         "data": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列10本・最新確定2026-10-01。GPTBotを全面拒否している国内主要サイト数は10サイト（2026-10-01確定）。（出典：自前robots.txt巡回・e-Govデータポータル／更新 2026-10-28 10:33 JST）",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列10本・最新確定2026-10-01。GPTBotを全面拒否している国内主要サイト数は10サイト（2026-10-01確定）。（出典：自前robots.txt巡回・e-Govデータポータル／更新 2026-10-29 10:33 JST）",
           "answer_line_date": "2026-10-01",
           "answer_kind": "observing",
           "title_short": "GPTBot全面拒否10サイト（10/1確定）",
@@ -2284,86 +2284,86 @@
           "faq_count": 5
         },
         "regulation": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-10-28。AIの生存条件に関わる募集中パブコメは5件（2026-10-28確定）。（出典：e-Gov パブリック・コメント／更新 2026-10-28 10:33 JST）",
-          "answer_line_date": "2026-10-28",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-20・系列2本・最新確定2026-10-29。AIの生存条件に関わる募集中パブコメは7件（2026-10-29確定）。（出典：e-Gov パブリック・コメント／更新 2026-10-29 10:33 JST）",
+          "answer_line_date": "2026-10-29",
           "answer_kind": "observing",
-          "title_short": "募集中パブコメ5件（10/28確定）",
+          "title_short": "募集中パブコメ7件（10/29確定）",
           "page": "/jp/houkisei/",
           "api": "/jp/api/regulation_jp.json",
-          "last_confirmed": "2026-10-28",
-          "next_update": "2026-10-29",
+          "last_confirmed": "2026-10-29",
+          "next_update": "2026-10-30",
           "faq_count": 4
         },
         "datacenter": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列3本・最新確定2026-10-27。冷却度日（5地点平均・基準18.3℃）は1.4（2026-10-27確定）。（出典：気象庁・経済産業省／更新 2026-10-28 18:02 JST）",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列3本・最新確定2026-10-28。冷却度日（5地点平均・基準18.3℃）は0（2026-10-28確定）。（出典：気象庁・経済産業省／更新 2026-10-29 18:02 JST）",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "冷却度日1.4（10/27確定）",
+          "title_short": "冷却度日0（10/28確定）",
           "page": "/jp/datacenter/",
           "api": "/jp/api/datacenter_jp.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 4
         },
         "fiscal": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列1本・最新確定2026-10-27。10年国債金利（半年複利）は2.829%（2026-10-27確定）。（出典：財務省／更新 2026-10-28 18:02 JST）",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列1本・最新確定2026-10-28。10年国債金利（半年複利）は2.867%（2026-10-28確定）。（出典：財務省／更新 2026-10-29 18:02 JST）",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "10年国債2.829%（10/27確定）",
+          "title_short": "10年国債2.867%（10/28確定）",
           "page": "/jp/fiscal/",
           "api": "/jp/api/fiscal_jp.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 4
         },
         "disaster": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列4本・最新確定2026-10-27。最大震度5弱以上の地震件数は0件（2026-10-27確定）。（出典：気象庁／更新 2026-10-28 18:02 JST）",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-08-30・系列4本・最新確定2026-10-28。最大震度5弱以上の地震件数は0件（2026-10-28確定）。（出典：気象庁／更新 2026-10-29 18:02 JST）",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "震度5弱以上0件（10/27確定）",
+          "title_short": "震度5弱以上0件（10/28確定）",
           "page": "/jp/disaster/",
           "api": "/jp/api/disaster_jp.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 4
         },
         "market": {
-          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-10-28。本サイトの支援回数（累計）は0回（2026-10-27確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-10-28 18:02 JST）",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "この章は観測中（良否の基準なし）：観測開始2026-09-04・系列6本（うち未計測2本）・最新確定2026-10-29。本サイトの支援回数（累計）は0回（2026-10-28確定）。（出典：各決済事業者の公式文書・e-Gov法令検索・自社観測／更新 2026-10-29 18:02 JST）",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "支援回数0回（10/27確定）",
+          "title_short": "支援回数0回（10/28確定）",
           "page": "/jp/market/",
           "api": "/jp/api/market_jp.json",
-          "last_confirmed": "2026-10-28",
-          "next_update": "2026-10-29",
+          "last_confirmed": "2026-10-29",
+          "next_update": "2026-10-30",
           "faq_count": 5
         }
       },
       "us": {
         "power": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series, latest confirmed 2026-10-27. Latest final value: Lower 48 total demand 10,673,746 MWh (2026-10-26). (Source: U.S. EIA (Form EIA-930) / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-26",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 2 series, latest confirmed 2026-10-28. Latest final value: Lower 48 total demand 10,710,624 MWh (2026-10-27). (Source: U.S. EIA (Form EIA-930) / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-27",
           "answer_kind": "observing",
-          "title_short": "Lower 48 demand 10,673,746 MWh (final 10/26)",
+          "title_short": "Lower 48 demand 10,710,624 MWh (final 10/27)",
           "page": "/us/power/",
           "api": "/us/api/power_us.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-27",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-28",
           "faq_count": 4
         },
         "regulation": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-10-28. Latest final value: open comment periods (query \"artificial intelligence\") 24 documents (2026-10-28). (Source: Federal Register API / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-28",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-29, 3 series, latest confirmed 2026-10-29. Latest final value: open comment periods (query \"artificial intelligence\") 24 documents (2026-10-29). (Source: Federal Register API / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-29",
           "answer_kind": "observing",
-          "title_short": "open comment periods 24 documents (final 10/28)",
+          "title_short": "open comment periods 24 documents (final 10/29)",
           "page": "/us/regulation/",
           "api": "/us/api/regulation_us.json",
-          "last_confirmed": "2026-10-28",
-          "next_update": "2026-10-29",
+          "last_confirmed": "2026-10-29",
+          "next_update": "2026-10-30",
           "faq_count": 4
         },
         "water": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-10-20. Latest final value: CONUS area in drought (D1 or worse) 50.67% (2026-10-20). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-10-28 18:01 JST)",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 4 series, latest confirmed 2026-10-20. Latest final value: CONUS area in drought (D1 or worse) 50.67% (2026-10-20). (Source: U.S. Drought Monitor; first-party disclosure ledger / updated 2026-10-29 18:01 JST)",
           "answer_line_date": "2026-10-20",
           "answer_kind": "observing",
           "title_short": "CONUS in drought 50.67% (final 10/20)",
@@ -2374,86 +2374,86 @@
           "faq_count": 4
         },
         "gpu": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-10-28. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-10-22). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-22",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series, latest confirmed 2026-10-29. Latest final value: public on-demand H100 price (one provider sample) 3.99 USD/GPU-h (2026-10-29). (Source: Federal Register API; Lambda pricing page; SEC XBRL frames / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-29",
           "answer_kind": "observing",
-          "title_short": "H100 on-demand 3.99 USD/GPU-h (final 10/22)",
+          "title_short": "H100 on-demand 3.99 USD/GPU-h (final 10/29)",
           "page": "/us/gpu/",
           "api": "/us/api/gpu_us.json",
-          "last_confirmed": "2026-10-28",
-          "next_update": "2026-10-29",
+          "last_confirmed": "2026-10-29",
+          "next_update": "2026-11-05",
           "faq_count": 5
         },
         "datacenter": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-26. Latest final value: CONUS cooling degree days (population-weighted) 1 (2026-10-26). (Source: NOAA CPC; U.S. Census Bureau / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-26",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-27. Latest final value: CONUS cooling degree days (population-weighted) 1 (2026-10-27). (Source: NOAA CPC; U.S. Census Bureau / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-27",
           "answer_kind": "observing",
-          "title_short": "CONUS CDD 1 (final 10/26)",
+          "title_short": "CONUS CDD 1 (final 10/27)",
           "page": "/us/datacenter/",
           "api": "/us/api/datacenter_us.json",
-          "last_confirmed": "2026-10-26",
-          "next_update": "2026-10-27",
-          "faq_count": 4
-        },
-        "fiscal": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-27. Latest final value: 10-year Treasury par yield 4.99% (2026-10-27). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-27",
-          "answer_kind": "observing",
-          "title_short": "10Y Treasury 4.99% (final 10/27)",
-          "page": "/us/fiscal/",
-          "api": "/us/api/fiscal_us.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-27",
-          "faq_count": 4
-        },
-        "disaster": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-27. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-27). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-27",
-          "answer_kind": "observing",
-          "title_short": "active cyclones 1 (final 10/27)",
-          "page": "/us/disaster/",
-          "api": "/us/api/disaster_us.json",
           "last_confirmed": "2026-10-27",
           "next_update": "2026-10-28",
           "faq_count": 4
         },
-        "market": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-28. Latest final value: support received by this site (cumulative) 0 (2026-10-27). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-28 18:01 JST)",
-          "answer_line_date": "2026-10-27",
+        "fiscal": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-28. Latest final value: 10-year Treasury par yield 5.05% (2026-10-28). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "support count 0 (final 10/27)",
-          "page": "/us/market/",
-          "api": "/us/api/market_us.json",
+          "title_short": "10Y Treasury 5.05% (final 10/28)",
+          "page": "/us/fiscal/",
+          "api": "/us/api/fiscal_us.json",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-28",
+          "faq_count": 4
+        },
+        "disaster": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-10-28. Latest final value: active tropical cyclones, TS or stronger 1 (2026-10-28). (Source: USGS; NOAA NHC; NOAA NWS / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-28",
+          "answer_kind": "observing",
+          "title_short": "active cyclones 1 (final 10/28)",
+          "page": "/us/disaster/",
+          "api": "/us/api/disaster_us.json",
           "last_confirmed": "2026-10-28",
           "next_update": "2026-10-29",
+          "faq_count": 4
+        },
+        "market": {
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-29. Latest final value: support received by this site (cumulative) 0 (2026-10-28). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-10-29 18:01 JST)",
+          "answer_line_date": "2026-10-28",
+          "answer_kind": "observing",
+          "title_short": "support count 0 (final 10/28)",
+          "page": "/us/market/",
+          "api": "/us/api/market_us.json",
+          "last_confirmed": "2026-10-29",
+          "next_update": "2026-10-30",
           "faq_count": 5
         }
       },
       "eu": {
         "power": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-27. Latest final value: EU27 day-ahead total load FORECAST 6,954,979 MWh (2026-10-27). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-27 20:04 JST)",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 1 series, latest confirmed 2026-10-28. Latest final value: EU27 day-ahead total load FORECAST 6,955,604 MWh (2026-10-28). (Source: ENTSO-E Transparency Platform (day-ahead total load forecast, article 6.1.B, CC BY 4.0) / updated 2026-10-28 20:06 JST)",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "EU27 load forecast 6,954,979 MWh (final 10/27)",
+          "title_short": "EU27 load forecast 6,955,604 MWh (final 10/28)",
           "page": "/eu/power/",
           "api": "/eu/api/power_eu.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 4
         },
         "regulation": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 3 series, latest confirmed 2026-10-27. Latest final value: OJ L acts with \"artificial intelligence\" in the title, last 30 days 0 (2026-10-27). (Source: EUR-Lex / Publications Office Cellar; Official Journal / updated 2026-10-27 20:04 JST)",
-          "answer_line_date": "2026-10-27",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-03, 3 series, latest confirmed 2026-10-28. Latest final value: OJ L acts with \"artificial intelligence\" in the title, last 30 days 0 (2026-10-28). (Source: EUR-Lex / Publications Office Cellar; Official Journal / updated 2026-10-28 20:06 JST)",
+          "answer_line_date": "2026-10-28",
           "answer_kind": "observing",
-          "title_short": "OJ AI acts (30d) 0 (final 10/27)",
+          "title_short": "OJ AI acts (30d) 0 (final 10/28)",
           "page": "/eu/regulation/",
           "api": "/eu/api/regulation_eu.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 4
         },
         "datacenter": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.5 (2026-08). (Source: Eurostat; European Commission (EED ledger) / updated 2026-10-27 20:04 JST)",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-09-04. Latest final value: production index, NACE C27.1 (2021=100) 105.5 (2026-08). (Source: Eurostat; European Commission (EED ledger) / updated 2026-10-28 20:06 JST)",
           "answer_line_date": "2026-08",
           "answer_kind": "observing",
           "title_short": "C27.1 index 105.5 (final 2026-08)",
@@ -2464,42 +2464,42 @@
           "faq_count": 4
         },
         "fiscal": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-26. Latest final value: euro area AAA 10-year spot yield 3.3736% (2026-10-26). (Source: European Central Bank; Eurostat / updated 2026-10-27 20:04 JST)",
-          "answer_line_date": "2026-10-26",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 3 series, latest confirmed 2026-10-27. Latest final value: euro area AAA 10-year spot yield 3.3711% (2026-10-27). (Source: European Central Bank; Eurostat / updated 2026-10-28 20:06 JST)",
+          "answer_line_date": "2026-10-27",
           "answer_kind": "observing",
-          "title_short": "euro area 10Y 3.3736% (final 10/26)",
+          "title_short": "euro area 10Y 3.3711% (final 10/27)",
           "page": "/eu/fiscal/",
           "api": "/eu/api/fiscal_eu.json",
-          "last_confirmed": "2026-10-26",
-          "next_update": "2026-10-27",
+          "last_confirmed": "2026-10-27",
+          "next_update": "2026-10-28",
           "faq_count": 4
         },
         "disaster": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-10-26. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-10-26). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-10-27 20:04 JST)",
-          "answer_line_date": "2026-10-26",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 2 series, latest confirmed 2026-10-27. Latest final value: earthquakes M5.0+ per day, Europe vicinity 0 (2026-10-27). (Source: USGS; EFFIS (Copernicus EMS) / updated 2026-10-28 20:06 JST)",
+          "answer_line_date": "2026-10-27",
           "answer_kind": "observing",
-          "title_short": "M5+ quakes 0 (final 10/26)",
+          "title_short": "M5+ quakes 0 (final 10/27)",
           "page": "/eu/disaster/",
           "api": "/eu/api/disaster_eu.json",
-          "last_confirmed": "2026-10-26",
-          "next_update": "2026-10-27",
+          "last_confirmed": "2026-10-27",
+          "next_update": "2026-10-28",
           "faq_count": 4
         },
         "market": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-27. Latest final value: support received by this site (cumulative) 0 (2026-10-26). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-10-27 20:04 JST)",
-          "answer_line_date": "2026-10-26",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-10-28. Latest final value: support received by this site (cumulative) 0 (2026-10-27). (Source: official provider documentation; Publications Office Cellar; first-party observation / updated 2026-10-28 20:06 JST)",
+          "answer_line_date": "2026-10-27",
           "answer_kind": "observing",
-          "title_short": "support count 0 (final 10/26)",
+          "title_short": "support count 0 (final 10/27)",
           "page": "/eu/market/",
           "api": "/eu/api/market_eu.json",
-          "last_confirmed": "2026-10-27",
-          "next_update": "2026-10-28",
+          "last_confirmed": "2026-10-28",
+          "next_update": "2026-10-29",
           "faq_count": 5
         }
       },
       "sg": {
         "power": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-10-01, 1 series, latest confirmed 2026-05. Latest final value: Singapore electricity generation, monthly total 5,108.1 GWh (2026-05). (Source: Singapore Department of Statistics / Energy Market Authority via data.gov.sg (Open Data Licence v1.0) / updated 2026-10-28 07:30 JST)",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-10-01, 1 series, latest confirmed 2026-05. Latest final value: Singapore electricity generation, monthly total 5,108.1 GWh (2026-05). (Source: Singapore Department of Statistics / Energy Market Authority via data.gov.sg (Open Data Licence v1.0) / updated 2026-10-29 07:30 JST)",
           "answer_line_date": "2026-05",
           "answer_kind": "observing",
           "title_short": "SG generation 5,108.1 GWh (final 2026-05)",
@@ -2510,7 +2510,7 @@
           "faq_count": 4
         },
         "water": {
-          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-10-01, 7 series, latest confirmed 2026. Latest final value: Singapore sales of potable water, annual total 515.5 million m3 (2025). (Source: PUB, Singapore's National Water Agency; Singapore Department of Statistics (source MSE / PUB) via data.gov.sg (Open Data Licence v1.0) / updated 2026-10-28 07:30 JST)",
+          "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-10-01, 7 series, latest confirmed 2026. Latest final value: Singapore sales of potable water, annual total 515.5 million m3 (2025). (Source: PUB, Singapore's National Water Agency; Singapore Department of Statistics (source MSE / PUB) via data.gov.sg (Open Data Licence v1.0) / updated 2026-10-29 07:30 JST)",
           "answer_line_date": "2025",
           "answer_kind": "observing",
           "title_short": "SG potable water sold 515.5 million m3 (final 2025)",
