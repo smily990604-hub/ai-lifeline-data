@@ -1,44 +1,44 @@
 {
-  "connection_status": {
-    "note": "awaiting API key registration by the publisher",
-    "api_key_installed": false
-  },
-  "country": "kr",
-  "generated": "2026-11-01 18:03",
+  "status": "observing",
   "notes": [
     "Aggregates by HS heading only; no company, plant or partner-company data.",
     "HBM has no separate HS heading (memories fall under 8542.32); no \"HBM\" series is published."
   ],
-  "data_status": "not_yet_measured",
-  "query_definition": {
-    "partner": "world",
-    "level": "HS4",
-    "unit": "USD thousand",
-    "hs_codes": [
-      "8486",
-      "8542"
-    ],
-    "basis": "customs clearance (export FOB / import CIF)"
-  },
   "source": {
     "url": "https://www.data.go.kr/data/15101609/openapi.do",
     "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)",
     "license": "Korea Open Government License (공공누리) type 1 - attribution; no usage restriction stated on the dataset page (verified 2026-09-03)"
   },
   "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
+  "query_definition": {
+    "level": "HS4",
+    "basis": "customs clearance (export FOB / import CIF)",
+    "partner": "world",
+    "hs_codes": [
+      "8486",
+      "8542"
+    ],
+    "unit": "USD thousand"
+  },
+  "generated": "2026-11-03 00:45",
   "series": {
     "8486": {
-      "unit": "USD thousand",
       "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-01; skeleton only)",
-      "monthly": []
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-03; skeleton only)",
+      "monthly": [],
+      "unit": "USD thousand"
     },
     "8542": {
-      "unit": "USD thousand",
       "name": "Electronic integrated circuits (HS 8542)",
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-01; skeleton only)",
-      "monthly": []
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-03; skeleton only)",
+      "monthly": [],
+      "unit": "USD thousand"
     }
   },
-  "status": "observing"
+  "connection_status": {
+    "api_key_installed": false,
+    "note": "awaiting API key registration by the publisher"
+  },
+  "data_status": "not_yet_measured",
+  "country": "kr"
 }

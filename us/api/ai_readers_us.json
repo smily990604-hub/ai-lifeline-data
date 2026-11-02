@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-11-01 18:01",
+  "generated": "2026-11-03 00:42",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -339,6 +339,37 @@
       "top_verified": {
         "name": "OAI-SearchBot",
         "requests": 73
+      }
+    },
+    {
+      "week": 11,
+      "from": "2026-11-01",
+      "to": "2026-11-07",
+      "observed_through": "2026-11-02",
+      "days_observed": 2,
+      "provisional": true,
+      "verified_total": 32,
+      "verified_days": 2,
+      "unverified_total": 10,
+      "named_total_reference": 42,
+      "self_excluded_total": 142,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 32
+      },
+      "breakdown_verified_other_detail": {
+        "OAI-SearchBot": 26,
+        "ShapBot": 3,
+        "YouBot": 1,
+        "Amazonbot": 1,
+        "(Cloudflare検証:AI Assistant)": 1
+      },
+      "top_verified": {
+        "name": "OAI-SearchBot",
+        "requests": 26
       }
     }
   ],
@@ -917,6 +948,24 @@
       "ai_named_reference": 19,
       "self_excluded": 112,
       "requests_in_scope": 706,
+      "verified_available": true
+    },
+    {
+      "date": "2026-11-01",
+      "ai_verified": 19,
+      "ai_unverified": 4,
+      "ai_named_reference": 23,
+      "self_excluded": 141,
+      "requests_in_scope": 700,
+      "verified_available": true
+    },
+    {
+      "date": "2026-11-02",
+      "ai_verified": 13,
+      "ai_unverified": 6,
+      "ai_named_reference": 19,
+      "self_excluded": 1,
+      "requests_in_scope": 239,
       "verified_available": true
     }
   ]
