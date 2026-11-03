@@ -71,9 +71,19 @@
     "2026-10-29": 1,
     "2026-10-31": 1,
     "2026-11-01": 1,
-    "2026-11-03": 1
+    "2026-11-03": 2
   },
   "corrections": [
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "correction",
+      "chapter": "",
+      "series": "",
+      "label": "Re-run on the same day produced revision 2",
+      "detail": "Revision 1 (15 items) is kept in the ledger; the page shows revision 2 (14 items)"
+    },
     {
       "date": "2026-10-12",
       "revision": 2,
@@ -108,305 +118,285 @@
   "today": [
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "power",
       "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 10,476,052 MWh (2026-11-01)",
-      "detail": "Previous 10,270,864 MWh (2026-10-31) (+205188 vs 2026-10-31) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "label": "US Lower 48 electricity demand (daily total): 10,914,950 MWh (2026-11-02)",
+      "detail": "Previous 10,476,052 MWh (2026-11-01) (+438898 vs 2026-11-01) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
       "chapter": "power",
       "series": "power.us48_netgen_mwh",
-      "label": "US Lower 48 net generation (daily total): 10,320,352 MWh (2026-11-01)",
-      "detail": "Previous 10,543,012 MWh (2026-10-30) (-222660 vs 2026-10-30) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
+      "label": "Revised: US Lower 48 net generation (daily total) for 2026-11-01",
+      "detail": "10,320,352 MWh (provisional) -> 10,320,253 MWh (final) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
       "chapter": "regulation",
       "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 24 documents (2026-11-03)",
-      "detail": "Previous 24 documents (2026-11-01) (0 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Revised: Open federal comment periods (Federal Register, query \"artificial intelligence\") for 2026-11-03",
+      "detail": "24 documents (final) -> 23 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
       "chapter": "regulation",
       "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 5 documents (2026-11-03)",
-      "detail": "Previous 4 documents (2026-11-01) (+1 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Revised: Comment periods closing within 14 days for 2026-11-03",
+      "detail": "5 documents (final) -> 4 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
       "chapter": "regulation",
       "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 29 documents (2026-11-03)",
-      "detail": "Previous 30 documents (2026-11-01) (-1 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
+      "label": "Revised: Matching documents published in the last 30 days for 2026-11-03",
+      "detail": "29 documents (final) -> 30 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-11-03)",
-      "detail": "Previous 15 documents (2026-11-01) (0 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "gpu",
       "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-11-03 00:42)",
-      "detail": "Previous 4 USD per 1M tokens (2026-11-01 18:01) (0 vs 2026-11-01 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-11-03 18:02)",
+      "detail": "Previous 4 USD per 1M tokens (2026-11-03 00:42) (0 vs 2026-11-03 00:42) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.construction_spend",
-      "label": "Private data-center construction spending (monthly, millions of USD, not seasonally adjusted): 8,517 (2026-09)",
-      "detail": "Previous 7,535 (2026-08) (+982 vs 2026-08) / provisional / Source: U.S. Census Bureau, Value of Construction Put in Place Survey (VIP)"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "datacenter",
       "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 1 (2026-10-31)",
-      "detail": "Previous 1 (2026-10-30) (0 vs 2026-10-30) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 1 (2026-11-01)",
+      "detail": "Previous 1 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "fiscal",
-      "series": "fiscal.ai_grants_open",
-      "label": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month): 147 (2026-11)",
-      "detail": "Previous 149 (2026-10) (-2 vs 2026-10) / final / Source: Grants.gov search API"
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 1,040,236 (2026-10-30)",
+      "detail": "Previous 1,015,632 (2026-10-29) (+24604 vs 2026-10-29) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+      "chapter": "fiscal",
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.91 (2026-11-02)",
+      "detail": "Previous 4.94 (2026-10-30) (-0.03 vs 2026-10-30) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-11",
+      "detail": "147 (final) -> 151 (final) on refetch / Source: Grants.gov search API"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.extreme_heat",
-      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA National Weather Service alerts API"
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: NOAA National Weather Service alerts API"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA National Hurricane Center"
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: NOAA National Hurricane Center"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.earthquake",
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "market",
       "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-11-02)",
-      "detail": "Previous 0 count (2026-11-01) (0 vs 2026-11-01) / provisional / Source: AI Lifeline first-party observation"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 32 requests (2026-11-02)",
-      "detail": "Previous 96 requests (2026-10-31) (-64 vs 2026-10-31) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-11-03)",
+      "detail": "Previous 0 count (2026-11-02) (0 vs 2026-11-02) / provisional / Source: AI Lifeline first-party observation"
     }
   ],
   "recent": [
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "ai_readers",
-      "series": "ai_readers.week_verified",
-      "label": "AI readers (weekly) - AI requests to the United States edition (/us/ paths): 32 requests (2026-11-02)",
-      "detail": "Previous 96 requests (2026-10-31) (-64 vs 2026-10-31) / provisional / Source: Cloudflare GraphQL Analytics API (httpRequestsAdaptiveGroups, edge measurement)"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "power",
-      "series": "power.us48_demand_mwh",
-      "label": "US Lower 48 electricity demand (daily total): 10,476,052 MWh (2026-11-01)",
-      "detail": "Previous 10,270,864 MWh (2026-10-31) (+205188 vs 2026-10-31) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "power",
-      "series": "power.us48_netgen_mwh",
-      "label": "US Lower 48 net generation (daily total): 10,320,352 MWh (2026-11-01)",
-      "detail": "Previous 10,543,012 MWh (2026-10-30) (-222660 vs 2026-10-30) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.open_comment_periods",
-      "label": "Open federal comment periods (Federal Register, query \"artificial intelligence\"): 24 documents (2026-11-03)",
-      "detail": "Previous 24 documents (2026-11-01) (0 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.closing_within_14_days",
-      "label": "Comment periods closing within 14 days: 5 documents (2026-11-03)",
-      "detail": "Previous 4 documents (2026-11-01) (+1 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "regulation",
-      "series": "regulation.documents_last_30_days",
-      "label": "Matching documents published in the last 30 days: 29 documents (2026-11-03)",
-      "detail": "Previous 30 documents (2026-11-01) (-1 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "gpu",
-      "series": "gpu.bis_advanced_computing_recent",
-      "label": "Most recent BIS documents matching \"advanced computing\" (ledger of the last 15): 15 documents (2026-11-03)",
-      "detail": "Previous 15 documents (2026-11-01) (0 vs 2026-11-01) / final / Source: Federal Register (federalregister.gov) API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "market",
       "series": "market.support_count",
-      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-11-02)",
-      "detail": "Previous 0 count (2026-11-01) (0 vs 2026-11-01) / provisional / Source: AI Lifeline first-party observation"
+      "label": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot): 0 count (2026-11-03)",
+      "detail": "Previous 0 count (2026-11-02) (0 vs 2026-11-02) / provisional / Source: AI Lifeline first-party observation"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.construction_spend",
-      "label": "Private data-center construction spending (monthly, millions of USD, not seasonally adjusted): 8,517 (2026-09)",
-      "detail": "Previous 7,535 (2026-08) (+982 vs 2026-08) / provisional / Source: U.S. Census Bureau, Value of Construction Put in Place Survey (VIP)"
+      "chapter": "power",
+      "series": "power.us48_demand_mwh",
+      "label": "US Lower 48 electricity demand (daily total): 10,914,950 MWh (2026-11-02)",
+      "detail": "Previous 10,476,052 MWh (2026-11-01) (+438898 vs 2026-11-01) / provisional / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.hurricane",
-      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA National Hurricane Center"
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "power",
+      "series": "power.us48_netgen_mwh",
+      "label": "Revised: US Lower 48 net generation (daily total) for 2026-11-01",
+      "detail": "10,320,352 MWh (provisional) -> 10,320,253 MWh (final) on refetch / Source: U.S. Energy Information Administration, Hourly Electric Grid Monitor (Form EIA-930)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "disaster",
-      "series": "disaster.extreme_heat",
-      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA National Weather Service alerts API"
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.open_comment_periods",
+      "label": "Revised: Open federal comment periods (Federal Register, query \"artificial intelligence\") for 2026-11-03",
+      "detail": "24 documents (final) -> 23 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.closing_within_14_days",
+      "label": "Revised: Comment periods closing within 14 days for 2026-11-03",
+      "detail": "5 documents (final) -> 4 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "regulation",
+      "series": "regulation.documents_last_30_days",
+      "label": "Revised: Matching documents published in the last 30 days for 2026-11-03",
+      "detail": "29 documents (final) -> 30 documents (final) on refetch / Source: Federal Register (federalregister.gov) API"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "gpu",
       "series": "gpu.token_prices_tracked",
-      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-11-03 00:42)",
-      "detail": "Previous 4 USD per 1M tokens (2026-11-01 18:01) (0 vs 2026-11-01 18:01) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
+      "label": "Published inference token prices, tracked models (USD per 1M tokens, list price; weekly first-party check; definition v1.0 shared with the Japan edition; world background): 4 USD per 1M tokens (2026-11-03 18:02)",
+      "detail": "Previous 4 USD per 1M tokens (2026-11-03 00:42) (0 vs 2026-11-03 00:42) / final / Source: Official pricing pages of each provider (figures only; definition v1.0)"
     },
     {
       "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "fiscal",
-      "series": "fiscal.ai_grants_open",
-      "label": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month): 147 (2026-11)",
-      "detail": "Previous 149 (2026-10) (-2 vs 2026-10) / final / Source: Grants.gov search API"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
-      "kind": "routine",
-      "chapter": "datacenter",
-      "series": "datacenter.cooling_degree_days",
-      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 1 (2026-10-31)",
-      "detail": "Previous 1 (2026-10-30) (0 vs 2026-10-30) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
-    },
-    {
-      "date": "2026-11-03",
-      "revision": 1,
-      "recorded_at": "2026-11-03 00:42:57",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
       "kind": "routine",
       "chapter": "disaster",
       "series": "disaster.earthquake",
-      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-11-01)",
-      "detail": "Previous 0 (2026-10-31) (0 vs 2026-10-31) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+      "label": "Earthquakes M5.0+ per day (UTC; U.S. vicinity bounding box — see definition): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: U.S. Geological Survey, Earthquake Hazards Program"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.tga_balance",
+      "label": "Treasury General Account opening balance (millions of USD, daily): 1,040,236 (2026-10-30)",
+      "detail": "Previous 1,015,632 (2026-10-29) (+24604 vs 2026-10-29) / final / Source: U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.hurricane",
+      "label": "Active tropical cyclones, TS or stronger (NHC, Atlantic + East/Central Pacific; daily snapshot): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: NOAA National Hurricane Center"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "disaster",
+      "series": "disaster.extreme_heat",
+      "label": "Active heat alerts (Excessive Heat Warning + Heat Advisory; daily snapshot): 0 (2026-11-02)",
+      "detail": "Previous 0 (2026-11-01) (0 vs 2026-11-01) / final / Source: NOAA National Weather Service alerts API"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "datacenter",
+      "series": "datacenter.cooling_degree_days",
+      "label": "Daily cooling degree days, CONUS population-weighted (NOAA CPC definition, base 65F): 1 (2026-11-01)",
+      "detail": "Previous 1 (2026-10-31) (0 vs 2026-10-31) / final / Source: NOAA Climate Prediction Center, Degree Days Statistics (population-weighted)"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "routine",
+      "chapter": "fiscal",
+      "series": "fiscal.treasury_yield",
+      "label": "Daily Treasury Par Yield Curve (%, headline 10Y): 4.91 (2026-11-02)",
+      "detail": "Previous 4.94 (2026-10-30) (-0.03 vs 2026-10-30) / final / Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
+    },
+    {
+      "date": "2026-11-03",
+      "revision": 2,
+      "recorded_at": "2026-11-03 18:02:38",
+      "kind": "revision",
+      "chapter": "fiscal",
+      "series": "fiscal.ai_grants_open",
+      "label": "Revised: Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month) for 2026-11",
+      "detail": "147 (final) -> 151 (final) on refetch / Source: Grants.gov search API"
     },
     {
       "date": "2026-11-01",
