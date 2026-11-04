@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-11-03 10:34",
+  "generated": "2026-11-04 10:34",
   "indicator": {
     "id": "ai_readers_01",
     "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
@@ -373,33 +373,35 @@
       "week": 11,
       "from": "2026-11-01",
       "to": "2026-11-07",
-      "observed_through": "2026-11-02",
-      "days_observed": 2,
+      "observed_through": "2026-11-03",
+      "days_observed": 3,
       "provisional": true,
-      "verified_total": 171,
-      "verified_days": 2,
-      "unverified_total": 40,
-      "human_triggered_verified_total": 9,
-      "named_total_reference": 211,
-      "self_excluded_total": 963,
+      "verified_total": 317,
+      "verified_days": 3,
+      "unverified_total": 59,
+      "human_triggered_verified_total": 15,
+      "named_total_reference": 376,
+      "self_excluded_total": 2911,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
-        "GPTBot": 6,
+        "GPTBot": 7,
         "CCBot": 0,
-        "その他": 165
+        "その他": 310
       },
       "breakdown_verified_other_detail": {
-        "OAI-SearchBot": 96,
-        "ShapBot": 23,
-        "(Cloudflare検証:AI Assistant)": 20,
-        "Amazonbot": 16,
-        "ChatGPT-User": 9,
+        "OAI-SearchBot": 139,
+        "(Cloudflare検証:AI Assistant)": 65,
+        "GoogleOther": 36,
+        "Amazonbot": 28,
+        "ShapBot": 25,
+        "ChatGPT-User": 15,
+        "DuckAssistBot": 1,
         "YouBot": 1
       },
       "top_verified": {
         "name": "OAI-SearchBot",
-        "requests": 96
+        "requests": 139
       }
     }
   ],
@@ -1129,13 +1131,23 @@
       "verified_available": true,
       "human_triggered_verified": 2,
       "human_triggered_named_reference": 2
+    },
+    {
+      "date": "2026-11-03",
+      "ai_verified": 146,
+      "ai_unverified": 19,
+      "ai_named_reference": 165,
+      "self_excluded": 1948,
+      "verified_available": true,
+      "human_triggered_verified": 6,
+      "human_triggered_named_reference": 6
     }
   ],
   "autonomous_access": {
     "definition_version": "1.0",
     "definition_fixed_on": "2026-09-05",
     "definition_doc": "指標定義_自律アクセス.md",
-    "computed": "2026-11-03 10:34",
+    "computed": "2026-11-04 10:34",
     "cadence": "月次（日次明細から毎日再集計。月が閉じるまで provisional）",
     "judgment_date": "2027-03-05",
     "observation_start": "2026-08-23",
