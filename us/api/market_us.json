@@ -1,41 +1,44 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-11-04. Latest final value: support received by this site (cumulative) 0 (2026-11-03). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-11-04 18:01 JST)",
-  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-11-03, https://ai-lifeline.org/us/market/",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-11-05. Latest final value: support received by this site (cumulative) 0 (2026-11-04). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-11-05 18:01 JST)",
+  "cite_as": "AI Lifeline, Market participation (United States edition), data confirmed 2026-11-04, https://ai-lifeline.org/us/market/",
+  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
   "chapter": "Chapter 9 - Market participation",
   "beta_rule": "Chapter Beta is removed when every payment-rail row is verified against a primary source (zero not-verified rows) and the support-count series has fetched for 7 consecutive days.",
-  "status": "observing",
+  "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
   "can_say": [
     "The status in the United States of each payment rail through which an AI can pay or receive without a human in the loop (available / not available / applied / not verified), with the verification date and the primary-source URL.",
     "The enactment, rulemaking and effective dates of the GENIUS Act (Public Law 119-27) as fixed in the statute text and the Federal Register.",
     "How many times this site has actually received support (operator self-tests excluded; daily count)."
   ],
-  "region": "us",
-  "frequency_note": "Mixed frequency: support count = daily (self-observation); payment-rail ledger = verified about monthly; regime calendar = dates from primary legal sources; reference ledger = annual.",
   "candidates": [
     {
-      "name": "HTTP 402 attempts and successes (self-observation)",
+      "reason": "Endpoint not implemented (design pending approval).",
       "status": "candidate_unobserved",
-      "reason": "Endpoint not implemented (design pending approval)."
+      "name": "HTTP 402 attempts and successes (self-observation)"
     }
   ],
+  "region": "us",
+  "status": "observing",
+  "generated": "2026-11-05 18:01",
   "cannot_say": [
     "Fees, volumes or numbers of users on any rail (state and dates only; no amounts are recorded).",
     "HTTP 402 attempts and successes (endpoint not implemented; placeholders read \"not yet measured\").",
     "How pending deliberations on the contractual capacity and liability of AI agents will end (statutes and government documents; state and dates only)."
   ],
-  "generated": "2026-11-04 18:01",
   "series": {
-    "http402_success": {
-      "name": "Payments completed after an HTTP 402 response, per day",
+    "http402_attempts": {
+      "name": "HTTP 402 (payment required) responses attempted per day",
       "daily": [],
       "unit": "count",
+      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
       "update_frequency": "daily",
-      "data_status": "not_yet_measured (endpoint not implemented)"
+      "definition_note": "The 402 endpoint is not implemented (design pending approval). Placeholder to be connected after deployment."
     },
     "support_count": {
-      "unit": "count",
+      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
       "causal_note": "The number of times an AI or a human could actually pay this site: the smallest first-party observation that machine-side receipt works at all.",
-      "update_frequency": "daily",
+      "unit": "count",
+      "data_status": "live",
       "daily": [
         {
           "date": "2026-09-03",
@@ -530,22 +533,28 @@
           "value": 0,
           "excluded_self_tests": 1,
           "count_updated": "2026-08-30",
-          "value_status": "provisional",
+          "value_status": "final",
           "fetched_at": "2026-11-04 18:01"
+        },
+        {
+          "date": "2026-11-05",
+          "value": 0,
+          "excluded_self_tests": 1,
+          "count_updated": "2026-08-30",
+          "value_status": "provisional",
+          "fetched_at": "2026-11-05 18:01"
         }
       ],
+      "update_frequency": "daily",
       "definition_note": "Daily snapshot of the count in the support counter ledger (operator self-tests excluded via excluded_self_tests). Amounts are not recorded, only the count. What the site publishes does not change with support.",
-      "name": "Support received by this site (cumulative count; operator self-tests excluded; daily snapshot)",
-      "data_status": "live",
       "source": {
-        "name": "AI Lifeline first-party observation",
+        "license": "First-party observation (this site's own records)",
         "url": "https://ai-lifeline.org/us/support/",
-        "license": "First-party observation (this site's own records)"
+        "name": "AI Lifeline first-party observation"
       }
     },
     "legal_status_ledger": {
-      "unit": "entries",
-      "checked": "2026-09-04",
+      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
       "entries": [
         {
           "date": "2026-09-04",
@@ -565,18 +574,18 @@
         }
       ],
       "reference": true,
-      "definition_note": "Sources are statutes and government documents only. State and dates only.",
-      "name": "Reference ledger (annual): current law and pending deliberations on the contractual capacity and liability attribution of AI agents",
+      "unit": "entries",
       "data_status": "live",
+      "checked": "2026-09-04",
       "source": {
-        "name": "Statutes and government documents (URL on each row)",
+        "license": "per source",
         "url": "",
-        "license": "per source"
-      }
+        "name": "Statutes and government documents (URL on each row)"
+      },
+      "definition_note": "Sources are statutes and government documents only. State and dates only."
     },
     "regime_calendar": {
-      "unit": "stages",
-      "checked": "2026-09-04",
+      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
       "entries": [
         {
           "date": "2025-07-18",
@@ -644,18 +653,18 @@
         }
       ],
       "reference": false,
-      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation.",
-      "name": "GENIUS Act (Public Law 119-27) - enactment, rulemaking and effective date",
+      "unit": "stages",
       "data_status": "live",
+      "checked": "2026-09-04",
       "source": {
-        "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)",
+        "license": "Public domain (U.S. federal government work)",
         "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
-        "license": "Public domain (U.S. federal government work)"
-      }
+        "name": "U.S. Government Publishing Office (govinfo, statute text) and Federal Register API (rulemaking)"
+      },
+      "definition_note": "Stage dates only where fixed by a primary legal source (official journal / statute text). Unfixed stages read not yet scheduled. No interpretation."
     },
     "payment_rails": {
-      "unit": "rails",
-      "checked": "2026-09-04",
+      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
       "entries": [
         {
           "date": "2026-09-04",
@@ -719,36 +728,35 @@
         }
       ],
       "reference": false,
-      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
-      "unverified_rows": 6,
-      "name": "Payment-rail ledger (US; verified about monthly) - status per rail: available / not available / applied / not verified",
+      "unit": "rails",
       "data_status": "live",
+      "checked": "2026-09-04",
       "source": {
-        "name": "AI Lifeline first-party ledger of official provider documentation",
+        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation",
         "url": "https://ai-lifeline.org/us/market/",
-        "license": "First-party ledger; each row links to the provider's official documentation (© respective providers) or to this site's own first-party observation"
-      }
+        "name": "AI Lifeline first-party ledger of official provider documentation"
+      },
+      "definition_note": "Primary sources are the official documentation of each provider (plus this site's own first-party observation). Rails not confirmed in official documents stay “not verified”.",
+      "unverified_rows": 6
     },
-    "http402_attempts": {
+    "http402_success": {
       "unit": "count",
       "update_frequency": "daily",
       "daily": [],
-      "data_status": "not_yet_measured (endpoint not implemented; placeholder until the 402 endpoint design is approved and deployed)",
-      "definition_note": "The 402 endpoint is not implemented (design pending approval). Placeholder to be connected after deployment.",
-      "name": "HTTP 402 (payment required) responses attempted per day"
+      "data_status": "not_yet_measured (endpoint not implemented)",
+      "name": "Payments completed after an HTTP 402 response, per day"
     }
   },
-  "wording_rule": "Wording rule: this chapter uses no evaluative wording; state and dates only (the rule text is kept in the editorial policy).",
   "status_note": "Observing only: this chapter counts and lists the state and dates of the conditions under which an AI can pay, receive and contract without a human in the loop. No judgment, no advocacy, no evaluation.",
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-11-04. Latest final value: support received by this site (cumulative) 0 (2026-11-03). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-11-04 18:01 JST)",
-  "answer_line_date": "2026-11-03",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-09-04, 6 series (2 not yet measured), latest confirmed 2026-11-05. Latest final value: support received by this site (cumulative) 0 (2026-11-04). (Source: official provider documentation; govinfo / Federal Register; first-party observation / updated 2026-11-05 18:01 JST)",
+  "answer_line_date": "2026-11-04",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "support_count",
     "label": "support received by this site (cumulative)",
     "value": 0,
     "unit": "",
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "threshold": null
   },
   "faq": [
@@ -758,7 +766,7 @@
     },
     {
       "q": "How much support has this site received?",
-      "a": "0 as the cumulative count on 2026-11-04 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
+      "a": "0 as the cumulative count on 2026-11-05 (operator self-tests excluded; daily snapshot, same-day value provisional). HTTP 402 attempts and successes: not yet measured (endpoint not implemented)."
     },
     {
       "q": "How many GENIUS Act stages are listed?",
@@ -766,7 +774,7 @@
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-11-04 18:01 JST. Definition: 指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
+      "a": "Support count daily; rail ledger and legal stages verified about monthly (observation started 2026-09-04). State and dates only; no judgment. Last updated 2026-11-05 18:01 JST. Definition: 指標定義_第9章_市場参加.md v1.0. Machine-readable: https://ai-lifeline.org/us/api/market_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -776,13 +784,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/market/",
     "api": "https://ai-lifeline.org/us/api/market_us.json",
-    "last_confirmed": "2026-11-04",
-    "next_expected": "2026-11-05",
-    "generated": "2026-11-04 18:01",
+    "last_confirmed": "2026-11-05",
+    "next_expected": "2026-11-06",
+    "generated": "2026-11-05 18:01",
     "observation_start": "2026-09-04",
     "series_count": 6,
     "series_not_yet_measured": 2,
-    "title_short": "support count 0 (final 11/3)",
+    "title_short": "support count 0 (final 11/4)",
     "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
