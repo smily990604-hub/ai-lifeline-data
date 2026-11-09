@@ -1,6 +1,6 @@
 {
   "region": "US",
-  "generated": "2026-11-08 21:27",
+  "generated": "2026-11-09 18:01",
   "indicator": {
     "id": "ai_readers_01_us",
     "name": "AI readers (weekly) - AI requests to the United States edition (/us/ paths)",
@@ -350,9 +350,9 @@
       "provisional": false,
       "verified_total": 127,
       "verified_days": 7,
-      "unverified_total": 65,
-      "named_total_reference": 192,
-      "self_excluded_total": 916,
+      "unverified_total": 63,
+      "named_total_reference": 190,
+      "self_excluded_total": 918,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
@@ -365,13 +365,41 @@
         "ShapBot": 34,
         "Amazonbot": 13,
         "(Cloudflare検証:AI Assistant)": 3,
-        "GoogleOther": 2,
         "ChatGPT-User": 2,
+        "GoogleOther": 2,
         "YouBot": 1
       },
       "top_verified": {
         "name": "OAI-SearchBot",
         "requests": 72
+      }
+    },
+    {
+      "week": 12,
+      "from": "2026-11-08",
+      "to": "2026-11-14",
+      "observed_through": "2026-11-08",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 36,
+      "verified_days": 1,
+      "unverified_total": 13,
+      "named_total_reference": 49,
+      "self_excluded_total": 135,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 36
+      },
+      "breakdown_verified_other_detail": {
+        "ShapBot": 28,
+        "OAI-SearchBot": 8
+      },
+      "top_verified": {
+        "name": "ShapBot",
+        "requests": 28
       }
     }
   ],
@@ -1009,10 +1037,19 @@
     {
       "date": "2026-11-07",
       "ai_verified": 12,
-      "ai_unverified": 28,
-      "ai_named_reference": 40,
-      "self_excluded": 110,
+      "ai_unverified": 26,
+      "ai_named_reference": 38,
+      "self_excluded": 112,
       "requests_in_scope": 266,
+      "verified_available": true
+    },
+    {
+      "date": "2026-11-08",
+      "ai_verified": 36,
+      "ai_unverified": 13,
+      "ai_named_reference": 49,
+      "self_excluded": 135,
+      "requests_in_scope": 263,
       "verified_available": true
     }
   ]
