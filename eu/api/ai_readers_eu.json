@@ -1,6 +1,6 @@
 {
   "region": "EU",
-  "generated": "2026-11-08 21:27",
+  "generated": "2026-11-09 20:06",
   "indicator": {
     "id": "ai_readers_01_eu",
     "name": "AI readers (weekly) - AI requests to the European Union edition (/eu/ paths)",
@@ -315,9 +315,9 @@
       "provisional": false,
       "verified_total": 68,
       "verified_days": 7,
-      "unverified_total": 12,
-      "named_total_reference": 80,
-      "self_excluded_total": 761,
+      "unverified_total": 10,
+      "named_total_reference": 78,
+      "self_excluded_total": 763,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
@@ -335,6 +335,35 @@
       "top_verified": {
         "name": "OAI-SearchBot",
         "requests": 33
+      }
+    },
+    {
+      "week": 12,
+      "from": "2026-11-08",
+      "to": "2026-11-14",
+      "observed_through": "2026-11-08",
+      "days_observed": 1,
+      "provisional": true,
+      "verified_total": 34,
+      "verified_days": 1,
+      "unverified_total": 2,
+      "named_total_reference": 36,
+      "self_excluded_total": 110,
+      "breakdown_verified": {
+        "Claude-User": 0,
+        "ClaudeBot": 0,
+        "GPTBot": 0,
+        "CCBot": 0,
+        "other": 34
+      },
+      "breakdown_verified_other_detail": {
+        "ShapBot": 25,
+        "OAI-SearchBot": 5,
+        "Amazonbot": 4
+      },
+      "top_verified": {
+        "name": "ShapBot",
+        "requests": 25
       }
     }
   ],
@@ -927,10 +956,19 @@
     {
       "date": "2026-11-07",
       "ai_verified": 7,
-      "ai_unverified": 2,
-      "ai_named_reference": 9,
-      "self_excluded": 90,
+      "ai_unverified": 0,
+      "ai_named_reference": 7,
+      "self_excluded": 92,
       "requests_in_scope": 149,
+      "verified_available": true
+    },
+    {
+      "date": "2026-11-08",
+      "ai_verified": 34,
+      "ai_unverified": 2,
+      "ai_named_reference": 36,
+      "self_excluded": 110,
+      "requests_in_scope": 268,
       "verified_available": true
     }
   ]
