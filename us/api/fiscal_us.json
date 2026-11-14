@@ -1,44 +1,665 @@
 {
-  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-11-12. Latest final value: 10-year Treasury par yield 5.1% (2026-11-12). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-11-13 18:01 JST)",
-  "cite_as": "AI Lifeline, Fiscal & capital (United States edition), data confirmed 2026-11-12, https://ai-lifeline.org/us/fiscal/",
+  "summary": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-11-13. Latest final value: 10-year Treasury par yield 5.15% (2026-11-13). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-11-14 18:03 JST)",
+  "cite_as": "AI Lifeline, Fiscal & capital (United States edition), data confirmed 2026-11-13, https://ai-lifeline.org/us/fiscal/",
+  "region": "us",
+  "status_note": "Observing only: no good/bad criterion is defined. Not a macro-economics dashboard — series are limited to those with a stated causal link to AI infrastructure.",
   "confirmed_note": "The daily array holds confirmed (completed) days only; the current day, if collected, sits in today_provisional.",
+  "cannot_say": [
+    "Whether a yield or a cash balance is good or bad for AI, or where rates are heading (no criterion; nothing here is financial advice).",
+    "How much the federal government budgets or spends on AI (annual budget figures do not meet the monthly-or-better rule; kept as a candidate ledger).",
+    "General economic conditions (stocks, exchange rates and inflation are out of scope by design)."
+  ],
+  "generated": "2026-11-14 18:03",
+  "frequency_note": "Yields and TGA are daily (business days); the grants count is a daily snapshot aggregated monthly.",
+  "can_say": [
+    "The daily par yield of U.S. Treasuries (headline 10-year), the opening balance of the Treasury General Account each business day, and how many funding opportunities matching \"artificial intelligence\" were posted on Grants.gov (monthly = last snapshot of the month).",
+    "Which days are confirmed and which is the provisional current day, and when each value was retrieved.",
+    "The exact Grants.gov query that defines the count, so it can be reproduced."
+  ],
   "series": {
-    "ai_grants_open": {
+    "treasury_yield": {
       "source": {
-        "license": "U.S. federal government service. No key (search2 is unauthenticated).",
-        "url": "https://grants.gov/api/api-guide",
-        "name": "Grants.gov search API"
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
+        "name": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates",
+        "license": "Public domain (U.S. federal government work). No key."
       },
       "data_status": "live",
-      "monthly": [
+      "name": "Daily Treasury Par Yield Curve (%, headline 10Y)",
+      "daily": [
         {
-          "period": "2026-08",
-          "value": 169,
-          "as_of": "2026-08-31"
+          "date": "2026-07-08",
+          "y10": 4.56,
+          "y2": 4.21,
+          "y30": 5.06,
+          "fetched_at": "2026-11-14 18:03"
         },
         {
-          "period": "2026-09",
-          "value": 160,
-          "as_of": "2026-09-30"
+          "date": "2026-07-09",
+          "y10": 4.54,
+          "y2": 4.16,
+          "y30": 5.05,
+          "fetched_at": "2026-11-14 18:03"
         },
         {
-          "period": "2026-10",
-          "value": 149,
-          "as_of": "2026-10-31"
+          "date": "2026-07-10",
+          "y10": 4.56,
+          "y2": 4.21,
+          "y30": 5.06,
+          "fetched_at": "2026-11-14 18:03"
         },
         {
-          "period": "2026-11",
-          "value": 141,
-          "as_of": "2026-11-12"
+          "date": "2026-07-13",
+          "y10": 4.62,
+          "y2": 4.26,
+          "y30": 5.1,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-14",
+          "y10": 4.58,
+          "y2": 4.18,
+          "y30": 5.08,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-15",
+          "y10": 4.55,
+          "y2": 4.13,
+          "y30": 5.08,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-16",
+          "y10": 4.57,
+          "y2": 4.16,
+          "y30": 5.09,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-17",
+          "y10": 4.55,
+          "y2": 4.18,
+          "y30": 5.06,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-20",
+          "y10": 4.6,
+          "y2": 4.21,
+          "y30": 5.11,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-21",
+          "y10": 4.63,
+          "y2": 4.26,
+          "y30": 5.13,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-22",
+          "y10": 4.67,
+          "y2": 4.31,
+          "y30": 5.15,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-23",
+          "y10": 4.71,
+          "y2": 4.37,
+          "y30": 5.17,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-24",
+          "y10": 4.69,
+          "y2": 4.33,
+          "y30": 5.16,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-27",
+          "y10": 4.65,
+          "y2": 4.31,
+          "y30": 5.12,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-28",
+          "y10": 4.61,
+          "y2": 4.26,
+          "y30": 5.09,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-29",
+          "y10": 4.67,
+          "y2": 4.22,
+          "y30": 5.2,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-30",
+          "y10": 4.68,
+          "y2": 4.23,
+          "y30": 5.21,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-07-31",
+          "y10": 4.75,
+          "y2": 4.28,
+          "y30": 5.27,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-03",
+          "y10": 4.7,
+          "y2": 4.25,
+          "y30": 5.23,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-04",
+          "y10": 4.63,
+          "y2": 4.2,
+          "y30": 5.18,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-05",
+          "y10": 4.63,
+          "y2": 4.18,
+          "y30": 5.17,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-06",
+          "y10": 4.69,
+          "y2": 4.25,
+          "y30": 5.22,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-07",
+          "y10": 4.65,
+          "y2": 4.19,
+          "y30": 5.19,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-10",
+          "y10": 4.72,
+          "y2": 4.25,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-11",
+          "y10": 4.7,
+          "y2": 4.22,
+          "y30": 5.24,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-12",
+          "y10": 4.68,
+          "y2": 4.2,
+          "y30": 5.24,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-13",
+          "y10": 4.63,
+          "y2": 4.15,
+          "y30": 5.21,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-14",
+          "y10": 4.68,
+          "y2": 4.17,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-17",
+          "y10": 4.72,
+          "y2": 4.19,
+          "y30": 5.31,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-18",
+          "y10": 4.71,
+          "y2": 4.19,
+          "y30": 5.28,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-19",
+          "y10": 4.65,
+          "y2": 4.19,
+          "y30": 5.19,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-20",
+          "y10": 4.69,
+          "y2": 4.19,
+          "y30": 5.23,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-21",
+          "y10": 4.74,
+          "y2": 4.24,
+          "y30": 5.27,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-24",
+          "y10": 4.7,
+          "y2": 4.24,
+          "y30": 5.23,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-25",
+          "y10": 4.64,
+          "y2": 4.17,
+          "y30": 5.17,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-26",
+          "y10": 4.66,
+          "y2": 4.19,
+          "y30": 5.18,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-27",
+          "y10": 4.67,
+          "y2": 4.2,
+          "y30": 5.19,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-28",
+          "y10": 4.73,
+          "y2": 4.34,
+          "y30": 5.22,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-08-31",
+          "y10": 4.75,
+          "y2": 4.34,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-01",
+          "y10": 4.79,
+          "y2": 4.39,
+          "y30": 5.27,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-02",
+          "y10": 4.79,
+          "y2": 4.39,
+          "y30": 5.27,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-03",
+          "y10": 4.77,
+          "y2": 4.34,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-04",
+          "y10": 4.78,
+          "y2": 4.37,
+          "y30": 5.24,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-08",
+          "y10": 4.8,
+          "y2": 4.39,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-09",
+          "y10": 4.83,
+          "y2": 4.43,
+          "y30": 5.28,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-10",
+          "y10": 4.95,
+          "y2": 4.56,
+          "y30": 5.37,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-11",
+          "y10": 4.96,
+          "y2": 4.63,
+          "y30": 5.35,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-14",
+          "y10": 4.97,
+          "y2": 4.65,
+          "y30": 5.34,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-15",
+          "y10": 5.0,
+          "y2": 4.67,
+          "y30": 5.36,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-16",
+          "y10": 5.01,
+          "y2": 4.74,
+          "y30": 5.35,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-17",
+          "y10": 4.94,
+          "y2": 4.67,
+          "y30": 5.29,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-18",
+          "y10": 5.01,
+          "y2": 4.76,
+          "y30": 5.34,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-21",
+          "y10": 4.96,
+          "y2": 4.76,
+          "y30": 5.29,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-22",
+          "y10": 4.96,
+          "y2": 4.71,
+          "y30": 5.29,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-23",
+          "y10": 5.11,
+          "y2": 4.85,
+          "y30": 5.4,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-24",
+          "y10": 5.18,
+          "y2": 4.87,
+          "y30": 5.47,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-25",
+          "y10": 5.17,
+          "y2": 4.81,
+          "y30": 5.49,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-28",
+          "y10": 5.24,
+          "y2": 4.92,
+          "y30": 5.56,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-29",
+          "y10": 5.26,
+          "y2": 4.89,
+          "y30": 5.59,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-09-30",
+          "y10": 5.29,
+          "y2": 4.88,
+          "y30": 5.64,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-01",
+          "y10": 5.24,
+          "y2": 4.78,
+          "y30": 5.61,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-02",
+          "y10": 5.28,
+          "y2": 4.83,
+          "y30": 5.63,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-05",
+          "y10": 5.31,
+          "y2": 4.84,
+          "y30": 5.66,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-06",
+          "y10": 5.27,
+          "y2": 4.79,
+          "y30": 5.64,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-07",
+          "y10": 5.28,
+          "y2": 4.77,
+          "y30": 5.67,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-08",
+          "y10": 5.22,
+          "y2": 4.75,
+          "y30": 5.6,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-09",
+          "y10": 5.24,
+          "y2": 4.8,
+          "y30": 5.6,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-13",
+          "y10": 5.21,
+          "y2": 4.79,
+          "y30": 5.56,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-14",
+          "y10": 5.19,
+          "y2": 4.82,
+          "y30": 5.52,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-15",
+          "y10": 5.1,
+          "y2": 4.77,
+          "y30": 5.43,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-16",
+          "y10": 5.09,
+          "y2": 4.74,
+          "y30": 5.43,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-19",
+          "y10": 5.15,
+          "y2": 4.77,
+          "y30": 5.48,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-20",
+          "y10": 5.12,
+          "y2": 4.79,
+          "y30": 5.42,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-21",
+          "y10": 5.13,
+          "y2": 4.81,
+          "y30": 5.42,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-22",
+          "y10": 4.96,
+          "y2": 4.65,
+          "y30": 5.29,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-23",
+          "y10": 5.0,
+          "y2": 4.69,
+          "y30": 5.33,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-26",
+          "y10": 5.0,
+          "y2": 4.68,
+          "y30": 5.31,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-27",
+          "y10": 4.99,
+          "y2": 4.7,
+          "y30": 5.3,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-28",
+          "y10": 5.05,
+          "y2": 4.67,
+          "y30": 5.37,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-29",
+          "y10": 4.98,
+          "y2": 4.61,
+          "y30": 5.32,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-10-30",
+          "y10": 4.94,
+          "y2": 4.56,
+          "y30": 5.31,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-02",
+          "y10": 4.91,
+          "y2": 4.59,
+          "y30": 5.28,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-03",
+          "y10": 4.95,
+          "y2": 4.61,
+          "y30": 5.32,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-04",
+          "y10": 4.9,
+          "y2": 4.58,
+          "y30": 5.28,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-05",
+          "y10": 4.84,
+          "y2": 4.46,
+          "y30": 5.25,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-06",
+          "y10": 4.86,
+          "y2": 4.51,
+          "y30": 5.26,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-09",
+          "y10": 4.88,
+          "y2": 4.56,
+          "y30": 5.26,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-10",
+          "y10": 4.98,
+          "y2": 4.73,
+          "y30": 5.35,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-12",
+          "y10": 5.1,
+          "y2": 4.86,
+          "y30": 5.43,
+          "fetched_at": "2026-11-14 18:03"
+        },
+        {
+          "date": "2026-11-13",
+          "y10": 5.15,
+          "y2": 4.88,
+          "y30": 5.47,
+          "fetched_at": "2026-11-14 18:03"
         }
       ],
-      "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
-      "today_provisional": {
-        "date": "2026-11-13",
-        "value": 141,
-        "as_of": "2026-11-13 18:01",
-        "note": "provisional (partial day, as of retrieval time)"
-      },
+      "causal_note": "Data centers and GPUs are financed with debt; the long rate sets the funding cost and the discount rate of future AI revenue."
+    },
+    "ai_grants_open": {
       "daily_snapshots": [
         {
           "date": "2026-08-29",
@@ -409,13 +1030,59 @@
           "date": "2026-11-12",
           "value": 141,
           "fetched_at": "2026-11-12 18:01"
+        },
+        {
+          "date": "2026-11-13",
+          "value": 141,
+          "fetched_at": "2026-11-13 18:01"
+        }
+      ],
+      "today_provisional": {
+        "date": "2026-11-14",
+        "value": 131,
+        "as_of": "2026-11-14 18:03",
+        "note": "provisional (partial day, as of retrieval time)"
+      },
+      "source": {
+        "url": "https://grants.gov/api/api-guide",
+        "name": "Grants.gov search API",
+        "license": "U.S. federal government service. No key (search2 is unauthenticated)."
+      },
+      "monthly": [
+        {
+          "period": "2026-08",
+          "value": 169,
+          "as_of": "2026-08-31"
+        },
+        {
+          "period": "2026-09",
+          "value": 160,
+          "as_of": "2026-09-30"
+        },
+        {
+          "period": "2026-10",
+          "value": 149,
+          "as_of": "2026-10-31"
+        },
+        {
+          "period": "2026-11",
+          "value": 141,
+          "as_of": "2026-11-13"
         }
       ],
       "query_definition": "Grants.gov search2 full-text keyword: \"artificial intelligence\", status: posted. Counts are defined entirely by this query.",
-      "causal_note": "Grant postings are the monthly pulse of the state actually opening its funding tap for AI — not a promise (budget), but a posted call."
+      "name": "Posted funding opportunities matching the AI query (count; monthly = last snapshot of the month)",
+      "causal_note": "Grant postings are the monthly pulse of the state actually opening its funding tap for AI — not a promise (budget), but a posted call.",
+      "data_status": "live"
     },
     "tga_balance": {
-      "causal_note": "The federal cash position is the upstream water level of public AI investment: when it tightens, AI programs are squeezed before private demand.",
+      "source": {
+        "url": "https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/",
+        "name": "U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)",
+        "license": "Public domain (U.S. federal government work). No key."
+      },
+      "data_status": "live",
+      "name": "Treasury General Account opening balance (millions of USD, daily)",
       "daily": [
         {
           "date": "2026-08-14",
@@ -680,745 +1347,88 @@
         {
           "date": "2026-10-29",
           "value": 1015632.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-10-30",
           "value": 1040236.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-02",
           "value": 951593.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-03",
           "value": 930757.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-04",
           "value": 938208.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-05",
           "value": 936248.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-06",
           "value": 922752.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-09",
           "value": 910313.0,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-10",
           "value": 922633.0,
-          "fetched_at": "2026-11-13 18:01"
-        }
-      ],
-      "source": {
-        "license": "Public domain (U.S. federal government work). No key.",
-        "url": "https://fiscaldata.treasury.gov/datasets/daily-treasury-statement/",
-        "name": "U.S. Department of the Treasury, Daily Treasury Statement (Fiscal Data)"
-      },
-      "data_status": "live",
-      "name": "Treasury General Account opening balance (millions of USD, daily)"
-    },
-    "treasury_yield": {
-      "causal_note": "Data centers and GPUs are financed with debt; the long rate sets the funding cost and the discount rate of future AI revenue.",
-      "daily": [
-        {
-          "date": "2026-07-07",
-          "y10": 4.55,
-          "y2": 4.19,
-          "y30": 5.05,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-08",
-          "y10": 4.56,
-          "y2": 4.21,
-          "y30": 5.06,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-09",
-          "y10": 4.54,
-          "y2": 4.16,
-          "y30": 5.05,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-10",
-          "y10": 4.56,
-          "y2": 4.21,
-          "y30": 5.06,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-13",
-          "y10": 4.62,
-          "y2": 4.26,
-          "y30": 5.1,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-14",
-          "y10": 4.58,
-          "y2": 4.18,
-          "y30": 5.08,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-15",
-          "y10": 4.55,
-          "y2": 4.13,
-          "y30": 5.08,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-16",
-          "y10": 4.57,
-          "y2": 4.16,
-          "y30": 5.09,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-17",
-          "y10": 4.55,
-          "y2": 4.18,
-          "y30": 5.06,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-20",
-          "y10": 4.6,
-          "y2": 4.21,
-          "y30": 5.11,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-21",
-          "y10": 4.63,
-          "y2": 4.26,
-          "y30": 5.13,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-22",
-          "y10": 4.67,
-          "y2": 4.31,
-          "y30": 5.15,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-23",
-          "y10": 4.71,
-          "y2": 4.37,
-          "y30": 5.17,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-24",
-          "y10": 4.69,
-          "y2": 4.33,
-          "y30": 5.16,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-27",
-          "y10": 4.65,
-          "y2": 4.31,
-          "y30": 5.12,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-28",
-          "y10": 4.61,
-          "y2": 4.26,
-          "y30": 5.09,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-29",
-          "y10": 4.67,
-          "y2": 4.22,
-          "y30": 5.2,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-30",
-          "y10": 4.68,
-          "y2": 4.23,
-          "y30": 5.21,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-07-31",
-          "y10": 4.75,
-          "y2": 4.28,
-          "y30": 5.27,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-03",
-          "y10": 4.7,
-          "y2": 4.25,
-          "y30": 5.23,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-04",
-          "y10": 4.63,
-          "y2": 4.2,
-          "y30": 5.18,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-05",
-          "y10": 4.63,
-          "y2": 4.18,
-          "y30": 5.17,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-06",
-          "y10": 4.69,
-          "y2": 4.25,
-          "y30": 5.22,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-07",
-          "y10": 4.65,
-          "y2": 4.19,
-          "y30": 5.19,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-10",
-          "y10": 4.72,
-          "y2": 4.25,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-11",
-          "y10": 4.7,
-          "y2": 4.22,
-          "y30": 5.24,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-12",
-          "y10": 4.68,
-          "y2": 4.2,
-          "y30": 5.24,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-13",
-          "y10": 4.63,
-          "y2": 4.15,
-          "y30": 5.21,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-14",
-          "y10": 4.68,
-          "y2": 4.17,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-17",
-          "y10": 4.72,
-          "y2": 4.19,
-          "y30": 5.31,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-18",
-          "y10": 4.71,
-          "y2": 4.19,
-          "y30": 5.28,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-19",
-          "y10": 4.65,
-          "y2": 4.19,
-          "y30": 5.19,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-20",
-          "y10": 4.69,
-          "y2": 4.19,
-          "y30": 5.23,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-21",
-          "y10": 4.74,
-          "y2": 4.24,
-          "y30": 5.27,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-24",
-          "y10": 4.7,
-          "y2": 4.24,
-          "y30": 5.23,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-25",
-          "y10": 4.64,
-          "y2": 4.17,
-          "y30": 5.17,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-26",
-          "y10": 4.66,
-          "y2": 4.19,
-          "y30": 5.18,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-27",
-          "y10": 4.67,
-          "y2": 4.2,
-          "y30": 5.19,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-28",
-          "y10": 4.73,
-          "y2": 4.34,
-          "y30": 5.22,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-08-31",
-          "y10": 4.75,
-          "y2": 4.34,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-01",
-          "y10": 4.79,
-          "y2": 4.39,
-          "y30": 5.27,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-02",
-          "y10": 4.79,
-          "y2": 4.39,
-          "y30": 5.27,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-03",
-          "y10": 4.77,
-          "y2": 4.34,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-04",
-          "y10": 4.78,
-          "y2": 4.37,
-          "y30": 5.24,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-08",
-          "y10": 4.8,
-          "y2": 4.39,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-09",
-          "y10": 4.83,
-          "y2": 4.43,
-          "y30": 5.28,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-10",
-          "y10": 4.95,
-          "y2": 4.56,
-          "y30": 5.37,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-11",
-          "y10": 4.96,
-          "y2": 4.63,
-          "y30": 5.35,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-14",
-          "y10": 4.97,
-          "y2": 4.65,
-          "y30": 5.34,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-15",
-          "y10": 5.0,
-          "y2": 4.67,
-          "y30": 5.36,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-16",
-          "y10": 5.01,
-          "y2": 4.74,
-          "y30": 5.35,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-17",
-          "y10": 4.94,
-          "y2": 4.67,
-          "y30": 5.29,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-18",
-          "y10": 5.01,
-          "y2": 4.76,
-          "y30": 5.34,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-21",
-          "y10": 4.96,
-          "y2": 4.76,
-          "y30": 5.29,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-22",
-          "y10": 4.96,
-          "y2": 4.71,
-          "y30": 5.29,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-23",
-          "y10": 5.11,
-          "y2": 4.85,
-          "y30": 5.4,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-24",
-          "y10": 5.18,
-          "y2": 4.87,
-          "y30": 5.47,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-25",
-          "y10": 5.17,
-          "y2": 4.81,
-          "y30": 5.49,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-28",
-          "y10": 5.24,
-          "y2": 4.92,
-          "y30": 5.56,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-29",
-          "y10": 5.26,
-          "y2": 4.89,
-          "y30": 5.59,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-09-30",
-          "y10": 5.29,
-          "y2": 4.88,
-          "y30": 5.64,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-01",
-          "y10": 5.24,
-          "y2": 4.78,
-          "y30": 5.61,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-02",
-          "y10": 5.28,
-          "y2": 4.83,
-          "y30": 5.63,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-05",
-          "y10": 5.31,
-          "y2": 4.84,
-          "y30": 5.66,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-06",
-          "y10": 5.27,
-          "y2": 4.79,
-          "y30": 5.64,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-07",
-          "y10": 5.28,
-          "y2": 4.77,
-          "y30": 5.67,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-08",
-          "y10": 5.22,
-          "y2": 4.75,
-          "y30": 5.6,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-09",
-          "y10": 5.24,
-          "y2": 4.8,
-          "y30": 5.6,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-13",
-          "y10": 5.21,
-          "y2": 4.79,
-          "y30": 5.56,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-14",
-          "y10": 5.19,
-          "y2": 4.82,
-          "y30": 5.52,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-15",
-          "y10": 5.1,
-          "y2": 4.77,
-          "y30": 5.43,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-16",
-          "y10": 5.09,
-          "y2": 4.74,
-          "y30": 5.43,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-19",
-          "y10": 5.15,
-          "y2": 4.77,
-          "y30": 5.48,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-20",
-          "y10": 5.12,
-          "y2": 4.79,
-          "y30": 5.42,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-21",
-          "y10": 5.13,
-          "y2": 4.81,
-          "y30": 5.42,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-22",
-          "y10": 4.96,
-          "y2": 4.65,
-          "y30": 5.29,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-23",
-          "y10": 5.0,
-          "y2": 4.69,
-          "y30": 5.33,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-26",
-          "y10": 5.0,
-          "y2": 4.68,
-          "y30": 5.31,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-27",
-          "y10": 4.99,
-          "y2": 4.7,
-          "y30": 5.3,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-28",
-          "y10": 5.05,
-          "y2": 4.67,
-          "y30": 5.37,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-29",
-          "y10": 4.98,
-          "y2": 4.61,
-          "y30": 5.32,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-10-30",
-          "y10": 4.94,
-          "y2": 4.56,
-          "y30": 5.31,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-02",
-          "y10": 4.91,
-          "y2": 4.59,
-          "y30": 5.28,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-03",
-          "y10": 4.95,
-          "y2": 4.61,
-          "y30": 5.32,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-04",
-          "y10": 4.9,
-          "y2": 4.58,
-          "y30": 5.28,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-05",
-          "y10": 4.84,
-          "y2": 4.46,
-          "y30": 5.25,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-06",
-          "y10": 4.86,
-          "y2": 4.51,
-          "y30": 5.26,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-09",
-          "y10": 4.88,
-          "y2": 4.56,
-          "y30": 5.26,
-          "fetched_at": "2026-11-13 18:01"
-        },
-        {
-          "date": "2026-11-10",
-          "y10": 4.98,
-          "y2": 4.73,
-          "y30": 5.35,
-          "fetched_at": "2026-11-13 18:01"
+          "fetched_at": "2026-11-14 18:03"
         },
         {
           "date": "2026-11-12",
-          "y10": 5.1,
-          "y2": 4.86,
-          "y30": 5.43,
-          "fetched_at": "2026-11-13 18:01"
+          "value": 912134.0,
+          "fetched_at": "2026-11-14 18:03"
         }
       ],
-      "source": {
-        "license": "Public domain (U.S. federal government work). No key.",
-        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/",
-        "name": "U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates"
-      },
-      "data_status": "live",
-      "name": "Daily Treasury Par Yield Curve (%, headline 10Y)"
+      "causal_note": "The federal cash position is the upstream water level of public AI investment: when it tightens, AI programs are squeezed before private demand."
     }
   },
-  "generated": "2026-11-13 18:01",
-  "cannot_say": [
-    "Whether a yield or a cash balance is good or bad for AI, or where rates are heading (no criterion; nothing here is financial advice).",
-    "How much the federal government budgets or spends on AI (annual budget figures do not meet the monthly-or-better rule; kept as a candidate ledger).",
-    "General economic conditions (stocks, exchange rates and inflation are out of scope by design)."
-  ],
-  "can_say": [
-    "The daily par yield of U.S. Treasuries (headline 10-year), the opening balance of the Treasury General Account each business day, and how many funding opportunities matching \"artificial intelligence\" were posted on Grants.gov (monthly = last snapshot of the month).",
-    "Which days are confirmed and which is the provisional current day, and when each value was retrieved.",
-    "The exact Grants.gov query that defines the count, so it can be reproduced."
-  ],
-  "frequency_note": "Yields and TGA are daily (business days); the grants count is a daily snapshot aggregated monthly.",
   "status": "observing",
-  "status_note": "Observing only: no good/bad criterion is defined. Not a macro-economics dashboard — series are limited to those with a stated causal link to AI infrastructure.",
   "candidates": [
     {
-      "reason": "Annual frequency does not meet the monthly-or-better rule; will be kept as a manual sourced ledger.",
       "status": "candidate_ledger",
+      "reason": "Annual frequency does not meet the monthly-or-better rule; will be kept as a manual sourced ledger.",
       "name": "AI-related federal budget (annual; irregular ledger)"
     }
   ],
-  "region": "us",
-  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-11-12. Latest final value: 10-year Treasury par yield 5.1% (2026-11-12). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-11-13 18:01 JST)",
-  "answer_line_date": "2026-11-12",
+  "answer_line": "This chapter is observing (no good/bad criterion): observation started 2026-08-30, 3 series, latest confirmed 2026-11-13. Latest final value: 10-year Treasury par yield 5.15% (2026-11-13). (Source: U.S. Department of the Treasury; Grants.gov / updated 2026-11-14 18:03 JST)",
+  "answer_line_date": "2026-11-13",
   "answer_kind": "observing",
   "headline_answer": {
     "series": "treasury_yield",
     "label": "10-year Treasury par yield",
-    "value": 5.1,
+    "value": 5.15,
     "unit": "%",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "threshold": null
   },
   "faq": [
     {
       "q": "What is the 10-year Treasury yield on the latest confirmed day?",
-      "a": "5.1% on 2026-11-12 (2-year 4.86%, 30-year 5.43%). Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve (retrieved 2026-11-13 18:01)."
+      "a": "5.15% on 2026-11-13 (2-year 4.88%, 30-year 5.47%). Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve (retrieved 2026-11-14 18:03)."
     },
     {
       "q": "What is the Treasury General Account balance, and how many AI grant opportunities are posted?",
-      "a": "TGA opening balance 922,633 million USD on 2026-11-10 (Daily Treasury Statement); 141 posted Grants.gov opportunities matching the fixed AI query as the last snapshot of 2026-11. Counts are defined entirely by that query."
+      "a": "TGA opening balance 912,134 million USD on 2026-11-12 (Daily Treasury Statement); 141 posted Grants.gov opportunities matching the fixed AI query as the last snapshot of 2026-11. Counts are defined entirely by that query."
     },
     {
       "q": "What is the source and how often is it updated?",
-      "a": "Treasury yields and the TGA are business-daily; the grants count is a daily snapshot aggregated monthly. Not a macro dashboard: each series carries a stated causal link to AI infrastructure. Observation started 2026-08-30. Last updated 2026-11-13 18:01 JST. Machine-readable: https://ai-lifeline.org/us/api/fiscal_us.json"
+      "a": "Treasury yields and the TGA are business-daily; the grants count is a daily snapshot aggregated monthly. Not a macro dashboard: each series carries a stated causal link to AI infrastructure. Observation started 2026-08-30. Last updated 2026-11-14 18:03 JST. Machine-readable: https://ai-lifeline.org/us/api/fiscal_us.json"
     },
     {
       "q": "What can this data not tell you?",
@@ -1428,13 +1438,13 @@
   "citation": {
     "page": "https://ai-lifeline.org/us/fiscal/",
     "api": "https://ai-lifeline.org/us/api/fiscal_us.json",
-    "last_confirmed": "2026-11-12",
-    "next_expected": "2026-11-11",
-    "generated": "2026-11-13 18:01",
+    "last_confirmed": "2026-11-13",
+    "next_expected": "2026-11-13",
+    "generated": "2026-11-14 18:03",
     "observation_start": "2026-08-30",
     "series_count": 3,
     "series_not_yet_measured": 0,
-    "title_short": "10Y Treasury 5.1% (final 11/12)",
+    "title_short": "10Y Treasury 5.15% (final 11/13)",
     "generated_by": "citation layer (post-processing after each daily batch)",
     "ledger_version": "v1.1-2026-09-06",
     "keys_written": [
