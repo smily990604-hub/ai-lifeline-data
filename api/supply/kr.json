@@ -1,26 +1,21 @@
 {
-  "generated": "2026-11-14 18:05",
-  "data_status": "not_yet_measured",
+  "country": "kr",
+  "generated": "2026-11-15 18:04",
   "status": "observing",
-  "series": {
-    "8486": {
-      "unit": "USD thousand",
-      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
-      "monthly": [],
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-14; skeleton only)"
-    },
-    "8542": {
-      "unit": "USD thousand",
-      "name": "Electronic integrated circuits (HS 8542)",
-      "monthly": [],
-      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-14; skeleton only)"
-    }
+  "query_definition": {
+    "hs_codes": [
+      "8486",
+      "8542"
+    ],
+    "level": "HS4",
+    "basis": "customs clearance (export FOB / import CIF)",
+    "partner": "world",
+    "unit": "USD thousand"
   },
   "notes": [
     "Aggregates by HS heading only; no company, plant or partner-company data.",
     "HBM has no separate HS heading (memories fall under 8542.32); no \"HBM\" series is published."
   ],
-  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
   "source": {
     "url": "https://www.data.go.kr/data/15101609/openapi.do",
     "name": "Korea Customs Service - imports/exports by commodity (data.go.kr, API 15101609)",
@@ -30,15 +25,20 @@
     "api_key_installed": false,
     "note": "awaiting API key registration by the publisher"
   },
-  "query_definition": {
-    "partner": "world",
-    "unit": "USD thousand",
-    "level": "HS4",
-    "basis": "customs clearance (export FOB / import CIF)",
-    "hs_codes": [
-      "8486",
-      "8542"
-    ]
+  "_note": "Korea - monthly exports and imports by HS heading (8486, 8542) from the Korea Customs Service dataset on data.go.kr (API 15101609). Skeleton until the API key is installed; then fetched monthly (published around the 15th for the previous month). Not an edition of this site; a feature input only.",
+  "series": {
+    "8542": {
+      "monthly": [],
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-15; skeleton only)",
+      "name": "Electronic integrated circuits (HS 8542)",
+      "unit": "USD thousand"
+    },
+    "8486": {
+      "monthly": [],
+      "data_status": "not_yet_measured (API key datagokr_key not installed as of 2026-11-15; skeleton only)",
+      "name": "Machines and apparatus used for the manufacture of semiconductor devices (HS 8486)",
+      "unit": "USD thousand"
+    }
   },
-  "country": "kr"
+  "data_status": "not_yet_measured"
 }
