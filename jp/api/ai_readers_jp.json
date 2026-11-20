@@ -1,6 +1,6 @@
 {
   "country": "JP",
-  "generated": "2026-11-19 10:33",
+  "generated": "2026-11-20 10:33",
   "indicator": {
     "id": "ai_readers_01",
     "name": "AI読者数（週次）— 本サイトを読みに来たAIリクエスト数",
@@ -444,34 +444,35 @@
       "week": 13,
       "from": "2026-11-15",
       "to": "2026-11-21",
-      "observed_through": "2026-11-18",
-      "days_observed": 4,
+      "observed_through": "2026-11-19",
+      "days_observed": 5,
       "provisional": true,
-      "verified_total": 625,
-      "verified_days": 4,
-      "unverified_total": 286,
-      "human_triggered_verified_total": 11,
-      "named_total_reference": 911,
-      "self_excluded_total": 4612,
+      "verified_total": 957,
+      "verified_days": 5,
+      "unverified_total": 294,
+      "human_triggered_verified_total": 14,
+      "named_total_reference": 1251,
+      "self_excluded_total": 5720,
       "breakdown_verified": {
         "Claude-User": 0,
         "ClaudeBot": 0,
-        "GPTBot": 28,
+        "GPTBot": 30,
         "CCBot": 0,
-        "その他": 597
+        "その他": 927
       },
       "breakdown_verified_other_detail": {
-        "OAI-SearchBot": 194,
-        "(Cloudflare検証:AI Crawler)": 127,
-        "(Cloudflare検証:AI Assistant)": 115,
-        "ShapBot": 102,
-        "Amazonbot": 36,
-        "GoogleOther": 12,
-        "ChatGPT-User": 11
+        "OAI-SearchBot": 243,
+        "ShapBot": 206,
+        "(Cloudflare検証:AI Assistant)": 166,
+        "(Cloudflare検証:AI Crawler)": 131,
+        "GoogleOther": 83,
+        "Amazonbot": 42,
+        "meta-externalagent": 42,
+        "ChatGPT-User": 14
       },
       "top_verified": {
         "name": "OAI-SearchBot",
-        "requests": 194
+        "requests": 243
       }
     }
   ],
@@ -1361,18 +1362,28 @@
       "verified_available": true,
       "human_triggered_verified": 0,
       "human_triggered_named_reference": 2
+    },
+    {
+      "date": "2026-11-19",
+      "ai_verified": 332,
+      "ai_unverified": 8,
+      "ai_named_reference": 340,
+      "self_excluded": 1108,
+      "verified_available": true,
+      "human_triggered_verified": 3,
+      "human_triggered_named_reference": 4
     }
   ],
   "autonomous_access": {
     "definition_version": "1.0",
     "definition_fixed_on": "2026-09-05",
     "definition_doc": "指標定義_自律アクセス.md",
-    "computed": "2026-11-19 10:34",
+    "computed": "2026-11-20 10:34",
     "cadence": "月次（日次明細から毎日再集計。月が閉じるまで provisional）",
     "judgment_date": "2027-03-05",
     "observation_start": "2026-08-23",
     "verified_series_start": "2026-08-27",
-    "observed_through": "2026-11-17",
+    "observed_through": "2026-11-18",
     "source": "運営者の内部保管（日別 CSV・Cloudflare GraphQL Analytics API httpRequestsAdaptiveGroups の UA×パス別日次明細・恒久退避）",
     "build": "運営者の日次集計",
     "indicators": {
@@ -1902,57 +1913,63 @@
       },
       {
         "month": "2026-11",
-        "days_observed": 17,
+        "days_observed": 18,
         "observed_from": "2026-11-01",
-        "observed_through": "2026-11-17",
+        "observed_through": "2026-11-18",
         "closed": false,
         "provisional": true,
         "a_autonomous_requests": {
-          "autonomous_verified": 2013,
+          "autonomous_verified": 2261,
           "human_triggered_verified": 76,
-          "autonomous_named_reference": 2600,
-          "human_triggered_named_reference": 260,
-          "verified_days": 17,
+          "autonomous_named_reference": 2861,
+          "human_triggered_named_reference": 262,
+          "verified_days": 18,
           "status": "measured",
           "autonomous_verified_by_name": {
-            "OAI-SearchBot": 725,
-            "(Cloudflare検証:AI Assistant)": 615,
+            "OAI-SearchBot": 772,
+            "(Cloudflare検証:AI Assistant)": 661,
             "ShapBot": 301,
-            "Amazonbot": 145,
+            "Amazonbot": 151,
+            "(Cloudflare検証:AI Crawler)": 127,
             "ClaudeBot": 111,
+            "GPTBot": 68,
             "GoogleOther": 64,
-            "GPTBot": 46,
             "YouBot": 3,
             "DuckAssistBot": 2,
             "meta-externalagent": 1
           }
         },
         "b_api_direct_ratio": {
-          "ratio_verified": 0.101,
-          "machine_readable_verified": 177,
-          "content_requests_verified": 1744,
-          "ratio_named_reference": 0.114,
-          "machine_readable_named_reference": 251,
-          "content_requests_named_reference": 2205,
+          "ratio_verified": 0.134,
+          "machine_readable_verified": 264,
+          "content_requests_verified": 1971,
+          "ratio_named_reference": 0.14,
+          "machine_readable_named_reference": 341,
+          "content_requests_named_reference": 2441,
           "status": "measured"
         },
         "c_revisit_within_7d_rate": {
           "rate": 0.9,
           "revisited": 9,
           "determined": 10,
-          "pending": 0,
-          "bots_observed": 10,
+          "pending": 1,
+          "bots_observed": 11,
           "status": "measured",
           "unit": "ai_name（UAラベル・Cloudflare 検証済み行のみで識別）。IP・ASN は使わない",
           "bots": {
             "(Cloudflare検証:AI Assistant)": {
               "first_visit": "2026-11-01",
-              "visit_days": 16,
+              "visit_days": 17,
               "status": "revisited"
+            },
+            "(Cloudflare検証:AI Crawler)": {
+              "first_visit": "2026-11-18",
+              "visit_days": 1,
+              "status": "pending"
             },
             "Amazonbot": {
               "first_visit": "2026-11-01",
-              "visit_days": 17,
+              "visit_days": 18,
               "status": "revisited"
             },
             "ClaudeBot": {
@@ -1972,7 +1989,7 @@
             },
             "GPTBot": {
               "first_visit": "2026-11-01",
-              "visit_days": 17,
+              "visit_days": 18,
               "status": "revisited"
             },
             "meta-externalagent": {
@@ -1982,7 +1999,7 @@
             },
             "OAI-SearchBot": {
               "first_visit": "2026-11-01",
-              "visit_days": 17,
+              "visit_days": 18,
               "status": "revisited"
             },
             "ShapBot": {
@@ -2000,18 +2017,23 @@
             "rate": 1.0,
             "revisited": 14,
             "determined": 14,
-            "pending": 1,
-            "bots_observed": 15,
+            "pending": 2,
+            "bots_observed": 16,
             "note": "名乗りベース（偽装を含む上限側・2026-08-26 の偽装スキャンで初出した名乗りを含む）",
             "bots": {
               "(Cloudflare検証:AI Assistant)": {
                 "first_visit": "2026-11-01",
-                "visit_days": 16,
+                "visit_days": 17,
                 "status": "revisited"
+              },
+              "(Cloudflare検証:AI Crawler)": {
+                "first_visit": "2026-11-18",
+                "visit_days": 1,
+                "status": "pending"
               },
               "Amazonbot": {
                 "first_visit": "2026-11-01",
-                "visit_days": 17,
+                "visit_days": 18,
                 "status": "revisited"
               },
               "Anthropic-other": {
@@ -2026,7 +2048,7 @@
               },
               "CCBot": {
                 "first_visit": "2026-11-13",
-                "visit_days": 2,
+                "visit_days": 3,
                 "status": "revisited"
               },
               "ClaudeBot": {
@@ -2051,7 +2073,7 @@
               },
               "GPTBot": {
                 "first_visit": "2026-11-01",
-                "visit_days": 17,
+                "visit_days": 18,
                 "status": "revisited"
               },
               "meta-externalagent": {
@@ -2061,12 +2083,12 @@
               },
               "OAI-SearchBot": {
                 "first_visit": "2026-11-01",
-                "visit_days": 17,
+                "visit_days": 18,
                 "status": "revisited"
               },
               "PerplexityBot": {
                 "first_visit": "2026-11-01",
-                "visit_days": 17,
+                "visit_days": 18,
                 "status": "revisited"
               },
               "ShapBot": {
